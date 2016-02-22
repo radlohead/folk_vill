@@ -71,6 +71,10 @@ header {
       height: 38px;
       background: #ddd; }
 
+.main-slide {
+  width: 100%;
+  height: 401px; }
+
 footer {
   height: 100px;
   background: #fff; }

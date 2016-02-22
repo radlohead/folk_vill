@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
 <meta name="format-detection" content="telephone=no, address=no, email=no" />
 <link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
 <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 <body>
@@ -39,14 +40,18 @@
 		</div>
 <!-- 메인슬라이드 -->
 		<div class="main-slide">
-			<div class='main-slide-wrap'>
-				<div><a>0</a></div>
-				<div><a>1</a></div>
-				<div><a>2</a></div>
-				<div><a>3</a></div>
-				<div><a>4</a></div>
-				<div><a>5</a></div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="images/main-slide01.jpg" alt="슬라이드 이미지1" /></div>
+				<div class="swiper-slide"><img src="images/main-slide02.jpg" alt="슬라이드 이미지2" /></div>
+				<div class="swiper-slide"><img src="images/main-slide03.jpg" alt="슬라이드 이미지3" /></div>
+				<div class="swiper-slide"><img src="images/main-slide04.jpg" alt="슬라이드 이미지4" /></div>
+				<div class="swiper-slide"><img src="images/main-slide05.jpg" alt="슬라이드 이미지5" /></div>
 			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</div>
 
 <!-- 메뉴컨텐츠&2단탭배너까지 -->
@@ -65,23 +70,18 @@
 		<footer></footer>
 	</div>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src='js/swipe.js'></script>
+<script src="js/swiper.min.js"></script>
 <script src="js/common.js"></script>
 <script>
-// pure JS
-var elem = document.getElementById('mySwipe');
-window.mySwipe = Swipe(elem, {
-  // startSlide: 4,
-  // auto: 3000,
-  // continuous: true,
-  // disableScroll: true,
-  // stopPropagation: true,
-  // callback: function(index, element) {},
-  // transitionEnd: function(index, element) {}
-});
-
-// with jQuery
-// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+        var swiper_slide = new Swiper('.main-slide', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+			autoplay: 2500,
+			loop:true
+        })
+    </script>
 </script>
 </body>
 </html>
