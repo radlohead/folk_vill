@@ -37,8 +37,20 @@
 		<div class="dim">
 			<div class="pop"></div>
 		</div>
-<!-- 슬라이드&2단탭배너까지 -->
-		<div class="main"></div>
+<!-- 메인슬라이드 -->
+		<div class="main-slide">
+			<div class='main-slide-wrap'>
+				<div><a>0</a></div>
+				<div><a>1</a></div>
+				<div><a>2</a></div>
+				<div><a>3</a></div>
+				<div><a>4</a></div>
+				<div><a>5</a></div>
+			</div>
+		</div>
+
+<!-- 메뉴컨텐츠&2단탭배너까지 -->
+		<div class="main-content"></div>
 
 <!-- 투데이 한국민속촌 -->
 		<div class="today"></div>
@@ -53,6 +65,23 @@
 		<footer></footer>
 	</div>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src='js/swipe.js'></script>
 <script src="js/common.js"></script>
+<script>
+// pure JS
+var elem = document.getElementById('mySwipe');
+window.mySwipe = Swipe(elem, {
+  // startSlide: 4,
+  // auto: 3000,
+  // continuous: true,
+  // disableScroll: true,
+  // stopPropagation: true,
+  // callback: function(index, element) {},
+  // transitionEnd: function(index, element) {}
+});
+
+// with jQuery
+// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+</script>
 </body>
 </html>
