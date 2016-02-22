@@ -1,0 +1,78 @@
+html, body {
+  height: 100%; }
+
+.text-hidden {
+  color: transparent; }
+
+aside {
+  display: none;
+  position: absolute;
+  top: 49px;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  z-index: 101; }
+  aside ul {
+    height: 100%; }
+
+.dim {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100; }
+  .dim .pop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: white; }
+
+header {
+  position: relative;
+  height: 47px;
+  background: #fff;
+  border: 1px solid red;
+  z-index: 500; }
+  header .home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 47px;
+    border: 1px solid red; }
+    header .home span {
+      width: 46px;
+      height: 38px;
+      background: #ddd; }
+  header .logo {
+    text-align: center; }
+    header .logo a {
+      display: block;
+      width: 118px;
+      height: 18px;
+      margin: 15px auto 0; }
+    header .logo img {
+      width: 118px;
+      height: 18px; }
+  header .gnb_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 47px;
+    border: 1px solid red; }
+    header .gnb_btn span {
+      width: 46px;
+      height: 38px;
+      background: #ddd; }
+
+footer {
+  height: 100px;
+  background: #fff; }
+
+/*# sourceMappingURL=index.css.map */
