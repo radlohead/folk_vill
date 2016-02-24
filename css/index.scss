@@ -39,13 +39,24 @@ header{
 }
 
 //main-slide
-.main-slide{ width:100%; height:401px;}
+.main-slide{position: relative; width:100%; height:401px;}
 
 //main-content-menu
 .main-content-menu{}
 
-//main-content-tab
-.main-content-tab{}
+//main-tab
+.main-tab{
+	padding:0 20px;
+
+	.tabMenu{
+		font-size:12px;
+		
+		li{float:left; width:50%; height:58px; text-align:center; border:1px solid #dadada; box-sizing: border-box;}
+		li.on{border:1px solid #f18200;}
+	}
+	.tab-content{clear:both;}
+	#tab2{visibility:hidden;}
+}
 
 //today
 .today{}
@@ -58,3 +69,6 @@ header{
 
 //푸터
 footer{height:100px; background:#fff;}
+
+//swiper
+.swiper-container-horizontal > .swiper-pagination{bottom:30px;}
