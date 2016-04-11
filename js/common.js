@@ -34,23 +34,25 @@ $(document).ready(function(){
 
 //메인 tabMenu
 	(function(){
-		var mainTab = document.getElementById("main-tab");
-		var ul = mainTab.getElementsByClassName("tabMenu")[0];
-		var li = ul.getElementsByTagName("li");
-		var tabBody = mainTab.getElementsByClassName("tab-content");
+		$(".main-tab .swiper-slide").hide();
+		$(".main-tab .slide01").show();
 
-		for(var i = 0; i < li.length; i++){
-			(function(e){
-				li[e].onclick = function(){
-					for(var k = 0; k < tabBody.length; k++){
-						tabBody[k].style.visibility = "hidden";
-					}
-					var str = tabBody[e];
-					str.style.visibility = "visible";
+		$(".tabMenu li a img").click(function(){
+			var tabMenu_src = $(".tabMenu li a img").attr("src");
+			var src = $(this).attr("src");
+			var src_on = src.replace(".gif", "_on.gif");
+			var src_off = tabMenu_src.replace("_on.gif",".gif");
+
+
+			if(src.indexOf("_on") != "-1"){
+				$(".tabMenu li a img").attr("src", src_off);
+				$(this).attr("src", src_on);
+			}else{
+				if(src.indexOf("_on") == "-1"){
+					$(this).attr("src", src_on);
 				}
-			})(i);
-		}
-
+			}
+		});
 	})();
 
 });

@@ -8,24 +8,22 @@
 <link rel="stylesheet" type="text/css" href="css/reset.css" />
 <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
 <link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/media_q.css" />
 </head>
 <body>
 	<div class="wrap">
 <!-- 상단헤더 -->
 		<header>
-			<a href="#" class="home">
-				<span>홈버튼</span>
-			</a>
 			<h1 class="logo">
 				<a href="#">
 					<img src="images/logo.png" alt="" />
 				</a>
 			</h1>
 			<a href="#" class="gnb_btn">
-				<span>메뉴버튼</span>
+
 			</a>
 		</header>
-<!-- 메뉴1 -->
+<!-- 메뉴 -->
 		<aside>
 			<ul>
 				<li>메뉴1</li>
@@ -39,13 +37,11 @@
 			<div class="pop"></div>
 		</div>
 <!-- 메인슬라이드 -->
-		<div class="main-slide">
+		<div class="main-slide swiper-container">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide">슬라이드 이미지1</div>
-				<div class="swiper-slide">슬라이드 이미지2</div>
-				<div class="swiper-slide">슬라이드 이미지3</div>
-				<div class="swiper-slide">슬라이드 이미지4</div>
-				<div class="swiper-slide">슬라이드 이미지5</div>
+				<div class="swiper-slide"><img src="images/main_slide01.jpg" alt="웰컴투 조선 2016년 4월9일 부터 6월12일까지" /></div>
+				<div class="swiper-slide"><img src="images/main_slide01.jpg" alt="웰컴투 조선 2016년 4월9일 부터 6월12일까지" /></div>
+				<div class="swiper-slide"><img src="images/main_slide01.jpg" alt="웰컴투 조선 2016년 4월9일 부터 6월12일까지" /></div>
 			</div>
 			<!-- Add Pagination -->
 			<div class="swiper-pagination"></div>
@@ -55,21 +51,38 @@
 		</div>
 
 <!-- 메뉴컨텐츠 -->
-		<div class="main-content-menu"></div>
-
-<!-- 2단탭배너까지 -->
-		<div id="main-tab" class="main-tab">
-			<ul class="tabMenu">
-				<li><a href="#tab1">할인프로모션</a></li>
-				<li><a href="#tab2">온라인 쿠폰</a></li>
+		<div class="main-content-menu">
+			<ul>
+				<li class="menu01"><img src="images/main-content-menu01.gif" alt="시간,요금"/></li>
+				<li class="menu02"><img src="images/main-content-menu02.gif" alt="오시는 길"/></li>
+				<li class="menu03"><img src="images/main-content-menu03.gif" alt="제휴카드"/></li>
+				<li class="menu04"><img src="images/main-content-menu04.gif" alt="가이드맵"/></li>
 			</ul>
-			<!-- #tab1 -->
-			<div id="tab1" class="tab-content">탭1내용</div>
-			<!-- #tab2 -->
-			<div id="tab2" class="tab-content">탭2내용</div>
 		</div>
 
-<!-- 투데이 한국민속촌 -->
+<!-- 2단탭배너 -->
+		<div id="main-tab" class="main-tab">
+			<ul class="tabMenu">
+				<li class="menu1"><a href="#tab1"><img src="images/main-tab-title01_on.gif" alt="할인프로모션"/></a>
+
+				</li>
+				<li class="menu2"><a href="#tab2"><img src="images/main-tab-title02.gif" alt="온라인 쿠폰"/></a></li>
+			</ul>
+			<!-- #tab1 -->
+			<div id="tab1" class="tab1 tab-content swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide slide01"><img src="images/main-tab1_img01.jpg" alt="수원삼성블루윙즈 제휴할인 안내 2016년 2월13일 부터 4월30일까지" /></div>
+					<div class="swiper-slide slide02"><img src="images/main-tab1_img01.jpg" alt="수원삼성블루윙즈 제휴할인 안내 2016년 2월13일 부터 4월30일까지" /></div>
+				</div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<!-- #tab2 -->
+			<div id="tab2" class="tab2 tab-content">탭2내용</div>
+		</div>
+
+<!-- 한국민속촌 정기공연 -->
 		<div class="today"></div>
 
 <!-- 공지사항 -->
@@ -85,15 +98,20 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/common.js"></script>
 <script>
-        var swiper_slide = new Swiper('.main-slide', {
-            pagination: '.swiper-pagination',
+        var mySwiper_a = new Swiper('.main-slide', {
             paginationClickable: true,
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
+            nextButton: '.main-slide .swiper-button-next',
+            prevButton: '.main-slide .swiper-button-prev',
 			autoplay: 2500,
 			loop:true
-        })
-    </script>
+        });
+		var mySwiper_b = new Swiper('.tab1', {
+			paginationClickable: true,
+			nextButton: '.tab1 .swiper-button-next',
+			prevButton: '.tab1 .swiper-button-prev',
+			autoplay: 2500,
+			loop:true
+		});
 </script>
 </body>
 </html>
