@@ -34,24 +34,12 @@ $(document).ready(function(){
 
 //메인 tabMenu
 	(function(){
-		$(".main-tab .swiper-slide").hide();
-		$(".main-tab .slide01").show();
-
-		$(".tabMenu li a img").click(function(){
-			var tabMenu_src = $(".tabMenu li a img").attr("src");
-			var src = $(this).attr("src");
-			var src_on = src.replace(".gif", "_on.gif");
-			var src_off = tabMenu_src.replace("_on.gif",".gif");
-
-
-			if(src.indexOf("_on") != "-1"){
-				$(".tabMenu li a img").attr("src", src_off);
-				$(this).attr("src", src_on);
-			}else{
-				if(src.indexOf("_on") == "-1"){
-					$(this).attr("src", src_on);
-				}
-			}
+		$(".tabMenu li").click(function(){
+			$(".tabMenu li").removeClass("on");
+			$(this).addClass("on");
+			$(".tab-content").hide()
+			var activeTab = $(this).attr("rel");
+			$("." + activeTab).fadeIn();
 		});
 	})();
 

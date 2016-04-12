@@ -21,11 +21,14 @@ header .gnb_btn { display: block; float: right; width: 17px; height: 12px; paddi
 .main-content-menu ul li { float: left; width: 25%; }
 
 .main-tab { overflow: hidden; position: relative; margin-top: 16px; padding: 0 20px 1px; border-bottom: 1px solid #bdb5a0; }
-.main-tab .tabMenu { overflow: hidden; font-size: 12px; }
-.main-tab .tabMenu li { float: left; width: 50%; min-height: 34px; text-align: center; border: 1px solid #dadada; box-sizing: border-box; }
-.main-tab .tabMenu li.on { border: 1px solid #f18200; }
+.main-tab .tabMenu { display: table; position: relative; width: 100%; font-size: 12px; }
+.main-tab .tabMenu li { display: table-cell; width: 50%; min-height: 34px; text-align: center; background-size: contain; background-repeat: no-repeat; border: 1px solid #dadada; box-sizing: border-box; }
+.main-tab .tabMenu .menu1 { background-image: url("../images/main-tab-title01.gif"); }
+.main-tab .tabMenu .menu2 { background-image: url("../images/main-tab-title02.gif"); }
+.main-tab .tabMenu .menu1.on { background-image: url("../images/main-tab-title01_on.gif"); }
+.main-tab .tabMenu .menu2.on { background-image: url("../images/main-tab-title01_on.gif"); }
 .main-tab .tab-content { clear: both; }
-.main-tab .tab2 { display: none; }
+.main-tab .tabMenu2 { display: none; }
 
 footer { height: 100px; background: #fff; }
 

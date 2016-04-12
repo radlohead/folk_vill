@@ -43,13 +43,17 @@ header{overflow:hidden; position:relative; height:32px; padding:15px 13px 0; bac
 
 //main-tab
 .main-tab{overflow:hidden; position:relative; margin-top: 16px; padding:0 20px 1px; border-bottom:1px solid #bdb5a0;
-	.tabMenu{overflow:hidden; font-size:12px;
-		li{float:left; width:50%; min-height:34px; text-align:center; border:1px solid #dadada; box-sizing: border-box;}
-		li.on{border:1px solid #f18200;}
+	.tabMenu{display:table; position:relative; width:100%; font-size:12px;
+      li{display:table-cell; width:50%; min-height:34px; text-align:center; background-size:contain; background-repeat:no-repeat; border:1px solid #dadada; box-sizing: border-box;}
+      li.on{}
+      .menu1{background-image:url("../images/main-tab-title01.gif");}
+      .menu2{background-image:url("../images/main-tab-title02.gif");}
+      .menu1.on{background-image:url("../images/main-tab-title01_on.gif");}
+      .menu2.on{background-image:url("../images/main-tab-title01_on.gif");}
 	}
 	.tab-content{clear:both;}
-	.tab1{}
-	.tab2{display:none;}
+	.tabMenu1{}
+	.tabMenu2{display:none;}
 }
 
 //today

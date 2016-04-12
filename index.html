@@ -61,25 +61,23 @@
 		</div>
 
 <!-- 2단탭배너 -->
-		<div id="main-tab" class="main-tab">
+		<div class="main-tab">
 			<ul class="tabMenu">
-				<li class="menu1"><a href="#tab1"><img src="images/main-tab-title01_on.gif" alt="할인프로모션"/></a>
-
-				</li>
-				<li class="menu2"><a href="#tab2"><img src="images/main-tab-title02.gif" alt="온라인 쿠폰"/></a></li>
+				<li class="menu1 on" rel="tabMenu1"><a href="#tab1"><img src="images/blank.png" alt="할인프로모션" /></a></li>
+				<li class="menu2" rel="tabMenu2"><a href="#tab2"><img src="images/blank.png" alt="온라인 쿠폰" /></a></li>
 			</ul>
 			<!-- #tab1 -->
-			<div id="tab1" class="tab1 tab-content swiper-container">
+			<div class="tab-content swiper-container tabMenu1">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide slide01"><img src="images/main-tab1_img01.jpg" alt="수원삼성블루윙즈 제휴할인 안내 2016년 2월13일 부터 4월30일까지" /></div>
-					<div class="swiper-slide slide02"><img src="images/main-tab1_img01.jpg" alt="수원삼성블루윙즈 제휴할인 안내 2016년 2월13일 부터 4월30일까지" /></div>
+					<div class="swiper-slide"><img src="images/main-tab1_img01.jpg" alt="수원삼성블루윙즈 제휴할인 안내 2016년 2월13일 부터 4월30일까지" /></div>
+					<div class="swiper-slide"><img src="images/main-tab1_img01.jpg" alt="수원삼성블루윙즈 제휴할인 안내 2016년 2월13일 부터 4월30일까지" /></div>
 				</div>
 				<!-- Add Arrows -->
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
 			</div>
 			<!-- #tab2 -->
-			<div id="tab2" class="tab2 tab-content">탭2내용</div>
+			<div class="tab-content tabMenu2">탭2내용</div>
 		</div>
 
 <!-- 한국민속촌 정기공연 -->
@@ -99,16 +97,17 @@
 <script src="js/common.js"></script>
 <script>
         var mySwiper_a = new Swiper('.main-slide', {
+			pagination:'.main-slide .swiper-pagination',
             paginationClickable: true,
             nextButton: '.main-slide .swiper-button-next',
             prevButton: '.main-slide .swiper-button-prev',
 			autoplay: 2500,
 			loop:true
         });
-		var mySwiper_b = new Swiper('.tab1', {
+		var mySwiper_b = new Swiper('.tabMenu1', {
 			paginationClickable: true,
-			nextButton: '.tab1 .swiper-button-next',
-			prevButton: '.tab1 .swiper-button-prev',
+			nextButton: '.tabMenu1 .swiper-button-next',
+			prevButton: '.tabMenu1 .swiper-button-prev',
 			autoplay: 2500,
 			loop:true
 		});
