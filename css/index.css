@@ -2,36 +2,6 @@ html, body { height: 100%; }
 
 .text-hidden { color: transparent; }
 
-aside { display: none; position: absolute; top: 49px; right: 0; width: 40%; height: 100%; z-index: 101; }
-aside ul { height: 100%; }
-
-.dim { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 100; }
-.dim .pop { position: absolute; top: 0; right: 0; width: 40%; height: 100%; background: white; }
-
-header { overflow: hidden; position: relative; height: 32px; padding: 15px 13px 0; background: #fff; z-index: 500; }
-header .logo { float: left; }
-header .logo a { display: block; width: 118px; height: 25px; }
-header .logo img { width: 100%; }
-header .gnb_btn { display: block; float: right; width: 17px; height: 12px; padding: 7px; background: url("../images/sprite.png") 3px 0px no-repeat; background-size: 300px 500px; }
-
-.main-slide { position: relative; width: 100%; }
-.main-slide .swiper-slide img { width: 100%; }
-
-.main-content-menu { overflow: hidden; border-bottom: 1px solid #bdb5a0; }
-.main-content-menu ul li { float: left; width: 25%; }
-
-.main-tab { overflow: hidden; position: relative; margin-top: 16px; padding: 0 20px 1px; border-bottom: 1px solid #bdb5a0; }
-.main-tab .tabMenu { display: table; position: relative; width: 100%; font-size: 12px; }
-.main-tab .tabMenu li { display: table-cell; width: 50%; min-height: 34px; text-align: center; background-size: contain; background-repeat: no-repeat; border: 1px solid #dadada; box-sizing: border-box; }
-.main-tab .tabMenu .menu1 { background-image: url("../images/main-tab-title01.gif"); }
-.main-tab .tabMenu .menu2 { background-image: url("../images/main-tab-title02.gif"); }
-.main-tab .tabMenu .menu1.on { background-image: url("../images/main-tab-title01_on.gif"); }
-.main-tab .tabMenu .menu2.on { background-image: url("../images/main-tab-title01_on.gif"); }
-.main-tab .tab-content { clear: both; }
-.main-tab .tabMenu2 { display: none; }
-
-footer { height: 100px; background: #fff; }
-
 .swiper-container-horizontal > .swiper-pagination { bottom: 30px; }
 
 .swiper-button-prev { width: 38px; height: 45px; left: 0; background: url("../images/sprite.png") 0 -32px no-repeat; background-size: 300px 500px; }
@@ -49,5 +19,64 @@ footer { height: 100px; background: #fff; }
 .swiper-container-horizontal > .swiper-pagination { bottom: 13px; right: 13px; }
 
 .swiper-container-horizontal > .swiper-pagination { width: auto; }
+
+aside { display: none; position: absolute; top: 49px; right: 0; width: 40%; height: 100%; z-index: 101; }
+aside ul { height: 100%; }
+
+.dim { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 100; }
+.dim .pop { position: absolute; top: 0; right: 0; width: 40%; height: 100%; background: white; }
+
+header { overflow: hidden; position: relative; height: 32px; padding: 15px 13px 0; background: #fff; z-index: 500; }
+header .logo { float: left; width: 118px; height: 25px; }
+header .logo a { display: block; }
+header .logo img { width: 100%; }
+header .gnb_btn { display: block; float: right; width: 17px; height: 12px; padding: 7px; background: url("../images/sprite.png") 3px 0px no-repeat; background-size: 300px 500px; }
+
+.main-slide { position: relative; width: 100%; }
+.main-slide .swiper-slide img { width: 100%; }
+
+.main-content-menu { overflow: hidden; border-bottom: 1px solid #bdb5a0; }
+.main-content-menu ul li { float: left; width: 25%; text-align: center; }
+
+.main-tab { overflow: hidden; position: relative; margin-top: 16px; border-bottom: 1px solid #bdb5a0; }
+.main-tab .tabMenu { position: relative; width: 100%; font-size: 12px; }
+.main-tab .tabMenu li { float: left; width: 50%; min-height: 34px; text-align: center; background-size: contain; background-repeat: no-repeat; background-position: center center; border-bottom: 1px solid #dadada; box-sizing: border-box; }
+.main-tab .tabMenu li a { display: block; }
+.main-tab .tabMenu .menu1 { background-image: url("../images/main-tab-title01.gif"); }
+.main-tab .tabMenu .menu2 { background-image: url("../images/main-tab-title02.gif"); }
+.main-tab .tabMenu .menu1.on { background-image: url("../images/main-tab-title01_on.gif"); border-bottom: 3px solid #f08200; }
+.main-tab .tabMenu .menu2.on { background-image: url("../images/main-tab-title02_on.gif"); border-bottom: 3px solid #f08200; }
+.main-tab .tab-content { clear: both; }
+.main-tab .tab-content .swiper-slide { text-align: center; }
+.main-tab .tab-content .swiper-button-prev { margin-top: -21px; background-position: 0 -93px; }
+.main-tab .tab-content .swiper-button-next { margin-top: -21px; background-position: -37px -93px; }
+.main-tab .tabMenu2 { display: none; }
+
+.today .today-slide { clear: both; }
+.today .today-slide .text-btn_box { position: absolute; right: 0; z-index: 10; width: 37.8%; height: 100%; background: url("../images/today_bg.png") no-repeat; background-size: cover; }
+.today .today-slide .text-btn_box .text_box { text-align: center; letter-spacing: -1px; color: #fff; }
+.today .today-slide .text-btn_box .text_box h5 { margin: 23% 0 6%; font-size: 4vw; }
+.today .today-slide .text-btn_box .text_box .text { display: block; margin-bottom: 5px; font-size: 2vw; }
+.today .today-slide .text-btn_box .btns { overflow: hidden; position: absolute; bottom: 0; width: 100%; }
+.today .today-slide .text-btn_box .btns .swiper-button-prev { float: left; position: static; top: 52.3%; width: 33%; height: 33%; margin-top: 0; background: none; }
+.today .today-slide .text-btn_box .btns .plus_btn { float: left; position: static; top: 47.5%; left: 33.5%; z-index: 10; width: 33%; height: 33%; margin-left: 0.5%; background: none; }
+.today .today-slide .text-btn_box .btns .swiper-button-next { float: right; position: static; top: 54.5%; width: 33%; height: 33%; margin-top: 0; background: none; }
+.today .today-slide .text-btn_box .btns img { width: 100%; }
+.today .today-slide .swiper-slide img { width: 100%; }
+
+.main-top { overflow: hidden; position: relative; padding: 17px 4% 0; background: #f7f7f7; border-top: 1px solid #bdb5a0; }
+.main-top h4 { float: left; width: 45.3%; height: 30%; }
+.main-top .more_btn { position: absolute; right: 4%; bottom: 10%; width: 64px; height: 17px; padding: 10px; padding-right: 0; background: url("../images/sprite.png") no-repeat -134px 13px; background-size: 450px 750px; }
+
+.notice { margin: 13px 0; }
+.notice ul { padding: 0 4%; }
+.notice ul li { display: table; width: 100%; padding: 3% 0; border-bottom: 1px solid #e9e9e9; }
+.notice ul li .icon { display: table-cell; width: 38px; height: 23px; background: url("../images/sprite.png") no-repeat; background-size: 450px 750px; }
+.notice ul li .guide_icon { background-position: -231px 0; }
+.notice ul li .discount_icon { background-position: -283px 0; }
+.notice ul li .text { display: table-cell; padding-left: 3%; vertical-align: middle; letter-spacing: -1px; font-size: 80%; }
+.notice ul li:after { clear: both; content: ""; display: block; }
+
+footer { height: 100px; background: #fff; }
 
 /*# sourceMappingURL=index.css.map */

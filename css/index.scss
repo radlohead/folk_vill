@@ -3,7 +3,19 @@
 html, body{height:100%;}
 .text-hidden{color:transparent;}
 
+//swiper
+.swiper-container-horizontal > .swiper-pagination{bottom:30px;}
+.swiper-button-prev{width:38px; height:45px; left:0; background:url('../images/sprite.png') 0 -32px no-repeat; background-size:300px 500px;}
+.swiper-button-next{width:38px; height:45px; right:0; background:url('../images/sprite.png') -48px -32px no-repeat; background-size:300px 500px;}
+.swiper-pagination{text-align:right;}
+.swiper-pagination-bullet{width:15px; height:15px; background:#5d5d5d; border:4px solid #000; opacity:0.5;}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{width:28px; height:15px; background:#fff; border:4px solid #000; border-radius:20px; opacity:1;}
+.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 2px;}
+.swiper-container-horizontal > .swiper-pagination{bottom: 13px; right: 13px;}
+.swiper-container-horizontal>.swiper-pagination{width:auto;}
+
 .wrap{}
+
 //메뉴클릭시 보여짐
 aside{display:none; position:absolute; top:49px; right:0; width:40%; height:100%; z-index:101;
 	ul{height:100%;}
@@ -14,8 +26,8 @@ aside{display:none; position:absolute; top:49px; right:0; width:40%; height:100%
 
 //상단헤더
 header{overflow:hidden; position:relative; height:32px; padding:15px 13px 0; background:#fff; z-index:500;
-	.logo{float: left;
-		a{display:block; width:118px; height:25px;}
+	.logo{float: left; width:118px; height:25px;
+		a{display:block;}
 		img{width:100%;}
 	}
 	.gnb_btn{display:block; float:right; width:17px; height:12px; padding:7px; background:url('../images/sprite.png') 3px 0px no-repeat; background-size:300px 500px;}
@@ -31,50 +43,74 @@ header{overflow:hidden; position:relative; height:32px; padding:15px 13px 0; bac
 //main-content-menu
 .main-content-menu{overflow:hidden; border-bottom:1px solid #bdb5a0;
 	ul{
-		li{float:left; width:25%;
+		li{float:left; width:25%; text-align:center;
 
 		}
-		.menu01{}
-		.menu02{}
-		.menu03{}
-		.menu04{}
 	}
 }
 
 //main-tab
-.main-tab{overflow:hidden; position:relative; margin-top: 16px; padding:0 20px 1px; border-bottom:1px solid #bdb5a0;
-	.tabMenu{display:table; position:relative; width:100%; font-size:12px;
-      li{display:table-cell; width:50%; min-height:34px; text-align:center; background-size:contain; background-repeat:no-repeat; border:1px solid #dadada; box-sizing: border-box;}
+.main-tab{overflow:hidden; position:relative; margin-top: 16px; border-bottom:1px solid #bdb5a0;
+	.tabMenu{position:relative; width:100%; font-size:12px;
+      li{float:left; width:50%; min-height:34px; text-align:center; background-size:contain; background-repeat:no-repeat; background-position: center center; border-bottom:1px solid #dadada; box-sizing: border-box;
+		  a{display:block;}
+	  }
       li.on{}
       .menu1{background-image:url("../images/main-tab-title01.gif");}
       .menu2{background-image:url("../images/main-tab-title02.gif");}
-      .menu1.on{background-image:url("../images/main-tab-title01_on.gif");}
-      .menu2.on{background-image:url("../images/main-tab-title01_on.gif");}
+      .menu1.on{background-image:url("../images/main-tab-title01_on.gif"); border-bottom:3px solid #f08200;}
+      .menu2.on{background-image:url("../images/main-tab-title02_on.gif"); border-bottom:3px solid #f08200;}
 	}
-	.tab-content{clear:both;}
+	.tab-content{clear:both;
+		.swiper-slide{text-align:center;}
+		.swiper-button-prev{margin-top: -21px; background-position: 0 -93px;}
+		.swiper-button-next{margin-top: -21px; background-position: -37px -93px;}
+	}
 	.tabMenu1{}
 	.tabMenu2{display:none;}
 }
 
 //today
-.today{}
+.today{
+	.today-slide{clear:both;
+		.text-btn_box{position:absolute; right:0; z-index:10; width:37.8%; height: 100%; background:url("../images/today_bg.png") no-repeat; background-size:cover;
+			.text_box{text-align:center; letter-spacing:-1px; color:#fff;
+				h5{margin:23% 0 6%; font-size:4vw;}
+				.text{display:block; margin-bottom:5px; font-size:2vw;}
+			}
+			.btns{overflow:hidden; position:absolute; bottom:0; width:100%;
+				.swiper-button-prev{float:left; position:static; top:52.3%; width:33%; height:33%; margin-top:0; background:none;}
+				.plus_btn{float:left; position:static; top:47.5%; left:33.5%; z-index:10; width:33%; height:33%; margin-left:0.5%; background:none;}
+				.swiper-button-next{float:right; position:static; top:54.5%; width:33%; height:33%; margin-top:0; background:none;}
+				img{width:100%;}
+			}
+		}
+		.swiper-slide{
+			img{width:100%;}
+		}
+	}
+}
+
+.main-top{overflow:hidden; position:relative; padding:17px 4% 0; background:#f7f7f7; border-top:1px solid #bdb5a0;
+	h4{float:left; width:45.3%; height:30%;}
+	.more_btn{position:absolute; right:4%; bottom:10%; width:64px; height:17px; padding:10px; padding-right: 0; background:url("../images/sprite.png") no-repeat -134px 13px; background-size:450px 750px;}
+}
 
 //notice
-.notice{}
+.notice{margin:13px 0;
+	ul{padding:0 4%;
+		li{display:table; width:100%; padding:3% 0; border-bottom:1px solid #e9e9e9;
+			.icon{display:table-cell; width:38px; height:23px; background:url("../images/sprite.png") no-repeat; background-size:450px 750px;}
+			.guide_icon{background-position:-231px 0;}
+			.discount_icon{background-position:-283px 0;}
+			.text{display:table-cell; padding-left:3%; vertical-align:middle; letter-spacing:-1px; font-size:80%;}
+			&:after{clear:both; content:""; display:block;}
+		}
+	}
+}
 
 //video
-.video{}
+.vivi-site{}
 
 //푸터
 footer{height:100px; background:#fff;}
-
-//swiper
-.swiper-container-horizontal > .swiper-pagination{bottom:30px;}
-.swiper-button-prev{width:38px; height:45px; left:0; background:url('../images/sprite.png') 0 -32px no-repeat; background-size:300px 500px;}
-.swiper-button-next{width:38px; height:45px; right:0; background:url('../images/sprite.png') -48px -32px no-repeat; background-size:300px 500px;}
-.swiper-pagination{text-align:right;}
-.swiper-pagination-bullet{width:15px; height:15px; background:#5d5d5d; border:4px solid #000; opacity:0.5;}
-.swiper-pagination-bullet.swiper-pagination-bullet-active{width:28px; height:15px; background:#fff; border:4px solid #000; border-radius:20px; opacity:1;}
-.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 2px;}
-.swiper-container-horizontal > .swiper-pagination{bottom: 13px; right: 13px;}
-.swiper-container-horizontal>.swiper-pagination{width:auto;}

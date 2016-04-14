@@ -26,10 +26,10 @@
 <!-- 메뉴 -->
 		<aside>
 			<ul>
-				<li>메뉴1</li>
-				<li>메뉴2</li>
-				<li>메뉴3</li>
-				<li>메뉴4</li>
+				<li><h2>메뉴1</h2></li>
+				<li><h2>메뉴2</h2></li>
+				<li><h2>메뉴3</h2></li>
+				<li><h2>메뉴4</h2></li>
 			</ul>
 		</aside>
 <!-- 메뉴딤처리 -->
@@ -63,8 +63,12 @@
 <!-- 2단탭배너 -->
 		<div class="main-tab">
 			<ul class="tabMenu">
-				<li class="menu1 on" rel="tabMenu1"><a href="#tab1"><img src="images/blank.png" alt="할인프로모션" /></a></li>
-				<li class="menu2" rel="tabMenu2"><a href="#tab2"><img src="images/blank.png" alt="온라인 쿠폰" /></a></li>
+				<li class="menu1 on" rel="tabMenu1">
+					<h3><a href="#tab1"><img src="images/tabMenu_blank_bg.png" alt="할인프로모션" /></a></h3>
+				</li>
+				<li class="menu2" rel="tabMenu2">
+					<h3><a href="#tab2"><img src="images/tabMenu_blank_bg.png" alt="온라인 쿠폰" /></a></h3>
+				</li>
 			</ul>
 			<!-- #tab1 -->
 			<div class="tab-content swiper-container tabMenu1">
@@ -81,13 +85,64 @@
 		</div>
 
 <!-- 한국민속촌 정기공연 -->
-		<div class="today"></div>
+		<div class="today">
+			<div class="main-top">
+				<h4><img src="images/today_title.png" alt="한국민속촌 정기공연 머리말" /></h4>
+				<a href="#none" class="more_btn"><span class="hidden">더보기</span></a>
+			</div>
+			<div class="today-slide swiper-container">
+				<div class="text-btn_box">
+					<section class="text_box">
+						<h5>농악놀이</h5>
+						<span class="text"><b>1회공연</b> 11:00</span>
+						<span class="text"><b>2회공연</b> 14:00</span>
+						<span class="text"><b>장소</b> 공연장</span>
+					</section>
+					<!-- Add Arrows -->
+					<div class="btns">
+						<div class="swiper-button-prev"><img src="images/today-prev_btn.png" alt="" /></div>
+						<div class="plus_btn"><img src="images/today-plus_btn.png" alt="" /></div>
+						<div class="swiper-button-next"><img src="images/today-next_btn.png" alt="" /></div>
+					</div>
+				</div>
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="images/today_img01.jpg" alt="한국민속촌 정기공연 농악놀이" /></div>
+					<div class="swiper-slide"><img src="images/today_img01.jpg" alt="한국민속촌 정기공연 농악놀이" /></div>
+				</div>
+			</div>
+		</div>
 
 <!-- 공지사항 -->
-		<div class="notice"></div>
+		<div class="notice">
+			<div class="main-top">
+				<h4><img src="images/notice_title.png" alt="공지사항 머리말" /></h4>
+				<a href="#none" class="more_btn"><span class="hidden">더보기</span></a>
+			</div>
+			<ul>
+				<li>
+					<span class="icon guide_icon"></span>
+					<a href="#none" class="text">한국민속촌 정기공연 변경안내(4/18~)</a>
+				</li>
+				<li>
+					<span class="icon guide_icon"></span>
+					<a href="#none" class="text">아시안 푸드 레스토랑 '테라스그린' 오픈 안내</a>
+				</li>
+				<li>
+					<span class="icon discount_icon"></span>
+					<a href="#none" class="text">해피포인트 제휴 할인 이벤트</a>
+				</li>
+			</ul>
+		</div>
 
 <!-- 생생현장 -->
-		<div class="video"></div>
+		<div class="vivi-site">
+			<div class="main-top">
+				<h4><img src="images/vivi-site_title.png" alt="한국민속촌 생생현장 머리말" /></h4>
+			</div>
+			<div class="video_wrap">
+				<video></video>
+			</div>
+		</div>
 
 <!-- 하단푸터 -->
 		<footer></footer>
@@ -108,6 +163,13 @@
 			paginationClickable: true,
 			nextButton: '.tabMenu1 .swiper-button-next',
 			prevButton: '.tabMenu1 .swiper-button-prev',
+			autoplay: 2500,
+			loop:true
+		});
+		var mySwiper_c = new Swiper('.today-slide', {
+			paginationClickable: true,
+			nextButton: '.today-slide .swiper-button-next',
+			prevButton: '.today-slide .swiper-button-prev',
 			autoplay: 2500,
 			loop:true
 		});
