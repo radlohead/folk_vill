@@ -30,7 +30,7 @@ header{overflow:hidden; position:relative; height:32px; padding:15px 13px 0; bac
 		a{display:block;}
 		img{width:100%;}
 	}
-	.gnb_btn{display:block; float:right; width:17px; height:12px; padding:7px; background:url('../images/sprite.png') 3px 0px no-repeat; background-size:300px 500px;}
+	.gnb_btn{display:block; float:right; width:17px; height:12px; padding:7px; background:url('../images/sprite.png') no-repeat 3px 0px; background-size:300px 500px;}
 }
 
 //main-slide
@@ -110,7 +110,11 @@ header{overflow:hidden; position:relative; height:32px; padding:15px 13px 0; bac
 }
 
 //video
-.vivi-site{}
+.vivi-site{
+	.video{width:92%; padding:0 4%;
+		a{display:block;}
+	}
+}
 
 //푸터
 footer{height:100px; background:#fff;}

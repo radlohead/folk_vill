@@ -30,7 +30,7 @@ header { overflow: hidden; position: relative; height: 32px; padding: 15px 13px 
 header .logo { float: left; width: 118px; height: 25px; }
 header .logo a { display: block; }
 header .logo img { width: 100%; }
-header .gnb_btn { display: block; float: right; width: 17px; height: 12px; padding: 7px; background: url("../images/sprite.png") 3px 0px no-repeat; background-size: 300px 500px; }
+header .gnb_btn { display: block; float: right; width: 17px; height: 12px; padding: 7px; background: url("../images/sprite.png") no-repeat 3px 0px; background-size: 300px 500px; }
 
 .main-slide { position: relative; width: 100%; }
 .main-slide .swiper-slide img { width: 100%; }
@@ -76,6 +76,9 @@ header .gnb_btn { display: block; float: right; width: 17px; height: 12px; paddi
 .notice ul li .discount_icon { background-position: -283px 0; }
 .notice ul li .text { display: table-cell; padding-left: 3%; vertical-align: middle; letter-spacing: -1px; font-size: 80%; }
 .notice ul li:after { clear: both; content: ""; display: block; }
+
+.vivi-site .video { width: 92%; padding: 0 4%; }
+.vivi-site .video a { display: block; }
 
 footer { height: 100px; background: #fff; }
 
