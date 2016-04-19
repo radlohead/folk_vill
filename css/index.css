@@ -80,6 +80,22 @@ header .gnb_btn { display: block; float: right; width: 17px; height: 12px; paddi
 .vivi-site .video { width: 92%; padding: 0 4%; }
 .vivi-site .video a { display: block; }
 
-footer { height: 100px; background: #fff; }
+footer { height: 240px; padding: 0 3.5%; background: #312d22; color: #fff; }
+footer .sns_link { overflow: hidden; width: 167px; margin: 25px auto 15px; padding-top: 25px; }
+footer .sns_link li { float: left; width: 38px; height: 38px; margin-left: 5px; background: url("../images/sprite.png") no-repeat; background-size: 450px 750px; }
+footer .sns_link li a { display: block; text-indent: -9999px; }
+footer .sns_link .facebook { margin-left: 0; background-position: -140px -147px; }
+footer .sns_link .twitter { background-position: -185px -147px; }
+footer .sns_link .blog { background-position: -230px -147px; }
+footer .sns_link .kakaostory { background-position: -275px -147px; }
+footer .footer_link { display: table; overflow: hidden; width: 100%; font-size: 70%; border-collapse: collapse; }
+footer .footer_link li { display: table-cell; width: 31%; height: 30px; margin-left: -1px; text-align: center; border: 1px solid #938d79; box-sizing: border-box; vertical-align: middle; }
+footer .footer_link li a { color: #f5edd0; }
+footer .footer_link2 { overflow: hidden; margin: 20px 0 15px; font-size: 70%; opacity: 0.9; }
+footer .footer_link2 li { float: left; }
+footer .footer_link2 li a { color: #fff; }
+footer .footer_link2 .terms { margin-left: 7px; }
+footer .address-wrap { float: left; font-size: 70%; opacity: 0.9; }
+footer .foot-logo { display: block; float: right; width: 54px; height: 33px; margin: 10px 5px 0 0; background: url("../images/foot-logo.png") no-repeat; background-size: 100%; text-indent: -9999px; }
 
 /*# sourceMappingURL=index.css.map */
