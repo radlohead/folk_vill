@@ -108,7 +108,7 @@
 	background-repeat:no-repeat
 }
 .swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled {
-	opacity:.35;
+	opacity:0;
 	cursor:auto;
 	pointer-events:none
 }
