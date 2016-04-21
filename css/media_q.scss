@@ -1,9 +1,9 @@
 //480px
 @media all and (min-width:480px){
   .header_wrap{position:relative; height:69px;
-    header{height:48px; padding-top:21px;
-      .logo{width:177px; height:38px;}
-      .gnb_btn{width:26px; height:18px; background-position:-3px 2px; background-size:450px 750px;}
+    header{height:48px; padding:21px 3.5% 10px 3.5%;
+      //.logo{width:177px; height:38px;}
+      .gnb_btn{width:26px; height:18px; margin-top:4px; background-position:-3px 2px; background-size:450px 750px;}
     }
   }
   .main-tab{
@@ -11,6 +11,12 @@
       .swiper-button-prev{margin-top: -32px; background-position: 0 -139px; background-size: 450px 750px;}
       .swiper-button-next{margin-top: -32px; background-position: -72px -139px; background-size: 450px 750px;}
     }
+  }
+  .main-top{
+    h3{
+      img{width:75%;}
+    }
+    .more_btn{bottom:2px; width:64px; height:17px; background:url("../images/sprite.png") no-repeat -134px 13px; background-size:450px 750px;}
   }
   .vivi-site{
     .video{height:255px;}
@@ -28,8 +34,20 @@
       }
     }
   }
-  footer{font-size:105%;
+  footer{font-size:100%;
     .foot-logo{width:81px; height:50px; margin:15px 8px 0 0;}
+  }
+  .header_title_slide{
+    .slick-slider{padding-top:18px; font-size:105%;
+      .slick-arrow{top:20px; width:10px; height:16px; background-size:600px 1000px;}
+      .slick-prev{left:-7%; margin-left:3.5%; background-position:-450px -323px;}
+      .slick-next{right:-7%; margin-right:3.5%; background-position:-514px -323px;}
+    }
+  }
+  .swiper-pagination-bullet{width:22px; height:22px;}
+  .swiper-pagination-bullet.swiper-pagination-bullet-active{width:22px; height:22px;}
+  .main-slide{
+    .swiper-pagination{padding:6px 0 5px;}
   }
 }
 
@@ -37,13 +55,16 @@
 @media all and (min-width:640px){
   .header_wrap{position:relative; height:90px;
     header{height:64px; padding-top:26px;
-      .logo{width:236px; height:50px;}
+      //.logo{width:236px; height:50px;}
       .gnb_btn{width: 34px; height: 24px; background-position:-3px 2px; background-size: 600px 1000px;}
     }
   }
   .swiper-button-prev{width:76px; height:90px; background-position:0 -62px; background-size: 600px 1000px;}
   .swiper-button-next{width:76px; height:90px; background-position:-96px -62px; background-size: 600px 1000px;}
   .main-top{
+    h3{
+      img{width:100%;}
+    }
     .more_btn{width: 64px; height:17px; margin-top:8px; background-position:-201px 9px; background-size:600px 1000px;}
   }
   .main-tab{

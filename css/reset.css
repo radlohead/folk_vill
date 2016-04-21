@@ -26,5 +26,5 @@ textarea{-webkit-appearance:none}
 select{-webkit-appearance:menulist-text}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
 .hidden{width:1px; height:1px; position:absolute; clip:rect(1px,1px,1px,1px);}
-
+*:focus{outline:none;}
 

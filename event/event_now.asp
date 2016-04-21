@@ -29,7 +29,7 @@
 </head>
 <body>
 <!-- 메뉴 -->
-<? include "../inc/gnb.html"; ?>
+<!--#include virtual="/mobile/inc/gnb.html" -->
 
 <div class="wrap">
     <!-- 상단헤더 -->

@@ -27,6 +27,13 @@
 			nextButton: '.tabMenu1 .swiper-button-next',
 			prevButton: '.tabMenu1 .swiper-button-prev',
 			autoplay: 2500,
+			loop:true  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
+		});
+		var mySwiper_b2 = new Swiper('.tabMenu2', {
+			paginationClickable: true,
+			nextButton: '.tabMenu2 .swiper-button-next',
+			prevButton: '.tabMenu2 .swiper-button-prev',
+			autoplay: 2500,
 			loop:false  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
 		});
 		var mySwiper_c = new Swiper('.today-slide', {
@@ -48,7 +55,7 @@
 		<div class="header_wrap">
 			<header>
 				<h1 class="logo">
-					<a href="#">
+					<a href="#none">
 						<img src="images/logo.png" alt="" />
 					</a>
 				</h1>
@@ -104,7 +111,14 @@
 				<div class="swiper-button-prev"></div>
 			</div>
 			<!-- #tab2 -->
-			<div class="tab-content tabMenu2">탭2내용</div>
+			<div class="tab-content tabMenu2">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="images/main-tab1_img01.jpg" alt="수원삼성블루윙즈 제휴할인 안내 2016년 2월13일 부터 4월30일까지" /></div>
+				</div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
 		</div>
 
 <!-- 한국민속촌 정기공연 -->
@@ -164,38 +178,39 @@
 			</div>
 			<div class="video">
 				<!--<a href="#none"><img src="images/video_img.jpg" alt="한국민속촌 생생현장 영상" /></a>-->
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cD7EwWfuYDk" frameborder="0" allowfullscreen></iframe>
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cD7EwWfuYDk?&autoplay=1" frameborder="0" allowfullscreen></iframe>
 			</div>
+		</div>
+
+<!-- 하단푸터 -->
+		<div class="footer_wrap">
 			<ul class="sns_link">
 				<li class="facebook"><a href="#none">페이스북 링크</a></li>
 				<li class="twitter"><a href="#none">트위터 링크</a></li>
 				<li class="blog"><a href="#none">한국민속촌 블로그 링크</a></li>
 				<li class="kakaostory"><a href="#none">카카오스토리 링크</a></li>
 			</ul>
+			<footer>
+				<ul class="footer_link">
+					<li class="pc"><a href="#none">PC버전</a></li>
+					<li class="login"><a href="#none">로그인</a></li>
+					<li class="group"><a href="#none">단체프로그램</a></li>
+				</ul>
+				<ul class="footer_link2">
+					<li class="infor"><a href="#none">개인정보 취급방침</a> |</li>
+					<li class="terms"><a href="#none">이용약관</a></li>
+				</ul>
+				<div class="address-wrap">
+					<address>
+						<p>주소 : 경기도 용인시 기흥구 민속촌로 90</p>
+						<p>문의전화 : 031.288.0000</p>
+					</address>
+					<p>Copyright@KFV All Rights Reserved.</p>
+				</div>
+				<span class="foot-logo">한국민속촌 하단로고</span>
+			</footer>
 		</div>
-
-<!-- 하단푸터 -->
-		<footer>
-			<ul class="footer_link">
-				<li class="pc"><a href="#none">PC버전</a></li>
-				<li class="login"><a href="#none">로그인</a></li>
-				<li class="group"><a href="#none">단체프로그램</a></li>
-			</ul>
-			<ul class="footer_link2">
-				<li class="infor"><a href="#none">개인정보 취급방침</a> |</li>
-				<li class="terms"><a href="#none">이용약관</a></li>
-			</ul>
-			<div class="address-wrap">
-				<address>
-					<p>주소 : 경기도 용인시 기흥구 민속촌로 90</p>
-					<p>문의전화 : 031.288.0000</p>
-				</address>
-				<p>Copyright@KFV All Rights Reserved.</p>
-			</div>
-			<span class="foot-logo">한국민속촌 하단로고</span>
-		</footer>
 	</div>
-
 
 </body>
 </html>
