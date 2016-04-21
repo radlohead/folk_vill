@@ -1,12 +1,20 @@
-@media all and (min-width: 480px) { .header_wrap { position: relative; height: 48px; }
+@media all and (min-width: 480px) { .header_wrap { position: relative; height: 69px; }
   .header_wrap header { height: 48px; padding-top: 21px; }
   .header_wrap header .logo { width: 177px; height: 38px; }
   .header_wrap header .gnb_btn { width: 26px; height: 18px; background-position: -3px 2px; background-size: 450px 750px; }
   .main-tab .tab-content { clear: both; }
   .main-tab .tab-content .swiper-button-prev { margin-top: -32px; background-position: 0 -139px; background-size: 450px 750px; }
   .main-tab .tab-content .swiper-button-next { margin-top: -32px; background-position: -72px -139px; background-size: 450px 750px; }
-  .vivi-site .video { height: 255px; } }
-@media all and (min-width: 640px) { .header_wrap { position: relative; height: 64px; }
+  .vivi-site .video { height: 255px; }
+  aside.gnb { top: 23px; }
+  aside.gnb .gnb-header h1 { width: 192px; height: 30px; background-size: 192px 30px; }
+  aside.gnb .gnb-header .close-btn { width: 26px; height: 26px; background: url("../images/sprite.png") no-repeat -6px -237px; background-size: 450px 750px; }
+  aside.gnb .userinfo .home-btn { width: 27px; height: 27px; background: url("../images/sprite.png") no-repeat -74px -237px; background-size: 450px 750px; }
+  aside.gnb .userinfo .btns .login-btn { width: 126px; height: 35px; margin-right: 11px; }
+  aside.gnb .userinfo .btns .join-btn { width: 126px; height: 35px; margin-right: 11px; }
+  footer { font-size: 105%; }
+  footer .foot-logo { width: 81px; height: 50px; margin: 15px 8px 0 0; } }
+@media all and (min-width: 640px) { .header_wrap { position: relative; height: 90px; }
   .header_wrap header { height: 64px; padding-top: 26px; }
   .header_wrap header .logo { width: 236px; height: 50px; }
   .header_wrap header .gnb_btn { width: 34px; height: 24px; background-position: -3px 2px; background-size: 600px 1000px; }

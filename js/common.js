@@ -3,13 +3,16 @@ $(document).ready(function(){
 	$(".gnb_btn").click(function(){
 		if($(".dim").css("display") != "block"){
 			$(".dim, aside.gnb").css("display","block");
+			$(".wrap").css("display","none");
 		}else if($(".dim").css("display") == "block"){
 			$(".dim, aside.gnb").css("display","none");
+			$(".wrap").css("display","block");
 		}
 	});
 
 	$(".gnb .close-btn").click(function(){
-		$(this).add("aside").css("display","none");
+		$(".dim, aside.gnb").css("display","none");
+		$(".wrap").css("display","block");
 	});
 
 //메뉴버튼 클릭시 나오는 메뉴아래 깔리는 bg device height 값에 맞춤
@@ -82,5 +85,8 @@ $(document).ready(function(){
 			}
 		});
 	})(jQuery);
+
+	//gnb실행구문
+	$('.navi').accordion();
 
 });
