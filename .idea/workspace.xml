@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.9.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/a03d6399076de249a0a4c443d889a5ca7d6fe821/index.scssc" afterPath="$PROJECT_DIR$/css/.sass-cache/a03d6399076de249a0a4c443d889a5ca7d6fe821/index.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/a03d6399076de249a0a4c443d889a5ca7d6fe821/media_q.scssc" afterPath="$PROJECT_DIR$/css/.sass-cache/a03d6399076de249a0a4c443d889a5ca7d6fe821/media_q.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/main-content-menu01.gif" afterPath="$PROJECT_DIR$/images/main-content-menu01.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/main-content-menu02.gif" afterPath="$PROJECT_DIR$/images/main-content-menu02.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/main-content-menu03.gif" afterPath="$PROJECT_DIR$/images/main-content-menu03.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/main-content-menu04.gif" afterPath="$PROJECT_DIR$/images/main-content-menu04.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/main-tab-title01.gif" afterPath="$PROJECT_DIR$/images/main-tab-title01.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/main-tab-title01_on.gif" afterPath="$PROJECT_DIR$/images/main-tab-title01_on.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/main-tab-title02.gif" afterPath="$PROJECT_DIR$/images/main-tab-title02.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/main-tab-title02_on.gif" afterPath="$PROJECT_DIR$/images/main-tab-title02_on.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/notice_title.png" afterPath="$PROJECT_DIR$/images/notice_title.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/tabMenu_blank_bg.png" afterPath="$PROJECT_DIR$/images/tabMenu_blank_bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/today_title.png" afterPath="$PROJECT_DIR$/images/today_title.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/vivi-site_title.png" afterPath="$PROJECT_DIR$/images/vivi-site_title.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css.map" afterPath="$PROJECT_DIR$/css/index.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.scss" afterPath="$PROJECT_DIR$/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/media_q.css" afterPath="$PROJECT_DIR$/css/media_q.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/media_q.css.map" afterPath="$PROJECT_DIR$/css/media_q.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/media_q.scss" afterPath="$PROJECT_DIR$/css/media_q.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/event_now.html" afterPath="$PROJECT_DIR$/event/event_now.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.asp" afterPath="$PROJECT_DIR$/index.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6174004">
+            <state vertical-scroll-proportion="-7.0119047">
               <caret line="113" column="73" selection-start-line="113" selection-start-column="73" selection-end-line="113" selection-end-column="73" />
               <folding />
             </state>
@@ -90,18 +66,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-31.214285">
-              <caret line="79" column="44" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+            <state vertical-scroll-proportion="-36.642857">
+              <caret line="54" column="81" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.asp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.asp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state vertical-scroll-proportion="2.8029704">
+              <caret line="149" column="33" selection-start-line="149" selection-start-column="33" selection-end-line="149" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -172,11 +148,11 @@
         <option value="$PROJECT_DIR$/inc/gnb.html" />
         <option value="$PROJECT_DIR$/event/event_now.asp" />
         <option value="$PROJECT_DIR$/js/jquery-1.9.1.min.js" />
-        <option value="$PROJECT_DIR$/index.asp" />
         <option value="$PROJECT_DIR$/event/event_now.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/media_q.scss" />
         <option value="$PROJECT_DIR$/css/index.scss" />
+        <option value="$PROJECT_DIR$/index.asp" />
       </list>
     </option>
   </component>
@@ -762,14 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/event/event_now.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -786,18 +754,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.214285">
-          <caret line="79" column="44" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+        <state vertical-scroll-proportion="-7.0119047">
+          <caret line="113" column="73" selection-start-line="113" selection-start-column="73" selection-end-line="113" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.scss">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6174004">
-          <caret line="113" column="73" selection-start-line="113" selection-start-column="73" selection-end-line="113" selection-end-column="73" />
+        <state vertical-scroll-proportion="-36.642857">
+          <caret line="54" column="81" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.8029704">
+          <caret line="149" column="33" selection-start-line="149" selection-start-column="33" selection-end-line="149" selection-end-column="33" />
           <folding />
         </state>
       </provider>
