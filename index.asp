@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
 <link rel="stylesheet" type="text/css" href="css/index.css" />
 <link rel="stylesheet" type="text/css" href="css/media_q.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/common.js"></script>
 <script>

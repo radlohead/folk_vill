@@ -12,11 +12,11 @@
       .swiper-button-next{margin-top: -32px; background-position: -72px -139px; background-size: 450px 750px;}
     }
   }
-  .main-top{
+  .main-top{padding:26px 4% 26px;
     h3{
       img{width:75%;}
     }
-    .more_btn{bottom:2px; width:64px; height:17px; background:url("../images/sprite.png") no-repeat -134px 13px; background-size:450px 750px;}
+    .more_btn{bottom:15px; width:48px; height:12px; background:url("../images/sprite.png") no-repeat -149px 10px; background-size:450px 750px;}
   }
   .vivi-site{
     .video{height:255px;}
@@ -61,13 +61,17 @@
   }
   .swiper-button-prev{width:76px; height:90px; background-position:0 -62px; background-size: 600px 1000px;}
   .swiper-button-next{width:76px; height:90px; background-position:-96px -62px; background-size: 600px 1000px;}
-  .main-top{
+
+  .main-top{padding:34px 4% 34px;
     h3{
       img{width:100%;}
     }
-    .more_btn{width: 64px; height:17px; margin-top:8px; background-position:-201px 9px; background-size:600px 1000px;}
+    .more_btn{bottom:25px; width: 64px; height:17px; margin-top:8px; background-position:-201px 9px; background-size:600px 1000px;}
   }
   .main-tab{
+    .tabMenu{
+      li{background-size:contain;}
+    }
     .tab-content{clear:both;
       .swiper-button-prev{margin-top: -42px; background-position: 0 -185px; background-size: 600px 1000px;}
       .swiper-button-next{margin-top: -42px; background-position: -74px -185px; background-size: 600px 1000px;}
