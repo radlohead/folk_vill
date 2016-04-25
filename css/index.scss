@@ -69,11 +69,11 @@ aside.gnb{display:none; position:absolute; top:15px; right:0; width:93%; height:
 }
 
 //상단헤더
-.header_wrap{position:relative; height:48px;
-	header{overflow:hidden; position:fixed; width:93%; height:32px; padding:15px 3.5% 0px 3.5%; background:#fff; z-index:500;
-		.logo{float: left; width:44%;
+.header_wrap{position:relative; height:45px;
+	header{overflow:hidden; position:fixed; width:93%; padding:15px 3.5% 11px 3.5%; background:#fff; z-index:500;
+		.logo{float: left; width:44%; font-size:0;
 			a{display:block;}
-			img{width:100%;}
+			//img{width:100%;}
 		}
 		.gnb_btn{display:block; float:right; width:17px; height:12px; margin:-4px -3px 0 0; padding:7px; background:url('../images/sprite.png') no-repeat 3px 4px; background-size:300px 500px;}
 	}
@@ -99,7 +99,7 @@ aside.gnb{display:none; position:absolute; top:15px; right:0; width:93%; height:
 //main-tab
 .main-tab{overflow:hidden; position:relative; margin-top: 16px;
 	.tabMenu{overflow:hidden; position:relative; width:100%;
-      li{float:left; width:46.1%; margin-left:-1px; text-align:center; background-size:contain; background-repeat:no-repeat; background-position: left center; box-sizing: border-box;
+      li{float:left; width:46.1%; text-align:center; background-size:contain; background-repeat:no-repeat; background-position: left center; box-sizing: border-box;
 		  a{display:block;}
 	  }
 	  li:first-child{margin-left:3.9%; background-position: right center;}
@@ -210,7 +210,7 @@ footer{overflow:hidden; padding:22px 3.5% 30px; background:#312d22; color:#fff; 
 /*-------------------------------------------------------- index-page end ----------------------------------------------------------------- */
 /*-------------------------------------------------------- sub-page start ----------------------------------------------------------------- */
 
-.header_title_slide{position:relative; margin-bottom:26px; border-bottom:1px solid #312d22;
+.header_title_slide{position:relative; margin-bottom:23px; border-bottom:1px solid #312d22;
 	h2{padding:10px 0; background:#312d22; font-size:95%; text-indent:3.5%; color:#fff;}
 	.slick-slider{width:87%; margin:0 auto; padding:12px 0 0; font-size:75%;
 		.slick-list{overflow:hidden;
@@ -224,7 +224,20 @@ footer{overflow:hidden; padding:22px 3.5% 30px; background:#312d22; color:#fff; 
 	}
 }
 .contents{padding:0 3.5%;
-	.nongak{
+	.detail-show{
+		.detail-head{overflow: hidden; margin-bottom: 19px;
+			h3{float:left; width:42%; line-height:110%; font-size:135%; color:#333; font-weight:bold; letter-spacing:-1px;}
+			.text-box{float:right; width:58%; color:#000; letter-spacing:-0.05em;
+				.text{display:block; font-size:75%;}
+				.show-time{display:block; float:left; margin-top:11px; font-size:65%;
+					&::before{content:""; display:block; float:left; width:14px; height:14px; margin-top: 1px; margin-right:8px; background:url("../images/sprite.png") no-repeat -118px -209px; background-size:300px 500px;}
+					.time{color:#666;}
+					.line{display:inline-block; width:1px; height:5px; margin:-4px 11px 0; background: #999; vertical-align: middle;}
+				}
+			}
+		}
+	}
+	.detail-content{
 		img{width:100%;}
 	}
 	.preview-slide-wrap{margin-top:25px;

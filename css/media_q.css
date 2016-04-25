@@ -1,6 +1,6 @@
-@media all and (min-width: 480px) { .header_wrap { position: relative; height: 69px; }
-  .header_wrap header { height: 48px; padding: 21px 3.5% 10px 3.5%; }
-  .header_wrap header .gnb_btn { width: 26px; height: 18px; margin-top: 4px; background-position: -3px 2px; background-size: 450px 750px; }
+@media all and (min-width: 480px) { .header_wrap { position: relative; height: 68px; }
+  .header_wrap header { padding: 23px 3.5% 17px 3.5%; }
+  .header_wrap header .gnb_btn { width: 26px; height: 18px; background-position: -3px 2px; background-size: 450px 750px; }
   .main-tab .tab-content { clear: both; }
   .main-tab .tab-content .swiper-button-prev { margin-top: -32px; background-position: 0 -139px; background-size: 450px 750px; }
   .main-tab .tab-content .swiper-button-next { margin-top: -32px; background-position: -72px -139px; background-size: 450px 750px; }
@@ -22,9 +22,16 @@
   .header_title_slide .slick-slider .slick-next { right: -7%; margin-right: 3.5%; background-position: -514px -323px; }
   .swiper-pagination-bullet { width: 22px; height: 22px; }
   .swiper-pagination-bullet.swiper-pagination-bullet-active { width: 22px; height: 22px; }
-  .main-slide .swiper-pagination { padding: 6px 0 5px; } }
+  .main-slide .swiper-pagination { padding: 6px 0 5px; }
+  .contents .detail-show .detail-head { margin-bottom: 19px; }
+  .contents .detail-show .detail-head h3 { font-size: 200%; letter-spacing: -2px; }
+  .contents .detail-show .detail-head .text-box { letter-spacing: -0.05em; }
+  .contents .detail-show .detail-head .text-box .text { font-size: 115%; }
+  .contents .detail-show .detail-head .text-box .show-time { margin-top: 17px; font-size: 95%; }
+  .contents .detail-show .detail-head .text-box .show-time::before { width: 21px; height: 21px; margin-top: 1px; margin-right: 12px; background: url("../images/sprite.png") no-repeat -176px -313px; background-size: 450px 750px; }
+  .contents .detail-show .detail-head .text-box .show-time .line { height: 8px; } }
 @media all and (min-width: 640px) { .header_wrap { position: relative; height: 90px; }
-  .header_wrap header { height: 64px; padding-top: 26px; }
+  .header_wrap header { padding: 30px 3.5% 22px 3.5%; }
   .header_wrap header .gnb_btn { width: 34px; height: 24px; background-position: -3px 2px; background-size: 600px 1000px; }
   .swiper-button-prev { width: 76px; height: 90px; background-position: 0 -62px; background-size: 600px 1000px; }
   .swiper-button-next { width: 76px; height: 90px; background-position: -96px -62px; background-size: 600px 1000px; }
@@ -35,6 +42,13 @@
   .main-tab .tab-content { clear: both; }
   .main-tab .tab-content .swiper-button-prev { margin-top: -42px; background-position: 0 -185px; background-size: 600px 1000px; }
   .main-tab .tab-content .swiper-button-next { margin-top: -42px; background-position: -74px -185px; background-size: 600px 1000px; }
-  .vivi-site .video { height: 360px; } }
+  .vivi-site .video { height: 360px; }
+  .contents .detail-show .detail-head { margin-bottom: 19px; }
+  .contents .detail-show .detail-head h3 { font-size: 270%; letter-spacing: -3px; }
+  .contents .detail-show .detail-head .text-box { letter-spacing: -0.05em; }
+  .contents .detail-show .detail-head .text-box .text { font-size: 150%; }
+  .contents .detail-show .detail-head .text-box .show-time { margin-top: 22px; font-size: 130%; }
+  .contents .detail-show .detail-head .text-box .show-time::before { width: 28px; height: 28px; margin-top: 1px; margin-right: 16px; background: url("../images/sprite.png") no-repeat -236px -418px; background-size: 600px 1000px; }
+  .contents .detail-show .detail-head .text-box .show-time .line { height: 10px; } }
 
 /*# sourceMappingURL=media_q.css.map */

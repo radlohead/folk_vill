@@ -89,4 +89,14 @@ $(document).ready(function(){
 	//gnb실행구문
 	$('.navi').accordion();
 
+	(function(){
+		$(document).ready(function(){
+			$(window).trigger('resize');
+		});
+		$(window).resize(function(){
+			var h_height = $("header").outerHeight();
+			$(".header_wrap").outerHeight(h_height);
+		});
+	})();
+
 });
