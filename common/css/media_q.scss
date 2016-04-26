@@ -14,7 +14,7 @@
   }
   .main-top{padding:26px 4% 26px;
     h3{
-      img{width:75%;}
+      img{max-width:75%;}
     }
     .more_btn{bottom:15px; width:48px; height:12px; background:url("../images/sprite.png") no-repeat -149px 10px; background-size:450px 750px;}
   }
@@ -79,7 +79,7 @@
 
   .main-top{padding:34px 4% 34px;
     h3{
-      img{width:100%;}
+      img{max-width:100%;}
     }
     .more_btn{bottom:25px; width: 64px; height:17px; margin-top:8px; background-position:-201px 9px; background-size:600px 1000px;}
   }
@@ -95,6 +95,7 @@
   .vivi-site{
     .video{height:360px;}
   }
+
   .contents{
     .detail-show{
       .detail-head{margin-bottom: 19px;
@@ -109,4 +110,5 @@
       }
     }
   }
+
 }

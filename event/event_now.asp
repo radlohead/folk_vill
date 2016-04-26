@@ -5,15 +5,13 @@
     <title>한국 민속촌 모바일 사이트</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
-    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="../css/index.css" />
-    <link rel="stylesheet" type="text/css" href="../css/media_q.css" />
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="../js/swiper.min.js"></script>
-    <script src="../js/slick.min.js"></script>
-    <script src="../js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="../common/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/media_q.css" />
+    <script src="../common/js/jquery-1.9.1.min.js"></script>
+    <script src="../common/js/slick.min.js"></script>
+    <script src="../common/js/common.js"></script>
     <script>
         $(document).ready(function(){
             $('.multiple-items').slick({
@@ -29,7 +27,7 @@
 </head>
 <body>
 <!-- 메뉴 -->
-<!--#include virtual="/mobile/inc/gnb.html" -->
+<!--#include virtual="/mobile/common/inc/gnb.html" -->
 
 <div class="wrap">
     <!-- 상단헤더 -->
@@ -46,16 +44,27 @@
     <div class="header_title_slide">
         <h2>행사·공연</h2>
         <div class="slider multiple-items">
-            <a>농악놀이</a>
-            <a>줄타기</a>
-            <a>마상무예</a>
-            <a>전통혼례</a>
-            <a>전통혼례</a>
+            <a href="#none">농악놀이</a>
+            <a href="#none">줄타기</a>
+            <a href="#none">마상무예</a>
+            <a href="#none">전통혼례</a>
+            <a href="#none">전통혼례</a>
         </div>
     </div>
 
     <div class="contents">
-        <div class="nongak"><img src="../images/nongak_bg.jpg" alt="" /></div>
+        <div class="detail-show">
+            <div class="detail-head">
+                <h3>농악놀이</h3>
+                <div class="text-box">
+                    <span class="text">민족의 얼과 흥을 느낄 수 있는 <br/> 한국민속촌 대표 공연</span>
+                    <span class="show-time">1회공연 <span class="time">10:30</span>  <span class="line"></span>  2회공연 <span class="time">14:00</span></span>
+                </div>
+            </div>
+            <div class="detail-content">
+                <img src="../images/nongak_img.jpg" alt="한국농악의 중심 명인 정인삼 선생" />
+            </div>
+        </div>
         <div class="preview-slide-wrap">
             <div class="preview-slide slider single-item">
                 <div><img src="../images/preview_slide01.jpg" alt="농악놀이" /></div>

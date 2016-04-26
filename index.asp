@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8" />
-<title>한국 민속촌 모바일 사이트</title>
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
-<meta name="format-detection" content="telephone=no, address=no, email=no" />
-<link rel="stylesheet" type="text/css" href="css/reset.css" />
-<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
-<link rel="stylesheet" type="text/css" href="css/index.css" />
-<link rel="stylesheet" type="text/css" href="css/media_q.css" />
+    <meta charset="UTF-8" />
+    <title>한국 민속촌 모바일 사이트</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <link rel="stylesheet" type="text/css" href="common/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="common/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="common/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="common/css/media_q.css" />
+    <script src="common/js/jquery-1.9.1.min.js"></script>
+    <script src="common/js/swiper.min.js"></script>
+    <script src="common/js/common.js"></script>
+    <script>
+        $(document).ready(function(){
+            var mySwiper_a = new Swiper('.main-slide', {
+                pagination:'.main-slide .swiper-pagination',
+                paginationClickable: true,
+                nextButton: '.main-slide .swiper-button-next',
+                prevButton: '.main-slide .swiper-button-prev',
+                autoplay: 2500,
+                loop:true
+            });
+            var mySwiper_b = new Swiper('.tabMenu1', {
+                paginationClickable: true,
+                nextButton: '.tabMenu1 .swiper-button-next',
+                prevButton: '.tabMenu1 .swiper-button-prev',
+                autoplay: 2500,
+                loop:true  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
+            });
+            var mySwiper_b2 = new Swiper('.tabMenu2', {
+                paginationClickable: true,
+                nextButton: '.tabMenu2 .swiper-button-next',
+                prevButton: '.tabMenu2 .swiper-button-prev',
+                autoplay: 2500,
+                loop:false  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
+            });
+            var mySwiper_c = new Swiper('.today-slide', {
+                paginationClickable: true,
+                nextButton: '.today-slide .swiper-button-next',
+                prevButton: '.today-slide .swiper-button-prev',
+                autoplay: 2500,
+                loop:true
+            });
+        });
+    </script>
 </head>
 <body>
 <!-- 메뉴 -->
-<!--#include virtual="/mobile/inc/gnb.html" -->
+<!--#include virtual="/mobile/common/inc/gnb.html" -->
 
 	<div class="wrap">
 <!-- 상단헤더 -->
@@ -141,7 +177,6 @@
 				<h3><img src="images/vivi-site_title.png" alt="한국민속촌 생생현장 머리말" /></h3>
 			</div>
 			<div class="video">
-				<!--<a href="#none"><img src="images/video_img.jpg" alt="한국민속촌 생생현장 영상" /></a>-->
 				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cD7EwWfuYDk" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
@@ -176,41 +211,5 @@
 		</div>
 	</div>
 
-<script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/common.js"></script>
-<script>
-	$(document).ready(function(){
-		var mySwiper_a = new Swiper('.main-slide', {
-			pagination:'.main-slide .swiper-pagination',
-			paginationClickable: true,
-			nextButton: '.main-slide .swiper-button-next',
-			prevButton: '.main-slide .swiper-button-prev',
-			autoplay: 2500,
-			loop:true
-		});
-		var mySwiper_b = new Swiper('.tabMenu1', {
-			paginationClickable: true,
-			nextButton: '.tabMenu1 .swiper-button-next',
-			prevButton: '.tabMenu1 .swiper-button-prev',
-			autoplay: 2500,
-			loop:true  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
-		});
-		var mySwiper_b2 = new Swiper('.tabMenu2', {
-			paginationClickable: true,
-			nextButton: '.tabMenu2 .swiper-button-next',
-			prevButton: '.tabMenu2 .swiper-button-prev',
-			autoplay: 2500,
-			loop:false  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
-		});
-		var mySwiper_c = new Swiper('.today-slide', {
-			paginationClickable: true,
-			nextButton: '.today-slide .swiper-button-next',
-			prevButton: '.today-slide .swiper-button-prev',
-			autoplay: 2500,
-			loop:true
-		});
-	});
-</script>
 </body>
 </html>
