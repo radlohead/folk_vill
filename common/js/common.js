@@ -99,4 +99,33 @@ $(document).ready(function(){
 		});
 	})();
 
+	//메인 한국민속촌 정기공연 +버튼에 url삽입
+	//function plus_href(){
+	//	$(document).on("ready", function(){
+    //
+	//		function href(){
+	//			var active = $(".today .swiper-slide-active > a").attr("href"),
+	//				plus_btn = $(".plus_btn > a"),
+	//				idx = plus_btn.attr("data-index");
+    //
+	//				plus_btn.attr("href", active);
+	//			console.log("~~~");
+	//		}
+	//		href();
+    //
+	//		setTimeout(function(){
+	//			if(idx < 2){
+	//				idx++;
+	//			}else if(idx == 2){
+	//				idx = 1;
+	//			}
+	//			plus_btn.attr("href", active);
+	//		},1);
+    //
+	//		var timer = setInterval(href, 2500);
+	//		//console.log(idx);
+	//	});
+	//}
+	//plus_href();
+
 });

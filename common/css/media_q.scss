@@ -16,7 +16,7 @@
     h3{
       img{max-width:75%;}
     }
-    .more_btn{bottom:15px; width:48px; height:12px; background:url("../images/sprite.png") no-repeat -149px 10px; background-size:450px 750px;}
+    .more_btn{bottom:15px; width:48px; height:12px; background:url("../../images/sprite.png") no-repeat -149px 10px; background-size:450px 750px;}
   }
   .vivi-site{
     .video{height:255px;}
@@ -24,10 +24,10 @@
   aside.gnb{top:23px;
     .gnb-header{
       h1{width:192px; height:30px; background-size:192px 30px;}
-      .close-btn{width:26px; height:26px; background:url("../images/sprite.png") no-repeat -6px -237px; background-size:450px 750px;}
+      .close-btn{width:26px; height:26px; background:url("../../images/sprite.png") no-repeat -6px -237px; background-size:450px 750px;}
     }
     .userinfo{
-      .home-btn{width:27px; height:27px; background:url("../images/sprite.png") no-repeat -74px -237px; background-size:450px 750px;}
+      .home-btn{width:27px; height:27px; background:url("../../images/sprite.png") no-repeat -74px -237px; background-size:450px 750px;}
       .btns{
         .login-btn{width:126px; height:35px; margin-right:11px;}
         .join-btn{width:126px; height:35px; margin-right:11px;}
@@ -56,12 +56,33 @@
         .text-box{letter-spacing:-0.05em;
           .text{font-size:115%;}
           .show-time{margin-top:17px; font-size:95%;
-            &::before{width:21px; height:21px; margin-top: 1px; margin-right:12px; background:url("../images/sprite.png") no-repeat -176px -313px; background-size:450px 750px;}
+            &::before{width:21px; height:21px; margin-top: 1px; margin-right:12px; background:url("../../images/sprite.png") no-repeat -176px -313px; background-size:450px 750px;}
             .line{height:8px;}
           }
         }
       }
     }
+    .detail-guide{
+      .detail-head{margin-bottom: 19px;
+        h3{font-size:200%; letter-spacing:-2px;}
+        .text-box{letter-spacing:-0.05em;
+          .text{font-size:115%;
+            &::before{width:23px; height:23px; margin-top:3px; margin-right:12px; background:url("../../images/sprite.png") no-repeat -237px -312px; background-size:450px 750px;}
+          }
+          .guide-time{margin-top:17px; margin-left:34px; font-size:95%;}
+        }
+      }
+    }
+    .detail-member{
+      .detail-head{margin-bottom: 19px;
+        h3{font-size:200%; letter-spacing:-2px;}
+        .text-box{letter-spacing:-0.05em;
+          .text{font-size:115%;}
+          .guide-time{margin-top:17px; margin-left:34px; font-size:95%;}
+        }
+      }
+    }
+
   }
 
 }
@@ -103,12 +124,33 @@
         .text-box{letter-spacing:-0.05em;
           .text{font-size:150%;}
           .show-time{margin-top:22px; font-size:130%;
-            &::before{width:28px; height:28px; margin-top: 1px; margin-right:16px; background:url("../images/sprite.png") no-repeat -236px -418px; background-size:600px 1000px;}
+            &::before{width:28px; height:28px; margin-top: 1px; margin-right:16px; background:url("../../images/sprite.png") no-repeat -236px -418px; background-size:600px 1000px;}
             .line{height:10px;}
           }
         }
       }
     }
+    .detail-guide{
+      .detail-head{margin-bottom: 19px;
+        h3{font-size:270%; letter-spacing:-3px;}
+        .text-box{letter-spacing:-0.05em;
+          .text{font-size:150%;
+            &::before{width:30px; height:30px; margin-top:4px; margin-right:16px; background:url("../../images/sprite.png") no-repeat -316px -416px; background-size:600px 1000px;}
+          }
+          .guide-time{margin-top:22px; margin-left:45px; font-size:130%;}
+        }
+      }
+    }
+    .detail-member{
+      .detail-head{margin-bottom: 19px;
+        h3{font-size:270%; letter-spacing:-3px;}
+        .text-box{letter-spacing:-0.05em;
+          .text{font-size:150%;}
+          .guide-time{margin-top:22px; margin-left:45px; font-size:130%;}
+        }
+      }
+    }
+
   }
 
 }
