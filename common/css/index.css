@@ -196,6 +196,21 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .contents .detail-content .main-tab.traffic .tabMenu .menu2.on { background-image: url("../../images/traffic-tab-title02_on.gif"); }
 .contents .detail-content .main-tab.traffic .tab-content { clear: both; margin-bottom: 15px; }
 .contents .detail-content .main-tab.traffic .tabMenu2 { display: none; }
+.contents .detail-content .main-tab.map { overflow: hidden; position: relative; }
+.contents .detail-content .main-tab.map .tabMenu { overflow: hidden; position: relative; width: 100%; margin-bottom: 30px; }
+.contents .detail-content .main-tab.map .tabMenu li { float: left; width: 25%; text-align: center; background-size: cover; background-repeat: no-repeat; background-position: left center; box-sizing: border-box; }
+.contents .detail-content .main-tab.map .tabMenu li a { display: block; }
+.contents .detail-content .main-tab.map .tabMenu li:first-child { margin-left: 0; background-position: right center; }
+.contents .detail-content .main-tab.map .tabMenu .menu1 { background-image: url("../../images/map-tab-title01.png"); }
+.contents .detail-content .main-tab.map .tabMenu .menu2 { background-image: url("../../images/map-tab-title02.png"); }
+.contents .detail-content .main-tab.map .tabMenu .menu3 { background-image: url("../../images/map-tab-title03.png"); }
+.contents .detail-content .main-tab.map .tabMenu .menu4 { background-image: url("../../images/map-tab-title04.png"); }
+.contents .detail-content .main-tab.map .tabMenu .menu1.on { background-image: url("../../images/map-tab-title01_on.png"); }
+.contents .detail-content .main-tab.map .tabMenu .menu2.on { background-image: url("../../images/map-tab-title02_on.png"); }
+.contents .detail-content .main-tab.map .tabMenu .menu3.on { background-image: url("../../images/map-tab-title03_on.png"); }
+.contents .detail-content .main-tab.map .tabMenu .menu4.on { background-image: url("../../images/map-tab-title04_on.png"); }
+.contents .detail-content .main-tab.map .tab-content { clear: both; margin-bottom: 15px; }
+.contents .detail-content .main-tab.map .tabMenu2 { display: none; }
 .contents .preview-slide-wrap { margin-top: 25px; }
 .contents .preview-slide-wrap .preview-slide img { width: 100%; }
 .contents .preview-slide-wrap .preview-slide .slick-arrow { display: inline-block; position: absolute; z-index: 10; top: 40%; width: 26px; height: 26px; background: url("../../images/sprite.png") no-repeat; background-size: 300px 500px; border: 0; text-indent: -9999px; }
