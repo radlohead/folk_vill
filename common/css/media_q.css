@@ -23,20 +23,20 @@
   .swiper-pagination-bullet { width: 22px; height: 22px; }
   .swiper-pagination-bullet.swiper-pagination-bullet-active { width: 22px; height: 22px; }
   .main-slide .swiper-pagination { padding: 6px 0 5px; }
-  .contents .detail-show .detail-head { margin-bottom: 19px; }
+  .contents .detail-show .detail-head { margin-bottom: 45px; }
   .contents .detail-show .detail-head h3 { font-size: 200%; letter-spacing: -2px; }
   .contents .detail-show .detail-head .text-box { letter-spacing: -0.05em; }
   .contents .detail-show .detail-head .text-box .text { font-size: 115%; }
   .contents .detail-show .detail-head .text-box .show-time { margin-top: 17px; font-size: 95%; }
   .contents .detail-show .detail-head .text-box .show-time::before { width: 21px; height: 21px; margin-top: 1px; margin-right: 12px; background: url("../../images/sprite.png") no-repeat -176px -313px; background-size: 450px 750px; }
   .contents .detail-show .detail-head .text-box .show-time .line { height: 8px; }
-  .contents .detail-guide .detail-head { margin-bottom: 19px; }
+  .contents .detail-guide .detail-head { margin-bottom: 45px; }
   .contents .detail-guide .detail-head h3 { font-size: 200%; letter-spacing: -2px; }
   .contents .detail-guide .detail-head .text-box { letter-spacing: -0.05em; }
   .contents .detail-guide .detail-head .text-box .text { font-size: 115%; }
   .contents .detail-guide .detail-head .text-box .text::before { width: 23px; height: 23px; margin-top: 3px; margin-right: 12px; background: url("../../images/sprite.png") no-repeat -237px -312px; background-size: 450px 750px; }
   .contents .detail-guide .detail-head .text-box .guide-time { margin-top: 17px; margin-left: 34px; font-size: 95%; }
-  .contents .detail-member .detail-head { margin-bottom: 19px; }
+  .contents .detail-member .detail-head { margin-bottom: 45px; }
   .contents .detail-member .detail-head h3 { font-size: 200%; letter-spacing: -2px; }
   .contents .detail-member .detail-head .text-box { letter-spacing: -0.05em; }
   .contents .detail-member .detail-head .text-box .text { font-size: 115%; }
@@ -54,20 +54,20 @@
   .main-tab .tab-content .swiper-button-prev { margin-top: -42px; background-position: 0 -185px; background-size: 600px 1000px; }
   .main-tab .tab-content .swiper-button-next { margin-top: -42px; background-position: -74px -185px; background-size: 600px 1000px; }
   .vivi-site .video { height: 360px; }
-  .contents .detail-show .detail-head { margin-bottom: 19px; }
+  .contents .detail-show .detail-head { margin-bottom: 60px; }
   .contents .detail-show .detail-head h3 { font-size: 270%; letter-spacing: -3px; }
   .contents .detail-show .detail-head .text-box { letter-spacing: -0.05em; }
   .contents .detail-show .detail-head .text-box .text { font-size: 150%; }
   .contents .detail-show .detail-head .text-box .show-time { margin-top: 22px; font-size: 130%; }
   .contents .detail-show .detail-head .text-box .show-time::before { width: 28px; height: 28px; margin-top: 1px; margin-right: 16px; background: url("../../images/sprite.png") no-repeat -236px -418px; background-size: 600px 1000px; }
   .contents .detail-show .detail-head .text-box .show-time .line { height: 10px; }
-  .contents .detail-guide .detail-head { margin-bottom: 19px; }
+  .contents .detail-guide .detail-head { margin-bottom: 60px; }
   .contents .detail-guide .detail-head h3 { font-size: 270%; letter-spacing: -3px; }
   .contents .detail-guide .detail-head .text-box { letter-spacing: -0.05em; }
   .contents .detail-guide .detail-head .text-box .text { font-size: 150%; }
   .contents .detail-guide .detail-head .text-box .text::before { width: 30px; height: 30px; margin-top: 4px; margin-right: 16px; background: url("../../images/sprite.png") no-repeat -316px -416px; background-size: 600px 1000px; }
   .contents .detail-guide .detail-head .text-box .guide-time { margin-top: 22px; margin-left: 45px; font-size: 130%; }
-  .contents .detail-member .detail-head { margin-bottom: 19px; }
+  .contents .detail-member .detail-head { margin-bottom: 60px; }
   .contents .detail-member .detail-head h3 { font-size: 270%; letter-spacing: -3px; }
   .contents .detail-member .detail-head .text-box { letter-spacing: -0.05em; }
   .contents .detail-member .detail-head .text-box .text { font-size: 150%; }

@@ -151,29 +151,29 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .header_title_slide .slick-slider .slick-list .slick-slide { text-align: center; }
 .header_title_slide .slick-slider .slick-list .slick-active { border-left: 1px solid #bdb5a0; }
 .header_title_slide .slick-slider .slick-list .slick-current { border: 0; color: #f08200; }
-.header_title_slide .slick-slider .slick-arrow { border: 0; position: absolute; top: 12px; width: 5px; height: 8px; padding: 7px; background: url("../../images/sprite.png") no-repeat; background-size: 300px 500px; text-indent: -9999px; }
+.header_title_slide .slick-slider .slick-arrow { border: 0; position: absolute; top: 12px; width: 5px; height: 8px; padding: 7px; background: url("../../images/sprite.png") no-repeat; background-size: 300px 500px; text-indent: -9999px; z-index: 10; }
 .header_title_slide .slick-slider .slick-prev { left: -7%; margin-left: 3.5%; background-position: -225px -158px; }
 .header_title_slide .slick-slider .slick-next { right: -7%; margin-right: 3.5%; background-position: -250px -158px; }
 
 .contents { padding: 0 3.5%; }
-.contents .detail-show .detail-head { overflow: hidden; margin-bottom: 19px; }
-.contents .detail-show .detail-head h3 { float: left; width: 42%; line-height: 110%; font-size: 135%; color: #333; font-weight: bold; letter-spacing: -1px; }
+.contents .detail-show .detail-head { overflow: hidden; margin-bottom: 30px; }
+.contents .detail-show .detail-head h3 { float: left; width: 42%; margin-top: -3px; font-size: 135%; color: #333; font-weight: bold; letter-spacing: -1px; }
 .contents .detail-show .detail-head .text-box { float: right; width: 58%; color: #000; letter-spacing: -0.05em; }
 .contents .detail-show .detail-head .text-box .text { display: block; font-size: 75%; }
 .contents .detail-show .detail-head .text-box .show-time { display: block; float: left; margin-top: 11px; font-size: 65%; }
 .contents .detail-show .detail-head .text-box .show-time::before { content: ""; display: block; float: left; width: 15px; height: 15px; margin-top: 1px; margin-right: 8px; background: url("../../images/sprite.png") no-repeat -118px -209px; background-size: 300px 500px; }
 .contents .detail-show .detail-head .text-box .show-time .time { color: #666; }
 .contents .detail-show .detail-head .text-box .show-time .line { display: inline-block; width: 1px; height: 5px; margin: -4px 11px 0; background: #999; vertical-align: middle; }
-.contents .detail-guide .detail-head { overflow: hidden; margin-bottom: 19px; }
-.contents .detail-guide .detail-head h3 { float: left; width: 42%; line-height: 110%; font-size: 135%; color: #333; font-weight: bold; letter-spacing: -1px; }
+.contents .detail-guide .detail-head { overflow: hidden; margin-bottom: 30px; }
+.contents .detail-guide .detail-head h3 { float: left; width: 42%; margin-top: -3px; font-size: 135%; color: #333; font-weight: bold; letter-spacing: -1px; }
 .contents .detail-guide .detail-head .text-box { float: right; width: 58%; color: #000; letter-spacing: -0.05em; }
 .contents .detail-guide .detail-head .text-box .text { display: block; font-size: 75%; }
 .contents .detail-guide .detail-head .text-box .text::before { content: ""; display: block; float: left; width: 15px; height: 15px; margin-top: 1px; margin-right: 8px; background: url("../../images/sprite.png") no-repeat -158px -208px; background-size: 300px 500px; }
 .contents .detail-guide .detail-head .text-box .guide-time { display: block; margin-top: 11px; margin-left: 23px; font-size: 65%; color: #f08200; }
 .contents .detail-guide .detail-head .text-box .guide-time .text { display: block; }
 .contents .detail-guide .detail-head .text-box .guide-time .time { color: #666; }
-.contents .detail-member .detail-head { overflow: hidden; margin-bottom: 19px; }
-.contents .detail-member .detail-head h3 { float: left; width: 42%; line-height: 110%; font-size: 135%; color: #333; font-weight: bold; letter-spacing: -1px; }
+.contents .detail-member .detail-head { overflow: hidden; margin-bottom: 30px; }
+.contents .detail-member .detail-head h3 { float: left; width: 42%; margin-top: -3px; font-size: 135%; color: #333; font-weight: bold; letter-spacing: -1px; }
 .contents .detail-member .detail-head .text-box { float: right; width: 58%; color: #000; letter-spacing: -0.05em; }
 .contents .detail-member .detail-head .text-box .text { display: block; font-size: 75%; }
 .contents .detail-member .detail-head .text-box .guide-time { display: block; margin-top: 11px; margin-left: 23px; font-size: 65%; color: #f08200; }
