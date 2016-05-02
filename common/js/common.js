@@ -99,6 +99,18 @@ $(document).ready(function(){
 		});
 	})();
 
+	//서브page rg_menu toggle버튼
+	function rg_menu(){
+		var aside = $(".title aside");
+		var icon = $("aside .icon");
+		var menu = $("aside .menu");
+		$("aside > h2").click(function(){
+			menu.toggle();
+			icon.toggleClass("on");
+		});
+	}
+	rg_menu();
+
 	//메인 한국민속촌 정기공연 +버튼에 url삽입
 	//function plus_href(){
 	//	$(document).on("ready", function(){
