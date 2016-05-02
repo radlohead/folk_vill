@@ -152,7 +152,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .header_title_slide .title aside .menu li a:focus { background: #312d22; color: #f08200; }
 .header_title_slide .title aside .menu::before { content: ""; display: block; position: absolute; top: -8px; left: 42%; width: 13px; height: 9px; background: url("../../images/common/sprite.png") no-repeat -92px -264px; background-size: 300px 500px; }
 .header_title_slide .title aside::after { content: ""; display: block; clear: both; }
-.header_title_slide .slick-slider { width: 87%; margin: 0 auto; padding: 12px 0 0; font-size: 75%; }
+.header_title_slide .slick-slider { width: 87%; margin: 0 auto; padding: 12px 0 0; font-size: 70%; }
 .header_title_slide .slick-slider .slick-list { overflow: hidden; }
 .header_title_slide .slick-slider .slick-list .slick-slide { text-align: center; }
 .header_title_slide .slick-slider .slick-list .slick-active { border-left: 1px solid #bdb5a0; }

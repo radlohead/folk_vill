@@ -2,81 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/convenience_img.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/folk_vill.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/foot-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/gnb-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/guide_img.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/join-btn.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/login-btn.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/main-content-menu01.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/main-content-menu02.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/main-content-menu03.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/main-content-menu04.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/main-tab-title01.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/main-tab-title01_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/main-tab-title02.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/main-tab-title02_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/main-tab1_img01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/main_slide01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/map-tab-title01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/map-tab-title01_on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/map-tab-title02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/map-tab-title02_on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/map-tab-title03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/map-tab-title03_on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/map-tab-title04.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/map-tab-title04_on.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/market_place.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/member_img.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/nongak_img.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/notice_img.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/notice_img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/notice_title.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/pdf-down.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/play_vill.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/pre-infor_img.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/preview_slide01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/shop_vill.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/tabMenu_blank_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/tabMenu_blank_bg2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/today-next_btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/today-plus_btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/today-prev_btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/today_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/today_blank_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/today_img01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/today_title.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/traffic-tab-title01.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/traffic-tab-title01_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/traffic-tab-title02.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/traffic-tab-title02_on.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/traffic_car.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/traffic_public.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/vivi-site_title.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/019faab126b09000ae6e1f6826ae2f06b7823317/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/019faab126b09000ae6e1f6826ae2f06b7823317/index.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/019faab126b09000ae6e1f6826ae2f06b7823317/media_q.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/019faab126b09000ae6e1f6826ae2f06b7823317/media_q.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/media_q.css" afterPath="$PROJECT_DIR$/common/css/media_q.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/media_q.css.map" afterPath="$PROJECT_DIR$/common/css/media_q.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/media_q.scss" afterPath="$PROJECT_DIR$/common/css/media_q.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/inc/header.html" afterPath="$PROJECT_DIR$/common/inc/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/inc/rg_menu.html" afterPath="$PROJECT_DIR$/common/inc/rg_menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/common.js" afterPath="$PROJECT_DIR$/common/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/event_now.html" afterPath="$PROJECT_DIR$/event/event_now.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/convenience.html" afterPath="$PROJECT_DIR$/information/convenience.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/guide.html" afterPath="$PROJECT_DIR$/information/guide.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/map.html" afterPath="$PROJECT_DIR$/information/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/membership.html" afterPath="$PROJECT_DIR$/information/membership.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/notice_list.html" afterPath="$PROJECT_DIR$/information/notice_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/notice_view.html" afterPath="$PROJECT_DIR$/information/notice_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/traffic.html" afterPath="$PROJECT_DIR$/information/traffic.html" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -107,21 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media_q.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="media_q.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/css/media_q.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7484725">
-              <caret line="182" column="73" selection-start-line="182" selection-start-column="73" selection-end-line="182" selection-end-column="73" />
+            <state vertical-scroll-proportion="-14.821428">
+              <caret line="187" column="3" selection-start-line="187" selection-start-column="3" selection-end-line="187" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.1190476">
-              <caret line="219" column="54" selection-start-line="219" selection-start-column="54" selection-end-line="219" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.4140461">
+              <caret line="235" column="36" selection-start-line="235" selection-start-column="36" selection-end-line="235" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -140,8 +68,8 @@
       <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/information/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.178572">
-              <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+            <state vertical-scroll-proportion="-12.892858">
+              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -211,8 +139,8 @@
         <option value="$PROJECT_DIR$/information/convenience.html" />
         <option value="$PROJECT_DIR$/common/inc/rg_menu.html" />
         <option value="$PROJECT_DIR$/common/js/common.js" />
-        <option value="$PROJECT_DIR$/common/css/index.scss" />
         <option value="$PROJECT_DIR$/common/css/media_q.scss" />
+        <option value="$PROJECT_DIR$/common/css/index.scss" />
       </list>
     </option>
   </component>
@@ -826,14 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/information/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.178572">
-          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/inc/rg_menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -850,18 +770,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/css/index.scss">
+    <entry file="file://$PROJECT_DIR$/common/css/media_q.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1190476">
-          <caret line="219" column="54" selection-start-line="219" selection-start-column="54" selection-end-line="219" selection-end-column="54" />
+        <state vertical-scroll-proportion="-14.821428">
+          <caret line="187" column="3" selection-start-line="187" selection-start-column="3" selection-end-line="187" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/css/media_q.scss">
+    <entry file="file://$PROJECT_DIR$/information/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7484725">
-          <caret line="182" column="73" selection-start-line="182" selection-start-column="73" selection-end-line="182" selection-end-column="73" />
+        <state vertical-scroll-proportion="-12.892858">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/css/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4140461">
+          <caret line="235" column="36" selection-start-line="235" selection-start-column="36" selection-end-line="235" selection-end-column="36" />
           <folding />
         </state>
       </provider>
