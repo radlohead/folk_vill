@@ -2,20 +2,10 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
-<!--#include virtual="/mobile/common/inc/css_script.html" -->
-    <script>
-        $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1
-            });
-            $('.single-item').slick({
-                dots: true
-            });
-        });
-    </script>
+<!--#include virtual="/mobile/common/inc/css.html" -->
 </head>
 <body>
 <!-- 메뉴 -->
@@ -51,7 +41,7 @@
                 </div>
             </div>
             <div class="detail-content">
-                <img src="../images/information/guide_img01.gif" alt="운영시간에 대한 안내" />
+                <img src="/mobile/images/information/guide_img01.gif" alt="운영시간에 대한 안내" />
             </div>
             <div class="detail-head detail-head02">
                 <h3>이용요금</h3>
@@ -62,13 +52,13 @@
                 </div>
             </div>
             <div class="detail-content">
-                <img src="../images/information/guide_img02.gif" alt="이용요금에 대한 안내" />
+                <img src="/mobile/images/information/guide_img02.gif" alt="이용요금에 대한 안내" />
                 <div class="pre-infor-tab">
                     <div class="title">
                         <h3>우대정보</h3>
                         <span class="icon"></span>
                     </div>
-                    <div class="content"><img src="../images/information/pre-infor_img.gif" alt=""/></div>
+                    <div class="content"><img src="/mobile/images/information/pre-infor_img.gif" alt=""/></div>
                 </div>
             </div>
         </div>
@@ -79,6 +69,19 @@
 <!--#include virtual="/mobile/common/inc/footer.html" -->
 
 </div>
+<!--#include virtual="/mobile/common/inc/script.html" -->
+    <script>
+        $(document).ready(function(){
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1
+            });
+            $('.single-item').slick({
+                dots: true
+            });
+        });
+    </script>
 
 </body>
 </html>

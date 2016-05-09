@@ -8,43 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="common/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css" />
 	<link rel="stylesheet" type="text/css" href="common/css/index.css" />
-	<link rel="stylesheet" type="text/css" href="common/css/media_q.css" />
-	<script src="common/js/jquery-1.9.1.min.js"></script>
-	<script src="common/js/swiper.min.js"></script>
-	<script src="common/js/common.js"></script>
-	<script>
-		$(document).ready(function(){
-			var mySwiper_a = new Swiper('.main-slide', {
-				pagination:'.main-slide .swiper-pagination',
-				paginationClickable: true,
-				nextButton: '.main-slide .swiper-button-next',
-				prevButton: '.main-slide .swiper-button-prev',
-				autoplay: 2500,
-				loop:true
-			});
-			var mySwiper_b = new Swiper('.tabMenu1', {
-				paginationClickable: true,
-				nextButton: '.tabMenu1 .swiper-button-next',
-				prevButton: '.tabMenu1 .swiper-button-prev',
-				autoplay: 2500,
-				loop:true  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
-			});
-			var mySwiper_b2 = new Swiper('.tabMenu2', {
-				paginationClickable: true,
-				nextButton: '.tabMenu2 .swiper-button-next',
-				prevButton: '.tabMenu2 .swiper-button-prev',
-				autoplay: 2500,
-				loop:false  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
-			});
-			var mySwiper_c = new Swiper('.today-slide', {
-				paginationClickable: true,
-				nextButton: '.today-slide .swiper-button-next',
-				prevButton: '.today-slide .swiper-button-prev',
-				autoplay: 2500,
-				loop:true
-			});
-		});
-	</script>
+	<link rel="stylesheet" type="text/css" href="common/css/media.css" />
 </head>
 <body>
 <!-- 메뉴 -->
@@ -55,22 +19,18 @@
 		<div class="header_wrap">
 			<header>
 				<h1 class="logo">
-					<a href="#none">
-						<img src="images/common/logo.png" alt="" />
-					</a>
+					<a href="#none"><img src="/mobile/images/common/logo.png" alt="한국민속촌 모바일 홈 바로가기" /></a>
 				</h1>
-				<a href="#" class="gnb_btn">
-
-				</a>
+				<a href="#" class="gnb_btn"><img src="/mobile/images/common/gnb_btn.gif" alt="전체메뉴열기버튼" /></a>
 			</header>
 		</div>
 
 <!-- 메인슬라이드 -->
 		<div class="main-slide swiper-container">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide"><img src="images/index/main_slide01.jpg" alt="웰컴투 조선 2016년 4월9일 부터 6월12일까지" /></div>
-				<div class="swiper-slide"><img src="images/index/main_slide01.jpg" alt="웰컴투 조선 2016년 4월9일 부터 6월12일까지" /></div>
-				<div class="swiper-slide"><img src="images/index/main_slide01.jpg" alt="웰컴투 조선 2016년 4월9일 부터 6월12일까지" /></div>
+				<div class="swiper-slide"><img src="/mobile/images/index/main_slide01.jpg" alt="웰컴투 조선 2016년 4월9일 부터 6월12일까지" /></div>
+				<div class="swiper-slide"><img src="/mobile/images/index/main_slide01.jpg" alt="웰컴투 조선 2016년 4월9일 부터 6월12일까지" /></div>
+				<div class="swiper-slide"><img src="/mobile/images/index/main_slide01.jpg" alt="웰컴투 조선 2016년 4월9일 부터 6월12일까지" /></div>
 			</div>
 			<!-- Add Pagination -->
 			<div class="swiper-pagination">
@@ -84,10 +44,10 @@
 <!-- 메뉴컨텐츠 -->
 		<div class="main-content-menu">
 			<ul>
-				<li class="menu01"><img src="images/index/main-content-menu01.gif" alt="시간,요금"/></li>
-				<li class="menu02"><img src="images/index/main-content-menu02.gif" alt="오시는 길"/></li>
-				<li class="menu03"><img src="images/index/main-content-menu03.gif" alt="제휴카드"/></li>
-				<li class="menu04"><img src="images/index/main-content-menu04.gif" alt="가이드맵"/></li>
+				<li class="menu01"><img src="/mobile/images/index/main-content-menu01.gif" alt="시간,요금"/></li>
+				<li class="menu02"><img src="/mobile/images/index/main-content-menu02.gif" alt="오시는 길"/></li>
+				<li class="menu03"><img src="/mobile/images/index/main-content-menu03.gif" alt="제휴카드"/></li>
+				<li class="menu04"><img src="/mobile/images/index/main-content-menu04.gif" alt="가이드맵"/></li>
 			</ul>
 		</div>
 
@@ -95,16 +55,16 @@
 		<div class="main-tab">
 			<ul class="tabMenu">
 				<li class="menu1 on" rel="tabMenu1">
-					<h2><a href="#tab1"><img src="images/common/tabMenu_blank_bg.png" alt="할인프로모션" /></a></h2>
+					<h2><a href="#tab1"><img src="/mobile/images/common/tabMenu_blank_bg.png" alt="할인프로모션" /></a></h2>
 				</li>
 				<li class="menu2" rel="tabMenu2">
-					<h2><a href="#tab2"><img src="images/common/tabMenu_blank_bg.png" alt="온라인 쿠폰" /></a></h2>
+					<h2><a href="#tab2"><img src="/mobile/images/common/tabMenu_blank_bg.png" alt="온라인 쿠폰" /></a></h2>
 				</li>
 			</ul>
 			<!-- #tab1 -->
 			<div class="tab-content swiper-container tabMenu1">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="images/index/main-tab1_img01.jpg" alt="수원삼성블루윙즈 제휴할인 안내 2016년 2월13일 부터 4월30일까지" /></div>
+					<div class="swiper-slide"><img src="/mobile/images/index/main-tab1_img01.jpg" alt="수원삼성블루윙즈 제휴할인 안내 2016년 2월13일 부터 4월30일까지" /></div>
 				</div>
 				<!-- Add Arrows -->
 				<div class="swiper-button-next"></div>
@@ -113,7 +73,7 @@
 			<!-- #tab2 -->
 			<div class="tab-content tabMenu2">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="images/index/main-tab1_img01.jpg" alt="수원삼성블루윙즈 제휴할인 안내 2016년 2월13일 부터 4월30일까지" /></div>
+					<div class="swiper-slide"><img src="/mobile/images/index/main-tab1_img01.jpg" alt="수원삼성블루윙즈 제휴할인 안내 2016년 2월13일 부터 4월30일까지" /></div>
 				</div>
 				<!-- Add Arrows -->
 				<div class="swiper-button-next"></div>
@@ -124,7 +84,7 @@
 <!-- 한국민속촌 정기공연 -->
 		<div class="today">
 			<div class="main-top">
-				<h3><img src="images/index/today_title.png" alt="한국민속촌 정기공연 머리말" /></h3>
+				<h3><img src="/mobile/images/index/today_title.png" alt="한국민속촌 정기공연 머리말" /></h3>
 				<a href="#none" class="more_btn"><span class="hidden">더보기</span></a>
 			</div>
 			<div class="today-slide swiper-container">
@@ -137,14 +97,14 @@
 					</section>
 					<!-- Add Arrows -->
 					<div class="btns">
-						<div class="swiper-button-prev"><img src="images/index/today-prev_btn.png" alt="" /></div>
-						<div class="plus_btn"><a href="#" data-index="1"><img src="images/index/today-plus_btn.png" alt="" /></a></div>
-						<div class="swiper-button-next"><img src="images/index/today-next_btn.png" alt="" /></div>
+						<div class="swiper-button-prev"><img src="/mobile/images/index/today-prev_btn.png" alt="" /></div>
+						<div class="plus_btn"><a href="#" data-index="1"><img src="/mobile/images/index/today-plus_btn.png" alt="" /></a></div>
+						<div class="swiper-button-next"><img src="/mobile/images/index/today-next_btn.png" alt="" /></div>
 					</div>
 				</div>
 				<div class="swiper-wrapper">
-					<div class="swiper-slide"><a href="http://localhost/folk_vill/m/event/event_now.html"><img src="images/index/today_img01.jpg" alt="한국민속촌 정기공연 농악놀이" /></a></div>
-					<div class="swiper-slide"><a href="http://www.naver.com/"><img src="images/index/today_img01.jpg" alt="한국민속촌 정기공연 농악놀이" /></a></div>
+					<div class="swiper-slide"><a href="http://localhost/folk_vill/m/event/event_now.html"><img src="/mobile/images/index/today_img01.jpg" alt="한국민속촌 정기공연 농악놀이" /></a></div>
+					<div class="swiper-slide"><a href="http://www.naver.com/"><img src="/mobile/images/index/today_img01.jpg" alt="한국민속촌 정기공연 농악놀이" /></a></div>
 				</div>
 			</div>
 		</div>
@@ -152,7 +112,7 @@
 <!-- 공지사항 -->
 		<div class="notice">
 			<div class="main-top">
-				<h3><img src="images/index/notice_title.png" alt="공지사항 머리말" /></h3>
+				<h3><img src="/mobile/images/index/notice_title.png" alt="공지사항 머리말" /></h3>
 				<a href="#none" class="more_btn"><span class="hidden">더보기</span></a>
 			</div>
 			<ul>
@@ -174,7 +134,7 @@
 <!-- 생생현장 -->
 		<div class="vivi-site">
 			<div class="main-top">
-				<h3><img src="images/index/vivi-site_title.png" alt="한국민속촌 생생현장 머리말" /></h3>
+				<h3><img src="/mobile/images/index/vivi-site_title.png" alt="한국민속촌 생생현장 머리말" /></h3>
 			</div>
 			<div class="video">
 				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cD7EwWfuYDk" frameborder="0" allowfullscreen></iframe>
@@ -211,5 +171,41 @@
 		</div>
 	</div>
 
+	<script src="/mobile/common/js/jquery-1.9.1.min.js"></script>
+	<script src="/mobile/common/js/swiper.min.js"></script>
+	<script src="/mobile/common/js/common.js"></script>
+	<script>
+		$(document).ready(function(){
+			var mySwiper_a = new Swiper('.main-slide', {
+				pagination:'.main-slide .swiper-pagination',
+				paginationClickable: true,
+				nextButton: '.main-slide .swiper-button-next',
+				prevButton: '.main-slide .swiper-button-prev',
+				autoplay: 2500,
+				loop:true
+			});
+			var mySwiper_b = new Swiper('.tabMenu1', {
+				paginationClickable: true,
+				nextButton: '.tabMenu1 .swiper-button-next',
+				prevButton: '.tabMenu1 .swiper-button-prev',
+				autoplay: 2500,
+				loop:true  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
+			});
+			var mySwiper_b2 = new Swiper('.tabMenu2', {
+				paginationClickable: true,
+				nextButton: '.tabMenu2 .swiper-button-next',
+				prevButton: '.tabMenu2 .swiper-button-prev',
+				autoplay: 2500,
+				loop:false  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
+			});
+			var mySwiper_c = new Swiper('.today-slide', {
+				paginationClickable: true,
+				nextButton: '.today-slide .swiper-button-next',
+				prevButton: '.today-slide .swiper-button-prev',
+				autoplay: 2500,
+				loop:true
+			});
+		});
+	</script>
 </body>
 </html>

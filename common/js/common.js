@@ -92,10 +92,12 @@ $(document).ready(function(){
 	(function(){
 		$(document).ready(function(){
 			$(window).trigger('resize');
+			$(window).load('resize');
 		});
 		$(window).resize(function(){
 			var h_height = $("header").outerHeight();
 			$(".header_wrap").outerHeight(h_height);
+			console.log(h_height);
 		});
 	})();
 
