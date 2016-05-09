@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>한국 민속촌 모바일 사이트</title>
-    <? include "../common/inc/css_script.html"; ?>
+<!--#include virtual="/mobile/common/inc/css_script.html" -->
     <script>
         $(document).ready(function(){
             $('.multiple-items').slick({
@@ -19,41 +19,41 @@
 </head>
 <body>
 <!-- 메뉴 -->
-<? include "../common/inc/gnb.html"; ?>
+<!--#include virtual="/mobile/common/inc/gnb.html" -->
 
 <div class="wrap">
-    <!-- 상단헤더 -->
-    <? include "../common/inc/header.html"; ?>
+<!-- 상단헤더 -->
+<!--#include virtual="/mobile/common/inc/header.html" -->
 
     <div class="header_title_slide">
-        <? include "../common/inc/rg_menu.html"; ?>
+<!--#include virtual="/mobile/common/inc/rg_menu.html" -->
 
         <div class="slider multiple-items">
-            <a href="#none">공지사항</a>
-            <a href="#none">가이드맵</a>
-            <a href="#none">시간/요금</a>
             <a href="#none">연간회원안내</a>
             <a href="#none">교통정보</a>
             <a href="#none">편의시설</a>
+            <a href="#none">공지사항</a>
+            <a href="#none">가이드맵</a>
+            <a href="#none">시간/요금</a>
         </div>
     </div>
 
     <div class="contents">
         <div class="detail-member">
             <div class="detail-head">
-                <h3>공지사항</h3>
+                <h3>연간회원</h3>
                 <div class="text-box">
-                    <span class="text">한국민속촌에서 전하는 소식</span>
+                    <span class="text">365일 민속촌을 내 집처럼 누리는<br/> 멤버쉽 제도</span>
                 </div>
             </div>
             <div class="detail-content">
-                <img src="../images/information/notice_img.gif" alt="공지사항" />
+                <img src="../images/information/member_img.gif" alt="연간회원 혜택" />
             </div>
         </div>
     </div>
 
-    <!-- 하단푸터 -->
-    <? include "../common/inc/footer.html"; ?>
+<!-- 하단푸터 -->
+<!--#include virtual="/mobile/common/inc/footer.html" -->
 
 </div>
 

@@ -1,3 +1,37 @@
+//375px
+@media all and (min-width:375px){
+  .contents{font-size:115%;}
+  .header_title_slide{font-size:115%;
+    .title{height:31px;
+      aside{
+        .menu{top:30px; z-index:50; width:135%; padding:14px 0; text-indent:15%;
+          li{height:28px; font-size:65%;}
+        }
+      }
+
+    }
+  }
+  .detail-guide{
+    .detail-head{
+      .text-box{
+        .text{
+          &::before{width:19px; height:19px; background:url("../../images/common/sprite.png") no-repeat -190px -250px; background-size:360px 600px;}
+        }
+        .text02{padding:1px 0; font-size:73%; letter-spacing: -1.5px;}
+      }
+    }
+  }
+
+}
+
+//414px
+@media all and (min-width:410px){
+  .contents{font-size:130%;}
+  .header_title_slide{font-size:125%;
+    .title{height:35px;}
+  }
+}
+
 //480px
 @media all and (min-width:480px){
   .header_wrap{position:relative; height:68px;
@@ -150,12 +184,12 @@
     }
     .detail-guide{
       .detail-head{margin-bottom:60px;
-        h3{font-size:270%; letter-spacing:-3px;}
+        h3{font-size:240%; letter-spacing:-3px;}
         .text-box{letter-spacing:-0.05em;
-          .text{font-size:150%;
+          .text{font-size:115%;
             &::before{width:30px; height:30px; margin-top:4px; margin-right:16px; background:url("../../images/common/sprite.png") no-repeat -316px -416px; background-size:600px 1000px;}
           }
-          .guide-time{margin-top:22px; margin-left:45px; font-size:130%;}
+          .guide-time{margin-top:22px; margin-left:45px; font-size:100%;}
         }
       }
     }

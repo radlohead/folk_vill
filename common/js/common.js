@@ -111,6 +111,17 @@ $(document).ready(function(){
 	}
 	rg_menu();
 
+	//시간요금페이지 우대정보 toggle버튼
+	(function(){
+		var title = $(".pre-infor-tab .title");
+		var icon = $(".title .icon");
+		var content = $(".pre-infor-tab .content");
+		$(title).click(function(){
+			content.toggle();
+			icon.toggleClass("on");
+		});
+	})();
+
 	//메인 한국민속촌 정기공연 +버튼에 url삽입
 	//function plus_href(){
 	//	$(document).on("ready", function(){

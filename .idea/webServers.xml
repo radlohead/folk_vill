@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9bf67865-7139-47a4-806d-e8aae825a12b" name="한국민속촌" url="http://118.219.234.217">
+        <fileTransfer host="118.219.234.217" port="5021" password="dfd9dfcfdfcfdfd9dfcbdfdddf98df9adf9bdf99" username="koreanfolk">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>한국 민속촌 모바일 사이트</title>
-    <? include "../common/inc/css_script.html"; ?>
+    <!--#include virtual="/mobile/common/inc/css_script.html" -->
     <script>
         $(document).ready(function(){
             $('.multiple-items').slick({
@@ -19,14 +19,14 @@
 </head>
 <body>
 <!-- 메뉴 -->
-<? include "../common/inc/gnb.html"; ?>
+<!--#include virtual="/mobile/common/inc/gnb.html" -->
 
 <div class="wrap">
     <!-- 상단헤더 -->
-    <? include "../common/inc/header.html"; ?>
+    <!--#include virtual="/mobile/common/inc/header.html" -->
 
     <div class="header_title_slide">
-        <? include "../common/inc/rg_menu.html"; ?>
+        <!--#include virtual="/mobile/common/inc/rg_menu.html" -->
 
         <div class="slider multiple-items">
             <a href="#none">가이드맵</a>
@@ -91,8 +91,7 @@
     </div>
 
     <!-- 하단푸터 -->
-    <? include "../common/inc/footer.html"; ?>
-
+    <!--#include virtual="/mobile/common/inc/footer.html" -->
 </div>
 
 </body>

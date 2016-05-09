@@ -1,3 +1,13 @@
+@media all and (min-width: 375px) { .contents { font-size: 115%; }
+  .header_title_slide { font-size: 115%; }
+  .header_title_slide .title { height: 31px; }
+  .header_title_slide .title aside .menu { top: 30px; z-index: 50; width: 135%; padding: 14px 0; text-indent: 15%; }
+  .header_title_slide .title aside .menu li { height: 28px; font-size: 65%; }
+  .detail-guide .detail-head .text-box .text::before { width: 19px; height: 19px; background: url("../../images/common/sprite.png") no-repeat -190px -250px; background-size: 360px 600px; }
+  .detail-guide .detail-head .text-box .text02 { padding: 1px 0; font-size: 73%; letter-spacing: -1.5px; } }
+@media all and (min-width: 410px) { .contents { font-size: 130%; }
+  .header_title_slide { font-size: 125%; }
+  .header_title_slide .title { height: 35px; } }
 @media all and (min-width: 480px) { .header_wrap { position: relative; height: 68px; }
   .header_wrap header { padding: 23px 3.5% 17px 3.5%; }
   .header_wrap header .gnb_btn { width: 26px; height: 18px; background-position: -3px 2px; background-size: 450px 750px; }
@@ -74,11 +84,11 @@
   .contents .detail-show .detail-head .text-box .show-time::before { width: 28px; height: 28px; margin-top: 1px; margin-right: 16px; background: url("../../images/common/sprite.png") no-repeat -236px -418px; background-size: 600px 1000px; }
   .contents .detail-show .detail-head .text-box .show-time .line { height: 10px; }
   .contents .detail-guide .detail-head { margin-bottom: 60px; }
-  .contents .detail-guide .detail-head h3 { font-size: 270%; letter-spacing: -3px; }
+  .contents .detail-guide .detail-head h3 { font-size: 240%; letter-spacing: -3px; }
   .contents .detail-guide .detail-head .text-box { letter-spacing: -0.05em; }
-  .contents .detail-guide .detail-head .text-box .text { font-size: 150%; }
+  .contents .detail-guide .detail-head .text-box .text { font-size: 115%; }
   .contents .detail-guide .detail-head .text-box .text::before { width: 30px; height: 30px; margin-top: 4px; margin-right: 16px; background: url("../../images/common/sprite.png") no-repeat -316px -416px; background-size: 600px 1000px; }
-  .contents .detail-guide .detail-head .text-box .guide-time { margin-top: 22px; margin-left: 45px; font-size: 130%; }
+  .contents .detail-guide .detail-head .text-box .guide-time { margin-top: 22px; margin-left: 45px; font-size: 100%; }
   .contents .detail-member .detail-head { margin-bottom: 60px; }
   .contents .detail-member .detail-head h3 { font-size: 270%; letter-spacing: -3px; }
   .contents .detail-member .detail-head .text-box { letter-spacing: -0.05em; }
