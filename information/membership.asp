@@ -37,7 +37,10 @@
                 </div>
             </div>
             <div class="detail-content">
-                <img src="/mobile/images/information/member_img.gif" alt="연간회원 혜택" />
+                 <section class="mem-benefit">
+                    <h3>연간회원 혜택</h3>
+                    <img src="/mobile/images/information/mem-benefit.png" alt="연간회원혜택 1년 365일 한국민속촌을 자유롭게 이용, 놀이기구 및 전시관 무료 이용, 다양한 이벤트 정보 및 참여 기회 제공" />
+                 </section>
             </div>
         </div>
     </div>
