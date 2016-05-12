@@ -244,10 +244,9 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .preview-slide-wrap .preview-slide .slick-dots > li button { border: 0; text-indent: -9999px; }
 .preview-slide-wrap .preview-slide .slick-dots .slick-active { background: #ff6200; }
 
-.operate-time table { width: 100%; }
-.operate-time table th { padding: 7px 0; border-top: 2px solid #f08200; font-size: 1.2em; }
+.operate-time table th { padding: 7px 0; border-top: 2px solid #f08200; }
 .operate-time table th:first-child { border-right: 5px solid #fff; }
-.operate-time table td { padding: 7px 0; text-align: center; border-bottom: 1px solid #dedacf; font-size: 1.1em; }
+.operate-time table td { padding: 7px 0; border-bottom: 1px solid #dedacf; }
 .operate-time table td:first-child { border-right: 5px solid #fff; }
 .operate-time table tr:first-child td { border-top: 1px solid #bdb5a0; }
 .operate-time table tr:last-child td { border-bottom: 1px solid #bdb5a0; }
@@ -266,5 +265,26 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .prefer-infor ul li:before { content: "·"; display: inline-block; padding-right: 3px; color: #766341; }
 .prefer-infor p { margin: 3px 0 16px; }
 .prefer-infor p:before { content: "·"; display: inline-block; padding-right: 3px; color: #766341; }
+
+.contents h4 { font-size: 1.7em; font-weight: bold; }
+.contents h5 { font-size: 1.3em; font-weight: bold; }
+.contents table { width: 100%; }
+.contents table th { font-size: 1.2em; }
+.contents table td { text-align: center; font-size: 1.1em; }
+
+.detail-member .mem-benefit h4 { margin-bottom: 15px; }
+.detail-member .mem-price h4 { margin: 27px 0 12px; }
+.detail-member .mem-price table th { padding: 7px 0; border-top: 2px solid #f08200; border-left: 5px solid #fff; }
+.detail-member .mem-price table th:first-child { border-left: 0; }
+.detail-member .mem-price table td { padding: 7px 0; border-bottom: 1px solid #dedacf; border-left: 5px solid #fff; }
+.detail-member .mem-price table td:first-child { border-left: 0 solid #fff; }
+.detail-member .mem-price table tr:last-child td { border-bottom: 1px solid #bdb5a0; }
+.detail-member .join-method h5 { margin: 13px 0 7px; color: #f08200; }
+.detail-member .join-method li:before { content: "·"; display: inline-block; padding-right: 3px; color: #766341; }
+.detail-member .join-method .down-link { display: block; width: 100%; margin: 15px 0 35px; }
+.detail-member .join-method .down-link a { display: inline-block; float: left; width: 33.3%; }
+.detail-member .join-method .down-link:after { content: ""; display: block; clear: both; }
+.detail-member .note h5 { margin: 13px 0 7px; color: #f08200; }
+.detail-member .note li:before { content: "·"; display: inline-block; padding-right: 3px; color: #766341; }
 
 /*# sourceMappingURL=index.css.map */
