@@ -3,17 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/sprite.png" afterPath="$PROJECT_DIR$/images/common/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/notice_img2.jpg" afterPath="$PROJECT_DIR$/images/information/notice_img2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/traffic_public.jpg" afterPath="$PROJECT_DIR$/images/information/traffic_public.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/convenience.asp" afterPath="$PROJECT_DIR$/information/convenience.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/notice_list.asp" afterPath="$PROJECT_DIR$/information/notice_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/map.asp" afterPath="$PROJECT_DIR$/information/map.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/notice_view.asp" afterPath="$PROJECT_DIR$/information/notice_view.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/traffic.asp" afterPath="$PROJECT_DIR$/information/traffic.asp" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +31,7 @@
       <file leaf-file-name="media.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/css/media.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-13.571428">
               <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding />
             </state>
@@ -47,8 +41,18 @@
       <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8744493">
-              <caret line="546" column="1" selection-start-line="546" selection-start-column="1" selection-end-line="546" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.7279736">
+              <caret line="557" column="30" selection-start-line="557" selection-start-column="30" selection-end-line="557" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.asp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/information/map.asp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.464286">
+              <caret line="179" column="63" selection-start-line="179" selection-start-column="63" selection-end-line="179" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -57,8 +61,8 @@
       <file leaf-file-name="notice_view.asp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/information/notice_view.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.142858">
-              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+            <state vertical-scroll-proportion="-16.5">
+              <caret line="50" column="57" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -169,7 +173,6 @@
         <option value="$PROJECT_DIR$/common/inc/script.html" />
         <option value="$PROJECT_DIR$/event/event_now.asp" />
         <option value="$PROJECT_DIR$/common/inc/css.html" />
-        <option value="$PROJECT_DIR$/information/map.asp" />
         <option value="$PROJECT_DIR$/index.asp" />
         <option value="C:/APM_Setup/htdocs/faco/new/english/css/index.scss" />
         <option value="$PROJECT_DIR$/information/guide.asp" />
@@ -181,6 +184,7 @@
         <option value="$PROJECT_DIR$/information/convenience.asp" />
         <option value="$PROJECT_DIR$/information/notice_list.asp" />
         <option value="$PROJECT_DIR$/information/notice_view.asp" />
+        <option value="$PROJECT_DIR$/information/map.asp" />
         <option value="$PROJECT_DIR$/common/css/index.scss" />
       </list>
     </option>
@@ -634,14 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.892858">
-          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/APM_Setup/htdocs/folk_vill/mobile/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27087575">
@@ -674,13 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.056435645">
           <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/information/map.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="17.642857">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -756,7 +745,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/css/media.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-13.571428">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding />
         </state>
@@ -806,16 +795,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/information/notice_view.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.142858">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        <state vertical-scroll-proportion="-16.5">
+          <caret line="50" column="57" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3631791">
+          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/information/map.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.464286">
+          <caret line="179" column="63" selection-start-line="179" selection-start-column="63" selection-end-line="179" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8744493">
-          <caret line="546" column="1" selection-start-line="546" selection-start-column="1" selection-end-line="546" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.7279736">
+          <caret line="557" column="30" selection-start-line="557" selection-start-column="30" selection-end-line="557" selection-end-column="30" />
           <folding />
         </state>
       </provider>

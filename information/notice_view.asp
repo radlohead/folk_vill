@@ -50,7 +50,7 @@
                 <span class="btns">
                     <a href="#none" class="btn prev-btn">이전 글 보기</a>
                     <a href="#none" class="btn next-btn">다음 글 보기</a>
-                    <a href="#none" class="btn list-btn">글 목록보기</a>
+                    <a href="#none" class="btn list-btn">목록</a>
                 </span>
             </div>
         </div>

@@ -193,44 +193,46 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-member .detail-head .text-box .guide-time .text { display: block; }
 .detail-member .detail-head .text-box .guide-time .time { color: #666; }
 
-.detail-content img { max-width: 100%; }
-.detail-content .content-head { position: relative; margin-bottom: 25px; }
-.detail-content .content-head img { width: 100%; }
-.detail-content .content-head .pdf-down { display: block; position: absolute; right: 0; bottom: 0; width: 14%; height: 24%; }
-.detail-content .content-head map { position: absolute; top: 0; left: 0; }
-.detail-content .pre-infor-tab { margin-top: 28px; }
-.detail-content .pre-infor-tab .title { overflow: hidden; padding: 10px 15px; border-top: 2px solid #f08200; border-bottom: 1px solid #bdb5a0; }
-.detail-content .pre-infor-tab .title h3 { float: left; font-size: 1.75em; line-height: 110%; }
-.detail-content .pre-infor-tab .title .icon { display: block; float: right; width: 10px; height: 6px; margin-top: 6px; background: url("/mobile/images/common/sprite.png") no-repeat -55px -264px; background-size: 300px 500px; }
-.detail-content .pre-infor-tab .title .icon.on { display: block; float: right; width: 10px; height: 6px; margin-top: 6px; background: url("/mobile/images/common/sprite.png") no-repeat -15px -264px; background-size: 300px 500px; }
-.detail-content .pre-infor-tab .content { display: none; padding: 18px 0; border-bottom: 1px solid #bdb5a0; }
-.detail-content .main-tab.traffic { overflow: hidden; position: relative; }
-.detail-content .main-tab.traffic .tabMenu { overflow: hidden; position: relative; width: 100%; margin-bottom: 30px; }
-.detail-content .main-tab.traffic .tabMenu li { float: left; width: 50%; text-align: center; background-size: contain; background-repeat: no-repeat; background-position: left center; box-sizing: border-box; }
-.detail-content .main-tab.traffic .tabMenu li a { display: block; }
-.detail-content .main-tab.traffic .tabMenu li:first-child { margin-left: 0; background-position: right center; }
-.detail-content .main-tab.traffic .tabMenu .menu1 { background-image: url("/mobile/images/information/traffic-tab-title01.gif"); }
-.detail-content .main-tab.traffic .tabMenu .menu2 { background-image: url("/mobile/images/information/traffic-tab-title02.gif"); }
-.detail-content .main-tab.traffic .tabMenu .menu1.on { background-image: url("/mobile/images/information/traffic-tab-title01_on.gif"); }
-.detail-content .main-tab.traffic .tabMenu .menu2.on { background-image: url("/mobile/images/information/traffic-tab-title02_on.gif"); }
-.detail-content .main-tab.traffic .tab-content { clear: both; margin-bottom: 15px; }
-.detail-content .main-tab.traffic .tabMenu2 { display: none; }
-.detail-content .main-tab.map { overflow: hidden; position: relative; }
-.detail-content .main-tab.map .tabMenu { overflow: hidden; position: relative; width: 100%; margin-bottom: 30px; }
-.detail-content .main-tab.map .tabMenu li { float: left; width: 25%; text-align: center; background-size: cover; background-repeat: no-repeat; background-position: left center; box-sizing: border-box; }
-.detail-content .main-tab.map .tabMenu li h3 a { display: block; }
-.detail-content .main-tab.map .tabMenu li h3 a img { width: 100%; }
-.detail-content .main-tab.map .tabMenu li:first-child { margin-left: 0; background-position: right center; }
-.detail-content .main-tab.map .tabMenu .menu1 { background-image: url("/mobile/images/information/map-tab-title01.png"); }
-.detail-content .main-tab.map .tabMenu .menu2 { background-image: url("/mobile/images/information/map-tab-title02.png"); }
-.detail-content .main-tab.map .tabMenu .menu3 { background-image: url("/mobile/images/information/map-tab-title03.png"); }
-.detail-content .main-tab.map .tabMenu .menu4 { background-image: url("/mobile/images/information/map-tab-title04.png"); }
-.detail-content .main-tab.map .tabMenu .menu1.on { background-image: url("/mobile/images/information/map-tab-title01_on.png"); }
-.detail-content .main-tab.map .tabMenu .menu2.on { background-image: url("/mobile/images/information/map-tab-title02_on.png"); }
-.detail-content .main-tab.map .tabMenu .menu3.on { background-image: url("/mobile/images/information/map-tab-title03_on.png"); }
-.detail-content .main-tab.map .tabMenu .menu4.on { background-image: url("/mobile/images/information/map-tab-title04_on.png"); }
-.detail-content .main-tab.map .tab-content { clear: both; text-align: center; margin-bottom: 15px; }
-.detail-content .main-tab.map .tabMenu2 { display: none; }
+.content-head { position: relative; margin-bottom: 25px; }
+.content-head img { width: 100%; }
+.content-head .pdf-down { display: block; position: absolute; right: 0; bottom: 0; width: 14%; height: 24%; }
+.content-head map { position: absolute; top: 0; left: 0; }
+
+.pre-infor-tab { margin-top: 28px; }
+.pre-infor-tab .title { overflow: hidden; padding: 10px 15px; border-top: 2px solid #f08200; border-bottom: 1px solid #bdb5a0; }
+.pre-infor-tab .title h3 { float: left; font-size: 1.75em; line-height: 110%; }
+.pre-infor-tab .title .icon { display: block; float: right; width: 10px; height: 6px; margin-top: 6px; background: url("/mobile/images/common/sprite.png") no-repeat -55px -264px; background-size: 300px 500px; }
+.pre-infor-tab .title .icon.on { display: block; float: right; width: 10px; height: 6px; margin-top: 6px; background: url("/mobile/images/common/sprite.png") no-repeat -15px -264px; background-size: 300px 500px; }
+.pre-infor-tab .content { display: none; padding: 18px 0; border-bottom: 1px solid #bdb5a0; }
+
+.main-tab.traffic { overflow: hidden; position: relative; }
+.main-tab.traffic .tabMenu { overflow: hidden; position: relative; width: 100%; margin-bottom: 30px; }
+.main-tab.traffic .tabMenu li { float: left; width: 50%; text-align: center; background-size: contain; background-repeat: no-repeat; background-position: left center; box-sizing: border-box; }
+.main-tab.traffic .tabMenu li a { display: block; }
+.main-tab.traffic .tabMenu li:first-child { margin-left: 0; background-position: right center; }
+.main-tab.traffic .tabMenu .menu1 { background-image: url("/mobile/images/information/traffic-tab-title01.gif"); }
+.main-tab.traffic .tabMenu .menu2 { background-image: url("/mobile/images/information/traffic-tab-title02.gif"); }
+.main-tab.traffic .tabMenu .menu1.on { background-image: url("/mobile/images/information/traffic-tab-title01_on.gif"); }
+.main-tab.traffic .tabMenu .menu2.on { background-image: url("/mobile/images/information/traffic-tab-title02_on.gif"); }
+.main-tab.traffic .tab-content { clear: both; margin-bottom: 15px; }
+.main-tab.traffic .tabMenu2 { display: none; }
+
+.main-tab.map { overflow: hidden; position: relative; }
+.main-tab.map .tabMenu { overflow: hidden; position: relative; width: 100%; margin-bottom: 30px; }
+.main-tab.map .tabMenu li { float: left; width: 25%; text-align: center; background-size: cover; background-repeat: no-repeat; background-position: left center; box-sizing: border-box; }
+.main-tab.map .tabMenu li h3 a { display: block; }
+.main-tab.map .tabMenu li h3 a img { width: 100%; }
+.main-tab.map .tabMenu li:first-child { margin-left: 0; background-position: right center; }
+.main-tab.map .tabMenu .menu1 { background-image: url("/mobile/images/information/map-tab-title01.png"); }
+.main-tab.map .tabMenu .menu2 { background-image: url("/mobile/images/information/map-tab-title02.png"); }
+.main-tab.map .tabMenu .menu3 { background-image: url("/mobile/images/information/map-tab-title03.png"); }
+.main-tab.map .tabMenu .menu4 { background-image: url("/mobile/images/information/map-tab-title04.png"); }
+.main-tab.map .tabMenu .menu1.on { background-image: url("/mobile/images/information/map-tab-title01_on.png"); }
+.main-tab.map .tabMenu .menu2.on { background-image: url("/mobile/images/information/map-tab-title02_on.png"); }
+.main-tab.map .tabMenu .menu3.on { background-image: url("/mobile/images/information/map-tab-title03_on.png"); }
+.main-tab.map .tabMenu .menu4.on { background-image: url("/mobile/images/information/map-tab-title04_on.png"); }
+.main-tab.map .tab-content { clear: both; text-align: center; margin-bottom: 15px; }
+.main-tab.map .tabMenu2, .main-tab.map .tabMenu3, .main-tab.map .tabMenu4 { display: none; }
 
 .preview-slide-wrap { margin-top: 25px; }
 .preview-slide-wrap .preview-slide img { width: 100%; }
@@ -351,5 +353,24 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .board-view article { border-top: 2px solid #f08200; border-bottom: 1px solid #bdb5a0; }
 .board-view article h4 { padding: 14px 0; border-bottom: 1px solid #dedacf; }
 .board-view article .date-wrap { display: block; padding: 8px 0; border-bottom: 1px solid #dedacf; }
+.board-view article .content { padding: 24px 0; }
+.board-view .btns { display: block; margin-top: 14px; }
+.board-view .btns .btn { display: block; float: left; width: 40px; height: 40px; text-indent: -9999px; background: url("/mobile/images/common/sprite.png") no-repeat; background-size: 300px 500px; }
+.board-view .btns .prev-btn { margin-right: 7px; background-position: -168px -258px; }
+.board-view .btns .next-btn { background-position: -213px -258px; }
+.board-view .btns .list-btn { float: right; text-indent: inherit; text-align: center; background: #fff; border: 1px solid #bdb5a0; font-size: 1.25em; line-height: 3em; }
+
+.main-tab.map .tabMenu { margin-bottom: 10px; }
+.main-tab.map article img { width: 100%; }
+.main-tab.map article .caption { margin-bottom: 21px; }
+.main-tab.map article section { margin-top: 27px; }
+.main-tab.map article section h4 { text-align: left; padding: 7px 0 4px; font-size: 1.5em; color: #f08200; }
+.main-tab.map article section p { text-align: left; font-size: 1.1em; }
+.main-tab.map article h4 { text-align: left; padding: 16px 0 9px; font-size: 1.5em; color: #f08200; }
+.main-tab.map article .market-menu li { float: left; width: 47.75%; }
+.main-tab.map article .market-menu li:nth-child(2n+2) { float: right; }
+.main-tab.map article .market-menu .caption { text-align: left; margin-bottom: 23px; }
+.main-tab.map article .market-menu .caption span { display: block; margin: 10px 0 3px; font-size: 1em; }
+.main-tab.map article .market-menu .caption em { display: block; font-size: 1.2em; }
 
 /*# sourceMappingURL=index.css.map */
