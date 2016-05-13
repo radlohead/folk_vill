@@ -36,8 +36,22 @@
                     <span class="text">한국민속촌에서 전하는 소식</span>
                 </div>
             </div>
-            <div class="detail-content">
-                <img src="../images/information/notice_img2.jpg" alt="공지사항" />
+            <div class="detail-content board-view">
+                <article>
+                    <h4>한국민속촌 정기공연 변경안내 (4/18~)</h4>
+                    <span class="date-wrap">
+                        <span class="title">게시일</span>
+                        <span class="date">2016.04.04</span>
+                    </span>
+                    <div class="content">
+                        <img src="/mobile/images/information/notice_img2.jpg" alt="한국민속촌 정기공연 변경안내 그 동안 많은 분들이 사랑해 주신 줄타기 공연은 '국악 비보이 공연'으로 대체됩니다." />
+                    </div>
+                </article>
+                <span class="btns">
+                    <a href="#none" class="btn prev-btn">이전 글 보기</a>
+                    <a href="#none" class="btn next-btn">다음 글 보기</a>
+                    <a href="#none" class="btn list-btn">글 목록보기</a>
+                </span>
             </div>
         </div>
     </div>

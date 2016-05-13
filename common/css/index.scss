@@ -238,7 +238,7 @@ footer{overflow:hidden; padding:22px 3.5% 30px; background:#312d22; color:#fff; 
 }
 
 .contents{padding:0 3.5%;
-	img{width:100%;}
+	//img{width:100%;}
 }
 
 .detail-show{
@@ -304,9 +304,7 @@ footer{overflow:hidden; padding:22px 3.5% 30px; background:#312d22; color:#fff; 
 	.main-tab.traffic{overflow:hidden; position:relative;
 		.tabMenu{overflow:hidden; position:relative; width:100%; margin-bottom:30px;
 			li{float:left; width:50%; text-align:center; background-size:contain; background-repeat:no-repeat; background-position:left center; box-sizing: border-box;
-				a{display:block;
-					img{width:100%;}
-				}
+				a{display:block;}
 			}
 			li:first-child{margin-left:0; background-position: right center;}
 			li.on{}
@@ -339,7 +337,7 @@ footer{overflow:hidden; padding:22px 3.5% 30px; background:#312d22; color:#fff; 
 			.menu3.on{background-image:url("/mobile/images/information/map-tab-title03_on.png");}
 			.menu4.on{background-image:url("/mobile/images/information/map-tab-title04_on.png");}
 		}
-		.tab-content{clear:both; margin-bottom:15px;}
+		.tab-content{clear:both; text-align:center; margin-bottom:15px;}
 		.tabMenu1{}
 		.tabMenu2{display:none;}
 	}
@@ -389,7 +387,7 @@ footer{overflow:hidden; padding:22px 3.5% 30px; background:#312d22; color:#fff; 
 .prefer-infor{padding:0 4.2%; font-size:1.1em;
 	h4{font-weight:bold; font-size:1.3em; color:#f08200;}
 	ul{margin:3px 0 16px;
-		li{margin-top:2px;
+		li{margin-top:2px; font-size:1em;
 			&:before{content:"·"; display:inline-block; padding-right:3px; color:#766341;}
 		}
 	}
@@ -398,13 +396,15 @@ footer{overflow:hidden; padding:22px 3.5% 30px; background:#312d22; color:#fff; 
 	}
 }
 .contents{
-	h4{font-size:1.7em; font-weight:bold;}
-	h5{font-size:1.3em; font-weight:bold;}
+	h4{font-size:1.7em;}
+	h5{font-size:1.3em;}
 	table{width:100%;
 		th{font-size:1.2em;}
 		td{text-align:center; font-size:1.1em;}
 	}
 }
+
+//연간회원안내
 .detail-member{
 	.mem-benefit{
 		h4{margin-bottom:15px;}
@@ -423,7 +423,7 @@ footer{overflow:hidden; padding:22px 3.5% 30px; background:#312d22; color:#fff; 
 	}
 	.join-method{
 		h5{margin:13px 0 7px; color:#f08200;}
-		li{
+		li{font-size:1em;
 			&:before{content:"·"; display:inline-block; padding-right:3px; color:#766341;}
 		}
 		.down-link{display:block; width:100%; margin:15px 0 35px;
@@ -433,8 +433,115 @@ footer{overflow:hidden; padding:22px 3.5% 30px; background:#312d22; color:#fff; 
 	}
 	.note{
 		h5{margin:13px 0 7px; color:#f08200;}
-		li{
+		li{font-size:1em;
 			&:before{content:"·"; display:inline-block; padding-right:3px; color:#766341;}
 		}
+	}
+}
+
+//교통정보
+.traffic{
+	.map{display:block; margin:12px 0 25px;}
+	h4:first-child{margin-bottom:5px;}
+	h4{margin-bottom:11px;}
+	h4 + p{margin-bottom:20px;}
+	h5{margin:13px 0 7px; color:#f08200;}
+	table.bus-time{margin-top:20px;
+		th{padding:7px 0; border-top:2px solid #f08200;
+			&:first-child{border-right:5px solid #fff;}
+		}
+		td{padding:7px 0; border-bottom:1px solid #dedacf;
+			&:first-child{border-right:5px solid #fff;}
+		}
+		tr:first-child td{border-top:1px solid #bdb5a0;}
+		tr:last-child td{border-bottom:1px solid #bdb5a0;}
+	}
+	table.bus-use{
+		td{text-align:left; border-bottom:1px solid #dedacf; font-size:inherit;
+			strong{font-size:1.1em;}
+		}
+		tr:first-child td{border-top:2px solid #f08200;}
+		tr:last-child td{border-bottom:1px solid #bdb5a0;}
+	}
+	ul.bus-time-list{margin:11px 0 31px;
+		li{font-size:1em;
+			&:before{content:"*"; display:inline-block; padding-right:7px; color:#f29322;}
+		}
+	}
+	.bus-use-list{margin:17px 0;
+		ul{margin-top:4px; font-size:1em;}
+	}
+	.bus_icon{display:block; width:33px; height:32px;}
+	.bus-num{font-size:1.2em; color:#f08200;}
+	.text_icon_cir{display:inline-block; margin-top:3px;
+		&:before{content:""; display:inline-block; width:5px; height:5px; margin-right:3px; background:url("/mobile/images/common/sprite.png") no-repeat -129px -263px; background-size:300px 500px;}
+	}
+	.text_icon_tri{display:inline-block; margin-top:3px;
+		&:before{content:""; display:inline-block; width:5px; height:5px; margin-right:3px; background:url("/mobile/images/common/sprite.png") no-repeat -143px -263px; background-size:300px 500px;}
+	}
+	.road-sign{display:block; margin:14px 0 38px;
+		&:before{content:"*"; display:inline-block; padding-right:7px; color:#f29322;}
+	}
+	.parking{padding:15px 0; border-top:2px solid #f08200; border-bottom:1px solid #bdb5a0;
+		.icon_p{float:left; display:block; width:56px; height:56px; background:url("/mobile/images/information/sprite-info.png") no-repeat 0 0; background-size:250px 250px;}
+		section{float:left; margin-left:20px;
+			h4{display:block; margin:3px 0; font-size:1.75em; font-weight:normal;}
+			li{font-size:1.1em;
+				&:before{content:"·"; display:inline-block; padding-right:3px; color:#766341;}
+			}
+		}
+		&:after{content:""; display:block; clear:both;}
+	}
+}
+
+//편의시설
+.conven-infor{
+	h4{margin-bottom:6px;}
+	tr:first-child td{border-top:2px solid #f08200;}
+	tr:last-child td{border-bottom:1px solid #bdb5a0;}
+	td{padding:18px 0; border-bottom:1px solid #dedacf;
+		div{text-align:left; padding-left:3.5%;}
+		.icon{display:inline-block; text-align:center; width:42px; height:44px; background:url("/mobile/images/information/sprite-info.png") no-repeat; background-size:250px 250px;}
+		.icon-01{background-position:-56px 0;}
+		.icon-02{background-position:-104px 0;}
+		.icon-03{background-position:-151px 0;}
+		.icon-04{background-position:-198px 0;}
+		.icon-05{background-position:0 -62px;}
+		.icon-06{background-position:-47px -62px;}
+	}
+	li{
+		&:before{content:"·"; display:inline-block; padding-right:3px; color:#766341;}
+	}
+}
+
+//공지사항 리스트
+.board-list{
+	tr:first-child td{border-top:2px solid #f08200;}
+	tr:last-child td{border-bottom:1px solid #bdb5a0;}
+	td{padding:13px 0; border-bottom:1px solid #dedacf;}
+	.icon{display:block; width:25px; height:15px; margin-top:-15px; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px;}
+	.guide_icon{background-position:-154px 0;}
+	.discount_icon{background-position:-189px 0;}
+	div{text-align:left;
+		h4{font-size:1.15em; margin-bottom:5px;}
+		.date{color:#999;}
+	}
+}
+
+//공지사항 view
+.board-view{
+	article{border-top:2px solid #f08200; border-bottom:1px solid #bdb5a0;
+		h4{padding:14px 0; border-bottom:1px solid #dedacf;}
+		.date-wrap{display:block; padding:8px 0; border-bottom:1px solid #dedacf;
+			.title{}
+			.date{}
+		}
+		.content{}
+	}
+	.btns{
+		.btn{}
+		.prev-btn{}
+		.next-btn{}
+		.list-btn{}
 	}
 }

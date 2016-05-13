@@ -36,8 +36,48 @@
                     <span class="text">한국민속촌에서 전하는 소식</span>
                 </div>
             </div>
-            <div class="detail-content">
-                <img src="/mobile/images/information/notice_img.gif" alt="공지사항" />
+            <div class="detail-content board-list">
+                <table>
+                    <caption>한국 민속촌 공지사항 게시판</caption>
+                    <tbody>
+                        <tr>
+                            <td><span class="icon guide_icon"></span></td>
+                            <td>
+                                <div>
+                                    <h4 style="color:#f08200;">한국민속촌 정기공연 변경안내(4/18~)</h4>
+                                    <span class="date">2016.04.04</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="icon guide_icon"></span></td>
+                            <td>
+                                <div>
+                                    <h4>아시안 푸드 레스토랑 '테라스그린' 오픈 안내</h4>
+                                    <span class="date">2016.03.21</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="icon discount_icon"></span></td>
+                            <td>
+                                <div>
+                                    <h4>해피포인트 제휴 할인 이벤트</h4>
+                                    <span class="date">2016.02.12</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="icon guide_icon"></span></td>
+                            <td>
+                                <div>
+                                    <h4>한국민속촌 내 이미지/영상 촬영안내</h4>
+                                    <span class="date">2014.10.31</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
