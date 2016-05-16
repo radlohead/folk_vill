@@ -16,7 +16,15 @@
 <!--#include virtual="/mobile/common/inc/header.html" -->
 
     <div class="header_title_slide">
- <!--#include virtual="/mobile/common/inc/rg_menu.html" -->
+        <div class="title">
+            <h2>이용안내</h2>
+            <aside>
+                <h2>이용안내
+                    <span class="icon"></span>
+                </h2>
+<!--#include virtual="/mobile/common/inc/rg_menu.html" -->
+            </aside>
+        </div>
 
         <div class="slider multiple-items">
             <a href="/mobile/information/convenience.asp">편의시설</a>

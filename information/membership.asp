@@ -16,7 +16,15 @@
 <!--#include virtual="/mobile/common/inc/header.html" -->
 
     <div class="header_title_slide">
+        <div class="title">
+            <h2>이용안내</h2>
+            <aside>
+                <h2>이용안내
+                    <span class="icon"></span>
+                </h2>
 <!--#include virtual="/mobile/common/inc/rg_menu.html" -->
+            </aside>
+        </div>
 
         <div class="slider multiple-items">
             <a href="/mobile/information/membership.asp">연간회원안내</a>
@@ -72,8 +80,8 @@
                  <section class="join-method">
                     <h5>현장 방문 가입</h5>
                     <ul>
-                        <li>정문 단체상담실에서 신청서 작성 후 한국민속촌 이용</li>
-                        <li>미리 가입신청서 작성 후 방문 시 빠른 진행 가능</li>
+                        <li>정문 단체상담실에서 가입신청서 작성 후 즉시 가입</li>
+                        <li>가입신청서 사전 작성 방문 시 빠른 처리</li>
                     </ul>
                     <h5>이메일 접수</h5>
                     <ul>
@@ -92,12 +100,12 @@
                     <ul>
                         <li>정면을 보고 있는 최근 사진(모자, 선그라스 착용 금물) 지참</li>
                         <li>별도의 사진촬영 없음</li>
-                        <li>본인 방문이 어려우실 경우, 신분증 사본과 사진 지참</li>
+                        <li>본인 미방문 시 신분증 사본, 사진 필요</li>
                         <li>복지카드 소지 대인은 아동 요금 적용</li>
                     </ul>
                     <h5>이용 시</h5>
                     <ul>
-                        <li>한국민속촌 관람 시 회원권 항상 패용</li>
+                        <li>한국민속촌 관람 시 회원권 항시 패용</li>
                         <li>부득이한 휴장 시 이용 제한</li>
                         <li>미술관, 전시관은 운영 사정상 휴관 가능</li>
                         <li>회원권 분실 및 미지참시 재발급 수수료 3,000원 부담</li>

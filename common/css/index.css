@@ -34,9 +34,9 @@ aside.gnb .userinfo a { display: table; float: left; text-align: center; font-si
 aside.gnb .userinfo .home-btn { width: 18px; height: 18px; background: url("/mobile/images/common/sprite.png") no-repeat -49px -158px; background-size: 300px 500px; }
 aside.gnb .userinfo .btns { float: right; }
 aside.gnb .userinfo .btns .login-btn { width: 84px; height: 23px; margin-right: 7px; background: #121212; }
-aside.gnb .userinfo .btns .login-btn span { display: table-cell; vertical-align: middle; opacity: 0.8; }
+aside.gnb .userinfo .btns .login-btn span { display: table-cell; vertical-align: middle; opacity: 0.8; font-size: 1.2em; }
 aside.gnb .userinfo .btns .join-btn { width: 84px; height: 23px; background: #121212; }
-aside.gnb .userinfo .btns .join-btn span { display: table-cell; vertical-align: middle; opacity: 0.8; }
+aside.gnb .userinfo .btns .join-btn span { display: table-cell; vertical-align: middle; opacity: 0.8; font-size: 1.2em; }
 aside.gnb > ul.navi { clear: both; }
 aside.gnb > ul.navi a { display: block; }
 aside.gnb > ul.navi > li.active { padding: 0; background: #121212; }
@@ -47,9 +47,10 @@ aside.gnb > ul.navi > li > a { padding: 19px 0 16px; font-size: 1.6em; }
 aside.gnb > ul.navi > li > a:after { display: block; float: right; width: 10px; height: 6px; margin: 1.5% 2% 0 0; content: ""; background: url("/mobile/images/common/sprite.png") no-repeat -128px -162px; background-size: 300px 500px; }
 aside.gnb > ul.navi > li > ul > li { border-top: 1px solid #2a2a2a; }
 aside.gnb > ul.navi > li > ul > li a { padding: 12px 0 12px 19px; font-size: 1.2em; }
-aside.gnb > ul.navi > li > ul > li a:after { display: block; float: left; width: 5px; height: 6px; margin: 6px 5px 0 0; content: ""; background: url("/mobile/images/common/sprite.png") no-repeat -167px -163px; background-size: 300px 500px; }
+aside.gnb > ul.navi > li > ul > li a:after { display: block; float: left; width: 5px; height: 6px; margin: 4px 5px 0 0; content: ""; background: url("/mobile/images/common/sprite.png") no-repeat -167px -163px; background-size: 300px 500px; }
 aside.gnb > ul.navi > li > ul > li.active { padding: 0; }
-aside.gnb > ul.navi > li > ul > li.active a:after { display: block; float: left; width: 5px; height: 6px; margin: 6px 5px 0 0; content: ""; background: url("/mobile/images/common/sprite.png") no-repeat -197px -163px; background-size: 300px 500px; }
+aside.gnb > ul.navi > li > ul > li.active a:after { display: block; float: left; width: 5px; height: 6px; margin: 4px 5px 0 0; content: ""; background: url("/mobile/images/common/sprite.png") no-repeat -197px -163px; background-size: 300px 500px; }
+aside.gnb > ul.navi li.menu08 a:after { background: none; }
 aside.gnb > ul.navi li:first-child { border-top: 1px solid #6f6c65; }
 aside.gnb footer { padding-left: 0; padding-right: 0; }
 
@@ -117,15 +118,14 @@ aside.gnb footer { padding-left: 0; padding-right: 0; }
 .vivi-site .video { width: 92%; height: 170px; padding: 0 4%; }
 .vivi-site .video a { display: block; }
 
-.footer_wrap .sns_link { overflow: hidden; width: 115px; margin: 75px auto 15px; }
-.footer_wrap .sns_link li { float: left; width: 25px; height: 25px; margin-left: 5px; background: url("/mobile/images/common/sprite.png") no-repeat; background-size: 300px 500px; }
-.footer_wrap .sns_link li a { display: block; height: 100%; text-indent: -9999px; }
-.footer_wrap .sns_link .facebook { margin-left: 0; background-position: -94px -98px; }
-.footer_wrap .sns_link .twitter { background-position: -124px -98px; }
-.footer_wrap .sns_link .blog { background-position: -154px -98px; }
-.footer_wrap .sns_link .kakaostory { background-position: -184px -98px; }
-
-footer { overflow: hidden; padding: 22px 3.5% 30px; background: #312d22; color: #fff; font-size: 1em; }
+footer { overflow: hidden; margin-top: 25px; padding: 15px 3.5% 30px; background: #312d22; color: #fff; font-size: 1em; }
+footer .sns_link { overflow: hidden; width: 115px; margin: 0 auto 15px; }
+footer .sns_link li { float: left; width: 25px; height: 25px; margin-left: 5px; background: url("/mobile/images/common/sprite.png") no-repeat; background-size: 300px 500px; }
+footer .sns_link li a { display: block; height: 100%; text-indent: -9999px; }
+footer .sns_link .facebook { margin-left: 0; background-position: -94px -98px; }
+footer .sns_link .twitter { background-position: -124px -98px; }
+footer .sns_link .blog { background-position: -154px -98px; }
+footer .sns_link .kakaostory { background-position: -184px -98px; }
 footer .footer_link { overflow: hidden; width: 100%; border-collapse: collapse; }
 footer .footer_link li { display: inline-block; float: left; width: 33%; margin-left: 0.5%; padding: 8px 0; text-align: center; background: #766341; box-sizing: border-box; }
 footer .footer_link li a { color: #fff; }
@@ -147,10 +147,10 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .header_title_slide .title aside h2 { float: left; font-size: 1.2em; }
 .header_title_slide .title aside h2 .icon { display: block; float: right; width: 16px; height: 16px; margin: 0 0 0 8px; background: url("/mobile/images/common/sprite.png") no-repeat -199px -208px; background-size: 300px 500px; }
 .header_title_slide .title aside h2 .icon.on { display: block; float: right; width: 16px; height: 16px; margin: 0 0 0 8px; background: url("/mobile/images/common/sprite.png") no-repeat -239px -208px; background-size: 300px 500px; }
-.header_title_slide .title aside .menu { display: none; position: absolute; top: 24px; right: 0; z-index: 50; width: 130%; padding: 9px 0; text-indent: 15%; background: #766341; }
+.header_title_slide .title aside .menu { display: none; position: absolute; top: 24px; right: -20%; z-index: 50; width: 130%; padding: 9px 10%; text-indent: 15%; background: #e8aa00; }
 .header_title_slide .title aside .menu li { display: table; width: 100%; height: 25px; font-size: 65%; }
 .header_title_slide .title aside .menu li a { display: table-cell; vertical-align: middle; color: #fff; }
-.header_title_slide .title aside .menu li a:focus { background: #312d22; color: #f08200; }
+.header_title_slide .title aside .menu li a:focus { background: #766341; color: #e8aa00; }
 .header_title_slide .title aside .menu::before { content: ""; display: block; position: absolute; top: -7px; left: 43%; width: 13px; height: 9px; background: url("/mobile/images/common/sprite.png") no-repeat -92px -264px; background-size: 300px 500px; }
 .header_title_slide .title aside::after { content: ""; display: block; clear: both; }
 .header_title_slide .slick-slider { width: 87%; margin: 0 auto; padding: 12px 0 0; font-size: 1.1em; }
@@ -192,6 +192,10 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-member .detail-head .text-box .guide-time { display: block; margin-top: 11px; margin-left: 23px; font-size: 65%; color: #f08200; }
 .detail-member .detail-head .text-box .guide-time .text { display: block; }
 .detail-member .detail-head .text-box .guide-time .time { color: #666; }
+
+.detail-discount .detail-head { overflow: hidden; margin-bottom: 30px; }
+.detail-discount .detail-head h3 { width: 42%; margin-bottom: 12px; font-size: 2.25em; color: #333; font-weight: bold; }
+.detail-discount .detail-head .text { display: block; font-size: 1.1em; color: #000; letter-spacing: -0.05em; }
 
 .content-head { position: relative; margin-bottom: 25px; }
 .content-head img { width: 100%; }
@@ -303,6 +307,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .traffic table.bus-time tr:last-child td { border-bottom: 1px solid #bdb5a0; }
 .traffic table.bus-use td { text-align: left; border-bottom: 1px solid #dedacf; font-size: inherit; }
 .traffic table.bus-use td strong { font-size: 1.1em; }
+.traffic table.bus-use td:first-child { text-align: center; }
 .traffic table.bus-use tr:first-child td { border-top: 2px solid #f08200; }
 .traffic table.bus-use tr:last-child td { border-bottom: 1px solid #bdb5a0; }
 .traffic ul.bus-time-list { margin: 11px 0 31px; }
@@ -310,14 +315,18 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .traffic ul.bus-time-list li:before { content: "*"; display: inline-block; padding-right: 7px; color: #f29322; }
 .traffic .bus-use-list { margin: 17px 0; }
 .traffic .bus-use-list ul { margin-top: 4px; font-size: 1em; }
-.traffic .bus_icon { display: block; width: 33px; height: 32px; }
+.traffic .icon { display: inline-block; width: 33px; height: 38px; background: url("/mobile/images/information/sprite-info.png") no-repeat 0 0; background-size: 250px 250px; }
+.traffic .bus_icon01 { background-position: -5px -103px; }
+.traffic .bus_icon02 { background-position: -48px -103px; }
+.traffic .bus_icon03 { height: 32px; background-position: -91px -103px; }
+.traffic .bus_icon04 { height: 32px; background-position: -134px -103px; }
 .traffic .bus-num { font-size: 1.2em; color: #f08200; }
 .traffic .text_icon_cir { display: inline-block; margin-top: 3px; }
 .traffic .text_icon_cir:before { content: ""; display: inline-block; width: 5px; height: 5px; margin-right: 3px; background: url("/mobile/images/common/sprite.png") no-repeat -129px -263px; background-size: 300px 500px; }
 .traffic .text_icon_tri { display: inline-block; margin-top: 3px; }
 .traffic .text_icon_tri:before { content: ""; display: inline-block; width: 5px; height: 5px; margin-right: 3px; background: url("/mobile/images/common/sprite.png") no-repeat -143px -263px; background-size: 300px 500px; }
 .traffic .road-sign { display: block; margin: 14px 0 38px; }
-.traffic .road-sign:before { content: "*"; display: inline-block; padding-right: 7px; color: #f29322; }
+.traffic .road-sign:before { content: "*"; display: inline-block; color: #f29322; }
 .traffic .parking { padding: 15px 0; border-top: 2px solid #f08200; border-bottom: 1px solid #bdb5a0; }
 .traffic .parking .icon_p { float: left; display: block; width: 56px; height: 56px; background: url("/mobile/images/information/sprite-info.png") no-repeat 0 0; background-size: 250px 250px; }
 .traffic .parking section { float: left; margin-left: 20px; }
@@ -351,7 +360,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .board-list div .date { color: #999; }
 
 .board-view article { border-top: 2px solid #f08200; border-bottom: 1px solid #bdb5a0; }
-.board-view article h4 { padding: 14px 0; border-bottom: 1px solid #dedacf; }
+.board-view article h4 { padding: 14px 0; }
 .board-view article .date-wrap { display: block; padding: 8px 0; border-bottom: 1px solid #dedacf; }
 .board-view article .content { padding: 24px 0; }
 .board-view .btns { display: block; margin-top: 14px; }

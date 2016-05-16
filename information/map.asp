@@ -28,7 +28,15 @@
     <!--#include virtual="/mobile/common/inc/header.html" -->
 
     <div class="header_title_slide">
-        <!--#include virtual="/mobile/common/inc/rg_menu.html" -->
+        <div class="title">
+            <h2>이용안내</h2>
+            <aside>
+                <h2>이용안내
+                    <span class="icon"></span>
+                </h2>
+<!--#include virtual="/mobile/common/inc/rg_menu.html" -->
+            </aside>
+        </div>
 
         <div class="slider multiple-items">
             <a href="/mobile/information/map.asp">가이드맵</a>
@@ -85,7 +93,7 @@
                             <section>
                                 <img src="/mobile/images/information/map/shop_vill_img02.jpg" alt="길목집" />
                                 <h4>길목집</h4>
-                                <p>100명을 수용할 수 있는 넓은 홀과 함께 불고기, 돌솥비빔밥, 버섯불고기 다양한 식사와 안주를 즐길 수있습니다.</p>
+                                <p>450명을 수용할 수 있는 넓은 홀과 함께 경산 쇠고기 국밥, 목포 낙지 비빔밥, 안동 산채 비빔밥, 동래 해물파전 등 다양한 식사류와 안주류를 즐길 수 있습니다.</p>
                             </section>
                             <section>
                                 <img src="/mobile/images/information/map/shop_vill_img03.jpg" alt="전통찻집" />
@@ -126,7 +134,7 @@
                             <section>
                                 <img src="/mobile/images/information/map/folk_vill_img04.jpg" alt="전통민속관" />
                                 <h4>전통민속관</h4>
-                                <p>조선시대 후기 경기도 용인에서 농사를 지으며 살았던 4대 가족의 연중생활을 엿볼 수 있습니다. 사계절, 24절기를 중심으로 태어나서 죽을 때까지의 일생 의례를 생동감있게 연출했습니다.</p>
+                                <p>조선시대 후기 경기도 용인에서 농사를 지으며 살았던 4대 가족의 연중생활을 엿볼 수 있습니다. 사계절, 24절기를 중심으로 태어나서 죽을 때까지의 일생의례를 생동감있게 연출했습니다.</p>
                             </section>
                         </article>
                     </div>
@@ -166,10 +174,8 @@
                     <div class="tab-content tabMenu4">
                         <article>
                             <p class="caption">
-                                장터에서는 각 지방에서 전해 내려오는 토속음식 20여 가지와 냉면,
-                                묵, 비빔밥, 손만둣국 등 입맛을 돋우는 계절음식을 맛볼 수 있습니
-                                다. 모든 음식은 화학조미료나 가공식품을 일체 배제하며, 천연조미
-                                료만 사용해 옛날 전통의 맛을 그대로 담아냅니다.
+                                장터에서는 각 지방에서 전해 내려오는 토속음식 20여 가지와 냉면, 묵, 비빔밥, 손만둣국 등 입맛을 돋우는 계절음식을 맛볼 수 있습니다.
+                                모든 음식은 화학조미료나 가공식품을 일체 배제하며, 천연조미료만 사용해 옛날 전통의 맛을 그대로 담아냅니다.
                             </p>
                             <img src="/mobile/images/information/map/market_place_map.png" alt="장터지도" />
                             <h4>주요메뉴</h4>
