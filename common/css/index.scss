@@ -228,11 +228,11 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			&::after{content:""; display:block; clear:both;}
 		}
 	}
-	.slick-slider{width:87%; margin:0 auto; padding:12px 0 0; font-size:1.1em;
+	.slick-slider{width:87%; margin:0 auto; padding:12px 0 12px; font-size:1.1em;
 		.slick-list{overflow:hidden;
 			.slick-slide{text-align:center;}
-			.slick-active{border-left:1px solid #bdb5a0;}
-			.slick-current{border:0; color:#f08200;}
+			.slick-active{border-left:1px solid #bdb5a0; margin:-1px;}
+			.slick-current{border:0; color:#f08200; margin:0;}
 		}
 		.slick-arrow{border:0; position:absolute; top:12px; width:5px; height:8px; padding:7px; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px; text-indent:-9999px; z-index:10;}
 		.slick-prev{left:-7%; margin-left:3.5%; background-position:-225px -158px;}
@@ -243,6 +243,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 .contents{padding:0 3.5%;
 	//img{width:100%;}
 }
+.detail-content{overflow:hidden;}
 
 .detail-show{
 	.detail-head{overflow: hidden; margin-bottom:30px;
@@ -406,7 +407,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	h5{font-size:1.3em;}
 	table{width:100%;
 		th{font-size:1.2em;}
-		td{text-align:center; font-size:1.1em;}
+		td{text-align:center;}
 	}
 }
 
@@ -550,10 +551,10 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.content{padding:24px 0;}
 	}
 	.btns{display:block; margin-top:14px;
-		.btn{display:block; float:left; width:40px; height:40px; text-indent:-9999px; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px;}
+		.btn{display:block; float:left; width:40px; height:40px; text-indent:-9999px; box-sizing:border-box; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px;}
 		.prev-btn{margin-right:7px; background-position:-168px -258px;}
 		.next-btn{background-position:-213px -258px;}
-		.list-btn{float:right; text-indent:inherit; text-align:center; background:#fff; border:1px solid #bdb5a0; font-size:1.25em; line-height:3em;}
+		.list-btn{float:right; text-indent:inherit; text-align:center; background:#fff; border:1px solid #bdb5a0; font-size:1.25em; line-height:3.2em;}
 	}
 }
 
@@ -581,5 +582,28 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 
 //할인프로모션
 .promotion-list{
+	tr:first-child td{border-top:2px solid #f08200;}
+	tr:last-child td{border-bottom:1px solid #bdb5a0;}
+	td{padding:15px 0; border-bottom:1px solid #dedacf;}
+	div{text-align:left;
+		.text{font-size:1.2em;}
+		h4{font-size:1.8em;}
+	}
+	.icon{display:inline-block; background:url("/mobile/images/information/discount/sprite-discount.png") no-repeat; background-size:250px 250px;}
+	.icon_discount_33{width:43px; height:43px; background-position:-5px -5px;}
+	.icon_discount_max33{width:43px; height:43px; background-position:-52px -5px;}
+	.icon_discount_max50{width:43px; height:43px; background-position:-100px -5px;}
+	.icon_discount_about26{width:43px; height:43px; background-position:-147px -5px;}
+	.icon_more{width:24px; height:24px; background-position:-195px -15px;}
+}
 
+//제휴카드할인
+.credit_card{
+	select{width:97%; height: 30px; font-size: 1.1em; background:url("/mobile/images/common/select_icon.png") right center no-repeat; background-size:8px 7px;}
+	.card_company{display:inline-block; width:33.5%; height:30px; border:1px solid #bdb5a0;
+		.card_com{}
+	}
+	.card_name{display:inline-block; float:right; width:63.8%; height:30px; border:1px solid #bdb5a0;
+		.card_na{}
+	}
 }

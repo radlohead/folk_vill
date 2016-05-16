@@ -27,35 +27,34 @@
         </div>
 
         <div class="slider multiple-items">
+            <a href="/mobile/information/promotion_list.asp">할인프로모션</a>
             <a href="/mobile/information/credit_card.asp">제휴카드할인</a>
             <a href="/mobile/information/coupon_list.asp">쿠폰할인</a>
-            <a href="/mobile/information/promotion_list.asp">할인프로모션</a>
         </div>
     </div>
 
     <div class="contents">
         <div class="detail-discount">
             <div class="detail-head">
-                <h3>제휴카드할인</h3>
-                <span class="text">제휴카드 할인혜택 꼼꼼하게 찾아보기</span>
+                <h3>할인프로모션</h3>
+                <span class="text">알뜰하게 챙기고, 여유롭게 즐기는 방법</span>
             </div>
-            <div class="detail-content credit_card">
-                <span class="card_company">
-                    <label for="card_com" class="hidden">카드사</label>
-                    <select id="card_com" name="card_com" class="card_com">
-                        <option selected>카드사</option>
-                        <option>비씨카드</option>
-                    </select>
-                </span>
-                <span class="card_name">
-                    <label for="card_na" class="hidden">카드이름</label>
-                    <select id="card_na" name="card_na" class="card_na">
-                        <option selected>카드이름</option>
-                        <option>용인시민카드</option>
-                    </select>
-                </span>
-                <h4>용인시민카드(IBK기업은행_신용)</h4>
-                <img src="/mobile/images/information/discount/card_img01.jpg" alt="용인시민카드" />
+            <div class="detail-content board-view">
+                 <article>
+                     <h4>낭만을 잊은 그대를 위한 대학(원)생 특별할인</h4>
+                     <span class="date-wrap">
+                         <span class="title">이벤트기간</span>
+                         <span class="date">2016.04.04</span>
+                     </span>
+                     <div class="content">
+                         <img src="/mobile/images/information/discount/promotion_img.jpg" alt="낭만을 잊은 그대를 위한 대학(원)생을 위한 자유이용권 특별 할인" />
+                     </div>
+                 </article>
+                 <span class="btns">
+                     <a href="#none" class="btn prev-btn">이전 글 보기</a>
+                     <a href="#none" class="btn next-btn">다음 글 보기</a>
+                     <a href="#none" class="btn list-btn">목록</a>
+                 </span>
             </div>
         </div>
     </div>

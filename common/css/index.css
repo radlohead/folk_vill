@@ -153,16 +153,18 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .header_title_slide .title aside .menu li a:focus { background: #766341; color: #e8aa00; }
 .header_title_slide .title aside .menu::before { content: ""; display: block; position: absolute; top: -7px; left: 43%; width: 13px; height: 9px; background: url("/mobile/images/common/sprite.png") no-repeat -92px -264px; background-size: 300px 500px; }
 .header_title_slide .title aside::after { content: ""; display: block; clear: both; }
-.header_title_slide .slick-slider { width: 87%; margin: 0 auto; padding: 12px 0 0; font-size: 1.1em; }
+.header_title_slide .slick-slider { width: 87%; margin: 0 auto; padding: 12px 0 12px; font-size: 1.1em; }
 .header_title_slide .slick-slider .slick-list { overflow: hidden; }
 .header_title_slide .slick-slider .slick-list .slick-slide { text-align: center; }
-.header_title_slide .slick-slider .slick-list .slick-active { border-left: 1px solid #bdb5a0; }
-.header_title_slide .slick-slider .slick-list .slick-current { border: 0; color: #f08200; }
+.header_title_slide .slick-slider .slick-list .slick-active { border-left: 1px solid #bdb5a0; margin: -1px; }
+.header_title_slide .slick-slider .slick-list .slick-current { border: 0; color: #f08200; margin: 0; }
 .header_title_slide .slick-slider .slick-arrow { border: 0; position: absolute; top: 12px; width: 5px; height: 8px; padding: 7px; background: url("/mobile/images/common/sprite.png") no-repeat; background-size: 300px 500px; text-indent: -9999px; z-index: 10; }
 .header_title_slide .slick-slider .slick-prev { left: -7%; margin-left: 3.5%; background-position: -225px -158px; }
 .header_title_slide .slick-slider .slick-next { right: -7%; margin-right: 3.5%; background-position: -250px -158px; }
 
 .contents { padding: 0 3.5%; }
+
+.detail-content { overflow: hidden; }
 
 .detail-show .detail-head { overflow: hidden; margin-bottom: 30px; }
 .detail-show .detail-head h3 { float: left; width: 42%; font-size: 2.25em; color: #333; font-weight: bold; }
@@ -274,7 +276,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .contents h5 { font-size: 1.3em; }
 .contents table { width: 100%; }
 .contents table th { font-size: 1.2em; }
-.contents table td { text-align: center; font-size: 1.1em; }
+.contents table td { text-align: center; }
 
 .detail-member .mem-benefit h4 { margin-bottom: 15px; }
 .detail-member .mem-price h4 { margin: 27px 0 12px; }
@@ -364,10 +366,10 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .board-view article .date-wrap { display: block; padding: 8px 0; border-bottom: 1px solid #dedacf; }
 .board-view article .content { padding: 24px 0; }
 .board-view .btns { display: block; margin-top: 14px; }
-.board-view .btns .btn { display: block; float: left; width: 40px; height: 40px; text-indent: -9999px; background: url("/mobile/images/common/sprite.png") no-repeat; background-size: 300px 500px; }
+.board-view .btns .btn { display: block; float: left; width: 40px; height: 40px; text-indent: -9999px; box-sizing: border-box; background: url("/mobile/images/common/sprite.png") no-repeat; background-size: 300px 500px; }
 .board-view .btns .prev-btn { margin-right: 7px; background-position: -168px -258px; }
 .board-view .btns .next-btn { background-position: -213px -258px; }
-.board-view .btns .list-btn { float: right; text-indent: inherit; text-align: center; background: #fff; border: 1px solid #bdb5a0; font-size: 1.25em; line-height: 3em; }
+.board-view .btns .list-btn { float: right; text-indent: inherit; text-align: center; background: #fff; border: 1px solid #bdb5a0; font-size: 1.25em; line-height: 3.2em; }
 
 .main-tab.map .tabMenu { margin-bottom: 10px; }
 .main-tab.map article img { width: 100%; }
@@ -381,5 +383,22 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .main-tab.map article .market-menu .caption { text-align: left; margin-bottom: 23px; }
 .main-tab.map article .market-menu .caption span { display: block; margin: 10px 0 3px; font-size: 1em; }
 .main-tab.map article .market-menu .caption em { display: block; font-size: 1.2em; }
+
+.promotion-list tr:first-child td { border-top: 2px solid #f08200; }
+.promotion-list tr:last-child td { border-bottom: 1px solid #bdb5a0; }
+.promotion-list td { padding: 15px 0; border-bottom: 1px solid #dedacf; }
+.promotion-list div { text-align: left; }
+.promotion-list div .text { font-size: 1.2em; }
+.promotion-list div h4 { font-size: 1.8em; }
+.promotion-list .icon { display: inline-block; background: url("/mobile/images/information/discount/sprite-discount.png") no-repeat; background-size: 250px 250px; }
+.promotion-list .icon_discount_33 { width: 43px; height: 43px; background-position: -5px -5px; }
+.promotion-list .icon_discount_max33 { width: 43px; height: 43px; background-position: -52px -5px; }
+.promotion-list .icon_discount_max50 { width: 43px; height: 43px; background-position: -100px -5px; }
+.promotion-list .icon_discount_about26 { width: 43px; height: 43px; background-position: -147px -5px; }
+.promotion-list .icon_more { width: 24px; height: 24px; background-position: -195px -15px; }
+
+.credit_card select { width: 97%; height: 30px; font-size: 1.1em; background: url("/mobile/images/common/select_icon.png") right center no-repeat; background-size: 8px 7px; }
+.credit_card .card_company { display: inline-block; width: 33.5%; height: 30px; border: 1px solid #bdb5a0; }
+.credit_card .card_name { display: inline-block; float: right; width: 63.8%; height: 30px; border: 1px solid #bdb5a0; }
 
 /*# sourceMappingURL=index.css.map */
