@@ -440,6 +440,29 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .folk .photo-img img { width: 100%; }
 .folk .text01 { font-size: 1.1em; line-height: 1.5em; }
 
+.folk-tab { overflow: hidden; position: relative; margin-top: 16px; }
+.folk-tab .tabMenu { overflow: hidden; position: relative; width: 100%; margin-bottom: 20px; }
+.folk-tab .tabMenu li { float: left; width: 25%; margin-left: -1px; text-align: center; background-size: cover; background-repeat: no-repeat; background-position: left center; box-sizing: border-box; }
+.folk-tab .tabMenu li a { display: block; }
+.folk-tab .tabMenu li:first-child { margin-left: 0; background-position: right center; }
+.folk-tab .tabMenu li.on { position: relative; }
+.folk-tab .tabMenu .menu1 { background-image: url("/mobile/images/folkvillage/display/tab-title01.png"); }
+.folk-tab .tabMenu .menu1.on { background-image: url("/mobile/images/folkvillage/display/tab-title01_on.png"); }
+.folk-tab .tabMenu .menu2 { background-image: url("/mobile/images/folkvillage/display/tab-title02.png"); }
+.folk-tab .tabMenu .menu2.on { background-image: url("/mobile/images/folkvillage/display/tab-title02_on.png"); }
+.folk-tab .tabMenu .menu3 { background-image: url("/mobile/images/folkvillage/display/tab-title03.png"); }
+.folk-tab .tabMenu .menu3.on { background-image: url("/mobile/images/folkvillage/display/tab-title03_on.png"); }
+.folk-tab .tabMenu .menu4 { background-image: url("/mobile/images/folkvillage/display/tab-title04.png"); }
+.folk-tab .tabMenu .menu4.on { background-image: url("/mobile/images/folkvillage/display/tab-title04_on.png"); }
+.folk-tab .tab-content { clear: both; margin-bottom: 15px; }
+.folk-tab .tab-content .swiper-slide { text-align: center; }
+.folk-tab .tab-content .swiper-button-prev { margin-top: -21px; background-position: 0 -93px; }
+.folk-tab .tab-content .swiper-button-next { margin-top: -21px; background-position: -37px -93px; }
+.folk-tab .tabMenu2, .folk-tab .tabMenu3, .folk-tab .tabMenu4 { display: none; }
+.folk-tab .photo-img { display: block; margin: 21px 0; }
+.folk-tab .photo-img img { width: 100%; }
+.folk-tab .text01 { font-size: 1.1em; line-height: 1.5em; }
+
 .single-items .slick-track { left: 0 !important; }
 
 .single-items .slick-track a:first-child { border-left: 0; }

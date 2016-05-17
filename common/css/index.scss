@@ -662,6 +662,36 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.text01{font-size:1.1em; line-height: 1.5em;}
 }
 
+.folk-tab{overflow:hidden; position:relative; margin-top: 16px;
+	.tabMenu{overflow:hidden; position:relative; width:100%; margin-bottom:20px;
+		li{float:left; width:25%; margin-left:-1px; text-align:center; background-size:cover; background-repeat:no-repeat; background-position: left center; box-sizing: border-box;
+			a{display:block;}
+		}
+		li:first-child{margin-left:0; background-position: right center;}
+		li.on{position:relative;}
+		.menu1{background-image:url("/mobile/images/folkvillage/display/tab-title01.png");}
+		.menu1.on{background-image:url("/mobile/images/folkvillage/display/tab-title01_on.png");}
+		.menu2{background-image:url("/mobile/images/folkvillage/display/tab-title02.png");}
+		.menu2.on{background-image:url("/mobile/images/folkvillage/display/tab-title02_on.png");}
+		.menu3{background-image:url("/mobile/images/folkvillage/display/tab-title03.png");}
+		.menu3.on{background-image:url("/mobile/images/folkvillage/display/tab-title03_on.png");}
+		.menu4{background-image:url("/mobile/images/folkvillage/display/tab-title04.png");}
+		.menu4.on{background-image:url("/mobile/images/folkvillage/display/tab-title04_on.png");}
+	}
+	.tab-content{clear:both; margin-bottom:15px;
+		.swiper-slide{text-align:center;}
+		.swiper-button-prev{margin-top: -21px; background-position: 0 -93px;}
+		.swiper-button-next{margin-top: -21px; background-position: -37px -93px;}
+	}
+	.tabMenu1{}
+	.tabMenu2, .tabMenu3, .tabMenu4{display:none;}
+
+	.photo-img{display:block; margin:21px 0;
+		img{width:100%;}
+	}
+	.text01{font-size:1.1em; line-height: 1.5em;}
+}
+
 //slick 현재페이지 표시
 .single-items .slick-track{left:0 !important;}
 .single-items .slick-track a:first-child{border-left:0;}
