@@ -19,17 +19,14 @@
         <div class="title">
             <h2>할인정보</h2>
             <aside>
-                <h2>이용안내
+                <h2>할인정보
                     <span class="icon"></span>
                 </h2>
 <!--#include virtual="/mobile/common/inc/rg_menu.html" -->
             </aside>
         </div>
 
-        <div class="slider multiple-items">
-            <a href="/mobile/information/promotion_list.asp">할인프로모션</a>
-            <a href="/mobile/information/credit_card.asp">제휴카드할인</a>
-            <a href="/mobile/information/coupon_list.asp">쿠폰할인</a>
+        <div class="slider single-items">
             <a href="/mobile/information/promotion_list.asp">할인프로모션</a>
             <a href="/mobile/information/credit_card.asp">제휴카드할인</a>
             <a href="/mobile/information/coupon_list.asp">쿠폰할인</a>
@@ -39,11 +36,30 @@
     <div class="contents">
         <div class="detail-discount">
             <div class="detail-head">
-                <h3>할인프로모션</h3>
-                <span class="text">알뜰하게 챙기고, 여유롭게 즐기는 방법</span>
+                <h3>쿠폰할인</h3>
+                <span class="text">한국민속촌 온라인 회원에게 드리는 특별한 혜택!</span>
             </div>
             <div class="detail-content promotion-list">
-
+                <table>
+                    <caption>할인프로모션 리스트</caption>
+                    <colgroup>
+                        <col style="width:22.4%">
+                        <col style="width:60.1%">
+                        <col style="width:17.3% ">
+                    </colgroup>
+                    <tr>
+                        <td><span class="icon icon_discount_max33"></span></td>
+                        <td>
+                            <div>
+                                <span class="text">홈페이지 신규회원을 위한</span>
+                                <h4>봄 시즌 자유이용권 할인</h4>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#none" class="icon icon_more">자세히보기</a>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
@@ -55,13 +71,9 @@
 <!--#include virtual="/mobile/common/inc/script.html" -->
     <script>
         $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
+            $('.single-items').slick({
                 slidesToShow: 3,
-                slidesToScroll: 1
-            });
-            $('.single-item').slick({
-                dots: true
+                initialSlide: 2
             });
         });
     </script>

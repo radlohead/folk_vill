@@ -19,14 +19,14 @@
         <div class="title">
             <h2>할인정보</h2>
             <aside>
-                <h2>이용안내
+                <h2>할인정보
                     <span class="icon"></span>
                 </h2>
 <!--#include virtual="/mobile/common/inc/rg_menu.html" -->
             </aside>
         </div>
 
-        <div class="slider multiple-items">
+        <div class="slider single-items">
             <a href="/mobile/information/promotion_list.asp">할인프로모션</a>
             <a href="/mobile/information/credit_card.asp">제휴카드할인</a>
             <a href="/mobile/information/coupon_list.asp">쿠폰할인</a>
@@ -56,7 +56,7 @@
                             </div>
                         </td>
                         <td>
-                            <span class="icon icon_more"></span>
+                            <a href="#none" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
                     <tr>
@@ -68,7 +68,7 @@
                             </div>
                         </td>
                         <td>
-                            <span class="icon icon_more"></span>
+                            <a href="#none" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
                     <tr>
@@ -80,7 +80,7 @@
                             </div>
                         </td>
                         <td>
-                            <span class="icon icon_more"></span>
+                            <a href="#none" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
                     <tr>
@@ -92,7 +92,7 @@
                             </div>
                         </td>
                         <td>
-                            <span class="icon icon_more"></span>
+                            <a href="#none" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
                     <tr>
@@ -104,7 +104,7 @@
                             </div>
                         </td>
                         <td>
-                            <span class="icon icon_more"></span>
+                            <a href="#none" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
                 </table>
@@ -119,13 +119,9 @@
 <!--#include virtual="/mobile/common/inc/script.html" -->
     <script>
         $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
+            $('.single-items').slick({
                 slidesToShow: 3,
-                slidesToScroll: 1
-            });
-            $('.single-item').slick({
-                dots: true
+                initialSlide: 0
             });
         });
     </script>

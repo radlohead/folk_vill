@@ -19,7 +19,7 @@
         <div class="title">
             <h2>할인정보</h2>
             <aside>
-                <h2>이용안내
+                <h2>할인정보
                     <span class="icon"></span>
                 </h2>
 <!--#include virtual="/mobile/common/inc/rg_menu.html" -->

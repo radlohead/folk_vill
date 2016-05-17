@@ -19,17 +19,17 @@
         <div class="title">
             <h2>할인정보</h2>
             <aside>
-                <h2>이용안내
+                <h2>할인정보
                     <span class="icon"></span>
                 </h2>
 <!--#include virtual="/mobile/common/inc/rg_menu.html" -->
             </aside>
         </div>
 
-        <div class="slider multiple-items">
+        <div class="slider single-items">
+            <a href="/mobile/information/promotion_list.asp">할인프로모션</a>
             <a href="/mobile/information/credit_card.asp">제휴카드할인</a>
             <a href="/mobile/information/coupon_list.asp">쿠폰할인</a>
-            <a href="/mobile/information/promotion_list.asp">할인프로모션</a>
         </div>
     </div>
 
@@ -56,6 +56,54 @@
                 </span>
                 <h4>용인시민카드(IBK기업은행_신용)</h4>
                 <img src="/mobile/images/information/discount/card_img01.jpg" alt="용인시민카드" />
+                <table>
+                    <caption>제휴카드 할인혜택에 대한 설명</caption>
+                    <colgroup>
+                        <col style="width:25%">
+                        <col style="width:62.5%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>할인혜택</th>
+                            <td>성인자유이용권 24,000원 중 60% 할인</td>
+                        </tr>
+                        <tr>
+                            <th>할인 대상 실적</th>
+                            <td>
+                                전월 실적 30만원 이상 (전 업종) 시 서비스 제공
+                                (월 1회/연 8회 사용가능)
+                                * 카드종류에 따라 기준이 다르므로 자세한 사항은
+                                카드사에 문의하시기 바랍니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>할인 혜택 제한</th>
+                            <td>
+                                가족카드, 한도 초과, 도난 분실, 거래 정지, 마그네
+                                틱 손상 등 카드는 할인 대상에서 제외됩니다.
+                                제휴카드 할인은 타 할인혜택과 중복 적용되지 않
+                                습니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>할인 방식</th>
+                            <td>
+                                할인 결제는 무 전표 결제 방식으로 별도의 카드 영
+                                수증을 발행하지 않습니다. 현장 할인 방식으로
+                                9,600원만 결제됩니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>기타사항</th>
+                            <td>
+                                할인 대상 카드의 종류와 할인 조건은 카드사 사정
+                                에 따라 변경 될 수 있습니다. 농협, 하나은행 일부
+                                상품의 기존 캐쉬백 할인과는 중복 적용되지 않습
+                                니다.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -67,13 +115,9 @@
 <!--#include virtual="/mobile/common/inc/script.html" -->
     <script>
         $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
+            $('.single-items').slick({
                 slidesToShow: 3,
-                slidesToScroll: 1
-            });
-            $('.single-item').slick({
-                dots: true
+                initialSlide: 1
             });
         });
     </script>
