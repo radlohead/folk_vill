@@ -27,7 +27,7 @@
         </div>
 
         <div class="slider single-items">
-            <a href="/mobile/folkvillage/folk_chosun.asp">조신시대마을</a>
+            <a href="/mobile/folkvillage/folk_chosun.asp">조선시대마을</a>
             <a href="/mobile/folkvillage/display_traditional.asp">전시마당</a>
         </div>
     </div>

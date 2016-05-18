@@ -97,7 +97,6 @@ $(document).ready(function(){
 		$(window).resize(function(){
 			var h_height = $("header").outerHeight();
 			$(".header_wrap").outerHeight(h_height);
-			console.log(h_height);
 		});
 	})();
 
@@ -121,6 +120,62 @@ $(document).ready(function(){
 		$(title).click(function(){
 			content.toggle();
 			icon.toggleClass("on");
+		});
+	})();
+
+	//dim popup height값 구하기
+	(function(){
+		var dimResize = function(){
+			var docH = $(document).height();
+			$(".dim-bg").css({
+				height : docH
+			});
+			var winW = $(window).width(),
+				winH = $(window).height(),
+				headerH = $(".header_wrap").outerHeight();
+			$(".pop").css({
+				left:(winW/2) - ($(".pop").width()/2),
+				top: headerH
+			});
+		};
+
+		dimResize();
+
+		$(window).on('resize', function(){
+			dimResize();
+		});
+	})();
+
+	//popup 클릭시 지도띄우기 tab1번을 클릭하면 1번이미지 띄우기
+	(function(){
+		$(".popup_close-btn").click(function(){
+			$(".popup_wrap").css("visibility","hidden");
+			var pop = $(".popup_wrap .pop img");
+			$(pop).attr("src", "");
+		});
+		$(".map-btn").click(function(){
+			$(".popup_wrap").css("visibility","visible");
+		});
+
+		$(".tabMenu1 .map-btn").click(function(){
+			var pop = $(".popup_wrap .pop img");
+			$(pop).attr("src", "/mobile/images/page_map/page_map_display01.png");
+			$(".popup_wrap").css("visibility","visible");
+		});
+		$(".tabMenu2 .map-btn").click(function(){
+			var pop = $(".popup_wrap .pop img");
+			$(pop).attr("src", "/mobile/images/page_map/page_map_display02.png");
+			$(".popup_wrap").css("visibility","visible");
+		});
+		$(".tabMenu3 .map-btn").click(function(){
+			var pop = $(".popup_wrap .pop img");
+			$(pop).attr("src", "/mobile/images/page_map/page_map_display03.png");
+			$(".popup_wrap").css("visibility","visible");
+		});
+		$(".tabMenu4 .map-btn").click(function(){
+			var pop = $(".popup_wrap .pop img");
+			$(pop).attr("src", "/mobile/images/page_map/page_map_display04.png");
+			$(".popup_wrap").css("visibility","visible");
 		});
 	})();
 
