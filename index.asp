@@ -98,7 +98,7 @@
 					<!-- Add Arrows -->
 					<div class="btns">
 						<div class="swiper-button-prev"><img src="/mobile/images/index/today-prev_btn.png" alt="" /></div>
-						<div class="plus_btn"><a href="#" data-index="1"><img src="/mobile/images/index/today-plus_btn.png" alt="" /></a></div>
+						<div class="plus_btn"><a href="#"><img src="/mobile/images/index/today-plus_btn.png" alt="" /></a></div>
 						<div class="swiper-button-next"><img src="/mobile/images/index/today-next_btn.png" alt="" /></div>
 					</div>
 				</div>
@@ -176,7 +176,7 @@
 				paginationClickable: true,
 				nextButton: '.today-slide .swiper-button-next',
 				prevButton: '.today-slide .swiper-button-prev',
-				autoplay: false,
+				autoplay: 2500,
 				loop:true
 			});
 		});
