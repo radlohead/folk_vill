@@ -74,10 +74,7 @@
             $('.multiple-items').slick({
                 infinite: true,
                 slidesToShow: 4,
-                slidesToScroll: 1
-            });
-            $('.single-item').slick({
-                dots: true
+                initialSlide: 4
             });
         });
     </script>

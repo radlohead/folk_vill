@@ -143,7 +143,9 @@ aside.gnb{display:none; position:absolute; top:15px; right:0; width:93%; height:
 			}
 			.btns{overflow:hidden; position:absolute; bottom:0; width:100%;
 				.swiper-button-prev{float:left; position:static; top:52.3%; width:33%; height:33%; margin-top:0; background:none;}
-				.plus_btn{float:left; position:static; top:47.5%; left:33.5%; z-index:10; width:33%; height:33%; margin-left:0.5%; background:none;}
+				.plus_btn{float:left; position:static; top:47.5%; left:33.5%; z-index:10; width:33%; height:33%; margin-left:0.5%; background:none;
+					a{display:block;}
+				}
 				.swiper-button-next{float:right; position:static; top:54.5%; width:33%; height:33%; margin-top:0; background:none;}
 				img{width:100%;}
 			}
@@ -189,8 +191,8 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.blog{background-position:-154px -98px;}
 		.kakaostory{background-position:-184px -98px;}
 	}
-	.footer_link{overflow:hidden; width:100%; border-collapse: collapse;
-		li{display:inline-block; float:left; width:33%; margin-left:0.5%; padding:8px 0; text-align:center; background:#766341; box-sizing:border-box;
+	.footer_link{overflow:hidden; width:100%; font-size:1.1em;
+		li{display:inline-block; float:left; width:33%; margin-left:0.5%; padding:15px 0; text-align:center; background:#766341; line-height:0;
 			a{color:#fff;}
 		}
 		li:first-child{margin:0;}
@@ -228,7 +230,17 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			&::after{content:""; display:block; clear:both;}
 		}
 	}
-	.slick-slider{width:87%; margin:0 auto; padding:12px 0 12px; font-size:1.1em;
+	.slick-slider.multiple-items{width:87%; margin:0 auto; height:37px; padding:11px 0 0; font-size:1.1em;
+		.slick-list{overflow:hidden;
+			.slick-slide{text-align:center;}
+			.slick-active{border-left:1px solid #bdb5a0; margin:0;}
+			.slick-current{border:0; color:#f08200; margin:0;}
+		}
+		.slick-arrow{border:0; position:absolute; top:10px; width:5px; height:8px; padding:7px; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px; text-indent:-9999px; z-index:10;}
+		.slick-prev{left:-7%; margin-left:3.5%; background-position:-225px -158px;}
+		.slick-next{right:-7%; margin-right:3.5%; background-position:-250px -158px;}
+	}
+	.slick-slider.single-items{width:87%; margin:0 auto; padding:12px 0 12px; font-size:1.1em;
 		.slick-list{overflow:hidden;
 			.slick-slide{text-align:center;}
 			.slick-active{border-left:1px solid #bdb5a0; margin:-1px;}

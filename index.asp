@@ -176,7 +176,7 @@
 				paginationClickable: true,
 				nextButton: '.today-slide .swiper-button-next',
 				prevButton: '.today-slide .swiper-button-prev',
-				autoplay: 2500,
+				autoplay: false,
 				loop:true
 			});
 		});
