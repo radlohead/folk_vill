@@ -95,6 +95,10 @@ aside.gnb footer { padding-left: 0; padding-right: 0; }
 .today .today-slide .text-btn_box .text_box h4 { margin: 23% 0 6%; font-size: 5.5vw; }
 .today .today-slide .text-btn_box .text_box h4:before { content: ""; display: block; width: 13%; height: 1.5px; margin-bottom: 8px; background: #f08200; }
 .today .today-slide .text-btn_box .text_box .text { display: block; margin-bottom: 4px; font-size: 3vw; }
+.today .today-slide .text-btn_box .text_box02 { display: none; padding-left: 15%; text-align: left; color: #fff; }
+.today .today-slide .text-btn_box .text_box02 h4 { margin: 23% 0 6%; font-size: 5.5vw; }
+.today .today-slide .text-btn_box .text_box02 h4:before { content: ""; display: block; width: 13%; height: 1.5px; margin-bottom: 8px; background: #f08200; }
+.today .today-slide .text-btn_box .text_box02 .text { display: block; margin-bottom: 4px; font-size: 3vw; }
 .today .today-slide .text-btn_box .btns { overflow: hidden; position: absolute; bottom: 0; width: 100%; }
 .today .today-slide .text-btn_box .btns .swiper-button-prev { float: left; position: static; top: 52.3%; width: 33%; height: 33%; margin-top: 0; background: none; }
 .today .today-slide .text-btn_box .btns .plus_btn { float: left; position: static; top: 47.5%; left: 33.5%; z-index: 10; width: 33%; height: 33%; margin-left: 0.5%; background: none; }
@@ -102,6 +106,7 @@ aside.gnb footer { padding-left: 0; padding-right: 0; }
 .today .today-slide .text-btn_box .btns .swiper-button-next { float: right; position: static; top: 54.5%; width: 33%; height: 33%; margin-top: 0; background: none; }
 .today .today-slide .text-btn_box .btns img { width: 100%; }
 .today .today-slide .swiper-slide img { width: 100%; }
+.today .today-slide .swiper-slide.img02.swiper-slide-active .text_box02 { display: block; }
 
 .notice { margin: 13px 0; }
 .notice h3 { width: 148px; }

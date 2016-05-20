@@ -146,7 +146,7 @@ $(document).ready(function(){
 		});
 	})();
 
-	//popup 클릭시 지도띄우기 tab1번을 클릭하면 1번이미지 띄우기
+	//popup 클릭시 지도띄우기 tab1번을 클릭하면 n번이미지 띄우기
 	(function(){
 		$(".popup_close-btn").click(function(){
 			$(".popup_wrap").css("visibility","hidden");
@@ -183,22 +183,64 @@ $(document).ready(function(){
 	function href(){
 		var active = $(".today .swiper-slide-active > a").attr("href"),
 			plus_btn = $(".plus_btn > a");
-
 		plus_btn.attr("href", active);
+
+		if($(".swiper-slide.img02").hasClass("swiper-slide-active")){
+			$(".today .text_box").css("display","none");
+			$(".today .text_box02").css("display","block");
+		}else if($(".swiper-slide.img01").hasClass("swiper-slide-active")){
+			$(".today .text_box").css("display","block");
+			$(".today .text_box02").css("display","none");
+		}
+
 		var timer = setTimeout(href, 2800);
 
 		$(".swiper-button-prev").on("click", function(){
-			var active = $(".today .swiper-slide-active > a").attr("href"),
+			var active = $(".today .swiper-slide-active:last-child > a").attr("href"),
+				prev = $(".today .swiper-slide-prev > a").attr("href"),
+				next = $(".today .swiper-slide-next > a").attr("href"),
 				plus_btn = $(".plus_btn > a");
-			plus_btn.attr("href", active);
+
+			if($(".swiper-slide.img02").hasClass("swiper-slide-prev")){
+				$(".today .text_box").css("display","none");
+				$(".today .text_box02").css("display","block");
+				plus_btn.attr("href", prev);
+			}else if($(".swiper-slide.img01").hasClass("swiper-slide-prev")){
+				$(".today .text_box").css("display","block");
+				$(".today .text_box02").css("display","none");
+				plus_btn.attr("href", prev);
+			}else if($(".swiper-slide.img01.swiper-slide-active:first-child")){
+				$(".today .text_box").css("display","block");
+				$(".today .text_box02").css("display","none");
+				plus_btn.attr("href", next);
+			}
+
 			clearTimeout(timer);
 		});
+
 		$(".swiper-button-next").click(function(){
-			var active = $(".today .swiper-slide-active > a").attr("href"),
+			var active = $(".today .swiper-slide-active:last-child > a").attr("href"),
+				prev = $(".today .swiper-slide-prev > a").attr("href"),
+				next = $(".today .swiper-slide-next > a").attr("href"),
 				plus_btn = $(".plus_btn > a");
-			plus_btn.attr("href", active);
+
+			if($(".swiper-slide.img02").hasClass("swiper-slide-next")){
+				$(".today .text_box").css("display","none");
+				$(".today .text_box02").css("display","block");
+				plus_btn.attr("href", next);
+			}else if($(".swiper-slide.img01").hasClass("swiper-slide-next")){
+				$(".today .text_box").css("display","block");
+				$(".today .text_box02").css("display","none");
+				plus_btn.attr("href", next);
+			}else if($(".swiper-slide.img01.swiper-slide-active:last-child")){
+				$(".today .text_box").css("display","none");
+				$(".today .text_box02").css("display","block");
+				plus_btn.attr("href", prev);
+			}
+
 			clearTimeout(timer);
 		});
+
 	}
 	href();
 

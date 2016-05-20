@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/common.js" afterPath="$PROJECT_DIR$/common/js/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.asp" afterPath="$PROJECT_DIR$/index.asp" />
     </list>
@@ -28,8 +32,8 @@
       <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.88531184">
-              <caret line="205" column="3" selection-start-line="205" selection-start-column="3" selection-end-line="205" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.6559356">
+              <caret line="208" column="61" selection-start-line="208" selection-start-column="61" selection-end-line="208" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -38,8 +42,8 @@
       <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6785714">
-              <caret line="161" column="20" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="20" />
+            <state vertical-scroll-proportion="-8.595238">
+              <caret line="162" column="59" selection-start-line="162" selection-start-column="48" selection-end-line="162" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -48,8 +52,8 @@
       <file leaf-file-name="index.asp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.857143">
-              <caret line="95" column="63" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
+            <state vertical-scroll-proportion="-15.142858">
+              <caret line="112" column="166" selection-start-line="112" selection-start-column="166" selection-end-line="112" selection-end-column="166" />
               <folding />
             </state>
           </provider>
@@ -120,8 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="C:/2016작업용/한국민속촌/시안코딩/a6-2.html" />
-        <option value="C:/2016작업용/한국민속촌/시안코딩/a6-3.html" />
         <option value="C:/2016작업용/한국민속촌/시안코딩/a6-4.html" />
         <option value="$USER_HOME$/Documents/네이트온 받은 파일/150609_단오/edm_type_home.html" />
         <option value="$PROJECT_DIR$/event/event_now.html" />
@@ -166,9 +168,11 @@
         <option value="$USER_HOME$/Documents/test/test.html" />
         <option value="$PROJECT_DIR$/information/promotion_view.asp" />
         <option value="$PROJECT_DIR$/information/notice_view.asp" />
-        <option value="$PROJECT_DIR$/common/css/index.scss" />
         <option value="C:/APM_Setup/htdocs/faco/new/english/css/index.scss" />
         <option value="$PROJECT_DIR$/common/inc/script.html" />
+        <option value="$USER_HOME$/Documents/네이트온 받은 파일/양진이/Untitled-1.html" />
+        <option value="C:/APM_Setup/htdocs/test/index.html" />
+        <option value="$PROJECT_DIR$/common/css/index.scss" />
         <option value="$PROJECT_DIR$/index.asp" />
         <option value="$PROJECT_DIR$/common/js/common.js" />
       </list>
@@ -487,21 +491,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/test/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/css/media.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -819,14 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/css/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6785714">
-          <caret line="161" column="20" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/test/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47786722">
@@ -843,18 +824,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Documents/네이트온 받은 파일/양진이/Untitled-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43271223">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/APM_Setup/htdocs/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.098343685">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/css/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.595238">
+          <caret line="162" column="59" selection-start-line="162" selection-start-column="48" selection-end-line="162" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.857143">
-          <caret line="95" column="63" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
+        <state vertical-scroll-proportion="-15.142858">
+          <caret line="112" column="166" selection-start-line="112" selection-start-column="166" selection-end-line="112" selection-end-column="166" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88531184">
-          <caret line="205" column="3" selection-start-line="205" selection-start-column="3" selection-end-line="205" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.6559356">
+          <caret line="208" column="61" selection-start-line="208" selection-start-column="61" selection-end-line="208" selection-end-column="61" />
           <folding />
         </state>
       </provider>
