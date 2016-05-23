@@ -193,7 +193,7 @@ $(document).ready(function(){
 			plus_btn.attr("href", active);
 			console.log("22");
 		}
-		var timer = setTimeout(href, 2800);
+		var timer = setTimeout(href, 100);
 
 		$(".swiper-button-prev").on("click", function(){
 			var active = $(".today .swiper-slide-active:last-child > a").attr("href"),
