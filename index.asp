@@ -89,18 +89,6 @@
 			</div>
 			<div class="today-slide swiper-container">
 				<div class="text-btn_box">
-					<section class="text_box">
-						<h4>농악놀이</h4>
-						<span class="text"><b>1회공연</b> 11:00</span>
-						<span class="text"><b>2회공연</b> 14:00</span>
-						<span class="text"><b>장소</b> 공연장</span>
-					</section>
-                    <section class="text_box02">
-                        <h4>국악놀이</h4>
-                        <span class="text"><b>1회공연</b> 11:00</span>
-                        <span class="text"><b>2회공연</b> 14:00</span>
-                        <span class="text"><b>장소</b> 공연장</span>
-                    </section>
 					<!-- Add Arrows -->
 					<div class="btns">
 						<div class="swiper-button-prev"><img src="/mobile/images/index/today-prev_btn.png" alt="" /></div>
@@ -109,8 +97,28 @@
 					</div>
 				</div>
 				<div class="swiper-wrapper">
-					<div class="swiper-slide img01"><a href="http://localhost/folk_vill/m/event/event_now.html"><img src="/mobile/images/index/today_img01.jpg" alt="한국민속촌 정기공연 농악놀이" /></a></div>
-					<div class="swiper-slide img02"><a href="http://www.naver.com/"><img src="/mobile/images/index/today_img01.jpg" alt="한국민속촌 정기공연 농악놀이" /></a></div>
+					<div class="swiper-slide img01">
+					    <div class="text-btn_box">
+                            <section class="text_box">
+                                <h4>농악놀이</h4>
+                                <span class="text"><b>1회공연</b> 11:00</span>
+                                <span class="text"><b>2회공연</b> 14:00</span>
+                                <span class="text"><b>장소</b> 공연장</span>
+                            </section>
+                        </div>
+					    <a href="http://localhost/folk_vill/m/event/event_now.html"><img src="/mobile/images/index/today_img01.jpg" alt="한국민속촌 정기공연 농악놀이" /></a>
+					</div>
+					<div class="swiper-slide img02">
+					    <div class="text-btn_box">
+                            <section class="text_box">
+                                <h4>국악놀이</h4>
+                                <span class="text"><b>1회공연</b> 11:00</span>
+                                <span class="text"><b>2회공연</b> 14:00</span>
+                                <span class="text"><b>장소</b> 공연장</span>
+                            </section>
+                        </div>
+					    <a href="http://www.naver.com/"><img src="/mobile/images/index/today_img01.jpg" alt="한국민속촌 정기공연 농악놀이" />
+					</a></div>
 				</div>
 			</div>
 		</div>
@@ -182,7 +190,7 @@
 				paginationClickable: true,
 				nextButton: '.today-slide .swiper-button-next',
 				prevButton: '.today-slide .swiper-button-prev',
-				autoplay: false,
+				autoplay: 2500,
 				loop:true
 			});
 		});

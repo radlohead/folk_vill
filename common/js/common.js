@@ -182,17 +182,17 @@ $(document).ready(function(){
 	//메인 한국민속촌 정기공연 +버튼에 url삽입
 	function href(){
 		var active = $(".today .swiper-slide-active > a").attr("href"),
+			prev = $(".today .swiper-slide-prev > a").attr("href"),
+			next = $(".today .swiper-slide-next > a").attr("href"),
 			plus_btn = $(".plus_btn > a");
-		plus_btn.attr("href", active);
 
-		if($(".swiper-slide.img02").hasClass("swiper-slide-active")){
-			$(".today .text_box").css("display","none");
-			$(".today .text_box02").css("display","block");
-		}else if($(".swiper-slide.img01").hasClass("swiper-slide-active")){
-			$(".today .text_box").css("display","block");
-			$(".today .text_box02").css("display","none");
+		if($(".today .swiper-slide").hasClass("swiper-slide-next")){
+			plus_btn.attr("href", active);
+			console.log("11");
+		}else if($(".today .swiper-slide").hasClass("swiper-slide-next") == false){
+			plus_btn.attr("href", active);
+			console.log("22");
 		}
-
 		var timer = setTimeout(href, 2800);
 
 		$(".swiper-button-prev").on("click", function(){
@@ -202,19 +202,12 @@ $(document).ready(function(){
 				plus_btn = $(".plus_btn > a");
 
 			if($(".swiper-slide.img02").hasClass("swiper-slide-prev")){
-				$(".today .text_box").css("display","none");
-				$(".today .text_box02").css("display","block");
 				plus_btn.attr("href", prev);
 			}else if($(".swiper-slide.img01").hasClass("swiper-slide-prev")){
-				$(".today .text_box").css("display","block");
-				$(".today .text_box02").css("display","none");
 				plus_btn.attr("href", prev);
 			}else if($(".swiper-slide.img01.swiper-slide-active:first-child")){
-				$(".today .text_box").css("display","block");
-				$(".today .text_box02").css("display","none");
 				plus_btn.attr("href", next);
 			}
-
 			clearTimeout(timer);
 		});
 
@@ -225,19 +218,12 @@ $(document).ready(function(){
 				plus_btn = $(".plus_btn > a");
 
 			if($(".swiper-slide.img02").hasClass("swiper-slide-next")){
-				$(".today .text_box").css("display","none");
-				$(".today .text_box02").css("display","block");
 				plus_btn.attr("href", next);
 			}else if($(".swiper-slide.img01").hasClass("swiper-slide-next")){
-				$(".today .text_box").css("display","block");
-				$(".today .text_box02").css("display","none");
 				plus_btn.attr("href", next);
 			}else if($(".swiper-slide.img01.swiper-slide-active:last-child")){
-				$(".today .text_box").css("display","none");
-				$(".today .text_box02").css("display","block");
 				plus_btn.attr("href", prev);
 			}
-
 			clearTimeout(timer);
 		});
 
