@@ -89,6 +89,7 @@
 			</div>
 			<div class="today-slide swiper-container">
 				<div class="text-btn_box">
+                    <section class="text_box"></section>
 					<!-- Add Arrows -->
 					<div class="btns">
 						<div class="swiper-button-prev"><img src="/mobile/images/index/today-prev_btn.png" alt="" /></div>

@@ -180,55 +180,27 @@ $(document).ready(function(){
 	})();
 
 	//메인 한국민속촌 정기공연 +버튼에 url삽입
-	function href(){
-		var active = $(".today .swiper-slide-active > a").attr("href"),
-			prev = $(".today .swiper-slide-prev > a").attr("href"),
-			next = $(".today .swiper-slide-next > a").attr("href"),
-			plus_btn = $(".plus_btn > a");
+	//var today_slide = function(){};
+	//today_slide.prototype.common = function(){
+	//	this.active = $(".today .swiper-slide-active > a").attr("href");
+	//	this.text_box = $(".today .swiper-slide-active .text_box").html();
+	//	$(".plus_btn > a").attr("href", this.active);
+	//	$(".today-slide > .text-btn_box .text_box").html(this.text_box);
+	//	this.timer = setInterval(this.common, 100);
+	//};
+    //
+	//var today = new today_slide();
+	//today.common();
 
-		if($(".today .swiper-slide").hasClass("swiper-slide-next")){
-			plus_btn.attr("href", active);
-			console.log("11");
-		}else if($(".today .swiper-slide").hasClass("swiper-slide-next") == false){
-			plus_btn.attr("href", active);
-			console.log("22");
-		}
-		var timer = setTimeout(href, 100);
-
-		$(".swiper-button-prev").on("click", function(){
-			var active = $(".today .swiper-slide-active:last-child > a").attr("href"),
-				prev = $(".today .swiper-slide-prev > a").attr("href"),
-				next = $(".today .swiper-slide-next > a").attr("href"),
-				plus_btn = $(".plus_btn > a");
-
-			if($(".swiper-slide.img02").hasClass("swiper-slide-prev")){
-				plus_btn.attr("href", prev);
-			}else if($(".swiper-slide.img01").hasClass("swiper-slide-prev")){
-				plus_btn.attr("href", prev);
-			}else if($(".swiper-slide.img01.swiper-slide-active:first-child")){
-				plus_btn.attr("href", next);
-			}
-			clearTimeout(timer);
-		});
-
-		$(".swiper-button-next").click(function(){
-			var active = $(".today .swiper-slide-active:last-child > a").attr("href"),
-				prev = $(".today .swiper-slide-prev > a").attr("href"),
-				next = $(".today .swiper-slide-next > a").attr("href"),
-				plus_btn = $(".plus_btn > a");
-
-			if($(".swiper-slide.img02").hasClass("swiper-slide-next")){
-				plus_btn.attr("href", next);
-			}else if($(".swiper-slide.img01").hasClass("swiper-slide-next")){
-				plus_btn.attr("href", next);
-			}else if($(".swiper-slide.img01.swiper-slide-active:last-child")){
-				plus_btn.attr("href", prev);
-			}
-			clearTimeout(timer);
-		});
-
-	}
-	href();
+	//메인 한국민속촌 정기공연 +버튼에 url삽입
+	function today_slide(){
+		var active = $(".today .swiper-slide-active > a").attr("href");
+		var text_box = $(".today .swiper-slide-active .text_box").html();
+		$(".plus_btn > a").attr("href", active);
+		$(".today-slide > .text-btn_box .text_box").html(text_box);
+		var timer = setTimeout(today_slide, 100);
+	};
+	today_slide();
 
 
 });
