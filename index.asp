@@ -156,7 +156,7 @@
 				<h3><img src="/mobile/images/index/vivi-site_title.png" alt="한국민속촌 생생현장 머리말" /></h3>
 			</div>
 			<div class="video">
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cD7EwWfuYDk" frameborder="0" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/cD7EwWfuYDk" allowfullscreen></iframe>
 			</div>
 		</div>
 
