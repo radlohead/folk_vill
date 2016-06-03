@@ -19,7 +19,7 @@
 		<div class="header_wrap">
 			<header>
 				<h1 class="logo">
-					<a href="#none"><img src="/mobile/images/common/logo.png" alt="한국민속촌 모바일 홈 바로가기" /></a>
+					<a href="/mobile"><img src="/mobile/images/common/logo.png" alt="한국민속촌 모바일 홈 바로가기" /></a>
 				</h1>
 				<a href="#" class="gnb_btn"><img src="/mobile/images/common/gnb_btn.gif" alt="전체메뉴열기버튼" /></a>
 			</header>
@@ -44,10 +44,10 @@
 <!-- 메뉴컨텐츠 -->
 		<div class="main-content-menu">
 			<ul>
-				<li class="menu01"><img src="/mobile/images/index/main-content-menu01.gif" alt="시간,요금"/></li>
-				<li class="menu02"><img src="/mobile/images/index/main-content-menu02.gif" alt="오시는 길"/></li>
-				<li class="menu03"><img src="/mobile/images/index/main-content-menu03.gif" alt="제휴카드"/></li>
-				<li class="menu04"><img src="/mobile/images/index/main-content-menu04.gif" alt="가이드맵"/></li>
+				<li class="menu01"><a href="/mobile/information/guide.asp"><img src="/mobile/images/index/main-content-menu01.gif" alt="시간,요금"/></a></li>
+				<li class="menu02"><a href="/mobile/information/traffic.asp"><img src="/mobile/images/index/main-content-menu02.gif" alt="오시는 길"/></a></li>
+				<li class="menu03"><a href="/mobile/information/credit_card.asp"><img src="/mobile/images/index/main-content-menu03.gif" alt="제휴카드"/></a></li>
+				<li class="menu04"><a href="/mobile/information/map.asp"><img src="/mobile/images/index/main-content-menu04.gif" alt="가이드맵"/></a></li>
 			</ul>
 		</div>
 

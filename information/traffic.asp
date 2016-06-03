@@ -115,8 +115,8 @@
                             <caption>한국 민속촌 버스 이용에 대한 안내</caption>
                             <colgroup>
                                 <col width="14.7%">
-                                <col width="16.1%">
-                                <col>
+                                <col width="17.1%">
+                                <col width="68.2%">
                             </colgroup>
                             <tr>
                                 <td><span class="icon bus_icon01"></span></td>
@@ -126,7 +126,10 @@
                                         <em class="bus-num">A8877</em> <span>(공항버스)</span>
                                         <ul>
                                             <li>·위치 : 인천공항</li>
-                                            <li>·노선 : 인천공항 ▶ 광교중앙역 ▶ 한국민속촌 앞</li>
+                                            <li>
+                                                <span class="title">·노선 :</span>
+                                                <span class="text">인천공항 ▶ 광교중앙역 ▶ 한국민속촌 앞</span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </td>
@@ -139,7 +142,10 @@
                                         <em class="bus-num">5001-1</em> <span>(직행좌석)</span>
                                         <ul>
                                             <li>·위치 : 신논현역 6번 출구</li>
-                                            <li>·노선 : 신논현역 ▶ 강남역 ▶ 신갈 ▶ 민속촌</li>
+                                            <li>
+                                                <span class="title">·노선 :</span>
+                                                <span class="text">신논현역 ▶ 강남역 ▶ 신갈 ▶ 민속촌</span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </td>
@@ -152,7 +158,10 @@
                                         <em class="bus-num">1560</em> <span>(직행좌석)</span>
                                         <ul>
                                             <li>·위치 : 강남역 7번 출구</li>
-                                            <li>·노선 : 강남역 ▶ 신갈 ▶ 민속촌 삼거리(삼성아파트)</li>
+                                            <li>
+                                                <span class="title">·노선 :</span>
+                                                <span class="text">강남역 ▶ 신갈 ▶ 민속촌 삼거리(삼성아파트)</span>
+                                            </li>
                                         </ul>
                                     </div>
                                  </td>
@@ -165,7 +174,10 @@
                                         <em class="bus-num">5500-1</em> <span>(직행좌석)</span>
                                         <ul>
                                             <li>·위치 : 종각역 3번 출구</li>
-                                            <li>·노선 : 종각역 ▶ 미금역 ▶ 민속촌 삼거리(삼성아파트)</li>
+                                            <li>
+                                                <span class="title">·노선 :</span>
+                                                <span class="text">종각역 ▶ 미금역 ▶ 민속촌 삼거리(삼성아파트)</span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </td>
@@ -178,7 +190,10 @@
                                         <em class="bus-num">37</em>
                                         <ul>
                                             <li>·위치 : 수원역 5번출구 50m 전방</li>
-                                            <li>·노선 : 수원역앞 ▶ 신갈오거리 ▶ 한국민속촌</li>
+                                            <li>
+                                                <span class="title">·노선 :</span>
+                                                <span class="text">수원역앞 ▶ 신갈오거리 ▶ 한국민속촌</span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </td>
@@ -191,7 +206,10 @@
                                         <em class="bus-num">10-5</em>
                                         <ul>
                                             <li>·위치 : 수원역 5번출구 50m 전방</li>
-                                            <li>·노선 : 수원역앞 ▶ 아주대삼거리 ▶ 나곡마을</li>
+                                            <li>
+                                                <span class="title">·노선 :</span>
+                                                <span class="text">수원역앞 ▶ 아주대삼거리 ▶ 나곡마을</span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </td>
@@ -204,7 +222,10 @@
                                         <em class="bus-num">30</em> <span>(마을버스)</span>
                                         <ul>
                                             <li>·위치 : 죽전역 신세계백화점 앞</li>
-                                            <li>·노선 : 죽전역 ▶ 신갈오거리 ▶ 나곡마을</li>
+                                            <li>
+                                                <span class="title">·노선 :</span>
+                                                <span class="text">죽전역 ▶ 신갈오거리 ▶ 나곡마을</span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </td>
@@ -217,17 +238,17 @@
                         <section>
                             <h4>경부고속도로 이용</h4>
                             <p>
-                                수원IC 우측 진출(신갈, 민속촌 방향) <span class="text_icon_tri">상갈교사거리(민속촌방향 좌회전)</span>
-                                <span class="text_icon_tri">민속촌 입구 삼거리(좌회전)</span> <span class="text_icon_tri">한국민속촌</span>
+                                수원IC 우측 진출(신갈, 민속촌 방향) <span class="icon_tri"></span>상갈교사거리(민속촌방향 좌회전)
+                                <span class="icon_tri"></span>민속촌 입구 삼거리(좌회전) <span class="icon_tri"></span>한국민속촌
                             </p>
                         </section>
                         <section>
                             <h4>용인-서울 고속도로 이용</h4>
                             <p>
-                                헌릉IC(용인 방면) <span class="text_icon_tri">서수지IC(용인 방면)</span>
-                                <span class="text_icon_tri">청명IC 우측 진출(기흥구청, 한국민속촌 방향)</span>
-                                <span class="text_icon_tri">23번 지방도 우측 진출(한국민속촌 방향)</span> <span class="text_icon_tri">민속촌입구 삼거리(우회전)</span>
-                                <span class="text_icon_tri">한국민속촌</span>
+                                헌릉IC(용인 방면) <span class="icon_tri"></span>서수지IC(용인 방면)
+                                <span class="icon_tri"></span>청명IC 우측 진출(기흥구청, 한국민속촌 방향)
+                                <span class="icon_tri"></span>23번 지방도 우측 진출(한국민속촌 방향) <span class="icon_tri"></span>민속촌입구 삼거리(우회전)
+                                <span class="icon_tri"></span>한국민속촌
                             </p>
                         </section>
                         <section>
@@ -235,22 +256,22 @@
                             <section>
                                 <h5>수원방면</h5>
                                 <p>
-                                    42번 국도(용인 방면으로 주행) <span class="text_icon_tri">신갈오거리 좌회전(한국민속촌 방향)</span>
-                                    <span class="text_icon_tri">민속촌 입구 삼거리(좌회전)</span> <span class="text_icon_tri">한국민속촌</span>
+                                    42번 국도(용인 방면으로 주행) <span class="icon_tri"></span>신갈오거리 좌회전(한국민속촌 방향)
+                                    <span class="icon_tri"></span>민속촌 입구 삼거리(좌회전) <span class="icon_tri"></span>한국민속촌
                                 </p>
                             </section>
                             <section>
                                 <h5>성남·분당 방면</h5>
                                 <p>
-                                    분당수서간 도시고속화도로(용인 방면)<span class="text_icon_tri">용구대로(고가 도로 용인 방면)</span>
-                                    <span class="text_icon_tri">민속촌 입구 삼거리(좌회전)</span><span class="text_icon_tri">한국민속촌</span>
+                                    분당수서간 도시고속화도로(용인 방면)<span class="icon_tri"></span>용구대로(고가 도로 용인 방면)
+                                    <span class="icon_tri"></span>민속촌 입구 삼거리(좌회전) <span class="icon_tri"></span>한국민속촌
                                 </p>
                             </section>
                             <section>
                                 <h5>동탄·오산 방면</h5>
                                 <p>
-                                    영천교차로<span class="text_icon_tri">(구)기흥IC, 신갈 방면(좌회전)</span></span><span class="text_icon_tri">지방도 317번</span>
-                                    <span class="text_icon_tri">민속촌 입구 삼거리(좌회전)</span><span class="text_icon_tri">한국민속촌</span>
+                                    영천교차로<span class="icon_tri"></span>(구)기흥IC, 신갈 방면(좌회전) <span class="icon_tri"></span>지방도 317번
+                                    <span class="icon_tri"></span>민속촌 입구 삼거리(좌회전) <span class="icon_tri"></span>한국민속촌
                                 </p>
                             </section>
                             <span class="road-sign">

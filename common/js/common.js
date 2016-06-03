@@ -202,5 +202,26 @@ $(document).ready(function(){
 	};
 	today_slide();
 
+//놀이마을 전설의고향 bg높이값구하기
+	function contentH(){
+		var $junseol = null,
+			$junseol_bg = null,
+			$infor = null;
+		contentH.prototype.common = function(){
+			this.$junseol = $(".detail-junseol"),
+			this.$junseol_bg = $(".detail-junseol .bg"),
+			this.$infor = $(".detail-junseol .infor"),
+			this.$junseol_bgH = this.$junseol_bg.height();
+			this.$inforH = this.$infor.height();
+			this.$junseol.height(this.$junseol_bgH + this.$inforH);
+		};
+		$(window).resize(function(){
+			junseolH.common();
+		});
+		$(document).ready(function(){
+			junseolH.common();
+		});
+	}
+	var junseolH = new contentH();
 
 });

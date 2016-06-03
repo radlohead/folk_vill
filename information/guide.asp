@@ -171,19 +171,31 @@
                         </section>
                         <section class="prefer-infor">
                             <h4>장애인 우대</h4>
-                            <p>본인 아동요금 적용 (장애인등록증 제시)</p>
+                            <p>
+                                <span class="icon">·</span>
+                                <span>본인 아동요금 적용 (장애인등록증 제시)</span>
+                            </p>
                         </section>
                         <section class="prefer-infor">
                             <h4>국가유공자 우대</h4>
-                            <p>본인 아동요금 적용 (국가유공자증 제시)</p>
+                            <p>
+                                <span class="icon">·</span>
+                                <span>본인 아동요금 적용 (국가유공자증 제시)</span>
+                            </p>
                         </section>
                         <section class="prefer-infor">
                             <h4>군인·경찰 우대</h4>
-                            <p>본인 청소년요금 적용</p>
+                            <p>
+                                <span class="icon">·</span>
+                                <span>본인 청소년요금 적용</span>
+                            </p>
                         </section>
                         <section class="prefer-infor">
                             <h4>무료입장</h4>
-                            <p>전상군경, 공상군경, 상이군경, 4.19혁명 부상자, 6.18 자유상이자 6.25 참전재일학도의용군인</p>
+                            <p>
+                                <span class="icon">·</span>
+                                <span>전상군경, 공상군경, 상이군경, 4.19혁명 부상자, 6.18 자유상이자 6.25 참전재일학도의용군인</span>
+                            </p>
                         </section>
                     </div>
                 </div>
