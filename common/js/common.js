@@ -207,6 +207,7 @@ $(document).ready(function(){
 		var $junseol = null,
 			$junseol_bg = null,
 			$infor = null;
+
 		contentH.prototype.common = function(){
 			this.$junseol = $(".detail-junseol"),
 			this.$junseol_bg = $(".detail-junseol .bg"),
@@ -214,6 +215,7 @@ $(document).ready(function(){
 			this.$junseol_bgH = this.$junseol_bg.height();
 			this.$inforH = this.$infor.height();
 			this.$junseol.height(this.$junseol_bgH + this.$inforH);
+			this.$infor.css("visibility","visible");
 		};
 		$(window).resize(function(){
 			junseolH.common();

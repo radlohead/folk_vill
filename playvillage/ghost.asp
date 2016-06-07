@@ -101,7 +101,7 @@
         $(document).ready(function(){
             $('.single-items').slick({
                 slidesToShow: 4,
-                initialSlide: 1
+                initialSlide: 2
             });
 			var mySwiper_a = new Swiper('.junseol-slide', {
 				pagination:'.junseol-slide .swiper-pagination',

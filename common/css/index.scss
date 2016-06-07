@@ -224,7 +224,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 				.icon.on{display:block; float:right; width:16px; height:16px; margin:0 0 0 8px; background:url("/mobile/images/common/sprite.png") no-repeat -239px -208px; background-size:300px 500px;}
 			}
 			.menu{display:none; position:absolute; top:26px; right:-17%; z-index:50; width:150%; padding:9px 0; text-indent:15%; background:#e8aa00;
-				li{display: table; width:101%; height:25px; font-size:1.4em;
+				li{display: table; width:101%; height:28px; font-size:1.4em;
 					a{display: table-cell; vertical-align: middle; color:#fff;
 						&:focus{background:#766341; color:#e8aa00;}
 					}
@@ -745,8 +745,8 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.pre-infor-tab{margin:0;
 		.title{overflow:hidden; padding:10px 15px 10px 0; border-top:2px solid #f08200; border-bottom:1px solid #bdb5a0;
 			h3{float:left; font-size:1.75em; line-height: 110%;}
-			.icon{display:block; float:right; width:10px; height:6px; margin-top:8px; background:url("/mobile/images/common/sprite.png") no-repeat -55px -264px; background-size:300px 500px;}
-			.icon.on{display:block; float:right; width:10px; height:6px; margin-top:8px; background:url("/mobile/images/common/sprite.png") no-repeat -15px -264px; background-size:300px 500px;}
+			.icon{display:block; float:right; width:10px; height:6px; margin-top:7px; background:url("/mobile/images/common/sprite.png") no-repeat -55px -263px; background-size:300px 500px;}
+			.icon.on{display:block; float:right; width:10px; height:6px; margin-top:7px; background:url("/mobile/images/common/sprite.png") no-repeat -15px -263px; background-size:300px 500px;}
 		}
 		.content{
 			p{display:table; margin-top: 5px;
@@ -758,20 +758,20 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 	.detail{float:left; width:48.5%; margin-top:30px; margin-right:3%;
 		.img{display:block; margin-bottom:10px; border-bottom:2px solid #f08200;}
-		h4{font-weight:bold;}
-		.text01{display:block; margin-top:5px; font-size:1.2em;
-			&:before{content:""; display:block; float:left; width:14px; height:12px; margin:3px 8px; background:url("/mobile/images/play_village/sprite-play.png") 0 0 no-repeat; background-size:250px 250px;}
+		h4{}
+		.text01{display:block; margin-top:8px; font-size:1.2em;
+			&:before{content:""; display:block; float:left; width:14px; height:12px; margin:2px 8px 2px 0; background:url("/mobile/images/play_village/sprite-play.png") 0 0 no-repeat; background-size:250px 250px;}
 		}
-		.text02{display:block; margin-top:5px; font-size:1.2em;
-			&:before{content:""; display:block; float:left; width:14px; height:12px; margin:3px 8px; background:url("/mobile/images/play_village/sprite-play.png") 0 -20px no-repeat; background-size:250px 250px;}
+		.text02{display:block; margin-top:8px; font-size:1.2em;
+			&:before{content:""; display:block; float:left; width:14px; height:12px; margin:2px 8px 2px 0; background:url("/mobile/images/play_village/sprite-play.png") 0 -20px no-repeat; background-size:250px 250px;}
 		}
-		.text-box01{overflow:hidden; margin-top:10px; padding:5px 0; border-top:1px solid #dedacf; border-bottom:1px solid #dedacf;
-			&:before{content:""; display:block; float:left; width:14px; height:15px; margin:8px 8px; background:url("/mobile/images/play_village/sprite-play.png") -19px 0 no-repeat; background-size:250px 250px;}
-			.text{display:block; float:left; font-size:1.2em; line-height:1.2;}
+		.text-box01{overflow:hidden; margin-top:8px; padding:5px 0; border-top:1px solid #dedacf; border-bottom:1px solid #dedacf;
+			&:before{content:""; display:block; float:left; width:14px; height:15px; margin:8px 8px 8px 0; background:url("/mobile/images/play_village/sprite-play.png") -19px 0 no-repeat; background-size:250px 250px;}
+			.text{display:block; float:left; margin-top:1px; font-size:1.2em; line-height:1.2;}
 		}
-		.text-box02{overflow:hidden; display:table; width:97%; margin-top:10px; padding:13px 0 13px 8px; border-top:1px solid #dedacf; border-bottom:1px solid #dedacf;
-			&:before{content:""; display:table-cell; width:14px; height:15px; padding:0 4px; background:url("/mobile/images/play_village/sprite-play.png") -19px 0 no-repeat; background-size:250px 250px;}
-			.text{display:table-cell; font-size:1.2em; line-height:1.2;}
+		.text-box02{overflow:hidden; display:table; width:97%; margin-top:8px; padding:13px 0; border-top:1px solid #dedacf; border-bottom:1px solid #dedacf;
+			&:before{content:""; display:table-cell; width:14px; height:15px; background:url("/mobile/images/play_village/sprite-play.png") -19px 0 no-repeat; background-size:250px 250px;}
+			.text{display:table-cell; padding-left:8px; font-size:1.2em; line-height:1.2;}
 		}
 	}
 	.end{margin-right:0;}
@@ -787,8 +787,8 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		}
 		.swiper-pagination{
 			&:after{background:none;}
-			.swiper-pagination-bullet{position:relative; z-index:10; width:8px; height:8px; background:#e6e6e6; border:1px solid #f8f8f8; opacity:1;}
-			.swiper-pagination-bullet.swiper-pagination-bullet-active{width:16px; height:8px; background:#ff6200; border:1px solid #ff6200; border-radius:20px;}
+			.swiper-pagination-bullet{position:relative; z-index:10; width:8px; height:8px; background:#e6e6e6; border:none; box-shadow:-1px -1px 1px #888;}
+			.swiper-pagination-bullet.swiper-pagination-bullet-active{width:16px; height:8px; background:#ff6200; border:none; border-radius:20px;}
 			.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 3px;}
 		}
 		.swiper-button-prev{width:26px; height:26px; left:7px; background:url('/mobile/images/common/sprite.png') -9px -206px no-repeat; background-size:300px 500px;}
@@ -810,13 +810,13 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 				&:last-child td{border-bottom:1px solid #bdb5a0;}
 			}
 		}
-		.text-box01{overflow:hidden; margin-top:10px; padding:5px 0;
-			&:before{content:""; display:block; float:left; width:19px; height:23px; margin:6px 8px; background:url("/mobile/images/play_village/sprite-play.png") -38px 0 no-repeat; background-size:250px 250px;}
-			.text{display:block; float:left; line-height:1.2;}
+		.text-box01{overflow:hidden; display:table; margin-top:10px; padding:5px 0;
+			&:before{content:""; display:table-cell; width:19px; height:23px; padding-right:8px; background:url("/mobile/images/play_village/sprite-play.png") -38px 5px no-repeat; background-size:250px 250px;}
+			.text{display:table-cell; line-height:1.2;}
 		}
 		.text-box02{overflow:hidden; display:table; margin-top:10px; padding:5px 0;
-			&:before{content:""; display:table-cell;  width:19px; height:23px; padding:6px 8px; background:url("/mobile/images/play_village/sprite-play.png") -38px 0 no-repeat; background-size:250px 250px;}
-			.text{display:table-cell; line-height:1.2;}
+			&:before{content:""; display:table-cell;  width:19px; height:23px; vertical-align:middle; background:url("/mobile/images/play_village/sprite-play.png") -38px 0 no-repeat; background-size:250px 250px;}
+			.text{display:table-cell; padding-left:8px; line-height:1.2; vertical-align:middle;}
 		}
 	}
 }
@@ -833,18 +833,18 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		}
 		.swiper-pagination{
 			&:after{background:none;}
-			.swiper-pagination-bullet{position:relative; z-index:10; width:8px; height:8px; background:#f8f8f8; border:1px solid #f8f8f8; opacity:1;}
-			.swiper-pagination-bullet.swiper-pagination-bullet-active{width:16px; height:8px; background:#ff6200; border:1px solid #ff6200; border-radius:20px;}
+			.swiper-pagination-bullet{position:relative; z-index:10; width:8px; height:8px; background:#e6e6e6; border:none; box-shadow:-1px -1px 1px #888;}
+			.swiper-pagination-bullet.swiper-pagination-bullet-active{width:16px; height:8px; background:#ff6200; border:none; border-radius:20px;}
 			.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 3px;}
 		}
 		.swiper-button-prev{width:26px; height:26px; left:7px; background:url('/mobile/images/common/sprite.png') -74px -315px no-repeat; background-size:300px 500px;}
 		.swiper-button-next{width:26px; height:26px; right:7px; background:url('/mobile/images/common/sprite.png') -105px -315px no-repeat; background-size:300px 500px;}
 	}
-	.infor{position:absolute; bottom:0; width:93%; padding:0 3.5%; z-index:10;
+	.infor{visibility:hidden; position:absolute; bottom:0; width:93%; padding:0 3.5%; z-index:10;
 		dt{clear:both; float:left; width:27%; margin-top:15px; font-size:1.6em;
 			&:first-child{margin-top:0;}
 		}
-		dd{float:left; width:73%; margin-top:15px; font-size:1.4em;}
+		dd{float:left; width:73%; margin-top:17px; font-size:1.4em;}
 		dt:first-child + dd{margin:0;}
 		table{width:100%;
 			th{text-align:center; padding:8px 0; border-top:2px solid #f08200;}
@@ -857,7 +857,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			}
 		}
 		.text-box01{overflow:hidden; margin-top:10px; padding:5px 0;
-			&:before{content:""; display:block; float:left; width:19px; height:23px; margin:6px 8px; background:url("/mobile/images/play_village/sprite-play.png") -38px 0 no-repeat; background-size:250px 250px;}
+			&:before{content:""; display:block; float:left; width:19px; height:23px; margin:6px 8px 6px 0; background:url("/mobile/images/play_village/sprite-play.png") -38px 0 no-repeat; background-size:250px 250px;}
 			.text{display:block; float:left; line-height:1.2;}
 		}
 	}

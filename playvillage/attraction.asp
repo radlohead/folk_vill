@@ -33,9 +33,11 @@
         <div class="detail-member">
             <div class="detail-head">
                 <h3>어트랙션</h3>
-                <span class="text">15종의 어트랙션이 기다리는<br/>
-                    아이들의 꿈동산
-                </span>
+                <div class="text-box">
+                    <span class="text">15종의 어트랙션이 기다리는<br/>
+                        아이들의 꿈동산
+                    </span>
+                </div>
             </div>
             <div class="detail-content attraction">
                 <div class="pre-infor-tab">

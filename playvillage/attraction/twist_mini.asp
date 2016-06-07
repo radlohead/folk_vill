@@ -75,10 +75,6 @@
                         </tbody>
                     </table>
                 </dd>
-                <dt>탑승인원</dt>
-                <dd>4명</dd>
-                <dt>편의사항</dt>
-                <dd>물품보관, 포토존</dd>
                 <dt>제한사항</dt>
                 <dd>
                     <span class="icon"><img src="/mobile/images/play_village/picto.png" alt="개금지, 음주금지, 임산부주의, 노약자주의 심장질환주의, 허리디스크주의, 음식물금지, 촬영금지, 휠체어출입제한"/></span>
