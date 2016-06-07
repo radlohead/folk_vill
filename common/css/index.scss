@@ -235,8 +235,9 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		}
 	}
 	.slick-slider.multiple-items{width:87%; margin:0 auto; height:37px; padding:11px 0 0; font-size:1.2em;
+		.slick-track{display:table;}
 		.slick-list{overflow:hidden;
-			.slick-slide{text-align:center;}
+			.slick-slide{display:table-cell; float:none; text-align:center;}
 			.slick-active{border-left:1px solid #bdb5a0; margin:0;}
 			.slick-current{border:0; color:#f08200; margin:0;}
 		}
@@ -599,7 +600,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.tabMenu{margin-bottom:10px;}
 	article{
 		img{width:100%;}
-		.caption{margin-bottom:21px;}
+		.caption{margin-bottom:21px; font-size:1.4em;}
 		section{margin-top:27px;
 			h4{text-align:left; padding:7px 0 4px;font-size:1.5em; color:#f08200;}
 			p{text-align:left; font-size:1.4em;}
