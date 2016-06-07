@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playvillage/attraction/bounce_spin.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playvillage/attraction/bumper_car.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playvillage/attraction/family_costa.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playvillage/attraction/fourD.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playvillage/attraction/mini_viking.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playvillage/attraction/music_express.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playvillage/attraction/train.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playvillage/attraction/twist.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playvillage/attraction/twist_mini.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playvillage/attraction/viking.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/playvillage/attraction/wooden_horse.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/sprite.png" afterPath="$PROJECT_DIR$/images/common/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction.asp" afterPath="$PROJECT_DIR$/playvillage/attraction.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/ghost.asp" afterPath="$PROJECT_DIR$/playvillage/ghost.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/junseol_gohyang.asp" afterPath="$PROJECT_DIR$/playvillage/junseol_gohyang.asp" />
-    </list>
+    <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="" />
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,8 +64,8 @@
       <file leaf-file-name="wooden_horse.asp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/playvillage/attraction/wooden_horse.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3713992">
-              <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.62860084">
+              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -883,8 +862,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/playvillage/attraction/wooden_horse.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3713992">
-          <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.62860084">
+          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
           <folding />
         </state>
       </provider>
