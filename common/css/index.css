@@ -496,10 +496,10 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .folk-tab section .text02:before { content: "유료"; display: inline-block; margin-right: 8px; padding: 3px 5px; border: 1px solid #f08200; color: #f08200; }
 
 .attraction .pre-infor-tab { margin: 0; }
-.attraction .pre-infor-tab .title { overflow: hidden; padding: 10px 15px 10px 0; border-top: 2px solid #f08200; border-bottom: 1px solid #bdb5a0; }
+.attraction .pre-infor-tab .title { overflow: hidden; padding: 10px 15px 8px 0; border-top: 2px solid #f08200; border-bottom: 1px solid #bdb5a0; }
 .attraction .pre-infor-tab .title h3 { float: left; font-size: 1.75em; line-height: 110%; }
-.attraction .pre-infor-tab .title .icon { display: block; float: right; width: 10px; height: 6px; margin-top: 7px; background: url("/mobile/images/common/sprite.png") no-repeat -55px -263px; background-size: 300px 500px; }
-.attraction .pre-infor-tab .title .icon.on { display: block; float: right; width: 10px; height: 6px; margin-top: 7px; background: url("/mobile/images/common/sprite.png") no-repeat -15px -263px; background-size: 300px 500px; }
+.attraction .pre-infor-tab .title .icon { display: block; float: right; width: 10px; height: 6px; margin-top: 5px; background: url("/mobile/images/common/sprite.png") no-repeat -55px -263px; background-size: 300px 500px; }
+.attraction .pre-infor-tab .title .icon.on { display: block; float: right; width: 10px; height: 6px; margin-top: 5px; background: url("/mobile/images/common/sprite.png") no-repeat -15px -263px; background-size: 300px 500px; }
 .attraction .pre-infor-tab .content p { display: table; margin-top: 5px; }
 .attraction .pre-infor-tab .content p .icon { display: table-cell; float: left; width: 5px; height: 5px; padding: 3px 3px 0 0; background: url("/mobile/images/common/sprite.png") -129px -263px no-repeat; background-size: 300px 500px; }
 .attraction .pre-infor-tab .content p .text { display: table-cell; font-size: 1.4em; }

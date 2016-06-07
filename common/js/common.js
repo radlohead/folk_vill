@@ -217,10 +217,10 @@ $(document).ready(function(){
 			this.$junseol.height(this.$junseol_bgH + this.$inforH);
 			this.$infor.css("visibility","visible");
 		};
-		$(window).resize(function(){
+		$(document).ready(function(){
 			junseolH.common();
 		});
-		$(document).ready(function(){
+		$(window).resize(function(){
 			junseolH.common();
 		});
 	}

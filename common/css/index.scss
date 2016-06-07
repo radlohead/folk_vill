@@ -743,10 +743,10 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 //어트랙션 내용
 .attraction{
 	.pre-infor-tab{margin:0;
-		.title{overflow:hidden; padding:10px 15px 10px 0; border-top:2px solid #f08200; border-bottom:1px solid #bdb5a0;
+		.title{overflow:hidden; padding:10px 15px 8px 0; border-top:2px solid #f08200; border-bottom:1px solid #bdb5a0;
 			h3{float:left; font-size:1.75em; line-height: 110%;}
-			.icon{display:block; float:right; width:10px; height:6px; margin-top:7px; background:url("/mobile/images/common/sprite.png") no-repeat -55px -263px; background-size:300px 500px;}
-			.icon.on{display:block; float:right; width:10px; height:6px; margin-top:7px; background:url("/mobile/images/common/sprite.png") no-repeat -15px -263px; background-size:300px 500px;}
+			.icon{display:block; float:right; width:10px; height:6px; margin-top:5px; background:url("/mobile/images/common/sprite.png") no-repeat -55px -263px; background-size:300px 500px;}
+			.icon.on{display:block; float:right; width:10px; height:6px; margin-top:5px; background:url("/mobile/images/common/sprite.png") no-repeat -15px -263px; background-size:300px 500px;}
 		}
 		.content{
 			p{display:table; margin-top: 5px;
@@ -758,7 +758,6 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 	.detail{float:left; width:48.5%; margin-top:30px; margin-right:3%;
 		.img{display:block; margin-bottom:10px; border-bottom:2px solid #f08200;}
-		h4{}
 		.text01{display:block; margin-top:8px; font-size:1.2em;
 			&:before{content:""; display:block; float:left; width:14px; height:12px; margin:2px 8px 2px 0; background:url("/mobile/images/play_village/sprite-play.png") 0 0 no-repeat; background-size:250px 250px;}
 		}

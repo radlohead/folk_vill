@@ -3,16 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/inc/rg_menu.html" afterPath="$PROJECT_DIR$/common/inc/rg_menu.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/common.js" afterPath="$PROJECT_DIR$/common/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction.asp" afterPath="$PROJECT_DIR$/playvillage/attraction.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/twist.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/twist.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/twist_mini.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/twist_mini.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/ghost.asp" afterPath="$PROJECT_DIR$/playvillage/ghost.asp" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.857143">
-              <caret line="217" column="49" selection-start-line="217" selection-start-column="49" selection-end-line="217" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.12037037">
+              <caret line="189" column="8" selection-start-line="189" selection-start-column="8" selection-end-line="189" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5643341">
-              <caret line="760" column="12" selection-start-line="760" selection-start-column="12" selection-end-line="760" selection-end-column="12" />
+            <state vertical-scroll-proportion="-4.885965">
+              <caret line="763" column="19" selection-start-line="763" selection-start-column="19" selection-end-line="763" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -143,12 +137,12 @@
         <option value="$PROJECT_DIR$/playvillage/attraction/fourD.asp" />
         <option value="$PROJECT_DIR$/playvillage/attraction/twist.asp" />
         <option value="$PROJECT_DIR$/playvillage/attraction/twist_mini.asp" />
-        <option value="$PROJECT_DIR$/common/js/common.js" />
         <option value="$PROJECT_DIR$/playvillage/junseol_gohyang.asp" />
         <option value="$PROJECT_DIR$/playvillage/ghost.asp" />
         <option value="$PROJECT_DIR$/playvillage/attraction.asp" />
         <option value="$PROJECT_DIR$/common/inc/rg_menu.html" />
         <option value="$PROJECT_DIR$/common/css/index.scss" />
+        <option value="$PROJECT_DIR$/common/js/common.js" />
       </list>
     </option>
   </component>
@@ -737,14 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.857143">
-          <caret line="217" column="49" selection-start-line="217" selection-start-column="49" selection-end-line="217" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/information/convenience.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6183128">
@@ -795,8 +781,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5643341">
-          <caret line="760" column="12" selection-start-line="760" selection-start-column="12" selection-end-line="760" selection-end-column="12" />
+        <state vertical-scroll-proportion="-4.885965">
+          <caret line="763" column="19" selection-start-line="763" selection-start-column="19" selection-end-line="763" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12037037">
+          <caret line="189" column="8" selection-start-line="189" selection-start-column="8" selection-end-line="189" selection-end-column="8" />
           <folding />
         </state>
       </provider>
