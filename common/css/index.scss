@@ -777,6 +777,50 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.end{margin-right:0;}
 }
 
+//어트랙션 내용
+.detail-attraction{overflow:hidden; margin-bottom:60px;
+	h3{margin-bottom:30px; font-size:2.25em; font-weight:bold;}
+	.explain_text{display:block; margin:26px 0 30px; font-size:1.4em;}
+	.attr-slide{width:100%; padding-bottom:20px;
+		.swiper-slide{
+			img{width:100%;}
+		}
+		.swiper-pagination{
+			&:after{background:none;}
+			.swiper-pagination-bullet{position:relative; z-index:10; width:8px; height:8px; background:#e6e6e6; border:1px solid #f8f8f8; opacity:1;}
+			.swiper-pagination-bullet.swiper-pagination-bullet-active{width:16px; height:8px; background:#ff6200; border:1px solid #ff6200; border-radius:20px;}
+			.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 3px;}
+		}
+		.swiper-button-prev{width:26px; height:26px; left:7px; background:url('/mobile/images/common/sprite.png') -9px -206px no-repeat; background-size:300px 500px;}
+		.swiper-button-next{width:26px; height:26px; right:7px; background:url('/mobile/images/common/sprite.png') -61px -206px no-repeat; background-size:300px 500px;}
+	}
+	.infor{width:100%;
+		dt{clear:both; float:left; width:27%; margin-top:15px; font-size:1.6em;
+			&:first-child{margin-top:0;}
+		}
+		dd{float:left; width:73%; margin-top:15px; font-size:1.4em;}
+		dt:first-child + dd{margin:0;}
+		table{width:100%;
+			th{text-align:center; padding:8px 0; border-top:2px solid #f08200;}
+			td{text-align:center; padding:8px 0; border-bottom:1px solid #dedacf;}
+			th:first-child{border-right:8px solid #fff;}
+			td:first-child{border-right:8px solid #fff;}
+			tr{
+				&:first-child td{border-top:1px solid #bdb5a0; border-right:8px solid #fff;}
+				&:last-child td{border-bottom:1px solid #bdb5a0;}
+			}
+		}
+		.text-box01{overflow:hidden; margin-top:10px; padding:5px 0;
+			&:before{content:""; display:block; float:left; width:19px; height:23px; margin:6px 8px; background:url("/mobile/images/play_village/sprite-play.png") -38px 0 no-repeat; background-size:250px 250px;}
+			.text{display:block; float:left; line-height:1.2;}
+		}
+		.text-box02{overflow:hidden; display:table; margin-top:10px; padding:5px 0;
+			&:before{content:""; display:table-cell;  width:19px; height:23px; padding:6px 8px; background:url("/mobile/images/play_village/sprite-play.png") -38px 0 no-repeat; background-size:250px 250px;}
+			.text{display:table-cell; line-height:1.2;}
+		}
+	}
+}
+
 //전설의고향
 .contents02{margin-top:-23px;}
 .detail-junseol{position:relative;

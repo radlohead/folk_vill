@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <section class="detail">
-                    <a href="#none" class="img"><img src="/mobile/images/play_village/attraction_1.png" alt="귀신전 사진" /></a>
+                    <a href="/mobile/playvillage/ghost.asp" class="img"><img src="/mobile/images/play_village/attraction_1.png" alt="귀신전 사진" /></a>
                     <h4>귀신전</h4>
                     <span class="text01">정상운영</span>
                     <div class="text-box01">
@@ -69,7 +69,7 @@
                     </div>
                 </section>
                 <section class="detail end">
-                    <a href="#none" class="img"><img src="/mobile/images/play_village/attraction_2.png" alt="전설의 고향 사진" /></a>
+                    <a href="/mobile/playvillage/junseol_gohyang.asp" class="img"><img src="/mobile/images/play_village/attraction_2.png" alt="전설의 고향 사진" /></a>
                     <h4>전설의 고향</h4>
                     <span class="text01">정상운영</span>
                     <div class="text-box01">
@@ -79,7 +79,7 @@
                     </div>
                 </section>
                 <section class="detail">
-                    <a href="#none" class="img"><img src="/mobile/images/play_village/attraction_3.png" alt="드롭앤트위스트 사진" /></a>
+                    <a href="/mobile/playvillage/attraction/twist.asp" class="img"><img src="/mobile/images/play_village/attraction_3.png" alt="드롭앤트위스트 사진" /></a>
                     <h4>드롭앤트위스트</h4>
                     <span class="text02">운휴</span>
                     <div class="text-box01">
@@ -89,7 +89,7 @@
                     </div>
                 </section>
                 <section class="detail end">
-                    <a href="#none" class="img"><img src="/mobile/images/play_village/attraction_4.png" alt="드롭앤트위스트 미니 사진" /></a>
+                    <a href="/mobile/playvillage/attraction/twist_mini.asp" class="img"><img src="/mobile/images/play_village/attraction_4.png" alt="드롭앤트위스트 미니 사진" /></a>
                     <h4>드롭앤트위스트 미니</h4>
                     <span class="text01">정상운영</span>
                     <div class="text-box01">
@@ -99,7 +99,7 @@
                     </div>
                 </section>
                 <section class="detail">
-                    <a href="#none" class="img"><img src="/mobile/images/play_village/attraction_3.png" alt="바이킹 사진" /></a>
+                    <a href="/mobile/playvillage/attraction/viking.asp" class="img"><img src="/mobile/images/play_village/attraction_3.png" alt="바이킹 사진" /></a>
                     <h4>바이킹</h4>
                     <span class="text02">운휴</span>
                     <div class="text-box02">
@@ -107,7 +107,7 @@
                     </div>
                 </section>
                 <section class="detail end">
-                    <a href="#none" class="img"><img src="/mobile/images/play_village/attraction_4.png" alt="미니 바이킹 사진" /></a>
+                    <a href="/mobile/playvillage/attraction/mini_viking.asp" class="img"><img src="/mobile/images/play_village/attraction_4.png" alt="미니 바이킹 사진" /></a>
                     <h4>미니 바이킹</h4>
                     <span class="text01">정상운영</span>
                     <div class="text-box02">
@@ -115,7 +115,7 @@
                     </div>
                 </section>
                 <section class="detail">
-                    <a href="#none" class="img"><img src="/mobile/images/play_village/attraction_5.png" alt="패밀리코스타 사진" /></a>
+                    <a href="/mobile/playvillage/attraction/family_costa.asp" class="img"><img src="/mobile/images/play_village/attraction_5.png" alt="패밀리코스타 사진" /></a>
                     <h4>패밀리코스타</h4>
                     <span class="text01">정상운영</span>
                     <div class="text-box02">
@@ -123,7 +123,7 @@
                     </div>
                 </section>
                 <section class="detail end">
-                    <a href="#none" class="img"><img src="/mobile/images/play_village/attraction_6.png" alt="범퍼카 사진" /></a>
+                    <a href="/mobile/playvillage/attraction/bumper_car.asp" class="img"><img src="/mobile/images/play_village/attraction_6.png" alt="범퍼카 사진" /></a>
                     <h4>범퍼카</h4>
                     <span class="text02">운휴</span>
                     <div class="text-box02">
@@ -131,7 +131,7 @@
                     </div>
                 </section>
                 <section class="detail">
-                    <span class="img"><img src="/mobile/images/play_village/attraction_7.png" alt="바운스 스핀 사진" /></span>
+                    <a href="/mobile/playvillage/attraction/bounce_spin.asp" class="img"><img src="/mobile/images/play_village/attraction_7.png" alt="바운스 스핀 사진" /></a>
                     <h4>바운스 스핀</h4>
                     <span class="text01">정상운영</span>
                     <div class="text-box01">
@@ -141,7 +141,7 @@
                     </div>
                 </section>
                 <section class="detail end">
-                    <a href="#none" class="img"><img src="/mobile/images/play_village/attraction_8.png" alt="뮤직익스프레스 사진" /></a>
+                    <a href="/mobile/playvillage/attraction/music_express.asp" class="img"><img src="/mobile/images/play_village/attraction_8.png" alt="뮤직익스프레스 사진" /></a>
                     <h4>뮤직익스프레스</h4>
                     <span class="text01">정상운영</span>
                     <div class="text-box02">
@@ -149,7 +149,7 @@
                     </div>
                 </section>
                 <section class="detail">
-                    <a href="#none" class="img"><img src="/mobile/images/play_village/attraction_9.png" alt="순환열차 사진" /></a>
+                    <a href="/mobile/playvillage/attraction/train.asp" class="img"><img src="/mobile/images/play_village/attraction_9.png" alt="순환열차 사진" /></a>
                     <h4>순환열차</h4>
                     <span class="text01">정상운영</span>
                     <div class="text-box02">
@@ -157,7 +157,7 @@
                     </div>
                 </section>
                 <section class="detail end">
-                    <a href="#none" class="img"><img src="/mobile/images/play_village/attraction_10.png" alt="회전목마 사진" /></a>
+                    <a href="/mobile/playvillage/attraction/wooden_horse.asp" class="img"><img src="/mobile/images/play_village/attraction_10.png" alt="회전목마 사진" /></a>
                     <h4>회전목마</h4>
                     <span class="text01">정상운영</span>
                     <div class="text-box01">
@@ -167,7 +167,7 @@
                     </div>
                 </section>
                 <section class="detail">
-                    <a href="#none" class="img"><img src="/mobile/images/play_village/attraction_11.png" alt="4D 입체영상관 사진" /></a>
+                    <a href="/mobile/playvillage/attraction/fourD.asp" class="img"><img src="/mobile/images/play_village/attraction_11.png" alt="4D 입체영상관 사진" /></a>
                     <h4>4D 입체영상관</h4>
                     <span class="text01">정상운영</span>
                     <div class="text-box02">

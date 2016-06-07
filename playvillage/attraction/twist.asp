@@ -6,7 +6,6 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.html" -->
-    <!--#include virtual="/mobile/common/inc/script.html" -->
 </head>
 <body>
 <!-- 메뉴 -->
@@ -26,19 +25,18 @@
 <!--#include virtual="/mobile/common/inc/rg_menu.html" -->
             </aside>
         </div>
-
 <!--#include virtual="/mobile/playvillage/inc/play_topmenu.html" -->
     </div>
-
-    <div class="contents02">
-        <div class="detail-junseol">
+    <div class="contents">
+        <div class="detail-attraction">
+            <h3>드롭앤트위스트</h3>
 <!-- 슬라이드 -->
-            <div class="junseol-slide swiper-container">
+            <div class="attr-slide swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="/mobile/images/play_village/junseol_slide01.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="/mobile/images/play_village/junseol_slide02.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="/mobile/images/play_village/junseol_slide03.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="/mobile/images/play_village/junseol_slide04.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="/mobile/images/play_village/twist/twist_slide01.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="/mobile/images/play_village/twist/twist_slide02.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="/mobile/images/play_village/twist/twist_slide03.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="/mobile/images/play_village/twist/twist_slide04.jpg" alt="" /></div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -46,6 +44,7 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
+            <span class="explain_text">고공낙하 속에 아찔한 트위스트를 즐겨보세요~</span>
             <dl class="infor">
                 <dt>이용요금</dt>
                 <dd>
@@ -62,15 +61,15 @@
                         <tbody>
                             <tr>
                                 <td>성인</td>
-                                <td>3,000원</td>
+                                <td>3,500원</td>
                             </tr>
                             <tr>
                                 <td>청소년</td>
-                                <td>2,500원</td>
+                                <td>3,000원</td>
                             </tr>
                             <tr>
                                 <td>아동</td>
-                                <td>2,000원</td>
+                                <td>2,500원</td>
                             </tr>
                         </tbody>
                     </table>
@@ -83,31 +82,30 @@
                 <dd>
                     <span class="icon"><img src="/mobile/images/play_village/picto.png" alt="개금지, 음주금지, 임산부주의, 노약자주의 심장질환주의, 허리디스크주의, 음식물금지, 촬영금지, 휠체어출입제한"/></span>
                     <div class="text-box01">
-                        <span class="text">신장 140cm 이상<br/>
-                                       (110cm~140cm 보호자 동승)
+                        <span class="text">신장 130cm 이상<br/>
+                                       (120cm~130cm 보호자 동승)
                         </span>
                     </div>
                 </dd>
             </dl>
-            <span class="bg"><img src="/mobile/images/play_village/junseol_main_bg.png" alt="전설의고향 배경" /></span>
         </div>
     </div>
 
 <!-- 하단푸터 -->
 <!--#include virtual="/mobile/common/inc/footer.html" -->
-
 </div>
+<!--#include virtual="/mobile/common/inc/script.html" -->
     <script>
         $(document).ready(function(){
             $('.single-items').slick({
                 slidesToShow: 4,
-                initialSlide: 1
+                initialSlide: 0
             });
-			var mySwiper_a = new Swiper('.junseol-slide', {
-				pagination:'.junseol-slide .swiper-pagination',
+			var mySwiper_a = new Swiper('.attr-slide', {
+				pagination:'.attr-slide .swiper-pagination',
 				paginationClickable: true,
-				nextButton: '.junseol-slide .swiper-button-next',
-				prevButton: '.junseol-slide .swiper-button-prev',
+				nextButton: '.attr-slide .swiper-button-next',
+				prevButton: '.attr-slide .swiper-button-prev',
 				autoplay: 2500,
 				loop:false
 			});
