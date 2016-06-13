@@ -89,16 +89,16 @@ $(document).ready(function(){
 	//gnb실행구문
 	$('.navi').accordion();
 
-	(function(){
-		$(document).ready(function(){
-			$(window).trigger('resize');
-			$(window).load('resize');
-		});
-		$(window).resize(function(){
-			var h_height = $("header").outerHeight();
-			$(".header_wrap").outerHeight(h_height);
-		});
-	})();
+	//(function(){
+	//	$(document).ready(function(){
+	//		$(window).trigger('resize');
+	//		$(window).load('resize');
+	//	});
+	//	$(window).resize(function(){
+	//		var h_height = $("header").outerHeight();
+	//		$(".header_wrap").outerHeight(h_height);
+	//	});
+	//})();
 
 	//서브page rg_menu toggle버튼
 	function rg_menu(){
@@ -175,6 +175,11 @@ $(document).ready(function(){
 		$(".tabMenu4 .map-btn").click(function(){
 			var pop = $(".popup_wrap .pop img");
 			$(pop).attr("src", "/mobile/images/page_map/page_map_display04.png");
+			$(".popup_wrap").css("visibility","visible");
+		});
+		$(".show-time_wrap .map-btn").click(function(){
+			var pop = $(".popup_wrap .pop img");
+			$(pop).attr("src", "/mobile/images/page_map/page_map_performance_nongak.png");
 			$(".popup_wrap").css("visibility","visible");
 		});
 	})();
