@@ -182,6 +182,21 @@ $(document).ready(function(){
 			$(pop).attr("src", "/mobile/images/page_map/page_map_performance_nongak.png");
 			$(".popup_wrap").css("visibility","visible");
 		});
+		$(".map-btn.bboy").click(function(){
+			var pop = $(".popup_wrap .pop img");
+			$(pop).attr("src", "/mobile/images/page_map/page_map_performance_bboy.png");
+			$(".popup_wrap").css("visibility","visible");
+		});
+		$(".map-btn.horse").click(function(){
+			var pop = $(".popup_wrap .pop img");
+			$(pop).attr("src", "/mobile/images/page_map/page_map_performance_horse.png");
+			$(".popup_wrap").css("visibility","visible");
+		});
+		$(".map-btn.wedding").click(function(){
+			var pop = $(".popup_wrap .pop img");
+			$(pop).attr("src", "/mobile/images/page_map/page_map_performance_wedding.png");
+			$(".popup_wrap").css("visibility","visible");
+		});
 	})();
 
 	//메인 한국민속촌 정기공연 +버튼에 url삽입

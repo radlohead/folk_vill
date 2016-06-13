@@ -147,12 +147,13 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .header_title_slide > h2 { padding: 10px 0; background: #312d22; font-size: 1.5em; text-indent: 3.5%; color: #fff; }
 .header_title_slide .title { height: 24px; padding: 9px 3.5% 3px 3.5%; background: #312d22; color: #fff; }
 .header_title_slide .title > h2 { float: left; margin-top: -1px; font-size: 1.5em; letter-spacing: -1px; }
-.header_title_slide .title aside { float: right; position: relative; }
+.header_title_slide .title aside { float: right; }
 .header_title_slide .title aside h2 { float: left; margin-top: 1px; font-size: 1.4em; }
 .header_title_slide .title aside h2 .icon { display: block; float: right; width: 16px; height: 16px; margin: 0 0 0 8px; background: url("/mobile/images/common/sprite.png") no-repeat -199px -208px; background-size: 300px 500px; }
 .header_title_slide .title aside h2 .icon.on { display: block; float: right; width: 16px; height: 16px; margin: 0 0 0 8px; background: url("/mobile/images/common/sprite.png") no-repeat -239px -208px; background-size: 300px 500px; }
-.header_title_slide .title aside .menu { display: none; position: absolute; top: 26px; right: -17%; z-index: 50; width: 150%; padding: 9px 0; text-indent: 15%; background: #e8aa00; }
-.header_title_slide .title aside .menu li { display: table; width: 101%; height: 28px; font-size: 1.4em; }
+.header_title_slide .title aside .menu { display: none; position: absolute; top: 36px; right: 0; z-index: 50; width: 125px; padding: 9px 0 5px; text-indent: 15%; background: #e8aa00; }
+.header_title_slide .title aside .menu li { display: table; width: 100%; padding: 7px 0; font-size: 1.4em; border-top: 1px solid #98782e; }
+.header_title_slide .title aside .menu li:first-child { border-top: 0; }
 .header_title_slide .title aside .menu li a { display: table-cell; vertical-align: middle; color: #fff; }
 .header_title_slide .title aside .menu li a:focus { background: #766341; color: #e8aa00; }
 .header_title_slide .title aside .menu::before { content: ""; display: block; position: absolute; top: -7px; left: 43%; width: 13px; height: 9px; background: url("/mobile/images/common/sprite.png") no-repeat -92px -264px; background-size: 300px 500px; }
@@ -578,20 +579,43 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .show-time_wrap .show-time .text { display: block; margin-bottom: 7px; font-size: 1.2em; }
 .show-time_wrap .show-time .text:before { display: block; content: ""; float: left; width: 14px; height: 14px; margin-top: -1px; margin-right: 8px; background: url("/mobile/images/common/sprite.png") no-repeat -118px -209px; background-size: 300px 500px; }
 .show-time_wrap .show-time .text .time { display: inline-block; margin-right: 12px; color: #666; }
-.show-time_wrap .show-time .text .line { display: inline-block; width: 1px; height: 5px; margin: -8px 7px 0; background: #999; vertical-align: middle; }
 .show-time_wrap .show-time .text02 { display: block; font-size: 1.2em; }
-.show-time_wrap .show-time .text02:before { display: block; content: ""; float: left; width: 14px; height: 14px; margin-top: -1px; margin-right: 8px; background: url("/mobile/images/common/sprite.png") no-repeat -118px -209px; background-size: 300px 500px; }
+.show-time_wrap .show-time .text02:before { display: block; content: ""; float: left; width: 12px; height: 16px; margin-left: 1px; margin-right: 9px; background: url("/mobile/images/common/sprite.png") no-repeat -169px -315px; background-size: 300px 500px; }
 .show-time_wrap .show-time .text02 .time { display: inline-block; margin-right: 12px; color: #666; }
-.show-time_wrap .show-time .text02 .line { display: inline-block; width: 1px; height: 5px; margin: -8px 7px 0; background: #999; vertical-align: middle; }
 .show-time_wrap .map-btn { display: table-cell; width: 36px; height: 36px; text-indent: -9999px; background: url("/mobile/images/common/sprite.png") no-repeat -29px -300px; background-size: 300px 500px; }
 
+.wedding_wrap { overflow: hidden; display: table; width: 92%; margin-bottom: 8px; padding: 14px 4%; border-top: 1px solid #bdb5a0; border-bottom: 1px solid #bdb5a0; }
+.wedding_wrap .show-time { display: table-cell; }
+.wedding_wrap .show-time .text { display: block; margin-bottom: 7px; font-size: 1.2em; }
+.wedding_wrap .show-time .text:before { display: block; content: ""; float: left; width: 14px; height: 14px; margin-top: -1px; margin-right: 8px; background: url("/mobile/images/common/sprite.png") no-repeat -118px -209px; background-size: 300px 500px; }
+.wedding_wrap .show-time .text .time { display: inline-block; margin-right: 12px; color: #666; }
+.wedding_wrap .show-time .text02 { display: block; font-size: 1.2em; }
+.wedding_wrap .show-time .text02:before { display: block; content: ""; float: left; width: 12px; height: 16px; margin-left: 1px; margin-right: 9px; background: url("/mobile/images/common/sprite.png") no-repeat -169px -315px; background-size: 300px 500px; }
+.wedding_wrap .show-time .text02 .time { display: inline-block; margin-right: 12px; color: #666; }
+.wedding_wrap .map-btn { display: table-cell; width: 36px; height: 36px; text-indent: -9999px; background: url("/mobile/images/common/sprite.png") no-repeat -29px -300px; background-size: 300px 500px; }
+
+.wedding .content p { font-size: 1.4em; }
+.wedding .content .text_box02 { display: table; margin-bottom: 12px; }
+.wedding .content .text_box02 span { display: table-cell; }
+.wedding .content .text_box02 .icon { float: left; width: 5px; height: 5px; padding: 3px 3px 0 0; background: url("/mobile/images/common/sprite.png") -129px -263px no-repeat; background-size: 300px 500px; }
+.wedding .content table { margin: 12px 0; font-size: 1.4em; }
+.wedding .content table th { text-align: left; vertical-align: top; color: #f08200; }
+.wedding .content table th .icon { display: table-cell; float: left; width: 5px; height: 5px; margin-top: 6px; padding: 3px 3px 0 0; background: url("/mobile/images/common/sprite.png") -129px -263px no-repeat; background-size: 300px 500px; }
+.wedding .content table td { text-align: left; }
+.wedding .content table td[rowspan] { vertical-align: top; }
+.wedding .content table:first-child { margin: 17px 0 0 0; }
+
+.detail-show .cont_body .text { display: block; font-size: 1.4em; margin-bottom: 20px; }
 .detail-show .cont_body .img_box { overflow: hidden; }
+.detail-show .cont_body .img_box em { display: block; margin: 18px 0 10px; font-size: 1.6em; font-weight: bold; }
 .detail-show .cont_body .img_box .img { display: block; float: left; width: 49.2%; }
 .detail-show .cont_body .img_box .img:first-child { margin-right: 1.6%; }
 .detail-show .cont_body .img_box02 { margin: 20px 0 12px; }
 .detail-show .cont_body .text_box { display: table; margin-top: 5px; }
-.detail-show .cont_body .text_box .icon { display: table-cell; width: 5px; height: 5px; padding: 3px 3px 0 0; color: #f08200; font-size: 1.4em; vertical-align: middle; }
+.detail-show .cont_body .text_box .icon { display: table-cell; width: 5px; height: 5px; padding: 3px 3px 0 0; color: #f08200; font-size: 1.4em; vertical-align: top; }
 .detail-show .cont_body .text_box .text { display: table-cell; font-size: 1.4em; }
+.detail-show .cont_body .text03 { display: inline-block; margin-bottom: 16px; font-size: 1.2em; }
+.detail-show .cont_body .text03:before { display: inline-block; content: "*"; float: left; margin-left: 1px; margin-right: 2px; color: #f08200; }
 .detail-show .preview-slide-wrap { margin-top: 25px; }
 .detail-show .preview-slide-wrap h4 { margin-bottom: 10px; }
 .detail-show .preview-slide-wrap .preview-slide img { width: 100%; }

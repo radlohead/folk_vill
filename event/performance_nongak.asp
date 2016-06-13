@@ -50,7 +50,7 @@
                     <a href="#none" class="map-btn">지도보기</a>
                 </div>
                 <div class="cont_body">
-                    <p class="text"></p>
+                    <p class="text">한국민속촌 농악놀이 공연은 관람객이 직접 참여하여 즐길 수 있는 공연입니다. 풍년을 기원하며 신명나게 울리는 전통농악 놀이를 만나보세요.</p>
                     <div class="img_box">
                         <span class="img"><img src="/mobile/images/event/nongak_img_01.jpg" alt="" /></span>
                         <span class="img"><img src="/mobile/images/event/nongak_img_02.jpg" alt="" /></span>
@@ -93,7 +93,7 @@
             $('.multiple-items').slick({
                 infinite: true,
                 slidesToShow: 4,
-                slidesToScroll: 1
+                initialSlide: 1
             });
             $('.single-item').slick({
                 dots: true

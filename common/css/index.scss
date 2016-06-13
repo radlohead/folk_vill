@@ -218,13 +218,14 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	>h2{padding:10px 0; background:#312d22; font-size:1.5em; text-indent:3.5%; color:#fff;}
 	.title{height:24px; padding:9px 3.5% 3px 3.5%; background:#312d22; color:#fff;
 		>h2{float:left; margin-top:-1px; font-size:1.5em; letter-spacing:-1px;}
-		aside{float:right; position:relative;
+		aside{float:right;
 			h2{float:left; margin-top:1px; font-size:1.4em;
 				.icon{display:block; float:right; width:16px; height:16px; margin:0 0 0 8px; background:url("/mobile/images/common/sprite.png") no-repeat -199px -208px; background-size:300px 500px;}
 				.icon.on{display:block; float:right; width:16px; height:16px; margin:0 0 0 8px; background:url("/mobile/images/common/sprite.png") no-repeat -239px -208px; background-size:300px 500px;}
 			}
-			.menu{display:none; position:absolute; top:26px; right:-17%; z-index:50; width:150%; padding:9px 0; text-indent:15%; background:#e8aa00;
-				li{display: table; width:101%; height:28px; font-size:1.4em;
+			.menu{display:none; position:absolute; top:36px; right:0; z-index:50; width:125px; padding:9px 0 5px; text-indent:15%; background:#e8aa00;
+				li{display: table; width:100%; padding:7px 0; font-size:1.4em; border-top:1px solid #98782e;
+					&:first-child{border-top:0;}
 					a{display: table-cell; vertical-align: middle; color:#fff;
 						&:focus{background:#766341; color:#e8aa00;}
 					}
@@ -865,26 +866,60 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.text{display:block; margin-bottom:7px; font-size:1.2em;
 			&:before{display:block; content:""; float:left; width:14px; height:14px; margin-top:-1px; margin-right:8px; background:url("/mobile/images/common/sprite.png") no-repeat -118px -209px; background-size:300px 500px;}
 			.time{display:inline-block; margin-right:12px; color:#666;}
-			.line{display:inline-block; width:1px; height:5px; margin:-8px 7px 0; background: #999; vertical-align: middle;}
 		}
 		.text02{display:block; font-size:1.2em;
-			&:before{display:block; content:""; float:left; width:14px; height:14px; margin-top:-1px; margin-right:8px; background:url("/mobile/images/common/sprite.png") no-repeat -118px -209px; background-size:300px 500px;}
+			&:before{display:block; content:""; float:left; width:12px; height:16px; margin-left:1px; margin-right:9px; background:url("/mobile/images/common/sprite.png") no-repeat -169px -315px; background-size:300px 500px;}
 			.time{display:inline-block; margin-right:12px; color:#666;}
-			.line{display:inline-block; width:1px; height:5px; margin:-8px 7px 0; background: #999; vertical-align: middle;}
 		}
 	}
 	.map-btn{display:table-cell; width:36px; height:36px; text-indent:-9999px; background:url("/mobile/images/common/sprite.png") no-repeat -29px -300px; background-size:300px 500px;}
 }
+.wedding_wrap{overflow:hidden; display:table; width:92%; margin-bottom:8px; padding:14px 4%; border-top:1px solid #bdb5a0; border-bottom:1px solid #bdb5a0;
+	.show-time{display:table-cell;
+		.text{display:block; margin-bottom:7px; font-size:1.2em;
+			&:before{display:block; content:""; float:left; width:14px; height:14px; margin-top:-1px; margin-right:8px; background:url("/mobile/images/common/sprite.png") no-repeat -118px -209px; background-size:300px 500px;}
+			.time{display:inline-block; margin-right:12px; color:#666;}
+		}
+		.text02{display:block; font-size:1.2em;
+			&:before{display:block; content:""; float:left; width:12px; height:16px; margin-left:1px; margin-right:9px; background:url("/mobile/images/common/sprite.png") no-repeat -169px -315px; background-size:300px 500px;}
+			.time{display:inline-block; margin-right:12px; color:#666;}
+		}
+	}
+	.map-btn{display:table-cell; width:36px; height:36px; text-indent:-9999px; background:url("/mobile/images/common/sprite.png") no-repeat -29px -300px; background-size:300px 500px;}
+}
+//전통혼례
+.wedding{
+	.content{
+		p{font-size:1.4em;}
+		.text_box02{display:table; margin-bottom:12px;
+			span{display:table-cell;}
+			.icon{float:left; width:5px; height:5px; padding:3px 3px 0 0; background:url("/mobile/images/common/sprite.png") -129px -263px no-repeat; background-size:300px 500px;}
+		}
+		table{margin:12px 0; font-size:1.4em;
+			th{text-align:left; vertical-align:top; color:#f08200;
+				.icon{display:table-cell; float:left; width:5px; height:5px; margin-top:6px; padding:3px 3px 0 0; background:url("/mobile/images/common/sprite.png") -129px -263px no-repeat; background-size:300px 500px;}
+			}
+			td{text-align:left;}
+			td[rowspan]{vertical-align:top;}
+		}
+		table:first-child{margin:17px 0 0 0;}
+	}
+}
 .detail-show {
 	.cont_body {
+		.text{display:block; font-size:1.4em; margin-bottom:20px;}
 		.img_box{overflow:hidden;
+			em{display:block; margin:18px 0 10px; font-size:1.6em; font-weight:bold;}
 			.img{display:block; float:left; width:49.2%;}
 			.img:first-child{margin-right:1.6%;}
 		}
 		.img_box02{margin:20px 0 12px;}
 		.text_box{display:table; margin-top:5px;
-			.icon{display:table-cell; width:5px; height:5px; padding:3px 3px 0 0; color:#f08200; font-size: 1.4em; vertical-align: middle;}
+			.icon{display:table-cell; width:5px; height:5px; padding:3px 3px 0 0; color:#f08200; font-size: 1.4em; vertical-align:top;}
 			.text{display:table-cell; font-size:1.4em;}
+		}
+		.text03{display:inline-block; margin-bottom:16px; font-size:1.2em;
+			&:before{display:inline-block; content:"*"; float:left; margin-left:1px; margin-right:2px; color:#f08200;}
 		}
 	}
 	.preview-slide-wrap{margin-top:25px;

@@ -68,7 +68,7 @@
             $('.multiple-items').slick({
                 infinite: true,
                 slidesToShow: 4,
-                initialSlide: 4
+                initialSlide: 0
             });
         });
     </script>
