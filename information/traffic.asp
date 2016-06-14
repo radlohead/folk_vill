@@ -104,11 +104,36 @@
                             </tbody>
                         </table>
                         <ul class="bus-time-list">
-                            <li>이용요금 무료</li>
-                            <li>수원역 4번 출구 민속촌 셔틀버스 승강장, 상갈역 2번 출구에서 승하차</li>
-                            <li>선착순 탑승, 단체관람객 제한 가능</li>
-                            <li>문의 : 031-288-0000</li>
-                            <li>동절기 셔틀버스2 노선 마지막 회차 운휴</li>
+                            <li>
+                                <p>
+                                    <span class="icon02">*</span>
+                                    <span>이용요금 무료</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="icon02">*</span>
+                                    <span>수원역 4번 출구 민속촌 셔틀버스 승강장, 상갈역 2번 출구에서 승하차</span>
+                                </p>
+                            </li>
+                            <li>
+                                 <p>
+                                     <span class="icon02">*</span>
+                                     <span>선착순 탑승, 단체관람객 제한 가능</span>
+                                 </p>
+                            </li>
+                            <li>
+                                 <p>
+                                     <span class="icon02">*</span>
+                                     <span>문의 : 031-288-0000</span>
+                                 </p>
+                            </li>
+                            <li>
+                                 <p>
+                                     <span class="icon02">*</span>
+                                     <span>동절기 셔틀버스2 노선 마지막 회차 운휴</span>
+                                 </p>
+                            </li>
                         </ul>
                         <h4>버스 이용</h4>
                         <table class="bus-use">

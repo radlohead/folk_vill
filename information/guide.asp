@@ -75,20 +75,40 @@
                     </tbody>
                 </table>
                 <ul class="attention">
-                    <li>1년 연중무휴 운영</li>
-                    <li>개장시간 30분 후부터 놀이시설 이용 가능</li>
-                    <li>자전거, 퀵보드, 인라인스케이트, 공 등 놀이용품 입장제한</li>
-                    <li>애완견은 30cm 이하의 소형견만 입장 가능</li>
-                    <li>폐장시간은 계절과 날씨에 따라 유동적으로 운영</li>
+                    <li>
+                        <p>
+                            <span class="icon">*</span>
+                            <span>1년 연중무휴 운영</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="icon">*</span>
+                            <span>개장시간 30분 후부터 놀이시설 이용 가능</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="icon">*</span>
+                            <span>자전거, 퀵보드, 인라인스케이트, 공 등 놀이용품 입장제한</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="icon">*</span>
+                            <span>애완견은 30cm 이하의 소형견만 입장 가능</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="icon">*</span>
+                            <span>폐장시간은 계절과 날씨에 따라 유동적으로 운영</span>
+                        </p>
+                    </li>
                 </ul>
             </div>
             <div class="detail-head detail-head02">
                 <h3>이용요금</h3>
-                <!--<div class="text-box">-->
-                    <!--<span class="text02">한국민속촌은 일반 입장권과 함께</span>-->
-                    <!--<span class="text02">15여 종의 놀이기구를 이용할 수 있는</span>-->
-                    <!--<span class="text02">자유이용권을 판매합니다.</span>-->
-                <!--</div>-->
             </div>
             <div class="detail-content operate-time">
                 <table class="use-pay">
@@ -179,7 +199,7 @@
                         <section class="prefer-infor">
                             <h4>국가유공자 우대</h4>
                             <p>
-                                <span class="icon">·</span>
+                                <span class="icon">*</span>
                                 <span>본인 아동요금 적용 (국가유공자증 제시)</span>
                             </p>
                         </section>

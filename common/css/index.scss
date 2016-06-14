@@ -238,7 +238,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.slick-slider.multiple-items{width:87%; margin:0 auto; height:37px; padding:11px 0 0; font-size:1.2em;
 		.slick-track{display:table;}
 		.slick-list{overflow:hidden;
-			.slick-slide{display:table-cell; float:none; text-align:center;}
+			.slick-slide{display:table-cell; text-align:center;}
 			.slick-active{border-left:1px solid #bdb5a0; margin:0;}
 			.slick-current{border:0; color:#f08200; margin:0;}
 		}
@@ -348,7 +348,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 }
 .main-tab.map{overflow:hidden; position:relative;
 	.tabMenu{overflow:hidden; position:relative; width:100%; margin-bottom:30px;
-		li{float:left; width:25%; text-align:center; background-size:cover; background-repeat:no-repeat; background-position:left center; box-sizing: border-box;
+		li{float:left; width:24.8%; text-align:center; background-size:cover; background-repeat:no-repeat; background-position:left center; box-sizing: border-box;
 			h3{
 				a{display:block;
 					img{width:100%;}
@@ -391,9 +391,13 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 	.attention{margin-top:12px; font-size:1.4em;
 		li{display:table; margin-top:4px;
-			&:before{content:"*"; display:table-cell; padding-right:7px; color:#f29322;}
+			//&:before{content:"*"; display:table-cell; padding-right:7px; color:#f29322;}
 			em{display:table-cell; padding-right:7px; white-space:nowrap; color:#f29322; font-weight:bold;}
 			.text{display:table-cell;}
+			p{display:table; margin:1px 0;
+				span{display:table-cell;}
+				.icon{padding-right:3px; color:#f29322;}
+			}
 		}
 	}
 }
@@ -481,7 +485,10 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 	ul.bus-time-list{margin:11px 0 31px;
 		li{display:table; font-size:1.4em;
-			&:before{content:"*"; display:table-cell; padding-right:7px; color:#f29322;}
+			p{display:table; margin:1px 0;
+				span{display:table-cell;}
+				.icon02{padding-right:3px; color:#f29322;}
+			}
 		}
 	}
 	.bus-use-list{margin:17px 0;
@@ -632,8 +639,12 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 .credit_card{
 	h4{margin:28px 0 13px;}
 	select{width:97%; height: 30px; font-size: 1.4em; background:url("/mobile/images/common/select_icon.png") right center no-repeat; background-size:8px 7px;}
-	.card_company{display:inline-block; width:33.5%; height:30px; border:1px solid #bdb5a0;}
-	.card_name{display:inline-block; float:right; width:63.8%; height:30px; border:1px solid #bdb5a0;}
+	.card_company{display:inline-block; width:33.5%; height:30px; border:1px solid #bdb5a0;
+		select{border:0;}
+	}
+	.card_name{display:inline-block; float:right; width:63.8%; height:30px; border:1px solid #bdb5a0;
+		select{border:0;}
+	}
 	table{margin-top:24px;
 		th{text-align:left; padding:5px 0 12px; vertical-align:top; border-top:1px solid #bdb5a0; font-size:1.4em;}
 		td{text-align:left; padding:5px 0 12px 4.5%; vertical-align:top; font-size:1.4em; line-height: 1.4em;}
@@ -689,7 +700,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 
 .folk-tab{overflow:hidden; position:relative; margin-top: 16px;
 	.tabMenu{overflow:hidden; position:relative; width:100%; margin-bottom:20px;
-		li{float:left; width:25%; margin-left:-1px; text-align:center; background-size:cover; background-repeat:no-repeat; background-position: left center; box-sizing: border-box;
+		li{float:left; width:24.8%; margin-left:-1px; text-align:center; background-size:cover; background-repeat:no-repeat; background-position: left center; box-sizing: border-box;
 			a{display:block;}
 		}
 		li:first-child{margin-left:0; background-position: right center;}
@@ -720,8 +731,8 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 	h4{margin:18px 0 10px;}
 	table{
-		th{}
-		td{text-align:left; padding:8px 0;}
+		th{font-size:1.2em;}
+		td{text-align:left; padding:8px 0; font-size:1.2em;}
 		tr:first-child{border-top:2px solid #f08200;}
 		tr{border-top:1px solid #dedacf;}
 		tr:last-child{border-bottom:1px solid #bdb5a0;}
@@ -858,10 +869,10 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 }
 
 //농악놀이
-.show-time_wrap{overflow:hidden; display:table; width:92%; margin-bottom:24px; padding:14px 4%; border-top:1px solid #bdb5a0; border-bottom:1px solid #bdb5a0;
+.show-time_wrap{overflow:hidden; display:table; width:92%; margin-bottom:24px; padding:10px 4% 8px; border-top:1px solid #bdb5a0; border-bottom:1px solid #bdb5a0;
 	.show-time{display:table-cell;
 		.text{display:block; margin-bottom:7px; font-size:1.2em;
-			&:before{display:block; content:""; float:left; width:14px; height:14px; margin-top:-1px; margin-right:8px; background:url("/mobile/images/common/sprite.png") no-repeat -118px -209px; background-size:300px 500px;}
+			&:before{display:block; content:""; float:left; width:14px; height:14px; margin-right:8px; background:url("/mobile/images/common/sprite.png") no-repeat -118px -209px; background-size:300px 500px;}
 			.time{display:inline-block; margin-right:12px; color:#666;}
 		}
 		.text02{display:block; font-size:1.2em;
@@ -871,7 +882,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 	.map-btn{display:table-cell; width:36px; height:36px; text-indent:-9999px; background:url("/mobile/images/common/sprite.png") no-repeat -29px -300px; background-size:300px 500px;}
 }
-.wedding_wrap{overflow:hidden; display:table; width:92%; margin-bottom:8px; padding:14px 4%; border-top:1px solid #bdb5a0; border-bottom:1px solid #bdb5a0;
+.wedding_wrap{overflow:hidden; display:table; width:92%; margin-bottom:8px; padding:10px 4% 8px; border-top:1px solid #bdb5a0; border-bottom:1px solid #bdb5a0;
 	.show-time{display:table-cell;
 		.text{display:block; margin-bottom:7px; font-size:1.2em;
 			&:before{display:block; content:""; float:left; width:14px; height:14px; margin-top:-1px; margin-right:8px; background:url("/mobile/images/common/sprite.png") no-repeat -118px -209px; background-size:300px 500px;}

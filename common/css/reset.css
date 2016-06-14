@@ -29,3 +29,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .hidden{width:1px; height:1px; position:absolute; clip:rect(1px,1px,1px,1px);}
 *:focus{outline:none;}
 
+input{
+    -webkit-border-radius:0;	/* 둥근모서리 */
+    -webkit-appearance:none;	/* 그림자 */
+}
