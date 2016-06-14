@@ -177,6 +177,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .header_title_slide .slick-slider.single-items .slick-next { right: -7%; margin-right: 3.5%; background-position: -250px -158px; }
 
 .contents { padding: 0 3.5%; }
+.contents img { width: 100%; }
 
 .detail-content { overflow: hidden; }
 
@@ -605,6 +606,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .wedding .content table td[rowspan] { vertical-align: top; }
 .wedding .content table:first-child { margin: 17px 0 0 0; }
 
+.detail-show .cont_body img { width: 100%; }
 .detail-show .cont_body .text { display: block; font-size: 1.4em; margin-bottom: 20px; }
 .detail-show .cont_body .img_box { overflow: hidden; }
 .detail-show .cont_body .img_box em { display: block; margin: 18px 0 10px; font-size: 1.6em; font-weight: bold; }

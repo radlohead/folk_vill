@@ -71,9 +71,9 @@
                 <div class="preview-slide-wrap">
                     <h4>공연 미리보기</h4>
                     <div class="preview-slide slider single-item">
-                        <div><img src="/mobile/images/event/preview_slide01.jpg" alt="농악놀이" /></div>
-                        <div><img src="/mobile/images/event/preview_slide01.jpg" alt="농악놀이" /></div>
-                        <div><img src="/mobile/images/event/preview_slide01.jpg" alt="농악놀이" /></div>
+                        <div><img src="/mobile/images/event/bboy_slide01.jpg" alt="" /></div>
+                        <div><img src="/mobile/images/event/bboy_slide01.jpg" alt="" /></div>
+                        <div><img src="/mobile/images/event/bboy_slide01.jpg" alt="" /></div>
                     </div>
                 </div>
             </div>

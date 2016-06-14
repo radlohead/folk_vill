@@ -42,6 +42,9 @@
             <div class="detail-content board-list">
                 <table>
                     <caption>한국 민속촌 민속촌NOW 게시판</caption>
+                    <colgroup>
+                        <col width="35">
+                    </colgroup>
                     <tbody>
                         <tr>
                             <td><span class="icon guide_icon"></span></td>

@@ -259,7 +259,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 }
 
 .contents{padding:0 3.5%;
-	//img{width:100%;}
+	img{width:100%;}
 }
 .detail-content{overflow:hidden;}
 
@@ -578,10 +578,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 .board_now-view{
 	article{border-top:2px solid #f08200; border-bottom:1px solid #bdb5a0;
 		h4{padding-top:14px;}
-		.date-wrap{display:block; padding:5px 0 14px; border-bottom:1px solid #dedacf; font-size:1.2em;
-			.title{}
-			.date{}
-		}
+		.date-wrap{display:block; padding:5px 0 14px; border-bottom:1px solid #dedacf; font-size:1.2em;}
 		.content{padding:24px 0;}
 	}
 	.btns{display:block; margin-top:14px;
@@ -907,6 +904,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 }
 .detail-show {
 	.cont_body {
+		img{width:100%;}
 		.text{display:block; font-size:1.4em; margin-bottom:20px;}
 		.img_box{overflow:hidden;
 			em{display:block; margin:18px 0 10px; font-size:1.6em; font-weight:bold;}
