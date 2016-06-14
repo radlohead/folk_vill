@@ -6,7 +6,6 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.html" -->
-    <!--#include virtual="/mobile/common/inc/script.html" -->
 </head>
 <body>
 <!-- 메뉴 -->
@@ -97,6 +96,7 @@
 <!--#include virtual="/mobile/common/inc/footer.html" -->
 
 </div>
+<!--#include virtual="/mobile/common/inc/script.html" -->
     <script>
         $(document).ready(function(){
             $('.single-items').slick({

@@ -151,10 +151,10 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .header_title_slide .title aside h2 { float: left; margin-top: 1px; font-size: 1.4em; }
 .header_title_slide .title aside h2 .icon { display: block; float: right; width: 16px; height: 16px; margin: 0 0 0 8px; background: url("/mobile/images/common/sprite.png") no-repeat -199px -208px; background-size: 300px 500px; }
 .header_title_slide .title aside h2 .icon.on { display: block; float: right; width: 16px; height: 16px; margin: 0 0 0 8px; background: url("/mobile/images/common/sprite.png") no-repeat -239px -208px; background-size: 300px 500px; }
-.header_title_slide .title aside .menu { display: none; position: absolute; top: 36px; right: 0; z-index: 50; width: 125px; padding: 9px 0 5px; text-indent: 15%; background: #e8aa00; }
-.header_title_slide .title aside .menu li { display: table; width: 100%; padding: 7px 0; font-size: 1.4em; border-top: 1px solid #98782e; }
+.header_title_slide .title aside .menu { display: none; position: absolute; top: 36px; right: 0; z-index: 50; width: 125px; padding: 7px 0 5px; text-indent: 15%; background: #e8aa00; }
+.header_title_slide .title aside .menu li { display: table; width: 100%; font-size: 1.4em; border-top: 1px solid #98782e; }
 .header_title_slide .title aside .menu li:first-child { border-top: 0; }
-.header_title_slide .title aside .menu li a { display: table-cell; vertical-align: middle; color: #fff; }
+.header_title_slide .title aside .menu li a { display: table-cell; vertical-align: middle; padding: 7px 0; color: #fff; }
 .header_title_slide .title aside .menu li a:focus { background: #766341; color: #e8aa00; }
 .header_title_slide .title aside .menu::before { content: ""; display: block; position: absolute; top: -7px; left: 43%; width: 13px; height: 9px; background: url("/mobile/images/common/sprite.png") no-repeat -92px -264px; background-size: 300px 500px; }
 .header_title_slide .title aside::after { content: ""; display: block; clear: both; }
@@ -433,9 +433,9 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .coupon-view .coupon-title .text { display: inline-block; padding-left: 12px; font-size: 1.4em; letter-spacing: -1px; }
 .coupon-view .coupon img { width: 100%; }
 .coupon-view .coupon_bottom_bg { display: block; width: 100%; height: 9px; background: url("/mobile/images/information/discount/coupon_top-bg.png") no-repeat; background-size: 100% 100%; }
-.coupon-view dl { overflow: hidden; padding: 5px 6.3%; border: 1px solid #bdb5a0; }
+.coupon-view dl { overflow: hidden; padding: 5px 6.3%; border: 1px solid #bdb5a0; font-size: 1.4em; }
 .coupon-view dl dt { float: left; clear: both; width: 35.5%; padding: 8px 0; border-top: 1px solid #dedacf; }
-.coupon-view dl dt:before { content: ""; display: block; float: left; width: 5px; height: 5px; margin: 3px 3% 0 0; background: url("/mobile/images/common/sprite.png") -262px -275px no-repeat; background-size: 300px 500px; }
+.coupon-view dl dt:before { content: ""; display: inline-block; vertical-align: middle; width: 5px; height: 5px; margin-right: 3%; background: url("/mobile/images/common/sprite.png") -262px -275px no-repeat; background-size: 300px 500px; }
 .coupon-view dl dd { float: left; width: 64.5%; padding: 8px 0; border-top: 1px solid #dedacf; }
 .coupon-view dl dt:first-child { border: 0; }
 .coupon-view dl dt:first-child + dd { border: 0; }
@@ -443,12 +443,12 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .coupon-view table tr:first-child th { border-top: 2px solid #f08200; border-bottom: 1px solid #dedacf; border-left: 5px solid #fff; }
 .coupon-view table tr:first-child th:first-child { border-left: 0; }
 .coupon-view table tr:last-child td { border-bottom: 1px solid #bdb5a0; }
-.coupon-view table th { padding: 8px 0; }
+.coupon-view table th { padding: 8px 0; font-size: 1.4em; }
 .coupon-view table td { padding: 8px 0; border-top: 1px solid #dedacf; border-left: 5px solid #fff; font-size: 1.4em; }
 .coupon-view table td:first-child { border-left: 0; }
 .coupon-view table td:last-child { color: #f08200; }
 .coupon-view .coupon_down_wrap { display: table; margin: 20px auto 28px; }
-.coupon-view .coupon_down_wrap .coupon_down { display: table-cell; width: 68.4%; height: 36px; vertical-align: middle; text-align: center; border: 1px solid #bdb5a0; font-size: 1.4em; }
+.coupon-view .coupon_down_wrap .coupon_down { display: table-cell; width: 68.4%; padding: 7px 0 7px; text-align: center; border: 1px solid #bdb5a0; font-size: 1.4em; line-height: 1.6em; }
 .coupon-view .coupon_down_wrap .coupon_down:after { content: ""; display: inline-block; float: right; width: 22px; height: 20px; margin-right: 10px; background: url("/mobile/images/common/sprite.png") 0px -304px no-repeat; background-size: 300px 500px; }
 .coupon-view li { margin-top: 4px; font-size: 1.4em; }
 .coupon-view li:before { content: "*"; display: table-cell; padding-right: 2px; color: #f29322; }

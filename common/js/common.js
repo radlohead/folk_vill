@@ -223,27 +223,30 @@ $(document).ready(function(){
 	today_slide();
 
 //놀이마을 전설의고향 bg높이값구하기
+	$(document).ready(function(){
+		var junseolH = new contentH();
+	});
+	$(window).resize(function(){
+		var junseolH = new contentH();
+	});
 	function contentH(){
 		var $junseol = null,
 			$junseol_bg = null,
 			$infor = null;
 
-		contentH.prototype.common = function(){
-			this.$junseol = $(".detail-junseol"),
+		this.common();
+	}
+	contentH.prototype.common = function(){
+		this.$junseol = $(".detail-junseol"),
 			this.$junseol_bg = $(".detail-junseol .bg"),
 			this.$infor = $(".detail-junseol .infor"),
 			this.$junseol_bgH = this.$junseol_bg.height();
-			this.$inforH = this.$infor.height();
-			this.$junseol.height(this.$junseol_bgH + this.$inforH);
-			this.$infor.css("visibility","visible");
-		};
-		$(document).ready(function(){
-			junseolH.common();
-		});
-		$(window).resize(function(){
-			junseolH.common();
-		});
-	}
-	var junseolH = new contentH();
+		this.$inforH = this.$infor.height();
+
+		var $junseolH = this.$junseol_bgH + this.$inforH;
+		//this.$junseol.height(this.$junseol_bgH + this.$inforH);
+		this.$junseol.css("height", $junseolH);
+		this.$infor.css("visibility","visible");
+	};
 
 });
