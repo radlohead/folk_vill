@@ -5,6 +5,9 @@
 	<title>한국 민속촌 모바일 사이트</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
 	<meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <script src="/mobile/common/js/jquery-1.9.1.min.js"></script>
+    <script src="/mobile/common/js/swiper.min.js"></script>
+    <script src="/mobile/common/js/common.js"></script>
 	<link rel="stylesheet" type="text/css" href="common/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css" />
 	<link rel="stylesheet" type="text/css" href="common/css/index.css" />
@@ -62,9 +65,10 @@
 				</li>
 			</ul>
 			<!-- #tab1 -->
-			<div class="tab-content swiper-container tabMenu1">
+			<div class="tab-content tabMenu1">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="/mobile/images/index/main-tab1_img01.jpg" alt="수원삼성블루윙즈 제휴할인 안내 2016년 2월13일 부터 4월30일까지" /></div>
+					<div class="swiper-slide"><img src="/mobile/images/index/main-tab1_img01.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="/mobile/images/index/main-tab1_img02.jpg" alt="" /></div>
 				</div>
 				<!-- Add Arrows -->
 				<div class="swiper-button-next"></div>
@@ -73,14 +77,23 @@
 			<!-- #tab2 -->
 			<div class="tab-content tabMenu2">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="/mobile/images/index/main-tab1_img01.jpg" alt="수원삼성블루윙즈 제휴할인 안내 2016년 2월13일 부터 4월30일까지" /></div>
+					<div class="swiper-slide"><img src="/mobile/images/index/main-tab2_img01.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="/mobile/images/index/main-tab2_img02.jpg" alt="" /></div>
 				</div>
 				<!-- Add Arrows -->
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
 			</div>
 		</div>
-
+<script>
+//할인프로모션 온라인쿠폰 배너 높이값
+	function mainTab(){
+        var tabMenuH = $(".tabMenu").height();
+        var tabMenu1H = $(".tabMenu1").height();
+        $(".main-tab").height(tabMenuH + tabMenu1H);
+	}
+	mainTab();
+</script>
 <!-- 한국민속촌 정기공연 -->
 		<div class="today">
 			<div class="main-top">
@@ -163,10 +176,6 @@
 <!-- 하단푸터 -->
 <!--#include virtual="/mobile/common/inc/footer.html" -->
 	</div>
-
-	<script src="/mobile/common/js/jquery-1.9.1.min.js"></script>
-	<script src="/mobile/common/js/swiper.min.js"></script>
-	<script src="/mobile/common/js/common.js"></script>
 	<script>
 		$(document).ready(function(){
 			var mySwiper_a = new Swiper('.main-slide', {
@@ -184,12 +193,12 @@
 				autoplay: 2500,
 				loop:true  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
 			});
-			var mySwiper_b2 = new Swiper('.tabMenu2', {
+			var mySwiper_e = new Swiper('.tabMenu2', {
 				paginationClickable: true,
 				nextButton: '.tabMenu2 .swiper-button-next',
 				prevButton: '.tabMenu2 .swiper-button-prev',
 				autoplay: 2500,
-				loop:false  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
+				loop:true  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
 			});
 			var mySwiper_c = new Swiper('.today-slide', {
 				paginationClickable: true,

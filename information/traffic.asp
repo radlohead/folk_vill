@@ -42,10 +42,12 @@
                 <div class="main-tab traffic">
                     <ul class="tabMenu">
                         <li class="menu1 on" rel="tabMenu1">
-                            <h3><a href="#tab1"><img src="/mobile/images/common/tabMenu_blank_bg.png" alt="대중교통" /></a></h3>
+                            <!--대중교통-->
+                            <h3><a href="#tab1"></a></h3>
                         </li>
                         <li class="menu2" rel="tabMenu2">
-                            <h3><a href="#tab2"><img src="/mobile/images/common/tabMenu_blank_bg.png" alt="자가용" /></a></h3>
+                            <!--자가용-->
+                            <h3><a href="#tab2"></a></h3>
                         </li>
                     </ul>
                     <!-- #tab1 대중교통-->

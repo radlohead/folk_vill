@@ -80,9 +80,8 @@ aside.gnb footer { padding-left: 0; padding-right: 0; }
 .main-tab .tabMenu .menu2.on { background-image: url("/mobile/images/index/main-tab-title02_on.gif"); }
 .main-tab .tab-content { clear: both; margin-bottom: 15px; }
 .main-tab .tab-content .swiper-slide { text-align: center; }
-.main-tab .tab-content .swiper-button-prev { margin-top: -21px; background-position: 0 -93px; }
-.main-tab .tab-content .swiper-button-next { margin-top: -21px; background-position: -37px -93px; }
-.main-tab .tabMenu2 { display: none; }
+.main-tab .tab-content .swiper-button-prev { margin-top: 0px; background-position: 0 -93px; }
+.main-tab .tab-content .swiper-button-next { margin-top: 0px; background-position: -37px -93px; }
 
 .main-top { overflow: hidden; position: relative; padding: 17px 4% 17px; background: #f7f7f7; border-top: 1px solid #bdb5a0; }
 .main-top h3 { float: left; font-size: 0; }
@@ -178,6 +177,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 
 .contents { padding: 0 3.5%; }
 .contents img { width: 100%; }
+.contents .credit_card img { max-width: 205px; height: 129px; }
 
 .detail-content { overflow: hidden; }
 
@@ -228,7 +228,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .main-tab.traffic { overflow: hidden; position: relative; }
 .main-tab.traffic .tabMenu { overflow: hidden; position: relative; width: 100%; margin-bottom: 30px; }
 .main-tab.traffic .tabMenu li { float: left; width: 50%; text-align: center; background-size: contain; background-repeat: no-repeat; background-position: left center; box-sizing: border-box; }
-.main-tab.traffic .tabMenu li a { display: block; }
+.main-tab.traffic .tabMenu li a { display: block; padding-bottom: 25.5%; }
 .main-tab.traffic .tabMenu li:first-child { margin-left: 0; background-position: right center; }
 .main-tab.traffic .tabMenu .menu1 { background-image: url("/mobile/images/information/traffic-tab-title01.gif"); }
 .main-tab.traffic .tabMenu .menu2 { background-image: url("/mobile/images/information/traffic-tab-title02.gif"); }
@@ -237,6 +237,19 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .main-tab.traffic .tab-content { clear: both; margin-bottom: 15px; }
 .main-tab.traffic .tabMenu2 { display: none; }
 .main-tab.traffic .tabMenu2 section p { font-size: 1.4em; }
+
+.main-tab.daily { overflow: hidden; position: relative; }
+.main-tab.daily .tabMenu { overflow: hidden; position: relative; width: 100%; margin-bottom: 30px; }
+.main-tab.daily .tabMenu li { float: left; width: 50%; text-align: center; background-size: contain; background-repeat: no-repeat; background-position: left center; box-sizing: border-box; }
+.main-tab.daily .tabMenu li a { display: block; padding-bottom: 25.5%; }
+.main-tab.daily .tabMenu li:first-child { margin-left: 0; background-position: right center; }
+.main-tab.daily .tabMenu .menu1 { background-image: url("/mobile/images/program/daily-tab-title01.gif"); }
+.main-tab.daily .tabMenu .menu2 { background-image: url("/mobile/images/information/daily-tab-title02.gif"); }
+.main-tab.daily .tabMenu .menu1.on { background-image: url("/mobile/images/information/daily-tab-title01_on.gif"); }
+.main-tab.daily .tabMenu .menu2.on { background-image: url("/mobile/images/information/daily-tab-title02_on.gif"); }
+.main-tab.daily .tab-content { clear: both; margin-bottom: 15px; }
+.main-tab.daily .tabMenu2 { display: none; }
+.main-tab.daily .tabMenu2 section p { font-size: 1.4em; }
 
 .main-tab.map { overflow: hidden; position: relative; }
 .main-tab.map .tabMenu { overflow: hidden; position: relative; width: 100%; margin-bottom: 30px; }
@@ -284,6 +297,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .contents h5 { font-size: 1.4em; }
 .contents table { width: 100%; }
 .contents table td { text-align: center; }
+.contents .board-list-title img { width: 247px; }
 
 .detail-member .mem-benefit h4 { margin-bottom: 15px; }
 .detail-member .mem-price h4 { margin: 27px 0 12px; }
@@ -412,11 +426,11 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 
 .promotion-list tr:first-child td { border-top: 2px solid #f08200; }
 .promotion-list tr:last-child td { border-bottom: 1px solid #bdb5a0; }
-.promotion-list td { padding: 15px 0; border-bottom: 1px solid #dedacf; }
+.promotion-list td { padding: 13px 0 15px; border-bottom: 1px solid #dedacf; }
 .promotion-list div { text-align: left; }
 .promotion-list div .text { font-size: 1.4em; }
 .promotion-list div h4 { font-size: 1.8em; }
-.promotion-list .icon { display: inline-block; background: url("/mobile/images/information/discount/sprite-discount.png") no-repeat; background-size: 250px 250px; }
+.promotion-list .icon { display: inline-block; margin-top: 3px; background: url("/mobile/images/information/discount/sprite-discount.png") no-repeat; background-size: 250px 250px; }
 .promotion-list .icon_discount_33 { width: 43px; height: 43px; background-position: -5px -5px; }
 .promotion-list .icon_discount_max33 { width: 43px; height: 43px; background-position: -52px -5px; }
 .promotion-list .icon_discount_max50 { width: 43px; height: 43px; background-position: -100px -5px; }

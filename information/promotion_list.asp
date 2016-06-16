@@ -48,60 +48,40 @@
                         <col style="width:17.3% ">
                     </colgroup>
                     <tr>
-                        <td><span class="icon icon_discount_33"></span></td>
-                        <td>
-                            <div>
-                                <span class="text">낭만을 잊은 그대를 위한</span>
-                                <h4>대학(원)생 특별할인</h4>
-                            </div>
+                        <td colspan="2">
+                            <div class="board-list-title"><img src="/mobile/images/information/discount/promotion_list_title_01.jpg" alt="" /></div>
                         </td>
                         <td>
                             <a href="#none" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
                     <tr>
-                        <td><span class="icon icon_discount_max33"></span></td>
-                        <td>
-                            <div>
-                                <span class="text">해피포인트 제휴 기념</span>
-                                <h4>해피포인트 APP 할인</h4>
-                            </div>
+                        <td colspan="2">
+                            <div class="board-list-title"><img src="/mobile/images/information/discount/promotion_list_title_02.jpg" alt="" /></div>
                         </td>
                         <td>
                             <a href="#none" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
                     <tr>
-                        <td><span class="icon icon_discount_max50"></span></td>
-                        <td>
-                            <div>
-                                <span class="text">한복 입는 문화 만들기</span>
-                                <h4>한복착용고객 할인</h4>
-                            </div>
+                        <td colspan="2">
+                            <div class="board-list-title"><img src="/mobile/images/information/discount/promotion_list_title_03.jpg" alt="" /></div>
                         </td>
                         <td>
                             <a href="#none" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
                     <tr>
-                        <td><span class="icon icon_discount_max50"></span></td>
-                        <td>
-                            <div>
-                                <span class="text">수원삼성 블루윙즈 제휴</span>
-                                <h4>블루윙즈 제휴할인</h4>
-                            </div>
+                        <td colspan="2">
+                            <div class="board-list-title"><img src="/mobile/images/information/discount/promotion_list_title_04.jpg" alt="" /></div>
                         </td>
                         <td>
                             <a href="#none" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
                     <tr>
-                        <td><span class="icon icon_discount_about26"></span></td>
-                        <td>
-                            <div>
-                                <span class="text">경기도 주요 관광지 제휴</span>
-                                <h4>공동 통합티켓 할인</h4>
-                            </div>
+                        <td colspan="2">
+                            <div class="board-list-title"><img src="/mobile/images/information/discount/promotion_list_title_05.jpg" alt="" /></div>
                         </td>
                         <td>
                             <a href="#none" class="icon icon_more">자세히보기</a>

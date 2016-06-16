@@ -48,12 +48,8 @@
                         <col style="width:17.3% ">
                     </colgroup>
                     <tr>
-                        <td><span class="icon icon_discount_max33"></span></td>
-                        <td>
-                            <div>
-                                <span class="text">홈페이지 신규회원을 위한</span>
-                                <h4>봄 시즌 자유이용권 할인</h4>
-                            </div>
+                        <td colspan="2">
+                            <div class="board-list-title"><img src="/mobile/images/information/discount/coupon_list_title_01.jpg" alt="" /></div>
                         </td>
                         <td>
                             <a href="#none" class="icon icon_more">자세히보기</a>

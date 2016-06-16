@@ -223,7 +223,7 @@ $(document).ready(function(){
 	today_slide();
 
 //놀이마을 전설의고향 bg높이값구하기
-	$(document).ready(function(){
+	$(window).load(function(){
 		var junseolH = new contentH();
 	});
 	$(window).resize(function(){
