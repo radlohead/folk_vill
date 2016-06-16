@@ -349,17 +349,17 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		}
 	}
 }
-.main-tab.daily{overflow:hidden; position:relative;
+.main-tab.daily-tab{overflow:hidden; position:relative;
 	.tabMenu{overflow:hidden; position:relative; width:100%; margin-bottom:30px;
 		li{float:left; width:50%; text-align:center; background-size:contain; background-repeat:no-repeat; background-position:left center; box-sizing: border-box;
 			a{display:block; padding-bottom:25.5%;}
 		}
 		li:first-child{margin-left:0; background-position: right center;}
 		li.on{}
-		.menu1{background-image:url("/mobile/images/program/daily-tab-title01.gif");}
-		.menu2{background-image:url("/mobile/images/information/daily-tab-title02.gif");}
-		.menu1.on{background-image:url("/mobile/images/information/daily-tab-title01_on.gif");}
-		.menu2.on{background-image:url("/mobile/images/information/daily-tab-title02_on.gif");}
+		.menu1{background-image:url("/mobile/images/groupprogram/daily-tab-title01.png");}
+		.menu2{background-image:url("/mobile/images/groupprogram/daily-tab-title02.png");}
+		.menu1.on{background-image:url("/mobile/images/groupprogram/daily-tab-title01_on.png");}
+		.menu2.on{background-image:url("/mobile/images/groupprogram/daily-tab-title02_on.png");}
 	}
 	.tab-content{clear:both; margin-bottom:15px;}
 	.tabMenu1{}
@@ -969,6 +969,26 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 					button{border:0; text-indent:-9999px;}
 				}
 				.slick-active{width:16px; background:#ff6200;}
+			}
+		}
+	}
+}
+
+.detail-content.daily{
+	p{display:table; margin:3px 0;
+		span{display:table-cell; font-size:1.4em;}
+		.icon{padding-right:3px; color:#f29322; font-size:1.2em;}
+	}
+	.program_course{border-top:2px solid #f08200; border-bottom:1px solid #bdb5a0;
+		section{display:table; padding:17px 0; border-top:1px solid #dedacf;
+			&:first-child{border-top:0;}
+			.pic{display:table-cell; width:37%; padding-right:3%; vertical-align: top;}
+			.text_box{display:table-cell; width:45.5%;
+				h4{font-size:1.9em;}
+				.text{font-size:1.4em;}
+			}
+			.more_btn{display:table-cell; width:14.5%; text-align:center; vertical-align:middle;
+				.more{display:inline-block; width:24px; height:24px; text-indent:-9999px; background:url("/mobile/images/information/discount/sprite-discount.png") no-repeat; background-size:250px 250px; background-position:-195px -14px;}
 			}
 		}
 	}
