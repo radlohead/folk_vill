@@ -207,7 +207,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 
 .detail-discount .detail-head { overflow: hidden; margin-bottom: 30px; }
 .detail-discount .detail-head h3 { margin-bottom: 12px; font-size: 2.25em; color: #333; font-weight: bold; }
-.detail-discount .detail-head .text { display: block; font-size: 1.4em; color: #000; letter-spacing: -0.05em; }
+.detail-discount .detail-head .text { display: block; font-size: 1.4em; color: #000; letter-spacing: -0.05em; line-height: 1.4em; }
 
 .detail-folk .detail-head { overflow: hidden; }
 .detail-folk .detail-head h3 { margin-bottom: 12px; font-size: 2.25em; color: #333; font-weight: bold; }
@@ -662,6 +662,21 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-content.daily .program_course section .text_box .text { font-size: 1.4em; }
 .detail-content.daily .program_course section .more_btn { display: table-cell; width: 14.5%; text-align: center; vertical-align: middle; }
 .detail-content.daily .program_course section .more_btn .more { display: inline-block; width: 24px; height: 24px; text-indent: -9999px; background: url("/mobile/images/information/discount/sprite-discount.png") no-repeat; background-size: 250px 250px; background-position: -195px -14px; }
+.detail-content.daily table.course { margin-bottom: 16px; }
+.detail-content.daily table.course th { padding: 9px 0; border-top: 2px solid #f08200; font-size: 1.4em; }
+.detail-content.daily table.course th:first-child { border-right: 5px solid #fff; }
+.detail-content.daily table.course th:nth-child(2) { border-right: 5px solid #fff; }
+.detail-content.daily table.course td { padding: 9px 0; border-bottom: 1px solid #dedacf; font-size: 1.4em; }
+.detail-content.daily table.course td:first-child { border-right: 5px solid #fff; }
+.detail-content.daily table.course td:nth-child(2) { border-right: 5px solid #fff; }
+.detail-content.daily table.course tr:first-child td { border-top: 1px solid #bdb5a0; }
+.detail-content.daily table.course tr:last-child td { border-bottom: 1px solid #bdb5a0; }
+.detail-content.daily table.course .left { text-align: left; }
+.detail-content.daily table.course .left p { display: table; margin-left: 10px; }
+.detail-content.daily table.course .left p span { display: table-cell; font-size: inherit; }
+.detail-content.daily table.course .left p .icon { padding-right: 3px; color: #f29322; }
+.detail-content.daily table.course .font12 { font-size: 0.875em; }
+.detail-content.daily table.course .font12 .color_orange { color: #f08200; }
 
 .popup_wrap { visibility: hidden; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; }
 .popup_wrap .pop { position: absolute; top: 0; left: 0; width: 92%; }

@@ -72,7 +72,7 @@
                             <span class="text">아름다운 조선시대 민속마을에서 학습과 재미를 함께 느낄 수 있는 프로그램</span>
                         </div>
                         <span class="more_btn">
-                            <a class="more" href="#none">일반코스 더보기</a>
+                            <a class="more" href="/mobile/groupprogram/general_course.asp">일반코스 더보기</a>
                         </span>
                     </section>
                     <section>
@@ -82,7 +82,7 @@
                             <span class="text">선조들의 지혜와 생활모습을 이해 하고, 문화예술을 학습할 수 있는 프로그램</span>
                         </div>
                         <span class="more_btn">
-                            <a class="more" href="#none">전통문화체험코스 더보기</a>
+                            <a class="more" href="/mobile/groupprogram/tradition_course.asp">전통문화체험코스 더보기</a>
                         </span>
                     </section>
                     <section>
@@ -92,7 +92,7 @@
                             <span class="text">아이들의 눈높이에 맞춰 다양하게 구성된 맞춤 체험프로그램 (매주 월요일)</span>
                         </div>
                         <span class="more_btn">
-                            <a class="more" href="#none">키즈데이패키지 더보기</a>
+                            <a class="more" href="/mobile/groupprogram/kids_day.asp">키즈데이패키지 더보기</a>
                         </span>
                     </section>
                     <section>
@@ -102,7 +102,7 @@
                             <span class="text">전통예절과 공예체험 등 선비문화를 체험할 수 있는 특별 프로그램</span>
                         </div>
                         <span class="more_btn">
-                            <a class="more" href="#none">선비문화체험코스 더보기</a>
+                            <a class="more" href="/mobile/groupprogram/seonbi_course.asp">선비문화체험코스 더보기</a>
                         </span>
                     </section>
                     <section>
@@ -112,7 +112,7 @@
                             <span class="text">안전하고 신뢰할 수 있는 청소년 수련활동 인증 프로그램</span>
                         </div>
                         <span class="more_btn">
-                            <a class="more" href="#none">인증프로그램 더보기</a>
+                            <a class="more" href="/mobile/groupprogram/cert_program.asp">인증프로그램 더보기</a>
                         </span>
                     </section>
                 </div>
