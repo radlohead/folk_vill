@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="detail-content board-list">
-                <table>
+                <table class="list">
                     <caption>한국 민속촌 공지사항 게시판</caption>
                     <colgroup>
                         <col width="35">
@@ -81,8 +81,28 @@
                                 </div>
                             </td>
                         </tr>
+
+                        <tr>
+                            <td><span class="icon discount_icon"></span></td>
+                            <td>
+                                <div>
+                                    <h4>해피포인트 제휴 할인 이벤트</h4>
+                                    <span class="date">2016.02.12</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="icon guide_icon"></span></td>
+                            <td>
+                                <div>
+                                    <h4>한국민속촌 내 이미지/영상 촬영안내</h4>
+                                    <span class="date">2014.10.31</span>
+                                </div>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
+                <a class="list_more_btn" href="#none">더보기</a>
             </div>
         </div>
     </div>

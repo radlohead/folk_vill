@@ -12,6 +12,17 @@
 	<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css" />
 	<link rel="stylesheet" type="text/css" href="common/css/index.css" />
 	<link rel="stylesheet" type="text/css" href="common/css/media.css" />
+	<script>
+    //할인프로모션 온라인쿠폰 배너 높이값
+    	function mainTab(){
+            var tabMenuH = $(".tabMenu").height();
+            var tabMenu1H = $(".tabMenu1").height();
+            $(".main-tab").height(tabMenuH + tabMenu1H);
+    	}
+    	$(window).load(function(){
+    	    mainTab();
+    	});
+    </script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -85,15 +96,6 @@
 				<div class="swiper-button-prev"></div>
 			</div>
 		</div>
-<script>
-//할인프로모션 온라인쿠폰 배너 높이값
-	function mainTab(){
-        var tabMenuH = $(".tabMenu").height();
-        var tabMenu1H = $(".tabMenu1").height();
-        $(".main-tab").height(tabMenuH + tabMenu1H);
-	}
-	mainTab();
-</script>
 <!-- 한국민속촌 정기공연 -->
 		<div class="today">
 			<div class="main-top">

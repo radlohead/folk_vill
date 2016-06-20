@@ -82,6 +82,7 @@ aside.gnb footer { padding-left: 0; padding-right: 0; }
 .main-tab .tab-content .swiper-slide { text-align: center; }
 .main-tab .tab-content .swiper-button-prev { margin-top: 0px; background-position: 0 -93px; }
 .main-tab .tab-content .swiper-button-next { margin-top: 0px; background-position: -37px -93px; }
+.main-tab .tabMenu2 { height: 0; margin: 0; }
 
 .main-top { overflow: hidden; position: relative; padding: 17px 4% 17px; background: #f7f7f7; border-top: 1px solid #bdb5a0; }
 .main-top h3 { float: left; font-size: 0; }
@@ -387,9 +388,16 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .board-list .icon { display: block; width: 25px; height: 15px; background: url("/mobile/images/common/sprite.png") no-repeat; background-size: 300px 500px; }
 .board-list .guide_icon { background-position: -154px 0; }
 .board-list .discount_icon { background-position: -189px 0; }
+.board-list .event_icon { background-position: -224px 0; }
+.board-list .perform_icon { background-position: -259px 0; }
+.board-list .notice_icon { background-position: -259px -20px; }
+.board-list .exper_icon { background-position: -259px -40px; }
+.board-list .etc_icon { background-position: -259px -60px; }
 .board-list div { text-align: left; }
 .board-list div h4 { font-size: 1.4em; margin-bottom: 5px; }
 .board-list div .date { color: #999; }
+.board-list .list tr { display: none; }
+.board-list .list_more_btn { display: block; height: 25px; text-align: center; margin-top: 10px; border: 1px solid #ddd; }
 
 .board-view article { border-top: 2px solid #f08200; border-bottom: 1px solid #bdb5a0; }
 .board-view article h4 { padding: 14px 0; }

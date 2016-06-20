@@ -249,4 +249,28 @@ $(document).ready(function(){
 		this.$infor.css("visibility","visible");
 	};
 
+	//공지사항 더보기 버튼 누르면 리스트 더 뽑아오기
+	$(document).ready(function(){
+		var board_list = new Board_list();
+
+		$(".list_more_btn").click(function(){
+			this.list = $(".board-list .list tr").index();
+			this.num = 0;
+			board_list.init(this.num*1+8);
+			console.log(this.list);
+		});
+	});
+
+	function Board_list(){
+		this.list = null;
+		this.init(4);
+	};
+	Board_list.prototype.init = function(num){
+		this.list = $(".board-list .list tr");
+		this.listNum = num;
+		for(var i = 0; i < this.listNum; i++){
+			this.list.eq(i).css("display","table-row");
+		}
+	};
+
 });

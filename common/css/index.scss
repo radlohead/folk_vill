@@ -122,7 +122,7 @@ aside.gnb{display:none; position:absolute; top:15px; right:0; width:93%; height:
 		.swiper-button-next{margin-top:0px; background-position: -37px -93px;}
 	}
 	.tabMenu1{}
-	.tabMenu2{}
+	.tabMenu2{height:0; margin:0;}
 }
 
 .main-top{overflow:hidden; position:relative; padding:17px 4% 17px; background:#f7f7f7; border-top:1px solid #bdb5a0;
@@ -583,10 +583,20 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.icon{display:block; width:25px; height:15px; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px;}
 	.guide_icon{background-position:-154px 0;}
 	.discount_icon{background-position:-189px 0;}
+	.event_icon{background-position:-224px 0;}
+	.perform_icon{background-position:-259px 0;}
+	.notice_icon{background-position:-259px -20px;}
+	.exper_icon{background-position:-259px -40px;}
+	.etc_icon{background-position:-259px -60px;}
+
 	div{text-align:left;
 		h4{font-size:1.4em; margin-bottom:5px;}
 		.date{color:#999;}
 	}
+	.list{
+		tr{display:none;}
+	}
+	.list_more_btn{display:block; height:25px; text-align:center; margin-top:10px; border:1px solid #ddd;}
 }
 
 //공지사항 view
