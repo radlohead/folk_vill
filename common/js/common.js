@@ -114,9 +114,29 @@ $(document).ready(function(){
 
 	//시간요금페이지 우대정보 toggle버튼
 	(function(){
-		var title = $(".pre-infor-tab .title");
+
+		$(title).click(function(){
+			content.toggle();
+			icon.toggleClass("on");
+		});
+		function Tab(){
+			var tab = new Tab();
+			this.title = null;
+			this.icon = null;
+			this.content = null;
+		}
+		Tab.prototype.init = function(){
+			this.title = $(".tab .title");
+			this.icon = $(".title .icon");
+			this.content = $(".tab .content");
+		}
+	})();
+
+	//tab toggle버튼
+	(function(){
+		var title = $(".tab .title");
 		var icon = $(".title .icon");
-		var content = $(".pre-infor-tab .content");
+		var content = $(".tab .content");
 		$(title).click(function(){
 			content.toggle();
 			icon.toggleClass("on");

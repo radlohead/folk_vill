@@ -316,6 +316,19 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 }
 
+.detail-login{
+	.detail-head{overflow: hidden; margin-bottom:30px;
+		h3{float:left; width:42%; font-size:2.25em; color:#333; font-weight:bold;}
+		.text-box{float:right; width:58%; color:#000; letter-spacing:-0.05em;
+			.text{display:block; font-size:1.4em;}
+			.guide-time{display:block; margin-top:11px; margin-left:23px; font-size:65%; color:#f08200;
+				.text{display:block;}
+				.time{color:#666;}
+			}
+		}
+	}
+}
+
 .content-head{position:relative; margin-bottom:25px;
 	img{width:100%;}
 	.pdf-down{display: block; position:absolute; right:0; bottom:0; width:14%; height:24%;}
@@ -392,6 +405,35 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.tab-content{clear:both; text-align:center; margin-bottom:15px;}
 	.tabMenu1{}
 	.tabMenu2, .tabMenu3, .tabMenu4{display:none;}
+}
+.idpw-tab{overflow:hidden; position:relative;
+	.tabMenu{overflow:hidden; position:relative; width:100%; margin-bottom:30px;
+		li{float:left; width:50%; text-align:center; background-size:contain; background-repeat:no-repeat; background-position:left center; box-sizing: border-box;
+			a{display:block; padding-bottom:25.5%;}
+		}
+		li:first-child{margin-left:0; background-position: right center;}
+		li.on{}
+		.menu1{background-image:url("/mobile/images/member/id-tab-01.png");}
+		.menu2{background-image:url("/mobile/images/member/pw-tab-02.png");}
+		.menu1.on{background-image:url("/mobile/images/member/id-tab-01_on.png");}
+		.menu2.on{background-image:url("/mobile/images/member/pw-tab-02_on.png");}
+	}
+	.tab-content{clear:both; margin-bottom:15px;}
+	.tabMenu1{}
+	.tabMenu2{display:none;
+		section{
+			p{font-size:1.4em;}
+		}
+	}
+	.text{text-align:center; font-size:1.2em;}
+	.text02{text-align:left; font-size:1.2em;}
+	select{background:url("/mobile/images/member/select_bg.png") no-repeat center right; background-size:13px 12px;}
+	.phone_box{
+		&:after{display:block; content:""; clear:both;}
+		select.phone_01{float:left; width:27%; font-size:1.6em;}
+		.phone_02{float:left; margin-left:3%; width:70%;}
+	}
+	label{display:block; margin:35px 0 20px; font-size:1.2em;}
 }
 
 //이용안내
@@ -1024,6 +1066,40 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			.color_orange{color:#f08200;}
 		}
 	}
+}
+
+.detail-login{
+	input[type="text"]{width:100%; padding-bottom:8px; border:0; border-bottom:1px solid #bdb5a0; font-size:1.6em;}
+	input.login_id{background:url("/mobile/images/member/id_bg.png") no-repeat center right; background-size:26px 16px;}
+	input.login_pw{margin-top:35px; background:url("/mobile/images/member/pw_bg.png") no-repeat center right; background-size:25px 19px;}
+	.check_box_wrap{margin-top:20px;
+		&:after{display:block; content:""; clear:both;}
+		input[type="checkbox"]{display:none;}
+		input[type="checkbox"] + label{display:block; float:left; width:18px; height:18px; background:url("/mobile/images/member/sprite-member.png") no-repeat -36px 0; background-size:250px 250px;}
+		input[type="checkbox"]:checked + label{display:block; width:18px; height:18px; background:url("/mobile/images/member/sprite-member.png") no-repeat -59px 0; background-size:250px 250px;}
+		.text{float:left; display:block; margin-left:7px; font-size:1.2em;}
+	}
+	input[type=submit]{text-align:center; border:0; background:#312d22; color:#fff;}
+	.btn{text-align:center; border:0; background:#312d22; color:#fff;}
+	.login_btn{width:100%; margin:45px 0 18px; padding:10px 0; font-size:1.8em;}
+	.search_box{text-align:center;
+		.id_search{font-size:1.4em;}
+		.pw_search{display:inline-block; margin-left:20px; font-size:1.4em;}
+	}
+	.email_box{position:relative;
+		&:after{display:block; content:""; clear:both;}
+		label{display:block;}
+		.email_01{display:inline-block; width:37%;}
+		.email_02{display:inline-block; width:60%; margin-left:2%;}
+		.email_03{display:inline-block; position:absolute; top:29px; right:0; width:28%; font-size:1.6em;}
+	}
+	.id_search_btn{display:block; width:100%; margin:45px 0 18px; padding:10px 0; font-size:1.8em;}
+	.id{width:100%; padding-bottom:8px; border:0; border-bottom:1px solid #bdb5a0; font-size:1.6em;}
+}
+
+.join_box{margin-top:40px; background:#f7f7f7; border-top:1px solid #bdb5a0;
+	.ex_text{font-size:1.4em; text-align:center; margin:25px 0;}
+	.join_btn{display:block; width:93%; margin:0 auto; padding:10px 0; text-align:center; box-sizing: border-box; border:1px solid #bdb5a0; background:#fff; font-size:1.8em; }
 }
 
 .popup_wrap{visibility:hidden; position:absolute; top:0; left:0; width:100%; height:100%; z-index:1000;
