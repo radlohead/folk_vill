@@ -721,7 +721,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .check_box_wrap:after { display: block; content: ""; clear: both; }
 .detail-login .check_box_wrap input[type="checkbox"] { display: none; }
 .detail-login .check_box_wrap input[type="checkbox"] + label { display: block; float: left; width: 18px; height: 18px; background: url("/mobile/images/member/sprite-member.png") no-repeat -36px 0; background-size: 250px 250px; }
-.detail-login .check_box_wrap input[type="checkbox"]:checked + label { display: block; width: 18px; height: 18px; background: url("/mobile/images/member/sprite-member.png") no-repeat -59px 0; background-size: 250px 250px; }
+.detail-login .check_box_wrap input[type="checkbox"]:checked + label { display: block; width: 18px; height: 18px; background: url("/mobile/images/member/sprite-member.png") no-repeat -58px 0; background-size: 250px 250px; }
 .detail-login .check_box_wrap .text { float: left; display: block; margin-left: 7px; font-size: 1.2em; }
 .detail-login input[type=submit] { text-align: center; border: 0; background: #312d22; color: #fff; }
 .detail-login .btn { text-align: center; border: 0; background: #312d22; color: #fff; }
@@ -742,7 +742,13 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .tab .title h4 { float: left; font-size: 1.5em; line-height: 110%; }
 .detail-login .tab .title .icon { display: block; float: right; width: 10px; height: 6px; margin-top: 8px; background: url("/mobile/images/common/sprite.png") no-repeat -203px -315px; background-size: 300px 500px; }
 .detail-login .tab .title .icon.on { display: block; float: right; width: 10px; height: 6px; margin-top: 8px; background: url("/mobile/images/common/sprite.png") no-repeat -218px -315px; background-size: 300px 500px; }
-.detail-login .tab .content { display: none; overflow-y: scroll; height: 137px; padding: 18px 0; border-bottom: 1px solid #eaeaea; }
+.detail-login .tab .content { display: none; overflow-y: scroll; height: 137px; padding: 15px 0; border-bottom: 1px solid #eaeaea; font-size: 1.2em; }
+.detail-login .tab .content h5 { padding-top: 10px; font-size: 1em; }
+.detail-login .tab .content h6 { padding: 10px 0; }
+.detail-login .agree_box .text { margin: 40px 0 20px; font-size: 1.2em; }
+.detail-login .agree_box .btn { display: block; width: 100%; padding: 10px 0; text-align: center; font-size: 1.8em; }
+.detail-login .agree_box .agree_btn { background: #312d22; }
+.detail-login .agree_box .no-agree_btn { margin-top: 10px; background: #fff; border: 1px solid #bdb5a0; color: #000; }
 
 .join_box { margin-top: 40px; background: #f7f7f7; border-top: 1px solid #bdb5a0; }
 .join_box .ex_text { font-size: 1.4em; text-align: center; margin: 25px 0; }
