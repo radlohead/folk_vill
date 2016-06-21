@@ -114,34 +114,43 @@ $(document).ready(function(){
 
 	//시간요금페이지 우대정보 toggle버튼
 	(function(){
-
+		var title = $(".pre-infor-tab .title");
+		var icon = $(".title .icon");
+		var content = $(".pre-infor-tab .content");
 		$(title).click(function(){
 			content.toggle();
 			icon.toggleClass("on");
 		});
-		function Tab(){
-			var tab = new Tab();
-			this.title = null;
-			this.icon = null;
-			this.content = null;
-		}
-		Tab.prototype.init = function(){
-			this.title = $(".tab .title");
-			this.icon = $(".title .icon");
-			this.content = $(".tab .content");
-		}
 	})();
 
 	//tab toggle버튼
-	(function(){
-		var title = $(".tab .title");
-		var icon = $(".title .icon");
-		var content = $(".tab .content");
-		$(title).click(function(){
-			content.toggle();
-			icon.toggleClass("on");
-		});
-	})();
+	$(document).ready(function(){
+		var tab = new Tab(".agree-tab");  //이용약관탭
+		var tab2 = new Tab(".agree-tab02"); //개인정보보호정책탭
+	});
+	function Tab(selector){
+		this.title = null;
+		this.icon = null;
+		this.content = null;
+		this.init(selector);
+		this.initEvent();
+	};
+	Tab.prototype.init = function(selector){
+		this.title = $(selector + " .title");
+		this.icon = $(selector + " .title .icon");
+		this.content = $(selector + " .content");
+	};
+	Tab.prototype.initEvent = function(){
+		var objThis = this;
+
+		this.title.on('click', function(){
+			objThis.selectItem($(this));
+		})
+	};
+	Tab.prototype.selectItem = function(){
+		this.icon.toggleClass("on");
+		this.content.toggle();
+	};
 
 	//dim popup height값 구하기
 	(function(){

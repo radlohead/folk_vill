@@ -59,39 +59,7 @@
                     </dl>
                 </article>
                 <h4>우대혜택</h4>
-                <table>
-                    <caption>우대혜택에 대한 안내</caption>
-                    <colgroup>
-                        <col style="width:29%;">
-                        <col style="width:30%;">
-                        <col style="width:30%;">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th rowspan="2">구분</th>
-                            <th colspan="2">자유이용권</th>
-                        </tr>
-                        <tr>
-                            <th>정상가</th>
-                            <th>할인가</th>
-                        </tr>
-                        <tr>
-                            <td>성인</td>
-                            <td>24,000원</td>
-                            <td>18,000원</td>
-                        </tr>
-                        <tr>
-                            <td>청소년</td>
-                            <td>19,000원</td>
-                            <td>16,000원</td>
-                        </tr>
-                        <tr>
-                            <td>아동</td>
-                            <td>17,000원</td>
-                            <td>14,000원</td>
-                        </tr>
-                    </thead>
-                </table>
+                <span class="benefit_img"><img src="/mobile/images/information/MCOU.jpg" alt=""/></span>
                 <span class="coupon_down_wrap">
                     <a href="#none" class="coupon_down">쿠폰 발급받기</a>
                 </span>

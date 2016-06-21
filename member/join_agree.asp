@@ -26,14 +26,15 @@
             <div class="detail-head">
                 <h3>회원가입</h3>
             </div>
-            <h4></h4>
+            <h4>약관동의</h4>
             <div class="tab agree-tab">
                 <div class="title">
-                    <h5>이용약관</h5>
+                    <h4>이용약관</h4>
                     <span class="icon on"></span>
                 </div>
                 <div class="content" style="display: block;">
-                    ddd
+                    <!-- 이용약관 -->
+                    <!--#include virtual="/mobile/member/inc/agreement.html" -->
                 </div>
             </div>
             <div class="check_box_wrap">
@@ -44,11 +45,12 @@
 
             <div class="tab agree-tab02">
                 <div class="title">
-                    <h5>개인정보보호정책</h5>
+                    <h4>개인정보보호정책</h4>
                     <span class="icon on"></span>
                 </div>
                 <div class="content" style="display: block;">
-                    dd
+                    <!-- 개인정보보호정책 -->
+                    <!--#include virtual="/mobile/member/inc/ind_infor.html" -->
                 </div>
             </div>
             <div class="check_box_wrap">
