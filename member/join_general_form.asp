@@ -33,40 +33,76 @@
             <form action="" method="post" class="join_form">
                 <label for="name" class="nameLa">이름</label>
                 <input type="text" id="name" class="name" name="name" placeholder="이름" />
-                <label for="phone">휴대폰 번호</label>
-                <div class="phone_box">
-                    <select name="phone_01" class="phone_01">
-                        <option value="선택">선택</option>
-                        <option value="010">010</option>
-                        <option value="011">011</option>
-                        <option value="016">016</option>
-                        <option value="017">017</option>
-                        <option value="019">019</option>
-                    </select>
-                    <input type="text" id="phone_02" class="phone_02" name="phone_02" placeholder="휴대폰 번호" />
-                </div>
-                <div class="email_box">
-                    <label for="email_01">이메일</label>
-                    <input type="text" id="email_01" class="email_01" name="email_01" placeholder="이메일 아이디" />
-                    <input type="text" id="email_02" class="email_02" name="email_02" placeholder="이메일 주소" />
-                    <select name="email_03" class="email_03">
-                        <option value="직접입력">직접입력</option>
-                        <option value="dreanwiz.com">dreanwiz.com</option>
-                        <option value="empal.com">empal.com</option>
-                        <option value="freechal.com">freechal.com</option>
-                        <option value="gmail.com">gmail.com</option>
-                        <option value="korea.com">korea.com</option>
-                        <option value="hanmail.net">hanmail.net</option>
-                        <option value="hotmail.com">hotmail.com</option>
-                        <option value="nate.com">nate.com</option>
-                        <option value="naver.com">naver.com</option>
-                        <option value="paran.com">paran.com</option>
-                        <option value="unitel.co.kr">unitel.co.kr</option>
-                        <option value="yahoo.co.kr">yahoo.co.kr</option>
-                    </select>
-                </div>
+                <label for="name" class="nameLa">성별</label>
+                <input type="text" id="name" class="name" name="name" placeholder="남" />
 
-                <a href="#none" class="btn id_search_btn">아이디 찾기</a>
+                <label for="birth_date_01">생년월일</label>
+                <div class="select_box birth_date_box">
+                    <div class="select">
+                        <select name="birth_date_01" class="birth_date_01">
+                            <option value="선택">선택</option>
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="019">019</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="birth_date_02" class="birth_date_02">
+                            <option value="선택">선택</option>
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="019">019</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="birth_date_03" class="birth_date_03">
+                            <option value="선택">선택</option>
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="019">019</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="#none" class="btn id_search_btn">아이디 중복확인</a>
+
+                <!--<label for="phone">휴대폰 번호</label>-->
+                <!--<div class="select_box phone_box">-->
+                    <!--<select name="phone_01" class="phone_01">-->
+                        <!--<option value="선택">선택</option>-->
+                        <!--<option value="010">010</option>-->
+                        <!--<option value="011">011</option>-->
+                        <!--<option value="016">016</option>-->
+                        <!--<option value="017">017</option>-->
+                        <!--<option value="019">019</option>-->
+                    <!--</select>-->
+                    <!--<input type="text" id="phone_02" class="phone_02" name="phone_02" placeholder="휴대폰 번호" />-->
+                <!--</div>-->
+                <!--<div class="select_box email_box">-->
+                    <!--<label for="email_01">이메일</label>-->
+                    <!--<input type="text" id="email_01" class="email_01" name="email_01" placeholder="이메일 아이디" />-->
+                    <!--<input type="text" id="email_02" class="email_02" name="email_02" placeholder="이메일 주소" />-->
+                    <!--<select name="email_03" class="email_03">-->
+                        <!--<option value="직접입력">직접입력</option>-->
+                        <!--<option value="dreanwiz.com">dreanwiz.com</option>-->
+                        <!--<option value="empal.com">empal.com</option>-->
+                        <!--<option value="freechal.com">freechal.com</option>-->
+                        <!--<option value="gmail.com">gmail.com</option>-->
+                        <!--<option value="korea.com">korea.com</option>-->
+                        <!--<option value="hanmail.net">hanmail.net</option>-->
+                        <!--<option value="hotmail.com">hotmail.com</option>-->
+                        <!--<option value="nate.com">nate.com</option>-->
+                        <!--<option value="naver.com">naver.com</option>-->
+                        <!--<option value="paran.com">paran.com</option>-->
+                        <!--<option value="unitel.co.kr">unitel.co.kr</option>-->
+                        <!--<option value="yahoo.co.kr">yahoo.co.kr</option>-->
+                    <!--</select>-->
+                <!--</div>-->
             </form>
         </div>
     </div>

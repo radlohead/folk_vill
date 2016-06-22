@@ -783,9 +783,14 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .join_form label { display: block; margin: 35px 0 20px; font-size: 1.2em; }
 .detail-login .join_form label:after { content: "*"; padding-left: 7px; color: #f29322; }
 .detail-login .join_form select { background: url("/mobile/images/member/select_bg.png") no-repeat center right; background-size: 13px 12px; }
-.detail-login .join_form .phone_box:after { display: block; content: ""; clear: both; }
-.detail-login .join_form .phone_box select.phone_01 { float: left; width: 27%; font-size: 1.6em; }
-.detail-login .join_form .phone_box .phone_02 { float: left; margin-left: 3%; width: 70%; }
+.detail-login .join_form .select_box:after { display: block; content: ""; clear: both; }
+.detail-login .join_form .select_box select { float: left; margin-left: 3%; font-size: 1.6em; }
+.detail-login .join_form .select_box select:first-child { margin-left: 0; }
+.detail-login .join_form .phone_box select.phone_01 { width: 27%; }
+.detail-login .join_form .phone_box .phone_02 { float: left; width: 70%; }
+.detail-login .join_form .select { float: left; width: 31.3%; margin-left: 3%; border-bottom: 1px solid #bdb5a0; }
+.detail-login .join_form .select:first-child { margin-left: 0; }
+.detail-login .join_form .select select { width: 100%; }
 
 .join_box { margin-top: 40px; background: #f7f7f7; border-top: 1px solid #bdb5a0; }
 .join_box .ex_text { font-size: 1.4em; text-align: center; margin: 25px 0; }
