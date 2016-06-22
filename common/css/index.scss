@@ -1089,6 +1089,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.email_box{position:relative;
 		&:after{display:block; content:""; clear:both;}
 		label{display:block;}
+		.text_at{display:inline-block; margin-left:-15px; font-size: 1.2em;}
 		.email_01{display:inline-block; width:37%;}
 		.email_02{display:inline-block; width:60%; margin-left:2%;}
 		.email_03{display:inline-block; position:absolute; top:29px; right:0; width:28%; font-size:1.6em;}
@@ -1177,11 +1178,36 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		}
 		.phone_box{
 			select.phone_01{width:27%;}
-			.phone_02{float:left; width:70%;}
+			.phone_02{float:right; width:70%;}
 		}
 		.select{float:left; width:31.3%; margin-left:3%; border-bottom:1px solid #bdb5a0;
 			&:first-child{margin-left:0;}
 			select{width:100%;}
+		}
+		.check_box_wrap{margin-top:20px;
+			label{margin:0;
+				&:after{display:block; content:""; clear:both;}
+			}
+			.mr25{margin-right:25px;}
+		}
+		.id_chk_btn{display:block; width:100%; margin:15px 0 18px; padding:10px 0; font-size:1.8em;}
+		.address_wrap{
+			.add_01_box{display:block; position:relative; width:100%;
+				&:after{display:block; content:""; clear:both;}
+				input[type="submit"]{float:right; width:40%; padding:10px 17px; border:1px solid #bdb5a0; background:#fff; font-size:1.6em; color:#000;}
+				.add_01{position:absolute; bottom:0;float:left; width:54.5%; margin:0;}
+			}
+			input[type="text"]{margin-top:12px;}
+		}
+		.tel_box{
+			select.tel_01{width:27%;}
+			.tel_02{float:right; width:70%;}
+		}
+		.caution{margin:23px 0;
+			li{display:table;
+				span{display:table-cell; font-size:1.4em;}
+				.icon{padding-right:3px; color:#f29322;}
+			}
 		}
 	}
 }
@@ -1197,6 +1223,43 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 	.popup_close-btn{display:block; position:absolute; right:0; width:35px; height:35px; background:url("/mobile/images/common/popup_close.gif") no-repeat; background-size:cover; text-indent:-9999px;}
 	.dim-bg{position:fixed; width:100%; height:100%; background:rgba(0,0,0,0.5);}
+	.content{padding:25px 5.5%; border-top:2px solid #f08200; border-bottom:2px solid #f08200; background:#fff;
+		h2{font-size:2em;}
+		.explan_text{margin:35px 0 30px; font-size:1.4em;}
+		input[type="text"]{width:100%; padding-bottom:8px; border:0; border-bottom:1px solid #bdb5a0; font-size:1.6em;}
+		input[type=submit]{text-align:center; border:0; background:#312d22; color:#fff;}
+		.search_btn{width:100%; margin:20px 0 18px; padding:10px 0; font-size:1.8em;}
+		label{display:block; margin:35px 0 20px; font-size:1.4em;}
+		.check_box_wrap{margin-top:20px;
+			&:after{display:block; content:""; clear:both;}
+			input[type="checkbox"]{display:none;}
+			input[type="checkbox"] + label{display:block; float:left; width:18px; height:18px; background:url("/mobile/images/member/sprite-member.png") no-repeat -36px 0; background-size:250px 250px;}
+			input[type="checkbox"]:checked + label{display:block; width:18px; height:18px; background:url("/mobile/images/member/sprite-member.png") no-repeat -58px 0; background-size:250px 250px;}
+			.text{float:left; display:block; margin-left:7px; font-size:1.4em;}
+			label{margin:0;
+				&:after{display:block; content:""; clear:both;}
+			}
+			.mr25{margin-right:25px;}
+		}
+		.explan{display:table;
+			span{display:table-cell; font-size:1.4em;}
+			.title{}
+			.text{}
+		}
+		.mt10{margin-top:10px;}
+		.mt15{margin-top:15px;}
+		.add_search_result{border-bottom:1px solid #312d22;
+			.explan_text{text-align:center;}
+			em{display:block; text-align:center; width:100%; padding:10px 0; border-top:1px solid #f08200; border-bottom:1px solid #989690; font-size:1.6em;}
+			.add_list{overflow-y:auto; height:115px; padding:15px 0;
+				li{margin-top:10px; font-size:1.4em;
+					&:first-child{margin:0;}
+				}
+			}
+			.search_fail_text{display:block; text-align:center; margin:20px 0; font-size:1.4em; color:#f08200;}
+		}
+		.popup_close-btn{margin-top:25px;}
+	}
 }
 
 //slick 현재페이지 표시
