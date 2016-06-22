@@ -66,15 +66,6 @@
 
 </div>
 <!--#include virtual="/mobile/common/inc/script.html" -->
-    <script>
-        $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 4,
-                initialSlide: 2
-            });
-        });
-    </script>
 
 </body>
 </html>

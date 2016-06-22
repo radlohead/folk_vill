@@ -749,6 +749,43 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .agree_box .btn { display: block; width: 100%; padding: 10px 0; text-align: center; font-size: 1.8em; }
 .detail-login .agree_box .agree_btn { background: #312d22; }
 .detail-login .agree_box .no-agree_btn { margin-top: 10px; background: #fff; border: 1px solid #bdb5a0; color: #000; }
+.detail-login h4 { margin-bottom: 15px; font-size: 1.75em; }
+.detail-login p { font-size: 1.4em; }
+.detail-login .cert_box { margin-top: 30px; }
+.detail-login .cert_box:after { display: block; content: ""; clear: both; }
+.detail-login .cert_box .cert_btn { display: block; float: left; text-align: center; width: 50%; border: 1px solid #d5d5d5; box-sizing: border-box; }
+.detail-login .cert_box .cert_btn .icon { display: block; margin: 0 auto 14px; background: url("/mobile/images/member/sprite-member.png") no-repeat; background-size: 250px 250px; }
+.detail-login .cert_box .cert_btn .text { font-size: 1.4em; }
+.detail-login .cert_box .phone_cert_btn { padding: 43px 0 46px; }
+.detail-login .cert_box .phone_cert_btn .phone_icon { width: 17px; height: 23px; background-position: -82px 0; }
+.detail-login .cert_box .email_cert_btn { margin-left: -1px; padding: 47px 0; }
+.detail-login .cert_box .email_cert_btn .email_icon { width: 21px; height: 18px; background-position: -104px 0; }
+.detail-login .phone_cert_box { text-align: center; margin: 28px 0; padding: 28px 0; border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
+.detail-login .phone_cert_box em { display: block; margin-bottom: 10px; font-size: 1.6em; }
+.detail-login .phone_cert_box .text { font-size: 1.2em; }
+.detail-login .cert_btn_box:after { display: block; content: ""; clear: both; }
+.detail-login .cert_btn_box .btn { display: block; float: left; text-align: center; width: 48.5%; padding: 13px 0; box-sizing: border-box; font-size: 1.8em; }
+.detail-login .cert_btn_box .ok_btn { border: 1px solid #312d22; background: #312d22; }
+.detail-login .cert_btn_box .cancel_btn { margin-left: 3%; border: 1px solid #bdb5a0; background: #fff; color: #000; }
+.detail-login .detail-head.join { margin-bottom: 15px; }
+.detail-login .detail-head.join h3 { font-size: 2.4em; }
+.detail-login .join_select_box { margin: 30px 0; }
+.detail-login .join_select_box li { margin-top: 15px; }
+.detail-login .join_select_box li:first-child { margin: 0; }
+.detail-login .join_select_box li a { display: table; width: 100%; height: 70px; padding: 0 20px; border: 1px solid #bdb5a0; box-sizing: border-box; }
+.detail-login .join_select_box li a .text { display: table-cell; vertical-align: middle; font-size: 1.8em; }
+.detail-login .join_select_box li a .text .sm-text { display: block; font-size: 12px; }
+.detail-login .join_select_box li a .icon { display: table-cell; vertical-align: middle; width: 7px; height: 12px; }
+.detail-login .head-title:after { display: block; content: ""; clear: both; }
+.detail-login .head-title h4 { float: left; }
+.detail-login .head-title .text { display: block; float: right; font-size: 1.2em; }
+.detail-login .head-title .text:before { content: "*"; display: block; float: left; padding-right: 7px; color: #f29322; }
+.detail-login .join_form label { display: block; margin: 35px 0 20px; font-size: 1.2em; }
+.detail-login .join_form label:after { content: "*"; padding-left: 7px; color: #f29322; }
+.detail-login .join_form select { background: url("/mobile/images/member/select_bg.png") no-repeat center right; background-size: 13px 12px; }
+.detail-login .join_form .phone_box:after { display: block; content: ""; clear: both; }
+.detail-login .join_form .phone_box select.phone_01 { float: left; width: 27%; font-size: 1.6em; }
+.detail-login .join_form .phone_box .phone_02 { float: left; margin-left: 3%; width: 70%; }
 
 .join_box { margin-top: 40px; background: #f7f7f7; border-top: 1px solid #bdb5a0; }
 .join_box .ex_text { font-size: 1.4em; text-align: center; margin: 25px 0; }
