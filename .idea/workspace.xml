@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mypage/coupon_list.asp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mypage/inc/mypage_topmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mypage/member_info_auth.asp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mypage/member_leave.asp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mypage/member_pwd_edit.asp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mypage/qna_list.asp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mypage/voice_list.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/common/sprite.png" afterPath="$PROJECT_DIR$/images/common/sprite.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_finish.asp" afterPath="$PROJECT_DIR$/member/join_finish.asp" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,9 +48,22 @@
       <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6809882">
-              <caret line="1220" column="29" selection-start-line="1220" selection-start-column="29" selection-end-line="1220" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.877551">
+              <caret line="1329" column="1" selection-start-line="1329" selection-start-column="1" selection-end-line="1329" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qna_list.asp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mypage/qna_list.asp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.321428">
+              <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+              <folding>
+                <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#col#1;n#colgroup#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,13 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/event/performance_bboy.asp" />
-        <option value="$PROJECT_DIR$/event/performance_horse.asp" />
-        <option value="$PROJECT_DIR$/event/performance_wedding.asp" />
-        <option value="$PROJECT_DIR$/event/event_now.asp" />
-        <option value="$PROJECT_DIR$/playvillage/junseol_gohyang.asp" />
-        <option value="$PROJECT_DIR$/common/css/reset.css" />
-        <option value="$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m02_롤링배너_ver2_여러개_롤링배너_만들기/step00_풀이전코드.html" />
         <option value="$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m02_롤링배너_ver2_여러개_롤링배너_만들기/test_image_onLoad.html" />
         <option value="$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m02_롤링배너_ver2_여러개_롤링배너_만들기/test_onLoad.html" />
         <option value="$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m02_롤링배너_ver2_여러개_롤링배너_만들기/test_DOMContentLoaded.html" />
@@ -113,6 +126,13 @@
         <option value="$PROJECT_DIR$/member/inc/id_duplicate_chk.asp" />
         <option value="$PROJECT_DIR$/member/join_child_form.asp" />
         <option value="$PROJECT_DIR$/member/join_finish.asp" />
+        <option value="$PROJECT_DIR$/mypage/inc/mypage_topmenu.html" />
+        <option value="$PROJECT_DIR$/mypage/voice_list.asp" />
+        <option value="$PROJECT_DIR$/mypage/coupon_list.asp" />
+        <option value="$PROJECT_DIR$/mypage/member_info_auth.asp" />
+        <option value="$PROJECT_DIR$/mypage/member_pwd_edit.asp" />
+        <option value="$PROJECT_DIR$/mypage/member_leave.asp" />
+        <option value="$PROJECT_DIR$/mypage/qna_list.asp" />
         <option value="$PROJECT_DIR$/common/css/index.scss" />
       </list>
     </option>
@@ -183,6 +203,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mypage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -387,55 +421,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m02_롤링배너_ver2_여러개_롤링배너_만들기/test_image_onLoad.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37139916">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m02_롤링배너_ver2_여러개_롤링배너_만들기/step03_02_단계02의문제점해결하기_이미지의onload이용.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.857143">
-          <caret line="108" column="64" selection-start-line="108" selection-start-column="64" selection-end-line="108" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m03_롤링배너_ver3_상속활용/step02_요소초기화_메서드_기능확장.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="73.28571">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m03_롤링배너_ver3_상속활용/step01_자식롤링배너_클래스만들기.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5967578">
-          <caret line="112" column="41" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m03_롤링배너_ver3_상속활용/step00_풀이전코드.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59574467">
-          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="161" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m03_롤링배너_ver3_상속활용/step03_정지_재시작_기능추가.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.29078">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m04_롤링배너_ver4_다형성및_합성활용/test_effect.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="162" column="40" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/test/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5379939">
@@ -468,13 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.428572">
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="59" selection-end-column="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/information/coupon_list.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.321428">
-          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -524,20 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/information/inc/infor_topmenu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019250253">
-          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/information/guide.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.464285">
-          <caret line="220" column="22" selection-start-line="220" selection-start-column="22" selection-end-line="220" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -735,18 +699,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/information/guide.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046605878">
+          <caret line="198" column="54" selection-start-line="198" selection-start-column="54" selection-end-line="198" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/information/inc/infor_topmenu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13475177">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mypage/voice_list.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mypage/coupon_list.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mypage/member_info_auth.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mypage/member_pwd_edit.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mypage/member_leave.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mypage/inc/mypage_topmenu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13475177">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/information/coupon_list.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12360689">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/member/join_finish.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38500506">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.14285715">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mypage/qna_list.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.321428">
+          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#col#0;n#colgroup#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#col#1;n#colgroup#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6809882">
-          <caret line="1220" column="29" selection-start-line="1220" selection-start-column="29" selection-end-line="1220" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.877551">
+          <caret line="1329" column="1" selection-start-line="1329" selection-start-column="1" selection-end-line="1329" selection-end-column="1" />
           <folding />
         </state>
       </provider>

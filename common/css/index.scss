@@ -1286,6 +1286,42 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 }
 
+.detail-mypage{
+	.detail-head{overflow: hidden; margin-bottom:30px;
+		h3{margin-bottom:12px; font-size:2.25em; color:#333; font-weight:bold;}
+		.text{display:block; font-size:1.4em; color:#000; letter-spacing:-0.05em; line-height:1.4em;}
+	}
+	.content{
+		.icon{display:inline-block; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px;}
+		table{
+			tr:first-child td{border-top:2px solid #f08200;}
+			tr:last-child td{border-bottom:1px solid #bdb5a0;}
+			td{padding:13px 0 15px; border-bottom:1px solid #dedacf;}
+			.board-list-title{text-align:left;
+				h4{font-size:1.8em;}
+				.text_icon_box{display:table; margin-top:5px;
+					.text_date{display:table-cell; padding-right:18px; font-size:1.2em;
+						&:before{content:"문의일"; padding-right:7px;}
+					}
+					.icon{display:table-cell; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px;}
+					.prepare{width:55px; height:15px; background-position:0 -346px;}
+					.complete{width:55px; height:15px; background-position:0 -366px;}
+				}
+			}
+			.icon{display:inline-block; margin-top:3px; background:url("/mobile/images/information/discount/sprite-discount.png") no-repeat; background-size:250px 250px;}
+			.icon_more{width:24px; height:24px; background-position:-195px -14px; text-indent:-9999px;}
+		}
+		.more_btn{display:block; width:100%; margin-top:-1px; padding:12px 0; border-top:1px solid #bdb5a0; border-bottom:1px solid #bdb5a0; background:#f7f7f7; font-size:1.6em;
+			.text_icon_box{display:table; margin:0 auto;
+				.text{display:table-cell; vertical-align:middle;}
+				.icon_img{display:table-cell; vertical-align:middle; width:18px; height:18px; padding-left:12px;}
+			}
+		}
+		.btn{text-align:center; border:0; background:#312d22; color:#fff;}
+		.inquiry_btn{display:block; width:100%; margin:40px 0 18px; padding:10px 0; font-size:1.8em;}
+	}
+}
+
 //slick 현재페이지 표시
 .single-items .slick-track{left:0 !important; padding:1px 0;}
 .single-items .slick-track a:first-child{border-left:0;}
