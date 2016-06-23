@@ -810,6 +810,14 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .join_form .caution li:first-child { margin: 0; }
 .detail-login .join_form .caution li span { display: table-cell; font-size: 1.2em; }
 .detail-login .join_form .caution li .icon { padding-right: 3px; color: #f29322; }
+.detail-login dl.join_finish_info { margin: 30px 0; padding: 25px 0; border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
+.detail-login dl.join_finish_info:after { display: block; content: ""; clear: both; }
+.detail-login dl.join_finish_info dt, .detail-login dl.join_finish_info dd { float: left; margin-top: 5px; font-size: 1.8em; }
+.detail-login dl.join_finish_info dt:first-child { margin-top: 0; }
+.detail-login dl.join_finish_info dt:first-child + dd { margin-top: 0; }
+.detail-login dl.join_finish_info dt { clear: both; }
+.detail-login dl.join_finish_info dd { padding-left: 7px; }
+.detail-login .ok_btn { display: block; width: 100%; margin: 15px 0 18px; padding: 10px 0; font-size: 1.8em; }
 
 .join_box { margin-top: 40px; background: #f7f7f7; border-top: 1px solid #bdb5a0; }
 .join_box .ex_text { font-size: 1.4em; text-align: center; margin: 25px 0; }

@@ -1212,6 +1212,15 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			}
 		}
 	}
+	dl.join_finish_info{margin:30px 0; padding:25px 0; border-top:1px solid #f08200; border-bottom:1px solid #bdb5a0;
+		&:after{display:block; content:""; clear:both;}
+		dt,dd{float:left; margin-top:5px; font-size:1.8em;}
+		dt:first-child{margin-top:0;}
+		dt:first-child + dd{margin-top:0;}
+		dt{clear:both;}
+		dd{padding-left:7px;}
+	}
+	.ok_btn{display:block; width:100%; margin:15px 0 18px; padding:10px 0; font-size:1.8em;}
 }
 
 .join_box{margin-top:40px; background:#f7f7f7; border-top:1px solid #bdb5a0;

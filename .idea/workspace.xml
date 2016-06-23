@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member/inc/id_duplicate_chk.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/member/join_child_form.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/common.js" afterPath="$PROJECT_DIR$/common/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/inc/post_search.asp" afterPath="$PROJECT_DIR$/member/inc/post_search.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_general_form.asp" afterPath="$PROJECT_DIR$/member/join_general_form.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_finish.asp" afterPath="$PROJECT_DIR$/member/join_finish.asp" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,21 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.3809524">
-              <caret line="1208" column="19" selection-start-line="1208" selection-start-column="19" selection-end-line="1208" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="join_child_form.asp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/member/join_child_form.asp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76899695">
-              <caret line="294" column="13" selection-start-line="294" selection-start-column="13" selection-end-line="294" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.6809882">
+              <caret line="1220" column="29" selection-start-line="1220" selection-start-column="29" selection-end-line="1220" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -109,7 +95,6 @@
         <option value="$PROJECT_DIR$/index.asp" />
         <option value="$PROJECT_DIR$/information/guide.asp" />
         <option value="$PROJECT_DIR$/information/notice_list.asp" />
-        <option value="$PROJECT_DIR$/member/join_finish.asp" />
         <option value="$PROJECT_DIR$/common/inc/gnb.html" />
         <option value="$PROJECT_DIR$/information/coupon_view.asp" />
         <option value="$PROJECT_DIR$/member/inc/agreement.html" />
@@ -127,6 +112,7 @@
         <option value="$PROJECT_DIR$/member/join_general_form.asp" />
         <option value="$PROJECT_DIR$/member/inc/id_duplicate_chk.asp" />
         <option value="$PROJECT_DIR$/member/join_child_form.asp" />
+        <option value="$PROJECT_DIR$/member/join_finish.asp" />
         <option value="$PROJECT_DIR$/common/css/index.scss" />
       </list>
     </option>
@@ -181,6 +167,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,7 +257,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -365,7 +351,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17110874" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16791044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16950959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -401,13 +387,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m02_롤링배너_ver2_여러개_롤링배너_만들기/test_DOMContentLoaded.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17592593">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m02_롤링배너_ver2_여러개_롤링배너_만들기/test_image_onLoad.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37139916">
@@ -597,13 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/member/join_finish.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/inc/gnb.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6160081">
@@ -675,13 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/member/join.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0010131713">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/member/join_agree.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8551165">
@@ -722,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.428571">
           <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -730,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13475177">
           <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5775076">
           <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -746,22 +708,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3566363">
           <caret line="170" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="307" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/유지보수/이브클라인/2016_07_home/2016_07_home.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.79027355">
+          <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/css/index.scss">
+    <entry file="file://$PROJECT_DIR$/member/join.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3809524">
-          <caret line="1208" column="19" selection-start-line="1208" selection-start-column="19" selection-end-line="1208" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.1621074">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/member/join_child_form.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76899695">
-          <caret line="294" column="13" selection-start-line="294" selection-start-column="13" selection-end-line="294" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.7679838">
+          <caret line="293" column="65" selection-start-line="293" selection-start-column="65" selection-end-line="293" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/member/join_finish.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38500506">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/css/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6809882">
+          <caret line="1220" column="29" selection-start-line="1220" selection-start-column="29" selection-end-line="1220" selection-end-column="29" />
           <folding />
         </state>
       </provider>
