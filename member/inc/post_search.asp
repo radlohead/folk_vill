@@ -1,4 +1,4 @@
-<article class="popup_wrap" style="visibility:visible;">
+<article class="popup_wrap post_pop" style="visibility:hidden;">
     <div class="dim-bg"></div>
     <div class="pop">
 
@@ -34,6 +34,7 @@
                     예) 중앙로, 불정로432번길
                 </span>
             </div>
+            <a href="#none" class="popup_close-btn">팝업 닫기버튼</a>
         </div>
 
     <!-- 우편번호검색 성공 -->

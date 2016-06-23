@@ -800,13 +800,15 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .join_form .address_wrap .add_01_box { display: block; position: relative; width: 100%; }
 .detail-login .join_form .address_wrap .add_01_box:after { display: block; content: ""; clear: both; }
 .detail-login .join_form .address_wrap .add_01_box input[type="submit"] { float: right; width: 40%; padding: 10px 17px; border: 1px solid #bdb5a0; background: #fff; font-size: 1.6em; color: #000; }
+.detail-login .join_form .address_wrap .add_01_box .add_search_btn { display: block; float: right; text-align: center; width: 30%; padding: 10px 17px; border: 1px solid #bdb5a0; background: #fff; font-size: 1.6em; color: #000; }
 .detail-login .join_form .address_wrap .add_01_box .add_01 { position: absolute; bottom: 0; float: left; width: 54.5%; margin: 0; }
 .detail-login .join_form .address_wrap input[type="text"] { margin-top: 12px; }
 .detail-login .join_form .tel_box select.tel_01 { width: 27%; }
 .detail-login .join_form .tel_box .tel_02 { float: right; width: 70%; }
 .detail-login .join_form .caution { margin: 23px 0; }
-.detail-login .join_form .caution li { display: table; }
-.detail-login .join_form .caution li span { display: table-cell; font-size: 1.4em; }
+.detail-login .join_form .caution li { display: table; margin-top: 10px; }
+.detail-login .join_form .caution li:first-child { margin: 0; }
+.detail-login .join_form .caution li span { display: table-cell; font-size: 1.2em; }
 .detail-login .join_form .caution li .icon { padding-right: 3px; color: #f29322; }
 
 .join_box { margin-top: 40px; background: #f7f7f7; border-top: 1px solid #bdb5a0; }
@@ -846,6 +848,16 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .popup_wrap .content .add_search_result .add_list li:first-child { margin: 0; }
 .popup_wrap .content .add_search_result .search_fail_text { display: block; text-align: center; margin: 20px 0; font-size: 1.4em; color: #f08200; }
 .popup_wrap .content .popup_close-btn { margin-top: 25px; }
+.popup_wrap .content .cert_btn_box:after { display: block; content: ""; clear: both; }
+.popup_wrap .content .cert_btn_box .btn { display: block; float: left; text-align: center; width: 48.5%; padding: 13px 0; box-sizing: border-box; font-size: 1.8em; }
+.popup_wrap .content .cert_btn_box .ok_btn { border: 1px solid #312d22; background: #312d22; }
+.popup_wrap .content .cert_btn_box .cancel_btn { margin-left: 3%; border: 1px solid #bdb5a0; background: #fff; color: #000; }
+.popup_wrap .content .btn { text-align: center; border: 0; background: #312d22; color: #fff; }
+.popup_wrap .content .center { text-align: center; }
+.popup_wrap .content .explan_text02 { margin: 25px 0; padding: 20px 0; background: #e5e5e5; }
+.popup_wrap .content .explan_text02 em { display: block; text-align: center; color: #f08200; font-size: 1.8em; }
+.popup_wrap .content .explan_text02 .text { display: block; text-align: center; margin-top: 5px; font-size: 1.2em; }
+.popup_wrap .content .cancel_btn { display: block; text-align: center; width: 100%; margin: 20px 0 18px; padding: 10px 0; border: 1px solid #bdb5a0; background: #fff; color: #000; font-size: 1.8em; }
 
 .single-items .slick-track { left: 0 !important; padding: 1px 0; }
 

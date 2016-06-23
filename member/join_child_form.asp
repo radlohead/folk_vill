@@ -36,6 +36,11 @@
                 <label for="name" class="nameLa">성별</label>
                 <input type="text" id="name" class="name" name="name" placeholder="남" />
 
+                <label for="name" class="nameLa">보호자 이름</label>
+                <input type="text" id="name" class="name" name="name" placeholder="이름" />
+                <label for="name" class="nameLa">보호자 성별</label>
+                <input type="text" id="name" class="name" name="name" placeholder="남" />
+
                 <label for="birth_date_01">생년월일</label>
                 <div class="select_box birth_date_box">
                     <div class="select">

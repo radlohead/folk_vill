@@ -1195,6 +1195,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			.add_01_box{display:block; position:relative; width:100%;
 				&:after{display:block; content:""; clear:both;}
 				input[type="submit"]{float:right; width:40%; padding:10px 17px; border:1px solid #bdb5a0; background:#fff; font-size:1.6em; color:#000;}
+				.add_search_btn{display:block; float:right; text-align:center; width:30%; padding:10px 17px; border:1px solid #bdb5a0; background:#fff; font-size:1.6em; color:#000;}
 				.add_01{position:absolute; bottom:0;float:left; width:54.5%; margin:0;}
 			}
 			input[type="text"]{margin-top:12px;}
@@ -1204,8 +1205,9 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			.tel_02{float:right; width:70%;}
 		}
 		.caution{margin:23px 0;
-			li{display:table;
-				span{display:table-cell; font-size:1.4em;}
+			li{display:table; margin-top:10px;
+				&:first-child{margin:0;}
+				span{display:table-cell; font-size:1.2em;}
 				.icon{padding-right:3px; color:#f29322;}
 			}
 		}
@@ -1259,6 +1261,19 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			.search_fail_text{display:block; text-align:center; margin:20px 0; font-size:1.4em; color:#f08200;}
 		}
 		.popup_close-btn{margin-top:25px;}
+		.cert_btn_box{
+			&:after{display:block; content:""; clear:both;}
+			.btn{display:block; float:left; text-align:center; width:48.5%; padding:13px 0; box-sizing:border-box; font-size:1.8em;}
+			.ok_btn{border:1px solid #312d22; background:#312d22;}
+			.cancel_btn{margin-left:3%; border:1px solid #bdb5a0; background:#fff; color:#000;}
+		}
+		.btn{text-align:center; border:0; background:#312d22; color:#fff;}
+		.center{text-align:center;}
+		.explan_text02{margin:25px 0; padding:20px 0; background:#e5e5e5;
+			em{display:block; text-align:center; color:#f08200; font-size:1.8em;}
+			.text{display:block; text-align:center; margin-top:5px; font-size:1.2em;}
+		}
+		.cancel_btn{display:block; text-align:center; width:100%; margin:20px 0 18px; padding:10px 0; border:1px solid #bdb5a0; background:#fff; color:#000; font-size:1.8em;}
 	}
 }
 

@@ -299,4 +299,17 @@ $(document).ready(function(){
 		}
 	};
 
+	//팝업 띄우기
+	function popup(){
+		//우편번호찾기팝업 띄우기
+		$(".add_search_btn").on('click', function(){
+			$(".post_pop").css("visibility",'visible');
+		});
+		//우편번호찾기팝업 띄우기
+		$(".id_chk_btn").on('click', function(){
+			$(".id_chk_pop").css("visibility",'visible');
+		});
+	}
+	popup();
+
 });
