@@ -17,7 +17,7 @@
 
     <div class="header_title_slide">
         <div class="title">
-            <h2>이용안내</h2>
+            <h2>마이페이지</h2>
         </div>
 
 <!--#include virtual="/mobile/mypage/inc/mypage_topmenu.html" -->
