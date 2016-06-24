@@ -26,20 +26,23 @@
     <div class="contents">
         <div class="detail-mypage">
             <div class="detail-head">
-                <h3>개인정보 변경</h3>
-                <span class="text">회원님의 소중한 정보보호를 위해 비밀번호를<br/>
-                                   입력해주시기 바랍니다.
-                </span>
+                <h3>개인정보 변경완료</h3>
             </div>
-            <div class="content member">
-                <form action="" method="post" class="member_info_form">
-                    <label for="pw">비밀번호</label>
-                    <input type="text" id="pw" class="pw" name="pw" placeholder="비밀번호를 입력해주세요" />
-                    <span class="cert_btn_box">
-                        <a href="#none" class="btn ok_btn">확인</a>
-                        <a href="#none" class="btn cancel_btn">취소</a>
-                    </span>
-                </form>
+            <div class="content">
+                <div class="member_modify">
+                    <h4>회원님의 정보가 변경되었습니다.</h4>
+                    <p>
+                       회원정보는 개인정보취급방침에 따라 안전하게 보호되며,<br/>
+                       회원님의 명백한 동의 없이 공개 또는<br/>
+                       제 3자에게 제공되지 않습니다.<br/>
+                       저희 한국민속촌에서는 고객님의 개인정보 보호에<br/>
+                       최선을 다하겠습니다.
+                    </p>
+                </div>
+                <span class="cert_btn_box">
+                    <a href="#none" class="btn ok_btn">확인</a>
+                    <a href="#none" class="btn cancel_btn">취소</a>
+                </span>
             </div>
         </div>
     </div>

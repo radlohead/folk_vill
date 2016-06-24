@@ -221,6 +221,9 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .detail-head .text-box .guide-time { display: block; margin-top: 11px; margin-left: 23px; font-size: 65%; color: #f08200; }
 .detail-login .detail-head .text-box .guide-time .text { display: block; }
 .detail-login .detail-head .text-box .guide-time .time { color: #666; }
+.detail-login .detail-head.mypage { overflow: hidden; margin-bottom: 30px; }
+.detail-login .detail-head.mypage h3 { float: none; margin-bottom: 12px; font-size: 2.25em; color: #333; font-weight: bold; }
+.detail-login .detail-head.mypage .text { display: block; font-size: 1.4em; color: #000; letter-spacing: -0.05em; line-height: 1.4em; }
 
 .content-head { position: relative; margin-bottom: 25px; }
 .content-head img { width: 100%; }
@@ -870,7 +873,6 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-mypage .detail-head { overflow: hidden; margin-bottom: 30px; }
 .detail-mypage .detail-head h3 { margin-bottom: 12px; font-size: 2.25em; color: #333; font-weight: bold; }
 .detail-mypage .detail-head .text { display: block; font-size: 1.4em; color: #000; letter-spacing: -0.05em; line-height: 1.4em; }
-.detail-mypage .content .icon { display: inline-block; background: url("/mobile/images/common/sprite.png") no-repeat; background-size: 300px 500px; }
 .detail-mypage .content table tr:first-child td { border-top: 2px solid #f08200; }
 .detail-mypage .content table tr:last-child td { border-bottom: 1px solid #bdb5a0; }
 .detail-mypage .content table td { padding: 13px 0 15px; border-bottom: 1px solid #dedacf; }
@@ -899,6 +901,17 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-mypage .content .btns .rg_btn { float: right; }
 .detail-mypage .content .btns .rg_btn .del-btn { float: left; text-indent: inherit; text-align: center; margin-right: 7px; background: #fff; border: 1px solid #bdb5a0; color: #000; font-size: 1.4em; line-height: 2.8em; }
 .detail-mypage .content .btns .rg_btn .list-btn { float: left; text-indent: inherit; text-align: center; background: #fff; border: 1px solid #bdb5a0; color: #000; font-size: 1.4em; line-height: 2.8em; }
+.detail-mypage .content .cert_btn_box:after { display: block; content: ""; clear: both; }
+.detail-mypage .content .cert_btn_box .btn { display: block; float: left; text-align: center; width: 48.5%; padding: 13px 0; box-sizing: border-box; font-size: 1.8em; }
+.detail-mypage .content .cert_btn_box .ok_btn { border: 1px solid #312d22; background: #312d22; }
+.detail-mypage .content .cert_btn_box .cancel_btn { margin-left: 3%; border: 1px solid #bdb5a0; background: #fff; color: #000; }
+.detail-mypage .content .member_modify { text-align: center; margin-bottom: 30px; padding: 25px 0; border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
+.detail-mypage .content .member_modify h4 { margin-bottom: 10px; font-size: 1.6em; }
+.detail-mypage .content .member_modify p { font-size: 1.2em; }
+.detail-mypage .content .member_modify ol li { display: table; text-align: left; margin-top: 7px; font-size: 1.2em; }
+.detail-mypage .content .member_modify ol li:first-child { margin: 0; }
+.detail-mypage .content .member_modify ol li .icon { display: table-cell; width: 13px; padding-right: 5px; }
+.detail-mypage .content .member_modify ol li .text { display: table-cell; }
 .detail-mypage .content.qna-view article { border-top: 2px solid #f08200; border-bottom: 1px solid #bdb5a0; }
 .detail-mypage .content.qna-view article h4 { padding: 10px 0; }
 .detail-mypage .content.qna-view article .date-wrap { display: block; padding-bottom: 7px; border-bottom: 1px solid #dedacf; font-size: 1.2em; }
@@ -910,6 +923,45 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-mypage .content.qna-view article .answer_date { padding: 10px 0; border-top: 1px solid #bdb5a0; border-bottom: 1px solid #dedacf; }
 .detail-mypage .content.qna-view article .answer_date .text { display: inline-block; color: #f08200; }
 .detail-mypage .content.qna-view article .answer_date .date { display: inline-block; margin-left: 3px; }
+.detail-mypage .content.member form label { display: block; margin: 35px 0 20px; font-size: 1.2em; }
+.detail-mypage .content.member form label:after { content: "*"; padding-left: 7px; color: #f29322; }
+.detail-mypage .content.member form input[type="text"] { width: 100%; padding-bottom: 8px; border: 0; border-bottom: 1px solid #bdb5a0; font-size: 1.6em; }
+.detail-mypage .content.member form select { background: url("/mobile/images/member/select_bg.png") no-repeat center right; background-size: 13px 12px; }
+.detail-mypage .content.member form .select_box:after { display: block; content: ""; clear: both; }
+.detail-mypage .content.member form .select_box select { float: left; margin-left: 3%; font-size: 1.6em; }
+.detail-mypage .content.member form .select_box select:first-child { margin-left: 0; }
+.detail-mypage .content.member form .phone_box select.phone_01 { width: 27%; }
+.detail-mypage .content.member form .phone_box .phone_02 { float: right; width: 70%; }
+.detail-mypage .content.member form .select { float: left; width: 31.3%; margin-left: 3%; border-bottom: 1px solid #bdb5a0; }
+.detail-mypage .content.member form .select:first-child { margin-left: 0; }
+.detail-mypage .content.member form .select select { width: 100%; }
+.detail-mypage .content.member form .check_box_wrap { margin-top: 20px; }
+.detail-mypage .content.member form .check_box_wrap label { margin: 0; }
+.detail-mypage .content.member form .check_box_wrap label:after { display: block; content: ""; clear: both; }
+.detail-mypage .content.member form .check_box_wrap .mr25 { margin-right: 25px; }
+.detail-mypage .content.member form .id_chk_btn { display: block; width: 100%; margin: 15px 0 18px; padding: 10px 0; font-size: 1.8em; }
+.detail-mypage .content.member form .address_wrap .add_01_box { display: block; position: relative; width: 100%; }
+.detail-mypage .content.member form .address_wrap .add_01_box:after { display: block; content: ""; clear: both; }
+.detail-mypage .content.member form .address_wrap .add_01_box input[type="submit"] { float: right; width: 40%; padding: 10px 17px; border: 1px solid #bdb5a0; background: #fff; font-size: 1.6em; color: #000; }
+.detail-mypage .content.member form .address_wrap .add_01_box .add_search_btn { display: block; float: right; text-align: center; width: 30%; padding: 10px 17px; border: 1px solid #bdb5a0; background: #fff; font-size: 1.6em; color: #000; }
+.detail-mypage .content.member form .address_wrap .add_01_box .add_01 { position: absolute; bottom: 0; float: left; width: 54.5%; margin: 0; }
+.detail-mypage .content.member form .address_wrap input[type="text"] { margin-top: 12px; }
+.detail-mypage .content.member form .tel_box select.tel_01 { width: 27%; }
+.detail-mypage .content.member form .tel_box .tel_02 { float: right; width: 70%; }
+.detail-mypage .content.member form .caution { margin: 23px 0; }
+.detail-mypage .content.member form .caution li { display: table; margin-top: 10px; }
+.detail-mypage .content.member form .caution li:first-child { margin: 0; }
+.detail-mypage .content.member form .caution li span { display: table-cell; font-size: 1.2em; }
+.detail-mypage .content.member form .caution li .icon { padding-right: 3px; color: #f29322; }
+.detail-mypage .content.member form .cert_btn_box { display: block; margin-top: 35px; }
+.detail-mypage .content.member form .cert_btn_box:after { display: block; content: ""; clear: both; }
+.detail-mypage .content.member form .cert_btn_box .btn { display: block; float: left; text-align: center; width: 48.5%; padding: 13px 0; box-sizing: border-box; font-size: 1.8em; }
+.detail-mypage .content.member form .cert_btn_box .ok_btn { border: 1px solid #312d22; background: #312d22; }
+.detail-mypage .content.member form .cert_btn_box .cancel_btn { margin-left: 3%; border: 1px solid #bdb5a0; background: #fff; color: #000; }
+.detail-mypage .content.member form.member_info_form label { display: block; margin: 35px 0 20px; font-size: 1.2em; }
+.detail-mypage .content.member form.member_info_form label:after { content: ""; }
+.detail-mypage .content.member form.member_leave h5 { margin-bottom: 30px; font-size: 1.75em; }
+.detail-mypage .content.member form.member_leave input.id { margin-bottom: 40px; }
 
 .single-items .slick-track { left: 0 !important; padding: 1px 0; }
 

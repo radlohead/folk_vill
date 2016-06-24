@@ -327,6 +327,10 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			}
 		}
 	}
+	.detail-head.mypage{overflow: hidden; margin-bottom:30px;
+		h3{float:none; margin-bottom:12px; font-size:2.25em; color:#333; font-weight:bold;}
+		.text{display:block; font-size:1.4em; color:#000; letter-spacing:-0.05em; line-height:1.4em;}
+	}
 }
 
 .content-head{position:relative; margin-bottom:25px;
@@ -1292,7 +1296,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.text{display:block; font-size:1.4em; color:#000; letter-spacing:-0.05em; line-height:1.4em;}
 	}
 	.content{
-		.icon{display:inline-block; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px;}
+		//.icon{display:inline-block; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px;}
 		table{
 			tr:first-child td{border-top:2px solid #f08200;}
 			tr:last-child td{border-bottom:1px solid #bdb5a0;}
@@ -1330,6 +1334,23 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 				.list-btn{float:left; text-indent:inherit; text-align:center; background:#fff; border:1px solid #bdb5a0; color:#000; font-size:1.4em; line-height:2.8em;}
 			}
 		}
+		.cert_btn_box{
+			&:after{display:block; content:""; clear:both;}
+			.btn{display:block; float:left; text-align:center; width:48.5%; padding:13px 0; box-sizing:border-box; font-size:1.8em;}
+			.ok_btn{border:1px solid #312d22; background:#312d22;}
+			.cancel_btn{margin-left:3%; border:1px solid #bdb5a0; background:#fff; color:#000;}
+		}
+		.member_modify{text-align:center; margin-bottom:30px; padding:25px 0; border-top:1px solid #f08200; border-bottom:1px solid #bdb5a0;
+			h4{margin-bottom:10px; font-size:1.6em;}
+			p{font-size:1.2em;}
+			ol{
+				li{display:table; text-align:left; margin-top:7px; font-size:1.2em;
+					&:first-child{margin:0;}
+					.icon{display:table-cell; width:13px; padding-right:5px;}
+					.text{display:table-cell;}
+				}
+			}
+		}
 	}
 	.content.qna-view{
 		article{border-top:2px solid #f08200; border-bottom:1px solid #bdb5a0;
@@ -1349,6 +1370,71 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 				.text{display:inline-block; color:#f08200;}
 				.date{display:inline-block; margin-left:3px;}
 			}
+		}
+	}
+	.content.member{
+		form{
+			label{display:block; margin:35px 0 20px; font-size:1.2em;
+				&:after{content:"*"; padding-left:7px; color:#f29322;}
+			}
+			input[type="text"]{width:100%; padding-bottom:8px; border:0; border-bottom:1px solid #bdb5a0; font-size:1.6em;}
+			select{background:url("/mobile/images/member/select_bg.png") no-repeat center right; background-size:13px 12px;}
+			.select_box{
+				&:after{display:block; content:""; clear:both;}
+				select{float:left; margin-left:3%; font-size:1.6em;
+					&:first-child{margin-left:0;}
+				}
+			}
+			.phone_box{
+				select.phone_01{width:27%;}
+				.phone_02{float:right; width:70%;}
+			}
+			.select{float:left; width:31.3%; margin-left:3%; border-bottom:1px solid #bdb5a0;
+				&:first-child{margin-left:0;}
+				select{width:100%;}
+			}
+			.check_box_wrap{margin-top:20px;
+				label{margin:0;
+					&:after{display:block; content:""; clear:both;}
+				}
+				.mr25{margin-right:25px;}
+			}
+			.id_chk_btn{display:block; width:100%; margin:15px 0 18px; padding:10px 0; font-size:1.8em;}
+			.address_wrap{
+				.add_01_box{display:block; position:relative; width:100%;
+					&:after{display:block; content:""; clear:both;}
+					input[type="submit"]{float:right; width:40%; padding:10px 17px; border:1px solid #bdb5a0; background:#fff; font-size:1.6em; color:#000;}
+					.add_search_btn{display:block; float:right; text-align:center; width:30%; padding:10px 17px; border:1px solid #bdb5a0; background:#fff; font-size:1.6em; color:#000;}
+					.add_01{position:absolute; bottom:0;float:left; width:54.5%; margin:0;}
+				}
+				input[type="text"]{margin-top:12px;}
+			}
+			.tel_box{
+				select.tel_01{width:27%;}
+				.tel_02{float:right; width:70%;}
+			}
+			.caution{margin:23px 0;
+				li{display:table; margin-top:10px;
+					&:first-child{margin:0;}
+					span{display:table-cell; font-size:1.2em;}
+					.icon{padding-right:3px; color:#f29322;}
+				}
+			}
+			.cert_btn_box{display:block; margin-top:35px;
+				&:after{display:block; content:""; clear:both;}
+				.btn{display:block; float:left; text-align:center; width:48.5%; padding:13px 0; box-sizing:border-box; font-size:1.8em;}
+				.ok_btn{border:1px solid #312d22; background:#312d22;}
+				.cancel_btn{margin-left:3%; border:1px solid #bdb5a0; background:#fff; color:#000;}
+			}
+		}
+		form.member_info_form{
+			label{display:block; margin:35px 0 20px; font-size:1.2em;
+				&:after{content:"";}
+			}
+		}
+		form.member_leave{
+			h5{margin-bottom:30px; font-size:1.75em;}
+			input.id{margin-bottom:40px;}
 		}
 	}
 }

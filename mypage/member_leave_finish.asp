@@ -26,20 +26,18 @@
     <div class="contents">
         <div class="detail-mypage">
             <div class="detail-head">
-                <h3>개인정보 변경</h3>
-                <span class="text">회원님의 소중한 정보보호를 위해 비밀번호를<br/>
-                                   입력해주시기 바랍니다.
-                </span>
+                <h3>회원탈퇴</h3>
             </div>
-            <div class="content member">
-                <form action="" method="post" class="member_info_form">
-                    <label for="pw">비밀번호</label>
-                    <input type="text" id="pw" class="pw" name="pw" placeholder="비밀번호를 입력해주세요" />
-                    <span class="cert_btn_box">
-                        <a href="#none" class="btn ok_btn">확인</a>
-                        <a href="#none" class="btn cancel_btn">취소</a>
-                    </span>
-                </form>
+            <div class="content">
+                <div class="member_modify">
+                    <h4>회원님의 회원탈퇴가 정상적으로 처리되었습니다.</h4>
+                    <p>
+                       그동안 한국민속촌 홈페이지를 이용해 주셔서 감사합니다.<br/>
+                       앞으로 보다 나은 서비스로 다시 만나볼 수 있도록<br/>
+                       최선을 다하겠습니다.
+                    </p>
+                </div>
+                <a href="#none" class="btn inquiry_btn">메인으로</a>
             </div>
         </div>
     </div>
@@ -55,7 +53,7 @@
                 infinite: true,
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                initialSlide: 3
+                initialSlide: 5
             });
         });
     </script>
