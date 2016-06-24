@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mypage/coupon_view.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mypage/member_info.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mypage/member_leave_finish.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mypage/member_modify.asp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mypage/member_pwd_finish.asp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/faq.asp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/qna_form.asp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customer/voice_form.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/coupon_list.asp" afterPath="$PROJECT_DIR$/mypage/coupon_list.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_info_auth.asp" afterPath="$PROJECT_DIR$/mypage/member_info_auth.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_leave.asp" afterPath="$PROJECT_DIR$/mypage/member_leave.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_pwd_edit.asp" afterPath="$PROJECT_DIR$/mypage/member_pwd_edit.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/voice_list.asp" afterPath="$PROJECT_DIR$/mypage/voice_list.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/voice_view.asp" afterPath="$PROJECT_DIR$/mypage/voice_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/inc/gnb.html" afterPath="$PROJECT_DIR$/common/inc/gnb.html" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +44,28 @@
       <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41568205">
-              <caret line="1344" column="20" selection-start-line="1344" selection-start-column="20" selection-end-line="1344" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.5102041">
+              <caret line="1458" column="17" selection-start-line="1458" selection-start-column="17" selection-end-line="1458" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="voice_form.asp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customer/voice_form.asp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.035715">
+              <caret line="43" column="61" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qna_form.asp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customer/qna_form.asp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.392857">
+              <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -73,9 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m04_롤링배너_ver4_다형성및_합성활용/test_effect.html" />
-        <option value="C:/test/test.html" />
-        <option value="$USER_HOME$/Downloads/ver_20151015_jsjq3/06부_객체지향프로그래밍/08장_미션/01_complete/m04_롤링배너_ver4_다형성및_합성활용/step02_롤링효과_구현부분_만들기.html" />
         <option value="$PROJECT_DIR$/information/traffic.asp" />
         <option value="$PROJECT_DIR$/information/promotion_list.asp" />
         <option value="$PROJECT_DIR$/information/coupon_list.asp" />
@@ -91,7 +101,6 @@
         <option value="$PROJECT_DIR$/index.asp" />
         <option value="$PROJECT_DIR$/information/guide.asp" />
         <option value="$PROJECT_DIR$/information/notice_list.asp" />
-        <option value="$PROJECT_DIR$/common/inc/gnb.html" />
         <option value="$PROJECT_DIR$/information/coupon_view.asp" />
         <option value="$PROJECT_DIR$/member/inc/agreement.html" />
         <option value="$PROJECT_DIR$/member/inc/ind_infor.html" />
@@ -122,8 +131,12 @@
         <option value="$PROJECT_DIR$/mypage/member_pwd_edit.asp" />
         <option value="$PROJECT_DIR$/mypage/member_pwd_finish.asp" />
         <option value="$PROJECT_DIR$/mypage/member_leave.asp" />
-        <option value="$PROJECT_DIR$/common/css/index.scss" />
         <option value="$PROJECT_DIR$/mypage/member_leave_finish.asp" />
+        <option value="$PROJECT_DIR$/common/inc/gnb.html" />
+        <option value="$PROJECT_DIR$/customer/faq.asp" />
+        <option value="$PROJECT_DIR$/customer/qna_form.asp" />
+        <option value="$PROJECT_DIR$/customer/voice_form.asp" />
+        <option value="$PROJECT_DIR$/common/css/index.scss" />
       </list>
     </option>
   </component>
@@ -206,7 +219,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="groupprogram" />
+              <option name="myItemId" value="customer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -221,6 +234,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -375,34 +406,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/APM_Setup/htdocs/faco/new/css/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03962461">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/groupprogram/kids_day.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.75">
-          <caret line="97" column="57" selection-start-line="97" selection-start-column="57" selection-end-line="97" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/groupprogram/seonbi_course.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.64285713">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/inc/script.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/groupprogram/cert_program.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -596,14 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/inc/gnb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21073961">
-          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/information/coupon_list.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.214286">
@@ -632,14 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.76899695">
           <caret line="106" column="31" selection-start-line="106" selection-start-column="31" selection-end-line="106" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mypage/qna_list.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.93819654">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -676,14 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/member/join_general_form.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24214792">
-          <caret line="268" column="29" selection-start-line="268" selection-start-column="29" selection-end-line="268" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mypage/member_pwd_edit.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.214286">
@@ -716,14 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mypage/member_info_auth.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11246201">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mypage/member_leave.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.714286">
@@ -748,10 +719,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/inc/gnb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25835866">
+          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/information/promotion_list.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26950353">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/member/join_general_form.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28774062">
+          <caret line="234" column="56" selection-start-line="234" selection-start-column="56" selection-end-line="234" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mypage/qna_list.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.75">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mypage/member_info_auth.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1550152">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customer/qna_form.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.392857">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customer/faq.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31610942">
+          <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customer/voice_form.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.035715">
+          <caret line="43" column="61" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41568205">
-          <caret line="1344" column="20" selection-start-line="1344" selection-start-column="20" selection-end-line="1344" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.5102041">
+          <caret line="1458" column="17" selection-start-line="1458" selection-start-column="17" selection-end-line="1458" selection-end-column="17" />
           <folding />
         </state>
       </provider>

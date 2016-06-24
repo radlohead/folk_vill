@@ -332,6 +332,12 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.text{display:block; font-size:1.4em; color:#000; letter-spacing:-0.05em; line-height:1.4em;}
 	}
 }
+.detail-customer{
+	.detail-head{overflow: hidden; margin-bottom:30px;
+		h3{margin-bottom:12px; font-size:2.25em; color:#333; font-weight:bold;}
+		.text{display:block; font-size:1.4em; color:#000; letter-spacing:-0.05em; line-height:1.4em;}
+	}
+}
 
 .content-head{position:relative; margin-bottom:25px;
 	img{width:100%;}
@@ -1436,6 +1442,35 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			h5{margin-bottom:30px; font-size:1.75em;}
 			input.id{margin-bottom:40px;}
 		}
+	}
+}
+
+.content.customer{
+	select{background:url("/mobile/images/member/select_bg.png") no-repeat center right; background-size:13px 12px;}
+	.select_box.category{display:inline-block; padding:3px 7px 3px 0; border:1px solid #000;
+		&:after{display:block; content:""; clear:both;}
+		select{float:left; margin-left:3%; font-size:1.6em;
+			&:first-child{margin-left:0;}
+		}
+	}
+	.select_box.voice-category{display:inline-block; width:80%; padding:3px 7px 3px 0; border:1px solid #000; box-sizing:border-box;
+		select{width:100%;}
+	}
+	form.write-page{border-top:1px solid #f08200; border-bottom:1px solid #bdb5a0;
+		label{font-size:1.2em;}
+		input{padding:6px 0; border:1px solid #000; box-sizing:border-box;}
+		textarea{width:94%; min-height:175px; margin:10px 0; padding:3%; border:1px solid #000;}
+		.title_box{padding:10px 0; border-bottom:1px solid #dedacf;
+			&:after{display:block; content:""; clear:both;}
+			label{float:left; width:20%; margin-top:6px;}
+			input{float:right; width:80%;}
+		}
+	}
+	.cert_btn_box{display:block; margin-top:35px;
+		&:after{display:block; content:""; clear:both;}
+		.btn{display:block; float:left; text-align:center; width:48.5%; padding:13px 0; box-sizing:border-box; font-size:1.8em;}
+		.ok_btn{border:1px solid #312d22; background:#312d22; color:#fff;}
+		.cancel_btn{margin-left:3%; border:1px solid #bdb5a0; background:#fff; color:#000;}
 	}
 }
 
