@@ -327,13 +327,14 @@ $(document).ready(function(){
 		this.$show_list = null;
 		this.$hidden_list = null;
 		this.$icon = $(selector).find(".icon");
-		this.init(selector);
 		this.active(selector);
 		this.icon();
+		this.init(selector);
 	}
 	Faq.prototype.init = function(selector){
 		this.$show_list = $(selector);
 		this.$hidden_list = $(".faq-tab .hidden_box");
+		this.$icon.eq(0).addClass("on");
 	};
 	Faq.prototype.icon = function(){
 		this.$icon.removeClass("on");

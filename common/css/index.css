@@ -977,7 +977,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .content.customer form:after { display: block; content: ""; clear: both; }
 .content.customer form .category { float: left; height: 30px; margin-right: 5px; }
 .content.customer form .cate_search { float: left; }
-.content.customer form .cate_search .cate_search_text { float: left; height: 30px; border: 1px solid #000; box-sizing: border-box; }
+.content.customer form .cate_search .cate_search_text { float: left; height: 30px; padding: 0 10px; border: 1px solid #000; box-sizing: border-box; }
 .content.customer form .cate_search .search_btn { float: left; width: 30px; height: 30px; background: url("/mobile/images/common/sprite.png") no-repeat; background-size: 300px 500px; background-position: -60px -351px; }
 .content.customer form.write-page { border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
 .content.customer form.write-page label { font-size: 1.2em; }
@@ -993,8 +993,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .content.customer .cert_btn_box .ok_btn { border: 1px solid #312d22; background: #312d22; color: #fff; }
 .content.customer .cert_btn_box .cancel_btn { margin-left: 3%; border: 1px solid #bdb5a0; background: #fff; color: #000; }
 .content.customer .faq_title_text { text-align: center; margin: 12px 0 30px; font-size: 1.2em; }
-.content.customer .main-tab.faq-tab .tabMenu li { width: 25%; margin-left: -1px; padding-bottom: 13%; }
-.content.customer .main-tab.faq-tab .tabMenu li:first-child { margin-left: 0; }
+.content.customer .main-tab.faq-tab .tabMenu li { width: 24%; padding-bottom: 13%; }
 .content.customer .main-tab.faq-tab .tabMenu .menu1 { background-image: url("/mobile/images/customer/faq-tab-01.png"); }
 .content.customer .main-tab.faq-tab .tabMenu .menu1.on { background-image: url("/mobile/images/customer/faq-tab-01_on.png"); }
 .content.customer .main-tab.faq-tab .tabMenu .menu2 { background-image: url("/mobile/images/customer/faq-tab-02.png"); }
@@ -1017,6 +1016,13 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .content.customer .main-tab.faq-tab .tab-content .hidden_box .icon_a img { width: 18px; }
 .content.customer .main-tab.faq-tab .tab-content .hidden_box .text { display: table-cell; width: 72%; }
 .content.customer .main-tab.faq-tab .tab-content .hidden_box .blank { display: table-cell; width: 14%; }
+.content.customer .oto_consult { text-align: center; font-size: 1.2em; }
+.content.customer .oto_consult a { display: inline-block; margin-top: 15px; padding-bottom: 3px; border-bottom: 1px solid #bdb5a0; font-size: 1.5em; }
+.content.customer .tel_inquiry { display: table; width: 100%; margin-top: 35px; padding: 15px 0; border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
+.content.customer .tel_inquiry .icon { display: table-cell; width: 25%; background: url("/mobile/images/customer/tel_inquiry_icon.png") center no-repeat; background-size: 56px 56px; }
+.content.customer .tel_inquiry .text_box { display: table-cell; width: 75%; }
+.content.customer .tel_inquiry .text_box h4 { margin-bottom: 5px; font-size: 1.6em; }
+.content.customer .tel_inquiry .text_box ul li { font-size: 1.2em; }
 
 .single-items .slick-track { left: 0 !important; padding: 1px 0; }
 

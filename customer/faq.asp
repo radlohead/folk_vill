@@ -251,17 +251,34 @@
                     </div>
                     <!-- #tab2 이용안내-->
                     <div class="tab-content tabMenu2">
-                        22
+                        이용안내
                     </div>
                     <!-- #tab3 할인이벤트-->
                     <div class="tab-content tabMenu3">
-                        22
+                        할인이벤트
                     </div>
                     <!-- #tab4 기타-->
                     <div class="tab-content tabMenu4">
-                        22
+                        기타
                     </div>
                 </div>
+                <div class="oto_consult">
+                    찾으시는 질문이 없으신 경우 1:1 상담문의로<br/>
+                    궁금하신 점을 올려 주세요.<br/>
+                    고객여러분의 질문과 의견에 항상 귀를 기울이겠습니다.
+                    <a href="/mobile/customer/qna_form.asp">1:1 상담문의</a>
+                </div>
+                <section class="tel_inquiry">
+                    <span class="icon"></span>
+                    <div class="text_box">
+                        <h4>전화문의</h4>
+                        <ul>
+                            <li>고객센터 : 031-288-0000</li>
+                            <li>학생·기업단체·연간회원 상담실 : 031-288-4000</li>
+                            <li>유스호스텔 : 031-288-1700</li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
