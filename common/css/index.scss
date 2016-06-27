@@ -1447,7 +1447,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 
 .content.customer{
 	select{background:url("/mobile/images/member/select_bg.png") no-repeat center right; background-size:13px 12px;}
-	.select_box.category{display:inline-block; padding:3px 7px 3px 0; border:1px solid #000;
+	.select_box.category{display:inline-block; border:1px solid #000; box-sizing:border-box;
 		&:after{display:block; content:""; clear:both;}
 		select{float:left; margin-left:3%; font-size:1.6em;
 			&:first-child{margin-left:0;}
@@ -1455,6 +1455,14 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 	.select_box.voice-category{display:inline-block; width:80%; padding:3px 7px 3px 0; border:1px solid #000; box-sizing:border-box;
 		select{width:100%;}
+	}
+	form{
+		&:after{display:block; content:""; clear:both;}
+		.category{float:left; height:30px; margin-right:5px;}
+		.cate_search{float:left;
+			.cate_search_text{float:left; height:30px; border:1px solid #000; box-sizing:border-box;}
+			.search_btn{float:left; width:30px; height:30px; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px; background-position:-60px -351px;}
+		}
 	}
 	form.write-page{border-top:1px solid #f08200; border-bottom:1px solid #bdb5a0;
 		label{font-size:1.2em;}
@@ -1471,6 +1479,23 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.btn{display:block; float:left; text-align:center; width:48.5%; padding:13px 0; box-sizing:border-box; font-size:1.8em;}
 		.ok_btn{border:1px solid #312d22; background:#312d22; color:#fff;}
 		.cancel_btn{margin-left:3%; border:1px solid #bdb5a0; background:#fff; color:#000;}
+	}
+	.faq_title_text{text-align:center; margin:12px 0 30px; font-size:1.2em;}
+	.main-tab.faq-tab{
+		.tabMenu{
+			li{width:24%; padding-bottom:8.5%;}
+			.menu1{background-image:url("/mobile/images/customer/faq-tab-01.png");}
+			.menu1.on{background-image:url("/mobile/images/customer/faq-tab-01_on.png");}
+			.menu2{background-image:url("/mobile/images/customer/faq-tab-02.png");}
+			.menu2.on{background-image:url("/mobile/images/customer/faq-tab-02_on.png");}
+			.menu3{background-image:url("/mobile/images/customer/faq-tab-03.png");}
+			.menu3.on{background-image:url("/mobile/images/customer/faq-tab-03_on.png");}
+			.menu4{background-image:url("/mobile/images/customer/faq-tab-04.png");}
+			.menu4.on{background-image:url("/mobile/images/customer/faq-tab-04_on.png");}
+		}
+		.tabMenu2{height:auto;}
+		.tab-content{display:none;}
+		.tabMenu1{display:block;}
 	}
 }
 

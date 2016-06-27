@@ -48,10 +48,46 @@
                         <a href="#none" class="search_btn"></a>
                     </div>
                 </form>
-                <p>
+                <p class="faq_title_text">
                    궁금하신 점을 FAQ에서 찾아보세요.<br/>
                    궁금하신 점을 바로 확인하실 수 있습니다.
                 </p>
+               <div class="main-tab faq-tab">
+                    <ul class="tabMenu">
+                        <li class="menu1 on" rel="tabMenu1">
+                            <!--전체-->
+                            <h3><a href="#tab1">1</a></h3>
+                        </li>
+                        <li class="menu2" rel="tabMenu2">
+                            <!--이용안내-->
+                            <h3><a href="#tab2">2</a></h3>
+                        </li>
+                        <li class="menu3" rel="tabMenu3">
+                            <!--할인이벤트-->
+                            <h3><a href="#tab3">2</a></h3>
+                        </li>
+                        <li class="menu4" rel="tabMenu4">
+                            <!--기타-->
+                            <h3><a href="#tab4">2</a></h3>
+                        </li>
+                    </ul>
+                    <!-- #tab1 전체-->
+                    <div class="tab-content tabMenu1">
+                        11
+                    </div>
+                    <!-- #tab2 이용안내-->
+                    <div class="tab-content tabMenu2">
+                        22
+                    </div>
+                    <!-- #tab3 할인이벤트-->
+                    <div class="tab-content tabMenu3">
+                        22
+                    </div>
+                    <!-- #tab4 기타-->
+                    <div class="tab-content tabMenu4">
+                        22
+                    </div>
+                </div>
             </div>
         </div>
     </div>
