@@ -56,24 +56,198 @@
                     <ul class="tabMenu">
                         <li class="menu1 on" rel="tabMenu1">
                             <!--전체-->
-                            <h3><a href="#tab1">1</a></h3>
+                            <h3><a href="#tab1"></a></h3>
                         </li>
                         <li class="menu2" rel="tabMenu2">
                             <!--이용안내-->
-                            <h3><a href="#tab2">2</a></h3>
+                            <h3><a href="#tab2"></a></h3>
                         </li>
                         <li class="menu3" rel="tabMenu3">
                             <!--할인이벤트-->
-                            <h3><a href="#tab3">2</a></h3>
+                            <h3><a href="#tab3"></a></h3>
                         </li>
                         <li class="menu4" rel="tabMenu4">
                             <!--기타-->
-                            <h3><a href="#tab4">2</a></h3>
+                            <h3><a href="#tab4"></a></h3>
                         </li>
                     </ul>
                     <!-- #tab1 전체-->
                     <div class="tab-content tabMenu1">
-                        11
+                        <ul>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">
+                                        편의시설 중 사물함은 어떻게 사용할 수 있는지
+                                        그리고 큰 캐리어는 어떻게 보관이 용이한가요?
+                                    </span>
+                                    <span class="icon on"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text">
+                                         편의시설 사물함은 동전교환기로 500원 2개 동전으로 이용이 가능합니다.
+                                         (보관료 500원 동전 2개 총 1,000 원 임)
+                                         또한 사물함 크기에 맞지 않는 큰 캐리어는 정문 입장시 바로 좌측에 위치 되어 있는 의무실로 귀중품을 제외한 캐리어만 보관이 가능합니다.
+                                    </span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">경기도 이천에서 용인 한국민속촌 가는 대중교통은 어떻게 되나요?</span>
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text">
+                                         답변준비중입니다.
+                                    </span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">한국민속촌에서 에버랜드까지 이용 가능한 대중교통은 무엇인가요?</span>
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text">
+                                         답변준비중입니다.
+                                    </span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">단체 요금을 적용하는 기준이 따로 있나요?</span>
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text">
+                                         답변준비중입니다.
+                                    </span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">입장 가능 시간 및 퇴장시간은 있나요?</span>
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text">
+                                         답변준비중입니다.
+                                    </span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">도시락 반입이 가능한가요?</span>
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text">
+                                         답변준비중입니다.
+                                    </span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">음식메뉴 가격은 어떤가요?</span>
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text">
+                                         답변준비중입니다.
+                                    </span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">전통혼례 꽃배달은 가능한가요?</span>
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text">
+                                         답변준비중입니다.
+                                    </span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">전통혼례 하객들의 입장료 및 입장시 필요한 것은 무엇인가요?</span>
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text">
+                                         답변준비중입니다.
+                                    </span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">입장권과 자유이용권의 차이점은 무엇인가요?</span>
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text">
+                                         답변준비중입니다.
+                                    </span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">운영시간은 어떻고 연중 무휴인가요?</span>
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text">
+                                         답변준비중입니다.
+                                    </span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">할인카드 및 각종 할인받는 법은 무엇인가요?</span>
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text">
+                                         답변준비중입니다.
+                                    </span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <!-- #tab2 이용안내-->
                     <div class="tab-content tabMenu2">

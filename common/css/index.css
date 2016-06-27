@@ -993,7 +993,8 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .content.customer .cert_btn_box .ok_btn { border: 1px solid #312d22; background: #312d22; color: #fff; }
 .content.customer .cert_btn_box .cancel_btn { margin-left: 3%; border: 1px solid #bdb5a0; background: #fff; color: #000; }
 .content.customer .faq_title_text { text-align: center; margin: 12px 0 30px; font-size: 1.2em; }
-.content.customer .main-tab.faq-tab .tabMenu li { width: 24%; padding-bottom: 8.5%; }
+.content.customer .main-tab.faq-tab .tabMenu li { width: 25%; margin-left: -1px; padding-bottom: 13%; }
+.content.customer .main-tab.faq-tab .tabMenu li:first-child { margin-left: 0; }
 .content.customer .main-tab.faq-tab .tabMenu .menu1 { background-image: url("/mobile/images/customer/faq-tab-01.png"); }
 .content.customer .main-tab.faq-tab .tabMenu .menu1.on { background-image: url("/mobile/images/customer/faq-tab-01_on.png"); }
 .content.customer .main-tab.faq-tab .tabMenu .menu2 { background-image: url("/mobile/images/customer/faq-tab-02.png"); }
@@ -1002,9 +1003,20 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .content.customer .main-tab.faq-tab .tabMenu .menu3.on { background-image: url("/mobile/images/customer/faq-tab-03_on.png"); }
 .content.customer .main-tab.faq-tab .tabMenu .menu4 { background-image: url("/mobile/images/customer/faq-tab-04.png"); }
 .content.customer .main-tab.faq-tab .tabMenu .menu4.on { background-image: url("/mobile/images/customer/faq-tab-04_on.png"); }
-.content.customer .main-tab.faq-tab .tabMenu2 { height: auto; }
 .content.customer .main-tab.faq-tab .tab-content { display: none; }
 .content.customer .main-tab.faq-tab .tabMenu1 { display: block; }
+.content.customer .main-tab.faq-tab .tabMenu2 { height: auto; }
+.content.customer .main-tab.faq-tab .tab-content .show_box { display: table; width: 100%; padding: 12px 0; border-bottom: 1px solid #dedacf; }
+.content.customer .main-tab.faq-tab .tab-content .show_box .icon_q { display: table-cell; text-align: center; vertical-align: middle; width: 14%; }
+.content.customer .main-tab.faq-tab .tab-content .show_box .icon_q img { width: 18px; }
+.content.customer .main-tab.faq-tab .tab-content .show_box .text { display: table-cell; vertical-align: middle; width: 72%; }
+.content.customer .main-tab.faq-tab .tab-content .show_box .icon { display: table-cell; vertical-align: middle; width: 14%; height: 6px; margin-top: 8px; background: url("/mobile/images/customer/faq-tab-icon.png") center no-repeat; background-size: 10px 6px; }
+.content.customer .main-tab.faq-tab .tab-content .show_box .icon.on { display: table-cell; vertical-align: middle; margin-top: 8px; background: url("/mobile/images/customer/faq-tab-icon_on.png") center no-repeat; background-size: 10px 6px; }
+.content.customer .main-tab.faq-tab .tab-content .hidden_box { display: none; width: 100%; padding: 12px 0; border-bottom: 1px solid #dedacf; }
+.content.customer .main-tab.faq-tab .tab-content .hidden_box .icon_a { display: table-cell; text-align: center; width: 14%; }
+.content.customer .main-tab.faq-tab .tab-content .hidden_box .icon_a img { width: 18px; }
+.content.customer .main-tab.faq-tab .tab-content .hidden_box .text { display: table-cell; width: 72%; }
+.content.customer .main-tab.faq-tab .tab-content .hidden_box .blank { display: table-cell; width: 14%; }
 
 .single-items .slick-track { left: 0 !important; padding: 1px 0; }
 

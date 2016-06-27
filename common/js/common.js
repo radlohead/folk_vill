@@ -312,4 +312,37 @@ $(document).ready(function(){
 	}
 	popup();
 
+	//faq페이지 q&a 이벤트
+	$(document).ready(function(){
+		var faq = new Faq(".faq-tab .show_box");
+
+		$(".faq-tab .show_box").click(function(){
+			faq.hidden();
+			faq.icon();
+			$(this).parent().find(".hidden_box").css("display","table");
+			$(this).find(".icon").addClass("on");
+		});
+	});
+	function Faq(selector){
+		this.$show_list = null;
+		this.$hidden_list = null;
+		this.$icon = $(selector).find(".icon");
+		this.init(selector);
+		this.active(selector);
+		this.icon();
+	}
+	Faq.prototype.init = function(selector){
+		this.$show_list = $(selector);
+		this.$hidden_list = $(".faq-tab .hidden_box");
+	};
+	Faq.prototype.icon = function(){
+		this.$icon.removeClass("on");
+	};
+	Faq.prototype.active = function(selector){
+		$(".faq-tab .hidden_box").eq(0).css("display","block");
+	}
+	Faq.prototype.hidden = function(){
+		this.$hidden_list.css("display","none");
+	}
+
 });
