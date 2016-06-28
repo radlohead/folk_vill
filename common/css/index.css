@@ -516,6 +516,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .coupon-view li { margin-top: 4px; font-size: 1.4em; }
 .coupon-view li:before { content: "*"; display: table-cell; padding-right: 2px; color: #f29322; }
 .coupon-view li .text { display: table-cell; }
+.coupon-view .del-btn { display: block; text-align: center; width: 30%; margin: 20px auto 28px; padding: 7px 0 7px; border: 1px solid #bdb5a0; font-size: 1.4em; line-height: 1.6em; }
 
 .folk .photo-img { display: block; margin: 21px 0; }
 .folk .photo-img img { width: 100%; }
@@ -890,7 +891,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-mypage .content table tr:last-child td { border-bottom: 1px solid #bdb5a0; }
 .detail-mypage .content table td { padding: 13px 0 15px; border-bottom: 1px solid #dedacf; }
 .detail-mypage .content table .board-list-title { text-align: left; }
-.detail-mypage .content table .board-list-title .icon_text { display: block; width: 101px; margin-bottom: 7px; }
+.detail-mypage .content table .board-list-title .icon_text { display: block; width: 40px; margin-bottom: 7px; }
 .detail-mypage .content table .board-list-title h4 { font-size: 1.8em; }
 .detail-mypage .content table .board-list-title .text_icon_box { display: table; margin-top: 5px; }
 .detail-mypage .content table .board-list-title .text_icon_box .text_date { display: table-cell; padding-right: 18px; font-size: 1.2em; }

@@ -50,9 +50,7 @@
                 </article>
                 <h4>우대혜택</h4>
                 <span class="benefit_img"><img src="/mobile/images/information/MCOU.jpg" alt=""/></span>
-                <span class="coupon_down_wrap">
-                    <a href="#none" class="coupon_down">쿠폰 발급받기</a>
-                </span>
+                <a href="#none" class="del-btn">삭제</a>
                 <h4>이용안내</h4>
                 <ul>
                     <li><span class="text">마이페이지 > MY 쿠폰페이지에서 확인 가능</span></li>
@@ -76,7 +74,7 @@
                 infinite: true,
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                initialSlide: 0
+                initialSlide: 2
             });
         });
     </script>

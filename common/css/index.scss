@@ -777,6 +777,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		&:before{content:"*"; display:table-cell; padding-right:2px; color:#f29322;}
 		.text{display:table-cell;}
 	}
+	.del-btn{display:block; text-align:center; width:30%; margin:20px auto 28px; padding:7px 0 7px; border:1px solid #bdb5a0; font-size:1.4em; line-height:1.6em;}
 }
 
 .folk{
@@ -1324,7 +1325,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			tr:last-child td{border-bottom:1px solid #bdb5a0;}
 			td{padding:13px 0 15px; border-bottom:1px solid #dedacf;}
 			.board-list-title{text-align:left;
-				.icon_text{display:block; width:101px; margin-bottom:7px;}
+				.icon_text{display:block; width:40px; margin-bottom:7px;}
 				h4{font-size:1.8em;}
 				.text_icon_box{display:table; margin-top:5px;
 					.text_date{display:table-cell; padding-right:18px; font-size:1.2em;
