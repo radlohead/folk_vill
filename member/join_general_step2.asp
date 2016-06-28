@@ -27,14 +27,15 @@
                 <h3>회원가입</h3>
             </div>
             <div class="head-title">
-                <h4>회원정보 입력</h4>
-                <span class="text">필수입력</span>
+                <h4>회원가입 인증</h4>
+                <span class="text02">
+                    한국민속촌은 회원님의 정보를 안전하게 보호하기 위해서<br/>
+                    본인인증 절차를 시행하고 있습니다.
+                </span>
             </div>
-            <form action="" method="post" class="join_form">
+            <form action="" method="post" class="join_form step2">
                 <label for="name" class="nameLa">이름</label>
                 <input type="text" id="name" class="name" name="name" placeholder="이름" />
-                <label for="name" class="nameLa">성별</label>
-                <input type="text" id="name" class="name" name="name" placeholder="남" />
 
                 <label for="birth_date_01">생년월일</label>
                 <div class="select_box birth_date_box">
@@ -169,64 +170,6 @@
                         </select>
                     </div>
                 </div>
-                <div class="check_box_wrap">
-                    <input type="checkbox" id="solar" class="solar" name="solar" value="solar">
-                    <label for="solar"></label>
-                    <span class="text mr25">양력</span>
-
-                    <input type="checkbox" id="lunar" class="lunar" name="lunar" value="lunar">
-                    <label for="lunar"></label>
-                    <span class="text">음력</span>
-                </div>
-
-                <label for="id">아이디</label>
-                <input type="text" id="id" class="id" name="id" placeholder="6~14자의 영문,영문+숫자만 사용합니다" />
-
-                <a href="#" class="btn id_chk_btn">아이디 중복확인</a>
-
-                <label for="pw">비밀번호</label>
-                <input type="text" id="pw" class="pw" name="pw" placeholder="6~14자의 영문,영문+숫자만 사용합니다" />
-                <label for="pw_chk">비밀번호 확인</label>
-                <input type="text" id="pw_chk" class="pw_chk" name="pw_chk" placeholder="비밀번호를 한번 더 입력해주십시오" />
-
-                <div class="address_wrap">
-                    <label for="add_01">주소</label>
-                    <span class="add_01_box">
-                        <input type="text" id="add_01" class="add_01" name="add_01" placeholder="우편번호" readonly="readonly" />
-                        <!--<input type="submit" name="add_search_btn" class="add_search_btn" value="우편번호 찾기" />-->
-                        <a href="#" class="add_search_btn">우편번호 찾기</a>
-                    </span>
-                    <input type="text" id="add_02" class="add_02" name="add_02" readonly="readonly" />
-                    <input type="text" id="add_03" class="add_03" name="add_03" />
-                </div>
-
-                <label for="tel">전화번호</label>
-                <div class="select_box tel_box">
-                    <select name="tel_01" class="tel_01">
-                        <option value="">선택</option>
-                        <option value="02">02</option>
-                        <option value="031">031</option>
-                        <option value="032">032</option>
-                        <option value="033">033</option>
-                        <option value="041">041</option>
-                        <option value="042">042</option>
-                        <option value="043">043</option>
-                        <option value="051">051</option>
-                        <option value="052">052</option>
-                        <option value="053">053</option>
-                        <option value="054">054</option>
-                        <option value="055">055</option>
-                        <option value="061">061</option>
-                        <option value="062">062</option>
-                        <option value="063">063</option>
-                        <option value="064">064</option>
-                        <option value="0502">0502</option>
-                        <option value="0505">0505</option>
-                        <option value="0506">0506</option>
-                        <option value="070">070</option>
-                    </select>
-                    <input type="text" id="tel_02" class="tel_02" name="tel_02" placeholder="전화번호" />
-                </div>
 
                 <label for="phone">휴대폰 번호</label>
                 <div class="select_box phone_box">
@@ -240,55 +183,7 @@
                         <option value="019">019</option>
                     </select>
                     <input type="text" id="phone_02" class="phone_02" name="phone_02" placeholder="휴대폰 번호" />
-                    <!--휴대폰인증시 휴대폰번호는 미리입력됨 아래 input참조-->
-                    <!--<input type="text" id="phone_02" class="phone_02" name="phone_02" value="75457456" />-->
                 </div>
-                <div class="check_box_wrap">
-                    <input type="checkbox" id="sms" class="sms" name="sms" value="sms">
-                    <label for="sms"></label>
-                    <span class="text">SMS 수신동의</span>
-                </div>
-
-                <div class="select_box email_box">
-                    <label for="email_01">이메일</label>
-                    <input type="text" id="email_01" class="email_01" name="email_01" placeholder="이메일 아이디" />
-                    <span class="text_at">@</span>
-                    <input type="text" id="email_02" class="email_02" name="email_02" placeholder="이메일 주소" />
-                    <!--이메일 인증시 이메일은 미리입력됨 아래 input참조-->
-                    <!--<input type="text" id="email_02" class="email_02" name="email_02" value="naver.com" />-->
-
-                    <select name="email_03" class="email_03">
-                        <option value="직접입력">직접입력</option>
-                        <option value="dreanwiz.com">dreanwiz.com</option>
-                        <option value="empal.com">empal.com</option>
-                        <option value="freechal.com">freechal.com</option>
-                        <option value="gmail.com">gmail.com</option>
-                        <option value="korea.com">korea.com</option>
-                        <option value="hanmail.net">hanmail.net</option>
-                        <option value="hotmail.com">hotmail.com</option>
-                        <option value="nate.com">nate.com</option>
-                        <option value="naver.com">naver.com</option>
-                        <option value="paran.com">paran.com</option>
-                        <option value="unitel.co.kr">unitel.co.kr</option>
-                        <option value="yahoo.co.kr">yahoo.co.kr</option>
-                    </select>
-                </div>
-                <div class="check_box_wrap">
-                    <input type="checkbox" id="news_letter" class="news_letter" name="news_letter" value="news_letter">
-                    <label for="news_letter"></label>
-                    <span class="text">뉴스레터 수신동의</span>
-                </div>
-
-                <ul class="caution">
-                    <li>
-                        <span class="icon">*</span>
-                        <span>이메일 주소는 아이디/비밀번호 찾기시 이용되오니 정확히 입력하시기 바랍니다.</span>
-                    </li>
-                    <li>
-                        <span class="icon">*</span>
-                        <span>주문관련내용은 기본 발송 사항으로 이메일과 SMS로 발송됩니다.</span>
-                    </li>
-                </ul>
                 <span class="cert_btn_box">
                     <a href="#none" class="btn ok_btn">확인</a>
                     <a href="#none" class="btn cancel_btn">취소</a>

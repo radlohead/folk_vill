@@ -1143,8 +1143,12 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 
 	.phone_cert_box{text-align:center; margin:28px 0; padding:28px 0; border-top:1px solid #f08200; border-bottom:1px solid #bdb5a0;
-		em{display:block; margin-bottom:10px; font-size:1.6em;}
-		.text{font-size:1.2em;}
+		em{display:block; margin-bottom:10px; font-size:1.6em;
+			b{color:#f08200;}
+		}
+		.text{font-size:1.2em;
+			em{display:inline-block; margin-bottom:0; font-size:inherit; font-weight:bold;}
+		}
 	}
 
 	.cert_btn_box{
@@ -1174,6 +1178,12 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.text{display:block; float:right; font-size:1.2em;
 			&:before{content:"*"; display:block; float:left; padding-right:7px; color:#f29322;}
 		}
+		.text02{display:block; float:left; font-size:1.2em;}
+	}
+	.head-title_02{
+		&:after{display:block; content:""; clear:both;}
+		h4{margin:25px 0 12px; font-size:2em;}
+		.text{display:block; font-size:1.2em;}
 	}
 	.join_form{
 		label{display:block; margin:35px 0 20px; font-size:1.2em;
@@ -1221,6 +1231,12 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 				.icon{padding-right:3px; color:#f29322;}
 			}
 		}
+	}
+	.join_form.step2{
+		label{display:block; margin:35px 0 20px; font-size:1.2em;
+			&:after{content:"";}
+		}
+		.cert_btn_box{display:block; margin-top:35px;}
 	}
 	dl.join_finish_info{margin:30px 0; padding:25px 0; border-top:1px solid #f08200; border-bottom:1px solid #bdb5a0;
 		&:after{display:block; content:""; clear:both;}
@@ -1481,7 +1497,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.cancel_btn{margin-left:3%; border:1px solid #bdb5a0; background:#fff; color:#000;}
 	}
 	.faq_title_text{text-align:center; margin:12px 0 30px; font-size:1.2em;}
-	.main-tab.faq-tab{
+	.main-tab.faq-tab{font-size:1.2em;
 		.tabMenu{
 			li{width:24%; padding-bottom:13%;}
 			.menu1{background-image:url("/mobile/images/customer/faq-tab-01.png");}
@@ -1522,12 +1538,38 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.text_box{display:table-cell; width:75%;
 			h4{margin-bottom:5px; font-size:1.6em;}
 			ul{
-				li{font-size:1.2em;
-					&:before{}
+				li{font-size:1.2em;}
+			}
+		}
+	}
+}
+.detail-content.chosun{
+	.character_date_box{padding:15px 0; border-top:1px solid #bdb5a0; border-bottom:1px solid #bdb5a0;
+		.date_text{display:table; width:100%; font-size:1.4em;
+			&:before{display:table-cell; content:""; width:10%; background:url("/mobile/images/event/character_icon.png") center no-repeat; background-size:16px 16px;}
+			.text{display:table-cell; width:90%;}
+		}
+		.text_box{display:table; width:100%; margin-top:5px; font-size:1.2em;
+			.sub-title{display:table-cell; width:10%;}
+			.text{display:table-cell; width:90%;}
+		}
+	}
+	.text03{display:table;
+		&:before{display:table-cell; content:"*"; float:none; padding-left:1px; padding-right:2px; color:#f08200; font-size:1.2em;}
+		.text{display:table-cell; font-size:1.2em;}
+	}
+	.pre-infor-tab{
+		.content{
+			ul{
+				li{display:table; width:100%; margin-top:8px;
+					&:first-child{margin-top:0;}
+					&:before{display:table-cell; content:""; position:relative; top:5px; width:5px; height:5px; padding-right:3px; background:url("/mobile/images/common/sprite.png") -129px -263px no-repeat; background-size:300px 500px;}
+					.text{display:table-cell;}
 				}
 			}
 		}
 	}
+	.img_box{margin-top:20px;}
 }
 
 //slick 현재페이지 표시

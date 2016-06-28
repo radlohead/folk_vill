@@ -26,9 +26,12 @@
             <div class="detail-head">
                 <h3>회원가입</h3>
             </div>
-            <div class="head-title">
-                <h4>회원정보 입력</h4>
-                <span class="text">필수입력</span>
+            <div class="head-title_02">
+                <h4>회원가입 인증 - 만 14세미만 정보 입력</h4>
+                <span class="text">
+                    한국민속촌은 회원님의 정보를 안전하게 보호하기 위해서
+                    본인인증 절차를 시행하고 있습니다.
+                </span>
             </div>
             <form action="" method="post" class="join_form">
                 <label for="name" class="nameLa">이름</label>
@@ -38,6 +41,9 @@
 
                 <label for="name" class="nameLa">보호자 이름</label>
                 <input type="text" id="name" class="name" name="name" placeholder="이름" />
+                <!--휴대폰인증시 보호자이름 미리입력됨 아래 input참조 생년월일,성별,휴대폰,이메일이 자동입력 휴대폰인증만 해당-->
+                <!--<input type="text" id="name" class="name" name="name" value="지병민" />-->
+
                 <label for="name" class="nameLa">보호자 성별</label>
                 <input type="text" id="name" class="name" name="name" placeholder="남" />
 
@@ -174,6 +180,7 @@
                         </select>
                     </div>
                 </div>
+
                 <div class="check_box_wrap">
                     <input type="checkbox" id="solar" class="solar" name="solar" value="solar">
                     <label for="solar"></label>

@@ -770,7 +770,9 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .cert_box .email_cert_btn .email_icon { width: 21px; height: 18px; background-position: -104px 0; }
 .detail-login .phone_cert_box { text-align: center; margin: 28px 0; padding: 28px 0; border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
 .detail-login .phone_cert_box em { display: block; margin-bottom: 10px; font-size: 1.6em; }
+.detail-login .phone_cert_box em b { color: #f08200; }
 .detail-login .phone_cert_box .text { font-size: 1.2em; }
+.detail-login .phone_cert_box .text em { display: inline-block; margin-bottom: 0; font-size: inherit; font-weight: bold; }
 .detail-login .cert_btn_box:after { display: block; content: ""; clear: both; }
 .detail-login .cert_btn_box .btn { display: block; float: left; text-align: center; width: 48.5%; padding: 13px 0; box-sizing: border-box; font-size: 1.8em; }
 .detail-login .cert_btn_box .ok_btn { border: 1px solid #312d22; background: #312d22; }
@@ -788,6 +790,10 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .head-title h4 { float: left; }
 .detail-login .head-title .text { display: block; float: right; font-size: 1.2em; }
 .detail-login .head-title .text:before { content: "*"; display: block; float: left; padding-right: 7px; color: #f29322; }
+.detail-login .head-title .text02 { display: block; float: left; font-size: 1.2em; }
+.detail-login .head-title_02:after { display: block; content: ""; clear: both; }
+.detail-login .head-title_02 h4 { margin: 25px 0 12px; font-size: 2em; }
+.detail-login .head-title_02 .text { display: block; font-size: 1.2em; }
 .detail-login .join_form label { display: block; margin: 35px 0 20px; font-size: 1.2em; }
 .detail-login .join_form label:after { content: "*"; padding-left: 7px; color: #f29322; }
 .detail-login .join_form select { background: url("/mobile/images/member/select_bg.png") no-repeat center right; background-size: 13px 12px; }
@@ -817,6 +823,9 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .join_form .caution li:first-child { margin: 0; }
 .detail-login .join_form .caution li span { display: table-cell; font-size: 1.2em; }
 .detail-login .join_form .caution li .icon { padding-right: 3px; color: #f29322; }
+.detail-login .join_form.step2 label { display: block; margin: 35px 0 20px; font-size: 1.2em; }
+.detail-login .join_form.step2 label:after { content: ""; }
+.detail-login .join_form.step2 .cert_btn_box { display: block; margin-top: 35px; }
 .detail-login dl.join_finish_info { margin: 30px 0; padding: 25px 0; border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
 .detail-login dl.join_finish_info:after { display: block; content: ""; clear: both; }
 .detail-login dl.join_finish_info dt, .detail-login dl.join_finish_info dd { float: left; margin-top: 5px; font-size: 1.8em; }
@@ -993,6 +1002,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .content.customer .cert_btn_box .ok_btn { border: 1px solid #312d22; background: #312d22; color: #fff; }
 .content.customer .cert_btn_box .cancel_btn { margin-left: 3%; border: 1px solid #bdb5a0; background: #fff; color: #000; }
 .content.customer .faq_title_text { text-align: center; margin: 12px 0 30px; font-size: 1.2em; }
+.content.customer .main-tab.faq-tab { font-size: 1.2em; }
 .content.customer .main-tab.faq-tab .tabMenu li { width: 24%; padding-bottom: 13%; }
 .content.customer .main-tab.faq-tab .tabMenu .menu1 { background-image: url("/mobile/images/customer/faq-tab-01.png"); }
 .content.customer .main-tab.faq-tab .tabMenu .menu1.on { background-image: url("/mobile/images/customer/faq-tab-01_on.png"); }
@@ -1023,6 +1033,22 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .content.customer .tel_inquiry .text_box { display: table-cell; width: 75%; }
 .content.customer .tel_inquiry .text_box h4 { margin-bottom: 5px; font-size: 1.6em; }
 .content.customer .tel_inquiry .text_box ul li { font-size: 1.2em; }
+
+.detail-content.chosun .character_date_box { padding: 15px 0; border-top: 1px solid #bdb5a0; border-bottom: 1px solid #bdb5a0; }
+.detail-content.chosun .character_date_box .date_text { display: table; width: 100%; font-size: 1.4em; }
+.detail-content.chosun .character_date_box .date_text:before { display: table-cell; content: ""; width: 10%; background: url("/mobile/images/event/character_icon.png") center no-repeat; background-size: 16px 16px; }
+.detail-content.chosun .character_date_box .date_text .text { display: table-cell; width: 90%; }
+.detail-content.chosun .character_date_box .text_box { display: table; width: 100%; margin-top: 5px; font-size: 1.2em; }
+.detail-content.chosun .character_date_box .text_box .sub-title { display: table-cell; width: 10%; }
+.detail-content.chosun .character_date_box .text_box .text { display: table-cell; width: 90%; }
+.detail-content.chosun .text03 { display: table; }
+.detail-content.chosun .text03:before { display: table-cell; content: "*"; float: none; padding-left: 1px; padding-right: 2px; color: #f08200; font-size: 1.2em; }
+.detail-content.chosun .text03 .text { display: table-cell; font-size: 1.2em; }
+.detail-content.chosun .pre-infor-tab .content ul li { display: table; width: 100%; margin-top: 8px; }
+.detail-content.chosun .pre-infor-tab .content ul li:first-child { margin-top: 0; }
+.detail-content.chosun .pre-infor-tab .content ul li:before { display: table-cell; content: ""; position: relative; top: 5px; width: 5px; height: 5px; padding-right: 3px; background: url("/mobile/images/common/sprite.png") -129px -263px no-repeat; background-size: 300px 500px; }
+.detail-content.chosun .pre-infor-tab .content ul li .text { display: table-cell; }
+.detail-content.chosun .img_box { margin-top: 20px; }
 
 .single-items .slick-track { left: 0 !important; padding: 1px 0; }
 
