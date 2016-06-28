@@ -44,45 +44,115 @@
                 </div>
             </div>
             <div class="detail-content attraction">
-                <div class="pre-infor-tab">
-                    <div class="title">
-                        <h3>어트랙션 주의사항</h3>
-                        <span class="icon"></span>
-                    </div>
-                    <div class="content">
-                        <p>
-                            <span class="icon"></span>
-                            <span class="text">기상악화(폭우, 강풍, 기온저하 등), 안전점검, 고장 등에 따라 예고없이 어트랙션 운행이 추가 중단될 수 있습니다.</span>
-                        </p>
-                        <p>
-                            <span class="icon"></span>
-                            <span class="text">탑승 대기 고객이 많을 경우 조기에 입장이 마감될 수 있습니다.</span>
-                        </p>
-                        <p>
-                            <span class="icon"></span>
-                            <span class="text">어트랙션에 따라 연령 제한이 있을 수 있습니다.</span>
-                        </p>
-                    </div>
-                </div>
+                <section class="detail detail-eat">
+                    <a href="#" class="img eat_img1"><img src="/mobile/images/play_village/eat/eat_1.jpg" alt="장터 사진" /></a>
+                    <h4>장터</h4>
+                    <dl>
+                        <dt class="sub-title_01">위치</dt>
+                        <dd class="text_01">민속마을 장터</dd>
+                        <dt class="sub-title_02">분류</dt>
+                        <dd class="text_02">한식</dd>
+                    </dl>
+                </section>
+                <section class="detail detail-eat end">
+                    <a href="#" class="img eat_img2"><img src="/mobile/images/play_village/eat/eat_2.jpg" alt="길목집 사진" /></a>
+                    <h4>길목집</h4>
+                    <dl>
+                        <dt class="sub-title_01">위치</dt>
+                        <dd class="text_01">상가마을</dd>
+                        <dt class="sub-title_02">분류</dt>
+                        <dd class="text_02">한식</dd>
+                    </dl>
+                </section>
                 <section class="detail">
-                    <a href="/mobile/playvillage/ghost.asp" class="img"><img src="/mobile/images/play_village/attraction_1.png" alt="귀신전 사진" /></a>
-                    <h4>귀신전</h4>
-                    <span class="text01">정상운영</span>
-                    <div class="text-box01">
-                        <span class="text">140cm 이상<br/>
-                                       110~140cm 보호자 동반
-                        </span>
-                    </div>
+                    <a href="#" class="img eat_img3"><img src="/mobile/images/play_village/eat/eat_3.jpg" alt="테라스그린 사진" /></a>
+                    <h4>테라스그린</h4>
+                    <dl>
+                        <dt class="sub-title_01">위치</dt>
+                        <dd class="text_01">놀이마을</dd>
+                        <dt class="sub-title_02">분류</dt>
+                        <dd class="text_02">인도요리, 글로벌푸드</dd>
+                    </dl>
                 </section>
                 <section class="detail end">
-                    <a href="/mobile/playvillage/junseol_gohyang.asp" class="img"><img src="/mobile/images/play_village/attraction_2.png" alt="전설의 고향 사진" /></a>
-                    <h4>전설의 고향</h4>
-                    <span class="text01">정상운영</span>
-                    <div class="text-box01">
-                        <span class="text">140cm 이상<br/>
-                                       110~140cm 보호자 동반
-                        </span>
-                    </div>
+                    <a href="#" class="img eat_img4"><img src="/mobile/images/play_village/eat/eat_4.jpg" alt="길목집 사진" /></a>
+                    <h4>한국관</h4>
+                    <dl>
+                        <dt class="sub-title_01">위치</dt>
+                        <dd class="text_01">상가마을</dd>
+                        <dt class="sub-title_02">분류</dt>
+                        <dd class="text_02">한식</dd>
+                    </dl>
+                </section>
+                <section class="detail">
+                    <a href="#" class="img eat_img5"><img src="/mobile/images/play_village/eat/eat_5.jpg" alt="전통찻집 사진" /></a>
+                    <h4>전통찻집</h4>
+                    <dl>
+                        <dt class="sub-title_01">위치</dt>
+                        <dd class="text_01">상가마을</dd>
+                        <dt class="sub-title_02">분류</dt>
+                        <dd class="text_02">전통차, 커피, 디저트</dd>
+                    </dl>
+                </section>
+                <section class="detail end">
+                    <a href="#" class="img eat_img6"><img src="/mobile/images/play_village/eat/eat_6.jpg" alt="민속주전부리 사진" /></a>
+                    <h4>민속주전부리</h4>
+                    <dl>
+                        <dt class="sub-title_01">위치</dt>
+                        <dd class="text_01">상가마을</dd>
+                        <dt class="sub-title_02">분류</dt>
+                        <dd class="text_02">간식</dd>
+                    </dl>
+                </section>
+                <section class="detail">
+                    <a href="#" class="img eat_img7"><img src="/mobile/images/play_village/eat/eat_7.jpg" alt="레일로드핫도그 사진" /></a>
+                    <h4>레일로드핫도그</h4>
+                    <dl>
+                        <dt class="sub-title_01">위치</dt>
+                        <dd class="text_01">놀이마을</dd>
+                        <dt class="sub-title_02">분류</dt>
+                        <dd class="text_02">양식</dd>
+                    </dl>
+                </section>
+                <section class="detail end">
+                    <a href="#" class="img eat_img8"><img src="/mobile/images/play_village/eat/eat_8.jpg" alt="달콤아이스크림 사진" /></a>
+                    <h4>달콤아이스크림</h4>
+                    <dl>
+                        <dt class="sub-title_01">위치</dt>
+                        <dd class="text_01">놀이마을</dd>
+                        <dt class="sub-title_02">분류</dt>
+                        <dd class="text_02">아이스크림, 커피</dd>
+                    </dl>
+                </section>
+                <section class="detail">
+                    <a href="#" class="img eat_img9"><img src="/mobile/images/play_village/eat/eat_9.jpg" alt="위니비니 사진" /></a>
+                    <h4>위니비니</h4>
+                    <dl>
+                        <dt class="sub-title_01">위치</dt>
+                        <dd class="text_01">놀이마을</dd>
+                        <dt class="sub-title_02">분류</dt>
+                        <dd class="text_02">캔디, 초콜릿, 젤리 등</dd>
+                    </dl>
+                </section>
+                <section class="detail end">
+                    <a href="#" class="img eat_img10"><img src="/mobile/images/play_village/eat/eat_10.jpg" alt="민속반점 사진" /></a>
+                    <h4>민속반점</h4>
+                    <dl>
+                        <dt class="sub-title_01">위치</dt>
+                        <dd class="text_01">놀이마을</dd>
+                        <dt class="sub-title_02">분류</dt>
+                        <dd class="text_02">중식</dd>
+                    </dl>
+                </section>
+                <section class="detail">
+                    <a href="#" class="img eat_img11"><img src="/mobile/images/play_village/eat/eat_11.jpg" alt="임실치즈피자 사진" /></a>
+                    <h4>임실치즈피자</h4>
+                    <dl>
+                        <dt class="sub-title_01">위치</dt>
+                        <dd class="text_01">놀이마을</dd>
+                        <dt class="sub-title_02">분류</dt>
+                        <dd class="text_02">양식</dd>
+                    </dl>
                 </section>
             </div>
         </div>
@@ -92,6 +162,13 @@
 <!--#include virtual="/mobile/common/inc/footer.html" -->
 
 </div>
+<article class="popup_wrap">
+    <div class="dim-bg"></div>
+    <div class="pop">
+        <img src="" alt="지도" />
+        <a href="#none" class="popup_close-btn">지도 닫기버튼</a>
+    </div>
+</article>
 <!--#include virtual="/mobile/common/inc/script.html" -->
     <script>
         $(document).ready(function(){

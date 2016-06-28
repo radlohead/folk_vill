@@ -228,18 +228,52 @@ $(document).ready(function(){
 		});
 	})();
 
-	//메인 한국민속촌 정기공연 +버튼에 url삽입
-	//var today_slide = function(){};
-	//today_slide.prototype.common = function(){
-	//	this.active = $(".today .swiper-slide-active > a").attr("href");
-	//	this.text_box = $(".today .swiper-slide-active .text_box").html();
-	//	$(".plus_btn > a").attr("href", this.active);
-	//	$(".today-slide > .text-btn_box .text_box").html(this.text_box);
-	//	this.timer = setInterval(this.common, 100);
-	//};
-    //
-	//var today = new today_slide();
-	//today.common();
+	//조각공원,먹거리살거리 이미지클릭시 지도팝업
+	(function(){
+		$(document).ready(function(){
+			var sculpture = new Page_map();
+			var eat = new Page_map();
+			$(".popup_close-btn").click(function(){
+				sculpture.close_btn();
+				eat.close_btn();
+			});
+			$(".map-btn.sculpture").click(function(){
+				sculpture.map("/mobile/images/page_map/sculpture/page_map_sculpture01.png");
+			});
+
+			//먹거리 이미지 클릭시 지도팝업
+			for(var i = 0; i <= eat.str.length; i++){
+				(function(e){
+					$(".eat_img" + e).click(function(){
+						eat.map("/mobile/images/page_map/eat/page_map_eat" + e + ".png");
+					});
+				})(i);
+			}
+			//살거리 이미지 클릭시 지도팝업
+			for(var i = 0; i <= eat.str.length; i++){
+				(function(e){
+					$(".buy_img" + e).click(function(){
+						eat.map("/mobile/images/page_map/buy/page_map_buy" + e + ".png");
+					});
+				})(i);
+			}
+
+		});
+		function Page_map(){
+			this.pop = null;
+			this.str = $(".attraction .detail");
+		}
+		Page_map.prototype.map = function(map_src){
+			this.pop = $(".popup_wrap .pop img");
+			$(this.pop).attr("src", map_src);
+			$(".popup_wrap").css("visibility","visible");
+		};
+		Page_map.prototype.close_btn = function(){
+			$(".popup_wrap").css("visibility","hidden");
+			this.pop = $(".popup_wrap .pop img");
+			$(this.pop).attr("src", "");
+		};
+	})();
 
 	//메인 한국민속촌 정기공연 +버튼에 url삽입
 	function today_slide(){
