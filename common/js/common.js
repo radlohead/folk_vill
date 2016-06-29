@@ -378,6 +378,27 @@ $(document).ready(function(){
 	}
 	Faq.prototype.hidden = function(){
 		this.$hidden_list.css("display","none");
-	}
+	};
+
+	//로그인 페이지에서 비밀번호찾기 버튼클릭시 비밀번호 찾기 탭으로 이동
+	(function(){
+		if(location.href == "http://www.koreanfolk.co.kr/mobile/member/find_idpw.asp#tab2"){
+			$(".menu2").trigger("click");
+		}
+	})();
+
+	//pc,모바일 구분
+	//(function(){
+	//	var filter = "win16|win32|win64|mac";
+	//	if( navigator.platform  ){
+	//		if( filter.indexOf(navigator.platform.toLowerCase())<0 ){
+	//			//모바일 기기에서 접속
+	//		}else{
+	//			//PC에서 접속
+	//			var reff = document.location.href;
+	//			location.href = "http://www.koreanfolk.co.kr/";
+	//		}
+	//	}
+	//})();
 
 });

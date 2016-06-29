@@ -33,7 +33,7 @@
                     본인인증 절차를 시행하고 있습니다.
                 </span>
             </div>
-            <form action="" method="post" class="join_form step2">
+            <form name="join_form" action="" method="post" class="join_form step2">
                 <label for="name" class="nameLa">이름</label>
                 <input type="text" id="name" class="name" name="name" placeholder="이름" />
 
@@ -191,7 +191,7 @@
                     </select>
                 </div>
                 <span class="cert_btn_box">
-                    <a href="#none" class="btn ok_btn">확인</a>
+                    <a href="#none" class="btn join_email_general_step1 ok_btn">확인</a>
                     <a href="#none" class="btn cancel_btn">취소</a>
                 </span>
             </form>
@@ -210,5 +210,23 @@
 
 <!--#include virtual="/mobile/common/inc/script.html" -->
 
+<script>
+    $(".join_email_general_step1.ok_btn").on("click", function(){
+        var form = document.join_form;
+        if(form.name.value == false){
+            alert("이름을 입력해 주세요");
+        }else if(form.birth_date_01.value == false){
+            alert("년도를 선택해 주세요");
+        }else if(form.birth_date_02.value == false){
+            alert("월을 선택해 주세요");
+        }else if(form.birth_date_03.value == false){
+            alert("일을 선택해 주세요");
+        }else if(form.email_01.value == false){
+            alert("이메일 아이디를 입력해 주세요");
+        }else if(form.email_02.value == false){
+            alert("이메일 주소를 입력해 주세요");
+        }
+    });
+</script>
 </body>
 </html>

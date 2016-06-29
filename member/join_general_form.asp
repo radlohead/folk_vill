@@ -30,11 +30,11 @@
                 <h4>회원정보 입력</h4>
                 <span class="text">필수입력</span>
             </div>
-            <form action="" method="post" class="join_form">
+            <form name="join_form" action="" method="post" class="join_form">
                 <label for="name" class="nameLa">이름</label>
                 <input type="text" id="name" class="name" name="name" placeholder="이름" />
-                <label for="name" class="nameLa">성별</label>
-                <input type="text" id="name" class="name" name="name" placeholder="남" />
+                <label for="sex" class="sexLa">성별</label>
+                <input type="text" id="sex" class="sex" name="sex" placeholder="남" />
 
                 <label for="birth_date_01">생년월일</label>
                 <div class="select_box birth_date_box">
@@ -171,11 +171,11 @@
                 </div>
                 <div class="check_box_wrap">
                     <input type="checkbox" id="solar" class="solar" name="solar" value="solar">
-                    <label for="solar"></label>
+                    <label for="solar" class="solarLa"></label>
                     <span class="text mr25">양력</span>
 
                     <input type="checkbox" id="lunar" class="lunar" name="lunar" value="lunar">
-                    <label for="lunar"></label>
+                    <label for="lunar" class="lunarLa"></label>
                     <span class="text">음력</span>
                 </div>
 
@@ -185,9 +185,9 @@
                 <a href="#" class="btn id_chk_btn">아이디 중복확인</a>
 
                 <label for="pw">비밀번호</label>
-                <input type="text" id="pw" class="pw" name="pw" placeholder="6~14자의 영문,영문+숫자만 사용합니다" />
+                <input type="password" id="pw" class="pw" name="pw" placeholder="6~14자의 영문,영문+숫자만 사용합니다" />
                 <label for="pw_chk">비밀번호 확인</label>
-                <input type="text" id="pw_chk" class="pw_chk" name="pw_chk" placeholder="비밀번호를 한번 더 입력해주십시오" />
+                <input type="password" id="pw_chk" class="pw_chk" name="pw_chk" placeholder="비밀번호를 한번 더 입력해주십시오" />
 
                 <div class="address_wrap">
                     <label for="add_01">주소</label>
@@ -231,7 +231,7 @@
                 <label for="phone">휴대폰 번호</label>
                 <div class="select_box phone_box">
                     <select name="phone_01" class="phone_01">
-                        <option value="선택">선택</option>
+                        <option value="">선택</option>
                         <option value="010">010</option>
                         <option value="011">011</option>
                         <option value="016">016</option>
@@ -309,5 +309,77 @@
 
 <!--#include virtual="/mobile/common/inc/script.html" -->
 
+<script>
+    $(".ok_btn, .search_btn").on("click", function(){
+        var form = document.join_form;
+        var id_dup_form = document.id_dup_form;
+        var post_form = document.post_form;
+
+        if(form.name.value == false){
+            alert("이름을 입력해 주세요");
+        }else if(form.sex.value == false){
+            alert("성별을 입력해 주세요");
+        }
+        else if(form.birth_date_01.value == false){
+            alert("년도를 선택해 주세요");
+        }else if(form.birth_date_02.value == false){
+            alert("월을 선택해 주세요");
+        }else if(form.birth_date_03.value == false){
+             lert("일을 선택해 주세요");
+        }
+        else if($(".solarLa").css("background-position") == "-36px 0px" && $(".lunarLa").css("background-position") == "-36px 0px"){
+            alert("앙력과 음력을 선택해 주세요");
+        }else if($(".solarLa").css("background-position") == "-58px 0px" && $(".lunarLa").css("background-position") == "-58px 0px"){
+            alert("앙력과 음력중 하나만 선택해 주세요");
+        }
+        else if(form.id.value.length < 6 || form.id.value.length > 14){
+            alert("아이디는 6~14자 이하로 입력해 주세요");
+        }
+        else if(id_dup_form.id_dup_chk.value.length < 6 || id_dup_form.id_dup_chk.value.length > 14){
+            alert("아이디는 6~14자 이하로 입력해 주세요");
+        }
+        else if(form.pw.value.length < 6 || form.pw.value.length > 14){
+            alert("비밀번호는 6~14자 이하로 입력해 주세요");
+        }
+        else if(form.pw_chk.value == false){
+            alert("비밀번호를 한번 더 입력해 주세요");
+        }
+        else if(form.pw.value != form.pw_chk.value){
+            alert("비밀번호가 일치하지 않습니다.");
+        }
+        else if($(".solar_popLa").css("background-position") == "-36px 0px" && $(".lunar_popLa").css("background-position") == "-36px 0px"){
+            alert("지번과 도로명을 선택해 주세요");
+        }else if($(".solar_popLa").css("background-position") == "-58px 0px" && $(".lunar_popLa").css("background-position") == "-58px 0px"){
+            alert("지번과 도로명중 하나만 선택해 주세요");
+        }
+        else if(post_form.address.value == false){
+            alert("주소를 입력해 주세요");
+        }
+        else if(form.tel_01.value == false){
+            alert("전화번호 앞자리를 선택해 주세요");
+        }
+        else if(form.tel_02.value == false){
+            alert("나머지 전화번호를 선택해 주세요");
+        }
+        else if(form.phone_01.value == false){
+            alert("휴대폰번호 앞자리를 선택해 주세요");
+        }
+        else if(form.phone_02.value == false){
+            alert("나머지 휴대폰번호를 선택해 주세요");
+        }
+        else if(form.email_01.value == false){
+            alert("이메일 아이디를 입력해 주세요");
+        }else if(form.email_02.value == false){
+            alert("이메일 주소를 입력해 주세요");
+        }
+    });
+
+//아이디중복확인 팝업 취소버튼 클릭시 팝업사라짐
+(function(){
+    $(".id_dup.cancel_btn").on("click", function(){
+        $(this).closest(".popup_wrap").css("visibility","hidden");
+    });
+})();
+</script>
 </body>
 </html>

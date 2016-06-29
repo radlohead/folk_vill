@@ -32,14 +32,14 @@
                     <h4>이용약관</h4>
                     <span class="icon on"></span>
                 </div>
-                <div class="content" style="display:block;">
+                <div class="content">
                     <!-- 이용약관 -->
                     <!--#include virtual="/mobile/member/inc/agreement.html" -->
                 </div>
             </div>
             <div class="check_box_wrap">
                 <input type="checkbox" id="terms_agree" class="terms_agree" name="terms_agree" value="terms_agree" />
-                <label for="terms_agree"></label>
+                <label for="terms_agree" class="terms_agreeLa"></label>
                 <span class="text">이용약관에 동의합니다</span>
             </div>
 
@@ -48,14 +48,14 @@
                     <h4>개인정보보호정책</h4>
                     <span class="icon on"></span>
                 </div>
-                <div class="content" style="display:block;">
+                <div class="content">
                     <!-- 개인정보보호정책 -->
                     <!--#include virtual="/mobile/member/inc/ind_infor.html" -->
                 </div>
             </div>
             <div class="check_box_wrap">
                 <input type="checkbox" id="policy_agree" class="policy_agree" name="policy_agree" value="policy_agree" />
-                <label for="policy_agree"></label>
+                <label for="policy_agree" class="policy_agreeLa"></label>
                 <span class="text">개인정보보호정책에 동의합니다</span>
             </div>
 

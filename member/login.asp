@@ -38,7 +38,7 @@
 
                     <div class="check_box_wrap">
                         <input type="checkbox" id="id_save" class="id_save" name="id_save" value="id_save" />
-                        <label for="id_save"></label>
+                        <label for="id_save" class="id_saveLa"></label>
                         <span class="text">아이디 저장하기</span>
                     </div>
 
@@ -47,7 +47,7 @@
 
                     <div class="search_box">
                         <a href="/mobile/member/find_idpw.asp" class="id_search">아이디 찾기</a>
-                        <a href="/mobile/member/find_idpw.asp" class="pw_search">비밀번호 찾기</a>
+                        <a href="/mobile/member/find_idpw.asp#tab2" class="pw_search">비밀번호 찾기</a>
                     </div>
                 </form>
             </div>
@@ -58,7 +58,7 @@
             한국민속촌에 가입하시면</br>
             더 많은 혜택을 누리실 수 있습니다.
         </p>
-        <a href="#none" class="btn join_btn">한국민속촌 회원가입</a>
+        <a href="/mobile/member/join.asp" class="btn join_btn">한국민속촌 회원가입</a>
     </article>
 
 <!-- 하단푸터 -->

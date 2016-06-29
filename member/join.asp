@@ -29,13 +29,13 @@
             <p>한국민속촌에 가입하시면 다양한 혜택과 서비스를 언제 어디서나 편리하게 이용하실 수 있습니다.</p>
             <ul class="join_select_box">
                 <li>
-                    <a href="#none">
+                    <a href="/mobile/member/join_agree.asp">
                         <span class="text">일반 회원가입</span>
                         <span class="icon"><img src="/mobile/images/common/join_select_box_icon.png" alt="" /></span>
                     </a>
                 </li>
                  <li>
-                    <a href="#none">
+                    <a href="/mobile/member/join_child_step1.asp">
                          <span class="text">만 14세미만 회원가입
                             <span class="sm-text">보호자(법적대리인)의 동의가 필요</span>
                          </span>
@@ -43,7 +43,7 @@
                      </a>
                  </li>
                 <li>
-                    <a href="#none">
+                    <a href="/mobile/member/join_agree.asp">
                          <span class="text">외국인 회원가입
                             <span class="sm-text">For Foreigners</span>
                          </span>

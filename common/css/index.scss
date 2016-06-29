@@ -1109,6 +1109,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 
 .detail-login{
 	input[type="text"]{width:100%; padding-bottom:8px; border:0; border-bottom:1px solid #bdb5a0; font-size:1.6em;}
+	input[type="password"]{width:100%; padding-bottom:8px; border:0; border-bottom:1px solid #bdb5a0; font-size:1.6em;}
 	input.login_id{background:url("/mobile/images/member/id_bg.png") no-repeat center right; background-size:26px 16px;}
 	input.login_pw{margin-top:35px; background:url("/mobile/images/member/pw_bg.png") no-repeat center right; background-size:25px 19px;}
 	.check_box_wrap{margin-top:20px;
@@ -1131,7 +1132,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.text_at{display:inline-block; margin-left:-15px; font-size: 1.2em;}
 		.email_01{display:inline-block; width:37%;}
 		.email_02{display:inline-block; width:60%; margin-left:2%;}
-		.email_03{display:inline-block; position:absolute; top:29px; right:0; width:28%; font-size:1.6em;}
+		.email_03{display:inline-block; position:absolute; top:33px; right:0; width:28%; font-size:1.6em;}
 	}
 	.id_search_btn{display:block; width:100%; margin:45px 0 18px; padding:10px 0; font-size:1.8em;}
 	.id{width:100%; padding-bottom:8px; border:0; border-bottom:1px solid #bdb5a0; font-size:1.6em;}
@@ -1294,7 +1295,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.explan_text{margin:35px 0 30px; font-size:1.4em;}
 		input[type="text"]{width:100%; padding-bottom:8px; border:0; border-bottom:1px solid #bdb5a0; font-size:1.6em;}
 		input[type=submit]{text-align:center; border:0; background:#312d22; color:#fff;}
-		.search_btn{width:100%; margin:20px 0 18px; padding:10px 0; font-size:1.8em;}
+		.search_btn{display:block; text-align:center; width:100%; margin:20px 0 18px; padding:10px 0; border:0; background:#312d22; color:#fff; font-size:1.8em;}
 		label{display:block; margin:35px 0 20px; font-size:1.4em;}
 		.check_box_wrap{margin-top:20px;
 			&:after{display:block; content:""; clear:both;}
