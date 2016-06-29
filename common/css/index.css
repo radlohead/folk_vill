@@ -1065,6 +1065,23 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-content.chosun .pre-infor-tab .content ul li .text { display: table-cell; }
 .detail-content.chosun .img_box { margin-top: 20px; }
 
+.detail-content.privacy { padding: 20px 0; border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
+.detail-content.privacy p { font-size: 1.2em; }
+.detail-content.privacy .section h4 { margin: 30px 0 15px; font-size: 1.6em; }
+.detail-content.privacy .section .article_text_box { margin-top: 15px; }
+.detail-content.privacy .section .article_text_box:first-child { margin-top: 0; }
+.detail-content.privacy .section .article_text_box h5 { margin-bottom: 3px; font-size: 1.4em; }
+.detail-content.privacy .section .article_text_box .para1 { margin-top: 20px; }
+.detail-content.privacy .section .text { font-size: 1.2em; }
+.detail-content.privacy .section .para1 { margin-bottom: 20px; }
+.detail-content.privacy dl { margin-bottom: 12px; padding: 7px 14px; background: #f2f2f2; font-size: 1.2em; }
+.detail-content.privacy dl:after { display: block; content: ""; clear: both; }
+.detail-content.privacy dl dt { clear: both; float: left; margin-top: 3px; }
+.detail-content.privacy dl dd { float: left; margin: 3px 0 0 5px; }
+.detail-content.privacy dl dt:first-child { margin: 0; }
+.detail-content.privacy dl dt:first-child + dd { margin-top: 0; }
+.detail-content.privacy .para1 { margin-top: 15px; }
+
 .single-items .slick-track { left: 0 !important; padding: 1px 0; }
 
 .single-items .slick-track a:first-child { border-left: 0; }
