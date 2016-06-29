@@ -88,7 +88,7 @@
                         <span class="icon_img"><img src="/mobile/images/common/plus_icon.png" alt="" /></span>
                     </span>
                 </a>
-                <a href="#none" class="btn inquiry_btn">의견내기</a>
+                <a href="/mobile/customer/voice_form.asp" class="btn inquiry_btn">의견내기</a>
             </div>
         </div>
     </div>

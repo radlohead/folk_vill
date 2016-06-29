@@ -27,9 +27,12 @@ $(document).ready(function(){
                 alert("개인정보보호정책에 체크해주세요");
             }
         });
-        //동의하지않습니다를 클릭시 이전페이지로 이동
+        //동의하지않습니다 클릭시 이전페이지로 이동
         $(".no-agree_btn, .cancel_btn").on("click", function(){
-            history.go(-1);
+            history.go(-2);
+        });
+        $(".qna-list-btn").on("click", function(){
+            location.href = "http://www.koreanfolk.co.kr/mobile/mypage/qna_list.asp";
         });
     })();
 

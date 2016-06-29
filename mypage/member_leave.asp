@@ -49,14 +49,14 @@
                         </li>
                     </ol>
                 </div>
-                <form action="" method="post" class="member_leave">
+                <form name="member_leave_form" action="" method="post" class="member_leave">
                     <h5>본인확인</h5>
                     <label for="id" class="hidden">아이디</label>
                     <input type="text" id="id" class="id" name="id" placeholder="아이디" />
                     <label for="pw" class="hidden">비밀번호</label>
                     <input type="text" id="pw" class="pw" name="pw" placeholder="비밀번호" />
                     <span class="cert_btn_box">
-                        <a href="#none" class="btn ok_btn">확인</a>
+                        <a href="#none" class="btn member_leave_btn ok_btn">확인</a>
                         <a href="#none" class="btn cancel_btn">취소</a>
                     </span>
                 </form>
@@ -76,6 +76,23 @@
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 initialSlide: 5
+            });
+
+            $(".member_leave_btn").on("click", function(){
+                var mv_form = document.member_leave_form;
+
+                if(mv_form.id.value == false){
+                    alert("아이디를 입력해 주세요");
+                }
+                else if(mv_form.pw.value == false){
+                    alert("현재 사용중인 비밀번호를 입력해 주세요");
+                }else if(mv_form.pw.value.length < 6 || mv_form.pw.value.length > 14){
+                    alert("비밀번호는 6~14자 이하로 입력해 주세요");
+                }else if(confirm("정말로 회원탈퇴를 하시겠습니까?")){
+                    if(true){
+                        alert("회원탈퇴 처리가 되었습니다.");
+                    }
+                }
             });
         });
     </script>

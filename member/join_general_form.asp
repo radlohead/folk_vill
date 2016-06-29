@@ -6,6 +6,7 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.html" -->
+    <!--#include virtual="/mobile/common/inc/script.html" -->
 </head>
 <body>
 <!-- 메뉴 -->
@@ -290,7 +291,7 @@
                     </li>
                 </ul>
                 <span class="cert_btn_box">
-                    <a href="#none" class="btn ok_btn">확인</a>
+                    <a href="#none" class="btn join_ok_btn ok_btn">확인</a>
                     <a href="#none" class="btn cancel_btn">취소</a>
                 </span>
             </form>
@@ -307,12 +308,24 @@
 <!-- 우편번호 찾기 팝업-->
 <!--#include virtual="/mobile/member/inc/post_search.asp" -->
 
-<!--#include virtual="/mobile/common/inc/script.html" -->
+
 
 <script>
-    $(".ok_btn, .search_btn").on("click", function(){
+    //아이디중복확인 팝업 취소버튼 클릭시 팝업사라짐
+    function pop_close(){
+        $(".id_dup.cancel_btn, .cancel_btn").on("click", function(){
+            $(this).closest(".popup_wrap").css("visibility","hidden");
+        });
+        $(".id_dup_true.ok_btn, .popup_close-btn").on("click", function(){
+            $(this).closest(".popup_wrap").css("visibility","hidden");
+        });
+    };
+    pop_close();
+
+    $(".join_ok_btn").on("click", function(){
         var form = document.join_form;
         var id_dup_form = document.id_dup_form;
+        var id_dup_true_form = document.id_dup_true_form;
         var post_form = document.post_form;
 
         if(form.name.value == false){
@@ -374,12 +387,6 @@
         }
     });
 
-//아이디중복확인 팝업 취소버튼 클릭시 팝업사라짐
-(function(){
-    $(".id_dup.cancel_btn").on("click", function(){
-        $(this).closest(".popup_wrap").css("visibility","hidden");
-    });
-})();
 </script>
 </body>
 </html>

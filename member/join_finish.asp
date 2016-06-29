@@ -50,6 +50,10 @@
 
 </div>
 <!--#include virtual="/mobile/common/inc/script.html" -->
-
+<script>
+    $(".ok_btn").on("click", function(){
+        location.href = "/mobile/index.asp"
+    });
+</script>
 </body>
 </html>

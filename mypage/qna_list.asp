@@ -85,7 +85,7 @@
                         <span class="icon_img"><img src="/mobile/images/common/plus_icon.png" alt="" /></span>
                     </span>
                 </a>
-                <a href="#none" class="btn inquiry_btn">1:1상담문의</a>
+                <a href="/mobile/customer/qna_form.asp" class="btn inquiry_btn">1:1상담문의</a>
             </div>
         </div>
     </div>

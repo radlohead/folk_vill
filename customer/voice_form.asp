@@ -38,12 +38,12 @@
                 </span>
             </div>
             <div class="content customer">
-                <form class="write-page">
+                <form name="write_page" action="" method="post" class="write-page">
                     <div class="title_box">
                         <label for="title">유형</label>
                         <div class="select_box voice-category">
                             <select name="category">
-                                <option value="선택">선택</option>
+                                <option value="">선택</option>
                                 <option value="칭찬">칭찬</option>
                                 <option value="신고">신고</option>
                                 <option value="제안">제안</option>
@@ -57,7 +57,7 @@
                     <textarea name="content" placeholder="내용"></textarea>
                 </form>
                 <span class="cert_btn_box">
-                    <a href="#none" class="btn ok_btn">등록하기</a>
+                    <a href="#none" class="btn join_child_btn ok_btn">등록하기</a>
                     <a href="#none" class="btn cancel_btn">취소하기</a>
                 </span>
             </div>
@@ -75,6 +75,21 @@
                 slidesToShow: 3,
                 initialSlide: 2
             });
+
+            (function(){
+                $(".join_child_btn").on("click", function(){
+                    var wp_form = document.write_page;
+
+                    if(wp_form.category.value == false){
+                        alert("유형을 선택해 주세요");
+                    }else if(wp_form.title.value == false){
+                        alert("제목을 입력해 주세요");
+                    }else if(wp_form.content.value == false){
+                        alert("내용을 입력해 주세요");
+                    }
+
+                });
+            })();
         });
     </script>
 

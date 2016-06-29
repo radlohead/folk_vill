@@ -37,7 +37,7 @@
                        최선을 다하겠습니다.
                     </p>
                 </div>
-                <a href="#none" class="btn inquiry_btn">메인으로</a>
+                <a href="/mobile/index.asp" class="btn inquiry_btn">메인으로</a>
             </div>
         </div>
     </div>

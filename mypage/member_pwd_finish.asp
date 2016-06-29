@@ -37,7 +37,7 @@
                     </p>
                 </div>
                 <span class="cert_btn_box">
-                    <a href="#none" class="btn ok_btn">메인으로</a>
+                    <a href="/mobile/index.asp" class="btn ok_btn">메인으로</a>
                     <a href="#none" class="btn cancel_btn">다시입력</a>
                 </span>
             </div>

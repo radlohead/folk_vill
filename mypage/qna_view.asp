@@ -59,7 +59,7 @@
                      <a href="#none" class="btn next-btn">다음 글 보기</a>
                      <span class="rg_btn">
                          <a href="#none" class="btn del-btn">삭제</a>
-                         <a href="#none" class="btn list-btn">목록</a>
+                         <a href="#none" class="btn qna-list-btn list-btn">목록</a>
                      </span>
                  </span>
             </div>

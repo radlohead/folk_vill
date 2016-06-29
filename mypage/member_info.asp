@@ -32,7 +32,7 @@
                 </span>
             </div>
             <div class="content member">
-               <form action="" method="post" class="join_form">
+               <form name="join_form" action="" method="post" class="join_form">
                     <label for="name" class="nameLa">이름</label>
                     <input type="text" id="name" class="name" name="name" placeholder="이름" />
                     <label for="name" class="nameLa">성별</label>
@@ -276,7 +276,7 @@
                         </li>
                     </ul>
                     <span class="cert_btn_box">
-                        <a href="#none" class="btn ok_btn">확인</a>
+                        <a href="#none" class="btn join_ok_btn ok_btn">확인</a>
                         <a href="#none" class="btn cancel_btn">취소</a>
                     </span>
                 </form>
@@ -289,6 +289,10 @@
 
 </div>
 <!--#include virtual="/mobile/common/inc/script.html" -->
+
+<!-- 우편번호 찾기 팝업-->
+<!--#include virtual="/mobile/member/inc/post_search.asp" -->
+
     <script>
         $(document).ready(function(){
             $('.multiple-items').slick({
@@ -299,6 +303,83 @@
             });
         });
     </script>
+<script>
+    //아이디중복확인 팝업 취소버튼 클릭시 팝업사라짐
+    function pop_close(){
+        $(".id_dup.cancel_btn, .cancel_btn").on("click", function(){
+            $(this).closest(".popup_wrap").css("visibility","hidden");
+        });
+        $(".id_dup_true.ok_btn, .popup_close-btn").on("click", function(){
+            $(this).closest(".popup_wrap").css("visibility","hidden");
+        });
+    };
+    pop_close();
 
+    $(".join_ok_btn").on("click", function(){
+        var form = document.join_form;
+        var id_dup_form = document.id_dup_form;
+        var id_dup_true_form = document.id_dup_true_form;
+        var post_form = document.post_form;
+
+        if(form.name.value == false){
+            alert("이름을 입력해 주세요");
+        }else if(form.sex.value == false){
+            alert("성별을 입력해 주세요");
+        }
+        else if(form.birth_date_01.value == false){
+            alert("년도를 선택해 주세요");
+        }else if(form.birth_date_02.value == false){
+            alert("월을 선택해 주세요");
+        }else if(form.birth_date_03.value == false){
+             lert("일을 선택해 주세요");
+        }
+        else if($(".solarLa").css("background-position") == "-36px 0px" && $(".lunarLa").css("background-position") == "-36px 0px"){
+            alert("앙력과 음력을 선택해 주세요");
+        }else if($(".solarLa").css("background-position") == "-58px 0px" && $(".lunarLa").css("background-position") == "-58px 0px"){
+            alert("앙력과 음력중 하나만 선택해 주세요");
+        }
+        else if(form.id.value.length < 6 || form.id.value.length > 14){
+            alert("아이디는 6~14자 이하로 입력해 주세요");
+        }
+        else if(id_dup_form.id_dup_chk.value.length < 6 || id_dup_form.id_dup_chk.value.length > 14){
+            alert("아이디는 6~14자 이하로 입력해 주세요");
+        }
+        else if(form.pw.value.length < 6 || form.pw.value.length > 14){
+            alert("비밀번호는 6~14자 이하로 입력해 주세요");
+        }
+        else if(form.pw_chk.value == false){
+            alert("비밀번호를 한번 더 입력해 주세요");
+        }
+        else if(form.pw.value != form.pw_chk.value){
+            alert("비밀번호가 일치하지 않습니다.");
+        }
+        else if($(".solar_popLa").css("background-position") == "-36px 0px" && $(".lunar_popLa").css("background-position") == "-36px 0px"){
+            alert("지번과 도로명을 선택해 주세요");
+        }else if($(".solar_popLa").css("background-position") == "-58px 0px" && $(".lunar_popLa").css("background-position") == "-58px 0px"){
+            alert("지번과 도로명중 하나만 선택해 주세요");
+        }
+        else if(post_form.address.value == false){
+            alert("주소를 입력해 주세요");
+        }
+        else if(form.tel_01.value == false){
+            alert("전화번호 앞자리를 선택해 주세요");
+        }
+        else if(form.tel_02.value == false){
+            alert("나머지 전화번호를 선택해 주세요");
+        }
+        else if(form.phone_01.value == false){
+            alert("휴대폰번호 앞자리를 선택해 주세요");
+        }
+        else if(form.phone_02.value == false){
+            alert("나머지 휴대폰번호를 선택해 주세요");
+        }
+        else if(form.email_01.value == false){
+            alert("이메일 아이디를 입력해 주세요");
+        }else if(form.email_02.value == false){
+            alert("이메일 주소를 입력해 주세요");
+        }
+    });
+
+</script>
 </body>
 </html>
