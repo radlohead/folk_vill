@@ -385,6 +385,9 @@ $(document).ready(function(){
 		if(location.href == "http://www.koreanfolk.co.kr/mobile/member/find_idpw.asp#tab2"){
 			$(".menu2").trigger("click");
 		}
+		$(".pw_search").on("click", function(){
+			$(".menu2").trigger("click");
+		});
 	})();
 
 	//pc,모바일 구분

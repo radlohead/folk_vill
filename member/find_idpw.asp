@@ -38,13 +38,13 @@
                 <!-- #tab1 id찾기-->
                 <div class="tab-content tabMenu1">
                     <p class="text">가입하신 이메일/휴대폰으로 아이디를 확인하실 수 있습니다.</p>
-                    <form action="" method="post">
+                    <form name="id_search_form" action="" method="post">
                         <label for="name" class="nameLa">이름</label>
                         <input type="text" id="name" class="name" name="name" placeholder="이름" />
                         <label for="phone">휴대폰 번호</label>
                         <div class="phone_box">
                             <select name="phone_01" class="phone_01">
-                                <option value="선택">선택</option>
+                                <option value="">선택</option>
                                 <option value="010">010</option>
                                 <option value="011">011</option>
                                 <option value="016">016</option>
@@ -58,7 +58,7 @@
                             <input type="text" id="email_01" class="email_01" name="email_01" placeholder="이메일 아이디" />
                             <input type="text" id="email_02" class="email_02" name="email_02" placeholder="이메일 주소" />
                             <select name="email_03" class="email_03">
-                                <option value="직접입력">직접입력</option>
+                                <option value="">직접입력</option>
                                 <option value="dreanwiz.com">dreanwiz.com</option>
                                 <option value="empal.com">empal.com</option>
                                 <option value="freechal.com">freechal.com</option>
@@ -82,7 +82,7 @@
                     <p class="text02">가입하신 휴대폰/이메일로 비밀번호를 확인하실 수 있습니다.<br/>
                                     (임시 비밀번호 이메일 전송)
                     </p>
-                    <form action="" method="post">
+                    <form name="pw_search_form" action="" method="post">
                         <label for="id">아이디</label>
                         <input type="text" id="id" class="id" name="id" placeholder="아이디" />
                         <label for="name" class="nameLa">이름</label>
@@ -90,7 +90,7 @@
                         <label for="phone">휴대폰 번호</label>
                         <div class="phone_box">
                             <select name="phone_01" class="phone_01">
-                                <option value="선택">선택</option>
+                                <option value="">선택</option>
                                 <option value="010">010</option>
                                 <option value="011">011</option>
                                 <option value="016">016</option>
@@ -104,7 +104,7 @@
                             <input type="text" id="email_01" class="email_01" name="email_01" placeholder="이메일 아이디" />
                             <input type="text" id="email_02" class="email_02" name="email_02" placeholder="이메일 주소" />
                             <select name="email_03" class="email_03">
-                                <option value="직접입력">직접입력</option>
+                                <option value="">직접입력</option>
                                 <option value="dreanwiz.com">dreanwiz.com</option>
                                 <option value="empal.com">empal.com</option>
                                 <option value="freechal.com">freechal.com</option>
@@ -120,7 +120,7 @@
                             </select>
                         </div>
 
-                        <a href="#none" class="btn id_search_btn">비밀번호 찾기</a>
+                        <a href="#none" class="btn pw_search_btn">비밀번호 찾기</a>
                     </form>
                 </div>
             </div>
@@ -132,6 +132,51 @@
 
 </div>
 <!--#include virtual="/mobile/common/inc/script.html" -->
+
+<script>
+    //아이디 찾기
+    $(".id_search_btn").on("click", function(){
+        var is_form = document.id_search_form;
+
+        if(is_form.name.value == false){
+            alert("이름을 입력해 주세요");
+        }
+        else if(is_form.phone_01.value == false){
+            alert("휴대폰번호 앞자리를 선택해 주세요");
+        }
+        else if(is_form.phone_02.value == false){
+            alert("나머지 휴대폰번호를 선택해 주세요");
+        }
+        else if(is_form.email_01.value == false){
+            alert("이메일 아이디를 입력해 주세요");
+        }else if(is_form.email_02.value == false){
+            alert("이메일 주소를 입력해 주세요");
+        }
+    });
+
+    //비밀번호 찾기
+    $(".pw_search_btn").on("click", function(){
+        var ps_form = document.pw_search_form;
+
+        if(ps_form.id.value.length < 6 || ps_form.id.value.length > 14){
+            alert("아이디는 6~14자 이하로 입력해 주세요");
+        }
+        else if(ps_form.name.value == false){
+            alert("이름을 입력해 주세요");
+        }
+        else if(ps_form.phone_01.value == false){
+            alert("휴대폰번호 앞자리를 선택해 주세요");
+        }
+        else if(ps_form.phone_02.value == false){
+            alert("나머지 휴대폰번호를 선택해 주세요");
+        }
+        else if(ps_form.email_01.value == false){
+            alert("이메일 아이디를 입력해 주세요");
+        }else if(ps_form.email_02.value == false){
+            alert("이메일 주소를 입력해 주세요");
+        }
+    });
+</script>
 
 </body>
 </html>

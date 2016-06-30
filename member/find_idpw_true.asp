@@ -45,7 +45,7 @@
                         </em>
                     </div>
                     <span class="cert_btn_box">
-                        <a href="#none" class="btn ok_btn">비밀번호 찾기</a>
+                        <a href="#none" class="btn pw_search ok_btn">비밀번호 찾기</a>
                         <a href="#none" class="btn cancel_btn">메인으로</a>
                     </span>
                 </div>

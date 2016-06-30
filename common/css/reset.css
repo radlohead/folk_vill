@@ -24,7 +24,7 @@ input:checked[type="checkbox"]{-webkit-appearance:checkbox}
 input[type="radio"]{border:none;-webkit-appearance:none}
 button,input[type="button"],input[type="submit"],input[type="reset"],input[type="file"]{-webkit-appearance:button;border-radius:0}
 textarea{-webkit-appearance:none}
-select{-webkit-appearance:menulist-text}
+select{-webkit-appearance:menulist-text; border:0;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
 .hidden{width:1px; height:1px; position:absolute; clip:rect(1px,1px,1px,1px);}
 *:focus{outline:none;}

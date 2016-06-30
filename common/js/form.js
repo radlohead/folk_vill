@@ -25,6 +25,8 @@ $(document).ready(function(){
                 alert("이용약관 동의에 체크해주세요");
             }else if(policy_agree == no_chk){
                 alert("개인정보보호정책에 체크해주세요");
+            }else{
+                location.href = "http://www.koreanfolk.co.kr/mobile/member/join_auth_select.asp";
             }
         });
         //동의하지않습니다 클릭시 이전페이지로 이동

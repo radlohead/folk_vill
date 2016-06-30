@@ -760,6 +760,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .email_box .email_02 { display: inline-block; width: 60%; margin-left: 2%; }
 .detail-login .email_box .email_03 { display: inline-block; position: absolute; top: 33px; right: 0; width: 28%; font-size: 1.6em; }
 .detail-login .id_search_btn { display: block; width: 100%; margin: 45px 0 18px; padding: 10px 0; font-size: 1.8em; }
+.detail-login .pw_search_btn { display: block; width: 100%; margin: 45px 0 18px; padding: 10px 0; font-size: 1.8em; }
 .detail-login .id { width: 100%; padding-bottom: 8px; border: 0; border-bottom: 1px solid #bdb5a0; font-size: 1.6em; }
 .detail-login .tab { margin-top: 28px; }
 .detail-login .tab .title { overflow: hidden; padding: 10px 15px; border-top: 1px solid #d5d5d5; border-bottom: 1px solid #eaeaea; }
