@@ -1,3 +1,5 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/common.inc"-->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,13 +7,14 @@
 	<title>한국 민속촌 모바일 사이트</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
 	<meta name="format-detection" content="telephone=no, address=no, email=no" />
-    <script src="/mobile/common/js/jquery-1.9.1.min.js"></script>
-    <script src="/mobile/common/js/swiper.min.js"></script>
-    <script src="/mobile/common/js/common.js"></script>
 	<link rel="stylesheet" type="text/css" href="common/css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="common/css/swiper.min.css" />
 	<link rel="stylesheet" type="text/css" href="common/css/index.css" />
 	<link rel="stylesheet" type="text/css" href="common/css/media.css" />
+	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/common/js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="/mobile/common/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/mobile/common/js/common.js"></script>
 	<script>
     //할인프로모션 온라인쿠폰 배너 높이값
     	function mainTab(){
@@ -26,34 +29,12 @@
 </head>
 <body>
 <!-- 메뉴 -->
-<!--#include virtual="/mobile/common/inc/gnb.html" -->
-
+<!--#include virtual="/mobile/common/inc/gnb.asp" -->
 	<div class="wrap">
-<!-- 상단헤더 -->
-		<div class="header_wrap">
-			<header>
-				<h1 class="logo">
-					<a href="/mobile"><img src="/mobile/images/common/logo.png" alt="한국민속촌 모바일 홈 바로가기" /></a>
-				</h1>
-				<a href="#" class="gnb_btn"><img src="/mobile/images/common/gnb_btn.gif" alt="전체메뉴열기버튼" /></a>
-			</header>
-		</div>
+		<!--#include virtual="/mobile/common/inc/header_wrap.asp" --><!-- 상단헤더 -->
 
 <!-- 메인슬라이드 -->
-		<div class="main-slide swiper-container">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide"><img src="/mobile/images/index/main_slide01.jpg" alt="웰컴투 조선 2016년 4월9일 부터 6월12일까지" /></div>
-				<div class="swiper-slide"><img src="/mobile/images/index/main_slide01.jpg" alt="웰컴투 조선 2016년 4월9일 부터 6월12일까지" /></div>
-				<div class="swiper-slide"><img src="/mobile/images/index/main_slide01.jpg" alt="웰컴투 조선 2016년 4월9일 부터 6월12일까지" /></div>
-			</div>
-			<!-- Add Pagination -->
-			<div class="swiper-pagination">
-
-			</div>
-			<!-- Add Arrows -->
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-		</div>
+		<!--#include file="main_slide.asp" -->
 
 <!-- 메뉴컨텐츠 -->
 		<div class="main-content-menu">
@@ -66,6 +47,8 @@
 		</div>
 
 <!-- 2단탭배너 -->
+
+
 		<div class="main-tab">
 			<ul class="tabMenu">
 				<li class="menu1 on" rel="tabMenu1">
@@ -76,26 +59,11 @@
 				</li>
 			</ul>
 			<!-- #tab1 -->
-			<div class="tab-content tabMenu1">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="/mobile/images/index/main-tab1_img01.jpg" alt="" /></div>
-					<div class="swiper-slide"><img src="/mobile/images/index/main-tab1_img02.jpg" alt="" /></div>
-				</div>
-				<!-- Add Arrows -->
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-			</div>
+			<!--#include file="discount_promotion.asp" -->
 			<!-- #tab2 -->
-			<div class="tab-content tabMenu2">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="/mobile/images/index/main-tab2_img01.jpg" alt="" /></div>
-					<div class="swiper-slide"><img src="/mobile/images/index/main-tab2_img02.jpg" alt="" /></div>
-				</div>
-				<!-- Add Arrows -->
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-			</div>
+			<!--#include file="online_coupon.asp" -->
 		</div>
+
 <!-- 한국민속촌 정기공연 -->
 		<div class="today">
 			<div class="main-top">
@@ -144,26 +112,7 @@
 		</div>
 
 <!-- 공지사항 -->
-		<div class="notice">
-			<div class="main-top">
-				<h3><img src="/mobile/images/index/notice_title.png" alt="공지사항 머리말" /></h3>
-				<a href="#none" class="more_btn"><span class="hidden">더보기</span></a>
-			</div>
-			<ul>
-				<li>
-					<span class="icon guide_icon"></span>
-					<a href="#none" class="text orange">한국민속촌 정기공연 변경안내(4/18~)</a>
-				</li>
-				<li>
-					<span class="icon guide_icon"></span>
-					<a href="#none" class="text">아시안 푸드 레스토랑 '테라스그린' 오픈 안내</a>
-				</li>
-				<li>
-					<span class="icon discount_icon"></span>
-					<a href="#none" class="text">해피포인트 제휴 할인 이벤트</a>
-				</li>
-			</ul>
-		</div>
+		<!--#include virtual="/mobile/notice.asp" -->
 
 <!-- 생생현장 -->
 		<div class="vivi-site">
@@ -179,7 +128,17 @@
 <!--#include virtual="/mobile/common/inc/footer.html" -->
 	</div>
 	<script>
+
+		function mainTab(){
+			var tabMenuH = $(".tabMenu").height();
+			var tabMenu1H = $(".tabMenu1").height();
+			$(".main-tab").height(tabMenuH + tabMenu1H);
+		}
+
 		$(document).ready(function(){
+
+			mainTab();
+
 			var mySwiper_a = new Swiper('.main-slide', {
 				pagination:'.main-slide .swiper-pagination',
 				paginationClickable: true,

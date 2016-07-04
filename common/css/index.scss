@@ -167,7 +167,8 @@ aside.gnb{display:none; position:absolute; top:15px; right:0; width:93%; height:
 			.icon{display:table-cell; width:25px; height:15px; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px;}
 			.guide_icon{background-position:-154px 0;}
 			.discount_icon{background-position:-189px 0;}
-			.text{display:table-cell; padding-left:3%; vertical-align:middle; letter-spacing:-1px; font-size:1.4em;}
+			//.text{display:table-cell; padding-left:3%; vertical-align:middle; letter-spacing:-1px; font-size:1.4em;}
+			.text{display:-webkit-box; overflow:hidden; text-overflow:ellipsis; -webkit-box-orient:vertical; -webkit-line-clamp:1; padding-left:3%; vertical-align:middle; letter-spacing:-1px; font-size:1.4em;}
 			.orange{color:#f47920;}
 			&:after{clear:both; content:""; display:block;}
 		}

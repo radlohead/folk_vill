@@ -9,7 +9,7 @@
 </head>
 <body>
 <!-- 메뉴 -->
-<!--#include virtual="/mobile/common/inc/gnb.html" -->
+<!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
 <div class="wrap">
     <!-- 상단헤더 -->

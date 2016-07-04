@@ -1,3 +1,130 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/common.inc"-->
+<%
+	Dim code_name, seq, pg, hopecode_name
+	seq		= SQLInjectionFilter(Request("seq"))
+	pg		= SQLInjectionFilter(Request("pg"))
+	FileURL	= "/upload/coupon/"
+
+	If IsNumeric(seq) = False Then f_AlertBack("정상적 접근이 아닙니다.")
+	If IsNumeric(pg) = False Then f_AlertBack("정상적 접근이 아닙니다.")
+
+	'==========================================================================
+	' 개인정보 LOAD
+	'==========================================================================
+	' 미 로그인시 로그인 페이지로..
+
+	' VV 로그인 체크소스 웹꺼 가져옴 // 모바일화 시켜야
+'	If session("id") = "" Then
+'		If couponSEQ = "" Then
+'			Response.Write "<form name='form1' method='post' action='https://www.koreanfolk.co.kr/member/login.asp'>"
+'			Response.Write "<input type='hidden' name='RtnURL' value='/information/coupon_view.asp'>"
+'			Response.Write "<input type='hidden' name='event' value='coupon'>"
+'			Response.Write "</form>"
+'			Response.Write "<script language='javascript'>"
+'			Response.Write "alert('로그인후 이용해 주세요.');"
+'			Response.Write "document.form1.submit();"
+'			Response.Write "</script>"
+'			Response.End
+'		Else
+'			Response.Write "<form name='form1' method='post' action='https://www.koreanfolk.co.kr/member/login.asp'>"
+'			Response.Write "<input type='hidden' name='RtnURL' value='/information/coupon_view.asp'>"
+'			Response.Write "<input type='hidden' name='event' value='coupon'>"
+'			Response.Write "<input type='hidden' name='couponSEQ' value='"&couponSEQ&"'>"
+'			Response.Write "</form>"
+'			Response.Write "<script language='javascript'>"
+'			Response.Write "alert('로그인후 이용해 주세요.');"
+'			Response.Write "document.form1.submit();"
+'			Response.Write "</script>"
+'			Response.End			
+'		End If 
+'	Else
+'		If couponSEQ = "" Then
+'			Response.Write "<script language='javascript'>"
+'			Response.Write "location.href='/information/coupon_list.asp'"
+'			Response.Write "</script>"
+'			Response.End
+'		End If 		
+'	End If
+	'==========================================================================
+
+	Call OpenDbConnection() '데이터베이스 열기
+
+	'######################################################
+	'# TBL_COUPON TABLE SELECT START
+	'######################################################
+
+	Set objcmd = Server.CreateObject("ADODB.Command")
+	With objcmd
+
+		.ActiveConnection = Conn
+		.CommandText = "SP_HUGO7_TBL_COUPON_SELECT_M"
+		.CommandType = adCmdStoredProc
+
+		.Parameters.Append .CreateParameter("@SEQ", adInteger, adParamInput, 0, seq)
+
+		Set Rs = .Execute
+
+	End With
+	Set objcmd = Nothing
+
+	'######################################################
+	'# TBL_COUPON TABLE SELECT END
+	'######################################################
+
+	If(Not Rs.EOF or Not Rs.BOF) Then
+
+		title		= Rs("TITLE")
+		sdate		= Rs("SDATE")
+		edate		= Rs("EDATE")
+		files1		= Rs("FILES1")
+		files2		= Rs("FILES2")
+		files3		= Rs("FILES3")
+		alt1		= Rs("ALT1")
+		alt2		= Rs("ALT2")
+		alt3		= Rs("ALT3")
+		contents1	= Rs("CONTENTS1")
+		contents2	= Rs("CONTENTS2")
+		status		= Rs("STATUS")
+		showsdate	= Rs("SHOWSDATE")
+		showedate	= Rs("SHOWEDATE")
+		regdate		= Rs("REGDATE")
+
+
+		' #######################################################################
+		'회원정보 가져오기
+		' #######################################################################
+'		strSQL = ""
+'		strSQL = "SELECT BIRTHYEAR,BIRTHMONTH,BIRTHDAY,MOBILE1,MOBILE2,MOBILE3 FROM TBL_MEMBER"
+'		strSQL = strSQL & " WHERE UID = '"& session("id") &"'"
+'		Set cRs = Conn.Execute(strSQL)
+'
+'		If Not(cRs.bof OR cRs.eof) Then
+'			birthyear = cRs(0)
+'			birthmonth = cRs(1)
+'			birthday = cRs(2)			
+'			mobile1 = cRs(3)
+'			mobile2 = cRs(4)
+'			mobile3 = cRs(5)
+'		End If 
+'
+'		cRs.Close
+'		Set cRs = Nothing
+		' #######################################################################
+
+	Else
+
+		Response.Write ("<script language='javascript'>")
+		Response.Write (" alert('현재 글은 존재하지 않습니다.');")
+		Response.Write (" history.back();")
+		Response.Write ("</script>")
+		Response.End
+
+	End If
+
+	Call RsClose()
+	Call CloseDbConnection()
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -9,11 +136,9 @@
 </head>
 <body>
 <!-- 메뉴 -->
-<!--#include virtual="/mobile/common/inc/gnb.html" -->
-
-<div class="wrap">
-<!-- 상단헤더 -->
-<!--#include virtual="/mobile/common/inc/header.html" -->
+<!--#include virtual="/mobile/common/inc/gnb.asp" -->
+	<div class="wrap">
+	<!--#include virtual="/mobile/common/inc/header_wrap.asp" --><!-- 상단헤더 -->
 
     <div class="header_title_slide">
         <div class="title">
@@ -22,7 +147,7 @@
                 <h2>할인정보
                     <span class="icon"></span>
                 </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.html" -->
+			<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
             </aside>
         </div>
 
@@ -42,20 +167,20 @@
             <div class="detail-content coupon-view">
                 <p class="coupon-title">
                     <em>COUPON</em>
-                    <span class="text">신규회원을 위한 봄시즌 자유이용권 25% 할인쿠폰</span>
+                    <span class="text"><%=title%></span>
                 </p>
                 <article>
-                    <span class="coupon"><img src="/mobile/images/information/discount/coupon_img01.png" alt="할인쿠폰" /></span>
+                    <span class="coupon"><img src="<%=FileURL%><%=files3%>" alt="<%=alt3%>" /></span>
                     <span class="coupon_bottom_bg"></span>
                     <dl>
                         <dt>이름</dt>
-                        <dd>안정근</dd>
+                        <dd><%'=session("name")%></dd>
                         <dt>휴대폰</dt>
-                        <dd>010-9383-5241</dd>
+                        <dd><%'Response.Write mobile1 & "-" & mobile2 & "-" & mobile3%></dd>
                         <dt>생년월일</dt>
-                        <dd>1986-04-30</dd>
+                        <dd><%'Response.Write birthyear & "-" & birthmonth & "-" & birthday%></dd>
                         <dt>사용기간</dt>
-                        <dd>2016-03-01 ~ 2016-04-30</dd>
+                        <dd><%'=sdate%> ~ <%'=edate%></dd>
                     </dl>
                 </article>
                 <h4>우대혜택</h4>
@@ -65,11 +190,14 @@
                 </span>
                 <h4>이용안내</h4>
                 <ul>
+					<%=contents2%>
+					<!--
                     <li><span class="text">마이페이지 > MY 쿠폰페이지에서 확인 가능</span></li>
                     <li><span class="text">본인에 한해 적용되며, 중복할인 제외</span></li>
                     <li><span class="text">쿠폰과 함께 본인 확인이 가능한 신분증을 매표소에 제출</span></li>
                     <li><span class="text">신분증은 이름과 생년월일이 확인되는 신분증으로 제시 (주민등록증, 의료보험증, 등본, 학생증, 여권, 기타 자격증 등)</span></li>
                     <li><span class="text">쿠폰과 신분증의 생년월일이 다를 경우 할인혜택 적용 불가</span></li>
+					-->
                 </ul>
             </div>
         </div>

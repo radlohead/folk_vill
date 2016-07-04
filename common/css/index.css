@@ -112,7 +112,7 @@ aside.gnb footer { padding-left: 0; padding-right: 0; }
 .notice ul li .icon { display: table-cell; width: 25px; height: 15px; background: url("/mobile/images/common/sprite.png") no-repeat; background-size: 300px 500px; }
 .notice ul li .guide_icon { background-position: -154px 0; }
 .notice ul li .discount_icon { background-position: -189px 0; }
-.notice ul li .text { display: table-cell; padding-left: 3%; vertical-align: middle; letter-spacing: -1px; font-size: 1.4em; }
+.notice ul li .text { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 1; padding-left: 3%; vertical-align: middle; letter-spacing: -1px; font-size: 1.4em; }
 .notice ul li .orange { color: #f47920; }
 .notice ul li:after { clear: both; content: ""; display: block; }
 .notice ul li:last-child { border-bottom: 0; }

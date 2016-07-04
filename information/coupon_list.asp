@@ -1,3 +1,53 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/common.inc"-->
+<%
+
+	Dim SQL, UniqueField, TableName, SelectField, WhereClause, OrderBy
+	Dim TotalRecordCount, TotalPageCount, RecordNumber
+	Dim Debug, DebugMode
+	Dim pgSize, param, pg, keyfield, keyword, code
+
+	Debug		= false ' SQL 디버그 설정(true : 사용, false : 사용안함)
+	DebugMode	= 2 ' SQL 디버그 모드(1 : COUNT 쿼리문 출력, 2 : LIST 쿼리문 출력)
+
+	pg			= SQLInjectionFilter(Nvl(Request("pg"),"1"))
+	keyfield	= SQLInjectionFilter(Nvl(Request("keyfield"),"1"))
+	keyword		= SQLInjectionFilter(Nvl(Request("keyword"),""))
+	param		= "&keyfield=" & keyfield & "&keyword=" & Server.URLEncode(keyword)
+	FileURL		= "/upload/coupon/"
+	today = Date()
+
+	If IsNumeric(pg) = False Then f_AlertBack("정상적 접근이 아닙니다.")
+
+	' 페이징 처리 부분
+	'pgSize		= 15
+	pgSize		= 5
+	UniqueField = "SEQ" ' 시퀀스필드
+	TableName	= "TBL_COUPON_M" ' 테이블명
+	SelectField	= "SEQ,TITLE,SDATE,EDATE,FILES1,FILES2,ALT1,ALT2,CONTENTS1,CONTENTS2,STATUS,SHOWSDATE,SHOWEDATE,REGDATE,FILES3,ALT3" ' select할 필드
+	WhereClause = "STATUS = 'Y'"
+	OrderBy		= "REGDATE DESC" ' 정렬방식
+
+	Call OpenDbConnection() '데이터베이스 열기
+	Call ProcRecordSQL() ' 페이징 처리 서브 호출
+
+	If Not(Rs.BOF OR Rs.EOF) Then
+		rValue = Rs.GetRows
+	Else
+		rValue = Null
+	End If
+
+	totalpage = int(TotalRecordCount / pgSize)
+
+	Nam = TotalRecordCount Mod pgSize
+	If Nam > 0 Then
+	   totalpage = totalpage + 1
+	End If
+
+	'좌측메뉴관련 세팅
+	'Dim mlnb : mlnb = "lnb4" '메인메뉴
+	'Dim slnb : slnb = "lnb41" '서브메뉴
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -9,11 +59,9 @@
 </head>
 <body>
 <!-- 메뉴 -->
-<!--#include virtual="/mobile/common/inc/gnb.html" -->
-
-<div class="wrap">
-<!-- 상단헤더 -->
-<!--#include virtual="/mobile/common/inc/header.html" -->
+<!--#include virtual="/mobile/common/inc/gnb.asp" -->
+	<div class="wrap">
+	<!--#include virtual="/mobile/common/inc/header_wrap.asp" --><!-- 상단헤더 -->
 
     <div class="header_title_slide">
         <div class="title">
@@ -22,7 +70,7 @@
                 <h2>할인정보
                     <span class="icon"></span>
                 </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.html" -->
+				<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
             </aside>
         </div>
 
@@ -47,14 +95,77 @@
                         <col style="width:60.1%">
                         <col style="width:17.3% ">
                     </colgroup>
+				<%
+					If NOT(IsNull(rValue) Or IsEmpty(rValue)) then
+
+						For i = Lbound(rValue,2) To UBound(rValue,2)
+
+							rownum = (TotalRecordCount - (pgSize * (pg-1))) -  i
+
+							seq				= rValue(0,i)
+							title			= rValue(1,i)
+							sdate			= rValue(2,i)
+							edate			= rValue(3,i)
+							files1			= rValue(4,i)
+							files2			= rValue(5,i)
+							alt1			= rValue(6,i)
+							alt2			= rValue(7,i)
+							contents		= rValue(8,i)
+							contents		= Replace(contents,vblf,"<br />") '에디터 사용하지 않을때 변환
+							contents		= rValue(9,i)
+							status			= rValue(10,i)
+							showsdate		= rValue(11,i)
+							showedate		= rValue(12,i)
+							regdate			= rValue(13,i)
+							files3			= rValue(14,i)
+							alt3			= rValue(15,i)
+
+							'If status = "Y" Then
+							'	strstatus = "<font color='#ff4500'>Y</font>"
+							'Else
+							'	strstatus = "N"
+							'End If
+
+							If CDate(showsdate) > CDate(today) Then
+								'strstatus = "<b><font color='#CF2525'>예정</font></b>"
+								strstatus = "<img src='/backend/images/icon_due.gif'>"
+							ElseIf (CDate(showsdate) <= CDate(today) AND CDate(showedate) >= CDate(today)) Then
+								'strstatus = "<b><font color='#09A928'>진행</font></b>"
+								strstatus = "<img src='/backend/images/icon_ing.gif'>"
+							ElseIf CDate(showedate) < CDate(today) Then
+								'strstatus = "<b><font color='#4F4F4F'>종료</font></b>"
+								strstatus = "<img src='/backend/images/icon_end.gif'>"
+							End If
+
+							strSQL = "SELECT COUNT(UID) FROM TBL_COUPON_HISTORY_M WHERE CSEQ = " & seq & ""
+							Set cRs = Conn.Execute(strSQL)
+								cnt = cRs(0)
+							cRs.Close
+							Set cRs = Nothing
+				%>
                     <tr>
                         <td colspan="2">
-                            <div class="board-list-title"><img src="/mobile/images/information/discount/coupon_list_title_01.jpg" alt="" /></div>
+                            <div class="board-list-title">
+							<img src="<%=FileURL%><%=files3%>" alt="<%=alt3%>" style="margin:5px;">
+							</div>
                         </td>
                         <td>
-                            <a href="#none" class="icon icon_more">자세히보기</a>
+                            <a href="/mobile/information/coupon_view.asp?seq=<%=seq%>&pg=<%=pg%>" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
+
+				<%
+						Next
+					Else
+				%>
+					<tr>
+						<td colspan="3">등록된 데이터가 없습니다.</td>
+					</tr>
+				<%
+					End If
+					Call RsClose()
+					Call CloseDbConnection()
+				%>
                 </table>
             </div>
         </div>
