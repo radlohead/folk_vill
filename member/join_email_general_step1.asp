@@ -1,3 +1,14 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/common.inc"-->
+<!--#include virtual="/common/inc/forceSSL.inc"-->
+<%
+	Dim gubun : gubun = RP(Request("gubun"))
+
+	If gubun <> "G" Then
+		sRtnMsg = "비 정상 접속 시도 입니다. 다시 확인해 주세요."
+		CAll f_AlertURL(sRtnMsg, "http://www.koreanfolk.co.kr/mobile/member/join.asp")
+	End If
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,7 +16,140 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
-    <!--#include virtual="/mobile/common/inc/css.html" -->
+    <!--#include virtual="/mobile/common/inc/css.asp" -->
+	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/common/js/common.js"></script>
+	<script type="text/javascript" src="/common/js/Validate.js"></script>
+	<script type="text/javascript"> 
+	<!--
+	//alert('<%=gubun%>');
+	function FormGeneralCheck() {	
+		var v_normal = /[^가-힝]/g; //본래는 '히+ㅎ'까지 체크해야 하나 euc-kr은 '힝'까지만 가능
+
+		if($.trim($("[name=authName]").val())==""){
+		  alert('이름을 입력해 주세요.');
+		  $("#authName").focus();
+		  return;
+		} else if (v_normal.test($.trim($("[name=authName]").val()))) {
+		  alert("이름은 한글만 사용 가능합니다.");
+		  return;
+		}
+
+		if ($("#birthyear").val() == "" || $("#birthmonth").val() == "" || $("#birthday").val() == "") {
+			alert("생년월일을 선택해 주세요.");
+			return;
+		}
+
+		var email = "";
+		if($.trim($("[name=email1]").val()) == "" || $.trim($("[name=email2]").val()) == ""){
+			alert('메일주소를 입력해 주세요.');
+			return;
+		} else {
+			email = $.trim($("[name=email1]").val()) + "@" + $.trim($("[name=email2]").val());
+			if (!isValid_email(email)) {
+				//alert("메일주소를 정확히 입력해 주세요.");
+				return;
+			}
+		}
+
+		var birthDay = $("#birthyear").val()+$("#birthmonth").val()+$("#birthday").val();
+
+		if (isBelow14(birthDay)) {
+		  if (confirm("고객님은 만 14세 미만이므로 회원가입 시 보호자의 동의가 필요합니다.\n[확인]버튼을 누르시면, 만 14세미만회원가입 페이지로 이동합니다.")) {
+			document.location.replace("/mobile/member/join_child_email_step1.asp?gubun=C");
+		  }
+		} else {
+			var frm = document.myFrm;
+
+			frm.target="blank_frame";
+			frm.action="https://www.koreanfolk.co.kr/mobile/member/join_Email_DupAllCheck.asp";
+			frm.submit();
+		}
+	}
+
+	//[11] 만 14세 이하 체크 스크립트
+	function isBelow14( scn1 ) {
+		 today = new Date();
+		 ThisYear = today.getFullYear();
+		 ThisMonth = today.getMonth()+1;
+		 ThisDay = today.getDate();
+
+		 UserBirthYear = parseInt( scn1.substring( 0, 4 ), 10 );
+		 userBirthMonth = parseInt( scn1.substring( 4, 6 ), 10 );
+		 userBirthDay = parseInt( scn1.substring( 6, 8 ), 10 );
+		 
+		 yearDiff = ThisYear - UserBirthYear;
+		 monthDiff = ThisMonth - userBirthMonth;
+		 dayDiff = ThisDay - userBirthDay;
+
+		 if ( yearDiff == 14 ) // 년도 차이가 13이면
+		 {
+			  if ( monthDiff < 0 ) // 만 14세 이하!~
+				   return true;
+			  else if ( monthDiff == 0 )
+				   if ( dayDiff < 0 ) // 만 14세 이하!~
+						return true;
+			  else
+				   return false;
+		 }
+		 else if ( yearDiff < 14)
+		 {
+			  return true;
+		 }
+		 else
+		 {
+			  return false;
+		 }
+	} 
+
+	function setBirthDay(fm) {
+		var form = document.getElementById(fm);
+		var oldMaxDay = form.birthday.length;
+		
+		if (form.birthyear.value == "" || form.birthmonth.value == "") {
+			for (var i = oldMaxDay; i >= 1; i--) {
+				form.birthday.options[i] = null;
+			}
+		} else {
+			var newMaxDay = new Date(new Date(form.birthyear.value, form.birthmonth.value, 1) - 24 * 60 * 60 * 1000).getDate();
+			if (oldMaxDay - 1 - newMaxDay > 0) {
+				for (var i = oldMaxDay; i > newMaxDay; i--) {
+					form.birthday.options[i] = null;
+				}
+			} else if (oldMaxDay - 1 - newMaxDay < 0) {
+				for (var i = oldMaxDay; i <= newMaxDay; i++) {
+					var objOption = document.createElement("option");
+
+					var val = "";
+					if (i < 10) {
+					  val = "0"+i;
+					} else {
+					  val = i;
+					}
+
+					objOption.text = i + "일";
+					objOption.value = val;
+					
+					form.birthday.options.add(objOption);
+				}
+			}
+		}
+	}
+
+	//이메일 도메인 체크
+	function changeEmailDomainID(obj) {	
+		var frm = document.myFrm;
+
+		if (obj.value == "") {
+		  frm.email2.readOnly = false;
+		  frm.email2.value = "직접입력";
+		} else {
+		  frm.email2.readOnly = true;
+		  frm.email2.value = obj.value;
+		}
+	}
+	//-->
+	</script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -13,11 +157,11 @@
 
 <div class="wrap">
 <!-- 상단헤더 -->
-<!--#include virtual="/mobile/common/inc/header.html" -->
+<!--#include virtual="/mobile/common/inc/header.asp" -->
 
     <div class="header_title_slide">
         <div class="title">
-            <h2>아이디·비밀번호 찾기</h2>
+            <h2>이메일 인증 폼</h2>
         </div>
     </div>
 
@@ -33,148 +177,73 @@
                     본인인증 절차를 시행하고 있습니다.
                 </span>
             </div>
-            <form name="join_form" action="" method="post" class="join_form step2">
+			<form id="myFrm" name="myFrm" method="post" class="join_form step2">
+			<input type="hidden" name="gubun" value="<%=gubun%>">
+            <!--<form name="join_form" action="" method="post" class="join_form step2">-->
                 <label for="name" class="nameLa">이름</label>
-                <input type="text" id="name" class="name" name="name" placeholder="이름" />
+                <!--<input type="text" id="name" class="name" name="name" placeholder="이름" />-->
+				<input type="text" id="authName" name="authName" title="이름" style="ime-mode:active" />
 
                 <label for="birth_date_01">생년월일</label>
                 <div class="select_box birth_date_box">
                     <div class="select">
-                        <select name="birth_date_01" class="birth_date_01">
-                            <option value="">년도</option>
-                            <option value="2002">2002년</option>
-                            <option value="2001">2001년</option>
-                            <option value="2000">2000년</option>
-                            <option value="1999">1999년</option>
-                            <option value="1998">1998년</option>
-                            <option value="1997">1997년</option>
-                            <option value="1996">1996년</option>
-                            <option value="1995">1995년</option>
-                            <option value="1994">1994년</option>
-                            <option value="1993">1993년</option>
-                            <option value="1992">1992년</option>
-                            <option value="1991">1991년</option>
-                            <option value="1990">1990년</option>
-                            <option value="1989">1989년</option>
-                            <option value="1988">1988년</option>
-                            <option value="1987">1987년</option>
-                            <option value="1986">1986년</option>
-                            <option value="1985">1985년</option>
-                            <option value="1984">1984년</option>
-                            <option value="1983">1983년</option>
-                            <option value="1982">1982년</option>
-                            <option value="1981">1981년</option>
-                            <option value="1980">1980년</option>
-                            <option value="1979">1979년</option>
-                            <option value="1978">1978년</option>
-                            <option value="1977">1977년</option>
-                            <option value="1976">1976년</option>
-                            <option value="1975">1975년</option>
-                            <option value="1974">1974년</option>
-                            <option value="1973">1973년</option>
-                            <option value="1972">1972년</option>
-                            <option value="1971">1971년</option>
-                            <option value="1970">1970년</option>
-                            <option value="1969">1969년</option>
-                            <option value="1968">1968년</option>
-                            <option value="1967">1967년</option>
-                            <option value="1966">1966년</option>
-                            <option value="1965">1965년</option>
-                            <option value="1964">1964년</option>
-                            <option value="1963">1963년</option>
-                            <option value="1962">1962년</option>
-                            <option value="1961">1961년</option>
-                            <option value="1960">1960년</option>
-                            <option value="1959">1959년</option>
-                            <option value="1958">1958년</option>
-                            <option value="1957">1957년</option>
-                            <option value="1956">1956년</option>
-                            <option value="1955">1955년</option>
-                            <option value="1954">1954년</option>
-                            <option value="1953">1953년</option>
-                            <option value="1952">1952년</option>
-                            <option value="1951">1951년</option>
-                            <option value="1950">1950년</option>
-                            <option value="1949">1949년</option>
-                            <option value="1948">1948년</option>
-                            <option value="1947">1947년</option>
-                            <option value="1946">1946년</option>
-                            <option value="1945">1945년</option>
-                            <option value="1944">1944년</option>
-                            <option value="1943">1943년</option>
-                            <option value="1942">1942년</option>
-                            <option value="1941">1941년</option>
-                            <option value="1940">1940년</option>
-                            <option value="1939">1939년</option>
-                            <option value="1938">1938년</option>
-                            <option value="1937">1937년</option>
-                            <option value="1936">1936년</option>
-                            <option value="1935">1935년</option>
-                            <option value="1934">1934년</option>
-                            <option value="1933">1933년</option>
-                            <option value="1932">1932년</option>
-                            <option value="1931">1931년</option>
-                            <option value="1930">1930년</option>
-                            <option value="1929">1929년</option>
-                            <option value="1928">1928년</option>
-                            <option value="1927">1927년</option>
-                            <option value="1926">1926년</option>
-                            <option value="1925">1925년</option>
-                            <option value="1924">1924년</option>
-                            <option value="1923">1923년</option>
-                            <option value="1922">1922년</option>
-                            <option value="1921">1921년</option>
-                            <option value="1920">1920년</option>
-                            <option value="1919">1919년</option>
-                            <option value="1918">1918년</option>
-                            <option value="1917">1917년</option>
-                            <option value="1916">1916년</option>
-                            <option value="1915">1915년</option>
-                            <option value="1914">1914년</option>
-                            <option value="1913">1913년</option>
-                            <option value="1912">1912년</option>
-                            <option value="1911">1911년</option>
-                            <option value="1910">1910년</option>
-                            <option value="1909">1909년</option>
-                            <option value="1908">1908년</option>
-                            <option value="1907">1907년</option>
-                            <option value="1906">1906년</option>
-                            <option value="1905">1905년</option>
-                            <option value="1904">1904년</option>
-                            <option value="1903">1903년</option>
-                            <option value="1902">1902년</option>
-                            <option value="1901">1901년</option>
-                            <option value="1900">1900년</option>
-                        </select>
+
+					<select name="birthyear" id="birthyear" title="년도 선택" onchange="javascript:setBirthDay('myFrm');">
+						<option value=''>년도</option>
+						<%
+						toyears = year(date)
+
+						For j = (toyears - 14) To 1900 Step - 1
+						%>
+						<option value="<%=j%>"><%=j%>년</option>
+						<%Next%>
+					</select>
+					<!--
+					<select name="birth_date_01" class="birth_date_01">
+					<option value="">년도</option>
+					</select>-->
                     </div>
                     <div class="select">
-                        <select name="birth_date_02" class="birth_date_02">
-                            <option value="">월</option>
-                            <option value="01">1월</option>
-                            <option value="02">2월</option>
-                            <option value="03">3월</option>
-                            <option value="04">4월</option>
-                            <option value="05">5월</option>
-                            <option value="06">6월</option>
-                            <option value="07">7월</option>
-                            <option value="08">8월</option>
-                            <option value="09">9월</option>
-                            <option value="10">10월</option>
-                            <option value="11">11월</option>
-                            <option value="12">12월</option>
-                        </select>
+					<select name="birthmonth" id="birthmonth" title="월 선택" onchange="javascript:setBirthDay('myFrm');" class="birth_date_02">
+						<option value="">월</option>
+						<%
+						For j = 1 To 12
+						If Len(j) < 2 Then
+						j = "0" & j
+						End If
+						%>
+						<option value="<%=j%>"><%=CInt(j)%>월</option>
+						<%Next%>
+					</select>
+					<!--
+					<select name="birth_date_02" class="birth_date_02">
+					<option value="">월</option>
+					</select>
+					-->
                     </div>
                     <div class="select">
-                        <select name="birth_date_03" class="birth_date_03">
-					        <option value="">일</option>
-                        </select>
+					<select name="birthday" id="birthday" title="일 선택" class="birth_date_03">
+						<option value=''>일</option>
+					</select>
+					<!--
+					<select name="birth_date_03" class="birth_date_03">
+					<option value="">일</option>
+					</select>
+					-->
                     </div>
                 </div>
                 <div class="email_box">
                     <label for="email_01">이메일</label>
+					<input type="text" id="email1" name="email1" placeholder="이메일 아이디" style="ime-mode:disabled" class="email_01" />@
+					<input type="text" id="email2" name="email2" placeholder="이메일 주소" style="ime-mode:disabled" class="email_02" />
+					<!--
                     <input type="text" id="email_01" class="email_01" name="email_01" placeholder="이메일 아이디" />
                     <input type="text" id="email_02" class="email_02" name="email_02" placeholder="이메일 주소" />
+					-->
+					<select id="email3" name="email3" title="이메일 도메인 선택" onchange="changeEmailDomainID(this);" class="email_03">
+					<!--
                     <select name="email_03" class="email_03">
+					-->
                         <option value="직접입력">직접입력</option>
                         <option value="dreanwiz.com">dreanwiz.com</option>
                         <option value="empal.com">empal.com</option>
@@ -191,15 +260,19 @@
                     </select>
                 </div>
                 <span class="cert_btn_box">
-                    <a href="#none" class="btn join_email_general_step1 ok_btn">확인</a>
+					<a href="javascript:FormGeneralCheck();" class="btn join_email_general_step1 ok_btn">확인</a>
+					<a href="join.asp" class="btn cancel_btn">취소</a>
+                    <!--
+					<a href="#none" class="btn join_email_general_step1 ok_btn">확인</a>
                     <a href="#none" class="btn cancel_btn">취소</a>
+					-->
                 </span>
             </form>
         </div>
     </div>
 
 <!-- 하단푸터 -->
-<!--#include virtual="/mobile/common/inc/footer.html" -->
+<!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
 <!-- 아이디중복확인 팝업-->
@@ -208,9 +281,10 @@
 <!-- 우편번호 찾기 팝업-->
 <!--#include virtual="/mobile/member/inc/post_search.asp" -->
 
-<!--#include virtual="/mobile/common/inc/script.html" -->
+<!--#include virtual="/mobile/common/inc/script.asp" -->
 
 <script>
+/*
     $(".join_email_general_step1.ok_btn").on("click", function(){
         var form = document.join_form;
         if(form.name.value == false){
@@ -227,6 +301,8 @@
             alert("이메일 주소를 입력해 주세요");
         }
     });
+*/
 </script>
 </body>
 </html>
+<iframe name="blank_frame" src="about:blank" width="0" height="0" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" hspace="0" vspace="0" style="border:0px solid #000;" title="이메일인증일반회원가입아이프레임"></iframe>

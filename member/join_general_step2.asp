@@ -1,3 +1,15 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/common.inc"-->
+<!--#include virtual="/common/inc/forceSSL.inc"-->
+<%
+	Dim gubun : gubun						= RP(Request("gubun"))
+	Dim joinDupleChecked : joinDupleChecked	= RP(Request("joinDupleChecked"))
+
+	If (gubun <> "G" Or joinDupleChecked <> "Y") Then
+		sRtnMsg = "비 정상 접속 시도 입니다. 다시 확인해 주세요."
+		CAll f_AlertURL(sRtnMsg, "/mobile/member/join.asp")
+	End If
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,204 +17,92 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
-    <!--#include virtual="/mobile/common/inc/css.html" -->
+    <!--#include virtual="/mobile/common/inc/css.asp" -->
+	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/common/js/common.js"></script>
+	<script type="text/javascript" src="/common/js/Validate.js"></script>
+	<script type="text/javascript">
+	<!--
+	function jsSubmit() {
+		var frm = document.frm;
+
+		window.open("", "auth_popup", "width=430,height=590,scrollbar=yes");
+
+		frm.target = "auth_popup";
+		frm.action = "https://www.koreanfolk.co.kr/mobile/member/hs_cnfrm_pop.asp?gubun=G";
+		frm.submit();
+	}
+	//-->
+	</script>
 </head>
 <body>
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
 <div class="wrap">
-<!-- 상단헤더 -->
-<!--#include virtual="/mobile/common/inc/header.html" -->
+	<!-- 상단헤더 -->
+	<!--#include virtual="/mobile/common/inc/header.asp" -->
 
     <div class="header_title_slide">
         <div class="title">
-            <h2>아이디·비밀번호 찾기</h2>
+            <h2>회원가입</h2>
         </div>
     </div>
 
     <div class="contents">
+		<form name="frm" method="post">
         <div class="detail-login">
             <div class="detail-head">
                 <h3>회원가입</h3>
             </div>
-            <div class="head-title">
-                <h4>회원가입 인증</h4>
-                <span class="text02">
-                    한국민속촌은 회원님의 정보를 안전하게 보호하기 위해서<br/>
-                    본인인증 절차를 시행하고 있습니다.
+            <h4>회원가입 인증</h4>
+            <p>한국민속촌은 회원님의 정보를 안전하게 보호하기 위해서 본인인증 절차를 시행하고 있습니다.</p>
+            <div class="phone_cert_box">
+                <em>
+                    휴대폰 본인인증으로 가입절차를<br/>
+                    진행하시려면 ‘확인’ 버튼을 클릭해 주세요.
+                </em>
+                <span class="text">
+                    회원님의 정보는 개인정보보호 정책에 의하여<br/>
+                    회원님의 동의 없이 공개되거나<br/>
+                    제 3자에게 제공되지 않습니다.
                 </span>
             </div>
-            <form action="" method="post" class="join_form step2">
-                <label for="name" class="nameLa">이름</label>
-                <input type="text" id="name" class="name" name="name" placeholder="이름" />
-
-                <label for="birth_date_01">생년월일</label>
-                <div class="select_box birth_date_box">
-                    <div class="select">
-                        <select name="birth_date_01" class="birth_date_01">
-                            <option value="">년도</option>
-                            <option value="2002">2002년</option>
-                            <option value="2001">2001년</option>
-                            <option value="2000">2000년</option>
-                            <option value="1999">1999년</option>
-                            <option value="1998">1998년</option>
-                            <option value="1997">1997년</option>
-                            <option value="1996">1996년</option>
-                            <option value="1995">1995년</option>
-                            <option value="1994">1994년</option>
-                            <option value="1993">1993년</option>
-                            <option value="1992">1992년</option>
-                            <option value="1991">1991년</option>
-                            <option value="1990">1990년</option>
-                            <option value="1989">1989년</option>
-                            <option value="1988">1988년</option>
-                            <option value="1987">1987년</option>
-                            <option value="1986">1986년</option>
-                            <option value="1985">1985년</option>
-                            <option value="1984">1984년</option>
-                            <option value="1983">1983년</option>
-                            <option value="1982">1982년</option>
-                            <option value="1981">1981년</option>
-                            <option value="1980">1980년</option>
-                            <option value="1979">1979년</option>
-                            <option value="1978">1978년</option>
-                            <option value="1977">1977년</option>
-                            <option value="1976">1976년</option>
-                            <option value="1975">1975년</option>
-                            <option value="1974">1974년</option>
-                            <option value="1973">1973년</option>
-                            <option value="1972">1972년</option>
-                            <option value="1971">1971년</option>
-                            <option value="1970">1970년</option>
-                            <option value="1969">1969년</option>
-                            <option value="1968">1968년</option>
-                            <option value="1967">1967년</option>
-                            <option value="1966">1966년</option>
-                            <option value="1965">1965년</option>
-                            <option value="1964">1964년</option>
-                            <option value="1963">1963년</option>
-                            <option value="1962">1962년</option>
-                            <option value="1961">1961년</option>
-                            <option value="1960">1960년</option>
-                            <option value="1959">1959년</option>
-                            <option value="1958">1958년</option>
-                            <option value="1957">1957년</option>
-                            <option value="1956">1956년</option>
-                            <option value="1955">1955년</option>
-                            <option value="1954">1954년</option>
-                            <option value="1953">1953년</option>
-                            <option value="1952">1952년</option>
-                            <option value="1951">1951년</option>
-                            <option value="1950">1950년</option>
-                            <option value="1949">1949년</option>
-                            <option value="1948">1948년</option>
-                            <option value="1947">1947년</option>
-                            <option value="1946">1946년</option>
-                            <option value="1945">1945년</option>
-                            <option value="1944">1944년</option>
-                            <option value="1943">1943년</option>
-                            <option value="1942">1942년</option>
-                            <option value="1941">1941년</option>
-                            <option value="1940">1940년</option>
-                            <option value="1939">1939년</option>
-                            <option value="1938">1938년</option>
-                            <option value="1937">1937년</option>
-                            <option value="1936">1936년</option>
-                            <option value="1935">1935년</option>
-                            <option value="1934">1934년</option>
-                            <option value="1933">1933년</option>
-                            <option value="1932">1932년</option>
-                            <option value="1931">1931년</option>
-                            <option value="1930">1930년</option>
-                            <option value="1929">1929년</option>
-                            <option value="1928">1928년</option>
-                            <option value="1927">1927년</option>
-                            <option value="1926">1926년</option>
-                            <option value="1925">1925년</option>
-                            <option value="1924">1924년</option>
-                            <option value="1923">1923년</option>
-                            <option value="1922">1922년</option>
-                            <option value="1921">1921년</option>
-                            <option value="1920">1920년</option>
-                            <option value="1919">1919년</option>
-                            <option value="1918">1918년</option>
-                            <option value="1917">1917년</option>
-                            <option value="1916">1916년</option>
-                            <option value="1915">1915년</option>
-                            <option value="1914">1914년</option>
-                            <option value="1913">1913년</option>
-                            <option value="1912">1912년</option>
-                            <option value="1911">1911년</option>
-                            <option value="1910">1910년</option>
-                            <option value="1909">1909년</option>
-                            <option value="1908">1908년</option>
-                            <option value="1907">1907년</option>
-                            <option value="1906">1906년</option>
-                            <option value="1905">1905년</option>
-                            <option value="1904">1904년</option>
-                            <option value="1903">1903년</option>
-                            <option value="1902">1902년</option>
-                            <option value="1901">1901년</option>
-                            <option value="1900">1900년</option>
-                        </select>
-                    </div>
-                    <div class="select">
-                        <select name="birth_date_02" class="birth_date_02">
-                            <option value="">월</option>
-                            <option value="01">1월</option>
-                            <option value="02">2월</option>
-                            <option value="03">3월</option>
-                            <option value="04">4월</option>
-                            <option value="05">5월</option>
-                            <option value="06">6월</option>
-                            <option value="07">7월</option>
-                            <option value="08">8월</option>
-                            <option value="09">9월</option>
-                            <option value="10">10월</option>
-                            <option value="11">11월</option>
-                            <option value="12">12월</option>
-                        </select>
-                    </div>
-                    <div class="select">
-                        <select name="birth_date_03" class="birth_date_03">
-					        <option value="">일</option>
-                        </select>
-                    </div>
-                </div>
-
-                <label for="phone">휴대폰 번호</label>
-                <div class="select_box phone_box">
-                    <select name="phone_01" class="phone_01">
-                        <option value="선택">선택</option>
-                        <option value="010">010</option>
-                        <option value="011">011</option>
-                        <option value="016">016</option>
-                        <option value="017">017</option>
-                        <option value="018">018</option>
-                        <option value="019">019</option>
-                    </select>
-                    <input type="text" id="phone_02" class="phone_02" name="phone_02" placeholder="휴대폰 번호" />
-                </div>
-                <span class="cert_btn_box">
-                    <a href="#none" class="btn ok_btn">확인</a>
-                    <a href="#none" class="btn cancel_btn">취소</a>
-                </span>
-            </form>
+            <span class="cert_btn_box">
+                <a href="javascript:jsSubmit();" class="btn ok_btn">확인</a>
+                <a href="join.asp" class="btn cancel_btn">취소</a>
+            </span>
         </div>
+		</form>
+
+		<!-- 휴대폰 본인확인 처리결과 정보 -->
+		<form name="kcbResultForm" method="post">
+			<input type="hidden" name="idcf_mbr_com_cd" 		value="" 	/>
+			<input type="hidden" name="hs_cert_svc_tx_seqno" 	value=""	/>
+			<input type="hidden" name="hs_cert_rqst_caus_cd" 	value="" 	/>
+			<input type="hidden" name="hs_cert_msr_cd" 			value="" 	/>
+			<input type="hidden" name="result_cd" 				value="" 	/>
+			<input type="hidden" name="result_msg" 				value="" 	/>
+			<input type="hidden" name="cert_dt_tm" 				value="" 	/>
+			<input type="hidden" name="di" 						value="" 	/>
+			<input type="hidden" name="ci" 						value="" 	/>
+			<input type="hidden" name="name" 					value="" 	/>
+			<input type="hidden" name="birthday" 				value="" 	/>
+			<input type="hidden" name="gender" 					value="" 	/>
+			<input type="hidden" name="nation" 					value="" 	/>
+			<input type="hidden" name="tel_com_cd" 				value="" 	/>
+			<input type="hidden" name="tel_no" 					value="" 	/>
+			<input type="hidden" name="return_msg" 				value="" 	/>
+			<input type="hidden" name="param_r1" value="mobile" />
+			<input type="hidden" name="gubun" value="<%=gubun%>">
+		</form>
     </div>
 
 <!-- 하단푸터 -->
-<!--#include virtual="/mobile/common/inc/footer.html" -->
+<!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!-- 아이디중복확인 팝업-->
-<!--#include virtual="/mobile/member/inc/id_duplicate_chk.asp" -->
-
-<!-- 우편번호 찾기 팝업-->
-<!--#include virtual="/mobile/member/inc/post_search.asp" -->
-
-<!--#include virtual="/mobile/common/inc/script.html" -->
+<!--#include virtual="/mobile/common/inc/script.asp" -->
 
 </body>
 </html>

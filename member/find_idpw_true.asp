@@ -1,3 +1,16 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/common.inc"-->
+<%
+	Dim id : id		= RP(Request("id"))
+
+	If id <> "" Then
+		ConvId = Right(id,3)
+		id = Replace(id,ConvId,"***")
+	Else
+		sRtnMsg = "비 정상 접속 시도 입니다. 다시 확인해 주세요."
+		CAll f_AlertURL(sRtnMsg, "find_idpw.asp")	
+	End If 
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,15 +18,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
-    <!--#include virtual="/mobile/common/inc/css.html" -->
+    <!--#include virtual="/mobile/common/inc/css.asp" -->
 </head>
 <body>
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
 <div class="wrap">
-<!-- 상단헤더 -->
-<!--#include virtual="/mobile/common/inc/header.html" -->
+	<!-- 상단헤더 -->
+	<!--#include virtual="/mobile/common/inc/header.asp" -->
 
     <div class="header_title_slide">
         <div class="title">
@@ -41,12 +54,12 @@
                     <div class="phone_cert_box">
                         <em>
                             회원님의 아이디는<br/>
-                            <b>zergl***</b> 입니다.
+                            <b><%=id%></b> 입니다.
                         </em>
                     </div>
                     <span class="cert_btn_box">
-                        <a href="#none" class="btn pw_search ok_btn">비밀번호 찾기</a>
-                        <a href="#none" class="btn cancel_btn">메인으로</a>
+                        <a href="find_idpw.asp#tab2" class="btn pw_search ok_btn">비밀번호 찾기</a>
+                        <a href="/mobile/" class="btn cancel_btn">메인으로</a>
                     </span>
                 </div>
                 <!-- #tab2 pw찾기-->
@@ -57,8 +70,7 @@
                     <div class="phone_cert_box">
                         <span class="text">
                             회원님의 이메일로 임시 비밀번호를 전송하였습니다.
-                            <em>로그인 후 마이페이지 > 비밀번호변경</em>에서<br/>
-                                수정하시기 바랍니다.
+                            <em>로그인 후 마이페이지 > 비밀번호변경</em>에서<br/>수정하시기 바랍니다.
                         </span>
                     </div>
                     <span class="cert_btn_box">
@@ -71,10 +83,10 @@
     </div>
 
 <!-- 하단푸터 -->
-<!--#include virtual="/mobile/common/inc/footer.html" -->
+<!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.html" -->
+<!--#include virtual="/mobile/common/inc/script.asp" -->
 
 </body>
 </html>

@@ -4,9 +4,11 @@ $(document).ready(function(){
 		if($(".dim").css("display") != "block"){
 			$(".dim, aside.gnb").css("display","block");
 			$(".wrap").css("display","none");
+			console.log("11");
 		}else if($(".dim").css("display") == "block"){
 			$(".dim, aside.gnb").css("display","none");
 			$(".wrap").css("display","block");
+			console.log("22");
 		}
 	});
 
@@ -334,17 +336,19 @@ $(document).ready(function(){
 	};
 
 	//팝업 띄우기
+	/*
 	function popup(){
-		//우편번호찾기팝업 띄우기
+		우편번호찾기팝업 띄우기
 		$(".add_search_btn").on('click', function(){
 			$(".post_pop").css("visibility",'visible');
 		});
-		//우편번호찾기팝업 띄우기
+		아이디찾기팝업 띄우기
 		$(".id_chk_btn").on('click', function(){
 			$(".id_chk_pop").css("visibility",'visible');
 		});
 	}
 	popup();
+	*/
 
 	//faq페이지 q&a 이벤트
 	$(document).ready(function(){
@@ -390,6 +394,31 @@ $(document).ready(function(){
 		});
 	})();
 
+	//회원가입 아이디 중복확인과 우편번호 찾기시 팝업을 화면내에 띄우기
+	$(document).ready(function(){
+		//아이디 중복확인
+		var id_chk = new PopupTop(".id_chk_btn");
+		var ok_btn = new PopupTop(".id_dup.ok_btn");
+	});
+	function PopupTop(selector){
+		this.btn = null;
+		this.hgTop = null;
+		
+		this.event(selector);
+	}
+	PopupTop.prototype.event = function(selector){
+		this.btn = $(selector);
+		var objThis = this;
+
+		//버튼 이벤트
+		this.btn.click(function(e){
+			var hgTop = $("body").scrollTop();
+			$(".pop").css("top","0");
+			$(".pop").css("top",hgTop);
+		})
+	};
+
+
 	//pc,모바일 구분
 	//(function(){
 	//	var filter = "win16|win32|win64|mac";
@@ -403,5 +432,4 @@ $(document).ready(function(){
 	//		}
 	//	}
 	//})();
-
 });

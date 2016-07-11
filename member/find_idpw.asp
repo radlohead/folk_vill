@@ -1,3 +1,5 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/forceSSL.inc"-->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,15 +7,129 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
-    <!--#include virtual="/mobile/common/inc/css.html" -->
+    <!--#include virtual="/mobile/common/inc/css.asp" -->
+	<script type="text/javascript" src="/common/js/Validate.js"></script>
+	<script language="javascript">
+	<!--
+	//아이디찾기 폼 유효성 체크
+	function goFindId(){
+
+		var form = document.frm1;
+
+		if($.trim($("[name=id_name]").val()) == ""){
+		  alert('이름을 입력해 주세요.');
+		  $("#id_name").focus();
+		  return;
+		}
+
+		var handPhoneNo = "";
+		if($.trim($("[name=id_mobile1]").val()) == "" || $.trim($("[name=id_mobile2]").val()) == "" || $.trim($("[name=id_mobile3]").val()) == ""){
+			alert('휴대폰번호를 입력해 주세요.');
+			return;
+		} else {
+			handPhoneNo = $.trim($("[name=id_mobile1]").val()) + "-" + $.trim($("[name=id_mobile2]").val()) + "-" + $.trim($("[name=id_mobile3]").val());
+			var hpNumArr = handPhoneNo.split("-");
+			if (!isHpNum(handPhoneNo) || hpNumArr.length < 3) {
+				alert("휴대폰번호를 정확히 입력하세요.");
+				return;
+			}
+		}
+
+		var email = "";
+		if($.trim($("[name=id_email1]").val()) == "" || $.trim($("[name=id_email2]").val()) == ""){
+			alert('메일주소를 입력해 주세요.');
+			return;
+		} else {
+			email = $.trim($("[name=id_email1]").val()) + "@" + $.trim($("[name=id_email2]").val());
+			if (!isValid_email(email)) {
+				//alert("메일주소를 정확히 입력해 주세요.");
+				return;
+			}
+		}
+
+		form.target = "blank_frame";
+		form.submit();
+	}
+
+	//패스워드 찾기 폼 유효성 체크
+	function goFindPwd(){
+		var form = document.frm2;
+
+		if( $.trim($("#pwd_id").val()) == "" ){
+			alert("아이디를 입력해 주십시오");
+			$("#pwd_id").focus();
+			return false;
+		}
+
+		if( $.trim($("#pwd_name").val()) == "" ){
+			alert("이름을 입력해 주십시오");
+			$("#pwd_name").focus();
+			return false;
+		}
+
+		var handPhoneNo = "";
+		if($.trim($("[name=pwd_mobile1]").val()) == "" || $.trim($("[name=pwd_mobile2]").val()) == "" || $.trim($("[name=pwd_mobile3]").val()) == ""){
+			alert('휴대폰번호를 입력해 주세요.');
+			return;
+		} else {
+			handPhoneNo = $.trim($("[name=pwd_mobile1]").val()) + "-" + $.trim($("[name=pwd_mobile2]").val()) + "-" + $.trim($("[name=pwd_mobile3]").val());
+			var hpNumArr = handPhoneNo.split("-");
+			if (!isHpNum(handPhoneNo) || hpNumArr.length < 3) {
+				alert("휴대폰번호를 정확히 입력하세요.");
+				return;
+			}
+		}
+
+		var email = "";
+		if($.trim($("[name=pwd_email1]").val()) == "" || $.trim($("[name=pwd_email2]").val()) == ""){
+			alert('메일주소를 입력해 주세요.');
+			return;
+		} else {
+			email = $.trim($("[name=pwd_email1]").val()) + "@" + $.trim($("[name=pwd_email2]").val());
+			if (!isValid_email(email)) {
+				//alert("메일주소를 정확히 입력해 주세요.");
+				return;
+			}
+		}
+
+		form.target = "blank_frame";
+		form.submit();
+	}
+
+	//이메일 도메인 체크
+	function changeEmailDomainID(obj,flag) {
+		if (flag == "GI") {//아이디 찾기
+			var frm = document.frm1;
+
+			if (obj.value == "") {
+			  frm.id_email2.readOnly = false;
+			  frm.id_email2.value = "직접입력";
+			} else {
+			  frm.id_email2.readOnly = true;
+			  frm.id_email2.value = obj.value;
+			}
+		} else { //비밀번호 찾기
+			var frm = document.frm2;
+
+			if (obj.value == "") {
+			  frm.pwd_email2.readOnly = false;
+			  frm.pwd_email2.value = "직접입력";
+			} else {
+			  frm.pwd_email2.readOnly = true;
+			  frm.pwd_email2.value = obj.value;
+			}
+		}
+	}
+	//-->
+	</script>
 </head>
 <body>
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
 <div class="wrap">
-<!-- 상단헤더 -->
-<!--#include virtual="/mobile/common/inc/header.html" -->
+	<!-- 상단헤더 -->
+	<!--#include virtual="/mobile/common/inc/header.asp" -->
 
     <div class="header_title_slide">
         <div class="title">
@@ -38,12 +154,13 @@
                 <!-- #tab1 id찾기-->
                 <div class="tab-content tabMenu1">
                     <p class="text">가입하신 이메일/휴대폰으로 아이디를 확인하실 수 있습니다.</p>
-                    <form name="id_search_form" action="" method="post">
+					<form action="find_idpw_proc.asp" method="post" name="frm1" id="frm1">
+					<input type="hidden" name="flag" value="GI" />
                         <label for="name" class="nameLa">이름</label>
-                        <input type="text" id="name" class="name" name="name" placeholder="이름" />
+                        <input type="text" id="id_name" class="name" name="id_name" maxlength="30" placeholder="이름" />
                         <label for="phone">휴대폰 번호</label>
                         <div class="phone_box">
-                            <select name="phone_01" class="phone_01">
+                            <select name="id_mobile1" id="id_mobile1" class="phone_01">
                                 <option value="">선택</option>
                                 <option value="010">010</option>
                                 <option value="011">011</option>
@@ -51,13 +168,15 @@
                                 <option value="017">017</option>
                                 <option value="019">019</option>
                             </select>
-                            <input type="text" id="phone_02" class="phone_02" name="phone_02" placeholder="휴대폰 번호" />
+                            <input type="text" id="id_mobile2" class="phone_02" name="id_mobile2" placeholder="0000" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" maxlength="4" style="width:30%;" />
+							<span style="float:left"> - </span>
+							<input type="text" id="id_mobile3" class="phone_02" name="id_mobile3" placeholder="0000" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" maxlength="4" style="width:30%;" />
                         </div>
                         <div class="email_box">
                             <label for="email_01">이메일</label>
-                            <input type="text" id="email_01" class="email_01" name="email_01" placeholder="이메일 아이디" />
-                            <input type="text" id="email_02" class="email_02" name="email_02" placeholder="이메일 주소" />
-                            <select name="email_03" class="email_03">
+                            <input type="text" id="id_email1" class="email_01" name="id_email1" placeholder="이메일 아이디" />
+                            <input type="text" id="id_email2" class="email_02" name="id_email2" placeholder="이메일 주소" />
+                            <select id="id_email3" name="id_email3" class="email_03" onchange="changeEmailDomainID(this,'GI');">
                                 <option value="">직접입력</option>
                                 <option value="dreanwiz.com">dreanwiz.com</option>
                                 <option value="empal.com">empal.com</option>
@@ -74,7 +193,7 @@
                             </select>
                         </div>
 
-                        <a href="#none" class="btn id_search_btn">아이디 찾기</a>
+                        <a href="javascript:goFindId();" class="btn id_search_btn">아이디 찾기</a>
                     </form>
                 </div>
                 <!-- #tab2 pw찾기-->
@@ -82,28 +201,32 @@
                     <p class="text02">가입하신 휴대폰/이메일로 비밀번호를 확인하실 수 있습니다.<br/>
                                     (임시 비밀번호 이메일 전송)
                     </p>
-                    <form name="pw_search_form" action="" method="post">
+					<form action="find_idpw_proc.asp" method="post" name="frm2" id="frm2">
+					<input type="hidden" name="flag" value="GP" />
                         <label for="id">아이디</label>
-                        <input type="text" id="id" class="id" name="id" placeholder="아이디" />
+                        <input type="text" name="pwd_id" id="pwd_id" maxlength="14" class="id" placeholder="아이디" />
                         <label for="name" class="nameLa">이름</label>
-                        <input type="text" id="name" class="name" name="name" placeholder="이름" />
+                        <input type="text" name="pwd_name" id="pwd_name" maxlength="30" class="name" placeholder="이름" />
                         <label for="phone">휴대폰 번호</label>
                         <div class="phone_box">
-                            <select name="phone_01" class="phone_01">
+                            <select name="pwd_mobile1" id="pwd_mobile1" class="phone_01">
                                 <option value="">선택</option>
-                                <option value="010">010</option>
-                                <option value="011">011</option>
-                                <option value="016">016</option>
-                                <option value="017">017</option>
-                                <option value="019">019</option>
+								<option value="010">010</option>
+								<option value="011">011</option>
+								<option value="016">016</option>
+								<option value="017">017</option>
+								<option value="018">018</option>
+								<option value="019">019</option>
                             </select>
-                            <input type="text" id="phone_02" class="phone_02" name="phone_02" placeholder="휴대폰 번호" />
+                            <input type="text" name="pwd_mobile2" id="pwd_mobile2" maxlength="4" class="phone_02" placeholder="0000" style="width:30%;" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />
+							<span style="float:left"> - </span>
+                            <input type="text" name="pwd_mobile3" id="pwd_mobile3" maxlength="4" class="phone_02" placeholder="0000" style="width:30%;" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />
                         </div>
                         <div class="email_box">
                             <label for="email_01">이메일</label>
-                            <input type="text" id="email_01" class="email_01" name="email_01" placeholder="이메일 아이디" />
-                            <input type="text" id="email_02" class="email_02" name="email_02" placeholder="이메일 주소" />
-                            <select name="email_03" class="email_03">
+                            <input type="text" id="pwd_email1" name="pwd_email1" size="20" class="email_01" placeholder="이메일 아이디" />
+                            <input type="text" id="pwd_email2" name="pwd_email2" class="email_02" placeholder="이메일 주소" />
+                            <select class="email_03" id="pwd_email3" name="pwd_email3" title="이메일 도메인 선택" onchange="changeEmailDomainID(this,'GP');">
                                 <option value="">직접입력</option>
                                 <option value="dreanwiz.com">dreanwiz.com</option>
                                 <option value="empal.com">empal.com</option>
@@ -120,7 +243,7 @@
                             </select>
                         </div>
 
-                        <a href="#none" class="btn pw_search_btn">비밀번호 찾기</a>
+                        <a  href="javascript:void(0);" onclick="goFindPwd();" class="btn pw_search_btn">비밀번호 찾기</a>
                     </form>
                 </div>
             </div>
@@ -128,55 +251,11 @@
     </div>
 
 <!-- 하단푸터 -->
-<!--#include virtual="/mobile/common/inc/footer.html" -->
+<!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.html" -->
-
-<script>
-    //아이디 찾기
-    $(".id_search_btn").on("click", function(){
-        var is_form = document.id_search_form;
-
-        if(is_form.name.value == false){
-            alert("이름을 입력해 주세요");
-        }
-        else if(is_form.phone_01.value == false){
-            alert("휴대폰번호 앞자리를 선택해 주세요");
-        }
-        else if(is_form.phone_02.value == false){
-            alert("나머지 휴대폰번호를 선택해 주세요");
-        }
-        else if(is_form.email_01.value == false){
-            alert("이메일 아이디를 입력해 주세요");
-        }else if(is_form.email_02.value == false){
-            alert("이메일 주소를 입력해 주세요");
-        }
-    });
-
-    //비밀번호 찾기
-    $(".pw_search_btn").on("click", function(){
-        var ps_form = document.pw_search_form;
-
-        if(ps_form.id.value.length < 6 || ps_form.id.value.length > 14){
-            alert("아이디는 6~14자 이하로 입력해 주세요");
-        }
-        else if(ps_form.name.value == false){
-            alert("이름을 입력해 주세요");
-        }
-        else if(ps_form.phone_01.value == false){
-            alert("휴대폰번호 앞자리를 선택해 주세요");
-        }
-        else if(ps_form.phone_02.value == false){
-            alert("나머지 휴대폰번호를 선택해 주세요");
-        }
-        else if(ps_form.email_01.value == false){
-            alert("이메일 아이디를 입력해 주세요");
-        }else if(ps_form.email_02.value == false){
-            alert("이메일 주소를 입력해 주세요");
-        }
-    });
-</script>
+<!--#include virtual="/mobile/common/inc/script.asp" -->
 
 </body>
 </html>
+<iframe name="blank_frame" src="about:blank" width="0" height="0" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" hspace="0" vspace="0" title="아이디비밀번호찾기폼아이프레임"></iframe>

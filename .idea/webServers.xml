@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="fc6acfa8-ad49-407f-8759-02bc079a51ff" name="중국어웰킨" url="http://wk2005.cafe24.com">
+        <fileTransfer host="wk2005.cafe24.com" port="5501" password="dfd9dfcfdfcfdfd9dfcbdfdddf98df9adf9bdf99" username="wk2005">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

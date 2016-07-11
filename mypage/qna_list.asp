@@ -1,3 +1,69 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/common.inc"-->
+<%
+	If session("id") = "" Then
+		Response.write "<script language='javascript'>"
+		Response.write " alert('로그인후 이용해 주세요.');"
+		Response.write " location.href='/member/login.asp?RtnURL=http://www.koreanfolk.co.kr/mypage/qna_list.asp';"
+		Response.write "</script>"
+		Response.End
+	End If
+
+	Dim filename : filename = "qna_list.asp"
+
+	Dim SQL, UniqueField, TableName, SelectField, WhereClause, OrderBy
+	Dim TotalRecordCount, TotalPageCount, RecordNumber
+	Dim Debug, DebugMode
+	Dim pgSize, param, pg, keyfield, keyword, code
+	Dim code_name
+
+	Debug = false ' SQL 디버그 설정(true : 사용, false : 사용안함)
+	DebugMode = 2 ' SQL 디버그 모드(1 : COUNT 쿼리문 출력, 2 : LIST 쿼리문 출력)
+
+	pg			= SQLInjectionFilter(Nvl(Request("pg"),"1"))
+	keyfield	= SQLInjectionFilter(Nvl(Request("keyfield"),"1"))
+	keyword		= SQLInjectionFilter(Nvl(Request("keyword"),""))
+	code		= SQLInjectionFilter(Nvl(Request("code"),""))
+	param		= "&keyfield="&keyfield&"&keyword="&Server.URLEncode(keyword)&"&code="&code
+	
+	today		= Date()
+
+	If IsNumeric(pg) = False Then f_AlertBack("정상적 접근이 아닙니다.")	
+
+	' 페이징 처리 부분 
+	pgSize		= 15
+	UniqueField	= "SEQ" ' 시퀀스필드
+	TableName	= "TBL_INQUIRY" ' 테이블명
+	SelectField	= "SEQ,CODE,UID,NAME,TITLE,CONTENTS,ANSWER,ANSWER_YN,STATUS,READCNT,REGDATE,ANSWERDATE"
+	' select할 필드
+
+	WhereClause = "UID = '"& session("id") &"'"
+
+	If keyword <> "" then
+		If keyfield <> "" Then
+			WhereClause = WhereClause & " AND " & keyfield & " LIKE '%" & keyword & "%'" ' 검색조건
+		End If
+	End If
+
+	'OrderBy = "ANSWER_YN ASC, REGDATE DESC" ' 정렬방식
+	OrderBy = "REGDATE DESC" ' 정렬방식
+
+	Call OpenDbConnection() '데이터베이스 열기
+	Call ProcRecordSQL() ' 페이징 처리 서브 호출
+
+	If Not(Rs.BOF OR Rs.EOF) Then
+		rValue = Rs.GetRows
+	Else
+		rValue = Null
+	End If
+
+	totalpage = int(TotalRecordCount / pgSize)
+
+	Nam = TotalRecordCount Mod pgSize
+	If Nam > 0 Then
+	   totalpage = totalpage + 1
+	End If
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,7 +71,24 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
-<!--#include virtual="/mobile/common/inc/css.html" -->
+	<!--#include virtual="/mobile/common/inc/css.asp" -->
+	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/common/js/common.js"></script>
+	<script type="text/javascript" src="/common/js/Validate.js"></script>
+	<script language="javascript">
+	<!--
+	function Del(seq,pg,uid) {
+		var bool = confirm("선택하신 내용을 정말로 삭제하시겠습니까?\n\n확인 하시고 삭제 하시기 바랍니다.");
+		if (bool){
+			location.href = "qna_del_proc.asp?seq=" + seq + "&pg=" + pg + "&uid=" + uid;
+		}
+	}
+
+	function Write() {
+		location.href = "https://www.koreanfolk.co.kr/customer/qna_form.asp";
+	}
+	//-->
+	</script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -13,14 +96,14 @@
 
 <div class="wrap">
 <!-- 상단헤더 -->
-<!--#include virtual="/mobile/common/inc/header.html" -->
+<!--#include virtual="/mobile/common/inc/header.asp" -->
 
     <div class="header_title_slide">
         <div class="title">
             <h2>마이페이지</h2>
         </div>
 
-<!--#include virtual="/mobile/mypage/inc/mypage_topmenu.html" -->
+	<!--#include virtual="/mobile/mypage/inc/mypage_topmenu.asp" -->
     </div>
 
     <div class="contents">
@@ -36,20 +119,67 @@
                         <col style="width:82.5%">
                         <col style="width:17.5% ">
                     </colgroup>
+
+					<%
+					If NOT(IsNull(rValue) Or IsEmpty(rValue)) Then
+					
+						For i = Lbound(rValue,2) To UBound(rValue,2)
+
+							rownum = (TotalRecordCount - (pgSize * (pg-1))) -  i
+
+							'SEQ,CODE,UID,NAME,TITLE,CONTENTS,ANSWER,ANSWER_YN,STATUS,READCNT,REGDATE,ANSWERDATE
+
+							seq				= rValue(0,i)
+							code			= rValue(1,i)
+							uid				= rValue(2,i)
+							name			= rValue(3,i)
+							title			= rValue(4,i)
+							contents		= rValue(5,i)
+							contents		= Replace(Trim(contents),vblf,"<br>") '에디터 사용하지 않을때 변환
+							answer			= Nvl(rValue(6,i),"")
+							answer			= Replace(Trim(answer),chr(13)&chr(10),"<br>") '에디터 사용시 변환
+							answer_yn		= rValue(7,i)
+							status			= rValue(8,i)
+							readcount		= rValue(9,i)
+							regdate			= rValue(10,i)
+							answerdate		= rValue(11,i)								
+					%>
+
                     <tr>
                         <td>
                             <div class="board-list-title">
-                                <h4>직원분 칭찬합니다</h4>
+                                <h4><%=cutStrNew(title, 34)%></h4>
                                 <div class="text_icon_box">
-                                    <span class="text_date">2016. 08. 08</span>
+                                    <span class="text_date"><%=DateYMDFormat(regdate)%></span>
+								<%If answer_yn = "N" Then%>
                                     <span class="icon prepare"></span>
+								<%Else%>
+                                    <span class="icon complete"></span>
+								<%End If%>
                                 </div>
                             </div>
                         </td>
                         <td>
-                            <a href="#none" class="icon icon_more">자세히보기</a>
+                            <a href="qna_view.asp?seq=<%=seq%>" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
+					<%
+						Next
+					Else
+					%>
+					<tr>
+						<%If keyword = "" Then%>
+						<td colspan="2">등록된 데이터가 없습니다.</td>
+						<%Else%>
+						<td colspan="2" class="no_result">검색 내용이 없습니다.</td>
+						<%End If%>
+					</tr>
+					<%
+					End If
+					Call RsClose()
+					Call CloseDbConnection()
+					%>
+					<!--
                     <tr>
                         <td>
                             <div class="board-list-title">
@@ -78,6 +208,7 @@
                             <a href="#none" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
+					-->
                 </table>
                 <a href="#none" class="more_btn">
                     <span class="text_icon_box">
@@ -91,10 +222,10 @@
     </div>
 
 <!-- 하단푸터 -->
-<!--#include virtual="/mobile/common/inc/footer.html" -->
+<!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.html" -->
+<!--#include virtual="/mobile/common/inc/script.asp" -->
     <script>
         $(document).ready(function(){
             $('.multiple-items').slick({

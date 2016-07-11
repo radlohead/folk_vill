@@ -29,7 +29,7 @@
 	'########################################################
 	'# HTML FORM값 가져오기 END
 	'########################################################
-	
+
 	'########################################################
 	'# 비밀번호 암호화 START
 	'########################################################
@@ -53,7 +53,7 @@
 	'########################################################
 
 	Set objCmd = Server.CreateObject("ADODB.Command")
-	With objCmd								
+	With objCmd
 		.ActiveConnection = Conn
 		.CommandText = "SP_HUGO7_LOGIN_CHECK"
 		.CommandType = adCmdStoredProc
@@ -76,7 +76,7 @@
 		Session.Timeout=60
 		session("id")																= Trim(Rs("UID"))
 		session("name")															= Trim(Rs("NAME"))
-		
+
 	ElseIf Ret = "0" Then
 		If RtnURL = "none" Then
 			Response.write "<script language='javascript'>"
@@ -109,21 +109,22 @@
 			End If
 		End if
 	End If
-	
+
 	CloseDbConnection() '데이터베이스 클로즈
 
 	If RtnURL = "none" Then
 		Response.write "<script language='javascript'>"
 		Response.write "parent.location.href='http://www.koreanfolk.co.kr/mobile/';"
 		Response.write "</script>"
-		Response.End	
+		Response.End
 	Else
 		If ev = "" then
-			Response.write "<script language='javascript'>"		
+			Response.write "<script language='javascript'>"
 			'Response.WRite "alert('"&RtnURL&"');"
+			Response.WRite "alert('로그인 완료');"
 			Response.write "parent.location.href='" & RtnURL & "'"
 			Response.write "</script>"
-			Response.End	
+			Response.End
 		ElseIf ev = "coupon" Then
 			Response.Write "<form name='form1' method='post' action='http://www.koreanfolk.co.kr/mobile" & RtnURL & "' target='_parent'>"
 			Response.Write "<input type='hidden' name='couponSEQ' value=" & couponSEQ & ">"
@@ -131,7 +132,7 @@
 			Response.Write "<script language='javascript'>"
 			Response.Write " document.form1.submit();"
 			Response.Write "</script>"
-			Response.End	
-		End If 		
+			Response.End
+		End If
 	End if
 %>

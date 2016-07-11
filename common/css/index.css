@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.radioWrap input[type="radio"] { display: none; }
+
+.radioWrap input[type="radio"] + label { float: left; width: 18px; height: 18px; display: block; padding: 0; background: url("/mobile/images/member/sprite-member.png") no-repeat; background-position: -36px 0; background-size: 250px 250px; }
+
+.radioWrap input[type="radio"]:checked + label { float: left; width: 18px; height: 18px; display: block; padding: 0; background: url("/mobile/images/member/sprite-member.png") no-repeat; background-position: -59px 0; background-size: 250px 250px; }
+
+.block { overflow: hidden; display: block !important; margin-bottom: 7px; }
+
 html, body { height: 100%; }
 
 .text-hidden { color: transparent; }
@@ -189,12 +197,12 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-show .detail-head .text-box .text { display: block; font-size: 1.4em; }
 
 .detail-guide .detail-head { overflow: hidden; margin-bottom: 30px; }
-.detail-guide .detail-head h3 { float: left; width: 42%; font-size: 2.25em; color: #333; font-weight: bold; }
-.detail-guide .detail-head .text-box { float: right; width: 58%; color: #000; letter-spacing: -0.05em; }
-.detail-guide .detail-head .text-box .text { display: block; font-size: 1.4em; }
+.detail-guide .detail-head h3 { float: left; width: 42%; font-size: 2.4em; color: #333; font-weight: bold; }
+.detail-guide .detail-head .text-box { float: right; width: 56.2%; color: #000; letter-spacing: -0.05em; }
+.detail-guide .detail-head .text-box .text { display: block; font-size: 1.2em; }
 .detail-guide .detail-head .text-box .text::before { content: ""; display: block; float: left; width: 15px; height: 15px; margin-top: 1px; margin-right: 8px; background: url("/mobile/images/common/sprite.png") no-repeat -158px -208px; background-size: 300px 500px; }
 .detail-guide .detail-head .text-box .text02 { display: block; padding: 1px 0; font-size: 1.4em; letter-spacing: -1.5px; }
-.detail-guide .detail-head .text-box .guide-time { display: block; margin-top: 11px; margin-left: 23px; font-size: 1.4em; color: #f08200; letter-spacing: 0; }
+.detail-guide .detail-head .text-box .guide-time { display: block; margin-top: 11px; margin-left: 23px; font-size: 1em; color: #f08200; letter-spacing: 0; line-height: 14px; }
 .detail-guide .detail-head .text-box .guide-time .text { display: block; }
 .detail-guide .detail-head .text-box .guide-time .time { color: #666; }
 .detail-guide .detail-head02 { margin-top: 45px; }
@@ -235,8 +243,8 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .content-head .pdf-down { display: block; position: absolute; right: 0; bottom: 0; width: 14%; height: 24%; }
 .content-head map { position: absolute; top: 0; left: 0; }
 
-.pre-infor-tab { margin-top: 28px; }
-.pre-infor-tab .title { overflow: hidden; padding: 10px 15px; border-top: 2px solid #f08200; border-bottom: 1px solid #bdb5a0; }
+.pre-infor-tab { margin-top: 40px; }
+.pre-infor-tab .title { overflow: hidden; }
 .pre-infor-tab .title h3 { float: left; font-size: 1.75em; line-height: 110%; }
 .pre-infor-tab .title .icon { display: block; float: right; width: 10px; height: 6px; margin-top: 8px; background: url("/mobile/images/common/sprite.png") no-repeat -55px -264px; background-size: 300px 500px; }
 .pre-infor-tab .title .icon.on { display: block; float: right; width: 10px; height: 6px; margin-top: 8px; background: url("/mobile/images/common/sprite.png") no-repeat -15px -264px; background-size: 300px 500px; }
@@ -305,32 +313,36 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .idpw-tab .phone_box .phone_02 { float: left; margin-left: 3%; width: 70%; }
 .idpw-tab label { display: block; margin: 35px 0 20px; font-size: 1.2em; }
 
-.operate-time table th { padding: 7px 0; border-top: 2px solid #f08200; font-size: 1.4em; }
-.operate-time table th:first-child { border-right: 5px solid #fff; }
-.operate-time table td { padding: 7px 0; border-bottom: 1px solid #dedacf; font-size: 1.4em; }
-.operate-time table td:first-child { border-right: 5px solid #fff; }
+.operate-time table th { padding: 7px 0; border-top: 2px solid #f08200; font-size: 0.9em; }
+.operate-time table th:nth-child(2) { border-left: 5px solid #fff; border-right: 5px solid #fff; }
+.operate-time table td { padding: 7px 0; border-bottom: 1px solid #bdb5a0; border-right: 5px solid #fff; font-size: 0.9em; }
+.operate-time table td:last-child { border-right: 0; }
 .operate-time table tr:first-child td { border-top: 1px solid #bdb5a0; }
 .operate-time table tr:last-child td { border-bottom: 1px solid #bdb5a0; }
 .operate-time table.use-pay td:first-child { border-right: 0; }
 .operate-time table.use-pay td[rowspan="2"] { border-right: 1px solid #dedacf; }
-.operate-time .attention { margin-top: 12px; font-size: 1.4em; }
-.operate-time .attention li { display: table; margin-top: 4px; }
-.operate-time .attention li em { display: table-cell; padding-right: 7px; white-space: nowrap; color: #f29322; font-weight: bold; }
-.operate-time .attention li .text { display: table-cell; }
-.operate-time .attention li p { display: table; margin: 1px 0; }
+.operate-time table.use-pay tbody tr:nth-child(odd) td:nth-child(2) { border-right: 5px solid #fff; }
+.operate-time table.use-pay tbody tr:nth-child(odd) td:nth-child(3) { border-right: 5px solid #fff; }
+.operate-time table.use-pay tbody tr:nth-child(even) td:nth-child(1) { border-right: 5px solid #fff; }
+.operate-time table.use-pay tbody tr:nth-child(even) td:nth-child(2) { border-right: 5px solid #fff; }
+.operate-time .attention { margin-top: 12px; }
+.operate-time .attention li { margin-top: 6px; }
+.operate-time .attention li em { display: block; padding-right: 7px; white-space: nowrap; color: #f29322; font-weight: bold; font-size: 1.5em; }
+.operate-time .attention li .text { display: block; line-height: 20px; font-size: 1.2em; }
+.operate-time .attention li p { display: table; margin: 1px 0; font-size: 1.2em; }
 .operate-time .attention li p span { display: table-cell; }
-.operate-time .attention li p .icon { padding-right: 3px; color: #f29322; }
+.operate-time .attention li p .icon { padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size: 3px 3px; }
+.operate-time .attention li p .icon img { width: 3px; }
 
-.prefer-infor { padding: 0 4.2%; }
-.prefer-infor h4 { font-weight: bold; font-size: 1.4em; color: #f08200; }
+.prefer-infor h5 { font-weight: bold; font-size: 1.4em; color: #f08200; }
 .prefer-infor ul { margin: 5px 0 16px; }
 .prefer-infor ul li { margin-top: 2px; font-size: 1.4em; }
 .prefer-infor ul li:before { content: "·"; display: inline-block; padding-right: 3px; color: #766341; }
 .prefer-infor p { display: table; margin: 5px 0 16px; font-size: 1.4em; }
 .prefer-infor p span { display: table-cell; }
-.prefer-infor p .icon { padding-right: 3px; color: #766341; }
+.prefer-infor p .icon { padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size: 3px 3px; }
 
-.contents h4 { font-size: 1.7em; }
+.contents h4 { font-size: 1.9em; }
 .contents h5 { font-size: 1.4em; }
 .contents table { width: 100%; }
 .contents table td { text-align: center; }
@@ -736,7 +748,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-content.daily table.course .font12 { font-size: 0.875em; }
 .detail-content.daily table.course .font12 .color_orange { color: #f08200; }
 
-.detail-login input[type="text"] { width: 100%; padding-bottom: 8px; border: 0; border-bottom: 1px solid #bdb5a0; font-size: 1.6em; }
+.detail-login input[type="text"] { width: 100%; margin-bottom: 40px; padding-bottom: 8px; border: 0; border-bottom: 1px solid #bdb5a0; font-size: 1.6em; }
 .detail-login input[type="password"] { width: 100%; padding-bottom: 8px; border: 0; border-bottom: 1px solid #bdb5a0; font-size: 1.6em; }
 .detail-login input.login_id { background: url("/mobile/images/member/id_bg.png") no-repeat center right; background-size: 26px 16px; }
 .detail-login input.login_pw { margin-top: 35px; background: url("/mobile/images/member/pw_bg.png") no-repeat center right; background-size: 25px 19px; }
@@ -746,6 +758,11 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .check_box_wrap input[type="checkbox"] + label { display: block; float: left; width: 18px; height: 18px; background: url("/mobile/images/member/sprite-member.png") no-repeat -36px 0; background-size: 250px 250px; }
 .detail-login .check_box_wrap input[type="checkbox"]:checked + label { display: block; width: 18px; height: 18px; background: url("/mobile/images/member/sprite-member.png") no-repeat -58px 0; background-size: 250px 250px; }
 .detail-login .check_box_wrap .text { float: left; display: block; margin-left: 7px; font-size: 1.2em; }
+.detail-login .login input[type="text"]:focus { background: url("/mobile/images/member/id_bg.png") no-repeat right center; background-size: 26px; }
+.detail-login .login .id { background: url("/mobile/images/member/id_bg.png") no-repeat right center; background-size: 26px; }
+.detail-login .login .password { background: url("/mobile/images/member/pw_bg.png") no-repeat right center; background-size: 25px; }
+.detail-login .radioWrap { display: inline-block; clear: both; }
+.detail-login .radioWrap .text { float: left; display: block; margin-left: 7px; font-size: 1.2em; }
 .detail-login input[type=submit] { text-align: center; border: 0; background: #312d22; color: #fff; }
 .detail-login .btn { text-align: center; border: 0; background: #312d22; color: #fff; }
 .detail-login .login_btn { width: 100%; margin: 45px 0 18px; padding: 10px 0; font-size: 1.8em; }
@@ -755,9 +772,9 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .email_box { position: relative; }
 .detail-login .email_box:after { display: block; content: ""; clear: both; }
 .detail-login .email_box label { display: block; }
-.detail-login .email_box .text_at { display: inline-block; margin-left: -15px; font-size: 1.2em; }
+.detail-login .email_box .text_at { display: inline-block; }
 .detail-login .email_box .email_01 { display: inline-block; width: 37%; }
-.detail-login .email_box .email_02 { display: inline-block; width: 60%; margin-left: 2%; }
+.detail-login .email_box .email_02 { display: inline-block; width: 55%; margin-left: 2%; }
 .detail-login .email_box .email_03 { display: inline-block; position: absolute; top: 33px; right: 0; width: 28%; font-size: 1.6em; }
 .detail-login .id_search_btn { display: block; width: 100%; margin: 45px 0 18px; padding: 10px 0; font-size: 1.8em; }
 .detail-login .pw_search_btn { display: block; width: 100%; margin: 45px 0 18px; padding: 10px 0; font-size: 1.8em; }
@@ -834,12 +851,14 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .join_form .address_wrap .add_01_box .add_01 { position: absolute; bottom: 0; float: left; width: 54.5%; margin: 0; }
 .detail-login .join_form .address_wrap input[type="text"] { margin-top: 12px; }
 .detail-login .join_form .tel_box select.tel_01 { width: 27%; }
-.detail-login .join_form .tel_box .tel_02 { float: right; width: 70%; }
+.detail-login .join_form .tel_box .tel_02 { width: 31%; padding: 0 2%; }
 .detail-login .join_form .caution { margin: 23px 0; }
 .detail-login .join_form .caution li { display: table; margin-top: 10px; }
 .detail-login .join_form .caution li:first-child { margin: 0; }
 .detail-login .join_form .caution li span { display: table-cell; font-size: 1.2em; }
 .detail-login .join_form .caution li .icon { padding-right: 3px; color: #f29322; }
+.detail-login .join_form .predata { display: block; padding-bottom: 8px; border-bottom: 1px solid #bdb5a0; font-size: 1.6em; }
+.detail-login .join_form .select_box.phone_box { font-size: 1.6em; }
 .detail-login .join_form.step2 label { display: block; margin: 35px 0 20px; font-size: 1.2em; }
 .detail-login .join_form.step2 label:after { content: ""; }
 .detail-login .join_form.step2 .cert_btn_box { display: block; margin-top: 35px; }

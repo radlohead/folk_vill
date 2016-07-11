@@ -1,3 +1,29 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/common.inc"-->
+<%
+	Dim filename : filename = "faq.asp"
+
+	Dim SQL, UniqueField, TableName, SelectField, WhereClause, OrderBy
+	Dim TotalRecordCount, TotalPageCount, RecordNumber
+	Dim Debug, DebugMode
+	Dim pgSize, param, pg, search, keyword
+	Dim code_name
+	Dim WhereClause1, WhereClause2, WhereClause3
+
+	Debug		= false		' SQL 디버그 설정(true : 사용, false : 사용안함)
+	DebugMode	= 2			' SQL 디버그 모드(1 : COUNT 쿼리문 출력, 2 : LIST 쿼리문 출력)
+
+	pg			= SQLInjectionFilter(Nvl(Request("pg"),"1"))
+	keyfield	= SQLInjectionFilter(Nvl(Request("keyfield"),"2"))
+	keyword		= SQLInjectionFilter(Nvl(Request("keyword"),""))
+	code		= SQLInjectionFilter(Nvl(Request("code"),""))
+	param		= "&keyfield="&keyfield&"&keyword="&Server.URLEncode(keyword)&"&code="&code
+
+	today		= Date()
+
+	If IsNumeric(pg) = False Then f_AlertBack("정상적 접근이 아닙니다.")
+	If Len(code) > 5 Then f_AlertBack("정상적 접근이 아닙니다.")
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,7 +31,24 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
-    <!--#include virtual="/mobile/common/inc/css.html" -->
+    <!--#include virtual="/mobile/common/inc/css.asp" -->
+	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/common/js/common.js"></script>
+	<script type="text/javascript" src="/common/js/Validate.js"></script>
+	<script type="text/javascript">
+	function doSearch() {
+		var form = document.search;
+
+		if(!HasContent(form.keyword.value)) {
+			alert("검색어를 입력해 주세요.");
+			$("#keyword").val("");
+			$("#keyword").focus();
+			return;
+		}
+
+	   document.search.submit();
+	}
+	</script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -13,7 +56,7 @@
 
 <div class="wrap">
 <!-- 상단헤더 -->
-<!--#include virtual="/mobile/common/inc/header.html" -->
+<!--#include virtual="/mobile/common/inc/header.asp" -->
 
     <div class="header_title_slide">
         <div class="title">
@@ -36,16 +79,24 @@
             <div class="content customer">
                 <form>
                     <div class="select_box category">
+					<!--
                         <select name="category" class="category">
                             <option value="선택">선택</option>
                             <option value="제목">제목</option>
                             <option value="제목+내용">제목+내용</option>
                             <option value="내용">내용</option>
                         </select>
+					-->
+						<select name="keyfield" id="keyfield" class="category">
+							<option label="선택" value="" <%If keyfield = "" Then Response.Write("selected")%>>선택</option>
+							<option label="제목" value="1" <%If keyfield = "1" Then Response.Write("selected")%>>제목</option>
+							<option label="제목+내용" value="2" <%If keyfield = "2" Then Response.Write("selected")%>>제목+내용</option>
+							<option label="내용" value="3" <%If keyfield = "3" Then Response.Write("selected")%>>내용</option>
+						</select>
                     </div>
                     <div class="cate_search">
-                        <input type="text" name="cate_search_text" id="cate_search_text" class="cate_search_text" />
-                        <a href="#none" class="search_btn"></a>
+                        <input type="text" name="keyword" id="keyword" maxlength="20" class="cate_search_text" value="<%=keyword%>" />
+                        <a href="javascript:doSearch();" class="search_btn"></a>
                     </div>
                 </form>
                 <p class="faq_title_text">
@@ -56,210 +107,432 @@
                     <ul class="tabMenu">
                         <li class="menu1 on" rel="tabMenu1">
                             <!--전체-->
-                            <h3><a href="#tab1"></a></h3>
+                            <h3><a href="/mobile/customer/faq.asp"></a></h3>
                         </li>
                         <li class="menu2" rel="tabMenu2">
                             <!--이용안내-->
-                            <h3><a href="#tab2"></a></h3>
+                            <h3><a href="/mobile/customer/faq.asp?code=F1001"></a></h3>
                         </li>
                         <li class="menu3" rel="tabMenu3">
                             <!--할인이벤트-->
-                            <h3><a href="#tab3"></a></h3>
+                            <h3><a href="/mobile/customer/faq.asp?code=F1002"></a></h3>
                         </li>
                         <li class="menu4" rel="tabMenu4">
                             <!--기타-->
-                            <h3><a href="#tab4"></a></h3>
+                            <h3><a href="/mobile/customer/faq.asp?code=F1003"></a></h3>
                         </li>
                     </ul>
                     <!-- #tab1 전체-->
                     <div class="tab-content tabMenu1">
                         <ul>
+					<%
+					'==========================================================================
+
+					'페이징 처리 부분
+					pgSize		= 50
+					UniqueField = "SEQ" ' 시퀀스필드
+					TableName	= "TBL_FAQ" ' 테이블명
+					SelectField	= "SEQ,CODE,TITLE,CONTENTS" ' select할 필드
+
+					'검색
+					WhereClause = "1 = 1"
+
+					'정렬
+					OrderBy = "SEQ DESC"		' 정렬방식
+
+					Call OpenDbConnection()		' 데이터베이스 열기
+					Call ProcRecordSQL()		' 페이징 처리 서브 호출
+
+					If keyword <> "" then
+						If keyfield <> "" Then
+							If keyfield = "1" Then '제목 검색
+								WhereClause = WhereClause & " AND TITLE LIKE '%" & keyword & "%'"
+							ElseIf keyfield = "2" Then '제목+내용 검색
+								WhereClause = WhereClause & " AND (TITLE LIKE '%" & keyword & "%' OR CONTENTS LIKE '%" & keyword & "%')"
+							ElseIf keyfield = "3" Then '작성자 검색
+								WhereClause = WhereClause & " AND CONTENTS LIKE '%" & keyword & "%'"
+							End If
+						End If
+					End If
+
+					If Not(Rs.BOF OR Rs.EOF) Then
+						rValue	= Rs.GetRows
+					Else
+						rValue	= Null
+					End If
+
+					totalpage = int(TotalRecordCount / pgSize)
+
+					Nam = TotalRecordCount Mod pgSize
+
+					If Nam > 0 Then
+					   totalpage = totalpage + 1
+					End If
+					'==========================================================================
+
+					If NOT(IsNull(rValue) Or IsEmpty(rValue)) Then
+						For i = Lbound(rValue,2) To UBound(rValue,2)
+
+							rownum = (TotalRecordCount - (pgSize * (pg-1))) -  i
+
+							seq				= rValue(0,i)
+							code			= rValue(1,i)
+							title			= rValue(2,i)
+							contents		= rValue(3,i)
+							contents 		= Replace(contents,"''","'")
+							contents 		= Replace(contents,"&amp;","&")
+							contents 		= Replace(contents,"<br>",vblf)
+
+							'에디터 사용시 변환 => 엔터값 <br>로 변환이 되어서 사용하지 않음
+							'contents		= Replace(Trim(contents),chr(13)&chr(10),"<br>")
+
+							If keyword <> "" Then
+								title		= Replace(title, keyword, "<b><font color='#ff0000'>"&keyword&"</font></b>")
+								'contents	= Replace(contents, keyword, "<b><font color='#ff0000'>"&keyword&"</font></b>")
+							End If
+					%>
                             <li>
                                 <div class="show_box">
                                     <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
-                                    <span class="text">
-                                        편의시설 중 사물함은 어떻게 사용할 수 있는지
-                                        그리고 큰 캐리어는 어떻게 보관이 용이한가요?
-                                    </span>
+                                    <span class="text"><%=title%></span>
                                     <span class="icon on"></span>
                                 </div>
                                 <div class="hidden_box">
                                     <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
-                                    <span class="text">
-                                         편의시설 사물함은 동전교환기로 500원 2개 동전으로 이용이 가능합니다.
-                                         (보관료 500원 동전 2개 총 1,000 원 임)
-                                         또한 사물함 크기에 맞지 않는 큰 캐리어는 정문 입장시 바로 좌측에 위치 되어 있는 의무실로 귀중품을 제외한 캐리어만 보관이 가능합니다.
-                                    </span>
+                                    <span class="text"><%=contents%></span>
                                     <span class="blank"></span>
                                 </div>
                             </li>
+					<%
+						Next
+					Else
+					%>
                             <li>
                                 <div class="show_box">
                                     <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
-                                    <span class="text">경기도 이천에서 용인 한국민속촌 가는 대중교통은 어떻게 되나요?</span>
-                                    <span class="icon"></span>
-                                </div>
-                                <div class="hidden_box">
-                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
-                                    <span class="text">
-                                         답변준비중입니다.
-                                    </span>
-                                    <span class="blank"></span>
+                                    <span class="text">내용이 없습니다.</span>
+                                    <span class="icon on"></span>
                                 </div>
                             </li>
-                            <li>
-                                <div class="show_box">
-                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
-                                    <span class="text">한국민속촌에서 에버랜드까지 이용 가능한 대중교통은 무엇인가요?</span>
-                                    <span class="icon"></span>
-                                </div>
-                                <div class="hidden_box">
-                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
-                                    <span class="text">
-                                         답변준비중입니다.
-                                    </span>
-                                    <span class="blank"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="show_box">
-                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
-                                    <span class="text">단체 요금을 적용하는 기준이 따로 있나요?</span>
-                                    <span class="icon"></span>
-                                </div>
-                                <div class="hidden_box">
-                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
-                                    <span class="text">
-                                         답변준비중입니다.
-                                    </span>
-                                    <span class="blank"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="show_box">
-                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
-                                    <span class="text">입장 가능 시간 및 퇴장시간은 있나요?</span>
-                                    <span class="icon"></span>
-                                </div>
-                                <div class="hidden_box">
-                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
-                                    <span class="text">
-                                         답변준비중입니다.
-                                    </span>
-                                    <span class="blank"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="show_box">
-                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
-                                    <span class="text">도시락 반입이 가능한가요?</span>
-                                    <span class="icon"></span>
-                                </div>
-                                <div class="hidden_box">
-                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
-                                    <span class="text">
-                                         답변준비중입니다.
-                                    </span>
-                                    <span class="blank"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="show_box">
-                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
-                                    <span class="text">음식메뉴 가격은 어떤가요?</span>
-                                    <span class="icon"></span>
-                                </div>
-                                <div class="hidden_box">
-                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
-                                    <span class="text">
-                                         답변준비중입니다.
-                                    </span>
-                                    <span class="blank"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="show_box">
-                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
-                                    <span class="text">전통혼례 꽃배달은 가능한가요?</span>
-                                    <span class="icon"></span>
-                                </div>
-                                <div class="hidden_box">
-                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
-                                    <span class="text">
-                                         답변준비중입니다.
-                                    </span>
-                                    <span class="blank"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="show_box">
-                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
-                                    <span class="text">전통혼례 하객들의 입장료 및 입장시 필요한 것은 무엇인가요?</span>
-                                    <span class="icon"></span>
-                                </div>
-                                <div class="hidden_box">
-                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
-                                    <span class="text">
-                                         답변준비중입니다.
-                                    </span>
-                                    <span class="blank"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="show_box">
-                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
-                                    <span class="text">입장권과 자유이용권의 차이점은 무엇인가요?</span>
-                                    <span class="icon"></span>
-                                </div>
-                                <div class="hidden_box">
-                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
-                                    <span class="text">
-                                         답변준비중입니다.
-                                    </span>
-                                    <span class="blank"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="show_box">
-                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
-                                    <span class="text">운영시간은 어떻고 연중 무휴인가요?</span>
-                                    <span class="icon"></span>
-                                </div>
-                                <div class="hidden_box">
-                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
-                                    <span class="text">
-                                         답변준비중입니다.
-                                    </span>
-                                    <span class="blank"></span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="show_box">
-                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
-                                    <span class="text">할인카드 및 각종 할인받는 법은 무엇인가요?</span>
-                                    <span class="icon"></span>
-                                </div>
-                                <div class="hidden_box">
-                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
-                                    <span class="text">
-                                         답변준비중입니다.
-                                    </span>
-                                    <span class="blank"></span>
-                                </div>
-                            </li>
+					<%
+					End If
+					
+					Call RsClose()
+					Call CloseDbConnection()
+					%>
                         </ul>
                     </div>
                     <!-- #tab2 이용안내-->
                     <div class="tab-content tabMenu2">
-                        이용안내
+                        <ul>
+					<%
+					'==========================================================================
+					
+					Debug		= false		' SQL 디버그 설정(true : 사용, false : 사용안함)
+					DebugMode	= 2			' SQL 디버그 모드(1 : COUNT 쿼리문 출력, 2 : LIST 쿼리문 출력)
+
+					'페이징 처리 부분
+					pgSize		= 50
+					UniqueField = "SEQ" ' 시퀀스필드
+					TableName	= "TBL_FAQ" ' 테이블명
+					SelectField	= "SEQ,CODE,TITLE,CONTENTS" ' select할 필드
+
+					'검색
+					WhereClause = " CODE = 'F1001' "
+
+					'정렬
+					OrderBy = "SEQ DESC"		' 정렬방식
+
+					Call OpenDbConnection()		' 데이터베이스 열기
+					Call ProcRecordSQL()		' 페이징 처리 서브 호출
+
+					If keyword <> "" then
+						If keyfield <> "" Then
+							If keyfield = "1" Then '제목 검색
+								WhereClause = WhereClause & " AND TITLE LIKE '%" & keyword & "%'"
+							ElseIf keyfield = "2" Then '제목+내용 검색
+								WhereClause = WhereClause & " AND (TITLE LIKE '%" & keyword & "%' OR CONTENTS LIKE '%" & keyword & "%')"
+							ElseIf keyfield = "3" Then '작성자 검색
+								WhereClause = WhereClause & " AND CONTENTS LIKE '%" & keyword & "%'"
+							End If
+						End If
+					End If
+
+					If Not(Rs.BOF OR Rs.EOF) Then
+						rValue	= Rs.GetRows
+					Else
+						rValue	= Null
+					End If
+
+					totalpage = int(TotalRecordCount / pgSize)
+
+					Nam = TotalRecordCount Mod pgSize
+
+					If Nam > 0 Then
+					   totalpage = totalpage + 1
+					End If
+					'==========================================================================
+
+					If NOT(IsNull(rValue) Or IsEmpty(rValue)) Then
+
+						For i = Lbound(rValue,2) To UBound(rValue,2)
+
+							rownum = (TotalRecordCount - (pgSize * (pg-1))) -  i
+
+							seq				= rValue(0,i)
+							code			= rValue(1,i)
+							title			= rValue(2,i)
+							contents		= rValue(3,i)
+							contents 		= Replace(contents,"''","'")
+							contents 		= Replace(contents,"&amp;","&")
+							contents 		= Replace(contents,"<br>",vblf)
+
+							'에디터 사용시 변환 => 엔터값 <br>로 변환이 되어서 사용하지 않음
+							'contents		= Replace(Trim(contents),chr(13)&chr(10),"<br>")
+
+							If keyword <> "" Then
+								title		= Replace(title, keyword, "<b><font color='#ff0000'>"&keyword&"</font></b>")
+								'contents	= Replace(contents, keyword, "<b><font color='#ff0000'>"&keyword&"</font></b>")
+							End If
+					%>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text"><%=title%></span>
+                                    <span class="icon on"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text"><%=contents%></span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+					<%
+						Next
+					Else
+					%>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">내용이 없습니다.</span>
+                                    <span class="icon on"></span>
+                                </div>
+                            </li>
+					<%
+					End If
+
+					Call RsClose()
+					Call CloseDbConnection()
+					%>
+                        </ul>
                     </div>
                     <!-- #tab3 할인이벤트-->
                     <div class="tab-content tabMenu3">
-                        할인이벤트
+                        <ul>
+					<%
+					'==========================================================================
+					
+					Debug		= false		' SQL 디버그 설정(true : 사용, false : 사용안함)
+					DebugMode	= 2			' SQL 디버그 모드(1 : COUNT 쿼리문 출력, 2 : LIST 쿼리문 출력)
+
+					'페이징 처리 부분
+					pgSize		= 50
+					UniqueField = "SEQ" ' 시퀀스필드
+					TableName	= "TBL_FAQ" ' 테이블명
+					SelectField	= "SEQ,CODE,TITLE,CONTENTS" ' select할 필드
+
+					'검색
+					WhereClause = " CODE = 'F1002' "
+
+					'정렬
+					OrderBy = "SEQ DESC"		' 정렬방식
+
+					Call OpenDbConnection()		' 데이터베이스 열기
+					Call ProcRecordSQL()		' 페이징 처리 서브 호출
+
+					If keyword <> "" then
+						If keyfield <> "" Then
+							If keyfield = "1" Then '제목 검색
+								WhereClause = WhereClause & " AND TITLE LIKE '%" & keyword & "%'"
+							ElseIf keyfield = "2" Then '제목+내용 검색
+								WhereClause = WhereClause & " AND (TITLE LIKE '%" & keyword & "%' OR CONTENTS LIKE '%" & keyword & "%')"
+							ElseIf keyfield = "3" Then '작성자 검색
+								WhereClause = WhereClause & " AND CONTENTS LIKE '%" & keyword & "%'"
+							End If
+						End If
+					End If
+
+					If Not(Rs.BOF OR Rs.EOF) Then
+						rValue	= Rs.GetRows
+					Else
+						rValue	= Null
+					End If
+
+					totalpage = int(TotalRecordCount / pgSize)
+
+					Nam = TotalRecordCount Mod pgSize
+
+					If Nam > 0 Then
+					   totalpage = totalpage + 1
+					End If
+					'==========================================================================
+
+					If NOT(IsNull(rValue) Or IsEmpty(rValue)) Then
+
+						For i = Lbound(rValue,2) To UBound(rValue,2)
+
+							rownum = (TotalRecordCount - (pgSize * (pg-1))) -  i
+
+							seq				= rValue(0,i)
+							code			= rValue(1,i)
+							title			= rValue(2,i)
+							contents		= rValue(3,i)
+							contents 		= Replace(contents,"''","'")
+							contents 		= Replace(contents,"&amp;","&")
+							contents 		= Replace(contents,"<br>",vblf)
+
+							'에디터 사용시 변환 => 엔터값 <br>로 변환이 되어서 사용하지 않음
+							'contents		= Replace(Trim(contents),chr(13)&chr(10),"<br>")
+
+							If keyword <> "" Then
+								title		= Replace(title, keyword, "<b><font color='#ff0000'>"&keyword&"</font></b>")
+								'contents	= Replace(contents, keyword, "<b><font color='#ff0000'>"&keyword&"</font></b>")
+							End If
+					%>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text"><%=title%></span>
+                                    <span class="icon on"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text"><%=contents%></span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+					<%
+						Next
+					Else
+					%>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">내용이 없습니다.</span>
+                                    <span class="icon on"></span>
+                                </div>
+                            </li>
+					<%
+					End If
+
+					Call RsClose()
+					Call CloseDbConnection()
+					%>
+                        </ul>
                     </div>
                     <!-- #tab4 기타-->
                     <div class="tab-content tabMenu4">
-                        기타
+                        <ul>
+					<%
+					'==========================================================================
+					
+					Debug		= false		' SQL 디버그 설정(true : 사용, false : 사용안함)
+					DebugMode	= 2			' SQL 디버그 모드(1 : COUNT 쿼리문 출력, 2 : LIST 쿼리문 출력)
+
+					'페이징 처리 부분
+					pgSize		= 50
+					UniqueField = "SEQ" ' 시퀀스필드
+					TableName	= "TBL_FAQ" ' 테이블명
+					SelectField	= "SEQ,CODE,TITLE,CONTENTS" ' select할 필드
+
+					'검색
+					WhereClause = " CODE = 'F1003' "
+
+					'정렬
+					OrderBy = "SEQ DESC"		' 정렬방식
+
+					Call OpenDbConnection()		' 데이터베이스 열기
+					Call ProcRecordSQL()		' 페이징 처리 서브 호출
+
+					If keyword <> "" then
+						If keyfield <> "" Then
+							If keyfield = "1" Then '제목 검색
+								WhereClause = WhereClause & " AND TITLE LIKE '%" & keyword & "%'"
+							ElseIf keyfield = "2" Then '제목+내용 검색
+								WhereClause = WhereClause & " AND (TITLE LIKE '%" & keyword & "%' OR CONTENTS LIKE '%" & keyword & "%')"
+							ElseIf keyfield = "3" Then '작성자 검색
+								WhereClause = WhereClause & " AND CONTENTS LIKE '%" & keyword & "%'"
+							End If
+						End If
+					End If
+
+					If Not(Rs.BOF OR Rs.EOF) Then
+						rValue	= Rs.GetRows
+					Else
+						rValue	= Null
+					End If
+
+					totalpage = int(TotalRecordCount / pgSize)
+
+					Nam = TotalRecordCount Mod pgSize
+
+					If Nam > 0 Then
+					   totalpage = totalpage + 1
+					End If
+					'==========================================================================
+
+					If NOT(IsNull(rValue) Or IsEmpty(rValue)) Then
+
+						For i = Lbound(rValue,2) To UBound(rValue,2)
+
+							rownum = (TotalRecordCount - (pgSize * (pg-1))) -  i
+
+							seq				= rValue(0,i)
+							code			= rValue(1,i)
+							title			= rValue(2,i)
+							contents		= rValue(3,i)
+							contents 		= Replace(contents,"''","'")
+							contents 		= Replace(contents,"&amp;","&")
+							contents 		= Replace(contents,"<br>",vblf)
+
+							'에디터 사용시 변환 => 엔터값 <br>로 변환이 되어서 사용하지 않음
+							'contents		= Replace(Trim(contents),chr(13)&chr(10),"<br>")
+
+							If keyword <> "" Then
+								title		= Replace(title, keyword, "<b><font color='#ff0000'>"&keyword&"</font></b>")
+								'contents	= Replace(contents, keyword, "<b><font color='#ff0000'>"&keyword&"</font></b>")
+							End If
+					%>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text"><%=title%></span>
+                                    <span class="icon on"></span>
+                                </div>
+                                <div class="hidden_box">
+                                    <span class="icon_a"><img src="/mobile/images/customer/icon_a.png" alt="" /></span>
+                                    <span class="text"><%=contents%></span>
+                                    <span class="blank"></span>
+                                </div>
+                            </li>
+					<%
+						Next
+					Else
+					%>
+                            <li>
+                                <div class="show_box">
+                                    <span class="icon_q"><img src="/mobile/images/customer/icon_q.png" alt="" /></span>
+                                    <span class="text">내용이 없습니다.</span>
+                                    <span class="icon on"></span>
+                                </div>
+                            </li>
+					<%
+					End If
+
+					Call RsClose()
+					Call CloseDbConnection()
+					%>
+                        </ul>
                     </div>
                 </div>
                 <div class="oto_consult">
@@ -282,12 +555,14 @@
             </div>
         </div>
     </div>
+<%
 
+%>
 <!-- 하단푸터 -->
-<!--#include virtual="/mobile/common/inc/footer.html" -->
+<!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.html" -->
+<!--#include virtual="/mobile/common/inc/script.asp" -->
     <script>
         $(document).ready(function(){
             $('.single-items').slick({

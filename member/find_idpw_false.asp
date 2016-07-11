@@ -1,3 +1,7 @@
+<%
+'Response.Write "URL : " & Request.ServerVariables("URL")
+
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,7 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
-    <!--#include virtual="/mobile/common/inc/css.html" -->
+    <!--#include virtual="/mobile/common/inc/css.asp" -->
 </head>
 <body>
 <!-- 메뉴 -->
@@ -13,7 +17,7 @@
 
 <div class="wrap">
 <!-- 상단헤더 -->
-<!--#include virtual="/mobile/common/inc/header.html" -->
+<!--#include virtual="/mobile/common/inc/header.asp" -->
 
     <div class="header_title_slide">
         <div class="title">
@@ -43,8 +47,8 @@
                         <span class="text">정확한 정보를 입력하시거나 한국민속촌 서비스 이용을 위해 회원가입을 해주시기 바랍니다.</span>
                     </div>
                     <span class="cert_btn_box">
-                        <a href="#none" class="btn ok_btn">아이디 찾기</a>
-                        <a href="#none" class="btn cancel_btn">메인으로</a>
+                        <a href="find_idpw.asp#tab1" class="btn ok_btn">아이디 찾기</a>
+                        <a href="/mobile/" class="btn cancel_btn">메인으로</a>
                     </span>
                 </div>
                 <!-- #tab2 pw찾기-->
@@ -57,8 +61,8 @@
                         <span class="text">정확한 정보를 입력 해주시기 바랍니다.</span>
                     </div>
                     <span class="cert_btn_box">
-                        <a href="#none" class="btn ok_btn">아이디 찾기</a>
-                        <a href="#none" class="btn cancel_btn">메인으로</a>
+                        <a href="find_idpw.asp#tab1" class="btn ok_btn">아이디 찾기</a>
+                        <a href="/mobile/" class="btn cancel_btn">메인으로</a>
                     </span>
                 </div>
             </div>
@@ -66,10 +70,10 @@
     </div>
 
 <!-- 하단푸터 -->
-<!--#include virtual="/mobile/common/inc/footer.html" -->
+<!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.html" -->
+<!--#include virtual="/mobile/common/inc/script.asp" -->
 
 </body>
 </html>
