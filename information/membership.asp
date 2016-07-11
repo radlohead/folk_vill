@@ -18,12 +18,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>이용안내</h2>
-            <aside>
-                <h2>이용안내
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
 <!--#include virtual="/mobile/information/inc/infor_topmenu.asp" -->
@@ -34,7 +28,7 @@
             <div class="detail-head">
                 <h3>연간회원</h3>
                 <div class="text-box">
-                    <span class="text">365일 민속촌을 내 집처럼 누리는<br/> 멤버쉽 제도</span>
+                    <span class="text">365일 민속촌을 내 집처럼 누리는 멤버쉽 제도</span>
                 </div>
             </div>
             <div class="detail-content">
@@ -71,15 +65,36 @@
                     </table>
                  </section>
                  <section class="join-method">
+                    <h4>가입방법</h4>
                     <h5>현장 방문 가입</h5>
                     <ul>
-                        <li>정문 단체상담실에서 가입신청서 작성 후 즉시 가입</li>
-                        <li>가입신청서 사전 작성 방문 시 빠른 처리</li>
+                        <li>
+                            <p>
+                                <span class="icon"></span>
+                                <span>정문 단체상담실에서 가입신청서 작성 후 즉시 가입</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="icon"></span>
+                                <span>가입신청서 사전 작성 방문 시 빠른 처리</span>
+                            </p>
+                        </li>
                     </ul>
                     <h5>이메일 접수</h5>
                     <ul>
-                        <li>본인 사진, 가입신청서, 이용약관(자필서명) 제출</li>
-                        <li>이메일주소 : kfv4000@ikfv.co.kr</li>
+                        <li>
+                            <p>
+                                <span class="icon"></span>
+                                <span>본인 사진, 가입신청서, 이용약관(자필서명) 제출</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="icon"></span>
+                                <span>이메일주소 : kfv4000@ikfv.co.kr</span>
+                            </p>
+                        </li>
                     </ul>
                     <span class="down-link">
                         <a href="#none"><img src="/mobile/images/information/down-link_img01.png" alt="회원가입신청서 다운링크" /></a>
@@ -91,17 +106,57 @@
                     <h4>유의사항</h4>
                     <h5>가입 시</h5>
                     <ul>
-                        <li>정면을 보고 있는 최근 사진(모자, 선그라스 착용 금물) 지참</li>
-                        <li>별도의 사진촬영 없음</li>
-                        <li>본인 미방문 시 신분증 사본, 사진 필요</li>
-                        <li>복지카드 소지 대인은 아동 요금 적용</li>
+                        <li>
+                            <p>
+                                <span class="icon"></span>
+                                <span>정면을 보고 있는 최근 사진(모자, 선그라스 착용 금물) 지참</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="icon"></span>
+                                <span>별도의 사진촬영 없음</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="icon"></span>
+                                <span>본인 미방문 시 신분증 사본, 사진 필요</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="icon"></span>
+                                <span>복지카드 소지 대인은 아동 요금 적용</span>
+                            </p>
+                        </li>
                     </ul>
                     <h5>이용 시</h5>
                     <ul>
-                        <li>한국민속촌 관람 시 회원권 항시 패용</li>
-                        <li>부득이한 휴장 시 이용 제한</li>
-                        <li>미술관, 전시관은 운영 사정상 휴관 가능</li>
-                        <li>회원권 분실 및 미지참시 재발급 수수료 3,000원 부담</li>
+                        <li>
+                            <p>
+                                <span class="icon"></span>
+                                <span>한국민속촌 관람 시 회원권 항시 패용</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="icon"></span>
+                                <span>부득이한 휴장 시 이용 제한</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="icon"></span>
+                                <span>미술관, 전시관은 운영 사정상 휴관 가능</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="icon"></span>
+                                <span>회원권 분실 및 미지참시 재발급 수수료 3,000원 부담</span>
+                            </p>
+                        </li>
                     </ul>
                  </section>
             </div>

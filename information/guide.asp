@@ -176,7 +176,7 @@
                     </li>
                 </ul>
 
-                <div class="detail-head detail-head02">
+                <div class="detail-head detail-head02 mb-10">
                     <h4>우대정보</h4>
                 </div>
                 <div class="content">

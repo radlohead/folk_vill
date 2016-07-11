@@ -1,8 +1,19 @@
 @charset "UTF-8";
 
+//var setting
+$orangeColor:#f08200;
+
 //minxin start
 @mixin circleIcon(){
 	padding-right:7px; color:#766341; background:url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size:3px 3px;
+}
+@mixin list(){
+	p{display:table; margin:1px 0; font-size:1.2em;
+		span{display:table-cell;}
+		.icon{@include circleIcon;
+			img{width:3px;}
+		}
+	}
 }
 
 .radioWrap input[type="radio"]{display:none;}
@@ -225,7 +236,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 /*-------------------------------------------------------- index-page end ----------------------------------------------------------------- */
 /*-------------------------------------------------------- sub-page start ----------------------------------------------------------------- */
 
-.header_title_slide{position:relative; margin-bottom:23px; border-bottom:1px solid #312d22;
+.header_title_slide{position:relative; margin-bottom:30px; border-bottom:1px solid #312d22;
 	>h2{padding:10px 0; background:#312d22; font-size:1.5em; text-indent:3.5%; color:#fff;}
 	.title{height:24px; padding:9px 3.5% 3px 3.5%; background:#312d22; color:#fff;
 		>h2{float:left; margin-top:-1px; font-size:1.5em; letter-spacing:-1px;}
@@ -270,7 +281,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 }
 
 .contents{padding:0 3.5%;
-	img{width:100%;}
+	img{display: block; text-align:center; width:100%; margin:0 auto;}
 	.credit_card{
 		img{max-width:205px; height:129px;}
 	}
@@ -287,7 +298,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 }
 .detail-guide{
-	.detail-head{overflow: hidden; margin-bottom:30px;
+	.detail-head{overflow: hidden; margin-bottom:15px;
 		h3{float:left; width:42%; font-size:2.4em; color:#333; font-weight:bold;}
 		.text-box{float:right; width:56.2%; color:#000; letter-spacing:-0.05em;
 			.text{display:block; font-size:1.2em;
@@ -300,13 +311,14 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			}
 		}
 	}
-	.detail-head02{margin-top:45px;}
+	.detail-head02{margin-top:30px;}
+	.mb-10{margin-bottom:10px;}
 }
 .detail-member{
-	.detail-head{overflow: hidden; margin-bottom:30px;
-		h3{float:left; width:42%; font-size:2.25em; color:#333; font-weight:bold;}
-		.text-box{float:right; width:58%; color:#000; letter-spacing:-0.05em;
-			.text{display:block; font-size:1.4em;}
+	.detail-head{overflow: hidden; margin-bottom:20px;
+		h3{float:left; width:50%; font-size:2.4em; color:#333; font-weight:bold;}
+		.text-box{float:right; width:50%; color:#000; letter-spacing:-0.05em;
+			.text{display:block; font-size:1.3em;}
 			.guide-time{display:block; margin-top:11px; margin-left:23px; font-size:65%; color:#f08200;
 				.text{display:block;}
 				.time{color:#666;}
@@ -489,26 +501,20 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		}
 	}
 	.attention{margin-top:12px;
-		li{margin-top:6px;
-			em{display:block; padding-right:7px; white-space:nowrap; color:#f29322; font-weight:bold; font-size:1.5em;}
+		li{margin-top:6px; @include list;
+			em{display:block; padding-right:7px; white-space:nowrap; color:$orangeColor; font-weight:bold; font-size:1.5em;}
 			.text{display:block; line-height:20px; font-size:1.2em;}
-			p{display:table; margin:1px 0; font-size:1.2em;
-				span{display:table-cell;}
-				.icon{@include circleIcon;
-					img{width:3px;}
-				}
-			}
 		}
 	}
 }
 .prefer-infor{
-	h5{font-weight:bold; font-size:1.4em; color:#f08200;}
+	h5{font-weight:bold; font-size:1.4em; color:$orangeColor;}
 	ul{margin:5px 0 16px;
 		li{margin-top:2px; font-size:1.4em;
 			&:before{content:"·"; display:inline-block; padding-right:3px; color:#766341;}
 		}
 	}
-	p{display:table; margin:5px 0 16px; font-size:1.4em;
+	p{display:table; margin:5px 0 16px; font-size:1.2em;
 		span{display:table-cell;}
 		.icon{@include circleIcon;}
 	}
@@ -516,7 +522,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 }
 .contents{
 	h4{font-size:1.9em;}
-	h5{font-size:1.4em;}
+	h5{font-size:1.5em;}
 	table{width:100%;
 		th{}
 		td{text-align:center;}
@@ -529,35 +535,34 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 //연간회원안내
 .detail-member{
 	.mem-benefit{
+		img{width:80%;}
 		h4{margin-bottom:15px;}
 	}
 	.mem-price{
-		h4{margin:27px 0 12px;}
+		h4{margin:30px 0 15px;}
 		table{
-			th{padding:7px 0; border-top:2px solid #f08200; border-left:5px solid #fff; font-size:1.4em;
+			th{padding:7px 0; border-top:2px solid #f08200; border-left:5px solid #fff; font-size:0.9em;
 				&:first-child{border-left:0;}
 			}
-			td{padding:7px 0; border-bottom:1px solid #dedacf; border-left:5px solid #fff; font-size:1.4em;
+			td{padding:7px 0; border-top:1px solid #dedacf; border-bottom:1px solid #dedacf; border-left:5px solid #fff; font-size:0.9em;
 				&:first-child{border-left:0 solid #fff;}
 			}
 			tr:last-child td{border-bottom:1px solid #bdb5a0;}
 		}
 	}
 	.join-method{
-		h5{margin:13px 0 7px; color:#f08200;}
-		li{font-size:1.4em;
-			&:before{content:"·"; display:inline-block; padding-right:3px; color:#766341;}
-		}
-		.down-link{display:block; width:100%; margin:15px 0 35px;
+		h4{margin:30px 0 10px;}
+		h5{margin:10px 0 7px; color:$orangeColor;}
+		li{display:table; margin-top:3px; @include list;}
+		.down-link{display:block; width:100%; margin-top:15px;
 			a{display:inline-block; float:left; width:33.3%;}
 			&:after{content:""; display:block; clear:both;}
 		}
 	}
 	.note{
-		h5{margin:13px 0 7px; color:#f08200;}
-		li{display:table; margin-top: 3px; font-size:1.4em;
-			&:before{content:"·"; display:table-cell; padding-right:3px; color:#766341;}
-		}
+		h4{margin:30px 0 10px;}
+		h5{margin:13px 0 7px; color:$orangeColor;}
+		li{display:table; margin-top:3px; @include list;}
 	}
 }
 

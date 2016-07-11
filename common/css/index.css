@@ -151,7 +151,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 
 /*-------------------------------------------------------- index-page end ----------------------------------------------------------------- */
 /*-------------------------------------------------------- sub-page start ----------------------------------------------------------------- */
-.header_title_slide { position: relative; margin-bottom: 23px; border-bottom: 1px solid #312d22; }
+.header_title_slide { position: relative; margin-bottom: 30px; border-bottom: 1px solid #312d22; }
 .header_title_slide > h2 { padding: 10px 0; background: #312d22; font-size: 1.5em; text-indent: 3.5%; color: #fff; }
 .header_title_slide .title { height: 24px; padding: 9px 3.5% 3px 3.5%; background: #312d22; color: #fff; }
 .header_title_slide .title > h2 { float: left; margin-top: -1px; font-size: 1.5em; letter-spacing: -1px; }
@@ -185,7 +185,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .header_title_slide .slick-slider.single-items .slick-next { right: -7%; margin-right: 3.5%; background-position: -250px -158px; }
 
 .contents { padding: 0 3.5%; }
-.contents img { width: 100%; }
+.contents img { display: block; text-align: center; width: 100%; margin: 0 auto; }
 .contents .credit_card img { max-width: 205px; height: 129px; }
 
 .detail-content { overflow: hidden; }
@@ -196,7 +196,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-show .detail-head .text-box { float: right; width: 58%; color: #000; letter-spacing: -0.05em; }
 .detail-show .detail-head .text-box .text { display: block; font-size: 1.4em; }
 
-.detail-guide .detail-head { overflow: hidden; margin-bottom: 30px; }
+.detail-guide .detail-head { overflow: hidden; margin-bottom: 15px; }
 .detail-guide .detail-head h3 { float: left; width: 42%; font-size: 2.4em; color: #333; font-weight: bold; }
 .detail-guide .detail-head .text-box { float: right; width: 56.2%; color: #000; letter-spacing: -0.05em; }
 .detail-guide .detail-head .text-box .text { display: block; font-size: 1.2em; }
@@ -205,12 +205,13 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-guide .detail-head .text-box .guide-time { display: block; margin-top: 11px; margin-left: 23px; font-size: 1em; color: #f08200; letter-spacing: 0; line-height: 14px; }
 .detail-guide .detail-head .text-box .guide-time .text { display: block; }
 .detail-guide .detail-head .text-box .guide-time .time { color: #666; }
-.detail-guide .detail-head02 { margin-top: 45px; }
+.detail-guide .detail-head02 { margin-top: 30px; }
+.detail-guide .mb-10 { margin-bottom: 10px; }
 
-.detail-member .detail-head { overflow: hidden; margin-bottom: 30px; }
-.detail-member .detail-head h3 { float: left; width: 42%; font-size: 2.25em; color: #333; font-weight: bold; }
-.detail-member .detail-head .text-box { float: right; width: 58%; color: #000; letter-spacing: -0.05em; }
-.detail-member .detail-head .text-box .text { display: block; font-size: 1.4em; }
+.detail-member .detail-head { overflow: hidden; margin-bottom: 20px; }
+.detail-member .detail-head h3 { float: left; width: 50%; font-size: 2.4em; color: #333; font-weight: bold; }
+.detail-member .detail-head .text-box { float: right; width: 50%; color: #000; letter-spacing: -0.05em; }
+.detail-member .detail-head .text-box .text { display: block; font-size: 1.3em; }
 .detail-member .detail-head .text-box .guide-time { display: block; margin-top: 11px; margin-left: 23px; font-size: 65%; color: #f08200; }
 .detail-member .detail-head .text-box .guide-time .text { display: block; }
 .detail-member .detail-head .text-box .guide-time .time { color: #666; }
@@ -327,43 +328,52 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .operate-time table.use-pay tbody tr:nth-child(even) td:nth-child(2) { border-right: 5px solid #fff; }
 .operate-time .attention { margin-top: 12px; }
 .operate-time .attention li { margin-top: 6px; }
-.operate-time .attention li em { display: block; padding-right: 7px; white-space: nowrap; color: #f29322; font-weight: bold; font-size: 1.5em; }
-.operate-time .attention li .text { display: block; line-height: 20px; font-size: 1.2em; }
 .operate-time .attention li p { display: table; margin: 1px 0; font-size: 1.2em; }
 .operate-time .attention li p span { display: table-cell; }
 .operate-time .attention li p .icon { padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size: 3px 3px; }
 .operate-time .attention li p .icon img { width: 3px; }
+.operate-time .attention li em { display: block; padding-right: 7px; white-space: nowrap; color: #f08200; font-weight: bold; font-size: 1.5em; }
+.operate-time .attention li .text { display: block; line-height: 20px; font-size: 1.2em; }
 
 .prefer-infor h5 { font-weight: bold; font-size: 1.4em; color: #f08200; }
 .prefer-infor ul { margin: 5px 0 16px; }
 .prefer-infor ul li { margin-top: 2px; font-size: 1.4em; }
 .prefer-infor ul li:before { content: "·"; display: inline-block; padding-right: 3px; color: #766341; }
-.prefer-infor p { display: table; margin: 5px 0 16px; font-size: 1.4em; }
+.prefer-infor p { display: table; margin: 5px 0 16px; font-size: 1.2em; }
 .prefer-infor p span { display: table-cell; }
 .prefer-infor p .icon { padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size: 3px 3px; }
 
 .contents h4 { font-size: 1.9em; }
-.contents h5 { font-size: 1.4em; }
+.contents h5 { font-size: 1.5em; }
 .contents table { width: 100%; }
 .contents table td { text-align: center; }
 .contents .board-list-title img { width: 247px; }
 
+.detail-member .mem-benefit img { width: 80%; }
 .detail-member .mem-benefit h4 { margin-bottom: 15px; }
-.detail-member .mem-price h4 { margin: 27px 0 12px; }
-.detail-member .mem-price table th { padding: 7px 0; border-top: 2px solid #f08200; border-left: 5px solid #fff; font-size: 1.4em; }
+.detail-member .mem-price h4 { margin: 30px 0 15px; }
+.detail-member .mem-price table th { padding: 7px 0; border-top: 2px solid #f08200; border-left: 5px solid #fff; font-size: 0.9em; }
 .detail-member .mem-price table th:first-child { border-left: 0; }
-.detail-member .mem-price table td { padding: 7px 0; border-bottom: 1px solid #dedacf; border-left: 5px solid #fff; font-size: 1.4em; }
+.detail-member .mem-price table td { padding: 7px 0; border-top: 1px solid #dedacf; border-bottom: 1px solid #dedacf; border-left: 5px solid #fff; font-size: 0.9em; }
 .detail-member .mem-price table td:first-child { border-left: 0 solid #fff; }
 .detail-member .mem-price table tr:last-child td { border-bottom: 1px solid #bdb5a0; }
-.detail-member .join-method h5 { margin: 13px 0 7px; color: #f08200; }
-.detail-member .join-method li { font-size: 1.4em; }
-.detail-member .join-method li:before { content: "·"; display: inline-block; padding-right: 3px; color: #766341; }
-.detail-member .join-method .down-link { display: block; width: 100%; margin: 15px 0 35px; }
+.detail-member .join-method h4 { margin: 30px 0 10px; }
+.detail-member .join-method h5 { margin: 10px 0 7px; color: #f08200; }
+.detail-member .join-method li { display: table; margin-top: 3px; }
+.detail-member .join-method li p { display: table; margin: 1px 0; font-size: 1.2em; }
+.detail-member .join-method li p span { display: table-cell; }
+.detail-member .join-method li p .icon { padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size: 3px 3px; }
+.detail-member .join-method li p .icon img { width: 3px; }
+.detail-member .join-method .down-link { display: block; width: 100%; margin-top: 15px; }
 .detail-member .join-method .down-link a { display: inline-block; float: left; width: 33.3%; }
 .detail-member .join-method .down-link:after { content: ""; display: block; clear: both; }
+.detail-member .note h4 { margin: 30px 0 10px; }
 .detail-member .note h5 { margin: 13px 0 7px; color: #f08200; }
-.detail-member .note li { display: table; margin-top: 3px; font-size: 1.4em; }
-.detail-member .note li:before { content: "·"; display: table-cell; padding-right: 3px; color: #766341; }
+.detail-member .note li { display: table; margin-top: 3px; }
+.detail-member .note li p { display: table; margin: 1px 0; font-size: 1.2em; }
+.detail-member .note li p span { display: table-cell; }
+.detail-member .note li p .icon { padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size: 3px 3px; }
+.detail-member .note li p .icon img { width: 3px; }
 
 .traffic .map { display: block; margin: 12px 0 25px; }
 .traffic h4:first-child { margin-bottom: 5px; }

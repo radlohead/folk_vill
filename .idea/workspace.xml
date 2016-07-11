@@ -3,98 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/member/sprite-member.png" afterPath="$PROJECT_DIR$/images/member/sprite-member.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/mem-benefit.png" afterPath="$PROJECT_DIR$/images/information/mem-benefit.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/reset.css" afterPath="$PROJECT_DIR$/common/css/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/common.js" afterPath="$PROJECT_DIR$/common/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/form.js" afterPath="$PROJECT_DIR$/common/js/form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer/faq.asp" afterPath="$PROJECT_DIR$/customer/faq.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer/qna_form.asp" afterPath="$PROJECT_DIR$/customer/qna_form.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer/voice_form.asp" afterPath="$PROJECT_DIR$/customer/voice_form.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/event_now.asp" afterPath="$PROJECT_DIR$/event/event_now.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/event_now_view.asp" afterPath="$PROJECT_DIR$/event/event_now_view.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_bboy.asp" afterPath="$PROJECT_DIR$/event/performance_bboy.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_chosun.asp" afterPath="$PROJECT_DIR$/event/performance_chosun.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_horse.asp" afterPath="$PROJECT_DIR$/event/performance_horse.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_nongak.asp" afterPath="$PROJECT_DIR$/event/performance_nongak.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_wedding.asp" afterPath="$PROJECT_DIR$/event/performance_wedding.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/folkvillage/display_traditional.asp" afterPath="$PROJECT_DIR$/folkvillage/display_traditional.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/folkvillage/folk_chosun.asp" afterPath="$PROJECT_DIR$/folkvillage/folk_chosun.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/cert_program.asp" afterPath="$PROJECT_DIR$/groupprogram/cert_program.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/daily.asp" afterPath="$PROJECT_DIR$/groupprogram/daily.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/general_course.asp" afterPath="$PROJECT_DIR$/groupprogram/general_course.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/kids_day.asp" afterPath="$PROJECT_DIR$/groupprogram/kids_day.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/seonbi_course.asp" afterPath="$PROJECT_DIR$/groupprogram/seonbi_course.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/tradition_course.asp" afterPath="$PROJECT_DIR$/groupprogram/tradition_course.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/convenience.asp" afterPath="$PROJECT_DIR$/information/convenience.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/coupon_list.asp" afterPath="$PROJECT_DIR$/information/coupon_list.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/coupon_list_bak.asp" afterPath="$PROJECT_DIR$/information/coupon_list_bak.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/coupon_view.asp" afterPath="$PROJECT_DIR$/information/coupon_view.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/credit_card.asp" afterPath="$PROJECT_DIR$/information/credit_card.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/guide.asp" afterPath="$PROJECT_DIR$/information/guide.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/map.asp" afterPath="$PROJECT_DIR$/information/map.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/membership.asp" afterPath="$PROJECT_DIR$/information/membership.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/notice_list.asp" afterPath="$PROJECT_DIR$/information/notice_list.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/notice_list_bak.asp" afterPath="$PROJECT_DIR$/information/notice_list_bak.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/notice_view.asp" afterPath="$PROJECT_DIR$/information/notice_view.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/promotion_list.asp" afterPath="$PROJECT_DIR$/information/promotion_list.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/promotion_list_bak.asp" afterPath="$PROJECT_DIR$/information/promotion_list_bak.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/promotion_view.asp" afterPath="$PROJECT_DIR$/information/promotion_view.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/promotion_view_bak.asp" afterPath="$PROJECT_DIR$/information/promotion_view_bak.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/traffic.asp" afterPath="$PROJECT_DIR$/information/traffic.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/find_idpw.asp" afterPath="$PROJECT_DIR$/member/find_idpw.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/find_idpw_false.asp" afterPath="$PROJECT_DIR$/member/find_idpw_false.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/find_idpw_true.asp" afterPath="$PROJECT_DIR$/member/find_idpw_true.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/inc/id_duplicate_chk.asp" afterPath="$PROJECT_DIR$/member/inc/id_duplicate_chk.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join.asp" afterPath="$PROJECT_DIR$/member/join.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_agree.asp" afterPath="$PROJECT_DIR$/member/join_agree.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_auth_select.asp" afterPath="$PROJECT_DIR$/member/join_auth_select.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_child_form.asp" afterPath="$PROJECT_DIR$/member/join_child_form.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_child_step1.asp" afterPath="$PROJECT_DIR$/member/join_child_step1.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_general_step1.asp" afterPath="$PROJECT_DIR$/member/join_email_general_step1.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_finish.asp" afterPath="$PROJECT_DIR$/member/join_finish.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_general_form.asp" afterPath="$PROJECT_DIR$/member/join_general_form.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_general_step1.asp" afterPath="$PROJECT_DIR$/member/join_general_step1.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_general_step2.asp" afterPath="$PROJECT_DIR$/member/join_general_step2.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/login.asp" afterPath="$PROJECT_DIR$/member/login.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/login_proc.asp" afterPath="$PROJECT_DIR$/member/login_proc.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/coupon_list.asp" afterPath="$PROJECT_DIR$/mypage/coupon_list.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/coupon_view.asp" afterPath="$PROJECT_DIR$/mypage/coupon_view.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_info.asp" afterPath="$PROJECT_DIR$/mypage/member_info.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_info_auth.asp" afterPath="$PROJECT_DIR$/mypage/member_info_auth.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_leave.asp" afterPath="$PROJECT_DIR$/mypage/member_leave.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_leave_finish.asp" afterPath="$PROJECT_DIR$/mypage/member_leave_finish.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_modify.asp" afterPath="$PROJECT_DIR$/mypage/member_modify.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_pwd_edit.asp" afterPath="$PROJECT_DIR$/mypage/member_pwd_edit.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_pwd_finish.asp" afterPath="$PROJECT_DIR$/mypage/member_pwd_finish.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/qna_list.asp" afterPath="$PROJECT_DIR$/mypage/qna_list.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/qna_view.asp" afterPath="$PROJECT_DIR$/mypage/qna_view.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/voice_list.asp" afterPath="$PROJECT_DIR$/mypage/voice_list.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/voice_view.asp" afterPath="$PROJECT_DIR$/mypage/voice_view.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction.asp" afterPath="$PROJECT_DIR$/playvillage/attraction.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/bounce_spin.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/bounce_spin.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/bumper_car.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/bumper_car.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/family_costa.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/family_costa.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/fourD.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/fourD.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/mini_viking.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/mini_viking.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/music_express.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/music_express.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/train.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/train.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/twist.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/twist.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/twist_mini.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/twist_mini.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/viking.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/viking.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/wooden_horse.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/wooden_horse.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy.asp" afterPath="$PROJECT_DIR$/playvillage/buy.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat.asp" afterPath="$PROJECT_DIR$/playvillage/eat.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/ghost.asp" afterPath="$PROJECT_DIR$/playvillage/ghost.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/junseol_gohyang.asp" afterPath="$PROJECT_DIR$/playvillage/junseol_gohyang.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/sculpture.asp" afterPath="$PROJECT_DIR$/playvillage/sculpture.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/privacy/privacy_policy.asp" afterPath="$PROJECT_DIR$/privacy/privacy_policy.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/privacy/term_agree.asp" afterPath="$PROJECT_DIR$/privacy/term_agree.asp" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,7 +29,38 @@
     <favorites_list name="m" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/css/index.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49731472">
+              <caret line="555" column="28" selection-start-line="555" selection-start-column="28" selection-end-line="555" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="guide.asp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/information/guide.asp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.75">
+              <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="membership.asp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/information/membership.asp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.785714">
+              <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -130,7 +76,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/member/join_email_general_step2.asp" />
         <option value="$PROJECT_DIR$/mypage/coupon_view.asp" />
         <option value="C:/test/test.html" />
         <option value="$PROJECT_DIR$/playvillage/sculpture.asp" />
@@ -172,7 +117,6 @@
         <option value="&lt;fc6acfa8-ad49-407f-8759-02bc079a51ff&gt;/www/mobile/wellkin/franchise/franchise.asp" />
         <option value="&lt;fc6acfa8-ad49-407f-8759-02bc079a51ff&gt;/www/mobile/wellkin/include/hidden_navi.inc" />
         <option value="&lt;fc6acfa8-ad49-407f-8759-02bc079a51ff&gt;/www/mobile/wellkin/index.asp" />
-        <option value="$PROJECT_DIR$/information/guide.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/join_email_general_step1.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/js/FormValidateCheck.js" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/js/common.js" />
@@ -180,6 +124,8 @@
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/inc/id_duplicate_chk.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/join_general_form.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/login.asp" />
+        <option value="$PROJECT_DIR$/information/guide.asp" />
+        <option value="$PROJECT_DIR$/information/membership.asp" />
         <option value="$PROJECT_DIR$/common/css/index.scss" />
       </list>
     </option>
@@ -265,6 +211,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mypage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="information" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -415,9 +375,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16204691" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16204691" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18336888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -454,20 +414,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mypage/coupon_view.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44174266">
-          <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playvillage/attraction.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.25">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/event/performance_chosun.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.285715">
@@ -748,13 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/test/ajax/index.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40425533">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/2016작업용/비티엘 중국어/wellkin/160704/franchise/sub2-2.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5005066">
@@ -803,16 +742,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/information/guide.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34650457">
-          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+        <state vertical-scroll-proportion="-11.75">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/test/ajax/index.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.214286">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/test/ajax/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37438422">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/information/membership.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.785714">
+          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45542428">
-          <caret line="1140" column="45" selection-start-line="1140" selection-start-column="45" selection-end-line="1140" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.49731472">
+          <caret line="555" column="28" selection-start-line="555" selection-start-column="28" selection-end-line="555" selection-end-column="28" />
           <folding />
         </state>
       </provider>
