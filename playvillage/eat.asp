@@ -18,12 +18,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>먹거리·살거리</h2>
-            <aside>
-                <h2>먹거리·살거리
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
         <div class="slider single-items">
@@ -37,10 +31,7 @@
             <div class="detail-head">
                 <h3>먹거리</h3>
                 <div class="text-box">
-                    <span class="text">
-                        정성이 가득 담긴 토속음식과<br/>
-                        테라스에서 즐기는 글로벌푸드까지!
-                    </span>
+                    <span class="text">정성이 가득 담긴 토속음식과 테라스에서 즐기는 글로벌푸드까지!</span>
                 </div>
             </div>
             <div class="detail-content attraction">
@@ -142,16 +133,6 @@
                         <dd class="text_01">놀이마을</dd>
                         <dt class="sub-title_02">분류</dt>
                         <dd class="text_02">중식</dd>
-                    </dl>
-                </section>
-                <section class="detail">
-                    <a href="#" class="img eat_img11"><img src="/mobile/images/play_village/eat/eat_11.jpg" alt="임실치즈피자 사진" /></a>
-                    <h4>임실치즈피자</h4>
-                    <dl>
-                        <dt class="sub-title_01">위치</dt>
-                        <dd class="text_01">놀이마을</dd>
-                        <dt class="sub-title_02">분류</dt>
-                        <dd class="text_02">양식</dd>
                     </dl>
                 </section>
             </div>

@@ -418,7 +418,6 @@ $(document).ready(function(){
 		})
 	};
 
-
 	//pc,모바일 구분
 	//(function(){
 	//	var filter = "win16|win32|win64|mac";

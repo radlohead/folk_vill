@@ -18,12 +18,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>이용안내</h2>
-            <aside>
-                <h2>이용안내
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
 <!--#include virtual="/mobile/information/inc/infor_topmenu.asp" -->
@@ -160,51 +154,55 @@
                             </p>
                             <img src="/mobile/images/information/map/market_place_map.png" alt="장터지도" />
                             <h4>주요메뉴</h4>
-                            <ul class="market-menu">
-                                <li>
+                            <div class="market-menu">
+                                <div class="menu_list">
                                     <img src="/mobile/images/information/map/market_place_img01.jpg" alt="불고기비빔밥 사진" />
-                                    <p class="caption">
+                                    <p class="caption_list">
                                         <span>신선한 야채와 불고기의 만남</span>
                                         <em>불고기비빔밥</em>
                                     </p>
-                                </li>
-                                <li>
+                                </div>
+                                <div class="menu_list2">
                                     <img src="/mobile/images/information/map/market_place_img02.jpg" alt="두부·전통순두부 사진" />
-                                    <p class="caption">
+                                    <p class="caption_list">
                                         <span>매일 아침 우리 콩을 직접 갈아 만든</span>
                                         <em>두부·전통순두부</em>
                                     </p>
-                                </li>
-                                <li>
+                                </div>
+                            </div>
+                            <div class="market-menu">
+                                <div class="menu_list">
                                     <img src="/mobile/images/information/map/market_place_img03.jpg" alt="전통순대 사진" />
-                                    <p class="caption">
+                                    <p class="caption_list">
                                         <span>민속촌에서만 맛볼 수 있는</span>
                                         <em>전통순대</em>
                                     </p>
-                                </li>
-                                <li>
+                                </div>
+                                <div class="menu_list2">
                                     <img src="/mobile/images/information/map/market_place_img04.jpg" alt="꼬치구이 사진" />
-                                    <p class="caption">
+                                    <p class="caption_list">
                                         <span>남녀노소 누구나 좋아하는</span>
                                         <em>꼬치구이</em>
                                     </p>
-                                </li>
-                                <li>
+                                </div>
+                            </div>
+                            <div class="market-menu">
+                                <div class="menu_list">
                                     <img src="/mobile/images/information/map/market_place_img05.jpg" alt="해물파전 사진" />
-                                    <p class="caption">
+                                    <p class="caption_list">
                                         <span>각종 해산물이 듬뿍</span>
                                         <em>해물파전</em>
                                     </p>
-                                </li>
-                                <li>
+                                </div>
+                                <div class="menu_list2">
                                     <img src="/mobile/images/information/map/market_place_img06.jpg" alt="생막걸리·동동주 사진" />
-                                    <p class="caption">
+                                    <p class="caption_list">
                                         <span>40년 양조 노하우가 담긴</span>
                                         <em>생막걸리·동동주</em>
                                     </p>
-                                </li>
-                            </ul>
-                        </article>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

@@ -18,12 +18,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>먹거리·살거리</h2>
-            <aside>
-                <h2>먹거리·살거리
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
         <div class="slider single-items">
@@ -37,10 +31,7 @@
             <div class="detail-head">
                 <h3>살거리</h3>
                 <div class="text-box">
-                    <span class="text">
-                        전통을 담고 있는 다양한 상품을<br/>
-                        만나보세요
-                    </span>
+                    <span class="text">전통을 담고 있는 다양한 상품을 만나보세요</span>
                 </div>
             </div>
             <div class="detail-content attraction">

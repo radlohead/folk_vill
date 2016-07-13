@@ -18,14 +18,7 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>행사·공연</h2>
-            <aside>
-                <h2>행사·공연
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
-
 <!--#include virtual="/mobile/event/inc/event_topmenu.asp" -->
     </div>
 
@@ -55,15 +48,8 @@
                     <span class="text03">
                         <span class="text">운영계획은 주간 단위로 업데이트 되며, 캐릭터 개인사정 및 현장상황에 따라 예고없이 변경될 수 있습니다.</span>
                     </span>
-                    <div class="preview-slide-wrap">
-                        <h4>조선캐릭터 미리보기</h4>
-                        <div class="preview-slide slider single-item">
-                            <div><img src="/mobile/images/event/chosun_slide01.jpg" alt="" /></div>
-                            <div><img src="/mobile/images/event/chosun_slide02.jpg" alt="" /></div>
-                        </div>
-                    </div>
 
-                    <div class="pre-infor-tab">
+                    <div class="pre-infor-tab pre-infor-tab2">
                         <div class="title">
                             <h3>알림사항을 꼭 읽어주세요</h3>
                             <span class="icon"></span>
@@ -71,16 +57,28 @@
                         <div class="content">
                             <ul>
                                 <li>
-                                    <span class="text">캐릭터는 주로 주말에 활동하며, 평일에는 축소 운영합니다.</span>
+                                    <p>
+                                        <span class="icon"></span>
+                                        <span>캐릭터는 주로 주말에 활동하며, 평일에는 축소 운영합니다.</span>
+                                    </p>
                                 </li>
                                 <li>
-                                    <span class="text">캐릭터는 각 시기에 진행되는 행사의 컨셉에 따라 지속적으로 변경됩니다. 예) 추억의 그때그놀이(이놈아저씨), 사극드라마축제(구미호) 등</span>
+                                    <p>
+                                        <span class="icon"></span>
+                                        <span>캐릭터는 각 시기에 진행되는 행사의 컨셉에 따라 지속적으로 변경됩니다. 예) 추억의 그때그놀이(이놈아저씨), 사극드라마축제(구미호) 등</span>
+                                    </p>
                                 </li>
                                 <li>
-                                    <span class="text">한국민속촌 내에서 캐릭터 촬영 시, 관람객 여러분이 촬영 대상이 되는 경우가 있으며 이를 보도, 광고, 프로모션, 판매 상품 등에 사용할 수 있습니다.</span>
+                                    <p>
+                                        <span class="icon"></span>
+                                        <span>한국민속촌 내에서 캐릭터 촬영 시, 관람객 여러분이 촬영 대상이 되는 경우가 있으며 이를 보도, 광고, 프로모션, 판매 상품 등에 사용할 수 있습니다.</span>
+                                    </p>
                                 </li>
                                 <li>
-                                    <span class="text">캐릭터 연기자에게 위해 행위 및 성희롱을 가하는 사례가 간혹 발생합니다. 이와 같은 경우, 강제 퇴장조치를 받을 수 있으니 협조 부탁드립니다.</span>
+                                    <p>
+                                        <span class="icon"></span>
+                                        <span>캐릭터 연기자에게 위해 행위 및 성희롱을 가하는 사례가 간혹 발생합니다. 이와 같은 경우, 강제 퇴장조치를 받을 수 있으니 협조 부탁드립니다.</span>
+                                    </p>
                                 </li>
                             </ul>
                         </div>
@@ -110,6 +108,14 @@
                             이색 캐릭터는 1년 내내 활동하는 것은 아니니 금주의 활동캐 릭터에서 확인해보세요.
                         </p>
                         <img src="/mobile/images/event/chosun_img_04.jpg" alt="" />
+                    </div>
+
+                    <div class="preview-slide-wrap">
+                        <h4>조선캐릭터 미리보기</h4>
+                        <div class="preview-slide slider single-item">
+                            <div><img src="/mobile/images/event/chosun_slide01.jpg" alt="" /></div>
+                            <div><img src="/mobile/images/event/chosun_slide02.jpg" alt="" /></div>
+                        </div>
                     </div>
                 </div>
             </div>

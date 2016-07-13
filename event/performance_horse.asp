@@ -18,12 +18,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>행사·공연</h2>
-            <aside>
-                <h2>행사·공연
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
 <!--#include virtual="/mobile/event/inc/event_topmenu.asp" -->
@@ -50,6 +44,7 @@
                     <a href="#none" class="map-btn horse">지도보기</a>
                 </div>
                 <div class="cont_body">
+                    <span class="text04">날씨나 내부상황에 따라 시간 변경 및 취소될 수 있습니다.</span>
                     <p class="text">우리나라의 전통 기마문화를 엿볼 수 있는 기예가 펼쳐집니다. 가슴을 울리는 화려하고 역동적인 마상재를 기대해주세요.</p>
                     <div class="img_box">
                         <img src="/mobile/images/event/horse_img_01.jpg" alt="" />
@@ -63,10 +58,6 @@
                                         말 위에서 벌이는 궁술과 쌍검술을 포함해 서서타기, 거꾸로 타기 뒤로 타기, 옆으로 타기, 말 위에서 물구나무 서기 등 난이도가 높은 기예를 펼칩니다.
                         </p>
                     </div>
-                    <p class="text_box">
-                        <span class="icon">*</span>
-                        <span class="text">날씨나 내부상황에 따라 시간 변경 및 취소될 수 있습니다.</span>
-                    </p>
                 </div>
                 <div class="preview-slide-wrap">
                     <h4>공연 미리보기</h4>

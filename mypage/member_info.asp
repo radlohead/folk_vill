@@ -1,3 +1,138 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/common.inc"-->
+<!--#include virtual="/common/lib/utilManager.asp"-->
+<!--#include virtual="/common/inc/forceSSL.inc"-->
+<%
+	'#######################################################
+	'# FORM값 가져오기 START
+	'#######################################################
+
+	Dim id : id					= session("id")
+	Dim password : password		= RP(Request("password"))
+
+	'#######################################################
+	'# FORM값 가져오기 END
+	'#######################################################
+
+	If id = "" Then
+		Response.write "<script language='javascript'>"
+		Response.write " alert('로그인후 이용해 주세요.');"
+		Response.write " location.href='/mobile/member/login.asp?RtnURL=/mobile/mypage/member_info_auth.asp';"
+		Response.write "</script>"
+		Response.End
+	End If
+
+	If id = "" Or password = "" Then
+		Call f_AlertURL("비정상 접속 입니다.\n\n문제가 있으시면 관리자에게 문의해주세요.", "/mobile/mypage/member_info_auth.asp")
+	End If
+
+	Call OpenDbConnection() '데이터베이스 오픈
+
+	'########################################################
+	'# 회원정보 체크 프로시저 START
+	'########################################################
+
+	Set objCmd = Server.CreateObject("ADODB.Command")
+	With objCmd
+		.ActiveConnection = Conn
+		.CommandText = "SP_HUGO7_MEMBER_INFO_SELECT"
+		.CommandType = adCmdStoredProc
+		.Parameters.Append .CreateParameter("@id", adVarchar, adParamInput, 20, id)
+		Set Rs = .Execute
+	End With
+	Set objCmd = Nothing
+
+	'########################################################
+	'# 회원정보 체크 프로시저 END
+	'########################################################
+
+	If Not(Rs.bof OR Rs.eof) Then
+
+		'기본정보
+		gubun				= Rs("GUBUN")
+		id					= Rs("UID")
+		pwd					= Rs("PWD")
+		name				= Rs("NAME")
+		gender				= Rs("GENDER")
+		birthyear			= Rs("BIRTHYEAR")
+		birthmonth			= Rs("BIRTHMONTH")
+		birthday			= Rs("BIRTHDAY")
+		birthsel			= Rs("BIRTHSEL")
+		zip					= Rs("ZIP")
+		address				= Rs("ADDRESS")
+		address_detail		= Rs("ADDRESS_DETAIL")
+		phone1				= Rs("PHONE1")
+		phone2				= Rs("PHONE2")
+		phone3				= Rs("PHONE3")
+		mobile1				= Rs("MOBILE1")
+		mobile2				= Rs("MOBILE2")
+		mobile3				= Rs("MOBILE3")
+		mobile				= mobile1&"-"&mobile2&"-"&mobile3
+		email				= Rs("EMAIL")
+		dbemail				= email
+
+		if not isNull(email) AND email <> "" then
+			email = split(email,"@")
+			email1 = email(0)
+			email2 = email(1)
+		Else
+			email1 = ""
+			email2 = ""
+		end If
+
+		'2015/03/06 이메일 인증 회원가입시 도메인 선택없이 직접 입력하는 경우로 인해 빈값으로 수정
+		email3 = ""
+
+		'email_sel		= Rs("EMAILSEL")
+
+		'If email_sel = "1" Then
+		'	email3 = Trim(email2)
+		'Else
+		'	email3 = ""
+		'End If
+
+		mailing				= Rs("MAILING")
+		sms					= Rs("SMS")
+		ip					= Rs("IP")
+		auth				= Rs("AUTH")
+		regdate				= Rs("REGDATE")
+		'14세미만 보호자 정보
+		pname				= Rs("PNAME")
+		pgender				= Rs("PGENDER")
+		pbirthyear			= Rs("PBIRTHYEAR")
+		pbirthmonth			= Rs("PBIRTHMONTH")
+		pbirthday			= Rs("PBIRTHDAY")
+		pmobile1			= Rs("PMOBILE1")
+		pmobile2			= Rs("PMOBILE2")
+		pmobile3			= Rs("PMOBILE3")
+		pmobile				= pmobile1&"-"&pmobile2&"-"&pmobile3
+
+		If gubun = "G" Then
+			strgubun = "일반"
+		ElseIf gubun = "F" Then
+			strgubun = "외국인"
+		Else
+			strgubun = "14세미만"
+		End If
+
+		If gender = "M" Then
+			strgender = "남"
+		ElseIf gender = "F" Then
+			strgender = "여"
+		End If
+
+		If pgender = "M" Then
+			strpgender = "남"
+		ElseIf pgender = "F" Then
+			strpgender = "여"
+		End If
+
+		Rs.Close
+	End If
+
+	Call CloseDbConnection() '데이터베이스 클로즈
+%>
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,22 +140,112 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
-<!--#include virtual="/mobile/common/inc/css.asp" -->
+	<!--#include virtual="/mobile/common/inc/css.asp" -->
+	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/common/js/common.js"></script>
+	<script type="text/javascript" src="/common/js/Validate.js"></script>
+	<script type="text/javascript" src="/mobile/common/js/FormValidateCheck.js"></script>
+	<script>
+	$(document).ready(function() {
+		alert('<%=birthmonth%>');
+		$("#btnPopDaumPostcode").click(function() {
+			jsPopDaumPostcode();
+		});
+	});
+	</script>
+	<!-- 다음 주소 검색 삽입부분 신규 버전-->
+	<!-- http일 경우 사용 start -->
+	<!--<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>-->
+	<!-- http일 경우 사용 end -->
+	<!-- https일 경우 사용 start -->
+	<script src="https://spi.maps.daum.net/imap/map_js_init/postcode.v2.js"></script>
+	<!-- https일 경우 사용 end -->
+	<script language="javascript">
+	<!--
+		function jsPopDaumPostcode() {
+			new daum.Postcode({
+				oncomplete: function(data) {
+					var addr = data.address.replace(/(\s|^)\(.+\)$|\S+~\S+/g, '');
+
+					/* 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분. */
+					$("#zipcode1").val(data.postcode1);
+					$("#zipcode2").val(data.postcode2);
+					//$("#txtPartAddr1").val(data.address);
+					//새우편번호 5자리
+					$("#txtZoneCode").val(data.zonecode);
+
+					//$("#txtPartAddr2").val($("#txtPartAddr1").val().replace(addr, ""));
+					$("#address").val(addr);
+
+					$("#address_detail").focus();
+					//jsCoordinateAjax("default");
+				}
+			}).open();
+		}
+	//-->
+	</script>
+	<!-- 다음 주소 검색 삽입부분 -->
+	<script type="text/javascript">
+	<!--
+	//생연월일 일 가져오기
+	function setBirthDay(fm) {
+		var form = document.getElementById(fm);
+		var oldMaxDay = form.birthday.length;
+
+		if (form.birthyear.value == "" || form.birthmonth.value == "") {
+			for (var i = oldMaxDay; i >= 1; i--) {
+				form.birthday.options[i] = null;
+			}
+		} else {
+			var newMaxDay = new Date(new Date(form.birthyear.value, form.birthmonth.value, 1) - 24 * 60 * 60 * 1000).getDate();
+			if (oldMaxDay - 1 - newMaxDay > 0) {
+				for (var i = oldMaxDay; i > newMaxDay; i--) {
+					form.birthday.options[i] = null;
+				}
+			} else if (oldMaxDay - 1 - newMaxDay < 0) {
+				for (var i = oldMaxDay; i <= newMaxDay; i++) {
+					var objOption = document.createElement("option");
+
+					var val = "";
+					if (i < 10) {
+					  val = "0"+i;
+					} else {
+					  val = i;
+					}
+
+					objOption.text = i + "일";
+					objOption.value = val;
+					/*if (objOption.value == "<%=birthday%>") {
+						objOption.selected = true;
+					}*/
+
+					form.birthday.options.add(objOption);
+				}
+			}
+		}
+	}
+
+	window.onload = function() {
+		setBirthDay('frm');
+		$("#birthday").val('<%=birthday%>');
+	}
+	//-->
+	</script>
 </head>
 <body>
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
 <div class="wrap">
-<!-- 상단헤더 -->
-<!--#include virtual="/mobile/common/inc/header.asp" -->
+	<!-- 상단헤더 -->
+	<!--#include virtual="/mobile/common/inc/header.asp" -->
 
     <div class="header_title_slide">
         <div class="title">
             <h2>마이페이지</h2>
         </div>
 
-<!--#include virtual="/mobile/mypage/inc/mypage_topmenu.asp" -->
+		<!--#include virtual="/mobile/mypage/inc/mypage_topmenu.asp" -->
     </div>
 
     <div class="contents">
@@ -32,172 +257,119 @@
                 </span>
             </div>
             <div class="content member">
-               <form name="join_form" action="" method="post" class="join_form">
-                    <label for="name" class="nameLa">이름</label>
-                    <input type="text" id="name" class="name" name="name" placeholder="이름" />
-                    <label for="name" class="nameLa">성별</label>
-                    <input type="text" id="name" class="name" name="name" placeholder="남" />
+			<form action="/mobile/mypage/member_edit_proc.asp" method="post" id="frm" name="frm" class="join_form">
+			<input type="hidden" id="id" name="id" value="<%=id%>">
+			<input type="hidden" id="dbemail" name="dbemail" value="<%=dbemail%>">
+			<input type="hidden" id="gubun" name="gubun" value="<%=gubun%>">
+
+
+			<%
+				If gubun = "C" Then '14세미만일 경우
+			%>
+				<label for="name" class="nameLa">이름</label>
+				<input type="text" id="name" class="name" readonly value="<%=name%>" />
+				<label for="name" class="nameLa">보호자 이름</label>
+				<input type="text" id="name" class="name" readonly value="<%=strgender%>" />
+				<label for="name" class="nameLa">성별</label>
+				<input type="text" id="name" class="name" readonly value="<%=name%>" />
+				<label for="name" class="nameLa">보호자 성별</label>
+				<input type="text" id="name" class="name" readonly value="<%=strgender%>" />
+			<%
+				Else '일반/외국인일 경우
+			%>
+				<label for="name" class="nameLa">이름</label>
+				<input type="text" id="name" class="name" name="name" readonly value="<%=name%>" />
+				<label for="name" class="nameLa">성별</label>
+				<input type="text" id="name" class="name" name="name" readonly value="<%=strgender%>" />
+			<%
+				End If
+			%>
 
                     <label for="birth_date_01">생년월일</label>
                     <div class="select_box birth_date_box">
                         <div class="select">
-                            <select name="birth_date_01" class="birth_date_01">
-                                <option value="">년도</option>
-                                <option value="2002">2002년</option>
-                                <option value="2001">2001년</option>
-                                <option value="2000">2000년</option>
-                                <option value="1999">1999년</option>
-                                <option value="1998">1998년</option>
-                                <option value="1997">1997년</option>
-                                <option value="1996">1996년</option>
-                                <option value="1995">1995년</option>
-                                <option value="1994">1994년</option>
-                                <option value="1993">1993년</option>
-                                <option value="1992">1992년</option>
-                                <option value="1991">1991년</option>
-                                <option value="1990">1990년</option>
-                                <option value="1989">1989년</option>
-                                <option value="1988">1988년</option>
-                                <option value="1987">1987년</option>
-                                <option value="1986">1986년</option>
-                                <option value="1985">1985년</option>
-                                <option value="1984">1984년</option>
-                                <option value="1983">1983년</option>
-                                <option value="1982">1982년</option>
-                                <option value="1981">1981년</option>
-                                <option value="1980">1980년</option>
-                                <option value="1979">1979년</option>
-                                <option value="1978">1978년</option>
-                                <option value="1977">1977년</option>
-                                <option value="1976">1976년</option>
-                                <option value="1975">1975년</option>
-                                <option value="1974">1974년</option>
-                                <option value="1973">1973년</option>
-                                <option value="1972">1972년</option>
-                                <option value="1971">1971년</option>
-                                <option value="1970">1970년</option>
-                                <option value="1969">1969년</option>
-                                <option value="1968">1968년</option>
-                                <option value="1967">1967년</option>
-                                <option value="1966">1966년</option>
-                                <option value="1965">1965년</option>
-                                <option value="1964">1964년</option>
-                                <option value="1963">1963년</option>
-                                <option value="1962">1962년</option>
-                                <option value="1961">1961년</option>
-                                <option value="1960">1960년</option>
-                                <option value="1959">1959년</option>
-                                <option value="1958">1958년</option>
-                                <option value="1957">1957년</option>
-                                <option value="1956">1956년</option>
-                                <option value="1955">1955년</option>
-                                <option value="1954">1954년</option>
-                                <option value="1953">1953년</option>
-                                <option value="1952">1952년</option>
-                                <option value="1951">1951년</option>
-                                <option value="1950">1950년</option>
-                                <option value="1949">1949년</option>
-                                <option value="1948">1948년</option>
-                                <option value="1947">1947년</option>
-                                <option value="1946">1946년</option>
-                                <option value="1945">1945년</option>
-                                <option value="1944">1944년</option>
-                                <option value="1943">1943년</option>
-                                <option value="1942">1942년</option>
-                                <option value="1941">1941년</option>
-                                <option value="1940">1940년</option>
-                                <option value="1939">1939년</option>
-                                <option value="1938">1938년</option>
-                                <option value="1937">1937년</option>
-                                <option value="1936">1936년</option>
-                                <option value="1935">1935년</option>
-                                <option value="1934">1934년</option>
-                                <option value="1933">1933년</option>
-                                <option value="1932">1932년</option>
-                                <option value="1931">1931년</option>
-                                <option value="1930">1930년</option>
-                                <option value="1929">1929년</option>
-                                <option value="1928">1928년</option>
-                                <option value="1927">1927년</option>
-                                <option value="1926">1926년</option>
-                                <option value="1925">1925년</option>
-                                <option value="1924">1924년</option>
-                                <option value="1923">1923년</option>
-                                <option value="1922">1922년</option>
-                                <option value="1921">1921년</option>
-                                <option value="1920">1920년</option>
-                                <option value="1919">1919년</option>
-                                <option value="1918">1918년</option>
-                                <option value="1917">1917년</option>
-                                <option value="1916">1916년</option>
-                                <option value="1915">1915년</option>
-                                <option value="1914">1914년</option>
-                                <option value="1913">1913년</option>
-                                <option value="1912">1912년</option>
-                                <option value="1911">1911년</option>
-                                <option value="1910">1910년</option>
-                                <option value="1909">1909년</option>
-                                <option value="1908">1908년</option>
-                                <option value="1907">1907년</option>
-                                <option value="1906">1906년</option>
-                                <option value="1905">1905년</option>
-                                <option value="1904">1904년</option>
-                                <option value="1903">1903년</option>
-                                <option value="1902">1902년</option>
-                                <option value="1901">1901년</option>
-                                <option value="1900">1900년</option>
-                            </select>
+
+						<select name="birthyear" id="birthyear" class="birth_date_01" title="년도 선택" onchange="javascript:setBirthDay('frm');">
+						<%
+							toyears = year(date)
+
+							If gubun = "C" Then '14세미만일 경우
+						%>
+							<option value=''>년도</option>
+							<%
+								For j = (toyears - 14) To toyears Step + 1
+							%>
+							<option value="<%=j%>"><%=j%>년</option>
+							<%Next%>
+						<%
+							Else '일반/외국인일 경우
+						%>
+							<option value=''>년도</option>
+							<%
+								For j = (toyears - 14) To 1900 Step - 1
+							%>
+							<option value="<%=j%>"><%=j%>년</option>
+							<%Next%>
+						<%
+							End If
+						%>
+						</select>
                         </div>
                         <div class="select">
-                            <select name="birth_date_02" class="birth_date_02">
-                                <option value="">월</option>
-                                <option value="01">1월</option>
-                                <option value="02">2월</option>
-                                <option value="03">3월</option>
-                                <option value="04">4월</option>
-                                <option value="05">5월</option>
-                                <option value="06">6월</option>
-                                <option value="07">7월</option>
-                                <option value="08">8월</option>
-                                <option value="09">9월</option>
-                                <option value="10">10월</option>
-                                <option value="11">11월</option>
-                                <option value="12">12월</option>
-                            </select>
+						<select name="birthmonth" id="birthmonth" title="월 선택" onchange="javascript:setBirthDay('frm');" class="birth_date_02">
+							<option value="">월</option>
+							<%
+								For j = 1 To 12
+									If Len(j) < 2 Then
+										j = "0" & j
+									End If
+							%>
+							<option value="<%=j%>"><%=CInt(j)%>월</option>
+							<%Next%>
+						</select>
                         </div>
                         <div class="select">
-                            <select name="birth_date_03" class="birth_date_03">
-                                <option value="">일</option>
-                            </select>
+							<select name="birthday" id="birthday" title="일 선택" class="birth_date_03">
+								<option value=''>일</option>
+							</select>
                         </div>
                     </div>
                     <div class="check_box_wrap">
-                        <input type="checkbox" id="solar" class="solar" name="solar" value="solar">
+						<span class="radioWrap block">
+                        <!--<input type="checkbox" id="solar" class="solar" name="solar" value="solar">-->
+						<input type="radio" name="birth_umyang" id="form_type_01" title="양력" class="solar" value="1" <%=GetChecked(birthsel, "1")%> />
                         <label for="solar"></label>
                         <span class="text mr25">양력</span>
-
-                        <input type="checkbox" id="lunar" class="lunar" name="lunar" value="lunar">
+						</span>
+                        <span class="radioWrap block">
+						<!--<input type="checkbox" id="lunar" class="lunar" name="lunar" value="lunar">-->
+						<input type="radio" name="birth_umyang" id="form_type_02" title="음력" class="lunar" value="2" <%=GetChecked(birthsel, "2")%> />
                         <label for="lunar"></label>
                         <span class="text">음력</span>
+						</span>
                     </div>
 
                     <label for="id">아이디</label>
-                    <input type="text" id="id" class="id" name="id" value="zergle83" readonly="readonly" />
+                    <input type="text" id="id" class="id" name="id" value="<%=id%>" readonly="readonly" />
 
                     <div class="address_wrap">
                         <label for="add_01">주소</label>
-                        <span class="add_01_box">
-                            <input type="text" id="add_01" class="add_01" name="add_01" placeholder="우편번호" readonly="readonly" />
-                            <!--<input type="submit" name="add_search_btn" class="add_search_btn" value="우편번호 찾기" />-->
-                            <a href="#" class="add_search_btn">우편번호 찾기</a>
-                        </span>
-                        <input type="text" id="add_02" class="add_02" name="add_02" readonly="readonly" />
-                        <input type="text" id="add_03" class="add_03" name="add_03" />
+
+
+						<span class="add_01_box">
+							<input type="text" name="zipcode1" id="zipcode1" readonly="readonly" class="add_01" placeholder="우편번호1" />
+							<input type="text" name="zipcode2" id="zipcode2" readonly="readonly" class="add_01" placeholder="우편번호2" />
+							<!--<input type="submit" name="add_search_btn" class="add_search_btn" value="우편번호 찾기" />-->
+							<a id="btnPopDaumPostcode" name="btnPopDaumPostcode" href="#" class="add_search_btn">우편번호 찾기</a>&nbsp; (* Daum Kakao Corp. 제공)
+						</span>
+						<input type="text" name="address" id="address" class="add_02" readonly="readonly" placeholder="주소" />
+						<input type="text" name="address_detail" id="address_detail" maxlength="50" class="add_03" placeholder="상세주소" />
+
                     </div>
 
                     <label for="tel">전화번호</label>
                     <div class="select_box tel_box">
-                        <select name="tel_01" class="tel_01">
+                        <select name="phone1" id="phone1" class="tel_01">
                             <option value="">선택</option>
                             <option value="02">02</option>
                             <option value="031">031</option>
@@ -219,35 +391,65 @@
                             <option value="0505">0505</option>
                             <option value="0506">0506</option>
                             <option value="070">070</option>
-                        </select>
-                        <input type="text" id="tel_02" class="tel_02" name="tel_02" placeholder="전화번호" />
+						</select>
+						<input type="text" name="phone2" id="phone2" class="tel_02" maxlength="4" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />-
+						<input type="text" name="phone3" id="phone3" class="tel_02" maxlength="4" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')" onkeypress="txtOnlyNum(event)" />
+                        <!--<input type="text" id="tel_02" class="tel_02" name="tel_02" placeholder="전화번호" />-->
                     </div>
 
                     <label for="phone">휴대폰 번호</label>
                     <div class="select_box phone_box">
-                        <select name="phone_01" class="phone_01">
-                            <option value="선택">선택</option>
-                            <option value="010">010</option>
-                            <option value="011">011</option>
-                            <option value="016">016</option>
-                            <option value="017">017</option>
-                            <option value="018">018</option>
-                            <option value="019">019</option>
-                        </select>
-                        <input type="text" id="phone_02" class="phone_02" name="phone_02" placeholder="휴대폰 번호" />
+				<%
+					If gubun = "C" Then
+				%>
+					<select name="pmobile1" id="pmobile1" class="phone_01">
+                        <option value="선택">선택</option>
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                    </select>
+                    <input type="text" name="pmobile2" id="pmobile2" maxlength="8" class="phone_02" placeholder="휴대폰 번호" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />
+				<%
+					Else
+				%>
+					<select name="mobile1" id="mobile1" class="phone_01">
+                        <option value="선택">선택</option>
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                    </select>
+                    <input type="text" name="mobile2" id="mobile2" maxlength="8" class="phone_02" placeholder="휴대폰 번호" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />
+				<%
+					End If
+				%>
                     </div>
+					<!--
                     <div class="check_box_wrap">
                         <input type="checkbox" id="sms" class="sms" name="sms" value="sms">
                         <label for="sms"></label>
                         <span class="text">SMS 수신동의</span>
                     </div>
+					-->
+					<div class="check_box_wrap">
+						<span class="radioWrap block">
+							<input type="radio" id="form_sms_agree1" name="sms" class="sms" value="Y" <%=GetChecked(sms, "Y")%> />
+							<label for="form_sms_agree1"></label>
+							<span class="text">SMS 수신동의</span>
+						</span>
+					</div>
 
                     <div class="select_box email_box">
                         <label for="email_01">이메일</label>
-                        <input type="text" id="email_01" class="email_01" name="email_01" placeholder="이메일 아이디" />
+						<input type="text" id="email1" name="email1" class="email_01" placeholder="이메일 아이디" />
                         <span class="text_at">@</span>
-                        <input type="text" id="email_02" class="email_02" name="email_02" placeholder="이메일 주소" />
-                        <select name="email_03" class="email_03">
+						<input type="text" id="email2" name="email2" class="email_02" placeholder="이메일 주소" />
+						<select id="email3" name="email3" class="email_03" onchange="changeEmailDomain(this);">
                             <option value="직접입력">직접입력</option>
                             <option value="dreanwiz.com">dreanwiz.com</option>
                             <option value="empal.com">empal.com</option>
@@ -263,11 +465,20 @@
                             <option value="yahoo.co.kr">yahoo.co.kr</option>
                         </select>
                     </div>
+					<div class="check_box_wrap">
+						<span class="radioWrap block">
+							<input type="radio" id="form_news_agree1" name="mailling" class="news_letter" value="Y" <%=GetChecked(mailing, "Y")%> />
+							<label for="form_news_agree1"></label>
+							<span class="text">뉴스레터 수신동의</span>
+						</span>
+					</div>
+					<!--
                     <div class="check_box_wrap">
                         <input type="checkbox" id="news_letter" class="news_letter" name="news_letter" value="news_letter">
                         <label for="news_letter"></label>
                         <span class="text">뉴스레터 수신동의</span>
                     </div>
+					-->
 
                     <ul class="caution">
                         <li>
@@ -276,8 +487,8 @@
                         </li>
                     </ul>
                     <span class="cert_btn_box">
-                        <a href="#none" class="btn join_ok_btn ok_btn">확인</a>
-                        <a href="#none" class="btn cancel_btn">취소</a>
+                        <a href="javascript:FormEditCheck();" class="btn join_ok_btn ok_btn">확인</a>
+                        <a href="/mobile/mypage/member_info_auth.asp" class="btn cancel_btn">취소</a>
                     </span>
                 </form>
             </div>
@@ -305,6 +516,7 @@
     </script>
 <script>
     //아이디중복확인 팝업 취소버튼 클릭시 팝업사라짐
+	/*
     function pop_close(){
         $(".id_dup.cancel_btn, .cancel_btn").on("click", function(){
             $(this).closest(".popup_wrap").css("visibility","hidden");
@@ -379,7 +591,36 @@
             alert("이메일 주소를 입력해 주세요");
         }
     });
+	*/
 
 </script>
 </body>
 </html>
+
+<iframe name="blank_frame" src="about:blank" width="0" height="0" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" hspace="0" vspace="0" title="개인정보변경폼아이프레임"></iframe>
+<script>
+$(document).ready(function(){
+	setTextbox("birthyear" , "<%=birthyear%>");
+	setTextbox("birthmonth" , "<%=birthmonth%>");
+	setTextbox("birthday" , "<%=birthday%>");
+	setTextbox("zipcode1" , "<%=Left(zip,3)%>");
+	setTextbox("zipcode2" , "<%=Right(zip,3)%>");
+	setTextbox("address" , "<%=address%>");
+	setTextbox("address_detail" , "<%=address_detail%>");
+	setTextbox("phone1" , "<%=phone1%>");
+	setTextbox("phone2" , "<%=phone2%>");
+	setTextbox("phone3" , "<%=phone3%>");
+	<%if gubun = "C" then%>
+	setTextbox("pmobile1" , "<%=pmobile1%>");
+	setTextbox("pmobile2" , "<%=pmobile2%><%=pmobile3%>");
+	//setTextbox("pmobile3" , "<%=pmobile3%>");
+	<%else%>
+	setTextbox("mobile1" , "<%=mobile1%>");
+	setTextbox("mobile2" , "<%=mobile2%><%=mobile3%>");
+	//setTextbox("mobile3" , "<%=mobile3%>");
+	<%end if%>
+	setTextbox("email1" , "<%=email1%>");
+	setTextbox("email2" , "<%=email2%>");
+	setTextbox("email3" , "<%=email3%>");
+});
+</script>

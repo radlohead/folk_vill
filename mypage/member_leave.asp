@@ -1,3 +1,16 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/common.inc"-->
+<!--#include virtual="/common/lib/utilManager.asp"-->
+<!--#include virtual="/common/inc/forceSSL.inc"-->
+<%	
+	If session("id") = "" Then
+		Response.write "<script language='javascript'>"
+		Response.write " alert('로그인후 이용해 주세요.');"
+		Response.write " location.href='/mobile/member/login.asp?RtnURL=/mobile/mypage/member_leave.asp';"
+		Response.write "</script>"
+		Response.End
+	End If
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -5,7 +18,52 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
-<!--#include virtual="/mobile/common/inc/css.asp" -->
+	<!--#include virtual="/mobile/common/inc/css.asp" -->
+	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/common/js/common.js"></script>
+	<script type="text/javascript" src="/common/js/Validate.js"></script>
+	<script type="text/javascript">		
+	function FormLeaveCheck() {	
+		var form = document.frm;
+
+		if($.trim($("[name=id]").val())==""){
+			alert('아이디를 입력해 주세요.');
+			$("#id").val("");
+			$("#id").focus(); 
+			return;
+		}			
+		
+		if($.trim($("[name=password]").val())==""){
+			alert('비밀번호를 입력해 주세요.');
+			$("#password").val("");
+			$("#password").focus(); 
+			return;
+		}
+		
+		/*
+		if(!$(':input:radio[name=reason]:checked').val()) {
+			alert("탈퇴 사유를 선택해 주세요.");
+			//$(':input:radio[name=mailling]:first-child').focus();
+			return;
+		}
+
+		if($(':input:radio[name=reason]:checked').val()=="R1007") {
+			if($.trim($("[name=reason_text]").val())==""){
+				alert('기타 탈퇴사유를 입력해 주세요.');
+				$("#reason_text").val("");
+				$("#reason_text").focus(); 
+				return;
+			}					
+		}
+		*/
+
+		if(confirm("정말로 회원탈퇴를 하시겠습니까?")){				
+			form.target="blank_frame";
+			form.action="/mobile/mypage/member_leave_proc.asp";
+			form.submit();
+		}
+	}
+	</script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -49,15 +107,15 @@
                         </li>
                     </ol>
                 </div>
-                <form name="member_leave_form" action="" method="post" class="member_leave">
+				<form method="post" name="frm" id="frm" class="member_leave">
                     <h5>본인확인</h5>
                     <label for="id" class="hidden">아이디</label>
-                    <input type="text" id="id" class="id" name="id" placeholder="아이디" />
+                    <input type="text" id="id" class="id" name="id" maxlength="14" Readonly value="<%=session("id")%>" />
                     <label for="pw" class="hidden">비밀번호</label>
-                    <input type="text" id="pw" class="pw" name="pw" placeholder="비밀번호" />
+                    <input type="password" id="password" class="pw" name="password" placeholder="비밀번호" maxlength="14" />
                     <span class="cert_btn_box">
-                        <a href="#none" class="btn member_leave_btn ok_btn">확인</a>
-                        <a href="#none" class="btn cancel_btn">취소</a>
+                        <a href="javascript:FormLeaveCheck();" class="btn member_leave_btn ok_btn">확인</a>
+                        <a href="http://www.koreanfolk.co.kr/mobile/" class="btn cancel_btn">취소</a>
                     </span>
                 </form>
             </div>
@@ -99,3 +157,4 @@
 
 </body>
 </html>
+<iframe name="blank_frame" src="about:blank" width="0" height="0" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" hspace="0" vspace="0" title="회원탈퇴폼아이프레임"></iframe>

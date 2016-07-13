@@ -18,18 +18,12 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>단체프로그램</h2>
-            <aside>
-                <h2>단체프로그램
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
     </div>
 
     <div class="contents">
         <div class="detail-discount">
-            <div class="detail-head">
+            <div class="detail-head02">
                 <h3>키즈데이 패키지</h3>
                     <span class="text">매주 월요일은 유아들을 위한 특별한 키즈데이! 아이들의 눈높이에 맞춰 다양하게 구성된 맞춤체험</span>
             </div>

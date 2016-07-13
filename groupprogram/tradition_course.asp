@@ -18,18 +18,12 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>단체프로그램</h2>
-            <aside>
-                <h2>단체프로그램
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
     </div>
 
     <div class="contents">
         <div class="detail-discount">
-            <div class="detail-head">
+            <div class="detail-head02">
                 <h3>전통문화체험 코스</h3>
                     <span class="text">한국민속촌의 다양한 전통체험을 통해 선조들의 지혜와 생활 모습을 이해하고 문화예술을 학습할 수 있는 프로그램</span>
             </div>

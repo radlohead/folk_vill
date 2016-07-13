@@ -143,12 +143,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>할인정보</h2>
-            <aside>
-                <h2>할인정보
-                    <span class="icon"></span>
-                </h2>
-			<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
         <div class="slider multiple-items">
@@ -171,15 +165,35 @@
                 </p>
                 <article>
                     <span class="coupon"><img src="<%=FileURL%><%=files3%>" alt="<%=alt3%>" /></span>
-                    <span class="coupon_bottom_bg"></span>
+                    <!--<span class="coupon_bottom_bg"></span>-->
                     <dl>
-                        <dt>이름</dt>
+                        <dt>
+                            <p>
+                                <span class="icon"></span>
+                                <span>이름</span>
+                            </p>
+                        </dt>
                         <dd><%'=session("name")%></dd>
-                        <dt>휴대폰</dt>
+                        <dt>
+                            <p>
+                                <span class="icon"></span>
+                                <span>휴대폰</span>
+                            </p>
+                        </dt>
                         <dd><%'Response.Write mobile1 & "-" & mobile2 & "-" & mobile3%></dd>
-                        <dt>생년월일</dt>
+                        <dt>
+                            <p>
+                                <span class="icon"></span>
+                                <span>생년월일</span>
+                            </p>
+                        </dt>
                         <dd><%'Response.Write birthyear & "-" & birthmonth & "-" & birthday%></dd>
-                        <dt>사용기간</dt>
+                        <dt>
+                            <p>
+                                <span class="icon"></span>
+                                <span>사용기간</span>
+                            </p>
+                        </dt>
                         <dd><%'=sdate%> ~ <%'=edate%></dd>
                     </dl>
                 </article>

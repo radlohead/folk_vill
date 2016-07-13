@@ -161,12 +161,6 @@
 	<div class="header_title_slide">
 		<div class="title">
 			<h2>이용안내</h2>
-			<aside>
-			<h2>이용안내
-			<span class="icon"></span>
-			</h2>
-			<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-			</aside>
 		</div>
 		<!--#include virtual="/mobile/information/inc/infor_topmenu.asp" -->
     </div>
@@ -247,7 +241,12 @@
 
                     </tbody>
                 </table>
-                <a class="list_more_btn" id="btnAdd" href="#none">더보기</a>
+                <a class="list_more_btn" id="btnAdd" href="#none">
+                    <p>
+                        <span class="text">더보기</span>
+                        <span class="icon"></span>
+                    </p>
+                </a>
             </div>
         </div>
     </div>

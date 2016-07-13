@@ -40,8 +40,8 @@
                     </p>
                 </div>
                 <span class="cert_btn_box">
-                    <a href="/mobile/index.asp" class="btn ok_btn">메인으로</a>
-                    <a href="#none" class="btn cancel_btn">취소</a>
+                    <a href="http://www.koreanfolk.co.kr/mobile/" class="btn ok_btn">메인으로</a>
+                    <a href="http://www.koreanfolk.co.kr/mobile/mypage/member_info_auth.asp" class="btn cancel_btn">취소</a>
                 </span>
             </div>
         </div>

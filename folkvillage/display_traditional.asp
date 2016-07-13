@@ -18,12 +18,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>민속마을</h2>
-            <aside>
-                <h2>민속마을
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
         <div class="slider single-items">
@@ -52,7 +46,9 @@
             <div class="tab-content tabMenu1">
                 <div class="detail-head">
                     <h3>전통민속관</h3>
-                    <span class="text">세시풍속과 전통생활문화를 한 눈에</span>
+                    <div class="text-box">
+                        <span class="text">세시풍속과 전통생활문화를 한 눈에</span>
+                    </div>
                 </div>
                 <span class="photo-img map">
                     <a href="#none" class="map-btn">지도보기</a>
@@ -75,7 +71,9 @@
             <div class="tab-content tabMenu2">
                 <div class="detail-head">
                     <h3>세계민속관</h3>
-                    <span class="text">세계 각국의 생활문화를 전시한 이색 전시관</span>
+                    <div class="text-box">
+                        <span class="text">세계 각국의 생활문화를 전시한 이색 전시관</span>
+                    </div>
                 </div>
                 <span class="photo-img map">
                     <a href="#none" class="map-btn">지도보기</a>
@@ -138,7 +136,9 @@
             <div class="tab-content tabMenu3">
                 <div class="detail-head">
                     <h3>탈춤전시관</h3>
-                    <span class="text">웃음과 해학이 담긴 예술세계</span>
+                    <div class="text-box">
+                        <span class="text">웃음과 해학이 담긴 예술세계</span>
+                    </div>
                 </div>
                 <span class="photo-img map">
                     <a href="#none" class="map-btn">지도보기</a>
@@ -156,7 +156,9 @@
             <div class="tab-content tabMenu4">
                 <div class="detail-head">
                     <h3>옹기전시관</h3>
-                    <span class="text">살아있는 그릇, 옹기 이야기</span>
+                    <div class="text-box">
+                        <span class="text">살아있는 그릇, 옹기 이야기</span>
+                    </div>
                 </div>
                 <span class="photo-img map">
                     <a href="#none" class="map-btn">지도보기</a>

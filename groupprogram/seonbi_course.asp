@@ -18,18 +18,12 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>단체프로그램</h2>
-            <aside>
-                <h2>단체프로그램
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
     </div>
 
     <div class="contents">
         <div class="detail-discount">
-            <div class="detail-head">
+            <div class="detail-head02">
                 <h3>선비문화체험 코스</h3>
                     <span class="text">20년 관록 훈장님의 지도에 따라 전통예절과 공예체험, 국궁 체험 등의 선비문화를 체험할 수 있는 특별 프로그램</span>
             </div>

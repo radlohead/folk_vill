@@ -18,12 +18,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>행사·공연</h2>
-            <aside>
-                <h2>행사·공연
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
 <!--#include virtual="/mobile/event/inc/event_topmenu.asp" -->

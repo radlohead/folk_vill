@@ -7,7 +7,11 @@
     </ul>
     <ul class="footer_link">
         <li class="pc"><a href="http://www.koreanfolk.co.kr/">PC버전</a></li>
+		<%if session("id") <> "" then%>
+        <li class="login"><a href="/mobile/member/logout.asp">로그아웃</a></li>
+		<%else%>
         <li class="login"><a href="/mobile/member/login.asp">로그인</a></li>
+		<%end if%>
         <li class="group"><a href="/mobile/groupprogram/daily.asp">단체프로그램</a></li>
     </ul>
     <ul class="footer_link2">

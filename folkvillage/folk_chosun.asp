@@ -18,12 +18,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>민속마을</h2>
-            <aside>
-                <h2>민속마을
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
         <div class="slider single-items">

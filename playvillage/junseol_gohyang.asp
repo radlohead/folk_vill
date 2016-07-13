@@ -18,12 +18,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>놀이마을</h2>
-            <aside>
-                <h2>놀이마을
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
 <!--#include virtual="/mobile/playvillage/inc/play_topmenu.asp" -->
@@ -31,20 +25,6 @@
 
     <div class="contents02">
         <div class="detail-junseol">
-<!-- 슬라이드 -->
-            <div class="junseol-slide swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="/mobile/images/play_village/junseol_slide01.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="/mobile/images/play_village/junseol_slide02.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="/mobile/images/play_village/junseol_slide03.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="/mobile/images/play_village/junseol_slide04.jpg" alt="" /></div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
             <dl class="infor">
                 <dt>이용요금</dt>
                 <dd>
@@ -90,6 +70,20 @@
             </dl>
             <span class="bg"><img src="/mobile/images/play_village/junseol_main_bg.png" alt="전설의고향 배경" /></span>
         </div>
+<!-- 슬라이드 -->
+            <div class="junseol-slide swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/mobile/images/play_village/junseol_slide01.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="/mobile/images/play_village/junseol_slide02.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="/mobile/images/play_village/junseol_slide03.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="/mobile/images/play_village/junseol_slide04.jpg" alt="" /></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
     </div>
 
 <!-- 하단푸터 -->

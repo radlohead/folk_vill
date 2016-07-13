@@ -19,12 +19,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>놀이마을</h2>
-            <aside>
-                <h2>놀이마을
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
 <!--#include virtual="/mobile/playvillage/inc/play_topmenu.asp" -->
@@ -32,20 +26,6 @@
 
     <div class="contents02">
         <div class="detail-junseol">
-<!-- 슬라이드 -->
-            <div class="junseol-slide swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="/mobile/images/play_village/ghost_slide01.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="/mobile/images/play_village/ghost_slide02.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="/mobile/images/play_village/ghost_slide03.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="/mobile/images/play_village/ghost_slide04.jpg" alt="" /></div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
             <dl class="infor">
                 <dt>이용요금</dt>
                 <dd>
@@ -74,9 +54,11 @@
                             </tr>
                         </tbody>
                     </table>
+                    <p class="text_box">
+                        <span class="icon">*</span>
+                        <span class="text">자유이용권 구매 시 무료</span>
+                    </p>
                 </dd>
-                <dt>탑승인원</dt>
-                <dd>4명</dd>
                 <dt>편의사항</dt>
                 <dd>물품보관, 포토존</dd>
                 <dt>제한사항</dt>
@@ -91,6 +73,20 @@
             </dl>
             <span class="bg"><img src="/mobile/images/play_village/ghost_main_bg.png" alt="귀신전 배경" /></span>
         </div>
+<!-- 슬라이드 -->
+            <div class="junseol-slide swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/mobile/images/play_village/ghost_slide01.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="/mobile/images/play_village/ghost_slide02.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="/mobile/images/play_village/ghost_slide03.jpg" alt="" /></div>
+                    <div class="swiper-slide"><img src="/mobile/images/play_village/ghost_slide04.jpg" alt="" /></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
     </div>
 
 <!-- 하단푸터 -->

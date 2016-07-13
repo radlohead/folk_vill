@@ -885,12 +885,13 @@ function FormEditCheck() {
 			form.pmobile2.focus();
 			return;
 		}
-
+		/*
 		if(!HasContent(form.pmobile3.value)) {
 			alert("보호자 휴대폰 마지막 번호를 선택해 주세요.");
 			form.pmobile3.focus();
 			return;
 		}
+		*/
 	} else {
 		if(!HasContent(form.mobile1.value)) {
 			alert("휴대폰 첫번째 번호를 선택해 주세요.");
@@ -903,12 +904,13 @@ function FormEditCheck() {
 			form.mobile2.focus();
 			return;
 		}
-
+		/*
 		if(!HasContent(form.mobile3.value)) {
 			alert("휴대폰 마지막 번호를 선택해 주세요.");
 			form.mobile3.focus();
 			return;
 		}
+		*/
 	}
 
 	if(!$(':input:radio[name=sms]:checked').val()) {

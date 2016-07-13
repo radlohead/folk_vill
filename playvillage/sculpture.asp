@@ -18,12 +18,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>놀이마을</h2>
-            <aside>
-                <h2>놀이마을
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
 <!--#include virtual="/mobile/playvillage/inc/play_topmenu.asp" -->
@@ -34,7 +28,7 @@
 <!--전통민속관 내용-->
             <div class="detail-head">
                 <h3>조각공원</h3>
-                <span class="text">아름다운 자연과 어우러진 산책길</span>
+                <span class="text2">아름다운 자연과 어우러진 산책길</span>
             </div>
             <div class="content sculpture">
                 <span class="photo-img map">

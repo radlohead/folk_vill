@@ -18,12 +18,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>행사·공연</h2>
-            <aside>
-                <h2>행사·공연
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
 <!--#include virtual="/mobile/event/inc/event_topmenu.asp" -->
@@ -63,52 +57,54 @@
                         <em>간결하면서 정중한 전통혼례의식</em>
                         <p class="text">한국민속촌에서는 혼례의 절차 중 신랑이 처갓집에가서 치르 는 전안례(奠雁禮)와 대례(大禮), 신랑과 신부가 말과 가마를 타고 시댁으로 오는 행렬인 우귀례(于歸禮)를 재현합니다.</p>
                     </div>
-                    <p class="text_box">
-                        <span class="icon">*</span>
-                        <span class="text">날씨나 내부상황에 따라 시간 변경 및 취소될 수 있습니다.</span>
-                    </p>
 
-                    <div class="pre-infor-tab">
+                    <div class="pre-infor-tab pre-infor-tab2">
                         <div class="title">
                             <h3>한국민속촌 실제 전통혼례식 안내</h3>
                             <span class="icon"></span>
                         </div>
                         <div class="content">
                             <p>한국민속촌에서는 최근 우리 전통문화 속 혼례예식을 선호하는 경향이 늘어남에 따라 공연 뿐만 아니라 실제 혼례식을 대행하고 있습니다.</p>
-                            <table>
-                                <caption>한국민속촌 실제 전통혼례식 일시안내</caption>
-                                <tbody>
-                                    <tr>
-                                        <th rowspan="2"><span class="icon"></span>일시</th>
-                                        <td rowspan="2">3월~11월</td>
-                                        <td rowspan="2"><img src="/mobile/images/event/table_chain.png" alt="" style="width:19px;"/></td>
-                                        <td>양반가(기본형)   12시, 16시</td>
-                                    </tr>
-                                    <tr>
-                                        <td>서    원(고급형)   11시, 15시</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table>
-                                <caption>한국민속촌 실제 전통혼례식 문의안내</caption>
-                                <tbody>
-                                    <tr>
-                                        <th rowspan="2"><span class="icon"></span>문의</th>
-                                        <td>판촉팀 양은정주임</td>
-                                    </tr>
-                                    <tr>
-                                        <td>T. 031-288-1705    E. chachaej@ikfv.co.kr</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p class="text_box02">
-                                <span class="icon"></span>
-                                <span>피로연은 민속촌 내 한국관(양반가 기본형 혼례 시), 푸드빌리지(서원 고급형 혼례 시)로 지정</span>
-                            </p>
-                            <p class="text_box02">
-                                <span class="icon"></span>
-                                <span>주말이나 휴일 예약은 하객수가 100명 이상일 경우에만 예약 가능</span>
-                            </p>
+                            <section class="text_wrap">
+                                <h4>일시</h4>
+                                <p>
+                                    <span class="icon"></span>
+                                    <span>3월 ~ 11월</span>
+                                </p>
+                                <p>
+                                    <span class="icon"></span>
+                                    <span>양반가(기본형) : 12시, 16시</span>
+                                </p>
+                                <p>
+                                    <span class="icon"></span>
+                                    <span>서원(고급형) : 11시, 15시</span>
+                                </p>
+                            </section>
+                            <section class="text_wrap">
+                                <h4>문의</h4>
+                                <p>
+                                    <span class="icon"></span>
+                                    <span>판촉팀 양은정 주임</span>
+                                </p>
+                                <p>
+                                    <span class="icon"></span>
+                                    <span>전화 : 031-288-1705</span>
+                                </p>
+                                <p>
+                                    <span class="icon"></span>
+                                    <span>이메일 : chachaej@ikfv.co.kr</span>
+                                </p>
+                            </section>
+                            <div class="text_wrap2">
+                                <p class="text_box02">
+                                    <span class="icon"></span>
+                                    <span>피로연은 민속촌 내 한국관(양반가 기본형 혼례 시), 푸드빌리지(서원 고급형 혼례 시)로 지정</span>
+                                </p>
+                                <p class="text_box02">
+                                    <span class="icon"></span>
+                                    <span>주말이나 휴일 예약은 하객수가 100명 이상일 경우에만 예약 가능</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
 

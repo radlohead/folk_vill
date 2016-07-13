@@ -18,18 +18,12 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>단체프로그램</h2>
-            <aside>
-                <h2>단체프로그램
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
     </div>
 
     <div class="contents">
         <div class="detail-discount">
-            <div class="detail-head">
+            <div class="detail-head02">
                 <h3>일반코스</h3>
                     <span class="text">
                     한국민속촌의 아름다운 조선시대 마을부터 ‘전설의고향’, ‘귀 신전’을 비롯한 15가지 어트랙션이 모여있는 놀이마을까지.

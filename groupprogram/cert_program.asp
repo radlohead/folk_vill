@@ -18,18 +18,12 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>단체프로그램</h2>
-            <aside>
-                <h2>단체프로그램
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
     </div>
 
     <div class="contents">
         <div class="detail-discount">
-            <div class="detail-head">
+            <div class="detail-head02">
                 <h3>인증프로그램</h3>
                     <span class="text">청소년수련활동인증제는, 안전하고 신뢰할 수 있는 청소년 수련활동을 인증(청소년 활동진흥법 제 35조에의거)하는 국가 인증제도 입니다.</span>
             </div>
@@ -64,19 +58,19 @@
                              </td>
                             <td class="left">
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>청소년의 건강한 성장과 <br/>
                                           음식 강의
                                     </span>
                                 </p>
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>한국민속촌 전통 음식 주거<br/>
                                           문화 식생활 탐방
                                     </span>
                                 </p>
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>인절미 만들기, 주먹밥<br/>
                                           만들기등
                                     </span>
@@ -99,15 +93,15 @@
                              </td>
                             <td class="left">
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>조선 전기 기초 역사 교육</span>
                                 </p>
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>한국민속촌 역사문화 탐방</span>
                                 </p>
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>덕담나누기등</span>
                                 </p>
                             </td>
@@ -128,15 +122,15 @@
                              </td>
                             <td class="left">
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>한국민속촌 전통 생활상 탐방</span>
                                 </p>
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>전통 예절교육과 효</span>
                                 </p>
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>다도 및 국궁 교실</span>
                                 </p>
                             </td>
@@ -157,15 +151,15 @@
                              </td>
                             <td class="left">
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>한국민속촌 양반가 선비들의 의식주 탐방</span>
                                 </p>
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>효 예절 체험</span>
                                 </p>
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>다도 체험</span>
                                 </p>
                             </td>
@@ -186,15 +180,15 @@
                              </td>
                             <td class="left">
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>한국민속촌 전통 공방 탐방</span>
                                 </p>
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>도자기와 옹기 이야기</span>
                                 </p>
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>나만의 옹기 만들기 등</span>
                                 </p>
                             </td>
@@ -215,15 +209,15 @@
                              </td>
                             <td class="left">
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>중급 역사 강의</span>
                                 </p>
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>한국민속촌 역사 문화 탐방</span>
                                 </p>
                                 <p>
-                                    <span class="icon">·</span>
+                                    <span class="icon"></span>
                                     <span>오늘은 내가 역사 해설사</span>
                                 </p>
                             </td>
