@@ -7,6 +7,8 @@
 
 .block { overflow: hidden; display: block !important; margin-bottom: 7px; }
 
+.fs-12 { font-size: 1.2em; }
+
 html, body { height: 100%; }
 
 .text-hidden { color: transparent; }
@@ -197,21 +199,21 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-show .detail-head .text-box .text { display: block; font-size: 1.4em; }
 
 .detail-guide .detail-head { overflow: hidden; margin-bottom: 15px; }
-.detail-guide .detail-head h3 { float: left; width: 42%; font-size: 2.4em; color: #333; font-weight: bold; }
+.detail-guide .detail-head h3 { float: left; width: 42%; font-size: 2.6em; color: #333; font-weight: bold; }
 .detail-guide .detail-head .text-box { float: right; width: 56.2%; color: #000; letter-spacing: -0.05em; }
-.detail-guide .detail-head .text-box .text { display: block; font-size: 1.2em; }
+.detail-guide .detail-head .text-box .text { display: block; font-size: 1.4em; }
 .detail-guide .detail-head .text-box .text::before { content: ""; display: block; float: left; width: 15px; height: 15px; margin-top: 1px; margin-right: 8px; background: url("/mobile/images/common/sprite.png") no-repeat -158px -208px; background-size: 300px 500px; }
 .detail-guide .detail-head .text-box .text02 { display: block; padding: 1px 0; font-size: 1.4em; letter-spacing: -1.5px; }
-.detail-guide .detail-head .text-box .guide-time { display: block; margin-top: 11px; margin-left: 23px; font-size: 1em; color: #f08200; letter-spacing: 0; line-height: 14px; }
+.detail-guide .detail-head .text-box .guide-time { display: block; margin-top: 11px; margin-left: 23px; font-size: 1.2em; color: #f08200; letter-spacing: 0; line-height: 16px; }
 .detail-guide .detail-head .text-box .guide-time .text { display: block; }
 .detail-guide .detail-head .text-box .guide-time .time { color: #666; }
 .detail-guide .detail-head02 { margin-top: 30px; }
 .detail-guide .mb-10 { margin-bottom: 10px; }
 
 .detail-member .detail-head { overflow: hidden; margin-bottom: 20px; }
-.detail-member .detail-head h3 { float: left; width: 50%; font-size: 2.4em; color: #333; font-weight: bold; }
+.detail-member .detail-head h3 { float: left; width: 50%; font-size: 2.6em; color: #333; font-weight: bold; }
 .detail-member .detail-head .text-box { float: right; width: 50%; color: #000; letter-spacing: -0.05em; }
-.detail-member .detail-head .text-box .text { display: block; font-size: 1.3em; }
+.detail-member .detail-head .text-box .text { display: block; line-height: 20px; font-size: 1.4em; }
 .detail-member .detail-head .text-box .guide-time { display: block; margin-top: 11px; margin-left: 23px; font-size: 65%; color: #f08200; }
 .detail-member .detail-head .text-box .guide-time .text { display: block; }
 .detail-member .detail-head .text-box .guide-time .time { color: #666; }
@@ -261,8 +263,8 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .main-tab.traffic .tabMenu .menu1.on { background-image: url("/mobile/images/information/traffic-tab-title01_on.gif"); }
 .main-tab.traffic .tabMenu .menu2.on { background-image: url("/mobile/images/information/traffic-tab-title02_on.gif"); }
 .main-tab.traffic .tab-content { clear: both; margin-bottom: 15px; }
-.main-tab.traffic .tabMenu2 { display: none; }
-.main-tab.traffic .tabMenu2 section p { font-size: 1.4em; }
+.main-tab.traffic .tabMenu2 { display: none; height: auto; }
+.main-tab.traffic .tabMenu2 section p { font-size: 1.4em; line-height: 20px; }
 
 .main-tab.daily-tab { overflow: hidden; position: relative; }
 .main-tab.daily-tab .tabMenu { overflow: hidden; position: relative; width: 100%; margin-bottom: 30px; }
@@ -314,9 +316,9 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .idpw-tab .phone_box .phone_02 { float: left; margin-left: 3%; width: 70%; }
 .idpw-tab label { display: block; margin: 35px 0 20px; font-size: 1.2em; }
 
-.operate-time table th { padding: 7px 0; border-top: 2px solid #f08200; font-size: 0.9em; }
+.operate-time table th { padding: 7px 0; border-top: 2px solid #f08200; font-size: 1.2em; }
 .operate-time table th:nth-child(2) { border-left: 5px solid #fff; border-right: 5px solid #fff; }
-.operate-time table td { padding: 7px 0; border-bottom: 1px solid #bdb5a0; border-right: 5px solid #fff; font-size: 0.9em; }
+.operate-time table td { padding: 7px 0; border-bottom: 1px solid #bdb5a0; border-right: 5px solid #fff; font-size: 1.2em; }
 .operate-time table td:last-child { border-right: 0; }
 .operate-time table tr:first-child td { border-top: 1px solid #bdb5a0; }
 .operate-time table tr:last-child td { border-bottom: 1px solid #bdb5a0; }
@@ -328,23 +330,25 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .operate-time table.use-pay tbody tr:nth-child(even) td:nth-child(2) { border-right: 5px solid #fff; }
 .operate-time .attention { margin-top: 12px; }
 .operate-time .attention li { margin-top: 6px; }
-.operate-time .attention li p { display: table; margin: 1px 0; font-size: 1.2em; }
+.operate-time .attention li p { display: table; margin: 1px 0; font-size: 1.4em; }
 .operate-time .attention li p span { display: table-cell; }
 .operate-time .attention li p .icon { padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size: 3px 3px; }
 .operate-time .attention li p .icon img { width: 3px; }
-.operate-time .attention li em { display: block; padding-right: 7px; white-space: nowrap; color: #f08200; font-weight: bold; font-size: 1.5em; }
-.operate-time .attention li .text { display: block; line-height: 20px; font-size: 1.2em; }
+.operate-time .attention li h5 { display: block; margin-bottom: 5px; padding-right: 7px; white-space: nowrap; color: #f08200; font-weight: bold; font-size: 1.6em; }
+.operate-time .attention li .text { display: block; line-height: 20px; font-size: 1.4em; }
+.operate-time .attention2 { margin-top: 15px; }
+.operate-time .attention2 li { margin: 5px 0 15px; }
 
 .prefer-infor h5 { font-weight: bold; font-size: 1.4em; color: #f08200; }
 .prefer-infor ul { margin: 5px 0 16px; }
 .prefer-infor ul li { margin-top: 2px; font-size: 1.4em; }
 .prefer-infor ul li:before { content: "·"; display: inline-block; padding-right: 3px; color: #766341; }
-.prefer-infor p { display: table; margin: 5px 0 16px; font-size: 1.2em; }
+.prefer-infor p { display: table; margin: 5px 0 16px; font-size: 1.4em; }
 .prefer-infor p span { display: table-cell; }
 .prefer-infor p .icon { padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size: 3px 3px; }
 
-.contents h4 { font-size: 1.9em; }
-.contents h5 { font-size: 1.5em; }
+.contents h4 { font-size: 2em; }
+.contents h5 { font-size: 1.6em; }
 .contents table { width: 100%; }
 .contents table td { text-align: center; }
 .contents .board-list-title img { width: 247px; }
@@ -352,15 +356,15 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-member .mem-benefit img { width: 80%; }
 .detail-member .mem-benefit h4 { margin-bottom: 15px; }
 .detail-member .mem-price h4 { margin: 30px 0 15px; }
-.detail-member .mem-price table th { padding: 7px 0; border-top: 2px solid #f08200; border-left: 5px solid #fff; font-size: 0.9em; }
+.detail-member .mem-price table th { padding: 7px 0; border-top: 2px solid #f08200; border-left: 5px solid #fff; font-size: 1.2em; }
 .detail-member .mem-price table th:first-child { border-left: 0; }
-.detail-member .mem-price table td { padding: 7px 0; border-top: 1px solid #dedacf; border-bottom: 1px solid #dedacf; border-left: 5px solid #fff; font-size: 0.9em; }
+.detail-member .mem-price table td { padding: 7px 0; border-top: 1px solid #dedacf; border-bottom: 1px solid #dedacf; border-left: 5px solid #fff; font-size: 1.2em; }
 .detail-member .mem-price table td:first-child { border-left: 0 solid #fff; }
 .detail-member .mem-price table tr:last-child td { border-bottom: 1px solid #bdb5a0; }
 .detail-member .join-method h4 { margin: 30px 0 10px; }
 .detail-member .join-method h5 { margin: 10px 0 7px; color: #f08200; }
-.detail-member .join-method li { display: table; margin-top: 3px; }
-.detail-member .join-method li p { display: table; margin: 1px 0; font-size: 1.2em; }
+.detail-member .join-method li { display: table; margin-top: 6px; }
+.detail-member .join-method li p { display: table; margin: 1px 0; font-size: 1.4em; }
 .detail-member .join-method li p span { display: table-cell; }
 .detail-member .join-method li p .icon { padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size: 3px 3px; }
 .detail-member .join-method li p .icon img { width: 3px; }
@@ -370,7 +374,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-member .note h4 { margin: 30px 0 10px; }
 .detail-member .note h5 { margin: 13px 0 7px; color: #f08200; }
 .detail-member .note li { display: table; margin-top: 3px; }
-.detail-member .note li p { display: table; margin: 1px 0; font-size: 1.2em; }
+.detail-member .note li p { display: table; margin: 1px 0; font-size: 1.4em; }
 .detail-member .note li p span { display: table-cell; }
 .detail-member .note li p .icon { padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size: 3px 3px; }
 .detail-member .note li p .icon img { width: 3px; }
@@ -379,49 +383,57 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .traffic h4:first-child { margin-bottom: 5px; }
 .traffic h4 { margin-bottom: 11px; }
 .traffic h4 + p { margin-bottom: 20px; font-size: 1.4em; }
-.traffic h5 { margin: 13px 0 7px; color: #f08200; }
+.traffic h5 { margin: 10px 0 5px; color: #f08200; }
+.traffic h5:first-child { margin-top: 5px; }
 .traffic table.bus-time { margin-top: 20px; }
-.traffic table.bus-time th { padding: 7px 0; border-top: 2px solid #f08200; font-size: 1.4em; }
+.traffic table.bus-time th { padding: 7px 0; border-top: 2px solid #f08200; font-size: 1.2em; }
 .traffic table.bus-time th:first-child { border-right: 5px solid #fff; }
-.traffic table.bus-time td { padding: 7px 0; border-bottom: 1px solid #dedacf; font-size: 1.4em; }
+.traffic table.bus-time th:nth-child(2) { border-right: 5px solid #fff; }
+.traffic table.bus-time td { padding: 7px 0; border-bottom: 1px solid #bdb5a0; font-size: 1.2em; }
 .traffic table.bus-time td:first-child { border-right: 5px solid #fff; }
 .traffic table.bus-time tr:first-child td { border-top: 1px solid #bdb5a0; }
-.traffic table.bus-time tr:last-child td { border-bottom: 1px solid #bdb5a0; }
-.traffic table.bus-use td { text-align: left; border-bottom: 1px solid #dedacf; font-size: inherit; }
-.traffic table.bus-use td strong { font-size: 1.4em; }
+.traffic table.bus-time .tri_icon { display: inline-block; width: 5px; height: 9px; margin: 0 1px; background: url("/mobile/images/common/tri_icon.png") no-repeat center center; background-size: 5px 5px; }
+.traffic table.bus-use td { text-align: left; border-bottom: 1px solid #bdb5a0; font-size: inherit; }
+.traffic table.bus-use td strong { display: block; font-size: 1em; }
+.traffic table.bus-use td .text01 { margin-top: 3px; }
 .traffic table.bus-use td:first-child { text-align: center; }
 .traffic table.bus-use tr:first-child td { border-top: 2px solid #f08200; }
 .traffic table.bus-use tr:last-child td { border-bottom: 1px solid #bdb5a0; }
 .traffic ul.bus-time-list { margin: 11px 0 31px; }
-.traffic ul.bus-time-list li { display: table; font-size: 1.4em; }
+.traffic ul.bus-time-list li { margin-top: 6px; font-size: 1.4em; }
 .traffic ul.bus-time-list li p { display: table; margin: 1px 0; }
 .traffic ul.bus-time-list li p span { display: table-cell; }
-.traffic ul.bus-time-list li p .icon02 { padding-right: 3px; color: #f29322; }
+.traffic ul.bus-time-list li p .icon02 { padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size: 3px 3px; }
+.traffic ul.bus-time-list li p .icon02 img { width: 3px; }
+.traffic ul.bus-time-list li p .fs-14 { font-size: 1.15em; }
 .traffic .bus-use-list { margin: 17px 0; }
-.traffic .bus-use-list ul { margin-top: 4px; font-size: 1.4em; }
+.traffic .bus-use-list ul { margin-top: 4px; font-size: 1.2em; }
 .traffic .bus-use-list ul li { display: table; }
-.traffic .bus-use-list ul li span { display: table-cell; }
-.traffic .bus-use-list ul li .title { white-space: nowrap; }
-.traffic .bus-use-list ul li .text { padding-left: 3px; }
-.traffic .icon { display: inline-block; width: 33px; height: 38px; background: url("/mobile/images/information/sprite-info.png") no-repeat 0 0; background-size: 250px 250px; }
+.traffic .bus-use-list ul li p { display: table; margin: 1px 0; }
+.traffic .bus-use-list ul li p span { display: table-cell; }
+.traffic .bus-use-list ul li p .icon02 { padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size: 3px 3px; }
+.traffic .bus-use-list ul li p .icon02 img { width: 3px; }
+.traffic .bus-use-list ul li p .fs-14 { font-size: 1.15em; }
+.traffic .bus-use-list ul li p .tri_icon { display: inline-block; width: 5px; height: 9px; margin: 0 1px; background: url("/mobile/images/common/tri_icon.png") no-repeat center center; background-size: 5px 5px; }
+.traffic .icon { display: block; width: 33px; height: 38px; margin: 0 auto; background: url("/mobile/images/information/sprite-info.png") no-repeat 0 0; background-size: 250px 250px; }
 .traffic .bus_icon01 { background-position: -5px -103px; }
 .traffic .bus_icon02 { background-position: -48px -103px; }
 .traffic .bus_icon03 { height: 32px; background-position: -91px -103px; }
 .traffic .bus_icon04 { height: 32px; background-position: -134px -103px; }
-.traffic .bus-num { font-size: 1.4em; color: #f08200; }
+.traffic .bus-num { font-size: 1.6em; font-weight: bold; color: #f08200; }
 .traffic .text_icon_cir { display: inline-block; margin-top: 3px; }
 .traffic .text_icon_cir:before { content: ""; display: inline-block; width: 5px; height: 5px; margin-right: 3px; background: url("/mobile/images/common/sprite.png") no-repeat -129px -263px; background-size: 300px 500px; }
 .traffic .icon_tri { position: relative; top: -2px; display: inline-block; width: 5px; height: 5px; margin-right: 3px; background: url("/mobile/images/common/sprite.png") no-repeat -143px -263px; background-size: 300px 500px; }
 .traffic .text_icon_tri { display: inline-block; margin-top: 3px; }
 .traffic .text_icon_tri:before { content: ""; display: inline-block; width: 5px; height: 5px; margin-right: 3px; background: url("/mobile/images/common/sprite.png") no-repeat -143px -263px; background-size: 300px 500px; }
-.traffic .road-sign { display: table; margin: 14px 0 38px; font-size: 1.4em; }
-.traffic .road-sign:before { content: "*"; display: table-cell; padding-right: 3px; color: #f29322; }
+.traffic .road-sign { display: table; margin: 14px 0 38px; font-size: 1.2em; }
+.traffic .road-sign:before { content: "*"; display: table-cell; position: relative; top: 2px; padding-right: 3px; color: #f29322; }
 .traffic .parking { padding: 15px 0; border-top: 2px solid #f08200; border-bottom: 1px solid #bdb5a0; }
 .traffic .parking .icon_p { float: left; display: block; width: 56px; height: 56px; background: url("/mobile/images/information/sprite-info.png") no-repeat 0 0; background-size: 250px 250px; }
-.traffic .parking section { float: left; margin-left: 20px; }
+.traffic .parking section { float: left; margin-left: 15px; }
 .traffic .parking section h4 { display: block; margin: 3px 0; font-size: 1.75em; font-weight: normal; }
-.traffic .parking section li { font-size: 1.4em; }
-.traffic .parking section li:before { content: "·"; display: inline-block; padding-right: 3px; color: #766341; }
+.traffic .parking section li { display: table; font-size: 1.2em; }
+.traffic .parking section li:before { content: ""; display: table-cell; width: 3px; height: 3px; padding-right: 3px; color: #bdb5a0; background: url("/mobile/images/common/circleIcon.png") no-repeat left center; background-size: 3px 3px; }
 .traffic .parking:after { content: ""; display: block; clear: both; }
 
 .conven-infor h4 { margin-bottom: 6px; }

@@ -16,6 +16,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="3fb4e042-1c87-400f-9180-6310217064c3" name="비티엘" url="http://183.111.144.38">
+        <fileTransfer host="183.111.144.38" port="5006" password="dfdddfc1dfd3dfc1df9bdf9fdf9ddf9f" username="btel">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

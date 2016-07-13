@@ -27,10 +27,10 @@
             <div class="detail-head">
                 <h3>운영시간</h3>
                 <div class="text-box">
-                    <span class="text">2월~4월 한국민속촌 이용시간</span>
+                    <span class="text">5월~9월 한국민속촌 이용시간</span>
                     <span class="guide-time">
                         평일 <span class="time">09:30~18:00</span><br />
-                        주말 <span class="time">09:30~18:00</span>
+                        주말 <span class="time">09:30~18:30</span>
                     </span>
                 </div>
             </div>
@@ -149,29 +149,29 @@
                         </tr>
                     </tbody>
                 </table>
-                <ul class="attention">
+                <ul class="attention attention2">
                     <li>
-                        <em>입장권</em>
+                        <h5>입장권</h5>
                         <span class="text">한국민속촌 민속마을, 전통민속관, 세계민속관, 정기공연 및 민속마을 내 체험(일부 유료) 이용 가능</span>
                     </li>
                     <li>
-                        <em>자유이용권</em>
+                        <h5>자유이용권</h5>
                         <span class="text">입장권의 모든 혜택에 놀이마을 어트랙션과 눈썰매장(동절기 운영) 등 이용 가능</span>
                     </li>
                     <li>
-                        <em>경로우대</em>
+                        <h5>경로우대</h5>
                         <span class="text">만 65세 이상(내국인 대상) 아동요금 적용</span>
                     </li>
                     <li>
-                        <em>연령기준</em>
+                        <h5>연령기준</h5>
                         <span class="text">청소년(중, 고등학생), 아동(36개월~초등학생), 어린이집이나 유치원 등 단체관람은 36개월 미만도 별도 요금 적용</span>
                     </li>
                     <li>
-                        <em>놀이기구 이용권</em>
+                        <h5>놀이기구 이용권</h5>
                         <span class="text">현장 구입 가능(기구별 가격 상이)</span>
                     </li>
                     <li>
-                        <em>단체요금</em>
+                        <h5>단체요금</h5>
                         <span class="text">20명 이상 적용 (문의 ☎ 031-288-4000~2)</span>
                     </li>
                 </ul>

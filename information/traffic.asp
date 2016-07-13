@@ -18,12 +18,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>이용안내</h2>
-            <aside>
-                <h2>이용안내
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
 <!--#include virtual="/mobile/information/inc/infor_topmenu.asp" -->
@@ -67,38 +61,38 @@
                             <tbody>
                                 <tr>
                                     <td rowspan="2">
-                                        셔틀버스1<br />
+                                        <b class="fs-14">셔틀버스1</b><br />
                                         한국민속촌-수원역
                                     </td>
-                                    <td>수원역 ▶ 민속촌</td>
+                                    <td>수원역<span class="tri_icon"></span>민속촌</td>
                                     <td>
-                                        일 3회<br />
+                                        <b>일 3회</b><br />
                                         10:30, 12:30, 14:30
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>민속촌 ▶ 수원역</td>
+                                    <td>민속촌<span class="tri_icon"></span>수원역</td>
                                     <td>
-                                        일 3회<br />
+                                        <b>일 3회</b><br />
                                         14:00, 15:30, 16:30
                                      </td>
                                 </tr>
                                 <tr>
                                     <td rowspan="2">
-                                        셔틀버스2<br />
+                                        <b class="fs-14">셔틀버스2</b><br />
                                         한국민속촌-상갈역
                                     </td>
-                                    <td>상갈역 ▶ 민속촌</td>
+                                    <td>상갈역<span class="tri_icon"></span>민속촌</td>
                                     <td>
-                                        일 7회<br />
+                                        <b>일 7회</b><br />
                                         10:40, 11:10, 12:10<br />
                                         13:40, 15:10, 16:10, 16:40
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>민속촌 ▶ 상갈역</td>
+                                    <td>민속촌<span class="tri_icon"></span>상갈역</td>
                                     <td>
-                                        일 8회<br />
+                                        <b>일 8회</b><br />
                                         10:30, 11:00, 12:00, 13:30<br />
                                         15:00, 16:00, 16:30, 17:30
                                      </td>
@@ -108,31 +102,31 @@
                         <ul class="bus-time-list">
                             <li>
                                 <p>
-                                    <span class="icon02">*</span>
+                                    <span class="icon02"></span>
                                     <span>이용요금 무료</span>
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <span class="icon02">*</span>
+                                    <span class="icon02"></span>
                                     <span>수원역 4번 출구 민속촌 셔틀버스 승강장, 상갈역 2번 출구에서 승하차</span>
                                 </p>
                             </li>
                             <li>
                                  <p>
-                                     <span class="icon02">*</span>
+                                     <span class="icon02"></span>
                                      <span>선착순 탑승, 단체관람객 제한 가능</span>
                                  </p>
                             </li>
                             <li>
                                  <p>
-                                     <span class="icon02">*</span>
+                                     <span class="icon02"></span>
                                      <span>문의 : 031-288-0000</span>
                                  </p>
                             </li>
                             <li>
                                  <p>
-                                     <span class="icon02">*</span>
+                                     <span class="icon02"></span>
                                      <span>동절기 셔틀버스2 노선 마지막 회차 운휴</span>
                                  </p>
                             </li>
@@ -141,117 +135,179 @@
                         <table class="bus-use">
                             <caption>한국 민속촌 버스 이용에 대한 안내</caption>
                             <colgroup>
-                                <col width="14.7%">
-                                <col width="17.1%">
+                                <col width="31.8%">
                                 <col width="68.2%">
                             </colgroup>
                             <tr>
-                                <td><span class="icon bus_icon01"></span></td>
-                                <td><strong>인천공항</strong></td>
+                                <td>
+                                    <span class="icon bus_icon01"></span>
+                                    <strong class="text01">인천공항</strong>
+                                </td>
                                 <td>
                                     <div class="bus-use-list">
-                                        <em class="bus-num">A8877</em> <span>(공항버스)</span>
+                                        <em class="bus-num">A8877</em> <span class="fs-12">(공항버스)</span>
                                         <ul>
-                                            <li>·위치 : 인천공항</li>
                                             <li>
-                                                <span class="title">·노선 :</span>
-                                                <span class="text">인천공항 ▶ 광교중앙역 ▶ 한국민속촌 앞</span>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>위치 : 인천공항</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>노선 : 인천공항<span class="tri_icon"></span>광교중앙역<span class="tri_icon"></span>한국민속촌 앞</span>
+                                                </p>
                                             </li>
                                         </ul>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td><span class="icon bus_icon02"></span></td>
-                                <td><strong>신논현역</strong></td>
+                                <td>
+                                    <span class="icon bus_icon02"></span>
+                                    <strong class="text01">신논현역</strong>
+                                </td>
                                 <td>
                                     <div class="bus-use-list">
-                                        <em class="bus-num">5001-1</em> <span>(직행좌석)</span>
+                                        <em class="bus-num">5001-1</em> <span class="fs-12">(직행좌석)</span>
                                         <ul>
-                                            <li>·위치 : 신논현역 6번 출구</li>
                                             <li>
-                                                <span class="title">·노선 :</span>
-                                                <span class="text">신논현역 ▶ 강남역 ▶ 신갈 ▶ 민속촌</span>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>위치 : 신논현역 6번 출구</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>노선 : 신논현역<span class="tri_icon"></span>강남역<span class="tri_icon"></span>신갈<span class="tri_icon"></span>민속촌</span>
+                                                </p>
                                             </li>
                                         </ul>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td><span class="icon bus_icon02"></span></td>
-                                <td><strong>강남역</strong></td>
+                                <td>
+                                    <span class="icon bus_icon02"></span>
+                                    <strong class="text01">강남역</strong>
+                                </td>
                                 <td>
                                     <div class="bus-use-list">
-                                        <em class="bus-num">1560</em> <span>(직행좌석)</span>
+                                        <em class="bus-num">1560</em> <span class="fs-12">(직행좌석)</span>
                                         <ul>
-                                            <li>·위치 : 강남역 7번 출구</li>
                                             <li>
-                                                <span class="title">·노선 :</span>
-                                                <span class="text">강남역 ▶ 신갈 ▶ 민속촌 삼거리(삼성아파트)</span>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>위치 : 강남역 7번 출구</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>노선 : 강남역<span class="tri_icon"></span>신갈<span class="tri_icon"></span>민속촌 삼거리(삼성아파트)</span>
+                                                </p>
                                             </li>
                                         </ul>
                                     </div>
                                  </td>
                             </tr>
                             <tr>
-                                <td><span class="icon bus_icon02"></span></td>
-                                <td><strong>종각역</strong></td>
+                                <td>
+                                    <span class="icon bus_icon02"></span>
+                                    <strong class="text01">종각역</strong>
+                                </td>
                                 <td>
                                     <div class="bus-use-list">
-                                        <em class="bus-num">5500-1</em> <span>(직행좌석)</span>
+                                        <em class="bus-num">5500-1</em> <span class="fs-12">(직행좌석)</span>
                                         <ul>
-                                            <li>·위치 : 종각역 3번 출구</li>
                                             <li>
-                                                <span class="title">·노선 :</span>
-                                                <span class="text">종각역 ▶ 미금역 ▶ 민속촌 삼거리(삼성아파트)</span>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>위치 : 종각역 3번 출구</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>노선 : 종각역<span class="tri_icon"></span>미금역<span class="tri_icon"></span>민속촌 삼거리(삼성아파트)</span>
+                                                </p>
                                             </li>
                                         </ul>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td><span class="icon bus_icon03"></span></td>
-                                <td><strong>수원역<br/>상길역</strong></td>
+                                <td>
+                                    <span class="icon bus_icon03"></span>
+                                    <strong class="text02">수원역<br/>상길역</strong>
+                                </td>
                                 <td>
                                     <div class="bus-use-list">
                                         <em class="bus-num">37</em>
                                         <ul>
-                                            <li>·위치 : 수원역 5번출구 50m 전방</li>
                                             <li>
-                                                <span class="title">·노선 :</span>
-                                                <span class="text">수원역앞 ▶ 신갈오거리 ▶ 한국민속촌</span>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>위치 : 수원역 5번출구 50m 전방</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>노선 : 수원역앞<span class="tri_icon"></span>신갈오거리<span class="tri_icon"></span>한국민속촌</span>
+                                                </p>
                                             </li>
                                         </ul>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td><span class="icon bus_icon03"></span></td>
-                                <td><strong>수원역<br/>상길역</strong></td>
+                                <td>
+                                    <span class="icon bus_icon03"></span>
+                                    <strong class="text02">수원역<br/>상길역</strong>
+                                </td>
                                 <td>
                                     <div class="bus-use-list">
                                         <em class="bus-num">10-5</em>
                                         <ul>
-                                            <li>·위치 : 수원역 5번출구 50m 전방</li>
                                             <li>
-                                                <span class="title">·노선 :</span>
-                                                <span class="text">수원역앞 ▶ 아주대삼거리 ▶ 나곡마을</span>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>위치 : 수원역 5번출구 50m 전방</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>노선 : 수원역앞<span class="tri_icon"></span>아주대삼거리<span class="tri_icon"></span>나곡마을</span>
+                                                </p>
                                             </li>
                                         </ul>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td><span class="icon bus_icon04"></span></td>
-                                <td><strong>죽전역</strong></td>
+                                <td>
+                                    <span class="icon bus_icon04"></span>
+                                    <strong class="text02">죽전역</strong>
+                                </td>
                                 <td>
                                     <div class="bus-use-list">
                                         <em class="bus-num">30</em> <span>(마을버스)</span>
                                         <ul>
-                                            <li>·위치 : 죽전역 신세계백화점 앞</li>
                                             <li>
-                                                <span class="title">·노선 :</span>
-                                                <span class="text">죽전역 ▶ 신갈오거리 ▶ 나곡마을</span>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>위치 : 죽전역 신세계백화점 앞</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>노선 : 죽전역<span class="tri_icon"></span>신갈오거리<span class="tri_icon"></span>나곡마을</span>
+                                                </p>
                                             </li>
                                         </ul>
                                     </div>

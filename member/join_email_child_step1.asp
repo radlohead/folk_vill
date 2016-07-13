@@ -55,15 +55,15 @@
 		var birthDay = $("#birthyear").val()+$("#birthmonth").val()+$("#birthday").val();
 
 		if (isBelow14(birthDay)) {
-		  if (confirm("고객님은 만 14세 미만이므로 회원가입 시 보호자의 동의가 필요합니다.\n[확인]버튼을 누르시면, 만 14세미만회원가입 페이지로 이동합니다.")) {
-			document.location.replace("/mobile/member/join_child_email_step1.asp?gubun=C");
-		  }
-		} else {
 			var frm = document.myFrm;
 
 			frm.target="blank_frame";
 			frm.action="https://www.koreanfolk.co.kr/mobile/member/join_Email_DupAllCheck.asp";
 			frm.submit();
+		} else {
+			if (confirm("14세 이상은 일반 회원가입으로 전행해주세요.\n[확인] 버튼을 누르시면, 일반 회원가입 페이지로 이동합니다.")) {
+				document.location.replace("https://www.koreanfolk.co.kr/mobile/member/join_email_general_step1.asp?gubun=G");
+			}
 		}
 	}
 
@@ -191,9 +191,9 @@
 					<select name="birthyear" id="birthyear" title="년도 선택" onchange="javascript:setBirthDay('myFrm');">
 						<option value=''>년도</option>
 						<%
-						toyears = year(date)
+							toyears = year(date)
 
-						For j = (toyears - 14) To 1900 Step - 1
+							For j = (toyears - 14) To toyears Step + 1
 						%>
 						<option value="<%=j%>"><%=j%>년</option>
 						<%Next%>
@@ -305,4 +305,4 @@
 </script>
 </body>
 </html>
-<iframe name="blank_frame" src="about:blank" width="0" height="0" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" hspace="0" vspace="0" style="border:0px solid #000;" title="이메일인증일반회원가입아이프레임"></iframe>
+<iframe name="blank_frame" src="about:blank" width="0" height="0" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" hspace="0" vspace="0" style="border:0px solid #000;" title="이메일인증14회원가입아이프레임"></iframe>
