@@ -68,7 +68,7 @@
 		<div class="today">
 			<div class="main-top">
 				<h3><img src="/mobile/images/index/today_title.png" alt="한국민속촌 정기공연 머리말" /></h3>
-				<a href="#none" class="more_btn"><span class="hidden">더보기</span></a>
+				<a href="/mobile/event/performance_nongak.asp" class="more_btn"><span class="hidden">더보기</span></a>
 			</div>
 			<div class="today-slide swiper-container">
 				<div class="text-btn_box">
@@ -76,7 +76,7 @@
 					<!-- Add Arrows -->
 					<div class="btns">
 						<div class="swiper-button-prev"><img src="/mobile/images/index/today-prev_btn.png" alt="" /></div>
-						<div class="plus_btn"><a href="http://localhost/folk_vill/m/event/event_now.html"><img src="/mobile/images/index/today-plus_btn.png" alt="클릭시 링크 이동" /></a></div>
+						<!--<div class="plus_btn"><a href="http://localhost/folk_vill/m/event/event_now.html"><img src="/mobile/images/index/today-plus_btn.png" alt="클릭시 링크 이동" /></a></div>-->
 						<div class="swiper-button-next"><img src="/mobile/images/index/today-next_btn.png" alt="" /></div>
 					</div>
 				</div>
@@ -93,18 +93,42 @@
                                 <!--<div class="plus_btn"><a href="http://localhost/folk_vill/m/event/event_now.html"><img src="/mobile/images/index/plus_btn_bg.png" alt="클릭시 링크 이동" /></a></div>-->
                             <!--</div>-->
                         </div>
-					    <a href="http://localhost/folk_vill/m/event/event_now.html"><img src="/mobile/images/index/today_img01.jpg" alt="한국민속촌 정기공연 농악놀이" /></a>
+					    <a href="/mobile/event/performance_nongak.asp"><img src="/mobile/images/index/today_img01.jpg" alt="한국민속촌 정기공연 농악놀이" /></a>
 					</div>
 					<div class="swiper-slide img02">
 					    <div class="text-btn_box">
                             <section class="text_box">
-                                <h4>국악놀이</h4>
+                                <h4>마상무예</h4>
                                 <span class="text"><b>1회공연</b> 11:00</span>
                                 <span class="text"><b>2회공연</b> 14:00</span>
                                 <span class="text"><b>장소</b> 공연장</span>
                             </section>
                         </div>
-					    <a href="http://www.naver.com/"><img src="/mobile/images/index/today_img01.jpg" alt="한국민속촌 정기공연 농악놀이" />
+					    <a href="/mobile/event/performance_horse.asp"><img src="/mobile/images/index/today_img02.jpg" alt="한국민속촌 정기공연 마상무예" />
+                        </a>
+                    </div>
+					<div class="swiper-slide img03">
+					    <div class="text-btn_box">
+                            <section class="text_box">
+                                <h4>국악비보이</h4>
+                                <span class="text"><b>1회공연</b> 11:00</span>
+                                <span class="text"><b>2회공연</b> 14:00</span>
+                                <span class="text"><b>장소</b> 공연장</span>
+                            </section>
+                        </div>
+					    <a href="/mobile/event/performance_bboy.asp"><img src="/mobile/images/index/today_img03.jpg" alt="한국민속촌 정기공연 국악비보이" />
+                        </a>
+                    </div>
+					<div class="swiper-slide img04">
+					    <div class="text-btn_box">
+                            <section class="text_box">
+                                <h4>전통혼례</h4>
+                                <span class="text"><b>1회공연</b> 11:00</span>
+                                <span class="text"><b>2회공연</b> 14:00</span>
+                                <span class="text"><b>장소</b> 공연장</span>
+                            </section>
+                        </div>
+					    <a href="/mobile/event/performance_wedding.asp"><img src="/mobile/images/index/today_img04.jpg" alt="한국민속촌 정기공연 전통혼례" />
                         </a>
                     </div>
 				</div>

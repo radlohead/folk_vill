@@ -1,40 +1,3 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
-    <meta name="format-detection" content="telephone=no, address=no, email=no" />
-    <title>한국 민속촌 모바일 사이트</title>
-    <!--#include virtual="/mobile/common/inc/css.asp" -->
-    <!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                initialSlide: 1
-            });
-        });
-    </script>
-</head>
-<body>
-<!-- 메뉴 -->
-<!--#include virtual="/mobile/common/inc/gnb.asp" -->
-
-<div class="wrap">
-<!-- 상단헤더 -->
-<!--#include virtual="/mobile/common/inc/header.asp" -->
-
-    <div class="header_title_slide">
-        <div class="title">
-            <h2>이용안내</h2>
-        </div>
-
-<!--#include virtual="/mobile/information/inc/infor_topmenu.asp" -->
-    </div>
-
-    <div class="contents">
         <div class="detail-member">
             <div class="detail-head">
                 <h3>연간회원</h3>
@@ -172,12 +135,3 @@
                  </section>
             </div>
         </div>
-    </div>
-
-<!-- 하단푸터 -->
-<!--#include virtual="/mobile/common/inc/footer.asp" -->
-
-</div>
-
-</body>
-</html>

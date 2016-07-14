@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="/mobile/information/guide.asp">이용시간/요금</a></li>
                 <li><a href="/mobile/information/membership.asp">연간회원안내</a></li>
-                <li><a href="/mobile/information/traffic.asp">교통정보</a></li>
+                <li><a href="/mobile/information/index.asp">교통정보</a></li>
                 <li><a href="/mobile/information/convenience.asp">편의시설</a></li>
                 <li><a href="/mobile/information/notice_list.asp">공지사항</a></li>
                 <li><a href="/mobile/information/map.asp">가이드맵</a></li>

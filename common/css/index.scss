@@ -173,18 +173,18 @@ aside.gnb{display:none; position:absolute; top:15px; right:0; width:93%; height:
 	h3{width:148px;}
 	.today-slide{clear:both;
 		>.text-btn_box{position:absolute; right:0; z-index:10; width:37.8%; height: 100%; background:url("/mobile/images/index/today_bg.png") no-repeat; background-size:cover;
-			.text_box{position:absolute; padding-left:15%; text-align:left; color:#fff;
-				h4{margin:23% 0 6%; font-size:5.5vw;
+			.text_box{position:absolute; padding-top:15%; padding-left:15%; text-align:left; color:#fff;
+				h4{width:100%; margin-bottom:10px; font-size:1.8em;
 					&:before{content:""; display:block; width:13%; height:1.5px; margin-bottom:8px; background:#f08200;}
 				}
-				.text{display:block; margin-bottom:4px; font-size:3vw;}
+				.text{display:block; margin-bottom:4px; font-size:1em;}
 			}
 			.btns{overflow:hidden; position:absolute; bottom:0; width:100%;
-				.swiper-button-prev{float:left; position:static; top:52.3%; width:33%; height:33%; margin-top:0; background:none;}
+				.swiper-button-prev{float:left; position:static; top:52.3%; width:50%; height:33%; margin-top:0; background:none;}
 				.plus_btn{float:left; position:static; top:47.5%; left:33.5%; z-index:10; width:33%; height:33%; margin-left:0.5%; background:none;
 					a{display:block;}
 				}
-				.swiper-button-next{float:right; position:static; top:54.5%; width:33%; height:33%; margin-top:0; background:none;}
+				.swiper-button-next{float:right; position:static; top:54.5%; width:50%; height:33%; margin-top:0; background:none;}
 				img{width:100%;}
 			}
 		}
