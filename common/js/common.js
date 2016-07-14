@@ -244,17 +244,17 @@ $(document).ready(function(){
 			});
 
 			//먹거리 이미지 클릭시 지도팝업
-			for(var i = 0; i <= eat.str.length; i++){
+			for(var i = 1; i <= 20; i++){
 				(function(e){
-					$(".eat_img" + e).click(function(){
+					$(".buy_eat .map-btn_" + e).click(function(){
 						eat.map("/mobile/images/page_map/eat/page_map_eat" + e + ".png");
 					});
 				})(i);
 			}
 			//살거리 이미지 클릭시 지도팝업
-			for(var i = 0; i <= eat.str.length; i++){
+			for(var i = 1; i <= 20; i++){
 				(function(e){
-					$(".buy_img" + e).click(function(){
+					$(".buy_eat.buy .map-btn_" + e).click(function(){
 						eat.map("/mobile/images/page_map/buy/page_map_buy" + e + ".png");
 					});
 				})(i);
@@ -417,6 +417,19 @@ $(document).ready(function(){
 			$(".pop").css("top",hgTop);
 		})
 	};
+
+	function tab2(){
+		$(".pre-infor-tab2").click(function(){
+			var contentCss = $(".pre-infor-tab2 .content").css("display");
+			var $tab2 = $(".pre-infor-tab2");
+			if(contentCss != "none"){
+				$tab2.css("border-bottom","0");
+			}else{
+				$tab2.css("border-bottom","1px solid #bdb5a0");
+			}
+		});
+	}
+	tab2();
 
 	//pc,모바일 구분
 	//(function(){

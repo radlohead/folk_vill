@@ -55,11 +55,16 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
-<!-- 차장님 스크립트가 아래위로 두번들어가서 버그 생겨서 주석 처리해놓을게요 -->
-<!-- 	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script> -->
-<!-- 	<script type="text/javascript" src="/common/js/jquery.easing.min.js"></script> -->
-<!-- 	<script type="text/javascript" src="/mobile/common/js/swiper.min.js"></script> -->
-<!--     <script type="text/javascript" src="/mobile/common/js/common.js"></script> -->
+    <!--#include virtual="/mobile/common/inc/script.asp" -->
+        <script>
+            $(document).ready(function(){
+                $('.multiple-items').slick({
+                    infinite: true,
+                    slidesToShow: 4,
+                    initialSlide: 4
+                });
+            });
+        </script>
 	<script language="javascript">
 	<!--
 	var pg			= "<%=pg%>";
@@ -255,16 +260,6 @@
 <!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 4,
-                initialSlide: 4
-            });
-        });
-    </script>
 
 </body>
 </html>

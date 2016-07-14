@@ -6,6 +6,23 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
+    <!--#include virtual="/mobile/common/inc/script.asp" -->
+        <script>
+            $(document).ready(function(){
+                $('.single-items').slick({
+                    slidesToShow: 4,
+                    initialSlide: 0
+                });
+    			var mySwiper_a = new Swiper('.attr-slide', {
+    				pagination:'.attr-slide .swiper-pagination',
+    				paginationClickable: true,
+    				nextButton: '.attr-slide .swiper-button-next',
+    				prevButton: '.attr-slide .swiper-button-prev',
+    				autoplay: 2500,
+    				loop:false
+    			});
+            });
+        </script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -79,23 +96,6 @@
 <!-- 하단푸터 -->
 <!--#include virtual="/mobile/common/inc/footer.asp" -->
 </div>
-<!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.single-items').slick({
-                slidesToShow: 4,
-                initialSlide: 0
-            });
-			var mySwiper_a = new Swiper('.attr-slide', {
-				pagination:'.attr-slide .swiper-pagination',
-				paginationClickable: true,
-				nextButton: '.attr-slide .swiper-button-next',
-				prevButton: '.attr-slide .swiper-button-prev',
-				autoplay: 2500,
-				loop:false
-			});
-        });
-    </script>
 
 </body>
 </html>

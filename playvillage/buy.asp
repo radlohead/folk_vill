@@ -6,6 +6,15 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
+    <!--#include virtual="/mobile/common/inc/script.asp" -->
+        <script>
+            $(document).ready(function(){
+                $('.single-items').slick({
+                    slidesToShow: 2,
+                    initialSlide: 1
+                });
+            });
+        </script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -31,12 +40,15 @@
             <div class="detail-head">
                 <h3>살거리</h3>
                 <div class="text-box">
-                    <span class="text">전통을 담고 있는 다양한 상품을 만나보세요</span>
+                    <span class="text">
+                        전통을 담고 있는 다양한 상품을<br/>
+                        만나보세요
+                    </span>
                 </div>
             </div>
             <div class="detail-content attraction">
                 <section class="detail detail-eat">
-                    <a href="#" class="img buy_img1"><img src="/mobile/images/play_village/buy/buy_1.jpg" alt="농촌특산품매장 사진" /></a>
+                    <a href="buy/specialty.asp" class="img buy_img1"><img src="/mobile/images/play_village/buy/buy_1.jpg" alt="농촌특산품매장 사진" /></a>
                     <h4>농촌특산품매장</h4>
                     <dl>
                         <dt class="sub-title_01">위치</dt>
@@ -44,7 +56,7 @@
                     </dl>
                 </section>
                 <section class="detail detail-eat end">
-                    <a href="#" class="img buy_img2"><img src="/mobile/images/play_village/buy/buy_2.jpg" alt="기념1매장 사진" /></a>
+                    <a href="buy/memento.asp" class="img buy_img2"><img src="/mobile/images/play_village/buy/buy_2.jpg" alt="기념1매장 사진" /></a>
                     <h4>기념1매장</h4>
                     <dl>
                         <dt class="sub-title_01">위치</dt>
@@ -52,7 +64,7 @@
                     </dl>
                 </section>
                 <section class="detail">
-                    <a href="#" class="img buy_img3"><img src="/mobile/images/play_village/buy/buy_3.jpg" alt="고향기념품매장 사진" /></a>
+                    <a href="buy/hometown_memento.asp" class="img buy_img3"><img src="/mobile/images/play_village/buy/buy_3.jpg" alt="고향기념품매장 사진" /></a>
                     <h4>고향기념품매장</h4>
                     <dl>
                         <dt class="sub-title_01">위치</dt>
@@ -60,7 +72,7 @@
                     </dl>
                 </section>
                 <section class="detail end">
-                    <a href="#" class="img buy_img4"><img src="/mobile/images/play_village/buy/buy_4.jpg" alt="귀신店 사진" /></a>
+                    <a href="buy/ghost.asp" class="img buy_img4"><img src="/mobile/images/play_village/buy/buy_4.jpg" alt="귀신店 사진" /></a>
                     <h4>귀신店</h4>
                     <dl>
                         <dt class="sub-title_01">위치</dt>
@@ -68,7 +80,7 @@
                     </dl>
                 </section>
                 <section class="detail">
-                    <a href="#" class="img buy_img5"><img src="/mobile/images/play_village/buy/buy_5.jpg" alt="토이빌리지 사진" /></a>
+                    <a href="buy/toyvillage.asp" class="img buy_img5"><img src="/mobile/images/play_village/buy/buy_5.jpg" alt="토이빌리지 사진" /></a>
                     <h4>토이빌리지</h4>
                     <dl>
                         <dt class="sub-title_01">위치</dt>
@@ -90,14 +102,6 @@
         <a href="#none" class="popup_close-btn">지도 닫기버튼</a>
     </div>
 </article>
-<!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.single-items').slick({
-                slidesToShow: 2,
-                initialSlide: 1
-            });
-        });
-    </script>
+
 </body>
 </html>

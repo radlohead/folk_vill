@@ -6,6 +6,23 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
+    <!--#include virtual="/mobile/common/inc/script.asp" -->
+        <script>
+            $(document).ready(function(){
+                $('.single-items').slick({
+                    slidesToShow: 4,
+                    initialSlide: 1
+                });
+    			var mySwiper_a = new Swiper('.junseol-slide', {
+    				pagination:'.junseol-slide .swiper-pagination',
+    				paginationClickable: true,
+    				nextButton: '.junseol-slide .swiper-button-next',
+    				prevButton: '.junseol-slide .swiper-button-prev',
+    				autoplay: 2500,
+    				loop:false
+    			});
+            });
+        </script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -18,6 +35,12 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>놀이마을</h2>
+            <aside>
+                <h2>놀이마을
+                    <span class="icon"></span>
+                </h2>
+<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
+            </aside>
         </div>
 
 <!--#include virtual="/mobile/playvillage/inc/play_topmenu.asp" -->
@@ -90,23 +113,6 @@
 <!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.single-items').slick({
-                slidesToShow: 4,
-                initialSlide: 1
-            });
-			var mySwiper_a = new Swiper('.junseol-slide', {
-				pagination:'.junseol-slide .swiper-pagination',
-				paginationClickable: true,
-				nextButton: '.junseol-slide .swiper-button-next',
-				prevButton: '.junseol-slide .swiper-button-prev',
-				autoplay: 2500,
-				loop:false
-			});
-        });
-    </script>
 
 </body>
 </html>

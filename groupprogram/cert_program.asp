@@ -32,7 +32,8 @@
                     <caption>인증프로그램에 대한 안내</caption>
                     <colgroup>
                         <col width="25%">
-                        <col width="20%">
+                        <col width="25%">
+                        <col width="50%">
                     </colgroup>
                     <thead>
                         <tr>

@@ -15,7 +15,7 @@
         <li class="group"><a href="/mobile/groupprogram/daily.asp">단체프로그램</a></li>
     </ul>
     <ul class="footer_link2">
-        <li class="infor"><a href="/mobile/privacy/privacy_policy.asp">개인정보 취급방침</a> |</li>
+        <li class="infor"><a href="/mobile/privacy/privacy_policy.asp">개인정보 취급방침</a><span class="vbar">|</span></li>
         <li class="terms"><a href="/mobile/privacy/term_agree.asp">이용약관</a></li>
     </ul>
     <div class="address-wrap">

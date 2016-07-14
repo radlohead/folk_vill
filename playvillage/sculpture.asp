@@ -6,6 +6,18 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
+    <!--#include virtual="/mobile/common/inc/script.asp" -->
+        <script>
+            $(document).ready(function(){
+                $('.single-items').slick({
+                    slidesToShow: 4,
+                    initialSlide: 3
+                });
+                $('.single-item').slick({
+                    dots: true
+                });
+            });
+        </script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -18,6 +30,12 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>놀이마을</h2>
+            <aside>
+                <h2>놀이마을
+                    <span class="icon"></span>
+                </h2>
+<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
+            </aside>
         </div>
 
 <!--#include virtual="/mobile/playvillage/inc/play_topmenu.asp" -->
@@ -28,7 +46,7 @@
 <!--전통민속관 내용-->
             <div class="detail-head">
                 <h3>조각공원</h3>
-                <span class="text2">아름다운 자연과 어우러진 산책길</span>
+                <span class="text">아름다운 자연과 어우러진 산책길</span>
             </div>
             <div class="content sculpture">
                 <span class="photo-img map">
@@ -67,18 +85,6 @@
         <a href="#none" class="popup_close-btn">지도 닫기버튼</a>
     </div>
 </article>
-<!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.single-items').slick({
-                slidesToShow: 4,
-                initialSlide: 3
-            });
-            $('.single-item').slick({
-                dots: true
-            });
-        });
-    </script>
 
 </body>
 </html>

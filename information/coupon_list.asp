@@ -66,6 +66,12 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>할인정보</h2>
+            <aside>
+                <h2>할인정보
+                    <span class="icon"></span>
+                </h2>
+				<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
+            </aside>
         </div>
 
         <div class="slider single-items">
@@ -79,7 +85,9 @@
         <div class="detail-discount">
             <div class="detail-head">
                 <h3>쿠폰할인</h3>
-                <span class="text">한국민속촌 온라인 회원에게 드리는 특별한 혜택!</span>
+                <div class="text-box">
+                    <span class="text">한국민속촌 온라인 회원에게 드리는 특별한 혜택!</span>
+                </div>
             </div>
             <div class="detail-content promotion-list">
                 <table>
@@ -140,7 +148,7 @@
                     <tr>
                         <td colspan="2">
                             <div class="board-list-title">
-							<img src="<%=FileURL%><%=files3%>" alt="<%=alt3%>" style="margin:5px;">
+							<img src="<%=FileURL%><%=files1%>" alt="<%=alt1%>" style="margin:5px;">
 							</div>
                         </td>
                         <td>

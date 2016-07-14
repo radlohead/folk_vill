@@ -6,6 +6,15 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
+    <!--#include virtual="/mobile/common/inc/script.asp" -->
+        <script>
+            $(document).ready(function(){
+                $('.single-items').slick({
+                    slidesToShow: 3,
+                    initialSlide: 1
+                });
+            });
+        </script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -31,7 +40,9 @@
         <div class="detail-discount">
             <div class="detail-head">
                 <h3>제휴카드할인</h3>
-                <span class="text">제휴카드 할인혜택 꼼꼼하게 찾아보기</span>
+                <div class="text-box">
+                    <span class="text">제휴카드 할인혜택 꼼꼼하게 찾아보기</span>
+                </div>
             </div>
             <div class="detail-content credit_card">
                 <span class="card_company">
@@ -106,15 +117,6 @@
 <!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.single-items').slick({
-                slidesToShow: 3,
-                initialSlide: 1
-            });
-        });
-    </script>
 
 </body>
 </html>

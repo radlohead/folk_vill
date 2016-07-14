@@ -32,8 +32,16 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
-	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="/common/js/common.js"></script>
+    <!--#include virtual="/mobile/common/inc/script.asp" -->
+        <script>
+            $(document).ready(function(){
+                $('.single-items').slick({
+                    slidesToShow: 3,
+                    initialSlide: 0
+                });
+            });
+        </script>
+	<!--<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>-->
 	<script type="text/javascript" src="/common/js/Validate.js"></script>
 	<script type="text/javascript">
 	function doSearch() {
@@ -546,9 +554,24 @@
                     <div class="text_box">
                         <h4>전화문의</h4>
                         <ul>
-                            <li>고객센터 : 031-288-0000</li>
-                            <li>학생·기업단체·연간회원 상담실 : 031-288-4000</li>
-                            <li>유스호스텔 : 031-288-1700</li>
+                            <li>
+                                <p>
+                                    <span class="icon"></span>
+                                    <span>고객센터 : 031-288-0000</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="icon"></span>
+                                    <span>학생·기업단체·연간회원 상담실 : 031-288-4000</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="icon"></span>
+                                    <span>유스호스텔 : 031-288-1700</span>
+                                </p>
+                            </li>
                         </ul>
                     </div>
                 </section>
@@ -562,15 +585,6 @@
 <!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.single-items').slick({
-                slidesToShow: 3,
-                initialSlide: 0
-            });
-        });
-    </script>
 
 </body>
 </html>

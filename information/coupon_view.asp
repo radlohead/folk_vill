@@ -156,7 +156,9 @@
         <div class="detail-discount">
             <div class="detail-head">
                 <h3>쿠폰할인</h3>
-                <span class="text">한국민속촌 온라인 회원에게 드리는 특별한 혜택!</span>
+                <div class="text-box">
+                    <span class="text">한국민속촌 온라인 회원에게 드리는 특별한 혜택!</span>
+                </div>
             </div>
             <div class="detail-content coupon-view">
                 <p class="coupon-title">
@@ -165,33 +167,33 @@
                 </p>
                 <article>
                     <span class="coupon"><img src="<%=FileURL%><%=files3%>" alt="<%=alt3%>" /></span>
-                    <!--<span class="coupon_bottom_bg"></span>-->
+                    <span class="coupon_bottom_bg"></span>
                     <dl>
                         <dt>
                             <p>
                                 <span class="icon"></span>
-                                <span>이름</span>
+                                <strong>이름</strong>
                             </p>
                         </dt>
                         <dd><%'=session("name")%></dd>
                         <dt>
                             <p>
                                 <span class="icon"></span>
-                                <span>휴대폰</span>
+                                <strong>휴대폰</strong>
                             </p>
                         </dt>
                         <dd><%'Response.Write mobile1 & "-" & mobile2 & "-" & mobile3%></dd>
                         <dt>
                             <p>
                                 <span class="icon"></span>
-                                <span>생년월일</span>
+                                <strong>생년월일</strong>
                             </p>
                         </dt>
                         <dd><%'Response.Write birthyear & "-" & birthmonth & "-" & birthday%></dd>
                         <dt>
                             <p>
                                 <span class="icon"></span>
-                                <span>사용기간</span>
+                                <strong>사용기간</strong>
                             </p>
                         </dt>
                         <dd><%'=sdate%> ~ <%'=edate%></dd>

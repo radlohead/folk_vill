@@ -6,6 +6,16 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
+    <!--#include virtual="/mobile/common/inc/script.asp" -->
+        <script>
+            $(document).ready(function(){
+                $('.single-items').slick({
+                    infinite: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 0
+                });
+            });
+        </script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -28,7 +38,7 @@
 
     <div class="contents">
         <div class="detail-folk">
-            <div class="detail-head">
+            <div class="detail-head2">
                 <h3>조선시대로 떠나는 시간여행</h3>
                 <span class="text">민속촌은 각 지방에 남아있는 조선시대 가옥들을 옮겨와 조성한 조선시대 마을입니다.
                                    지리적 환경부터 마을의 기능까지 고려하여 옹기종기 모여 앉은 마을의 이야기를 들어보세요.
@@ -54,16 +64,6 @@
 <!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.single-items').slick({
-                infinite: true,
-                slidesToShow: 2,
-                slidesToScroll: 0
-            });
-        });
-    </script>
 
 </body>
 </html>

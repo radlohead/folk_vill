@@ -6,6 +6,17 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
 <!--#include virtual="/mobile/common/inc/css.asp" -->
+<!--#include virtual="/mobile/common/inc/script.asp" -->
+    <script>
+        $(document).ready(function(){
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                initialSlide: 0
+            });
+        });
+    </script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -218,17 +229,6 @@
 <!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                initialSlide: 0
-            });
-        });
-    </script>
 
 </body>
 </html>
