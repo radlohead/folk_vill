@@ -1,17 +1,17 @@
-<!--<div class="slider multiple-items">-->
-    <!--<a href="/mobile/event/event_now.asp">민속촌NOW</a>-->
-    <!--<a href="/mobile/event/performance_nongak.asp">농악놀이</a>-->
-    <!--<a href="/mobile/event/performance_bboy.asp">국악비보이</a>-->
-    <!--<a href="/mobile/event/performance_horse.asp">마상무예</a>-->
-    <!--<a href="/mobile/event/performance_wedding.asp">전통혼례</a>-->
-    <!--<a href="/mobile/event/performance_chosun.asp">조선캐릭터</a>-->
-<!--</div>-->
-
 <div class="slider multiple-items">
     <a href="/mobile/event/event_now.asp">민속촌NOW</a>
-    <a href="#" class="menu2">농악놀이</a>
-    <a href="#" class="menu3">국악비보이</a>
-    <a href="#" class="menu4">마상무예</a>
-    <a href="#" class="menu5">전통혼례</a>
-    <a href="#" class="menu6">조선캐릭터</a>
+    <a href="/mobile/event/performance_nongak.asp">농악놀이</a>
+    <a href="/mobile/event/performance_bboy.asp">국악비보이</a>
+    <a href="/mobile/event/performance_horse.asp">마상무예</a>
+    <a href="/mobile/event/performance_wedding.asp">전통혼례</a>
+    <a href="/mobile/event/performance_chosun.asp">조선캐릭터</a>
 </div>
+
+<!--<div class="slider multiple-items">-->
+    <!--<a href="/mobile/event/event_now.asp">민속촌NOW</a>-->
+    <!--<a href="#" class="menu2">농악놀이</a>-->
+    <!--<a href="#" class="menu3">국악비보이</a>-->
+    <!--<a href="#" class="menu4">마상무예</a>-->
+    <!--<a href="#" class="menu5">전통혼례</a>-->
+    <!--<a href="#" class="menu6">조선캐릭터</a>-->
+<!--</div>-->

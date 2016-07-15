@@ -18,12 +18,12 @@
     <ul class="navi">
         <li><a href="#menu01">이용안내</a>
             <ul>
-                <li><a href="/mobile/information/index.asp?01">이용시간/요금</a></li>
-                <li><a href="/mobile/information/index.asp?02">연간회원안내</a></li>
-                <li><a href="/mobile/information/index.asp?03">교통정보</a></li>
-                <li><a href="/mobile/information/index.asp?04">편의시설</a></li>
+                <li><a href="/mobile/information/guide.asp">이용시간/요금</a></li>
+                <li><a href="/mobile/information/membership.asp">연간회원안내</a></li>
+                <li><a href="/mobile/information/traffic.asp">교통정보</a></li>
+                <li><a href="/mobile/information/convenience.asp">편의시설</a></li>
                 <li><a href="/mobile/information/notice_list.asp">공지사항</a></li>
-                <li><a href="/mobile/information/index.asp?06">가이드맵</a></li>
+                <li><a href="/mobile/information/map.asp">가이드맵</a></li>
             </ul>
         </li>
         <li><a href="#menu02">할인정보</a>
@@ -36,11 +36,11 @@
         <li><a href="#menu03">행사·공연</a>
             <ul>
                 <li><a href="/mobile/event/event_now.asp">민속촌NOW</a></li>
-                <li><a href="/mobile/event/index.asp?02">농악놀이</a></li>
-                <li><a href="/mobile/event/index.asp?03">국악비보이</a></li>
-                <li><a href="/mobile/event/index.asp?04">마상무예</a></li>
-                <li><a href="/mobile/event/index.asp?05">전통혼례</a></li>
-                <li><a href="/mobile/event/index.asp?06">조선캐릭터</a></li>
+                <li><a href="/mobile/event/performance_nongak.asp">농악놀이</a></li>
+                <li><a href="/mobile/event/performance_bboy.asp">국악비보이</a></li>
+                <li><a href="/mobile/event/performance_horse.asp">마상무예</a></li>
+                <li><a href="/mobile/event/performance_wedding.asp">전통혼례</a></li>
+                <li><a href="/mobile/event/performance_chosun.asp">조선캐릭터</a></li>
             </ul>
         </li>
         <li><a href="#menu04">민속마을</a>

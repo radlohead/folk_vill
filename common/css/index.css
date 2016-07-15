@@ -179,7 +179,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .header_title_slide .slick-slider.multiple-items .slick-list { overflow: hidden; }
 .header_title_slide .slick-slider.multiple-items .slick-list .slick-slide { display: table-cell; text-align: center; }
 .header_title_slide .slick-slider.multiple-items .slick-list .slick-active { margin: 0; border-left: 1px solid #bdb5a0; }
-.header_title_slide .slick-slider.multiple-items .slick-list .slick-current { border: 0; margin: 0; }
+.header_title_slide .slick-slider.multiple-items .slick-list .slick-current { border: 0; margin: 0; color: #f08200; }
 .header_title_slide .slick-slider.multiple-items .slick-list .slick-click { color: #f08200; }
 .header_title_slide .slick-slider.multiple-items .slick-arrow { border: 0; position: absolute; top: 10px; width: 5px; height: 8px; padding: 7px; background: url("/mobile/images/common/sprite.png") no-repeat; background-size: 300px 500px; text-indent: -9999px; z-index: 10; }
 .header_title_slide .slick-slider.multiple-items .slick-prev { left: -7%; margin-left: 3.5%; background-position: -225px -158px; }
