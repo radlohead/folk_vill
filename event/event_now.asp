@@ -30,8 +30,14 @@
             <h2>행사·공연</h2>
         </div>
 
-
-<!--#include virtual="/mobile/event/inc/event_topmenu.asp" -->
+<div class="slider multiple-items">
+    <a href="/mobile/event/event_now.asp">민속촌NOW</a>
+    <a href="index.asp?02" class="menu2">농악놀이</a>
+    <a href="index.asp?03" class="menu3">국악비보이</a>
+    <a href="index.asp?04" class="menu4">마상무예</a>
+    <a href="index.asp?05" class="menu5">전통혼례</a>
+    <a href="index.asp?06" class="menu6">조선캐릭터</a>
+</div>
     </div>
 
     <div class="contents">

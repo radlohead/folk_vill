@@ -168,7 +168,15 @@
 		<div class="title">
 			<h2>이용안내</h2>
 		</div>
-		<!--#include virtual="/mobile/information/inc/infor_topmenu.asp" -->
+<div class="slider multiple-items">
+    <a href="index.asp?01" class="menu1">시간/요금</a>
+    <a href="index.asp?02" class="menu2">연간회원안내</a>
+    <a href="index.asp?03" class="menu3">교통정보</a>
+    <a href="index.asp?04" class="menu4">편의시설</a>
+    <!--<a href="index.asp?05" class="menu5">공지사항</a>-->
+    <a href="/mobile/information/notice_list.asp">공지사항</a>
+    <a href="index.asp?06" class="menu6">가이드맵</a>
+</div>
     </div>
 
     <div class="contents">
@@ -227,7 +235,7 @@
                             <td><span class="icon <%=notice_icon%>"></span></td>
                             <td>
                                 <div>
-                                    <a href='notice_view.asp<%=cparam%>'><h4 style="color:#f08200;"><%=title%></h4>
+                                    <a href='notice_view.asp<%=cparam%>'><h4><%=title%></h4>
                                     <span class="date"><%=regdate%></span></a>
                                 </div>
                             </td>

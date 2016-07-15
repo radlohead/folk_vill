@@ -1,12 +1,4 @@
-        <script>
-            $(document).ready(function(){
-                $('.multiple-items').slick({
-                    infinite: true,
-                    slidesToShow: 4,
-                    initialSlide: 4
-                });
-            });
-        </script>
+
 	<script language="javascript">
 	<!--
 	var pg			= "<%=pg%>";
