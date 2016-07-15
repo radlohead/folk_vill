@@ -149,7 +149,7 @@
 		</div>
 
 <!-- 하단푸터 -->
-<!--#include virtual="/mobile/common/inc/footer.html" -->
+<!--#include virtual="/mobile/common/inc/footer.asp" -->
 	</div>
 	<script>
 
@@ -162,6 +162,16 @@
 		$(document).ready(function(){
 
 			mainTab();
+			//슬라이드 이미지 개수가 1이하이면 화살표제거 및 autoplay delete
+            var mainSlideStatus;
+            var tabMenu1Status;
+            var tabMenu2Status;
+            var mainSlide = $(".main-slide .swiper-slide").length;
+            var tabMenu1 = $(".tabMenu1 .swiper-slide").length;
+            var tabMenu2 = $(".tabMenu2 .swiper-slide").length;
+            (mainSlide > 1) ? mainSlideStatus =  true : mainSlideStatus = false;
+            (tabMenu1 > 1) ? tabMenu1Status =  true : tabMenu1Status = false;
+            (tabMenu2 > 1) ? tabMenu2Status =  true : tabMenu2Status = false;
 
 			var mySwiper_a = new Swiper('.main-slide', {
 				pagination:'.main-slide .swiper-pagination',
@@ -169,21 +179,21 @@
 				nextButton: '.main-slide .swiper-button-next',
 				prevButton: '.main-slide .swiper-button-prev',
 				autoplay: 2500,
-				loop:true
+				loop:mainSlideStatus
 			});
 			var mySwiper_b = new Swiper('.tabMenu1', {
 				paginationClickable: true,
 				nextButton: '.tabMenu1 .swiper-button-next',
 				prevButton: '.tabMenu1 .swiper-button-prev',
 				autoplay: 2500,
-				loop:true  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
+				loop:tabMenu1Status  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
 			});
 			var mySwiper_e = new Swiper('.tabMenu2', {
 				paginationClickable: true,
 				nextButton: '.tabMenu2 .swiper-button-next',
 				prevButton: '.tabMenu2 .swiper-button-prev',
 				autoplay: 2500,
-				loop:true  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
+				loop:tabMenu2Status  //할인프로모션 이미지가 2개이상이면 true로 변환해줘야함
 			});
 			var mySwiper_c = new Swiper('.today-slide', {
 				paginationClickable: true,
@@ -192,6 +202,7 @@
 				autoplay: 2500,
 				loop:true
 			});
+
 		});
 	</script>
 </body>

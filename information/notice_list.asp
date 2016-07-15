@@ -21,9 +21,9 @@
 	param		= "&keyfield="&keyfield&"&keyword="&Server.URLEncode(keyword)&"&code="&code
 	today		= Date()
 
-	If IsNumeric(pg) = False Then f_AlertBack("정상적 접근이 아닙니다.")	
+	If IsNumeric(pg) = False Then f_AlertBack("정상적 접근이 아닙니다.")
 
-	' 페이징 처리 부분 
+	' 페이징 처리 부분
 	pgSize		= Df_Psize
 	UniqueField	= "SEQ" ' 시퀀스필드
 	TableName	= "TBL_NOTICE_M" ' 테이블명
@@ -47,6 +47,7 @@
 	   totalpage = totalpage + 1
 	End If
 %>
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -110,7 +111,7 @@
 						var readcount	= $.trim($(this).find("readcount").text());
 						var regdate		= $.trim($(this).find("regdate").text());
 						var notice_icon	= $.trim($(this).find("notice_icon").text());
-						
+
 						var param		= "?pg=" + pg + "&seq=" + seq;
 
 						media_add = "<tr style='display: table-row;'>";
@@ -187,7 +188,7 @@
                     <tbody>
 					<%
 					If NOT(IsNull(rValue) Or IsEmpty(rValue)) Then
-					
+
 						For i = Lbound(rValue,2) To UBound(rValue,2)
 
 							rownum		= (TotalRecordCount - (pgSize * (pg-1))) -  i

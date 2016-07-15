@@ -150,9 +150,9 @@ aside.gnb{display:none; position:absolute; top:15px; right:0; width:93%; height:
 	  li:first-child{margin-left:3.9%; background-position: right center;}
       li.on{}
       .menu1{background-image:url("/mobile/images/index/main-tab-title01.gif");}
-      .menu2{background-image:url("/mobile/images/index/main-tab-title02.gif");}
+      .menu2{background-image:url("/mobile/images/index/main-tab-title2.gif");}
       .menu1.on{background-image:url("/mobile/images/index/main-tab-title01_on.gif");}
-      .menu2.on{background-image:url("/mobile/images/index/main-tab-title02_on.gif");}
+      .menu2.on{background-image:url("/mobile/images/index/main-tab-title2_on.gif");}
 	}
 	.tab-content{clear:both; margin-bottom:15px;
 		.swiper-slide{text-align:center;}
@@ -172,7 +172,7 @@ aside.gnb{display:none; position:absolute; top:15px; right:0; width:93%; height:
 .today{
 	h3{width:148px;}
 	.today-slide{clear:both;
-		>.text-btn_box{position:absolute; right:0; z-index:10; width:37.8%; height: 100%; background:url("/mobile/images/index/today_bg.png") no-repeat; background-size:cover;
+		>.text-btn_box{position:absolute; right:0; z-index:10; width:32.8%; height: 100%; background:url("/mobile/images/index/today_bg.png") no-repeat; background-size:cover;
 			.text_box{position:absolute; padding-top:15%; padding-left:15%; text-align:left; color:#fff;
 				h4{width:100%; margin-bottom:10px; font-size:1.8em;
 					&:before{content:""; display:block; width:13%; height:1.5px; margin-bottom:8px; background:#f08200;}
@@ -278,8 +278,9 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.slick-track{display:table;}
 		.slick-list{overflow:hidden;
 			.slick-slide{display:table-cell; text-align:center;}
-			.slick-active{border-left:1px solid #bdb5a0; margin:0;}
-			.slick-current{border:0; color:#f08200; margin:0;}
+			.slick-active{margin:0; border-left:1px solid $mainColor;}
+			.slick-current{border:0; margin:0;}
+			.slick-click{color:$orangeColor;}
 		}
 		.slick-arrow{border:0; position:absolute; top:10px; width:5px; height:8px; padding:7px; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px; text-indent:-9999px; z-index:10;}
 		.slick-prev{left:-7%; margin-left:3.5%; background-position:-225px -158px;}
@@ -603,7 +604,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 	.join-method{
 		h4{margin:30px 0 10px;}
-		h5{margin:10px 0 7px; color:$orangeColor;}
+		h5{margin:10px 0 7px; font-weight:bold; color:$orangeColor;}
 		li{display:table; margin-top:6px; @include list;}
 		.down-link{display:block; width:100%; margin-top:15px;
 			a{display:inline-block; float:left; width:33.3%;}
@@ -612,7 +613,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 	.note{
 		h4{margin:30px 0 10px;}
-		h5{margin:13px 0 7px; color:$orangeColor;}
+		h5{margin:13px 0 7px; font-weight:bold; color:$orangeColor;}
 		li{display:table; margin-top:3px; @include list;}
 	}
 }
@@ -623,7 +624,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	h4:first-child{margin-bottom:5px;}
 	h4{margin-bottom:11px;}
 	h4 + p{margin-bottom:20px; font-size:1.4em;}
-	h5{margin:10px 0 5px; color:#f08200;}
+	h5{margin:10px 0 5px; font-weight:bold; color:$orangeColor;}
 	h5:first-child{margin-top:5px;}
 	table.bus-time{margin-top:20px;
 		th{padding:7px 0; border-top:2px solid #f08200; font-size:1.2em;
@@ -786,10 +787,10 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		img{width:100%;}
 		.caption{text-align:left; margin-bottom:21px; line-height: 20px; font-size:1.4em;}
 		section{margin-top:27px;
-			h4{text-align:left; padding:7px 0 4px;font-size:1.6em; color:#f08200;}
+			h4{text-align:left; padding:7px 0 4px;font-size:1.6em; font-weight:bold; color:$orangeColor;}
 			p{text-align:left; font-size:1.4em; line-height:20px;}
 		}
-		h4{text-align:left; padding:16px 0 9px;font-size:1.5em; color:#f08200;}
+		h4{text-align:left; padding:16px 0 9px;font-size:1.5em; color:$orangeColor;}
 		.market-menu{overflow:hidden;
 			.menu_list{float:left; width:47.75%;}
 			.menu_list2{float:right; width:47.75%;}
@@ -1139,8 +1140,8 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		img{width:100%;}
 		.text{display:block; margin-bottom:20px; font-size:1.4em; line-height:20px;}
 		.img_box{overflow:hidden;
-			em{display:block; margin:18px 0 10px; font-size:2em; font-weight:bold;}
-			h4{margin:15px 0 10px; font-size:1.8em;}
+			em{display:block; margin:18px 0 10px; font-size:2em;}
+			h4{margin:15px 0 10px; font-size:2em;}
 			.text{font-size:1.4em;}
 		}
 		.text_box_wrap{margin:5px 0 20px;

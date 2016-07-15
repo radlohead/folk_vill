@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -8,7 +7,6 @@
     <title>한국 민속촌 모바일 사이트</title>
 <!--#include virtual="/mobile/common/inc/css.asp" -->
 <!--#include virtual="/mobile/common/inc/script.asp" -->
-
     <script>
         $(document).ready(function(){
             $('.multiple-items').slick({
@@ -46,59 +44,57 @@
 
             var search = location.search;
             switch(search){
-                case "?01" :
-                menuClick('/mobile/information/page/guidePage.asp');
-                $(".multiple-items a").removeClass("slick-click");
-                $(".multiple-items .menu1").addClass("slick-click");
-                break;
-
                 case "?02" :
-                menuClick('/mobile/information/page/membershipPage.asp');
+                menuClick('/mobile/event/page/nongakPage.asp');
                 $(".multiple-items a").removeClass("slick-click");
                 $(".multiple-items .menu2").addClass("slick-click");
                 break;
 
                 case "?03" :
-                menuClick('/mobile/information/page/trafficPage.asp');
+                menuClick('/mobile/event/page/bboyPage.asp');
                 $(".multiple-items a").removeClass("slick-click");
                 $(".multiple-items .menu3").addClass("slick-click");
                 break;
 
                 case "?04" :
-                menuClick('/mobile/information/page/conveniencePage.asp');
+                menuClick('/mobile/event/page/horsePage.asp');
                 $(".multiple-items a").removeClass("slick-click");
                 $(".multiple-items .menu4").addClass("slick-click");
                 break;
 
+                case "?05" :
+                menuClick('/mobile/event/page/weddingPage.asp');
+                $(".multiple-items a").removeClass("slick-click");
+                $(".multiple-items .menu6").addClass("slick-click");
+                break;
+
                 case "?06" :
-                menuClick('/mobile/information/page/mapPage.asp');
+                menuClick('/mobile/event/page/chosunPage.asp');
                 $(".multiple-items a").removeClass("slick-click");
                 $(".multiple-items .menu6").addClass("slick-click");
                 break;
             }
 
-            $(".menu1").click(function(){
-                menuClick('/mobile/information/page/guidePage.asp');
-            });
             $(".menu2").click(function(){
-                menuClick('/mobile/information/page/membershipPage.asp');
+                menuClick('/mobile/event/page/nongakPage.asp');
             });
             $(".menu3").click(function(){
-                menuClick('/mobile/information/page/trafficPage.asp');
+                menuClick('/mobile/event/page/bboyPage.asp');
             });
             $(".menu4").click(function(){
-                menuClick('/mobile/information/page/conveniencePage.asp');
+                menuClick('/mobile/event/page/horsePage.asp');
             });
             $(".menu5").click(function(){
-                menuClick('/mobile/information/page/notice_listPage.asp');
+                menuClick('/mobile/event/page/weddingPage.asp');
             });
             $(".menu6").click(function(){
-                menuClick('/mobile/information/page/mapPage.asp');
+                menuClick('/mobile/event/page/chosunPage.asp');
             });
 
 
         });
     </script>
+
 </head>
 <body>
 <!-- 메뉴 -->
@@ -110,9 +106,9 @@
 
     <div class="header_title_slide">
         <div class="title">
-            <h2>이용안내</h2>
+            <h2>행사·공연</h2>
         </div>
-<!--#include virtual="/mobile/information/inc/infor_topmenu.asp" -->
+<!--#include virtual="/mobile/event/inc/event_topmenu.asp" -->
     </div>
 
     <div class="contents">

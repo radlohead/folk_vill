@@ -12,7 +12,6 @@
             $('.multiple-items').slick({
                 infinite: true,
                 slidesToShow: 4,
-                slidesToScroll: 1,
                 initialSlide: 1
             });
         });

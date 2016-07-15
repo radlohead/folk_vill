@@ -44,7 +44,7 @@
 				-->
 				<li>
 					<span class="icon guide_icon"></span>
-					<a href="/mobile/information/notice_view.asp?seq=<%=seq%>" class="text orange"><%=title%></a>
+					<a href="/mobile/information/notice_view.asp?seq=<%=seq%>" class="text"><%=title%></a>
 				</li>
 <%
 		Rs.movenext
