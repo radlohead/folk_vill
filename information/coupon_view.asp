@@ -1,70 +1,60 @@
 <!--#include virtual="/common/lib/encoding.asp"-->
 <!--#include virtual="/common/inc/common.inc"-->
-<%
-	Dim code_name, seq, pg, hopecode_name
-	seq		= SQLInjectionFilter(Request("seq"))
-	pg		= SQLInjectionFilter(Request("pg"))
-	FileURL	= "/upload/coupon/"
+<%		
+	Dim couponSEQ
+	
+	couponSEQ	= SQLInjectionFilter(Request("couponSEQ"))
+	FileURL = "/upload/coupon/"
 
-	If IsNumeric(seq) = False Then f_AlertBack("정상적 접근이 아닙니다.")
-	If IsNumeric(pg) = False Then f_AlertBack("정상적 접근이 아닙니다.")
+	'If IsNumeric(couponSEQ) = False Then f_AlertBack("정상적 접근이 아닙니다.")
 
-	'==========================================================================
-	' 개인정보 LOAD
-	'==========================================================================
-	' 미 로그인시 로그인 페이지로..
-
-	' VV 로그인 체크소스 웹꺼 가져옴 // 모바일화 시켜야
-'	If session("id") = "" Then
-'		If couponSEQ = "" Then
-'			Response.Write "<form name='form1' method='post' action='https://www.koreanfolk.co.kr/member/login.asp'>"
-'			Response.Write "<input type='hidden' name='RtnURL' value='/information/coupon_view.asp'>"
-'			Response.Write "<input type='hidden' name='event' value='coupon'>"
-'			Response.Write "</form>"
-'			Response.Write "<script language='javascript'>"
-'			Response.Write "alert('로그인후 이용해 주세요.');"
-'			Response.Write "document.form1.submit();"
-'			Response.Write "</script>"
-'			Response.End
-'		Else
-'			Response.Write "<form name='form1' method='post' action='https://www.koreanfolk.co.kr/member/login.asp'>"
-'			Response.Write "<input type='hidden' name='RtnURL' value='/information/coupon_view.asp'>"
-'			Response.Write "<input type='hidden' name='event' value='coupon'>"
-'			Response.Write "<input type='hidden' name='couponSEQ' value='"&couponSEQ&"'>"
-'			Response.Write "</form>"
-'			Response.Write "<script language='javascript'>"
-'			Response.Write "alert('로그인후 이용해 주세요.');"
-'			Response.Write "document.form1.submit();"
-'			Response.Write "</script>"
-'			Response.End			
-'		End If 
-'	Else
-'		If couponSEQ = "" Then
-'			Response.Write "<script language='javascript'>"
-'			Response.Write "location.href='/information/coupon_list.asp'"
-'			Response.Write "</script>"
-'			Response.End
-'		End If 		
-'	End If
-	'==========================================================================
+	If session("id") = "" Then
+		If couponSEQ = "" Then
+			Response.Write "<form name='form1' method='post' action='https://www.koreanfolk.co.kr/mobile/member/login.asp'>"
+			Response.Write "<input type='hidden' name='RtnURL' value='/mobile/information/coupon_view.asp'>"
+			Response.Write "<input type='hidden' name='event' value='coupon'>"
+			Response.Write "</form>"
+			Response.Write "<script language='javascript'>"
+			Response.Write "alert('로그인후 이용해 주세요.');"
+			Response.Write "document.form1.submit();"
+			Response.Write "</script>"
+			Response.End
+		Else
+			Response.Write "<form name='form1' method='post' action='https://www.koreanfolk.co.kr/mobile/member/login.asp'>"
+			Response.Write "<input type='hidden' name='RtnURL' value='/mobile/information/coupon_view.asp'>"
+			Response.Write "<input type='hidden' name='event' value='coupon'>"
+			Response.Write "<input type='hidden' name='couponSEQ' value='"&couponSEQ&"'>"
+			Response.Write "</form>"
+			Response.Write "<script language='javascript'>"
+			Response.Write "alert('로그인후 이용해 주세요.');"
+			Response.Write "document.form1.submit();"
+			Response.Write "</script>"
+			Response.End			
+		End If 
+	Else
+		If couponSEQ = "" Then
+			Response.Write "<script language='javascript'>"
+			Response.Write "location.href='/mobile/information/coupon_list.asp'"
+			Response.Write "</script>"
+			Response.End
+		End If 		
+	End If
 
 	Call OpenDbConnection() '데이터베이스 열기
-
+	
 	'######################################################
 	'# TBL_COUPON TABLE SELECT START
 	'######################################################
 
 	Set objcmd = Server.CreateObject("ADODB.Command")
 	With objcmd
-
 		.ActiveConnection = Conn
 		.CommandText = "SP_HUGO7_TBL_COUPON_SELECT_M"
 		.CommandType = adCmdStoredProc
 
-		.Parameters.Append .CreateParameter("@SEQ", adInteger, adParamInput, 0, seq)
+		.Parameters.Append .CreateParameter("@SEQ", adInteger, adParamInput, 0, couponSEQ)
 
 		Set Rs = .Execute
-
 	End With
 	Set objcmd = Nothing
 
@@ -73,53 +63,36 @@
 	'######################################################
 
 	If(Not Rs.EOF or Not Rs.BOF) Then
-
-		title		= Rs("TITLE")
-		sdate		= Rs("SDATE")
-		edate		= Rs("EDATE")
-		files1		= Rs("FILES1")
-		files2		= Rs("FILES2")
-		files3		= Rs("FILES3")
-		alt1		= Rs("ALT1")
-		alt2		= Rs("ALT2")
-		alt3		= Rs("ALT3")
-		contents1	= Rs("CONTENTS1")
-		contents2	= Rs("CONTENTS2")
-		status		= Rs("STATUS")
-		showsdate	= Rs("SHOWSDATE")
-		showedate	= Rs("SHOWEDATE")
-		regdate		= Rs("REGDATE")
-
-
-		' #######################################################################
+		title			= Rs("TITLE")
+		sdate			= Rs("SDATE")
+		edate			= Rs("EDATE")		
+		files1			= Rs("FILES1")
+		files2			= Rs("FILES2")
+		alt1			= Rs("ALT1")
+		alt2			= Rs("ALT2")
+		contents1		= Rs("CONTENTS1")
+		contents1		= Replace(contents1,vblf,"<br />") '에디터 사용하지 않을때 변환
+		contents2		= Rs("CONTENTS2")
+		status			= Rs("STATUS")
+		regdate			= Rs("REGDATE")	
+		
 		'회원정보 가져오기
-		' #######################################################################
-'		strSQL = ""
-'		strSQL = "SELECT BIRTHYEAR,BIRTHMONTH,BIRTHDAY,MOBILE1,MOBILE2,MOBILE3 FROM TBL_MEMBER"
-'		strSQL = strSQL & " WHERE UID = '"& session("id") &"'"
-'		Set cRs = Conn.Execute(strSQL)
-'
-'		If Not(cRs.bof OR cRs.eof) Then
-'			birthyear = cRs(0)
-'			birthmonth = cRs(1)
-'			birthday = cRs(2)			
-'			mobile1 = cRs(3)
-'			mobile2 = cRs(4)
-'			mobile3 = cRs(5)
-'		End If 
-'
-'		cRs.Close
-'		Set cRs = Nothing
-		' #######################################################################
+		strSQL = ""
+		strSQL = "SELECT BIRTHYEAR,BIRTHMONTH,BIRTHDAY,MOBILE1,MOBILE2,MOBILE3 FROM TBL_MEMBER"
+		strSQL = strSQL & " WHERE UID = '"& session("id") &"'"
+		Set cRs = Conn.Execute(strSQL)
 
-	Else
+		If Not(cRs.bof OR cRs.eof) Then
+			birthyear = cRs(0)
+			birthmonth = cRs(1)
+			birthday = cRs(2)			
+			mobile1 = cRs(3)
+			mobile2 = cRs(4)
+			mobile3 = cRs(5)
+		End If 
 
-		Response.Write ("<script language='javascript'>")
-		Response.Write (" alert('현재 글은 존재하지 않습니다.');")
-		Response.Write (" history.back();")
-		Response.Write ("</script>")
-		Response.End
-
+		cRs.Close
+		Set cRs = Nothing
 	End If
 
 	Call RsClose()
@@ -133,6 +106,24 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
+	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="/common/js/common.js"></script>
+	<script type="text/javascript" src="/common/js/Validate.js"></script>
+	<script type="text/javascript">
+
+	function CouponClickCount(uid,seq){
+		var  params = "uid=" + uid + "&seq= " + seq;
+
+		$.ajax({
+			type:"POST",
+			url: "coupon_clickcount.asp",
+			data: params,
+			success: function(data) {
+				alert("마이페이지 MY쿠폰에서 확인하실수 있습니다. ");
+			}
+		});
+	}
+	</script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -166,7 +157,7 @@
                     <span class="text"><%=title%></span>
                 </p>
                 <article>
-                    <span class="coupon"><img src="<%=FileURL%><%=files3%>" alt="<%=alt3%>" /></span>
+                    <span class="coupon"><img src="<%=FileURL%><%=files1%>" alt="<%=alt1%>" /></span>
                     <span class="coupon_bottom_bg"></span>
                     <dl>
                         <dt>
@@ -175,34 +166,34 @@
                                 <strong>이름</strong>
                             </p>
                         </dt>
-                        <dd><%'=session("name")%></dd>
+                        <dd><%=session("name")%></dd>
                         <dt>
                             <p>
                                 <span class="icon"></span>
                                 <strong>휴대폰</strong>
                             </p>
                         </dt>
-                        <dd><%'Response.Write mobile1 & "-" & mobile2 & "-" & mobile3%></dd>
+                        <dd><%Response.Write mobile1 & "-" & mobile2 & "-" & mobile3%></dd>
                         <dt>
                             <p>
                                 <span class="icon"></span>
                                 <strong>생년월일</strong>
                             </p>
                         </dt>
-                        <dd><%'Response.Write birthyear & "-" & birthmonth & "-" & birthday%></dd>
+                        <dd><%Response.Write birthyear & "-" & birthmonth & "-" & birthday%></dd>
                         <dt>
                             <p>
                                 <span class="icon"></span>
                                 <strong>사용기간</strong>
                             </p>
                         </dt>
-                        <dd><%'=sdate%> ~ <%'=edate%></dd>
+                        <dd><%=sdate%> ~ <%=edate%></dd>
                     </dl>
                 </article>
                 <h4>우대혜택</h4>
-                <span class="benefit_img"><img src="/mobile/images/information/MCOU.jpg" alt=""/></span>
+                <span class="benefit_img"><img src="<%=FileURL%><%=files2%>" alt="<%=alt2%>"/></span>
                 <span class="coupon_down_wrap">
-                    <a href="#none" class="coupon_down">쿠폰 발급받기</a>
+                    <a href="#" onClick="CouponClickCount('<%=session("id")%>','<%=couponSEQ%>');return false;" class="coupon_down">쿠폰 발급받기</a>
                 </span>
                 <h4>이용안내</h4>
                 <ul>

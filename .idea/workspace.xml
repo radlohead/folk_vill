@@ -3,12 +3,64 @@
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/event/bboy_slide01.jpg" afterPath="$PROJECT_DIR$/images/event/bboy_slide01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/event/chosun_img_01.jpg" afterPath="$PROJECT_DIR$/images/event/chosun_img_01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/event/chosun_img_02.jpg" afterPath="$PROJECT_DIR$/images/event/chosun_img_02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/event/chosun_img_03.jpg" afterPath="$PROJECT_DIR$/images/event/chosun_img_03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/event/horse_slide01.jpg" afterPath="$PROJECT_DIR$/images/event/horse_slide01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/event/preview_slide01.jpg" afterPath="$PROJECT_DIR$/images/event/preview_slide01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/event/wedding_slide01.jpg" afterPath="$PROJECT_DIR$/images/event/wedding_slide01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/folkvillage/display/tal_img01.jpg" afterPath="$PROJECT_DIR$/images/folkvillage/display/tal_img01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/map/play_vill_img03.jpg" afterPath="$PROJECT_DIR$/images/information/map/play_vill_img03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/map/shop_vill_img02.jpg" afterPath="$PROJECT_DIR$/images/information/map/shop_vill_img02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/map/shop_vill_img04.jpg" afterPath="$PROJECT_DIR$/images/information/map/shop_vill_img04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/page_map/page_map_performance_bboy.png" afterPath="$PROJECT_DIR$/images/page_map/page_map_performance_bboy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/page_map/page_map_performance_nongak.png" afterPath="$PROJECT_DIR$/images/page_map/page_map_performance_nongak.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/page_map/page_map_performance_wedding.png" afterPath="$PROJECT_DIR$/images/page_map/page_map_performance_wedding.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/eat_3.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/eat_3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/inc/gnb.asp" afterPath="$PROJECT_DIR$/common/inc/gnb.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/common.js" afterPath="$PROJECT_DIR$/common/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer/faq.asp" afterPath="$PROJECT_DIR$/customer/faq.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/event_now.asp" afterPath="$PROJECT_DIR$/event/event_now.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/event_now_view.asp" afterPath="$PROJECT_DIR$/event/event_now_view.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/inc/event_topmenu.asp" afterPath="$PROJECT_DIR$/event/inc/event_topmenu.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_bboy.asp" afterPath="$PROJECT_DIR$/event/performance_bboy.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_chosun.asp" afterPath="$PROJECT_DIR$/event/performance_chosun.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_horse.asp" afterPath="$PROJECT_DIR$/event/performance_horse.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_nongak.asp" afterPath="$PROJECT_DIR$/event/performance_nongak.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_wedding.asp" afterPath="$PROJECT_DIR$/event/performance_wedding.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/folkvillage/display_traditional.asp" afterPath="$PROJECT_DIR$/folkvillage/display_traditional.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.asp" afterPath="$PROJECT_DIR$/index.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/convenience.asp" afterPath="$PROJECT_DIR$/information/convenience.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/coupon_list.asp" afterPath="$PROJECT_DIR$/information/coupon_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/coupon_view.asp" afterPath="$PROJECT_DIR$/information/coupon_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/credit_card.asp" afterPath="$PROJECT_DIR$/information/credit_card.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/guide.asp" afterPath="$PROJECT_DIR$/information/guide.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/inc/infor_topmenu.asp" afterPath="$PROJECT_DIR$/information/inc/infor_topmenu.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/index.asp" afterPath="$PROJECT_DIR$/information/index.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/map.asp" afterPath="$PROJECT_DIR$/information/map.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/membership.asp" afterPath="$PROJECT_DIR$/information/membership.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/notice_list.asp" afterPath="$PROJECT_DIR$/information/notice_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/notice_view.asp" afterPath="$PROJECT_DIR$/information/notice_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/traffic.asp" afterPath="$PROJECT_DIR$/information/traffic.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_foreigner_form.asp" afterPath="$PROJECT_DIR$/member/join_email_foreigner_form.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_general_step1.asp" afterPath="$PROJECT_DIR$/member/join_email_general_step1.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/login_proc.asp" afterPath="$PROJECT_DIR$/member/login_proc.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/coupon_list.asp" afterPath="$PROJECT_DIR$/mypage/coupon_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/coupon_view.asp" afterPath="$PROJECT_DIR$/mypage/coupon_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_info.asp" afterPath="$PROJECT_DIR$/mypage/member_info.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_leave_proc.asp" afterPath="$PROJECT_DIR$/mypage/member_leave_proc.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/qna_list.asp" afterPath="$PROJECT_DIR$/mypage/qna_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/qna_view.asp" afterPath="$PROJECT_DIR$/mypage/qna_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/voice_list.asp" afterPath="$PROJECT_DIR$/mypage/voice_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/voice_view.asp" afterPath="$PROJECT_DIR$/mypage/voice_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat.asp" afterPath="$PROJECT_DIR$/playvillage/eat.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/ghost.asp" afterPath="$PROJECT_DIR$/playvillage/ghost.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/junseol_gohyang.asp" afterPath="$PROJECT_DIR$/playvillage/junseol_gohyang.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/sculpture.asp" afterPath="$PROJECT_DIR$/playvillage/sculpture.asp" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,17 +85,7 @@
         <entry file="file://$PROJECT_DIR$/common/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="311" column="65" selection-start-line="311" selection-start-column="65" selection-end-line="311" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.asp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.asp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.035715">
-              <caret line="190" column="54" selection-start-line="190" selection-start-column="54" selection-end-line="190" selection-end-column="54" />
+              <caret line="523" column="4" selection-start-line="523" selection-start-column="4" selection-end-line="523" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -52,38 +94,8 @@
       <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9052745">
-              <caret line="309" column="13" selection-start-line="309" selection-start-column="13" selection-end-line="309" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gnb.asp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/inc/gnb.asp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.071428">
-              <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event_topmenu.asp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/event/inc/event_topmenu.asp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6785714">
-              <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="infor_topmenu.asp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/information/inc/infor_topmenu.asp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.75">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.60150373">
+              <caret line="1816" column="0" selection-start-line="1816" selection-start-column="0" selection-end-line="1816" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,14 +134,11 @@
         <option value="$PROJECT_DIR$/information/membership.asp" />
         <option value="$PROJECT_DIR$/information/page/guideContents.asp" />
         <option value="$PROJECT_DIR$/information/page/membershipContents.asp" />
-        <option value="$PROJECT_DIR$/information/map.asp" />
         <option value="$PROJECT_DIR$/information/page/mapPage.asp" />
         <option value="$PROJECT_DIR$/information/traffic.asp" />
         <option value="$PROJECT_DIR$/information/page/trafficPage.asp" />
         <option value="$PROJECT_DIR$/information/convenience.asp" />
         <option value="$PROJECT_DIR$/information/page/conveniencePage.asp" />
-        <option value="$PROJECT_DIR$/information/guide.asp" />
-        <option value="$PROJECT_DIR$/common/js/common.js" />
         <option value="$PROJECT_DIR$/notice.asp" />
         <option value="$PROJECT_DIR$/information/coupon_list.asp" />
         <option value="$PROJECT_DIR$/index.asp" />
@@ -148,13 +157,16 @@
         <option value="$PROJECT_DIR$/information/index.asp" />
         <option value="$PROJECT_DIR$/information/page/notice_listScript.asp" />
         <option value="$PROJECT_DIR$/information/page/notice_listPage.asp" />
-        <option value="$PROJECT_DIR$/information/notice_list.asp" />
-        <option value="$PROJECT_DIR$/information/notice_view.asp" />
-        <option value="$PROJECT_DIR$/event/event_now.asp" />
-        <option value="$PROJECT_DIR$/event/event_now_view.asp" />
         <option value="$PROJECT_DIR$/event/inc/event_topmenu.asp" />
         <option value="$PROJECT_DIR$/information/inc/infor_topmenu.asp" />
         <option value="$PROJECT_DIR$/common/inc/gnb.asp" />
+        <option value="$PROJECT_DIR$/information/guide.asp" />
+        <option value="$PROJECT_DIR$/common/js/common.js" />
+        <option value="$PROJECT_DIR$/information/map.asp" />
+        <option value="$PROJECT_DIR$/information/notice_list.asp" />
+        <option value="$PROJECT_DIR$/information/notice_view.asp" />
+        <option value="$PROJECT_DIR$/event/event_now_view.asp" />
+        <option value="$PROJECT_DIR$/event/event_now.asp" />
         <option value="$PROJECT_DIR$/common/css/index.scss" />
       </list>
     </option>
@@ -220,7 +232,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,6 +248,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="information" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -273,7 +299,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,8 +393,8 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16151386" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1641791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16151386" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17217484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -404,20 +430,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/customer/qna_form_proc.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.656535">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/inc/script.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/customer/qna_form.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.443769">
@@ -495,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/information/map.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36474165">
-          <caret line="191" column="40" selection-start-line="191" selection-start-column="40" selection-end-line="191" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/information/page/mapPage.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9614995">
@@ -527,13 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9614995">
           <caret line="204" column="14" selection-start-line="36" selection-start-column="0" selection-end-line="204" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/information/guide.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1155015">
-          <caret line="161" column="24" selection-start-line="161" selection-start-column="24" selection-end-line="161" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -572,21 +570,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="311" column="65" selection-start-line="311" selection-start-column="65" selection-end-line="311" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/js/slick.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4832826">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -660,13 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/event/performance_chosun.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9614995">
-          <caret line="134" column="14" selection-start-line="38" selection-start-column="0" selection-end-line="134" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/information/page/notice_listHead.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19250253">
@@ -692,7 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.597771">
           <caret line="83" column="73" selection-start-line="83" selection-start-column="73" selection-end-line="83" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,17 +682,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/information/notice_view.asp">
+    <entry file="file://$PROJECT_DIR$/information/inc/infor_topmenu.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5967578">
-          <caret line="159" column="14" selection-start-line="159" selection-start-column="14" selection-end-line="159" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/inc/event_topmenu.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.019250253">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/inc/gnb.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4224924">
+          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.035715">
+        <state vertical-scroll-proportion="0.5379939">
           <caret line="190" column="54" selection-start-line="190" selection-start-column="54" selection-end-line="190" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="523" column="4" selection-start-line="523" selection-start-column="4" selection-end-line="523" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/information/notice_list.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.392858">
+          <caret line="156" column="32" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="32" />
+          <folding>
+            <marker date="1469403211550" expanded="true" signature="3283:3302" placeholder="..." />
+            <marker date="1469403211550" expanded="true" signature="3491:3505" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/information/notice_view.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.464285">
+          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/performance_chosun.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.821428">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/event_now_view.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.035715">
+          <caret line="130" column="26" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -721,58 +756,31 @@
     <entry file="file://$PROJECT_DIR$/event/event_now.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5967578">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/event/event_now_view.asp">
+    <entry file="file://$PROJECT_DIR$/information/guide.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.037487336">
-          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.30800405">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/information/notice_list.asp">
+    <entry file="file://$PROJECT_DIR$/information/map.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13475177">
-          <caret line="169" column="14" selection-start-line="169" selection-start-column="14" selection-end-line="169" selection-end-column="14" />
-          <folding>
-            <marker date="1468578374448" expanded="true" signature="3549:3568" placeholder="..." />
-            <marker date="1468578374448" expanded="true" signature="3757:3771" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/event/inc/event_topmenu.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6785714">
-          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/inc/gnb.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.071428">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/information/inc/infor_topmenu.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.75">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state vertical-scroll-proportion="3.147923">
+          <caret line="201" column="7" selection-start-line="201" selection-start-column="7" selection-end-line="201" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9052745">
-          <caret line="309" column="13" selection-start-line="309" selection-start-column="13" selection-end-line="309" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.60150373">
+          <caret line="1816" column="0" selection-start-line="1816" selection-start-column="0" selection-end-line="1816" selection-end-column="0" />
           <folding />
         </state>
       </provider>

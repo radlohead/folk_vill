@@ -35,12 +35,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>놀이마을</h2>
-            <aside>
-                <h2>놀이마을
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
 <!--#include virtual="/mobile/playvillage/inc/play_topmenu.asp" -->

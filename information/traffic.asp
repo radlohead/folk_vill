@@ -7,21 +7,73 @@
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
     <!--#include virtual="/mobile/common/inc/script.asp" -->
+
         <script>
-            $(document).ready(function(){
-                $('.multiple-items').slick({
-                    infinite: true,
-                    slidesToShow: 4,
-                    initialSlide: 2
-                });
-            });
+
+function initMap() {
+  var chicago = new google.maps.LatLng(37.261134, 127.120726);
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: chicago,
+    zoom: 13
+  });
+
+  var coordInfoWindow = new google.maps.InfoWindow();
+  coordInfoWindow.setContent(createInfoWindowContent(chicago, map.getZoom()));
+  coordInfoWindow.setPosition(chicago);
+  coordInfoWindow.open(map);
+
+  map.addListener('zoom_changed', function() {
+    coordInfoWindow.setContent(createInfoWindowContent(chicago, map.getZoom()));
+    coordInfoWindow.open(map);
+  });
+}
+
+var TILE_SIZE = 256;
+
+function createInfoWindowContent(latLng, zoom) {
+  var scale = 5 << zoom;
+
+  var worldCoordinate = project(latLng);
+
+  var pixelCoordinate = new google.maps.Point(
+      Math.floor(worldCoordinate.x * scale),
+      Math.floor(worldCoordinate.y * scale));
+
+  var tileCoordinate = new google.maps.Point(
+      Math.floor(worldCoordinate.x * scale / TILE_SIZE),
+      Math.floor(worldCoordinate.y * scale / TILE_SIZE));
+
+  return [
+    '한국민속촌'
+  ].join('<br>');
+}
+
+// The mapping between latitude, longitude and pixels is defined by the web
+// mercator projection.
+function project(latLng) {
+  var siny = Math.sin(latLng.lat() * Math.PI / 180);
+
+  // Truncating to 0.9999 effectively limits latitude to 89.189. This is
+  // about a third of a tile past the edge of the world tile.
+  siny = Math.min(Math.max(siny, -0.9999), 0.9999);
+
+  return new google.maps.Point(
+      TILE_SIZE * (0.5 + latLng.lng() / 360),
+      TILE_SIZE * (0.5 - Math.log((1 + siny) / (1 - siny)) / (4 * Math.PI)));
+}
+
+
         </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKwMgxrOrsHcHCiYswlo1k2t47sxAlJes&callback=initMap"
+          async defer></script>
 </head>
 <body>
+
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
-<div class="wrap">
+<div class="wrap traffic">
 <!-- 상단헤더 -->
 <!--#include virtual="/mobile/common/inc/header.asp" -->
 
@@ -31,6 +83,7 @@
         </div>
 
 <!--#include virtual="/mobile/information/inc/infor_topmenu.asp" -->
+
     </div>
 
     <div class="contents">
@@ -327,7 +380,9 @@
                     </div>
                     <!-- #tab2 자가용-->
                     <div class="tab-content tabMenu2">
-                        <span class="map"><img src="/mobile/images/information/traffic_car_map.png" alt="자가용으로 오시는길 지도" /></span>
+                        <div class="map" id="map">
+
+                        </div>
                         <section>
                             <h4>경부고속도로 이용</h4>
                             <p>

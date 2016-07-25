@@ -152,7 +152,7 @@
                 </div>
                 <span class="photo-img map">
                     <a href="#none" class="map-btn">지도보기</a>
-                    <img src="/mobile/images/folkvillage/display/tal_img01.jpg" alt="탈춤전시관 사진1" />
+                    <img src="/mobile/images/folkvillage/display/tal_img00.jpg" alt="탈춤전시관 사진1" />
                 </span>
                 <span class="text01">
                     탈춤은 파계승, 몰락한 양반, 무당, 사당, 거사, 하인 등 다양한 계층의 인물들을 통해 조선시대 서민문화의 특성을 대변하며,

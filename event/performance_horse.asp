@@ -9,14 +9,10 @@
     <!--#include virtual="/mobile/common/inc/script.asp" -->
         <script>
             $(document).ready(function(){
-                $('.multiple-items').slick({
-                    infinite: true,
-                    slidesToShow: 4,
-                    initialSlide: 3
-                });
                 $('.single-item').slick({
                     dots: true
                 });
+
             });
         </script>
 </head>
@@ -24,7 +20,7 @@
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
-<div class="wrap">
+<div class="wrap perfo-horse">
 <!-- 상단헤더 -->
 <!--#include virtual="/mobile/common/inc/header.asp" -->
 
@@ -68,7 +64,7 @@
                         <img src="/mobile/images/event/horse_img_02.jpg" alt="" />
                         <em>하늘이 내린 말 위의 재주 마상재(馬上才)</em>
                         <p class="text">한국민속촌의 마상무예 공연은 우리나라 전통 마상무예를 재현해 다양하고 역동적인 마상재를 선보입니다.
-                                        말 위에서 벌이는 궁술과 쌍검술을 포함해 서서타기, 거꾸로 타기 뒤로 타기, 옆으로 타기, 말 위에서 물구나무 서기 등 난이도가 높은 기예를 펼칩니다.
+                                        말 위에서 벌이는 궁술과 쌍검술을 포함해 서서타기, 거꾸로 타기, 뒤로 타기, 옆으로 타기, 말 위에서 물구나무 서기 등 난이도가 높은 기예를 펼칩니다.
                         </p>
                     </div>
                 </div>
@@ -76,8 +72,11 @@
                     <h4>공연 미리보기</h4>
                     <div class="preview-slide slider single-item">
                         <div><img src="/mobile/images/event/horse_slide01.jpg" alt="" /></div>
-                        <div><img src="/mobile/images/event/horse_slide01.jpg" alt="" /></div>
-                        <div><img src="/mobile/images/event/horse_slide01.jpg" alt="" /></div>
+                        <div><img src="/mobile/images/event/horse_slide02.jpg" alt="" /></div>
+                        <div><img src="/mobile/images/event/horse_slide03.jpg" alt="" /></div>
+						<div><img src="/mobile/images/event/horse_slide04.jpg" alt="" /></div>
+						<div><img src="/mobile/images/event/horse_slide05.jpg" alt="" /></div>
+						<div><img src="/mobile/images/event/horse_slide06.jpg" alt="" /></div>
                     </div>
                 </div>
             </div>

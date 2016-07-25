@@ -147,7 +147,7 @@
 	<script type="text/javascript" src="/mobile/common/js/FormValidateCheck.js"></script>
 	<script>
 	$(document).ready(function() {
-		alert('<%=birthmonth%>');
+		//alert('<%=birthmonth%>');
 		$("#btnPopDaumPostcode").click(function() {
 			jsPopDaumPostcode();
 		});
@@ -228,6 +228,11 @@
 	window.onload = function() {
 		setBirthDay('frm');
 		$("#birthday").val('<%=birthday%>');
+	}
+
+	//javascript:alert($(':input:checkbox[name=birth_umyang]:checked').val());
+	function changeUM(){
+		//alert($(':input:checkbox[name=birth_umyang]:checked').val());
 	}
 	//-->
 	</script>
@@ -334,16 +339,21 @@
 							</select>
                         </div>
                     </div>
+
                     <div class="check_box_wrap">
+                        <!--
+						<input type="checkbox" id="solar" class="solar" name="solar" value="solar">
+						-->
 						<span class="radioWrap block">
-                        <!--<input type="checkbox" id="solar" class="solar" name="solar" value="solar">-->
-						<input type="radio" name="birth_umyang" id="form_type_01" title="양력" class="solar" value="1" <%=GetChecked(birthsel, "1")%> />
+						<input type="radio" name="birth_umyang" id="form_type_01" title="양력" value="1" <%=GetChecked(birthsel, "1")%> onclick="changeUM();" />
                         <label for="solar"></label>
                         <span class="text mr25">양력</span>
 						</span>
+						<!--
+						<input type="checkbox" id="lunar" class="lunar" name="lunar" value="lunar">
+						-->
                         <span class="radioWrap block">
-						<!--<input type="checkbox" id="lunar" class="lunar" name="lunar" value="lunar">-->
-						<input type="radio" name="birth_umyang" id="form_type_02" title="음력" class="lunar" value="2" <%=GetChecked(birthsel, "2")%> />
+						<input type="radio" name="birth_umyang" id="form_type_02" title="음력" value="2" <%=GetChecked(birthsel, "2")%> onclick="changeUM();" />
                         <label for="lunar"></label>
                         <span class="text">음력</span>
 						</span>
@@ -357,10 +367,10 @@
 
 
 						<span class="add_01_box">
-							<input type="text" name="zipcode1" id="zipcode1" readonly="readonly" class="add_01" placeholder="우편번호1" />
-							<input type="text" name="zipcode2" id="zipcode2" readonly="readonly" class="add_01" placeholder="우편번호2" />
+							<input type="text" name="zipcode1" id="zipcode1" readonly="readonly" placeholder="우편번호1" style="float:left;width:70px;" />&nbsp;<span style="float:left">-</span>&nbsp;
+							<input type="text" name="zipcode2" id="zipcode2" readonly="readonly" placeholder="우편번호2" style="float:left;width:70px;" />
 							<!--<input type="submit" name="add_search_btn" class="add_search_btn" value="우편번호 찾기" />-->
-							<a id="btnPopDaumPostcode" name="btnPopDaumPostcode" href="#" class="add_search_btn">우편번호 찾기</a>&nbsp; (* Daum Kakao Corp. 제공)
+							<a id="btnPopDaumPostcode" name="btnPopDaumPostcode" href="#" class="add_search_btn">우편번호 찾기</a>&nbsp; <br>(* Daum Kakao Corp. 제공)
 						</span>
 						<input type="text" name="address" id="address" class="add_02" readonly="readonly" placeholder="주소" />
 						<input type="text" name="address_detail" id="address_detail" maxlength="50" class="add_03" placeholder="상세주소" />
@@ -438,7 +448,7 @@
 					-->
 					<div class="check_box_wrap">
 						<span class="radioWrap block">
-							<input type="radio" id="form_sms_agree1" name="sms" class="sms" value="Y" <%=GetChecked(sms, "Y")%> />
+							<input type="checkbox" id="form_sms_agree1" name="sms" class="sms" value="Y" <%=GetChecked(sms, "Y")%> onclick="#" />
 							<label for="form_sms_agree1"></label>
 							<span class="text">SMS 수신동의</span>
 						</span>
@@ -467,7 +477,7 @@
                     </div>
 					<div class="check_box_wrap">
 						<span class="radioWrap block">
-							<input type="radio" id="form_news_agree1" name="mailling" class="news_letter" value="Y" <%=GetChecked(mailing, "Y")%> />
+							<input type="checkbox" id="form_news_agree1" name="mailling" class="news_letter" value="Y" <%=GetChecked(mailing, "Y")%> onclick="#" />
 							<label for="form_news_agree1"></label>
 							<span class="text">뉴스레터 수신동의</span>
 						</span>

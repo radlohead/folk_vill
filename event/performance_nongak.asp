@@ -9,11 +9,6 @@
     <!--#include virtual="/mobile/common/inc/script.asp" -->
         <script>
             $(document).ready(function(){
-                $('.multiple-items').slick({
-                    infinite: true,
-                    slidesToShow: 4,
-                    initialSlide: 1
-                });
                 $('.single-item').slick({
                     dots: true
                 });
@@ -24,7 +19,7 @@
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
-<div class="wrap">
+<div class="wrap perfo-nongak">
 <!-- 상단헤더 -->
 <!--#include virtual="/mobile/common/inc/header.asp" -->
 
@@ -90,8 +85,11 @@
                     <h4>공연 미리보기</h4>
                     <div class="preview-slide slider single-item">
                         <div><img src="/mobile/images/event/preview_slide01.jpg" alt="농악놀이" /></div>
-                        <div><img src="/mobile/images/event/preview_slide01.jpg" alt="농악놀이" /></div>
-                        <div><img src="/mobile/images/event/preview_slide01.jpg" alt="농악놀이" /></div>
+                        <div><img src="/mobile/images/event/preview_slide02.jpg" alt="농악놀이" /></div>
+                        <div><img src="/mobile/images/event/preview_slide03.jpg" alt="농악놀이" /></div>
+						 <div><img src="/mobile/images/event/preview_slide04.jpg" alt="농악놀이" /></div>
+						  <div><img src="/mobile/images/event/preview_slide05.jpg" alt="농악놀이" /></div>
+						   <div><img src="/mobile/images/event/preview_slide06.jpg" alt="농악놀이" /></div>
                     </div>
                 </div>
             </div>

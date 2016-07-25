@@ -7,21 +7,13 @@
     <title>한국 민속촌 모바일 사이트</title>
 <!--#include virtual="/mobile/common/inc/css.asp" -->
 <!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 4,
-                initialSlide: 3
-            });
-        });
-    </script>
+
 </head>
 <body>
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
-<div class="wrap">
+<div class="wrap convenience">
 <!-- 상단헤더 -->
 <!--#include virtual="/mobile/common/inc/header.asp" -->
 

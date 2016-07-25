@@ -4,7 +4,7 @@
 	If session("id") = "" Then
 		Response.write "<script language='javascript'>"
 		Response.write " alert('로그인후 이용해 주세요.');"
-		Response.write " location.href='/member/login.asp?RtnURL=http://www.koreanfolk.co.kr/mypage/qna_list.asp';"
+		Response.write " location.href='/mobile/member/login.asp?RtnURL=http://www.koreanfolk.co.kr/mobile/mypage/qna_list.asp';"
 		Response.write "</script>"
 		Response.End
 	End If
@@ -17,27 +17,27 @@
 	Dim pgSize, param, pg, keyfield, keyword, code
 	Dim code_name
 
-	Debug = false ' SQL 디버그 설정(true : 사용, false : 사용안함)
-	DebugMode = 2 ' SQL 디버그 모드(1 : COUNT 쿼리문 출력, 2 : LIST 쿼리문 출력)
+	Debug		= false		' SQL 디버그 설정(true : 사용, false : 사용안함)
+	DebugMode	= 2			' SQL 디버그 모드(1 : COUNT 쿼리문 출력, 2 : LIST 쿼리문 출력)
+	Df_Psize	= 4			' 페이징사이즈
 
 	pg			= SQLInjectionFilter(Nvl(Request("pg"),"1"))
 	keyfield	= SQLInjectionFilter(Nvl(Request("keyfield"),"1"))
 	keyword		= SQLInjectionFilter(Nvl(Request("keyword"),""))
 	code		= SQLInjectionFilter(Nvl(Request("code"),""))
 	param		= "&keyfield="&keyfield&"&keyword="&Server.URLEncode(keyword)&"&code="&code
-	
+
 	today		= Date()
 
-	If IsNumeric(pg) = False Then f_AlertBack("정상적 접근이 아닙니다.")	
+	If IsNumeric(pg) = False Then f_AlertBack("정상적 접근이 아닙니다.")
 
-	' 페이징 처리 부분 
-	pgSize		= 15
+	' 페이징 처리 부분
+	pgSize		= Df_Psize
 	UniqueField	= "SEQ" ' 시퀀스필드
 	TableName	= "TBL_INQUIRY" ' 테이블명
 	SelectField	= "SEQ,CODE,UID,NAME,TITLE,CONTENTS,ANSWER,ANSWER_YN,STATUS,READCNT,REGDATE,ANSWERDATE"
-	' select할 필드
 
-	WhereClause = "UID = '"& session("id") &"'"
+	WhereClause = "UID = '" & session("id") & "'"
 
 	If keyword <> "" then
 		If keyfield <> "" Then
@@ -60,6 +60,7 @@
 	totalpage = int(TotalRecordCount / pgSize)
 
 	Nam = TotalRecordCount Mod pgSize
+
 	If Nam > 0 Then
 	   totalpage = totalpage + 1
 	End If
@@ -89,6 +90,112 @@
 	}
 	//-->
 	</script>
+
+	<script language="javascript">
+	<!--
+	var pg			= "<%=pg%>";
+	var keyfield	= "<%=keyfield%>";
+	var keyword		= "<%=keyword%>";
+	var code		= "<%=code%>";
+
+	function requestAdd(){
+
+		var send_data = {
+			pg:			pg,
+			keyfield:	keyfield,
+			keyword:	keyword,
+			code:		code
+		};
+
+		$.ajax({
+			type:	"POST",
+			url:	"srv_qna_contents.asp",
+			data:	send_data,
+			success: function(result_data){
+
+				var flag	= $(result_data).find("item").find("flag").first().text();
+
+				if (flag == "error") {
+					alert("Error");
+					return false;
+				}else if (flag == "nodata") {
+					return false;
+				}else if (flag == "success") {
+
+					//$('#box > tbody:last > tr:last').remove();
+					$(result_data).find("item").each(function() {
+
+						var media_add;
+						var seq			= $(this).find("seq").text();
+						var code		= $.trim($(this).find("code").text());
+						var name		= $.trim($(this).find("name").text());
+						var title		= $.trim($(this).find("title").text());
+						var answer		= $.trim($(this).find("answer").text());
+						//var contents	= $.trim($(this).find("contents").text());
+						var answer_yn	= $.trim($(this).find("answer_yn").text());
+						var status		= $.trim($(this).find("status").text());
+						var readcount	= $.trim($(this).find("readcount").text());
+						var regdate		= $.trim($(this).find("regdate").text());
+						var answerdate	= $.trim($(this).find("answerdate").text());
+
+						var param		= "?pg=" + pg + "&seq=" + seq;
+
+						media_add = "<tr>";
+						media_add += "	<td>";
+						media_add += "		<div class='board-list-title'>";
+						media_add += "			<h4>" + title + "</h4>";
+						media_add += "			<div class='text_icon_box'>";
+						media_add += "				<span class='text_date'>" + regdate + "</span>";
+						if(answer_yn == 'Y'){
+							media_add += "			<span class='icon complete'></span>";
+						}else{
+							media_add += "			<span class='icon prepare'></span>";
+						}
+						media_add += "			</div>";
+						media_add += "		</div>";
+						media_add += "	</td>";
+						media_add += "	<td>";
+						media_add += "		<a href='qna_view.asp?seq=" + seq + "&pg=" + pg + "' class='icon icon_more'>자세히보기</a>";
+						media_add += "	</td>";
+						media_add += "</tr>";
+
+						$("#box").append(media_add);
+					});
+				}
+			},
+			error: function(xhr, ajaxOptions, throuwnError) {
+				if (xhr.status == "0"){
+					return;
+				}else{
+					alert("ggContentsBody Error=" + xhr.status + " text=" + xhr.responseText);
+				}
+			}
+		});
+	}
+
+	$(document).ready(function() {
+		// 페이지버튼
+		$("#btnAdd").click(function() {
+			var tot_page = "<%=totalpage%>";
+			//alert(pg);
+			//alert(tot_page);
+			if(pg == tot_page){
+				alert("더이상 내용이 없습니다.");
+			}else{
+				if (pg >= tot_page)
+					return false;
+				pg = parseInt(pg) + 1;
+
+				requestAdd();
+			}
+		});
+
+		//var img_h = $(".board-list:last-of-type .board-list-left img").height();
+		//var img_w = $(".board-list:last-of-type .board-list-left img").width();
+		//$(".board-list .board-list-left img").css({"height":img_h, "width":img_w});
+	});
+	//-->
+	</script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -113,7 +220,7 @@
                 <span class="text">고객님의 1:1 상담문의 내역을 확인하실 수 있습니다.</span>
             </div>
             <div class="content">
-                <table>
+                <table id="box">
                     <caption>1:1 상담문의 리스트</caption>
                     <colgroup>
                         <col style="width:82.5%">
@@ -122,7 +229,7 @@
 
 					<%
 					If NOT(IsNull(rValue) Or IsEmpty(rValue)) Then
-					
+
 						For i = Lbound(rValue,2) To UBound(rValue,2)
 
 							rownum = (TotalRecordCount - (pgSize * (pg-1))) -  i
@@ -142,7 +249,7 @@
 							status			= rValue(8,i)
 							readcount		= rValue(9,i)
 							regdate			= rValue(10,i)
-							answerdate		= rValue(11,i)								
+							answerdate		= rValue(11,i)
 					%>
 
                     <tr>
@@ -160,7 +267,7 @@
                             </div>
                         </td>
                         <td>
-                            <a href="qna_view.asp?seq=<%=seq%>" class="icon icon_more">자세히보기</a>
+                            <a href="qna_view.asp?seq=<%=seq%>&pg=<%=pg%>" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
 					<%
@@ -210,7 +317,7 @@
                     </tr>
 					-->
                 </table>
-                <a href="#none" class="more_btn">
+                <a href="#none" class="more_btn" id="btnAdd">
                     <span class="text_icon_box">
                         <span class="text">더보기</span>
                         <span class="icon_img"><img src="/mobile/images/common/plus_icon.png" alt="" /></span>

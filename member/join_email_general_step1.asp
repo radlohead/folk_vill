@@ -4,7 +4,7 @@
 <%
 	Dim gubun : gubun = RP(Request("gubun"))
 
-	If gubun <> "C" Then
+	If (gubun <> "G" And gubun <> "C" And gubun <> "F") Then
 		sRtnMsg = "비 정상 접속 시도 입니다. 다시 확인해 주세요."
 		CAll f_AlertURL(sRtnMsg, "http://www.koreanfolk.co.kr/mobile/member/join.asp")
 	End If

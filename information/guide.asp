@@ -7,22 +7,13 @@
     <title>한국 민속촌 모바일 사이트</title>
 <!--#include virtual="/mobile/common/inc/css.asp" -->
 <!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                initialSlide: 0
-            });
-        });
-    </script>
+
 </head>
 <body>
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
-<div class="wrap">
+<div class="wrap guide">
 <!-- 상단헤더 -->
 <!--#include virtual="/mobile/common/inc/header.asp" -->
 
@@ -30,7 +21,9 @@
         <div class="title">
             <h2>이용안내</h2>
         </div>
+
 <!--#include virtual="/mobile/information/inc/infor_topmenu.asp" -->
+
     </div>
 
     <div class="contents">
@@ -95,12 +88,6 @@
                         <p>
                             <span class="icon"></span>
                             <span>자전거, 퀵보드, 인라인스케이트, 공 등 놀이용품 입장제한</span>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <span class="icon"></span>
-                            <span>애완견은 30cm 이하의 소형견만 입장 가능</span>
                         </p>
                     </li>
                     <li>
@@ -195,21 +182,21 @@
                         <h5>장애인 우대</h5>
                         <p>
                             <span class="icon"></span>
-                            <span>본인 아동요금 적용 (장애인등록증 제시)</span>
+                            <span>아동요금 적용(본인 한정, 장애인등록증 제시 필수)</span>
                         </p>
                     </section>
                     <section class="prefer-infor">
                         <h5>국가유공자 우대</h5>
                         <p>
                             <span class="icon"></span>
-                            <span>본인 아동요금 적용 (국가유공자증 제시)</span>
+                            <span>아동요금 적용(본인 한정, 국가유공자증 제시 필수)</span>
                         </p>
                     </section>
                     <section class="prefer-infor">
                         <h5>군인·경찰 우대</h5>
                         <p>
                             <span class="icon"></span>
-                            <span>본인 청소년요금 적용</span>
+                            <span>청소년요금 적용(본인 한정, 증빙서류 제시 필수)</span>
                         </p>
                     </section>
                     <section class="prefer-infor">

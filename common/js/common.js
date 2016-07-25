@@ -431,6 +431,138 @@ $(document).ready(function(){
 	}
 	tab2();
 
+	//topNav Event 메뉴가 5개 이상인 이용안내와 행사공연 페이지이동시 새로고침이 되도 메뉴가 고정되는 기능
+	$(document).ready(function(){
+		var topNav = new TopNav_slide(".topNav-slide");
+		$(window).load(function(){
+			topNav.itemCss();
+		});
+	});
+	function TopNav_slide(selector){
+		this.$menuWrap= null;
+		this.$menu_list = null;
+		this.$menu_listPos = null;
+		this.$item = null;
+		this.$itemWidth = null;
+		this.$prev_btn = null;
+		this.$next_btn = null;
+
+		this.init(selector);
+		this.initEvent();
+		this.itemCss();
+	}
+	TopNav_slide.prototype.init = function(selector){
+		this.$menuWrap = $(selector);
+		this.$menu_list = $(selector).find(".slide-list ul");
+		this.$menu_listPos = parseInt($(selector).find(".slide-list ul").css("left"));
+		this.$item = $(selector).find(".slide-list li");
+		this.$itemWidth = parseInt($(selector).find(".slide-list li").outerWidth());
+		this.$prev_btn = $(selector).find(".slide-arrow.prev-btn");
+		this.$next_btn = $(selector).find(".slide-arrow.next-btn");
+	}
+	//이벤트 초기화 및 정의
+	TopNav_slide.prototype.initEvent = function(){
+		var objThis = this;
+
+		this.$prev_btn.click(function(){
+			objThis.prevItem();
+		});
+		this.$next_btn.click(function(){
+			if($(".slide-list ul").css("left") == "auto"){
+				$(".slide-list ul").css("left","0px")
+			}
+			objThis.nextItem();
+		});
+		this.$item.click(function(){
+			objThis.itemClick($(this));
+		});
+	}
+	//이전버튼 누를시 메뉴가 왼쪽으로 1뎁스이동
+	TopNav_slide.prototype.prevItem = function(){
+		var objThis = this;
+
+		this.$item.removeClass("current");
+
+		if(this.$menu_list.css("left") == -(this.$itemWidth * 2) + "px"){
+			this.$menu_list.animate({
+				left: -this.$itemWidth
+			},500, function(){
+				objThis.$item.eq(1).addClass("current");
+			});
+		}else if(this.$menu_list.css("left") == -this.$itemWidth + "px"){
+			this.$menu_list.animate({
+				left: 0
+			},500, function(){
+				objThis.$item.eq(4).addClass("current");
+			});
+		}
+	}
+	//다음버튼 누를시 메뉴가 왼쪽으로 1뎁스이동
+	TopNav_slide.prototype.nextItem = function(){
+		var objThis = this;
+
+		this.$item.removeClass("current");
+
+			if(this.$menu_list.css("left") == 0 + "px"){
+				this.$menu_list.animate({
+					left: -this.$itemWidth
+				},500, function(){
+					objThis.$item.eq(1).addClass("current");
+				});
+			}else if(this.$menu_list.css("left") == -this.$itemWidth + "px"){
+				this.$menu_list.animate({
+					left: -this.$itemWidth * 2
+				},500, function(){
+					objThis.$item.eq(2).addClass("current");
+				});
+			}
+	}
+	//topNavi left값을 계산하여 border값 삭제
+	TopNav_slide.prototype.itemCss = function(){
+		var objThis = this;
+
+		objThis.$item.removeClass("current");
+
+		if(this.$menu_list.css("left") == -(this.$itemWidth * 1) + "px"){
+			objThis.$item.eq(1).addClass("current");
+		}else if(this.$menu_list.css("left") == -(this.$itemWidth * 2) + "px"){
+			objThis.$item.eq(2).addClass("current");
+		}
+	}
+	TopNav_slide.prototype.itemClick = function($item){
+		var objThis = this;
+
+		this.$item.find("a").removeClass("on")
+		$item.find("a").addClass("on");
+	}
+
+	//아래에서 쿠키값이 저장된 값이 페이지로드시 다음페이지에 left값으로 적용
+	$(document).ready(function(){
+		$(window).load(function(){
+			var cookie = document.cookie.split(";");
+			var item_left = $(".topNav-slide .slide-list ul").css("left");
+
+			if(cookie[0]){
+				$(".topNav-slide .slide-list ul").css("left", cookie[0]);
+			}
+
+			for(var i = 1; i < 6; i++){
+				if(-parseInt($(".slide-list li").outerWidth() * i) + "px" == parseInt($(".slide-list ul").css("left")) + "px"){
+					$(".slide-list ul li").eq(i).addClass("current");
+				}
+			}
+		})
+	})
+
+	//topNavi 메뉴를 클릭시 메뉴left값을 쿠키로 저장하여 다음에 나올 페이지 topNavi값에 left값을 적용
+	$(".topNav-slide .slide-list li").click(function(){
+		var cookie = document.cookie.split(";");
+
+		document.cookie = $(".topNav-slide .slide-list ul").css("left");
+	});
+
+
+
 	//pc,모바일 구분
 	//(function(){
 	//	var filter = "win16|win32|win64|mac";
@@ -445,3 +577,7 @@ $(document).ready(function(){
 	//	}
 	//})();
 });
+
+
+
+

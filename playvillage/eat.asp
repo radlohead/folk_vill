@@ -41,8 +41,7 @@
                 <h3>먹거리</h3>
                 <div class="text-box">
                     <span class="text">
-                        정성이 가득 담긴 토속음식과<br/>
-                        테라스에서 즐기는 글로벌푸드까지!
+                        정성이 가득 담긴 토속음식과 테라스에서 즐기는 글로벌푸드까지!
                     </span>
                 </div>
             </div>
@@ -147,7 +146,7 @@
                         <dd class="text_02">중식</dd>
                     </dl>
                 </section>
-                <section class="detail">
+              <!--  <section class="detail">
                     <a href="eat/pizza.asp" class="img eat_img11"><img src="/mobile/images/play_village/eat/eat_11.jpg" alt="임실치즈피자 사진" /></a>
                     <h4>임실치즈피자</h4>
                     <dl>
@@ -156,7 +155,7 @@
                         <dt class="sub-title_02">분류</dt>
                         <dd class="text_02">양식</dd>
                     </dl>
-                </section>
+                </section> -->
             </div>
         </div>
     </div>

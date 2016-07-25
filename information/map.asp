@@ -7,24 +7,13 @@
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
     <!--#include virtual="/mobile/common/inc/script.asp" -->
-        <script>
-            $(document).ready(function(){
-                $('.multiple-items').slick({
-                    infinite: true,
-                    slidesToShow: 4,
-                    initialSlide: 5
-                });
-                $('.single-item').slick({
-                    dots: true
-                });
-            });
-        </script>
+
 </head>
 <body>
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
-<div class="wrap">
+<div class="wrap map">
     <!-- 상단헤더 -->
     <!--#include virtual="/mobile/common/inc/header.asp" -->
 
@@ -46,7 +35,7 @@
             </div>
             <div class="detail-content">
                 <div class="content-head">
-                    <a href="#none" class="pdf-down"><img src="/mobile/images/common/pdf-down.gif" alt="민속촌 지도 pdf파일 다운받기 버튼" /></a>
+                    <a href="/mobile/down/koreanfolk_map.pdf" target="_blank" class="pdf-down"><img src="/mobile/images/common/pdf-down.gif" alt="민속촌 지도 pdf파일 다운받기 버튼" /></a>
                     <div class="map"><img src="/mobile/images/information/map.png" alt="한국민속촌 가이드맵" /></div>
                 </div>
                 <!-- 2단탭배너 -->
@@ -153,8 +142,8 @@
                             </section>
                             <section>
                                 <img src="/mobile/images/information/map/play_vill_img04.jpg" alt="전통민속관" />
-                                <h4>전통민속관</h4>
-                                <p>판타지 동화나라 속으로 여러분을 초대합니다. 장난감 천국 토이빌리지에서 아이들의 상상력과 창의력을 쑥쑥 키워줄 다양 한 장난감 친구들을 만나보세요.</p>
+                                <h4>토이빌리지</h4>
+                                <p>판타지 동화나라 속으로 여러분을 초대합니다. 장난감 천국 토이빌리지에서 아이들의 상상력과 창의력을 쑥쑥 키워줄 다양한 장난감 친구들을 만나보세요.</p>
                             </section>
                         </article>
                     </div>

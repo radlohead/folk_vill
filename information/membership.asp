@@ -7,21 +7,13 @@
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
     <!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 4,
-                initialSlide: 1
-            });
-        });
-    </script>
+
 </head>
 <body>
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
-<div class="wrap">
+<div class="wrap membership">
 <!-- 상단헤더 -->
 <!--#include virtual="/mobile/common/inc/header.asp" -->
 
@@ -31,6 +23,7 @@
         </div>
 
 <!--#include virtual="/mobile/information/inc/infor_topmenu.asp" -->
+
     </div>
 
     <div class="contents">
@@ -107,9 +100,9 @@
                         </li>
                     </ul>
                     <span class="down-link">
-                        <a href="#none"><img src="/mobile/images/information/down-link_img01.png" alt="회원가입신청서 다운링크" /></a>
-                        <a href="#none"><img src="/mobile/images/information/down-link_img02.png" alt="주중 회원 약관 다운링크" /></a>
-                        <a href="#none"><img src="/mobile/images/information/down-link_img03.png" alt="일반 회원 약관 다운링크" /></a>
+                        <a href="/mobile/down/join-application.hwp"><img src="/mobile/images/information/down-link_img01.png" alt="회원가입신청서 다운링크" /></a>
+                        <a href="/mobile/down/weekday-terms.hwp"><img src="/mobile/images/information/down-link_img02.png" alt="주중 회원 약관 다운링크" /></a>
+                        <a href="/mobile/down/general-terms.hwp"><img src="/mobile/images/information/down-link_img03.png" alt="일반 회원 약관 다운링크" /></a>
                     </span>
                  </section>
                  <section class="note">

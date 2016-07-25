@@ -25,8 +25,22 @@
 	UniqueField = "SEQ" ' 시퀀스필드
 	TableName	= "TBL_COUPON_M" ' 테이블명
 	SelectField	= "SEQ,TITLE,SDATE,EDATE,FILES1,FILES2,ALT1,ALT2,CONTENTS1,CONTENTS2,STATUS,SHOWSDATE,SHOWEDATE,REGDATE,FILES3,ALT3" ' select할 필드
-	WhereClause = "STATUS = 'Y'"
-	OrderBy		= "REGDATE DESC" ' 정렬방식
+
+	WhereClause = "'"& today &"' BETWEEN SHOWSDATE AND SHOWEDATE"
+
+	If keyword <> "" then
+		If keyfield <> "" Then
+			If keyfield = "1" Then '제목 검색
+				WhereClause = WhereClause & " AND TITLE LIKE '%" & keyword & "%'"
+			ElseIf keyfield = "2" Then '내용 검색
+				WhereClause = WhereClause & " AND CONTENTS1 LIKE '%" & keyword & "%'"
+			ElseIf keyfield = "3" Then '제목+내용 검색
+				WhereClause = WhereClause & " AND (TITLE LIKE '%" & keyword & "%' OR CONTENTS1 LIKE '%" & keyword & "%')"
+			End If
+		End If
+	End If
+
+	OrderBy = "REGDATE DESC" ' 정렬방식
 
 	Call OpenDbConnection() '데이터베이스 열기
 	Call ProcRecordSQL() ' 페이징 처리 서브 호출
@@ -146,7 +160,7 @@
 							</div>
                         </td>
                         <td>
-                            <a href="/mobile/information/coupon_view.asp?seq=<%=seq%>&pg=<%=pg%>" class="icon icon_more">자세히보기</a>
+                            <a href="/mobile/information/coupon_gate.asp?couponSEQ=<%=seq%>" class="icon icon_more">자세히보기</a>
                         </td>
                     </tr>
 

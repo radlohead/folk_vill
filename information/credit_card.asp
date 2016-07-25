@@ -1,3 +1,51 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/common.inc"-->
+<%
+	Dim SQL, UniqueField, TableName, SelectField, WhereClause, OrderBy
+	Dim TotalRecordCount, TotalPageCount, RecordNumber
+	Dim Debug, DebugMode
+	Dim pgSize, param, pg, keyfield, keyword, code
+
+	Debug		= false			' SQL 디버그 설정(true : 사용, false : 사용안함)
+	DebugMode	= 2				' SQL 디버그 모드(1 : COUNT 쿼리문 출력, 2 : LIST 쿼리문 출력)
+
+	pg			= SQLInjectionFilter(Nvl(Request("pg"),"1"))
+	keyfield	= SQLInjectionFilter(Nvl(Request("keyfield"),"1"))
+	keyword		= SQLInjectionFilter(Nvl(Request("keyword"),""))
+	code		= SQLInjectionFilter(Nvl(Request("code"),"C1001"))
+	param		= "&keyfield=" & keyfield & "&keyword=" & Server.URLEncode(keyword)
+	FileURL		= "/upload/partnership/"
+	today		= Date()
+
+	If IsNumeric(pg) = False Then f_AlertBack("정상적 접근이 아닙니다.")	
+
+	' 페이징 처리 부분 
+	pgSize		= 1
+	UniqueField = "SEQ"				' 시퀀스필드
+	TableName	= "TBL_PARTNERSHIP"	' 테이블명
+	SelectField = "SEQ,CODE,TITLE,STATUS,FILES,ALT,SUMMARY,DISCOUNT,WEBSITE,CONTENTS1,CONTENTS2,CONTENTS3,CONTENTS4,CONTENTS5,WRITER,REGDATE"
+
+	'검색
+	WhereClause = "STATUS = 'Y' AND CODE = '" & code & "'"
+
+	OrderBy = "REGDATE DESC"		' 정렬방식
+
+	Call OpenDbConnection()			' 데이터베이스 열기
+	Call ProcRecordSQL()			' 페이징 처리 서브 호출
+
+	If Not(Rs.BOF OR Rs.EOF) Then
+		rValue = Rs.GetRows
+	Else
+		rValue = Null
+	End If
+
+	totalpage = int(TotalRecordCount / pgSize)
+
+	Nam = TotalRecordCount Mod pgSize
+	If Nam > 0 Then
+	   totalpage = totalpage + 1
+	End If
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -7,14 +55,155 @@
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
     <!--#include virtual="/mobile/common/inc/script.asp" -->
-        <script>
-            $(document).ready(function(){
-                $('.single-items').slick({
-                    slidesToShow: 3,
-                    initialSlide: 1
-                });
-            });
-        </script>
+	<script>
+	$(document).ready(function(){
+		var default_code = '<%=code%>';
+		$('.single-items').slick({
+			slidesToShow: 3,
+			initialSlide: 1
+		});
+
+		getCardSelected(default_code);
+	});
+
+	function changeCard(val){
+		//alert(val.value);
+		getCardSelected(val.value);
+	}
+
+	function getCardSelected(code){
+		//alert(code);
+		var send_data = {
+			code:		code
+		};
+
+		$.ajax({
+			type:	"POST",
+			url:	"srv_card_title.asp",
+			data:	send_data,
+			success: function(result_data){
+
+				var flag	= $(result_data).find("item").find("flag").first().text();
+
+				if (flag == "error") {
+					alert("Error");
+					return false;
+				}else if (flag == "nodata") {
+					return false;
+				}else if (flag == "success") {
+					
+					$("#card_na").empty();
+					card_cnt = 1;
+					//$('#box > tbody:last > tr:last').remove();
+					$("#card_na").append("<option value='' selected>카드선택</option>");
+					$(result_data).find("item").each(function() {
+
+						var media_add;
+						var seq			= $(this).find("seq").text();
+						var title		= $.trim($(this).find("title").text());
+
+						media_add = "<option value='" + seq + "'>"+ title +"</option>";
+
+						$("#card_na").append(media_add);
+					});
+				}
+			},
+			error: function(xhr, ajaxOptions, throuwnError) {
+				if (xhr.status == "0"){
+					return;
+				}else{
+					alert("ggContentsBody Error=" + xhr.status + " text=" + xhr.responseText);
+				}
+			}
+		});
+
+	}
+
+	function getCardView(card_seq){
+		//alert(card_seq.value);
+		var send_data = {
+			card_seq:	card_seq.value
+		};
+
+		$.ajax({
+			type:	"POST",
+			url:	"srv_card_content.asp",
+			data:	send_data,
+			success: function(result_data){
+
+				var flag	= $(result_data).find("item").find("flag").first().text();
+
+				if (flag == "error") {
+					alert("Error");
+					return false;
+				}else if (flag == "nodata") {
+					return false;
+				}else if (flag == "success") {
+					
+					$("#box").empty();
+
+					var item_add;
+					var seq			= $(result_data).find("item").find("seq").text();
+					var code		= $(result_data).find("item").find("code").text();
+					var title		= $(result_data).find("item").find("title").text();
+					var status		= $(result_data).find("item").find("status").text();
+					var files		= $(result_data).find("item").find("files").text();
+					var alt			= $(result_data).find("item").find("alt").text();
+					var summary		= $(result_data).find("item").find("summary").text();
+					var discount	= $(result_data).find("item").find("discount").text();
+					var website		= $(result_data).find("item").find("website").text();
+					var contents1	= $(result_data).find("item").find("contents1").text();
+					var contents2	= $(result_data).find("item").find("contents2").text();
+					var contents3	= $(result_data).find("item").find("contents3").text();
+					var contents4	= $(result_data).find("item").find("contents4").text();
+					var contents5	= $(result_data).find("item").find("contents5").text();
+
+					item_add = "<h4>" + title + "</h4>";
+					item_add += "<img src='<%=FileURL%>" + files + "' alt='" + alt + "' />";
+					item_add += "<table>";
+					item_add += "    <caption>제휴카드 할인혜택에 대한 설명</caption>";
+					item_add += "    <colgroup>";
+					item_add += "        <col style='width:25%'>";
+					item_add += "        <col style='width:62.5%'>";
+					item_add += "    </colgroup>";
+					item_add += "    <tbody>";
+					item_add += "        <tr>";
+					item_add += "            <th>할인혜택</th>";
+					item_add += "            <td>" + contents1 + "</td>";
+					item_add += "        </tr>";
+					item_add += "        <tr>";
+					item_add += "            <th>할인 대상 실적</th>";
+					item_add += "            <td>" + contents2 + "</td>";
+					item_add += "        </tr>";
+					item_add += "        <tr>";
+					item_add += "            <th>할인 혜택 제한</th>";
+					item_add += "            <td>" + contents3 + "</td>";
+					item_add += "        </tr>";
+					item_add += "        <tr>";
+					item_add += "            <th>할인 방식</th>";
+					item_add += "            <td>" + contents4 + "</td>";
+					item_add += "        </tr>";
+					item_add += "        <tr>";
+					item_add += "            <th>기타사항</th>";
+					item_add += "            <td>" + contents5 + "</td>";
+					item_add += "        </tr>";
+					item_add += "    </tbody>";
+					item_add += "</table>";
+
+					$("#box").append(item_add);
+				}
+			},
+			error: function(xhr, ajaxOptions, throuwnError) {
+				if (xhr.status == "0"){
+					return;
+				}else{
+					alert("ggContentsBody Error=" + xhr.status + " text=" + xhr.responseText);
+				}
+			}
+		});
+
+	}
+	</script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -47,20 +236,49 @@
             <div class="detail-content credit_card">
                 <span class="card_company">
                     <label for="card_com" class="hidden">카드사</label>
-                    <select id="card_com" name="card_com" class="card_com">
-                        <option selected>카드사</option>
-                        <option>비씨카드</option>
-                    </select>
+					<select name="code" id="code" title="구분 선택" class="card_com" onchange="changeCard(this);">
+						<option value="C1001">BC카드</option>
+						<option value="C1002">NH채움카드</option>
+						<option value="C1003">현대카드</option>
+						<option value="C1004">씨티카드</option>
+					</select>
                 </span>
                 <span class="card_name">
                     <label for="card_na" class="hidden">카드이름</label>
-                    <select id="card_na" name="card_na" class="card_na">
-                        <option selected>카드이름</option>
-                        <option>용인시민카드</option>
+                    <select id="card_na" name="card_na" class="card_na" onchange="getCardView(this)">
+                        <option selected>카드선택</option>
                     </select>
                 </span>
-                <h4>용인시민카드(IBK기업은행_신용)</h4>
-                <img src="/mobile/images/information/discount/card_img01.jpg" alt="용인시민카드" />
+
+				<div id="box">
+<%
+If NOT(IsNull(rValue) Or IsEmpty(rValue)) Then
+	k = 1
+	For i = Lbound(rValue,2) To UBound(rValue,2)
+
+		seq				= rValue(0,i)
+		code			= rValue(1,i)
+		title			= rValue(2,i)
+		status			= rValue(3,i)
+		files			= rValue(4,i)
+		alt				= rValue(5,i)							
+		summary			= rValue(6,i)
+		discount		= rValue(7,i)
+		website			= rValue(8,i)
+		contents1		= rValue(9,i)
+		contents1		= Replace(contents1,vblf,"<br />") '에디터 사용하지 않을때 변환
+		contents2		= rValue(10,i)
+		contents2		= Replace(contents2,vblf,"<br />") '에디터 사용하지 않을때 변환
+		contents3		= rValue(11,i)
+		contents3		= Replace(contents3,vblf,"<br />") '에디터 사용하지 않을때 변환
+		contents4		= rValue(12,i)
+		contents4		= Replace(contents4,vblf,"<br />") '에디터 사용하지 않을때 변환
+		contents5		= rValue(13,i)
+		contents5		= Replace(contents5,vblf,"<br />") '에디터 사용하지 않을때 변환
+%>
+
+                <h4><%=title%></h4>
+                <img src="<%=FileURL%><%=files%>" alt="<%=alt%>" />
                 <table>
                     <caption>제휴카드 할인혜택에 대한 설명</caption>
                     <colgroup>
@@ -70,45 +288,35 @@
                     <tbody>
                         <tr>
                             <th>할인혜택</th>
-                            <td>성인자유이용권 24,000원 중 60% 할인</td>
+                            <td><%=contents1%></td>
                         </tr>
                         <tr>
                             <th>할인 대상 실적</th>
-                            <td>
-                                전월 실적 30만원 이상 (전 업종) 시 서비스 제공
-                                (월 1회/연 8회 사용가능)
-                                * 카드종류에 따라 기준이 다르므로 자세한 사항은
-                                카드사에 문의하시기 바랍니다.
-                            </td>
+                            <td><%=contents2%></td>
                         </tr>
                         <tr>
                             <th>할인 혜택 제한</th>
-                            <td>
-                                가족카드, 한도 초과, 도난 분실, 거래 정지, 마그네
-                                틱 손상 등 카드는 할인 대상에서 제외됩니다.
-                                제휴카드 할인은 타 할인혜택과 중복 적용되지 않
-                                습니다.
-                            </td>
+                            <td><%=contents3%></td>
                         </tr>
                         <tr>
                             <th>할인 방식</th>
-                            <td>
-                                할인 결제는 무 전표 결제 방식으로 별도의 카드 영
-                                수증을 발행하지 않습니다. 현장 할인 방식으로
-                                9,600원만 결제됩니다.
-                            </td>
+                            <td><%=contents4%></td>
                         </tr>
                         <tr>
                             <th>기타사항</th>
-                            <td>
-                                할인 대상 카드의 종류와 할인 조건은 카드사 사정
-                                에 따라 변경 될 수 있습니다. 농협, 하나은행 일부
-                                상품의 기존 캐쉬백 할인과는 중복 적용되지 않습
-                                니다.
-                            </td>
+                            <td><%=contents5%></td>
                         </tr>
                     </tbody>
                 </table>
+				
+<%
+		k = k + 1
+		Next
+	End If
+	Call RsClose()
+	Call CloseDbConnection()
+%>
+				</div>
             </div>
         </div>
     </div>

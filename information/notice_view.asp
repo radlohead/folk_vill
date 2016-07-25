@@ -122,20 +122,11 @@
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
     <!--#include virtual="/mobile/common/inc/script.asp" -->
-        <script>
-            $(document).ready(function(){
-                $('.multiple-items').slick({
-                    infinite: true,
-                    slidesToShow: 4,
-                    initialSlide: 4
-                });
-            });
-        </script>
 </head>
 <body>
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
-	<div class="wrap">
+	<div class="wrap notice_list">
 	<!--#include virtual="/mobile/common/inc/header_wrap.asp" --><!-- 상단헤더 -->
 
     <div class="header_title_slide">
@@ -143,23 +134,8 @@
             <h2>이용안내</h2>
         </div>
 
-        <!--<div class="slider multiple-items">-->
-            <!--<a href="/mobile/information/notice_list.asp">공지사항</a>-->
-            <!--<a href="/mobile/information/map.asp">가이드맵</a>-->
-            <!--<a href="/mobile/information/guide.asp">시간/요금</a>-->
-            <!--<a href="/mobile/information/membership.asp">연간회원안내</a>-->
-            <!--<a href="/mobile/information/traffic.asp">교통정보</a>-->
-            <!--<a href="/mobile/information/convenience.asp">편의시설</a>-->
-        <!--</div>-->
-<div class="slider multiple-items">
-    <a href="index.asp?01" class="menu1">시간/요금</a>
-    <a href="index.asp?02" class="menu2">연간회원안내</a>
-    <a href="index.asp?03" class="menu3">교통정보</a>
-    <a href="index.asp?04" class="menu4">편의시설</a>
-    <!--<a href="index.asp?05" class="menu5">공지사항</a>-->
-    <a href="/mobile/information/notice_list.asp">공지사항</a>
-    <a href="index.asp?06" class="menu6">가이드맵</a>
-</div>
+    <!--#include virtual="/mobile/information/inc/infor_topmenu.asp" -->
+
     </div>
 
     <div class="contents">

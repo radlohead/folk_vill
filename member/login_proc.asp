@@ -126,7 +126,7 @@
 			Response.write "</script>"
 			Response.End
 		ElseIf ev = "coupon" Then
-			Response.Write "<form name='form1' method='post' action='http://www.koreanfolk.co.kr/mobile" & RtnURL & "' target='_parent'>"
+			Response.Write "<form name='form1' method='post' action='http://www.koreanfolk.co.kr" & RtnURL & "' target='_parent'>"
 			Response.Write "<input type='hidden' name='couponSEQ' value=" & couponSEQ & ">"
 			Response.Write "</form>"
 			Response.Write "<script language='javascript'>"

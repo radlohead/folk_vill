@@ -30,12 +30,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>놀이마을</h2>
-            <aside>
-                <h2>놀이마을
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
 <!--#include virtual="/mobile/playvillage/inc/play_topmenu.asp" -->
@@ -58,7 +52,7 @@
                     수려한 자연 경관과 함께 예술조각 작품이 어울려 역사와 놀이 뿐만 아니라 문화예술 공간으로 관람객들의 사랑을 받고 있습니다.<br/><br/>
                     조각공원 입구에서는 88올림픽 이후 우리와 친숙해진 이탈리아의 조각가 스타치올리, 정상에는 착시 예술의 대가 쿠르즈디에즈,
                     상파울로 비엔날레 대상 수상 작가 레오폴드 말레르 등 국제적으로 명망있는 작가들의 작품과 우리나라 여류 조각계의
-                    1세대이자 타계하신 故 김정숙, 원로 조각가이신 민복진, 전뢰진. 최만린 등 국내 조각계의 중진 20여명의 작품이 설치되어있습니다.
+                    1세대이자 타계하신 故 김정숙, 원로 조각가이신 민복진, 전뢰진, 최만린 등 국내 조각계의 중진 20여명의 작품이 설치되어있습니다.
                 </span>
             </div>
             <div class="preview-slide-wrap">

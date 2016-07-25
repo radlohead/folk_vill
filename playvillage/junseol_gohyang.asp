@@ -35,12 +35,6 @@
     <div class="header_title_slide">
         <div class="title">
             <h2>놀이마을</h2>
-            <aside>
-                <h2>놀이마을
-                    <span class="icon"></span>
-                </h2>
-<!--#include virtual="/mobile/common/inc/rg_menu.asp" -->
-            </aside>
         </div>
 
 <!--#include virtual="/mobile/playvillage/inc/play_topmenu.asp" -->
@@ -75,7 +69,11 @@
                                 <td>2,000원</td>
                             </tr>
                         </tbody>
-                    </table>
+                      </table>
+                    <p class="text_box">
+                        <span class="icon">*</span>
+                        <span class="text">자유이용권 구매 시 무료</span>
+                    </p>
                 </dd>
                 <dt>탑승인원</dt>
                 <dd>4명</dd>

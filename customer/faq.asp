@@ -85,7 +85,7 @@
                 <span class="text">한국민속촌을 이용하시는 고객님들께서 자주 문의하시는 질문과 답변들을 정리하였습니다.</span>
             </div>
             <div class="content customer">
-                <form>
+                <!--<form>
                     <div class="select_box category">
 					<!--
                         <select name="category" class="category">
@@ -95,7 +95,7 @@
                             <option value="내용">내용</option>
                         </select>
 					-->
-						<select name="keyfield" id="keyfield" class="category">
+					<!--	<select name="keyfield" id="keyfield" class="category">
 							<option label="선택" value="" <%If keyfield = "" Then Response.Write("selected")%>>선택</option>
 							<option label="제목" value="1" <%If keyfield = "1" Then Response.Write("selected")%>>제목</option>
 							<option label="제목+내용" value="2" <%If keyfield = "2" Then Response.Write("selected")%>>제목+내용</option>
@@ -106,7 +106,7 @@
                         <input type="text" name="keyword" id="keyword" maxlength="20" class="cate_search_text" value="<%=keyword%>" />
                         <a href="javascript:doSearch();" class="search_btn"></a>
                     </div>
-                </form>
+                </form>-->
                 <p class="faq_title_text">
                    궁금하신 점을 FAQ에서 찾아보세요.<br/>
                    궁금하신 점을 바로 확인하실 수 있습니다.

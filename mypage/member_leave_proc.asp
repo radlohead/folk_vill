@@ -93,13 +93,13 @@
 		With objCmd								
 			
 			.ActiveConnection = Conn
-			.CommandText = "SP_HUGO7_TBL_MEMBER_LEAVE_INSERT"
+			.CommandText = "SP_HUGO7_TBL_MEMBER_LEAVE_INSERT_M"
 			.CommandType = adCmdStoredProc
 			'기본정보
 			.Parameters.Append .CreateParameter("@UID",adVarChar,adParamInput,20, id)
 			.Parameters.Append .CreateParameter("@PWD",adVarChar,adParamInput,100, password)
-			.Parameters.Append .CreateParameter("@REASON",adVarChar,adParamInput,10, reason)
-			.Parameters.Append .CreateParameter("@REASON_TEXT",adVarChar,adParamInput,2147483647, REASON_TEXT)
+			'.Parameters.Append .CreateParameter("@REASON",adVarChar,adParamInput,10, reason)
+			'.Parameters.Append .CreateParameter("@REASON_TEXT",adVarChar,adParamInput,2147483647, REASON_TEXT)
 			
 			On Error Resume Next		
 			.Execute ,,adExecuteNoRecords

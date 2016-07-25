@@ -4,7 +4,7 @@
 	If session("id") = "" Then
 		Response.write "<script language='javascript'>"
 		Response.write " alert('로그인후 이용해 주세요.');"
-		Response.write " location.href='/member/login.asp?RtnURL=http://www.koreanfolk.co.kr/mypage/coupon_list.asp';"
+		Response.write " location.href='/mobile/member/login.asp?RtnURL=http://www.koreanfolk.co.kr/mobile/mypage/coupon_list.asp';"
 		Response.write "</script>"
 		Response.End
 	End If
@@ -33,7 +33,7 @@
 	' 페이징 처리 부분 
 	pgSize		= 5
 	UniqueField	= "A.SEQ" ' 시퀀스필드
-	TableName	= "TBL_COUPON_HISTORY AS A INNER JOIN TBL_COUPON B ON A.CSEQ = B.SEQ" ' 테이블명
+	TableName	= "TBL_COUPON_HISTORY_M AS A INNER JOIN TBL_COUPON_M B ON A.CSEQ = B.SEQ" ' 테이블명
 	SelectField = "B.SEQ,A.UID,B.TITLE,B.SDATE,B.EDATE,B.FILES1,B.FILES2,B.ALT1,B.ALT2,B.CONTENTS1,B.CONTENTS2,A.REGDATE"
 
 	'검색

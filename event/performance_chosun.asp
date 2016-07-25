@@ -1,3 +1,23 @@
+<%
+
+Function FirstDayOfWeekN( weekN )
+    FirstDayOfYear		= DateSerial( Year(Date()), 1, 1 )
+    FirstDayOfFirstWeek	= FirstDayOfYear - Weekday( FirstDayOfYear ) + 2
+    FirstDayOfWeekN		= DateAdd( "ww", weekN-1, FirstDayOfFirstWeek )
+End Function
+
+'Response.Write FirstDayOfWeekN(DatePart("ww", Date())) & "<br>"
+
+Dim sFirstDay, sLastDay
+
+sFirstDay	= FirstDayOfWeekN(DatePart("ww", Date()))
+'sLastDay	= FirstDayOfWeekN(DatePart("ww", Date() + 6))
+sLastDay	= DateAdd("d", 6, sFirstDay)
+
+'Response.Write "sFirstDay : " & sFirstDay & "<br>"
+'Response.Write "sLastDay : " & DateAdd("d", 6, sFirstDay) & "<br>"
+%>
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -9,11 +29,6 @@
     <!--#include virtual="/mobile/common/inc/script.asp" -->
         <script>
             $(document).ready(function(){
-                $('.multiple-items').slick({
-                    infinite: true,
-                    slidesToShow: 4,
-                    initialSlide: 5
-                });
                 $('.single-item').slick({
                     dots: true
                 });
@@ -24,7 +39,7 @@
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
-<div class="wrap">
+<div class="wrap perfo-chosun">
 <!-- 상단헤더 -->
 <!--#include virtual="/mobile/common/inc/header.asp" -->
 
@@ -46,7 +61,7 @@
             <div class="detail-content chosun">
                 <div class="character_date_box">
                     <span class="date_text">
-                        <span class="text">금주의 활동 캐릭터  (2016. 05. 30 ~ 2016. 06. 05)</span>
+                        <span class="text">금주의 활동 캐릭터  ( <%=sFirstDay%> ~ <%=sLastDay%> )</span>
                     </span>
                     <p class="text_box">
                         <span class="sub-title">평일</span>
@@ -99,7 +114,7 @@
 
                     <div class="img_box">
                         <em>“조용한 조선마을에 수상한 사람들이 나타났다”</em>
-                        <p class="text">더 이상 한국민속촌은 초가집만 가득한 야외박물관이 아닙니 다. 살아있는 조선캐릭터가 시끌벅적한 조선마을 이야기 속으 로 여러분을 초대합니다.</p>
+                        <p class="text">더 이상 한국민속촌은 초가집만 가득한 야외박물관이 아닙니 다. 살아있는 조선캐릭터가 시끌벅적한 조선마을 이야기 속으로 여러분을 초대합니다.</p>
                         <img src="/mobile/images/event/chosun_img_01.jpg" alt="" />
                     </div>
                     <div class="img_box">
@@ -118,7 +133,7 @@
                         </em>
                         <p class="text">
                             한국민속촌에서 진행되는 행사의 컨셉에 따라 조선캐릭터뿐 아니라 이놈아저씨, 구미호와 같은 이색 캐릭터가 활동합니다.
-                            이색 캐릭터는 1년 내내 활동하는 것은 아니니 금주의 활동캐 릭터에서 확인해보세요.
+                            이색 캐릭터는 1년 내내 활동하는 것은 아니니 금주의 활동캐릭터에서 확인해보세요.
                         </p>
                         <img src="/mobile/images/event/chosun_img_04.jpg" alt="" />
                     </div>

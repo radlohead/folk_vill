@@ -21,7 +21,6 @@
                 $(this).addClass("slick-click");
             });
 
-            //ajax로 페이지 이동 새로고침없앨때
             function menuClick(url){
                 if(url == '/'){
                     location.reload(true);
@@ -43,6 +42,7 @@
                     }
                 });
             };
+
 
             var search = location.search;
             switch(search){
@@ -70,6 +70,12 @@
                 $(".multiple-items .menu4").addClass("slick-click");
                 break;
 
+                case "?05" :
+                menuClick('/mobile/information/page/notice_listPage.asp');
+                $(".multiple-items a").removeClass("slick-click");
+                $(".multiple-items .menu5").addClass("slick-click");
+                break;
+
                 case "?06" :
                 menuClick('/mobile/information/page/mapPage.asp');
                 $(".multiple-items a").removeClass("slick-click");
@@ -91,6 +97,8 @@
             });
             $(".menu5").click(function(){
                 menuClick('/mobile/information/page/notice_listPage.asp');
+//                menuClick2('/mobile/information/page/notice_listHead.asp');
+//                menuClick3('/mobile/information/page/notice_listScript.asp');
             });
             $(".menu6").click(function(){
                 menuClick('/mobile/information/page/mapPage.asp');

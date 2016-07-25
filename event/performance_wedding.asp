@@ -9,11 +9,6 @@
     <!--#include virtual="/mobile/common/inc/script.asp" -->
         <script>
             $(document).ready(function(){
-                $('.multiple-items').slick({
-                    infinite: true,
-                    slidesToShow: 4,
-                    initialSlide: 4
-                });
                 $('.single-item').slick({
                     dots: true
                 });
@@ -24,7 +19,7 @@
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
-<div class="wrap">
+<div class="wrap perfo-wedding">
 <!-- 상단헤더 -->
 <!--#include virtual="/mobile/common/inc/header.asp" -->
 
@@ -63,12 +58,12 @@
                     <div class="img_box">
                         <img src="/mobile/images/event/wedding_img_01.jpg" alt="" />
                         <em>두 사람이 함께 부부의 예를 올리는 ‘혼례’(婚禮)</em>
-                        <p class="text">혼례는 두 사람이 결합하여 부부가 되었음을 사회적으로 인정 하는 의례로, 인간이 태어나서 일생을 통해 거쳐야만 하는 통과 의례 중의 하나입니다.</p>
+                        <p class="text">혼례는 두 사람이 결합하여 부부가 되었음을 사회적으로 인정하는 의례로, 인간이 태어나서 일생을 통해 거쳐야만 하는 통과 의례 중의 하나입니다.</p>
                     </div>
                     <div class="img_box">
                         <img src="/mobile/images/event/wedding_img_02.jpg" alt="" />
                         <em>간결하면서 정중한 전통혼례의식</em>
-                        <p class="text">한국민속촌에서는 혼례의 절차 중 신랑이 처갓집에가서 치르 는 전안례(奠雁禮)와 대례(大禮), 신랑과 신부가 말과 가마를 타고 시댁으로 오는 행렬인 우귀례(于歸禮)를 재현합니다.</p>
+                        <p class="text">한국민속촌에서는 혼례의 절차 중 신랑이 처갓집에 가서 치르는 전안례(奠雁禮)와 대례(大禮), 신랑과 신부가 말과 가마를 타고 시댁으로 오는 행렬인 우귀례(于歸禮)를 재현합니다.</p>
                     </div>
 
                     <div class="pre-infor-tab pre-infor-tab2">
@@ -126,8 +121,9 @@
                     <h4>공연 미리보기</h4>
                     <div class="preview-slide slider single-item">
                         <div><img src="/mobile/images/event/wedding_slide01.jpg" alt="" /></div>
-                        <div><img src="/mobile/images/event/wedding_slide01.jpg" alt="" /></div>
-                        <div><img src="/mobile/images/event/wedding_slide01.jpg" alt="" /></div>
+                        <div><img src="/mobile/images/event/wedding_slide02.jpg" alt="" /></div>
+                        <div><img src="/mobile/images/event/wedding_slide03.jpg" alt="" /></div>
+						<div><img src="/mobile/images/event/wedding_slide04.jpg" alt="" /></div>
                     </div>
                 </div>
             </div>
