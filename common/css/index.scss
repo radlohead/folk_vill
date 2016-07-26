@@ -27,6 +27,8 @@ $mainColor:#bdb5a0;
 table{
 	th{font-weight:bold;}
 }
+.color_orange{color:$orangeColor;}
+.wd100{width:100% !important;}
 
 .radioWrap input[type="radio"]{display:none;}
 .radioWrap input[type="radio"] + label{float:left; width:18px; height:18px; display:block; padding:0; background:url("/mobile/images/member/sprite-member.png") no-repeat; background-position:-36px 0; background-size:250px 250px;}
@@ -1213,9 +1215,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 				}
 			}
 		}
-		.font12{font-size:0.875em;
-			.color_orange{color:#f08200;}
-		}
+		.font12{font-size:0.875em;}
 	}
 	.group_program_img{overflow:hidden; margin-top:30px;
 		.img{width:49%;}
@@ -1238,13 +1238,13 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 	.login{
 		input[type="text"]:focus{background:url("/mobile/images/member/id_bg.png") no-repeat right center; background-size:26px;}
-		.id{background:url("/mobile/images/member/id_bg.png") no-repeat right center; background-size:26px;}
-		.password{background:url("/mobile/images/member/pw_bg.png") no-repeat right center; background-size:25px;}
+		.id{text-indent:20px; padding:10px 0; border:1px solid $mainColor; background:url("/mobile/images/member/id_bg.png") no-repeat right center; background-size:26px;}
+		.password{text-indent:20px; padding:10px 0; border:1px solid $mainColor; background:url("/mobile/images/member/pw_bg.png") no-repeat right center; background-size:25px;}
 	}
 	.radioWrap{display:inline-block; clear:both;
 		.text{float:left; display:block; margin-left:7px; font-size:1.2em;}
 	}
-	input[type=submit]{text-align:center; border:0; background:#312d22; color:#fff;}
+	input[type=submit]{text-align:center; border:0; background:$orangeColor; color:#fff;}
 	.btn{text-align:center; border:0; background:#312d22; color:#fff;}
 	.login_btn{width:100%; margin:45px 0 18px; padding:10px 0; font-size:1.8em;}
 	.search_box{text-align:center;
@@ -1277,7 +1277,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.agree_box{
 		.text{margin:40px 0 20px; font-size:1.2em;}
 		.btn{display:block; width:100%; padding:10px 0; text-align:center; font-size:1.8em;}
-		.agree_btn{background:#312d22;}
+		.agree_btn{background:$orangeColor;}
 		.no-agree_btn{margin-top:10px; background:#fff; border:1px solid #bdb5a0; color:#000;}
 	}
 	h4{margin-bottom:15px; font-size:1.75em;}
@@ -1291,10 +1291,10 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			.text{font-size:1.4em;}
 		}
 		.phone_cert_btn{padding:43px 0 46px;
-			.phone_icon{width:17px; height:23px; background-position:-82px 0;}
+			.phone_icon{width:20px; height:31px; background-position:-82px 0;}
 		}
 		.email_cert_btn{margin-left:-1px; padding:47px 0;
-			.email_icon{width:21px; height:18px; background-position:-104px 0;}
+			.email_icon{width:27px; height:25px; background-position:-104px 0;}
 		}
 	}
 
@@ -1310,7 +1310,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.cert_btn_box{
 		&:after{display:block; content:""; clear:both;}
 		.btn{display:block; float:left; text-align:center; width:48.5%; padding:13px 0; box-sizing:border-box; font-size:1.8em;}
-		.ok_btn{border:1px solid #312d22; background:#312d22;}
+		.ok_btn{border:1px solid $orangeColor; background:$orangeColor;}
 		.cancel_btn{margin-left:3%; border:1px solid #bdb5a0; background:#fff; color:#000;}
 	}
 
@@ -1319,8 +1319,10 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 	.join_select_box{margin:30px 0;
 		li{margin-top:15px;
-			&:first-child{margin:0;}
-			a{display:table; width:100%; height:70px; padding:0 20px; border:1px solid #bdb5a0; box-sizing:border-box;
+			&:first-child{margin:0; background:$orangeColor;}
+			&:nth-child(2){background:#e8aa01;}
+			&:nth-child(3){background:#b3a600;}
+			a{display:table; width:100%; height:70px; padding:0 20px; box-sizing:border-box; color:#fff;
 				.text{display:table-cell; vertical-align:middle; font-size:1.8em;
 					.sm-text{display:block; font-size:12px;}
 				}
@@ -1342,7 +1344,8 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.text{display:block; font-size:1.2em;}
 	}
 	.join_form{
-		label{display:block; margin:35px 0 20px; font-size:1.2em;
+		th{vertical-align:top;}
+		label{display:block; text-align:left; margin:20px 0; font-size:1.2em;
 			&:after{content:"*"; padding-left:7px; color:#f29322;}
 		}
 		select{background:url("/mobile/images/member/select_bg.png") no-repeat center right; background-size:13px 12px;}
@@ -1394,7 +1397,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		label{display:block; margin:35px 0 20px; font-size:1.2em;
 			&:after{content:"";}
 		}
-		.cert_btn_box{display:block; margin-top:35px;}
+		.cert_btn_box{display:block; text-align:left; margin-top:35px; padding:10px;}
 	}
 	dl.join_finish_info{margin:30px 0; padding:25px 0; border-top:1px solid #f08200; border-bottom:1px solid #bdb5a0;
 		&:after{display:block; content:""; clear:both;}
@@ -1409,6 +1412,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 
 .join_box{margin-top:40px; background:#f7f7f7; border-top:1px solid #bdb5a0;
 	.ex_text{font-size:1.4em; text-align:center; margin:25px 0;}
+	.ex_textImg{display:block; width:80%; margin:0 auto 20px;}
 	.join_btn{display:block; width:93%; margin:0 auto; padding:10px 0; text-align:center; box-sizing: border-box; border:1px solid #bdb5a0; background:#fff; font-size:1.8em; }
 }
 
@@ -1457,7 +1461,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.cert_btn_box{
 			&:after{display:block; content:""; clear:both;}
 			.btn{display:block; float:left; text-align:center; width:48.5%; padding:13px 0; box-sizing:border-box; font-size:1.8em;}
-			.ok_btn{border:1px solid #312d22; background:#312d22;}
+			.ok_btn{border:1px solid $orangeColor; background:$orangeColor;}
 			.cancel_btn{margin-left:3%; border:1px solid #bdb5a0; background:#fff; color:#000;}
 		}
 		.btn{text-align:center; border:0; background:#312d22; color:#fff;}
@@ -1517,7 +1521,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.cert_btn_box{
 			&:after{display:block; content:""; clear:both;}
 			.btn{display:block; float:left; text-align:center; width:48.5%; padding:13px 0; box-sizing:border-box; font-size:1.8em;}
-			.ok_btn{border:1px solid #312d22; background:#312d22;}
+			.ok_btn{border:1px solid $orangeColor; background:$orangeColor;}
 			.cancel_btn{margin-left:3%; border:1px solid #bdb5a0; background:#fff; color:#000;}
 		}
 		.member_modify{text-align:center; margin-bottom:30px; padding:25px 0; border-top:1px solid #f08200; border-bottom:1px solid #bdb5a0;
@@ -1603,7 +1607,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			.cert_btn_box{display:block; margin-top:35px;
 				&:after{display:block; content:""; clear:both;}
 				.btn{display:block; float:left; text-align:center; width:48.5%; padding:13px 0; box-sizing:border-box; font-size:1.8em;}
-				.ok_btn{border:1px solid #312d22; background:#312d22;}
+				.ok_btn{border:1px solid $orangeColor; background:$orangeColor;}
 				.cancel_btn{margin-left:3%; border:1px solid #bdb5a0; background:#fff; color:#000;}
 			}
 		}
@@ -1651,7 +1655,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.cert_btn_box{display:block; margin-top:35px;
 		&:after{display:block; content:""; clear:both;}
 		.btn{display:block; float:left; text-align:center; width:48.5%; padding:13px 0; box-sizing:border-box; font-size:1.8em;}
-		.ok_btn{border:1px solid #312d22; background:#312d22; color:#fff;}
+		.ok_btn{border:1px solid $orangeColor; background:$orangeColor; color:#fff;}
 		.cancel_btn{margin-left:3%; border:1px solid #bdb5a0; background:#fff; color:#000;}
 	}
 	.faq_title_text{text-align:center; margin:12px 0 30px; font-size:1.2em;}
@@ -1815,7 +1819,6 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.slide-arrow.next-btn{right:10px; background-position: -250px -158px;}
 }
 
-//이용안내와 행사공연 상단탑네비 클릭시 폰트색
 .wrap.guide .topNav-slide .slide-list li:first-child a{color:$orangeColor;}
 .wrap.membership .topNav-slide .slide-list li:nth-child(2) a{color:$orangeColor;}
 .wrap.traffic .topNav-slide .slide-list li:nth-child(3) a{color:$orangeColor;}
@@ -1830,5 +1833,4 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 .wrap.perfo-wedding .topNav-slide .slide-list li:nth-child(5) a{color:$orangeColor;}
 .wrap.perfo-chosun .topNav-slide .slide-list li:nth-child(6) a{color:$orangeColor;}
 
-//구글맵
 #map {width:100%; height:220px;}

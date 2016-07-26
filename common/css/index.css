@@ -1,6 +1,10 @@
 @charset "UTF-8";
 table th { font-weight: bold; }
 
+.color_orange { color: #f08200; }
+
+.wd100 { width: 100% !important; }
+
 .radioWrap input[type="radio"] { display: none; }
 
 .radioWrap input[type="radio"] + label { float: left; width: 18px; height: 18px; display: block; padding: 0; background: url("/mobile/images/member/sprite-member.png") no-repeat; background-position: -36px 0; background-size: 250px 250px; }
@@ -819,7 +823,6 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-content.daily table.course .left p .icon { padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left 6px; background-size: 3px 3px; }
 .detail-content.daily table.course .left p .icon img { width: 3px; }
 .detail-content.daily table.course .font12 { font-size: 0.875em; }
-.detail-content.daily table.course .font12 .color_orange { color: #f08200; }
 .detail-content.daily .group_program_img { overflow: hidden; margin-top: 30px; }
 .detail-content.daily .group_program_img .img { width: 49%; }
 .detail-content.daily .group_program_img .imgLeft { float: left; }
@@ -836,11 +839,11 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .check_box_wrap input[type="checkbox"]:checked + label { display: block; width: 18px; height: 18px; background: url("/mobile/images/member/sprite-member.png") no-repeat -58px 0; background-size: 250px 250px; }
 .detail-login .check_box_wrap .text { float: left; display: block; margin-left: 7px; font-size: 1.2em; }
 .detail-login .login input[type="text"]:focus { background: url("/mobile/images/member/id_bg.png") no-repeat right center; background-size: 26px; }
-.detail-login .login .id { background: url("/mobile/images/member/id_bg.png") no-repeat right center; background-size: 26px; }
-.detail-login .login .password { background: url("/mobile/images/member/pw_bg.png") no-repeat right center; background-size: 25px; }
+.detail-login .login .id { text-indent: 20px; padding: 10px 0; border: 1px solid #bdb5a0; background: url("/mobile/images/member/id_bg.png") no-repeat right center; background-size: 26px; }
+.detail-login .login .password { text-indent: 20px; padding: 10px 0; border: 1px solid #bdb5a0; background: url("/mobile/images/member/pw_bg.png") no-repeat right center; background-size: 25px; }
 .detail-login .radioWrap { display: inline-block; clear: both; }
 .detail-login .radioWrap .text { float: left; display: block; margin-left: 7px; font-size: 1.2em; }
-.detail-login input[type=submit] { text-align: center; border: 0; background: #312d22; color: #fff; }
+.detail-login input[type=submit] { text-align: center; border: 0; background: #f08200; color: #fff; }
 .detail-login .btn { text-align: center; border: 0; background: #312d22; color: #fff; }
 .detail-login .login_btn { width: 100%; margin: 45px 0 18px; padding: 10px 0; font-size: 1.8em; }
 .detail-login .search_box { text-align: center; }
@@ -866,7 +869,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .tab .content h6 { padding: 10px 0; }
 .detail-login .agree_box .text { margin: 40px 0 20px; font-size: 1.2em; }
 .detail-login .agree_box .btn { display: block; width: 100%; padding: 10px 0; text-align: center; font-size: 1.8em; }
-.detail-login .agree_box .agree_btn { background: #312d22; }
+.detail-login .agree_box .agree_btn { background: #f08200; }
 .detail-login .agree_box .no-agree_btn { margin-top: 10px; background: #fff; border: 1px solid #bdb5a0; color: #000; }
 .detail-login h4 { margin-bottom: 15px; font-size: 1.75em; }
 .detail-login p { font-size: 1.4em; }
@@ -876,9 +879,9 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .cert_box .cert_btn .icon { display: block; margin: 0 auto 14px; background: url("/mobile/images/member/sprite-member.png") no-repeat; background-size: 250px 250px; }
 .detail-login .cert_box .cert_btn .text { font-size: 1.4em; }
 .detail-login .cert_box .phone_cert_btn { padding: 43px 0 46px; }
-.detail-login .cert_box .phone_cert_btn .phone_icon { width: 17px; height: 23px; background-position: -82px 0; }
+.detail-login .cert_box .phone_cert_btn .phone_icon { width: 20px; height: 31px; background-position: -82px 0; }
 .detail-login .cert_box .email_cert_btn { margin-left: -1px; padding: 47px 0; }
-.detail-login .cert_box .email_cert_btn .email_icon { width: 21px; height: 18px; background-position: -104px 0; }
+.detail-login .cert_box .email_cert_btn .email_icon { width: 27px; height: 25px; background-position: -104px 0; }
 .detail-login .phone_cert_box { text-align: center; margin: 28px 0; padding: 28px 0; border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
 .detail-login .phone_cert_box em { display: block; margin-bottom: 10px; font-size: 1.6em; }
 .detail-login .phone_cert_box em b { color: #f08200; }
@@ -886,14 +889,16 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .phone_cert_box .text em { display: inline-block; margin-bottom: 0; font-size: inherit; font-weight: bold; }
 .detail-login .cert_btn_box:after { display: block; content: ""; clear: both; }
 .detail-login .cert_btn_box .btn { display: block; float: left; text-align: center; width: 48.5%; padding: 13px 0; box-sizing: border-box; font-size: 1.8em; }
-.detail-login .cert_btn_box .ok_btn { border: 1px solid #312d22; background: #312d22; }
+.detail-login .cert_btn_box .ok_btn { border: 1px solid #f08200; background: #f08200; }
 .detail-login .cert_btn_box .cancel_btn { margin-left: 3%; border: 1px solid #bdb5a0; background: #fff; color: #000; }
 .detail-login .detail-head.join { margin-bottom: 15px; }
 .detail-login .detail-head.join h3 { font-size: 2.4em; }
 .detail-login .join_select_box { margin: 30px 0; }
 .detail-login .join_select_box li { margin-top: 15px; }
-.detail-login .join_select_box li:first-child { margin: 0; }
-.detail-login .join_select_box li a { display: table; width: 100%; height: 70px; padding: 0 20px; border: 1px solid #bdb5a0; box-sizing: border-box; }
+.detail-login .join_select_box li:first-child { margin: 0; background: #f08200; }
+.detail-login .join_select_box li:nth-child(2) { background: #e8aa01; }
+.detail-login .join_select_box li:nth-child(3) { background: #b3a600; }
+.detail-login .join_select_box li a { display: table; width: 100%; height: 70px; padding: 0 20px; box-sizing: border-box; color: #fff; }
 .detail-login .join_select_box li a .text { display: table-cell; vertical-align: middle; font-size: 1.8em; }
 .detail-login .join_select_box li a .text .sm-text { display: block; font-size: 12px; }
 .detail-login .join_select_box li a .icon { display: table-cell; vertical-align: middle; width: 7px; height: 12px; }
@@ -905,7 +910,8 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .head-title_02:after { display: block; content: ""; clear: both; }
 .detail-login .head-title_02 h4 { margin: 25px 0 12px; font-size: 1.8em; }
 .detail-login .head-title_02 .text { display: block; font-size: 1.2em; }
-.detail-login .join_form label { display: block; margin: 35px 0 20px; font-size: 1.2em; }
+.detail-login .join_form th { vertical-align: top; }
+.detail-login .join_form label { display: block; text-align: left; margin: 20px 0; font-size: 1.2em; }
 .detail-login .join_form label:after { content: "*"; padding-left: 7px; color: #f29322; }
 .detail-login .join_form select { background: url("/mobile/images/member/select_bg.png") no-repeat center right; background-size: 13px 12px; }
 .detail-login .join_form .select_box:after { display: block; content: ""; clear: both; }
@@ -938,7 +944,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-login .join_form .select_box.phone_box { font-size: 1.6em; }
 .detail-login .join_form.step2 label { display: block; margin: 35px 0 20px; font-size: 1.2em; }
 .detail-login .join_form.step2 label:after { content: ""; }
-.detail-login .join_form.step2 .cert_btn_box { display: block; margin-top: 35px; }
+.detail-login .join_form.step2 .cert_btn_box { display: block; text-align: left; margin-top: 35px; padding: 10px; }
 .detail-login dl.join_finish_info { margin: 30px 0; padding: 25px 0; border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
 .detail-login dl.join_finish_info:after { display: block; content: ""; clear: both; }
 .detail-login dl.join_finish_info dt, .detail-login dl.join_finish_info dd { float: left; margin-top: 5px; font-size: 1.8em; }
@@ -950,6 +956,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 
 .join_box { margin-top: 40px; background: #f7f7f7; border-top: 1px solid #bdb5a0; }
 .join_box .ex_text { font-size: 1.4em; text-align: center; margin: 25px 0; }
+.join_box .ex_textImg { display: block; width: 80%; margin: 0 auto 20px; }
 .join_box .join_btn { display: block; width: 93%; margin: 0 auto; padding: 10px 0; text-align: center; box-sizing: border-box; border: 1px solid #bdb5a0; background: #fff; font-size: 1.8em; }
 
 .popup_wrap { visibility: hidden; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; }
@@ -987,7 +994,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .popup_wrap .content .popup_close-btn { margin-top: 25px; }
 .popup_wrap .content .cert_btn_box:after { display: block; content: ""; clear: both; }
 .popup_wrap .content .cert_btn_box .btn { display: block; float: left; text-align: center; width: 48.5%; padding: 13px 0; box-sizing: border-box; font-size: 1.8em; }
-.popup_wrap .content .cert_btn_box .ok_btn { border: 1px solid #312d22; background: #312d22; }
+.popup_wrap .content .cert_btn_box .ok_btn { border: 1px solid #f08200; background: #f08200; }
 .popup_wrap .content .cert_btn_box .cancel_btn { margin-left: 3%; border: 1px solid #bdb5a0; background: #fff; color: #000; }
 .popup_wrap .content .btn { text-align: center; border: 0; background: #312d22; color: #fff; }
 .popup_wrap .content .center { text-align: center; }
@@ -1029,7 +1036,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-mypage .content .btns .rg_btn .list-btn { float: left; text-indent: inherit; text-align: center; background: #fff; border: 1px solid #bdb5a0; color: #000; font-size: 1.4em; line-height: 2.8em; }
 .detail-mypage .content .cert_btn_box:after { display: block; content: ""; clear: both; }
 .detail-mypage .content .cert_btn_box .btn { display: block; float: left; text-align: center; width: 48.5%; padding: 13px 0; box-sizing: border-box; font-size: 1.8em; }
-.detail-mypage .content .cert_btn_box .ok_btn { border: 1px solid #312d22; background: #312d22; }
+.detail-mypage .content .cert_btn_box .ok_btn { border: 1px solid #f08200; background: #f08200; }
 .detail-mypage .content .cert_btn_box .cancel_btn { margin-left: 3%; border: 1px solid #bdb5a0; background: #fff; color: #000; }
 .detail-mypage .content .member_modify { text-align: center; margin-bottom: 30px; padding: 25px 0; border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
 .detail-mypage .content .member_modify h4 { margin-bottom: 10px; font-size: 1.6em; }
@@ -1082,7 +1089,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-mypage .content.member form .cert_btn_box { display: block; margin-top: 35px; }
 .detail-mypage .content.member form .cert_btn_box:after { display: block; content: ""; clear: both; }
 .detail-mypage .content.member form .cert_btn_box .btn { display: block; float: left; text-align: center; width: 48.5%; padding: 13px 0; box-sizing: border-box; font-size: 1.8em; }
-.detail-mypage .content.member form .cert_btn_box .ok_btn { border: 1px solid #312d22; background: #312d22; }
+.detail-mypage .content.member form .cert_btn_box .ok_btn { border: 1px solid #f08200; background: #f08200; }
 .detail-mypage .content.member form .cert_btn_box .cancel_btn { margin-left: 3%; border: 1px solid #bdb5a0; background: #fff; color: #000; }
 .detail-mypage .content.member form.member_info_form label { display: block; margin: 35px 0 20px; font-size: 1.2em; }
 .detail-mypage .content.member form.member_info_form label:after { content: ""; }
@@ -1112,7 +1119,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .content.customer .cert_btn_box { display: block; margin-top: 35px; }
 .content.customer .cert_btn_box:after { display: block; content: ""; clear: both; }
 .content.customer .cert_btn_box .btn { display: block; float: left; text-align: center; width: 48.5%; padding: 13px 0; box-sizing: border-box; font-size: 1.8em; }
-.content.customer .cert_btn_box .ok_btn { border: 1px solid #312d22; background: #312d22; color: #fff; }
+.content.customer .cert_btn_box .ok_btn { border: 1px solid #f08200; background: #f08200; color: #fff; }
 .content.customer .cert_btn_box .cancel_btn { margin-left: 3%; border: 1px solid #bdb5a0; background: #fff; color: #000; }
 .content.customer .faq_title_text { text-align: center; margin: 12px 0 30px; font-size: 1.2em; }
 .content.customer .main-tab.faq-tab { font-size: 1.2em; }

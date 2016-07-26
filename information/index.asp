@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -6,131 +5,87 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
-<!--#include virtual="/mobile/common/inc/css.asp" -->
-<!--#include virtual="/mobile/common/inc/script.asp" -->
+    <!--#include virtual="/mobile/common/inc/css.asp" -->
+    <!--#include virtual="/mobile/common/inc/script.asp" -->
+<script>
+$(document).ready(function(){
+    var topNav = document.getElementById("topNav-slide");
 
-    <script>
-        $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 4
-            });
+    topNav.addEventListener('touchstart', function(event) {
+        var touch = event.touches[0];
+        touchstartX = touch.clientX;
+        touchstartY = touch.clientY;
 
-            $(".multiple-items a").on("click", function(){
-                $(".multiple-items a").removeClass("slick-click");
-                $(this).addClass("slick-click");
-            });
+        if(touchstartX > 0){
+            topNav.addEventListener('touchmove', function(event){
+                $(".slide-list ul").animate({
+                    left: "-=" + touch.clientX
+                },500);
 
-            function menuClick(url){
-                if(url == '/'){
-                    location.reload(true);
-                    return;
+            })
+        }
+//        console.log("~~")
+//        console.log(touchstartX)
+    }, false);
+
+    topNav.addEventListener('touchend', function(event) {
+        if(event.touches.length == 0) {
+            var touch = event.changedTouches[event.changedTouches.length - 1];
+            touchendX = touch.clientX;
+            touchendY = touch.clientY;
+
+            touchoffsetX = touchendX - touchstartX;
+            touchoffsetY = touchendY - touchstartY;
+
+            if(Math.abs(touchoffsetX) >= 10 && Math.abs(touchoffsetY) <= 10) {
+                if(touchoffsetX < 0){
+                    console.log("swipe left");
+//                    $(".slide-list ul").animate({
+//                        left: "-=" + 20
+//                    },500);
                 }
+                else{
+                    console.log("swipe right");
 
-                $.ajax({
-                    type: 'POST',
-                    url: url,
-                    async:false,
-                    data: "",
-                    contentType:"application/x-www-form-urlencoded; charset=UTF-8",
-                    success: function(data) {
-                        $('.contents').html(data);
-                        //if(isMenuHide) menuOff();
-                    },
-                    error: function(request, status, error) {
-                        alert(error);
-                    }
-                });
-            };
-
-
-            var search = location.search;
-            switch(search){
-                case "?01" :
-                menuClick('/mobile/information/page/guidePage.asp');
-                $(".multiple-items a").removeClass("slick-click");
-                $(".multiple-items .menu1").addClass("slick-click");
-                break;
-
-                case "?02" :
-                menuClick('/mobile/information/page/membershipPage.asp');
-                $(".multiple-items a").removeClass("slick-click");
-                $(".multiple-items .menu2").addClass("slick-click");
-                break;
-
-                case "?03" :
-                menuClick('/mobile/information/page/trafficPage.asp');
-                $(".multiple-items a").removeClass("slick-click");
-                $(".multiple-items .menu3").addClass("slick-click");
-                break;
-
-                case "?04" :
-                menuClick('/mobile/information/page/conveniencePage.asp');
-                $(".multiple-items a").removeClass("slick-click");
-                $(".multiple-items .menu4").addClass("slick-click");
-                break;
-
-                case "?05" :
-                menuClick('/mobile/information/page/notice_listPage.asp');
-                $(".multiple-items a").removeClass("slick-click");
-                $(".multiple-items .menu5").addClass("slick-click");
-                break;
-
-                case "?06" :
-                menuClick('/mobile/information/page/mapPage.asp');
-                $(".multiple-items a").removeClass("slick-click");
-                $(".multiple-items .menu6").addClass("slick-click");
-                break;
+                }
             }
-
-            $(".menu1").click(function(){
-                menuClick('/mobile/information/page/guidePage.asp');
-            });
-            $(".menu2").click(function(){
-                menuClick('/mobile/information/page/membershipPage.asp');
-            });
-            $(".menu3").click(function(){
-                menuClick('/mobile/information/page/trafficPage.asp');
-            });
-            $(".menu4").click(function(){
-                menuClick('/mobile/information/page/conveniencePage.asp');
-            });
-            $(".menu5").click(function(){
-                menuClick('/mobile/information/page/notice_listPage.asp');
-//                menuClick2('/mobile/information/page/notice_listHead.asp');
-//                menuClick3('/mobile/information/page/notice_listScript.asp');
-            });
-            $(".menu6").click(function(){
-                menuClick('/mobile/information/page/mapPage.asp');
-            });
-
-
-        });
-    </script>
-
+        }
+    }, false);
+})
+</script>
 </head>
 <body>
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
-<div class="wrap">
-<!-- 상단헤더 -->
-<!--#include virtual="/mobile/common/inc/header.asp" -->
+<div class="wrap map">
+    <!-- 상단헤더 -->
+    <!--#include virtual="/mobile/common/inc/header.asp" -->
 
     <div class="header_title_slide">
         <div class="title">
             <h2>이용안내</h2>
         </div>
-<!--#include virtual="/mobile/information/inc/infor_topmenu.asp" -->
+
+        <div id="topNav-slide" class="topNav-slide">
+            <a href="#none" class="slide-arrow prev-btn"></a>
+            <div class="slide-list">
+                <ul>
+                    <li><a href="/mobile/information/guide.asp">시간/요금</a></li>
+                    <li><a href="/mobile/information/membership.asp">연간회원안내</a></li>
+                    <li><a href="/mobile/information/traffic.asp">교통정보</a></li>
+                    <li><a href="/mobile/information/convenience.asp">편의시설</a></li>
+                    <li><a href="/mobile/information/notice_list.asp">공지사항</a></li>
+                    <li><a href="/mobile/information/map.asp">가이드맵</a></li>
+                </ul>
+            </div>
+            <a href="#none" class="slide-arrow next-btn"></a>
+        </div>
+
     </div>
 
-    <div class="contents">
-        <!--화면전화부분-->
-    </div>
-
-<!-- 하단푸터 -->
-<!--#include virtual="/mobile/common/inc/footer.asp" -->
-
+    <!-- 하단푸터 -->
+    <!--#include virtual="/mobile/common/inc/footer.asp" -->
 </div>
 
 </body>
