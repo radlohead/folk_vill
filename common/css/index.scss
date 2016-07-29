@@ -512,13 +512,15 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 	.text{text-align:center; font-size:1.2em;}
 	.text02{text-align:left; font-size:1.2em;}
-	select{background:url("/mobile/images/member/select_bg.png") no-repeat center right; background-size:13px 12px;}
-	.phone_box{
+	select{float:left; background:url("/mobile/images/member/select_bg.png") no-repeat center right; background-size:13px 12px;}
+	.select_box{
 		&:after{display:block; content:""; clear:both;}
-		select.phone_01{float:left; width:27%; font-size:1.6em;}
-		.phone_02{float:left; margin-left:3%; width:70%;}
+		select.phone_01{width:100%; margin-top:2px; font-size:1.3em;}
+		.phone_02{float:left; margin-left:3%; width:34%;}
+		.phone_03{float:right; width:34%;}
 	}
-	label{display:block; margin:35px 0 20px; font-size:1.2em;}
+	.phone-select{float:left; width: 27.7%; margin-left: -1px; padding: 5px 2.3%; background: #f7f7f7; border: 1px solid #bdb5a0; box-sizing: border-box;}
+	label{display:block; text-align:left; margin:20px 0; font-size:1.2em;}
 }
 
 //이용안내
@@ -1225,8 +1227,8 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 }
 
 .detail-login{
-	input[type="text"]{width:100%; margin-bottom:40px; padding-bottom:8px; border:0; border-bottom:1px solid #bdb5a0; font-size:1.6em;}
-	input[type="password"]{width:100%; padding-bottom:8px; border:0; border-bottom:1px solid #bdb5a0; font-size:1.6em;}
+	input[type="text"]{width:100%; padding:6px 2.8%; border:1px solid $mainColor; box-sizing: border-box; font-size:1.4em;}
+	input[type="password"]{width:100%; padding:6px 0; border:1px solid $mainColor; font-size:1.4em;}
 	input.login_id{background:url("/mobile/images/member/id_bg.png") no-repeat center right; background-size:26px 16px;}
 	input.login_pw{margin-top:35px; background:url("/mobile/images/member/pw_bg.png") no-repeat center right; background-size:25px 19px;}
 	.check_box_wrap{margin-top:20px;
@@ -1239,25 +1241,30 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.login{
 		input[type="text"]:focus{background:url("/mobile/images/member/id_bg.png") no-repeat right center; background-size:26px;}
 		.id{text-indent:20px; padding:10px 0; border:1px solid $mainColor; background:url("/mobile/images/member/id_bg.png") no-repeat right center; background-size:26px;}
-		.password{text-indent:20px; padding:10px 0; border:1px solid $mainColor; background:url("/mobile/images/member/pw_bg.png") no-repeat right center; background-size:25px;}
+		.password{text-indent:20px; padding:10px 0; border:1px solid $mainColor; box-sizing:border-box; background:url("/mobile/images/member/pw_bg.png") no-repeat right center; background-size:25px;}
 	}
-	.radioWrap{display:inline-block; clear:both;
+	.radioWrap{display:inline-block; margin-bottom:5px;
 		.text{float:left; display:block; margin-left:7px; font-size:1.2em;}
 	}
 	input[type=submit]{text-align:center; border:0; background:$orangeColor; color:#fff;}
-	.btn{text-align:center; border:0; background:#312d22; color:#fff;}
+	.btn{text-align:center; border:0; background:$orangeColor; color:#fff;}
 	.login_btn{width:100%; margin:45px 0 18px; padding:10px 0; font-size:1.8em;}
 	.search_box{text-align:center;
 		.id_search{font-size:1.4em;}
-		.pw_search{display:inline-block; margin-left:20px; font-size:1.4em;}
+		.pw_search{display:inline-block; font-size:1.4em;}
+		.vbar{display:inline-block; position:relative; top:-2px; text-align:center; width:30px;}
 	}
 	.email_box{position:relative;
 		&:after{display:block; content:""; clear:both;}
 		label{display:block;}
 		.text_at{display:inline-block;}
-		.email_01{display:inline-block; width:37%;}
+		.email_01{display:inline-block; float:left; width:49%;}
 		.email_02{display:inline-block; width:55%; margin-left:2%;}
-		.email_03{display:inline-block; position:absolute; top:33px; right:0; width:28%; font-size:1.6em;}
+		.email_03{display:inline-block; width:28%; font-size:1.3em;}
+		.whelk{display:inline-block; position:absolute; top:30%; left:44%;}
+		.email-select{float:right; width:49%; margin-left:-1px; padding:5px 2.3%; background:#f7f7f7; border:1px solid #bdb5a0;
+			select{width:100%;}
+		}
 	}
 	.id_search_btn{display:block; width:100%; margin:45px 0 18px; padding:10px 0; font-size:1.8em;}
 	.pw_search_btn{display:block; width:100%; margin:45px 0 18px; padding:10px 0; font-size:1.8em;}
@@ -1344,40 +1351,52 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.text{display:block; font-size:1.2em;}
 	}
 	.join_form{
-		th{vertical-align:top;}
+		tr:first-child th{border-top:2px solid $orangeColor;}
+		tr:first-child td{border-top:2px solid $orangeColor;}
+		th{vertical-align:top; border-bottom:1px solid #dedacf;}
+		td{border-bottom:1px solid #dedacf;}
 		label{display:block; text-align:left; margin:20px 0; font-size:1.2em;
 			&:after{content:"*"; padding-left:7px; color:#f29322;}
 		}
-		select{background:url("/mobile/images/member/select_bg.png") no-repeat center right; background-size:13px 12px;}
+		select{background:url("/mobile/images/member/select_bg.png") no-repeat center right; background-size:9.5px 8px;}
 		.select_box{
 			&:after{display:block; content:""; clear:both;}
-			select{float:left; margin-left:3%; font-size:1.6em;
+			select{float:left; margin-left:3%; font-size:1.4em;
 				&:first-child{margin-left:0;}
 			}
 		}
 		.phone_box{
-			select.phone_01{width:27%;}
-			.phone_02{float:right; width:70%;}
+			select.phone_01{width:25%; margin-top:3px; padding:4px 5px; font-size:1.3em;}
+			.phone_02{float:right; width:73%; border:0; border-left:1px solid #bdb5a0; height:30px;}
 		}
-		.select{float:left; width:31.3%; margin-left:3%; border-bottom:1px solid #bdb5a0;
-			&:first-child{margin-left:0;}
+		.select{float:left; width:27.7%; margin-left:-1px; padding:5px 2.3%; background:#f7f7f7; border:1px solid #bdb5a0;
 			select{width:100%;}
 		}
-		.check_box_wrap{margin-top:20px;
+		.phone-select{float:left; width:27.7%; margin-left:-1px; padding:5px 2.3%; background:#f7f7f7; border:1px solid #bdb5a0; box-sizing: border-box;
+			select{width:100%; margin-top:2px;}
+		}
+		.email-select{float:right; width:45%; margin-left:-1px; padding:5px 2.3%; background:#f7f7f7; border:1px solid #bdb5a0;
+			select{width:100%;}
+		}
+		.tel_02{float:right; width:36%; margin:0;}
+
+		.check_box_wrap{margin:10px 0;
 			label{margin:0;
 				&:after{display:block; content:""; clear:both;}
 			}
 			.mr25{margin-right:25px;}
 		}
-		.id_chk_btn{display:block; width:100%; margin:15px 0 18px; padding:10px 0; font-size:1.8em;}
+		.id_chk_btn{display:block; width:100%; margin:5px 0; padding:10px 0; font-size:1.8em;}
 		.address_wrap{
 			.add_01_box{display:block; position:relative; width:100%;
 				&:after{display:block; content:""; clear:both;}
-				input[type="submit"]{float:right; width:40%; padding:10px 17px; border:1px solid #bdb5a0; background:#fff; font-size:1.6em; color:#000;}
-				.add_search_btn{display:block; float:right; text-align:center; width:30%; padding:10px 17px; border:1px solid #bdb5a0; background:#fff; font-size:1.6em; color:#000;}
+				input[type="submit"]{float:right; width:40%; padding:10px 17px; border:1px solid $mainColor; background:#fff; font-size:1.6em; color:#000;}
+				.add_search_btn{display:block; float:right; text-align:center; width:30%; margin-top:5px; border:1px solid #bdb5a0; background:#fff; font-size:1.6em; color:#000;}
 				.add_01{position:absolute; bottom:0;float:left; width:54.5%; margin:0;}
 			}
-			input[type="text"]{margin-top:12px;}
+			input[type="text"]{margin-top:5px;}
+			.zipcode1{width:32%;}
+			.zipcode2{width:32%;}
 		}
 		.tel_box{
 			select.tel_01{width:27%;}
@@ -1390,14 +1409,14 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 				.icon{padding-right:3px; color:#f29322;}
 			}
 		}
-		.predata{display:block; padding-bottom:8px; border-bottom:1px solid #bdb5a0; font-size:1.6em;}
-		.select_box.phone_box{font-size:1.6em;}
+		.predata{display:block; width:100%; padding:6px 0; border:1px solid $mainColor; box-sizing: border-box; font-size:1.6em;}
+		.select_box.phone_box{border:1px solid $mainColor;}
 	}
 	.join_form.step2{
-		label{display:block; margin:35px 0 20px; font-size:1.2em;
+		label{display:block; margin:20px 0; font-size:1.2em;
 			&:after{content:"";}
 		}
-		.cert_btn_box{display:block; text-align:left; margin-top:35px; padding:10px;}
+		.cert_btn_box{display:block; text-align:left; margin-top:35px;}
 	}
 	dl.join_finish_info{margin:30px 0; padding:25px 0; border-top:1px solid #f08200; border-bottom:1px solid #bdb5a0;
 		&:after{display:block; content:""; clear:both;}
@@ -1426,8 +1445,8 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		h2{font-size:1.8em;}
 		.explan_text{margin:35px 0 30px; font-size:1.4em;}
 		input[type="text"]{width:100%; padding-bottom:8px; border:0; border-bottom:1px solid #bdb5a0; font-size:1.6em;}
-		input[type=submit]{text-align:center; border:0; background:#312d22; color:#fff;}
-		.search_btn{display:block; text-align:center; width:100%; margin:20px 0 18px; padding:10px 0; border:0; background:#312d22; color:#fff; font-size:1.8em;}
+		input[type=submit]{text-align:center; border:0; background:$orangeColor; color:#fff;}
+		.search_btn{display:block; text-align:center; width:100%; margin:20px 0 18px; padding:10px 0; border:0; background:$orangeColor; color:#fff; font-size:1.8em;}
 		label{display:block; margin:35px 0 20px; font-size:1.4em;}
 		.check_box_wrap{margin-top:20px;
 			&:after{display:block; content:""; clear:both;}
@@ -1447,7 +1466,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		}
 		.mt10{margin-top:10px;}
 		.mt15{margin-top:15px;}
-		.add_search_result{border-bottom:1px solid #312d22;
+		.add_search_result{border-bottom:1px solid $orangeColor;
 			.explan_text{text-align:center;}
 			em{display:block; text-align:center; width:100%; padding:10px 0; border-top:1px solid #f08200; border-bottom:1px solid #989690; font-size:1.6em;}
 			.add_list{overflow-y:auto; height:115px; padding:15px 0;
@@ -1464,7 +1483,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			.ok_btn{border:1px solid $orangeColor; background:$orangeColor;}
 			.cancel_btn{margin-left:3%; border:1px solid #bdb5a0; background:#fff; color:#000;}
 		}
-		.btn{text-align:center; border:0; background:#312d22; color:#fff;}
+		.btn{text-align:center; border:0; background:$orangeColor; color:#fff;}
 		.center{text-align:center;}
 		.explan_text02{margin:25px 0; padding:20px 0; background:#e5e5e5;
 			em{display:block; text-align:center; color:#f08200; font-size:1.8em;}
@@ -1506,7 +1525,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 				.icon_img{display:table-cell; vertical-align:middle; width:18px; height:18px; padding-left:12px;}
 			}
 		}
-		.btn{text-align:center; border:0; background:#312d22; color:#fff;}
+		.btn{text-align:center; border:0; background:$orangeColor; color:#fff;}
 		.inquiry_btn{display:block; width:100%; margin:40px 0 18px; padding:10px 0; font-size:1.8em;}
 		.btns{display:block; margin-top:14px;
 			&:after{display:block; content:""; clear:both;}
@@ -1612,13 +1631,20 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			}
 		}
 		form.member_info_form{
-			label{display:block; margin:35px 0 20px; font-size:1.2em;
+			tr:first-child th{border-top: 2px solid #f08200;}
+			th{vertical-align: top; border-bottom: 1px solid #dedacf;}
+			label{display:block; margin:20px 0; font-size:1.4em;
 				&:after{content:"";}
 			}
+			input[type="password"]{width: 100%; height:30px;
+				padding: 6px 2.8%;
+				border: 1px solid #bdb5a0;
+				box-sizing: border-box;
+				font-size: 1.4em;}
 		}
 		form.member_leave{
 			h5{margin-bottom:30px; font-size:1.75em;}
-			input.id{margin-bottom:40px;}
+			input.id{}
 		}
 	}
 }
@@ -1834,3 +1860,82 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 .wrap.perfo-chosun .topNav-slide .slide-list li:nth-child(6) a{color:$orangeColor;}
 
 #map {width:100%; height:220px;}
+
+//16-07-28 이후 폼수정.
+
+input[type="radio"]{float:left;}
+.join_form{
+	table{
+		td{text-align:left;
+			.select_box.birth_date_box{margin-top:10px;}
+			.add_search_btn{display:block; float:right; text-align:right; max-width:102px; height:30px;
+				img{width:auto; height:30px;}
+			}
+			.add_03{float: left;}
+			.email_01{width:47%; box-sizing:border-box;}
+			.phone_02{float:right; width:72%;}
+		}
+	}
+	input{height:30px; box-sizing:border-box;}
+	.phone-select,
+	.select_box,
+	.email-select{height:30px; box-sizing:border-box;}
+}
+.join_form.step2{margin-top:27px;
+	table td{text-align:left;}
+	.email_box{
+		.select{float:right; width:44%;
+			.email_03{position:static; width:100%;}
+		}
+	}
+	input{height:30px; box-sizing:border-box;}
+	.phone-select,
+	.select_box,
+	.email-select{height:30px; box-sizing:border-box;}
+}
+
+#frm1{
+	table{
+		th{text-align:left;}
+		td{}
+	}
+}
+
+.caution{
+	.icon{width:3px; height:3px;
+		img{}
+	}
+}
+
+.find_idpw_form{
+	table{margin-top:15px;
+		tr:first-child th{border-top: 2px solid #f08200;}
+		tr:first-child td{border-top: 2px solid #f08200;}
+		th{vertical-align: top; border-bottom: 1px solid #dedacf;}
+		td{text-align:left; border-bottom: 1px solid #dedacf;
+			.phone-input-box{float:right; width:72.3%;}
+		}
+	}
+	input{height:30px; box-sizing:border-box;}
+	.phone-select,
+	.select_box,
+	.email-select{height:30px; box-sizing:border-box;}
+}
+
+.login{
+	.password{margin-top:5px;}
+}
+
+input[type="radio"]{height:auto;}
+
+.ds-block{display:block;}
+.fl-right{float:right !important;}
+
+.mt10{margin-top:10px;}
+.mb10{margin-bottom:10px;}
+.mt5{margin-top:5px;}
+.mb5{margin-bottom:5px;}
+
+.pdt5{padding-top:5px;}
+.bd0{border:0 !important;}
+

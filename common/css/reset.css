@@ -19,12 +19,7 @@ br{letter-spacing:normal}
 p{letter-spacing:normal}
 input{vertical-align:middle}
 
-
-input[type="text"], input[type="password"]{
-	/*
-	-webkit-appearance:none
-	*/
-}
+input[type="text"], input[type="password"]{text-indent:5px;}
 
 
 input[type="checkbox"]{-webkit-appearance:none;-webkit-border-radius:0}
@@ -43,7 +38,7 @@ button,input[type="button"],input[type="submit"],input[type="reset"],input[type=
 textarea{-webkit-appearance:none}
 select{-webkit-appearance:menulist-text; border:0;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
-.hidden{width:1px; height:1px; position:absolute; clip:rect(1px,1px,1px,1px);}
+.hidden{width:1px !important; height:1px; position:absolute; clip:rect(1px,1px,1px,1px);}
 *:focus{outline:none;}
 
 input{
