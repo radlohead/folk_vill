@@ -41,8 +41,7 @@
                 <h3>살거리</h3>
                 <div class="text-box">
                     <span class="text">
-                        전통을 담고 있는 다양한 상품을<br/>
-                        만나보세요
+                        전통을 담고 있는<br>다양한 상품을 만나보세요
                     </span>
                 </div>
             </div>

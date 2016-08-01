@@ -31,7 +31,7 @@
             <div class="detail-head">
                 <h3>연간회원</h3>
                 <div class="text-box">
-                    <span class="text">365일 민속촌을 내 집처럼 누리는 멤버쉽 제도</span>
+                    <span class="text">365일 민속촌을 내 집처럼 <br>누리는 멤버쉽 제도</span>
                 </div>
             </div>
             <div class="detail-content">
@@ -112,7 +112,7 @@
                         <li>
                             <p>
                                 <span class="icon"></span>
-                                <span>정면을 보고 있는 최근 사진(모자, 선그라스 착용 금물) 지참</span>
+                                <span>정면을 보고 있는 최근 사진(모자, 선그라스 미착용) 지참</span>
                             </p>
                         </li>
                         <li>
@@ -142,7 +142,7 @@
                                 <span>한국민속촌 관람 시 회원권 항시 패용</span>
                             </p>
                         </li>
-                        <li>
+                        <li style="padding-top:1px;">
                             <p>
                                 <span class="icon"></span>
                                 <span>부득이한 휴장 시 이용 제한</span>

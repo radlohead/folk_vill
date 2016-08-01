@@ -24,7 +24,7 @@
     <div class="contents">
         <div class="detail-discount">
             <div class="detail-head">
-                <h3>개인정보취급방침</h3>
+                <h3 style="width:100%;">개인정보취급방침</h3>
             </div>
             <div class="detail-content privacy">
                 <p>

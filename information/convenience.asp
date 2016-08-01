@@ -30,7 +30,7 @@
             <div class="detail-head">
                 <h3>편의시설</h3>
                 <div class="text-box">
-                    <span class="text">나들이에 즐거움을 더하는 서비스</span>
+                    <span class="text">나들이에 즐거움을 더하는 <br>한국민속촌의 서비스</span>
                 </div>
             </div>
             <div class="detail-content">

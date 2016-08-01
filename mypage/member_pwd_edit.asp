@@ -84,27 +84,44 @@
                 <h3>비밀번호 변경</h3>
             </div>
             <div class="content member">
-                <form name="frm" id="frm" method="post" class="member_info_form">
-                    <label for="now_pw">현재 비밀번호</label>
-                    <input type="password" id="password" class="now_pw" name="password" placeholder="현재 사용중인 비밀번호를 입력해주십시오" maxlength="14" />
-
-                    <label for="new_pw">새로운 비밀번호</label>
-                    <input type="password" id="password1" class="new_pw" name="password1" placeholder="6~14자의 영문,영문+숫자만 사용합니다" maxlength="14" />
-
-                    <label for="pw_chk">비밀번호 재확인</label>
-                    <input type="password" id="password2" class="pw_chk" name="password2" placeholder="비밀번호를 한번 더 입력해주십시오" maxlength="14" />
+                <form name="frm" id="frm" method="post" class="member_info_form pw_change_form">
+                    <table>
+                        <colgroup>
+                            <col width="30%" />
+                            <col width="70%" />
+                        </colgroup>
+                        <tr>
+                            <th rowspan="2"><label for="now_pw">현재<br/> 비밀번호</label></th>
+                            <td class="bdb0 pdb0"><input type="password" id="password" class="now_pw" name="password" maxlength="14" /></td>
+                        </tr>
+                        <tr>
+                            <td class="pdt0"><span class="text">현재 사용중인 비밀번호를 입력해주십시오</span></td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2"><label for="new_pw">새로운<br/> 비밀번호</label></th>
+                            <td class="bdb0 pdb0"><input type="password" id="password1" class="new_pw" name="password1" maxlength="14" /></td>
+                        </tr>
+                        <tr>
+                            <td class="pdt0"><span class="text">6~14자의 영문,영문+숫자만 사용합니다</span></td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2"><label for="pw_chk">비밀번호<br/> 재확인</label></th>
+                            <td class="bdb0 pdb0"><input type="password" id="password2" class="pw_chk" name="password2" maxlength="14" /></td>
+                        </tr>
+                        <tr>
+                            <td class="pdt0"><span class="text">비밀번호를 한번 더 입력해주십시오</span></td>
+                        </tr>
+                    </table>
 
                     <ul class="caution">
                         <li>
-                            <span class="icon">*</span>
-                            <span>6~14자의 영문,영문+숫자만 사용하실 수 있습니다.</span>
-                        </li>
-                        <li>
-                            <span class="icon">*</span>
-                            <span>생년월일, 전화번호 등 개인정보와 관련된 숫자, 연속된
-                                      숫자와 같이 쉬운 비밀번호는 다른 사람이 쉽게 알아낼 수
-                                      있으니 사용을 자제해 주세요.
-                            </span>
+                            <p>
+                                <span class="icon"></span>
+                                <span>생년월일, 전화번호 등 개인정보와 관련된 숫자, 연속된
+                                          숫자와 같이 쉬운 비밀번호는 다른 사람이 쉽게 알아낼 수
+                                          있으니 사용을 자제해 주세요.
+                                </span>
+                            </p>
                         </li>
                     </ul>
 

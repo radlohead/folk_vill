@@ -230,7 +230,7 @@
             <div class="detail-head">
                 <h3>제휴카드할인</h3>
                 <div class="text-box">
-                    <span class="text">제휴카드 할인혜택 꼼꼼하게 찾아보기</span>
+                    <span class="text">제휴카드 할인혜택 <br>꼼꼼하게 찾아보고 즐기기</span>
                 </div>
             </div>
             <div class="detail-content credit_card">
@@ -291,11 +291,11 @@ If NOT(IsNull(rValue) Or IsEmpty(rValue)) Then
                             <td><%=contents1%></td>
                         </tr>
                         <tr>
-                            <th>할인 대상 실적</th>
+                            <th>할인대상실적</th>
                             <td><%=contents2%></td>
                         </tr>
                         <tr>
-                            <th>할인 혜택 제한</th>
+                            <th>할인혜택제한</th>
                             <td><%=contents3%></td>
                         </tr>
                         <tr>

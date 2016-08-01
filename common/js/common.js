@@ -355,10 +355,19 @@ $(document).ready(function(){
 		var faq = new Faq(".faq-tab .show_box");
 
 		$(".faq-tab .show_box").click(function(){
-			faq.hidden();
-			faq.icon();
-			$(this).parent().find(".hidden_box").css("display","table");
-			$(this).find(".icon").addClass("on");
+			//faq.hidden();
+			//faq.icon();
+
+			if($(this).find(".icon").hasClass("on") == true){
+				faq.hidden();
+				faq.icon();
+				$(this).find(".icon").removeClass("on");
+			}else{
+				faq.hidden();
+				faq.icon();
+				$(this).parent().find(".hidden_box").css("display","table");
+				$(this).find(".icon").addClass("on");
+			}
 		});
 	});
 	function Faq(selector){

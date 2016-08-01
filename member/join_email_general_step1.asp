@@ -178,87 +178,111 @@
                 </span>
             </div>
 			<form id="myFrm" name="myFrm" method="post" class="join_form step2">
-			<input type="hidden" name="gubun" value="<%=gubun%>">
-            <!--<form name="join_form" action="" method="post" class="join_form step2">-->
-                <label for="name" class="nameLa">이름</label>
-                <!--<input type="text" id="name" class="name" name="name" placeholder="이름" />-->
-				<input type="text" id="authName" name="authName" title="이름" style="ime-mode:active" />
+			<table>
+			    <colgroup>
+			        <col width="30%" />
+			        <col width="70%" />
+			    </colgroup>
+			    <tr>
+                    <th>
+                        <input type="hidden" name="gubun" value="<%=gubun%>">
+                        <!--<form name="join_form" action="" method="post" class="join_form step2">-->
+                        <label for="name" class="nameLa">이름</label>
+                    </th>
+                    <td>
+                        <!--<input type="text" id="name" class="name" name="name" placeholder="이름" />-->
+                        <input type="text" id="authName" name="authName" title="이름" style="ime-mode:active" />
+                    </td>
+				</tr>
+                <tr>
+                <th>
+                    <label for="birth_date_01">생년월일</label>
+                </th>
+                    <td>
+                        <div class="select_box birth_date_box">
+                            <div class="select" style="width:29.3%;">
 
-                <label for="birth_date_01">생년월일</label>
-                <div class="select_box birth_date_box">
-                    <div class="select">
+                            <select name="birthyear" id="birthyear" title="년도 선택" onchange="javascript:setBirthDay('myFrm');">
+                                <option value=''>년도</option>
+                                <%
+                                toyears = year(date)
 
-					<select name="birthyear" id="birthyear" title="년도 선택" onchange="javascript:setBirthDay('myFrm');">
-						<option value=''>년도</option>
-						<%
-						toyears = year(date)
-
-						For j = (toyears - 14) To 1900 Step - 1
-						%>
-						<option value="<%=j%>"><%=j%>년</option>
-						<%Next%>
-					</select>
-					<!--
-					<select name="birth_date_01" class="birth_date_01">
-					<option value="">년도</option>
-					</select>-->
-                    </div>
-                    <div class="select">
-					<select name="birthmonth" id="birthmonth" title="월 선택" onchange="javascript:setBirthDay('myFrm');" class="birth_date_02">
-						<option value="">월</option>
-						<%
-						For j = 1 To 12
-						If Len(j) < 2 Then
-						j = "0" & j
-						End If
-						%>
-						<option value="<%=j%>"><%=CInt(j)%>월</option>
-						<%Next%>
-					</select>
-					<!--
-					<select name="birth_date_02" class="birth_date_02">
-					<option value="">월</option>
-					</select>
-					-->
-                    </div>
-                    <div class="select">
-					<select name="birthday" id="birthday" title="일 선택" class="birth_date_03">
-						<option value=''>일</option>
-					</select>
-					<!--
-					<select name="birth_date_03" class="birth_date_03">
-					<option value="">일</option>
-					</select>
-					-->
-                    </div>
-                </div>
-                <div class="email_box">
-                    <label for="email_01">이메일</label>
-					<input type="text" id="email1" name="email1" placeholder="이메일 아이디" style="ime-mode:disabled" class="email_01" />@
-					<input type="text" id="email2" name="email2" placeholder="이메일 주소" style="ime-mode:disabled" class="email_02" />
-					<!--
-                    <input type="text" id="email_01" class="email_01" name="email_01" placeholder="이메일 아이디" />
-                    <input type="text" id="email_02" class="email_02" name="email_02" placeholder="이메일 주소" />
-					-->
-					<select id="email3" name="email3" title="이메일 도메인 선택" onchange="changeEmailDomainID(this);" class="email_03">
-					<!--
-                    <select name="email_03" class="email_03">
-					-->
-                        <option value="직접입력">직접입력</option>
-                        <option value="dreanwiz.com">dreanwiz.com</option>
-                        <option value="empal.com">empal.com</option>
-                        <option value="freechal.com">freechal.com</option>
-                        <option value="gmail.com">gmail.com</option>
-                        <option value="korea.com">korea.com</option>
-                        <option value="hanmail.net">hanmail.net</option>
-                        <option value="hotmail.com">hotmail.com</option>
-                        <option value="nate.com">nate.com</option>
-                        <option value="naver.com">naver.com</option>
-                        <option value="paran.com">paran.com</option>
-                        <option value="unitel.co.kr">unitel.co.kr</option>
-                        <option value="yahoo.co.kr">yahoo.co.kr</option>
-                    </select>
-                </div>
+                                For j = (toyears - 14) To 1900 Step - 1
+                                %>
+                                <option value="<%=j%>"><%=j%>년</option>
+                                <%Next%>
+                            </select>
+                            <!--
+                            <select name="birth_date_01" class="birth_date_01">
+                            <option value="">년도</option>
+                            </select>-->
+                            </div>
+                            <div class="select">
+                            <select name="birthmonth" id="birthmonth" title="월 선택" onchange="javascript:setBirthDay('myFrm');" class="birth_date_02">
+                                <option value="">월</option>
+                                <%
+                                For j = 1 To 12
+                                If Len(j) < 2 Then
+                                j = "0" & j
+                                End If
+                                %>
+                                <option value="<%=j%>"><%=CInt(j)%>월</option>
+                                <%Next%>
+                            </select>
+                            <!--
+                            <select name="birth_date_02" class="birth_date_02">
+                            <option value="">월</option>
+                            </select>
+                            -->
+                            </div>
+                            <div class="select" style="float:right;">
+                            <select name="birthday" id="birthday" title="일 선택" class="birth_date_03">
+                                <option value=''>일</option>
+                            </select>
+                            <!--
+                            <select name="birth_date_03" class="birth_date_03">
+                            <option value="">일</option>
+                            </select>
+                            -->
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="email_01">이메일</label>
+                    </th>
+                    <td>
+                        <div class="email_box">
+                            <input type="text" id="email1" name="email1" style="ime-mode:disabled" class="email_01" />
+                            <span class="whelk">@</span>
+                            <input type="text" id="email2" name="email2" style="ime-mode:disabled" class="email_02 hidden" />
+                            <!--
+                            <input type="text" id="email_01" class="email_01" name="email_01" placeholder="이메일 아이디" />
+                            <input type="text" id="email_02" class="email_02" name="email_02" placeholder="이메일 주소" />
+                            -->
+                            <div class="select">
+                                <select id="email3" name="email3" title="이메일 도메인 선택" onchange="changeEmailDomainID(this);" class="email_03">
+                                    <option value="직접입력">직접입력</option>
+                                    <option value="dreanwiz.com">dreanwiz.com</option>
+                                    <option value="empal.com">empal.com</option>
+                                    <option value="freechal.com">freechal.com</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="korea.com">korea.com</option>
+                                    <option value="hanmail.net">hanmail.net</option>
+                                    <option value="daum.net">daum.net</option>
+                                    <option value="hotmail.com">hotmail.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="paran.com">paran.com</option>
+                                    <option value="unitel.co.kr">unitel.co.kr</option>
+                                    <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                </select>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </table>
                 <span class="cert_btn_box">
 					<a href="javascript:FormGeneralCheck();" class="btn join_email_general_step1 ok_btn">확인</a>
 					<a href="join.asp" class="btn cancel_btn">취소</a>

@@ -61,12 +61,22 @@ function FormPwdCheck() {
             </div>
             <div class="content member">
 			<form method="post" name="frm" name="frm" class="member_info_form">
-				<label for="pw">비밀번호</label>
-				<input type="password" name="password" id="password" maxlength="14" class="pw"  placeholder="비밀번호를 입력해주세요" onkeydown="if(event.keyCode==13) javascript:FormPwdCheck();" />
-				<span class="cert_btn_box">
-					<a href="javascript:FormPwdCheck();" class="btn member_info_btn ok_btn">확인</a>
-					<a href="http://www.koreanfolk.co.kr/mobile/" class="btn cancel_btn">취소</a>
-				</span>
+			    <table>
+			        <colgroup>
+			            <col width="30%" />
+			            <col width="70%" />
+			        </colgroup>
+                    <tr>
+                        <th><label for="pw">비밀번호</label></th>
+                        <td>
+                            <input type="password" name="password" id="password" maxlength="14" class="pw"  onkeydown="if(event.keyCode==13) javascript:FormPwdCheck();" />
+                       </td>
+                    </tr>
+				</table>
+                            <span class="cert_btn_box">
+                                <a href="javascript:FormPwdCheck();" class="btn member_info_btn ok_btn">확인</a>
+                                <a href="http://www.koreanfolk.co.kr/mobile/" class="btn cancel_btn">취소</a>
+                            </span>
 			</form>
             </div>
         </div>

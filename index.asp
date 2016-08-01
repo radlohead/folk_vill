@@ -79,7 +79,8 @@
 				<h3><img src="/mobile/images/index/vivi-site_title.png" alt="한국민속촌 생생현장 머리말" /></h3>
 			</div>
 			<div class="video">
-				<iframe src="https://www.youtube.com/embed/cD7EwWfuYDk" allowfullscreen></iframe>
+				<iframe src="https://player.vimeo.com/video/175656625?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 			</div>
 		</div>
 

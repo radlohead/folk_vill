@@ -107,10 +107,7 @@
                         <a href="javascript:doSearch();" class="search_btn"></a>
                     </div>
                 </form>-->
-                <p class="faq_title_text">
-                   궁금하신 점을 FAQ에서 찾아보세요.<br/>
-                   궁금하신 점을 바로 확인하실 수 있습니다.
-                </p>
+           
                <div class="main-tab faq-tab">
                     <ul class="tabMenu">
                         <li class="menu1 on" rel="tabMenu1">

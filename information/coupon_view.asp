@@ -148,7 +148,7 @@
             <div class="detail-head">
                 <h3>쿠폰할인</h3>
                 <div class="text-box">
-                    <span class="text">한국민속촌 온라인 회원에게 드리는 특별한 혜택!</span>
+                    <span class="text">한국민속촌 온라인 회원에게<br> 드리는 특별한 혜택!</span>
                 </div>
             </div>
             <div class="detail-content coupon-view">

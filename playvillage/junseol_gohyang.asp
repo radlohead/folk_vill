@@ -58,15 +58,15 @@
                         <tbody>
                             <tr>
                                 <td>성인</td>
-                                <td>3,000원</td>
+                                <td>3,500원</td>
                             </tr>
                             <tr>
                                 <td>청소년</td>
-                                <td>2,500원</td>
+                                <td>3,000원</td>
                             </tr>
                             <tr>
                                 <td>아동</td>
-                                <td>2,000원</td>
+                                <td>2,500원</td>
                             </tr>
                         </tbody>
                       </table>

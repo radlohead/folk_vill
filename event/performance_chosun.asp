@@ -113,8 +113,8 @@ sLastDay	= DateAdd("d", 6, sFirstDay)
                     </div>
 
                     <div class="img_box">
-                        <em>“조용한 조선마을에 수상한 사람들이 나타났다”</em>
-                        <p class="text">더 이상 한국민속촌은 초가집만 가득한 야외박물관이 아닙니 다. 살아있는 조선캐릭터가 시끌벅적한 조선마을 이야기 속으로 여러분을 초대합니다.</p>
+                        <em>“조선마을에 수상한 사람들이 나타났다”</em>
+                        <p class="text">더 이상 한국민속촌은 초가집만 가득한 야외박물관이 아닙니다. 살아있는 조선캐릭터가 시끌벅적한 조선마을 이야기 속으로 여러분을 초대합니다.</p>
                         <img src="/mobile/images/event/chosun_img_01.jpg" alt="" />
                     </div>
                     <div class="img_box">

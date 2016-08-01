@@ -33,8 +33,8 @@
                 <div class="text-box">
                     <span class="text">5월~9월 한국민속촌 이용시간</span>
                     <span class="guide-time">
-                        평일 <span class="time">09:30~18:00</span><br />
-                        주말 <span class="time">09:30~18:30</span>
+                        평일 <span class="time">09:30~18:30</span><br />
+                        주말 <span class="time">09:30~19:00</span>
                     </span>
                 </div>
             </div>
@@ -181,28 +181,28 @@
                     <section class="prefer-infor">
                         <h5>장애인 우대</h5>
                         <p>
-                            <span class="icon"></span>
+                         
                             <span>아동요금 적용(본인 한정, 장애인등록증 제시 필수)</span>
                         </p>
                     </section>
                     <section class="prefer-infor">
                         <h5>국가유공자 우대</h5>
                         <p>
-                            <span class="icon"></span>
+                            
                             <span>아동요금 적용(본인 한정, 국가유공자증 제시 필수)</span>
                         </p>
                     </section>
                     <section class="prefer-infor">
                         <h5>군인·경찰 우대</h5>
                         <p>
-                            <span class="icon"></span>
+                            
                             <span>청소년요금 적용(본인 한정, 증빙서류 제시 필수)</span>
                         </p>
                     </section>
                     <section class="prefer-infor">
                         <h5>무료입장</h5>
                         <p>
-                            <span class="icon"></span>
+                     
                             <span>전상군경, 공상군경, 상이군경, 4.19혁명 부상자, 6.18 자유상이자 6.25 참전재일학도의용군인</span>
                         </p>
                     </section>

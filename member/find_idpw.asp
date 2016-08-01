@@ -154,44 +154,64 @@
                 <!-- #tab1 id찾기-->
                 <div class="tab-content tabMenu1">
                     <p class="text">가입하신 이메일/휴대폰으로 아이디를 확인하실 수 있습니다.</p>
-					<form action="find_idpw_proc.asp" method="post" name="frm1" id="frm1">
-					<input type="hidden" name="flag" value="GI" />
-                        <label for="name" class="nameLa">이름</label>
-                        <input type="text" id="id_name" class="name" name="id_name" maxlength="30" placeholder="이름" />
-                        <label for="phone">휴대폰 번호</label>
-                        <div class="phone_box">
-                            <select name="id_mobile1" id="id_mobile1" class="phone_01">
-                                <option value="">선택</option>
-                                <option value="010">010</option>
-                                <option value="011">011</option>
-                                <option value="016">016</option>
-                                <option value="017">017</option>
-                                <option value="019">019</option>
-                            </select>
-                            <input type="text" id="id_mobile2" class="phone_02" name="id_mobile2" placeholder="0000" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" maxlength="4" style="width:30%;" />
-							<span style="float:left"> - </span>
-							<input type="text" id="id_mobile3" class="phone_02" name="id_mobile3" placeholder="0000" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" maxlength="4" style="width:30%;" />
-                        </div>
-                        <div class="email_box">
-                            <label for="email_01">이메일</label>
-                            <input type="text" id="id_email1" class="email_01" name="id_email1" placeholder="이메일 아이디" />
-                            <input type="text" id="id_email2" class="email_02" name="id_email2" placeholder="이메일 주소" />
-                            <select id="id_email3" name="id_email3" class="email_03" onchange="changeEmailDomainID(this,'GI');">
-                                <option value="">직접입력</option>
-                                <option value="dreanwiz.com">dreanwiz.com</option>
-                                <option value="empal.com">empal.com</option>
-                                <option value="freechal.com">freechal.com</option>
-                                <option value="gmail.com">gmail.com</option>
-                                <option value="korea.com">korea.com</option>
-                                <option value="hanmail.net">hanmail.net</option>
-                                <option value="hotmail.com">hotmail.com</option>
-                                <option value="nate.com">nate.com</option>
-                                <option value="naver.com">naver.com</option>
-                                <option value="paran.com">paran.com</option>
-                                <option value="unitel.co.kr">unitel.co.kr</option>
-                                <option value="yahoo.co.kr">yahoo.co.kr</option>
-                            </select>
-                        </div>
+					<form action="find_idpw_proc.asp" method="post" name="frm1" id="frm1" class="find_idpw_form">
+					<table>
+                        <colgroup>
+                            <col width="30%" />
+                            <col width="70%" />
+                        </colgroup>
+                    <tr>
+					    <input type="hidden" name="flag" value="GI" />
+                         <th><label for="name" class="nameLa">이름</label></th>
+                         <td><input type="text" id="id_name" class="name" name="id_name" maxlength="30" /></td>
+                    </tr>
+                    <tr>
+                        <th><label for="phone">휴대폰 번호</label></th>
+                        <td>
+                            <div class="select_box">
+                                <div class="phone-select">
+                                    <select name="id_mobile1" id="id_mobile1" class="phone_01">
+                                        <option value="">선택</option>
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                        <option value="016">016</option>
+                                        <option value="017">017</option>
+                                        <option value="019">019</option>
+                                    </select>
+                                </div>
+                                <input type="text" id="id_mobile2" class="phone_02" name="id_mobile2" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" maxlength="4" />
+                                <input type="text" id="id_mobile3" class="phone_03" name="id_mobile3" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" maxlength="4" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="email_01">이메일</label></th>
+                        <td>
+                            <div class="email_box">
+                                <input type="text" id="id_email1" class="email_01" name="id_email1" />
+                                <span class="whelk">@</span>
+                                <input type="text" id="id_email2" class="email_02 hidden" name="id_email2" />
+                                <div class="email-select">
+                                    <select id="id_email3" name="id_email3" class="email_03" onchange="changeEmailDomainID(this,'GI');">
+                                        <option value="">직접입력</option>
+                                        <option value="dreanwiz.com">dreanwiz.com</option>
+                                        <option value="empal.com">empal.com</option>
+                                        <option value="freechal.com">freechal.com</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="korea.com">korea.com</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="hotmail.com">hotmail.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="paran.com">paran.com</option>
+                                        <option value="unitel.co.kr">unitel.co.kr</option>
+                                        <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
 
                         <a href="javascript:goFindId();" class="btn id_search_btn">아이디 찾기</a>
                     </form>
@@ -201,48 +221,71 @@
                     <p class="text02">가입하신 휴대폰/이메일로 비밀번호를 확인하실 수 있습니다.<br/>
                                     (임시 비밀번호 이메일 전송)
                     </p>
-					<form action="find_idpw_proc.asp" method="post" name="frm2" id="frm2">
-					<input type="hidden" name="flag" value="GP" />
-                        <label for="id">아이디</label>
-                        <input type="text" name="pwd_id" id="pwd_id" maxlength="14" class="id" placeholder="아이디" />
-                        <label for="name" class="nameLa">이름</label>
-                        <input type="text" name="pwd_name" id="pwd_name" maxlength="30" class="name" placeholder="이름" />
-                        <label for="phone">휴대폰 번호</label>
-                        <div class="phone_box">
-                            <select name="pwd_mobile1" id="pwd_mobile1" class="phone_01">
-                                <option value="">선택</option>
-								<option value="010">010</option>
-								<option value="011">011</option>
-								<option value="016">016</option>
-								<option value="017">017</option>
-								<option value="018">018</option>
-								<option value="019">019</option>
-                            </select>
-                            <input type="text" name="pwd_mobile2" id="pwd_mobile2" maxlength="4" class="phone_02" placeholder="0000" style="width:30%;" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />
-							<span style="float:left"> - </span>
-                            <input type="text" name="pwd_mobile3" id="pwd_mobile3" maxlength="4" class="phone_02" placeholder="0000" style="width:30%;" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />
-                        </div>
-                        <div class="email_box">
-                            <label for="email_01">이메일</label>
-                            <input type="text" id="pwd_email1" name="pwd_email1" size="20" class="email_01" placeholder="이메일 아이디" />
-                            <input type="text" id="pwd_email2" name="pwd_email2" class="email_02" placeholder="이메일 주소" />
-                            <select class="email_03" id="pwd_email3" name="pwd_email3" title="이메일 도메인 선택" onchange="changeEmailDomainID(this,'GP');">
-                                <option value="">직접입력</option>
-                                <option value="dreanwiz.com">dreanwiz.com</option>
-                                <option value="empal.com">empal.com</option>
-                                <option value="freechal.com">freechal.com</option>
-                                <option value="gmail.com">gmail.com</option>
-                                <option value="korea.com">korea.com</option>
-                                <option value="hanmail.net">hanmail.net</option>
-                                <option value="hotmail.com">hotmail.com</option>
-                                <option value="nate.com">nate.com</option>
-                                <option value="naver.com">naver.com</option>
-                                <option value="paran.com">paran.com</option>
-                                <option value="unitel.co.kr">unitel.co.kr</option>
-                                <option value="yahoo.co.kr">yahoo.co.kr</option>
-                            </select>
-                        </div>
-
+					<form action="find_idpw_proc.asp" method="post" name="frm2" id="frm2" class="find_idpw_form">
+					<table>
+					    <colgroup>
+					        <col width="30%" />
+					        <col width="70%" />
+					    </colgroup>
+					    <tr>
+					        <th>
+                                <input type="hidden" name="flag" value="GP" />
+                                <label for="id">아이디</label>
+                            </th>
+                            <td><input type="text" name="pwd_id" id="pwd_id" maxlength="14" class="id" /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="name" class="nameLa">이름</label></th>
+                            <td><input type="text" name="pwd_name" id="pwd_name" maxlength="30" class="name" /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="phone">휴대폰 번호</label></th>
+                            <td>
+                                <div class="select_box">
+                                    <div class="phone-select">
+                                        <select name="pwd_mobile1" id="pwd_mobile1" class="phone_01">
+                                            <option value="">선택</option>
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                    </div>
+                                    <input type="text" name="pwd_mobile2" id="pwd_mobile2" maxlength="4" class="phone_02" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />
+                                    <input type="text" name="pwd_mobile3" id="pwd_mobile3" maxlength="4" class="phone_03" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="email_01">이메일</label></th>
+                            <td>
+                                <div class="email_box">
+                                    <input type="text" id="pwd_email1" name="pwd_email1" size="20" class="email_01"  />
+                                    <span class="whelk">@</span>
+                                    <input type="text" id="pwd_email2" name="pwd_email2" class="email_02 hidden"  />
+                                    <div class="email-select">
+                                        <select class="email_03" id="pwd_email3" name="pwd_email3" title="이메일 도메인 선택" onchange="changeEmailDomainID(this,'GP');">
+                                            <option value="">직접입력</option>
+                                            <option value="dreanwiz.com">dreanwiz.com</option>
+                                            <option value="empal.com">empal.com</option>
+                                            <option value="freechal.com">freechal.com</option>
+                                            <option value="gmail.com">gmail.com</option>
+                                            <option value="korea.com">korea.com</option>
+                                            <option value="hanmail.net">hanmail.net</option>
+                                            <option value="hotmail.com">hotmail.com</option>
+                                            <option value="nate.com">nate.com</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="paran.com">paran.com</option>
+                                            <option value="unitel.co.kr">unitel.co.kr</option>
+                                            <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </table>
                         <a  href="javascript:void(0);" onclick="goFindPwd();" class="btn pw_search_btn">비밀번호 찾기</a>
                     </form>
                 </div>

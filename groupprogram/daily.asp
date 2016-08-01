@@ -26,7 +26,7 @@
             <div class="detail-head">
                 <h3>단체프로그램</h3>
                     <div class="text-box">
-                        <span class="text">선조들의 생활과 문화를 경험하는 특별한 전통문화체험 프로그램</span>
+                        <span class="text">선조들의 생활과 문화를<br>경험하는 전통문화체험</span>
                     </div>
             </div>
             <div class="detail-content daily">
@@ -46,7 +46,7 @@
                     <div class="tab-content tabMenu1">
                         <section class="text_box">
                             <h4>대상</h4>
-                            <span class="text">유아, 초·중·고등학생 단체에 한함 (기업&외국인단체 별도 문의)</span>
+                            <span class="text">유아, 초·중·고등학생 단체(기업&외국인단체 별도 문의)</span>
                         </section>
                         <section class="text_box">
                             <h4>예약문의</h4>
@@ -67,7 +67,7 @@
                                 <span class="pic"><img src="/mobile/images/groupprogram/daily_pic_02.jpg" alt="" /></span>
                                 <div class="text_box">
                                     <h4>전통문화체험코스</h4>
-                                    <span class="text">선조들의 지혜와 생활모습을 이해 하고, 문화예술을 학습할 수 있는 프로그램</span>
+                                    <span class="text">선조들의 지혜와 생활모습을 이해하고, 문화예술을 학습할 수 있는 프로그램</span>
                                 </div>
                                 <span class="more_btn">
                                     <a class="more" href="/mobile/groupprogram/tradition_course.asp">전통문화체험코스 더보기</a>

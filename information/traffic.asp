@@ -63,7 +63,9 @@ function project(latLng) {
       TILE_SIZE * (0.5 - Math.log((1 + siny) / (1 - siny)) / (4 * Math.PI)));
 }
 
-
+    $(window).load(function(){
+        $(".tabMenu .menu1 a").trigger("click");
+    });
         </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKwMgxrOrsHcHCiYswlo1k2t47sxAlJes&callback=initMap"
           async defer></script>
@@ -203,8 +205,8 @@ function project(latLng) {
                             </colgroup>
                             <tr>
                                 <td>
-                                    <span class="icon bus_icon01"></span>
                                     <strong class="text01">인천공항</strong>
+                                    <span class="icon bus_icon01"></span>
                                 </td>
                                 <td>
                                     <div class="bus-use-list">
@@ -228,8 +230,8 @@ function project(latLng) {
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="icon bus_icon02"></span>
                                     <strong class="text01">신논현역</strong>
+                                    <span class="icon bus_icon02"></span>
                                 </td>
                                 <td>
                                     <div class="bus-use-list">
@@ -253,8 +255,8 @@ function project(latLng) {
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="icon bus_icon02"></span>
                                     <strong class="text01">강남역</strong>
+                                    <span class="icon bus_icon02"></span>
                                 </td>
                                 <td>
                                     <div class="bus-use-list">
@@ -278,8 +280,8 @@ function project(latLng) {
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="icon bus_icon02"></span>
                                     <strong class="text01">종각역</strong>
+                                    <span class="icon bus_icon02"></span>
                                 </td>
                                 <td>
                                     <div class="bus-use-list">
@@ -303,8 +305,8 @@ function project(latLng) {
                             </tr>
                             <tr>
                                 <td>
+                                    <strong class="text02">수원역</strong>
                                     <span class="icon bus_icon03"></span>
-                                    <strong class="text02">수원역<br/>상길역</strong>
                                 </td>
                                 <td>
                                     <div class="bus-use-list">
@@ -328,8 +330,8 @@ function project(latLng) {
                             </tr>
                             <tr>
                                 <td>
+                                    <strong class="text02">수원역</strong>
                                     <span class="icon bus_icon03"></span>
-                                    <strong class="text02">수원역<br/>상길역</strong>
                                 </td>
                                 <td>
                                     <div class="bus-use-list">
@@ -353,8 +355,58 @@ function project(latLng) {
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="icon bus_icon04"></span>
+                                    <strong class="text02">상길역</strong>
+                                    <span class="icon bus_icon03"></span>
+                                </td>
+                                <td>
+                                    <div class="bus-use-list">
+                                        <em class="bus-num">37</em>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>위치 : 상갈역 3번출구</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>노선 : 상갈역<span class="tri_icon"></span>삼정선비마을<span class="tri_icon"></span>민속촌</span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong class="text02">상길역</strong>
+                                    <span class="icon bus_icon03"></span>
+                                </td>
+                                <td>
+                                    <div class="bus-use-list">
+                                        <em class="bus-num">10-5</em>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>위치 : 수원역 5번출구 50m 전방</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <span class="icon02"></span>
+                                                    <span>노선 : 상갈역<span class="tri_icon"></span>한보라마을입구<span class="tri_icon"></span>나곡마을</span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
                                     <strong class="text02">죽전역</strong>
+                                    <span class="icon bus_icon04"></span>
                                 </td>
                                 <td>
                                     <div class="bus-use-list">

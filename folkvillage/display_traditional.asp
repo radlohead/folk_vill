@@ -57,7 +57,7 @@
                 <div class="detail-head">
                     <h3>전통민속관</h3>
                     <div class="text-box">
-                        <span class="text">세시풍속과 전통생활문화를 한 눈에</span>
+                        <span class="text">전통 세시풍속과<br>선조들의 생활문화를 한 눈에</span>
                     </div>
                 </div>
                 <span class="photo-img map">
@@ -82,7 +82,7 @@
                 <div class="detail-head">
                     <h3>세계민속관</h3>
                     <div class="text-box">
-                        <span class="text">세계 각국의 생활문화를 전시한 이색 전시관</span>
+                        <span class="text">세계 각국의 생활문화를<br>보여주는 이색 전시관</span>
                     </div>
                 </div>
                 <span class="photo-img map">

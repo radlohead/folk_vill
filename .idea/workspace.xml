@@ -3,14 +3,67 @@
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/member/select_bg.png" afterPath="$PROJECT_DIR$/images/member/select_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/index/today-next_btn.png" afterPath="$PROJECT_DIR$/images/index/today-next_btn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/index/today-prev_btn.png" afterPath="$PROJECT_DIR$/images/index/today-prev_btn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/map/play_vill_img03.jpg" afterPath="$PROJECT_DIR$/images/information/map/play_vill_img03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/map/shop_vill_img02.jpg" afterPath="$PROJECT_DIR$/images/information/map/shop_vill_img02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/map/shop_vill_img04.jpg" afterPath="$PROJECT_DIR$/images/information/map/shop_vill_img04.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/media.css" afterPath="$PROJECT_DIR$/common/css/media.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/media.css.map" afterPath="$PROJECT_DIR$/common/css/media.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/media.scss" afterPath="$PROJECT_DIR$/common/css/media.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/reset.css" afterPath="$PROJECT_DIR$/common/css/reset.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/slick.css" afterPath="$PROJECT_DIR$/common/css/slick.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/swiper.min.css" afterPath="$PROJECT_DIR$/common/css/swiper.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/inc/css.asp" afterPath="$PROJECT_DIR$/common/inc/css.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/form.js" afterPath="$PROJECT_DIR$/common/js/form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/inc/gnb.asp" afterPath="$PROJECT_DIR$/common/inc/gnb.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/common.js" afterPath="$PROJECT_DIR$/common/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer/faq.asp" afterPath="$PROJECT_DIR$/customer/faq.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/inc/event_topmenu.asp" afterPath="$PROJECT_DIR$/event/inc/event_topmenu.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_bboy.asp" afterPath="$PROJECT_DIR$/event/performance_bboy.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_chosun.asp" afterPath="$PROJECT_DIR$/event/performance_chosun.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_nongak.asp" afterPath="$PROJECT_DIR$/event/performance_nongak.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_wedding.asp" afterPath="$PROJECT_DIR$/event/performance_wedding.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/folkvillage/display_traditional.asp" afterPath="$PROJECT_DIR$/folkvillage/display_traditional.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/folkvillage/folk_chosun.asp" afterPath="$PROJECT_DIR$/folkvillage/folk_chosun.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/cert_program.asp" afterPath="$PROJECT_DIR$/groupprogram/cert_program.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/daily.asp" afterPath="$PROJECT_DIR$/groupprogram/daily.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/general_course.asp" afterPath="$PROJECT_DIR$/groupprogram/general_course.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.asp" afterPath="$PROJECT_DIR$/index.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/convenience.asp" afterPath="$PROJECT_DIR$/information/convenience.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/coupon_list.asp" afterPath="$PROJECT_DIR$/information/coupon_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/coupon_view.asp" afterPath="$PROJECT_DIR$/information/coupon_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/credit_card.asp" afterPath="$PROJECT_DIR$/information/credit_card.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/guide.asp" afterPath="$PROJECT_DIR$/information/guide.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/map.asp" afterPath="$PROJECT_DIR$/information/map.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/membership.asp" afterPath="$PROJECT_DIR$/information/membership.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/promotion_list.asp" afterPath="$PROJECT_DIR$/information/promotion_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/promotion_view.asp" afterPath="$PROJECT_DIR$/information/promotion_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/traffic.asp" afterPath="$PROJECT_DIR$/information/traffic.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/find_idpw.asp" afterPath="$PROJECT_DIR$/member/find_idpw.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join.asp" afterPath="$PROJECT_DIR$/member/join.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_child_form.asp" afterPath="$PROJECT_DIR$/member/join_child_form.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_child_form.asp" afterPath="$PROJECT_DIR$/member/join_email_child_form.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_child_step1.asp" afterPath="$PROJECT_DIR$/member/join_email_child_step1.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_foreigner_form.asp" afterPath="$PROJECT_DIR$/member/join_email_foreigner_form.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_foreigner_step1.asp" afterPath="$PROJECT_DIR$/member/join_email_foreigner_step1.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_general_form.asp" afterPath="$PROJECT_DIR$/member/join_email_general_form.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_general_step1.asp" afterPath="$PROJECT_DIR$/member/join_email_general_step1.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_foreigner_step1.asp" afterPath="$PROJECT_DIR$/member/join_foreigner_step1.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_general_form.asp" afterPath="$PROJECT_DIR$/member/join_general_form.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_general_step1.asp" afterPath="$PROJECT_DIR$/member/join_general_step1.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/login.asp" afterPath="$PROJECT_DIR$/member/login.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_info.asp" afterPath="$PROJECT_DIR$/mypage/member_info.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_info_auth.asp" afterPath="$PROJECT_DIR$/mypage/member_info_auth.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_pwd_edit.asp" afterPath="$PROJECT_DIR$/mypage/member_pwd_edit.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/performance_info_2016.asp" afterPath="$PROJECT_DIR$/performance_info_2016.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy.asp" afterPath="$PROJECT_DIR$/playvillage/buy.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat.asp" afterPath="$PROJECT_DIR$/playvillage/eat.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/junseol_gohyang.asp" afterPath="$PROJECT_DIR$/playvillage/junseol_gohyang.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/privacy/privacy_policy.asp" afterPath="$PROJECT_DIR$/privacy/privacy_policy.asp" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,56 +84,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.631579">
-              <caret line="1369" column="96" selection-start-line="1369" selection-start-column="96" selection-end-line="1369" selection-end-column="96" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.asp" pinned="true" current-in-tab="false">
-        <entry file="REMOTE_DEPLOYMENT_FS://&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/login.asp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.169231">
-              <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="find_idpw.asp" pinned="true" current-in-tab="false">
-        <entry file="REMOTE_DEPLOYMENT_FS://&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/find_idpw.asp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.0105263">
-              <caret line="100" column="35" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="join_email_general_form.asp" pinned="true" current-in-tab="false">
-        <entry file="REMOTE_DEPLOYMENT_FS://&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/join_email_general_form.asp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.2153845">
-              <caret line="368" column="91" selection-start-line="368" selection-start-column="85" selection-end-line="368" selection-end-column="91" />
-              <folding>
-                <element signature="e#10733#10751#0#HTML" expanded="true" />
-                <element signature="e#10867#10885#0#HTML" expanded="true" />
-                <element signature="e#14887#14930#0#HTML" expanded="true" />
-                <element signature="e#17757#17800#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="member_info.asp" pinned="true" current-in-tab="true">
-        <entry file="REMOTE_DEPLOYMENT_FS://&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/mypage/member_info.asp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21578947">
-              <caret line="503" column="24" selection-start-line="503" selection-start-column="24" selection-end-line="503" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.4713243">
+              <caret line="304" column="25" selection-start-line="304" selection-start-column="25" selection-end-line="304" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -103,8 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/event/performance_bboy.asp" />
-        <option value="$PROJECT_DIR$/event/page/bboyPage.asp" />
         <option value="$PROJECT_DIR$/event/performance_horse.asp" />
         <option value="$PROJECT_DIR$/event/page/horsePage.asp" />
         <option value="$PROJECT_DIR$/event/performance_wedding.asp" />
@@ -152,8 +158,10 @@
         <option value="$PROJECT_DIR$/common/js/FormValidateCheck.js" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/join_email_general_form.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/mypage/member_info_auth.asp" />
-        <option value="$PROJECT_DIR$/common/css/index.scss" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/mypage/member_info.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/membership.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/traffic.asp" />
+        <option value="$PROJECT_DIR$/common/css/index.scss" />
       </list>
     </option>
   </component>
@@ -263,10 +271,6 @@
               <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -279,6 +283,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,23 +389,23 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16471216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18017058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18336888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="976" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33657587" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="976" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854405" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -418,20 +426,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/js/slick.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4832826">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/information/traffic.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26950353">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/event/page/nongakPage.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1165147">
@@ -716,7 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.4002028">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -746,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55590385">
           <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -754,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.5270936">
           <caret line="431" column="11" selection-start-line="431" selection-start-column="11" selection-end-line="431" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48669952">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -770,14 +759,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../benz_cclass/mobile/request.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.9685917">
+          <caret line="303" column="33" selection-start-line="303" selection-start-column="33" selection-end-line="303" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.631579">
-          <caret line="1369" column="96" selection-start-line="1369" selection-start-column="96" selection-end-line="1369" selection-end-column="96" />
+        <state vertical-scroll-proportion="0.4713243">
+          <caret line="304" column="25" selection-start-line="304" selection-start-column="25" selection-end-line="304" selection-end-column="25" />
           <folding />
         </state>
       </provider>

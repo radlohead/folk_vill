@@ -40,8 +40,7 @@
         <div class="detail-folk">
             <div class="detail-head2">
                 <h3>조선시대로 떠나는 시간여행</h3>
-                <span class="text">민속촌은 각 지방에 남아있는 조선시대 가옥들을 옮겨와 조성한 조선시대 마을입니다.
-                                   지리적 환경부터 마을의 기능까지 고려하여 옹기종기 모여 앉은 마을의 이야기를 들어보세요.
+                <span class="text">민속촌은 각 지방에 남아있는 조선시대 가옥들을 옮겨와 조성한 조선시대 마을입니다. 지리적 환경부터 마을의 기능까지 고려하여 만들어진 마을의 이야기를 들어보세요.
                 </span>
             </div>
             <div class="detail-content folk">

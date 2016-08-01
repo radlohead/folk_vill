@@ -59,7 +59,7 @@
                         <article>
                             <p class="caption">
                                 상가마을에서는 고향처럼 편안하고 여유로운 풍경속에서 토속음식의 특별함을 맛볼 수 있습니다.
-                                또한, 농촌특산품매장, 기념품 매장 등에는 한국민속촌만의 특색 있는 기념품이 가득합니다.
+                                또한, 농촌특산품매장, 기념품매장 등에는 한국민속촌만의 특색 있는 기념품이 가득합니다.
                             </p>
                             <img src="/mobile/images/information/map/shop_vill_map.png" alt="상가마을 지도" />
                             <section>
@@ -88,9 +88,7 @@
                     <div class="tab-content tabMenu2">
                         <article>
                             <p class="caption">
-                                한국민속촌은 각 지방에 남아있는 조선시대 가옥들을 옮겨와 조성
-                                한 마을입니다. 지리적 환경부터 마을의 기능까지 고려하여 옹기종
-                                기 모여 앉은 마을의 이야기를 들어보세요.
+                                한국민속촌은 각 지방에 남아있는 조선시대 가옥들을 옮겨와 조성한 마을입니다. 지리적 환경부터 마을의 기능까지 고려하여 옹기종기 모여 앉은 마을의 이야기를 들어보세요.
                             </p>
                             <img src="/mobile/images/information/map/folk_vill_map.png" alt="민속마을 지도" />
                             <section>
@@ -101,12 +99,12 @@
                             <section>
                                 <img src="/mobile/images/information/map/folk_vill_img02.jpg" alt="양반가" />
                                 <h4>양반가</h4>
-                                <p>양반가는 경기도 수원 화성 내에 있었던 1867년 세워진 아흔 아홉칸 양반 가를 이건한 가옥이며, 전통혼례 공연이 진행되는 장소이기도 합니다.</p>
+                                <p>양반가는 경기도 수원 화성 내에 있었던 1867년 세워진 아흔 아홉칸 양반가를 이건한 가옥이며, 전통혼례 공연이 진행되는 장소이기도 합니다.</p>
                             </section>
                             <section>
                                 <img src="/mobile/images/information/map/folk_vill_img03.jpg" alt="정기공연장" />
                                 <h4>정기공연장</h4>
-                                <p>한국민속촌에서는 시원한 야외공연장에서 매일 농악놀이, 마상무예, 국악비 보이 공연이 펼쳐집니다.</p>
+                                <p>한국민속촌에서는 시원한 야외공연장에서 매일 농악놀이, 마상무예, 국악비보이 공연이 펼쳐집니다.</p>
                             </section>
                             <section>
                                 <img src="/mobile/images/information/map/folk_vill_img04.jpg" alt="전통민속관" />

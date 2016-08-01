@@ -89,7 +89,7 @@
             <div class="detail-head">
                 <h3>할인프로모션</h3>
                 <div class="text-box">
-                    <span class="text">알뜰하게 챙기고, 여유롭게 즐기는 방법</span>
+                    <span class="text">알뜰하게 챙기고, <br>여유롭게 즐기는 방법</span>
                 </div>
             </div>
             <div class="detail-content promotion-list">

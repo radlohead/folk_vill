@@ -225,13 +225,13 @@
                         </tr>
                     </tbody>
                 </table>
-                <p>
+              <!--  <p>
                     <span class="icon">*</span>
                     <span>
                         인증프로그램을 진행하는 단체는 행사 30일 전 본 파일을
                         작성하셔서 bintae1@naver.com으로 반드시 보내주셔야 합니다
                     </span>
-                </p>
+                </p> -->
             </div>
         </div>
 

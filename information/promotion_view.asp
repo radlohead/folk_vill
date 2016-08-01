@@ -167,7 +167,7 @@
         <div class="detail-discount">
             <div class="detail-head">
                 <h3>할인프로모션</h3>
-                <span class="text">알뜰하게 챙기고, 여유롭게 즐기는 방법</span>
+                <span class="text">알뜰하게 챙기고, <br>여유롭게 즐기는 방법</span>
             </div>
             <div class="detail-content board-view">
                  <article>

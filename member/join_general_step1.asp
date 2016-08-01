@@ -174,55 +174,72 @@
             </div>
 			<form id="myFrm" name="myFrm" method="post" class="join_form step2">
 			<input type="hidden" name="gubun" value="<%=gubun%>">
-                <label for="name" class="nameLa">이름</label>
-                <input type="text" id="authName" name="authName" class="name" placeholder="이름" />
+			<table>
+                <colgroup>
+                    <col width="30%" />
+                    <col width="70%" />
+                </colgroup>
+                <tr>
+                    <th><label for="name" class="nameLa">이름</label></th>
+                    <td><input type="text" id="authName" name="authName" class="name" placeholder="이름" /></td>
+                </tr>
+                <tr>
+                    <th><label for="birth_date_01">생년월일</label></th>
+                    <td>
+                        <div class="select_box birth_date_box">
+                            <div class="select">
+                                <select name="birthyear" id="birthyear" class="birth_date_01" onchange="javascript:setBirthDay('myFrm');">
+                                    <option value="">년도</option>
+                                    <%
+                                        toyears = year(date)
 
-                <label for="birth_date_01">생년월일</label>
-                <div class="select_box birth_date_box">
-                    <div class="select">
-                        <select name="birthyear" id="birthyear" class="birth_date_01" onchange="javascript:setBirthDay('myFrm');">
-                            <option value="">년도</option>
-							<%
-								toyears = year(date)
-
-								For j = (toyears - 14) To 1900 Step - 1
-							%>
-							<option value="<%=j%>"><%=j%>년</option>
-							<%Next%>
-                        </select>
-                    </div>
-                    <div class="select">
-                        <select name="birthmonth" id="birthmonth" class="birth_date_02" onchange="javascript:setBirthDay('myFrm');">
-                            <option value="">월</option>
-							<%
-								For j = 1 To 12
-									If Len(j) < 2 Then
-										j = "0" & j
-									End If
-							%>
-							<option value="<%=j%>"><%=CInt(j)%>월</option>
-							<%Next%>
-                        </select>
-                    </div>
-                    <div class="select">
-                        <select name="birthday" id="birthday" class="birth_date_03">
-					        <option value="">일</option>
-                        </select>
-                    </div>
-                </div>
-                <label for="phone">휴대폰 번호</label>
-                <div class="select_box phone_box">
-					<select name="mobile1" id="mobile1" class="phone_01">
-                        <option value="선택">선택</option>
-                        <option value="010">010</option>
-                        <option value="011">011</option>
-                        <option value="016">016</option>
-                        <option value="017">017</option>
-                        <option value="018">018</option>
-                        <option value="019">019</option>
-                    </select>
-                    <input type="text" name="mobile2" id="mobile2" maxlength="8" class="phone_02" placeholder="휴대폰 번호" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />
-                </div>
+                                        For j = (toyears - 14) To 1900 Step - 1
+                                    %>
+                                    <option value="<%=j%>"><%=j%>년</option>
+                                    <%Next%>
+                                </select>
+                            </div>
+                            <div class="select">
+                                <select name="birthmonth" id="birthmonth" class="birth_date_02" onchange="javascript:setBirthDay('myFrm');">
+                                    <option value="">월</option>
+                                    <%
+                                        For j = 1 To 12
+                                            If Len(j) < 2 Then
+                                                j = "0" & j
+                                            End If
+                                    %>
+                                    <option value="<%=j%>"><%=CInt(j)%>월</option>
+                                    <%Next%>
+                                </select>
+                            </div>
+                            <div class="select">
+                                <select name="birthday" id="birthday" class="birth_date_03">
+                                    <option value="">일</option>
+                                </select>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="phone">휴대폰 번호</label></th>
+                    <td>
+                        <div class="select_box">
+                            <div class="phone-select">
+                                <select name="mobile1" id="mobile1" class="phone_01">
+                                    <option value="선택">선택</option>
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+                            </div>
+                            <input type="text" name="mobile2" id="mobile2" maxlength="8" class="phone_02" placeholder="휴대폰 번호" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
                 <span class="cert_btn_box">
                     <a href="javascript:FormGeneralCheck();" class="btn ok_btn">확인</a>
                     <a href="join.asp" class="btn cancel_btn">취소</a>

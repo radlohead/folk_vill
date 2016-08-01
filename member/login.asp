@@ -165,6 +165,7 @@
 
 				<div class="search_box">
 					<a href="/mobile/member/find_idpw.asp" class="id_search">아이디 찾기</a>
+					<span class="vbar">|</span>
 					<a href="/mobile/member/find_idpw.asp#tab2" class="pw_search">비밀번호 찾기</a>
 				</div>
 			</form>
@@ -172,7 +173,8 @@
         </div>
     </div>
     <article class="join_box">
-        <p class="ex_text">한국민속촌에 가입하시면</br>더 많은 혜택을 누리실 수 있습니다.</p>
+        <p class="ex_text"><span class="color_orange">한국민속촌</span>에 <span class="color_orange">가입</span>하시면</br><span class="color_orange">더 많은 혜택</span>을 누리실 수 있습니다.</p>
+        <span class="ex_textImg"><img src="/mobile/images/member/login-comment.png" alt=""/></span>
         <a href="/mobile/member/join.asp" class="btn join_btn">한국민속촌 회원가입</a>
     </article>
 

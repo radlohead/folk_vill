@@ -189,7 +189,7 @@ End If
 
     <div class="header_title_slide">
         <div class="title">
-            <h2>아이디·비밀번호 찾기</h2>
+            <h2>회원가입</h2>
         </div>
     </div>
 
@@ -212,150 +212,232 @@ End If
 			<input type="hidden" name="mobile1" value="<%=mobile1%>">
 			<input type="hidden" name="mobile2" value="<%=mobile2%>">
 			<input type="hidden" name="mobile3" value="<%=mobile3%>">
-                <label for="name" class="nameLa">이름</label>
+			<table>
+			    <colgroup>
+			        <col width="30%"/>
+			        <col width="70%"/>
+			    </colgroup>
+
+			    <tr>
+                    <th><label for="name" class="nameLa">이름</label></th>
                 <!--<input type="text" id="name" class="name" name="name" placeholder="이름" />-->
-				<span class="predata"><%=sName%></span>
-                <label for="sex" class="sexLa">성별</label>
-				<span class="predata"><%=strgender%></span>
-                <!--<input type="text" id="sex" class="sex" name="sex" placeholder="남" />-->
-
-                <label for="birth_date_01">생년월일</label>
-                <div class="select_box birth_date_box">
-                    <div class="select">
-						<select name="birthyear" id="birthyear" class="birth_date_01" onchange="javascript:setBirthDay('frm');">
-							<option value=''>년도</option>
-							<%
-								For j = 1900 To CInt(year(date))
-							%>
-							<option value="<%=j%>"><%=j%>년</option>
-							<%Next%>
-						</select>
-                    </div>
-                    <div class="select">
-						<select name="birthmonth" id="birthmonth" class="birth_date_02">
-							<option value="">월</option>
-							<%
-								For j = 1 To 12
-									If Len(j) < 2 Then
-										j = "0" & j
-									End If
-							%>
-							<option value="<%=j%>"><%=CInt(j)%>월</option>
-							<%Next%>
-						</select>
-                    </div>
-                    <div class="select">
-						<select name="birthday" id="birthday" class="birth_date_03">
-							<option value=''>일</option>
-						</select>
-                    </div>
-                </div>
-
-                <div class="check_box_wrap">
-                    <input type="radio" name="birth_umyang" id="form_type_01" class="solar" value="1" checked>
-                    <label for="solar" class="solarLa"></label>
-                    <span class="text mr25">양력</span>
-                    <input type="radio" name="birth_umyang" id="form_type_02" class="lunar" value="2">
-                    <label for="lunar" class="lunarLa"></label>
-                    <span class="text">음력</span>
-                </div>
-
-                <label for="id">아이디</label>
-                <input type="text" id="id" class="id" name="id" size="20" maxlength="14" placeholder="6~14자의 영문,영문+숫자만 사용합니다" />
-
-                <a href="javascript:checkid_mode_m(frm.id.value);" class="btn id_chk_btn">아이디 중복확인</a>
-
-                <label for="pw">비밀번호</label>
-                <input type="password" name="password1" id="password1" maxlength="14" class="pw" placeholder="6~14자의 영문,영문+숫자만 사용합니다" />
-                <label for="pw_chk">비밀번호 확인</label>
-                <input type="password" name="password2" id="password2" maxlength="14" class="pw_chk" placeholder="비밀번호를 한번 더 입력해주십시오" />
-
-                <div class="address_wrap">
-                    <label for="add_01">주소</label>
-                    <span class="add_01_box">
-                        <input type="text" name="zipcode1" id="zipcode1" readonly="readonly" class="add_01" placeholder="우편번호1" />
-                        <input type="text" name="zipcode2" id="zipcode2" readonly="readonly" class="add_01" placeholder="우편번호2" />
-                        <!--<input type="submit" name="add_search_btn" class="add_search_btn" value="우편번호 찾기" />-->
-                        <a id="btnPopDaumPostcode" name="btnPopDaumPostcode" href="#" class="add_search_btn">우편번호 찾기</a>&nbsp; (* Daum Kakao Corp. 제공)
-                    </span>
-                    <input type="text" name="address" id="address" class="add_02" readonly="readonly" placeholder="주소" />
-                    <input type="text" name="address_detail" id="address_detail" maxlength="50" class="add_03" placeholder="상세주소" />
-                </div>
-
-                <label for="tel">전화번호</label>
-                <div class="select_box tel_box">
-                    <select name="phone1" id="phone1" class="tel_01">
-						<option value="">선택</option>
-						<option value="02">02</option>
-						<option value="031">031</option>
-						<option value="032">032</option>
-						<option value="033">033</option>
-						<option value="041">041</option>
-						<option value="042">042</option>
-						<option value="043">043</option>
-						<option value="051">051</option>
-						<option value="052">052</option>
-						<option value="053">053</option>
-						<option value="054">054</option>
-						<option value="055">055</option>
-						<option value="061">061</option>
-						<option value="062">062</option>
-						<option value="063">063</option>
-						<option value="064">064</option>
-						<option value="0502">0502</option>
-						<option value="0505">0505</option>
-						<option value="0506">0506</option>
-						<option value="070">070</option>
-                    </select>-
-					<input type="text" name="phone2" id="phone2" class="tel_02" maxlength="4" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />-
-					<input type="text" name="phone3" id="phone3" class="tel_02" maxlength="4" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')" onkeypress="txtOnlyNum(event)" />
-                </div>
-                <label for="phone">휴대폰 번호</label>
-                <div class="select_box phone_box">
-					<%=mobile1%>-<%=mobile2%>-<%=mobile3%>
-                </div>
-                <div class="check_box_wrap">
-                    <!--<input type="checkbox" id="sms" class="sms" name="sms" value="sms">-->
-					<input type="radio" id="form_sms_agree1" name="sms" class="sms" value="Y" />
-                    <label for="sms"></label>
-                    <span class="text">SMS 수신동의</span>
-					<input type="radio" id="form_sms_agree2" name="sms" class="sms" value="N" />
-                    <label for="sms"></label>
-                    <span class="text">SMS 수신동의하지 않음</span>
-                </div>
-
-                <div class="select_box email_box">
-                    <label for="email_01">이메일</label>
-                    <input type="text" id="email1" name="email1" class="email_01" placeholder="이메일 아이디" />
-                    <span class="text_at">@</span>
-                    <input type="text" id="email2" name="email2" class="email_02" placeholder="이메일 주소" />
-                    <!--이메일 인증시 이메일은 미리입력됨 아래 input참조-->
-                    <!--<input type="text" id="email_02" class="email_02" name="email_02" value="naver.com" />-->
-					<select id="email3" name="email3" onchange="changeEmailDomain(this);">
-                        <option value="직접입력">직접입력</option>
-                        <option value="dreanwiz.com">dreanwiz.com</option>
-                        <option value="empal.com">empal.com</option>
-                        <option value="freechal.com">freechal.com</option>
-                        <option value="gmail.com">gmail.com</option>
-                        <option value="korea.com">korea.com</option>
-                        <option value="hanmail.net">hanmail.net</option>
-                        <option value="hotmail.com">hotmail.com</option>
-                        <option value="nate.com">nate.com</option>
-                        <option value="naver.com">naver.com</option>
-                        <option value="paran.com">paran.com</option>
-                        <option value="unitel.co.kr">unitel.co.kr</option>
-                        <option value="yahoo.co.kr">yahoo.co.kr</option>
-                    </select>
-                </div>
-                <div class="check_box_wrap">
-					<input type="radio" id="form_news_agree1" name="mailling" class="news_letter" value="Y" />
-                    <label for="news_letter"></label>
-                    <span class="text">뉴스레터 수신동의</span>
-					&nbsp;
-					<input type="radio" id="form_news_agree2" name="mailling" class="news_letter" value="N" />
-                    <label for="news_letter"></label>
-                    <span class="text">뉴스레터 수신동의하지 않음</span>
-                </div>
+				    <td><span class="predata"><%=sName%></span></td>
+                </tr>
+            	<tr>
+                    <th>
+                        <label for="sex" class="sexLa">성별</label>
+                    </th>
+                    <td>
+                        <span class="check_box_wrap">
+                            <input type="radio" name="gender" id="gender_type_01" class="solar" value="1" checked>
+                            <!--<label for="solar" class="solarLa"></label>-->
+                            <span class="text mr25">남</span>
+                            <input type="radio" name="gender" id="gender_type_02" class="lunar" value="2">
+                            <span class="text">여</span>
+                        </span>
+                        <!--<input type="text" id="sex" class="sex" name="sex" placeholder="남" />-->
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="2"><label for="birth_date_01">생년월일</label></th>
+                    <td class="bd0">
+                        <div class="select_box birth_date_box">
+                            <div class="select">
+                                <select name="birthyear" id="birthyear" class="birth_date_01" onchange="javascript:setBirthDay('frm');">
+                                    <option value=''>년도</option>
+                                    <%
+                                        For j = 1900 To CInt(year(date))
+                                    %>
+                                    <option value="<%=j%>"><%=j%>년</option>
+                                    <%Next%>
+                                </select>
+                            </div>
+                            <div class="select">
+                                <select name="birthmonth" id="birthmonth" class="birth_date_02">
+                                    <option value="">월</option>
+                                    <%
+                                        For j = 1 To 12
+                                            If Len(j) < 2 Then
+                                                j = "0" & j
+                                            End If
+                                    %>
+                                    <option value="<%=j%>"><%=CInt(j)%>월</option>
+                                    <%Next%>
+                                </select>
+                            </div>
+                            <div class="select">
+                                <select name="birthday" id="birthday" class="birth_date_03">
+                                    <option value=''>일</option>
+                                </select>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="check_box_wrap">
+                            <input type="radio" name="birth_umyang" id="form_type_01" class="solar" value="1" checked>
+                            <!--<label for="solar" class="solarLa"></label>-->
+                            <span class="text mr25">양력</span>
+                            <input type="radio" name="birth_umyang" id="form_type_02" class="lunar" value="2">
+                            <!--<label for="lunar" class="lunarLa"></label>-->
+                            <span class="text">음력</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="3"><label for="id">아이디</label></th>
+                    <td><input type="text" id="id" class="id mt5" name="id" size="20" maxlength="14" /></td>
+                </tr>
+                <tr>
+                    <td class="bd0"><a href="javascript:checkid_mode_m(frm.id.value);" class="btn id_chk_btn" style="background:#766342;">아이디 중복확인</a></td>
+                </tr>
+                <tr>
+                    <td><span class="text ds-block mt5 mb5">6~14자의 영문,영문+숫자만 사용합니다</span></td>
+                </tr>
+                <tr>
+                    <th rowspan="2"><label for="pw">비밀번호</label></th>
+                    <td class="bd0"><input type="password" name="password1" id="password1" maxlength="14" class="pw mt5" /></td>
+                </tr>
+                <tr>
+                    <td><span class="text ds-block mt5 mb5">6~14자의 영문,영문+숫자만 사용합니다</span></td>
+                </tr>
+                <tr>
+                    <th rowspan="2"><label for="pw_chk">비밀번호 확인</label></th>
+                    <td class="bd0"><input type="password" name="password2" id="password2" maxlength="14" class="pw_chk mt5" /></td>
+                </tr>
+                <tr>
+                    <td><span class="text ds-block mt5 mb5">비밀번호를 한번 더 입력해주십시오</span></td>
+                </tr>
+                <tr>
+                    <th rowspan="3"><label for="add_01">주소</label></th>
+                    <td class="bd0">
+                        <span class="add_01_box ds-block mt5">
+                            <input type="text" name="zipcode1" id="zipcode1" readonly="readonly" class="add_03" style="width:27%;" />
+                            <input type="text" name="zipcode2" id="zipcode2" readonly="readonly" class="add_03" style="width:27%;" />
+                            <a id="btnPopDaumPostcode" name="btnPopDaumPostcode" href="#" class="add_search_btn"><img src="/mobile/images/member/post-search-btn.png" alt="우편번호 찾기" /></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bd0"><input type="text" name="address" id="address" class="add_02 mt5 mb5" readonly="readonly" /></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="address_detail" id="address_detail" maxlength="50" class="add_03 mb5" /></td>
+                </tr>
+                <tr>
+                    <th><label for="tel">전화번호</label></th>
+                    <td>
+                        <div class="phone-select">
+                            <select name="phone1" id="phone1" class="tel_01">
+                                <option value="">선택</option>
+                                <option value="02">02</option>
+                                <option value="031">031</option>
+                                <option value="032">032</option>
+                                <option value="033">033</option>
+                                <option value="041">041</option>
+                                <option value="042">042</option>
+                                <option value="043">043</option>
+                                <option value="051">051</option>
+                                <option value="052">052</option>
+                                <option value="053">053</option>
+                                <option value="054">054</option>
+                                <option value="055">055</option>
+                                <option value="061">061</option>
+                                <option value="062">062</option>
+                                <option value="063">063</option>
+                                <option value="064">064</option>
+                                <option value="0502">0502</option>
+                                <option value="0505">0505</option>
+                                <option value="0506">0506</option>
+                                <option value="070">070</option>
+                            </select>
+                        </div>
+                        <input type="text" name="phone2" id="phone2" class="tel_02" maxlength="4" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />
+                        <input type="text" name="phone3" id="phone3" class="tel_02" maxlength="4" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'')" onkeypress="txtOnlyNum(event)" />
+					</td>
+                </tr>
+                <tr>
+                    <th rowspan="2"><label for="phone">휴대폰</label></th>
+                    <td class="pdt5 bd0">
+                        <div class="select_box">
+                            <div class="phone-select">
+                                <select name="mobile1" id="mobile1" class="phone_01">
+                                    <option value="선택">선택</option>
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+                            </div>
+                            <input type="text" name="mobile2" id="mobile2" maxlength="8" class="phone_02" placeholder="휴대폰 번호" onKeyUp="this.value=this.value.replace(/[^0-9]/g,'');" onkeypress="txtOnlyNum(event)" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="check_box_wrap">
+                            <div style="overflow:hidden; margin-bottom:5px;">
+                                <!--<input type="checkbox" id="sms" class="sms" name="sms" value="sms">-->
+                                <input type="radio" id="form_sms_agree1" name="sms" class="sms" value="Y" />
+                                <!--<label for="sms"></label>-->
+                                <span class="text">SMS 수신동의</span>
+                            </div>
+                            <div>
+                                <input type="radio" id="form_sms_agree2" name="sms" class="sms" value="N" />
+                                <!--<label for="sms"></label>-->
+                                <span class="text">SMS 수신동의하지 않음</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="2"><label for="email_01">이메일</label></th>
+                    <td class="pdt5 bd0">
+                        <input type="text" id="email1" name="email1" class="email_01" />
+                        <span class="whelk">@</span>
+                        <input type="text" id="email2" name="email2" class="email_02 hidden" />
+                        <!--이메일 인증시 이메일은 미리입력됨 아래 input참조-->
+                        <!--<input type="text" id="email_02" class="email_02" name="email_02" value="naver.com" />-->
+                        <div class="email-select">
+                            <select id="email3" name="email3" onchange="changeEmailDomain(this);">
+                                <option value="직접입력">직접입력</option>
+                                <option value="dreanwiz.com">dreanwiz.com</option>
+                                <option value="empal.com">empal.com</option>
+                                <option value="freechal.com">freechal.com</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="korea.com">korea.com</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="hotmail.com">hotmail.com</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="paran.com">paran.com</option>
+                                <option value="unitel.co.kr">unitel.co.kr</option>
+                                <option value="yahoo.co.kr">yahoo.co.kr</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="check_box_wrap">
+                            <div style="overflow:hidden; margin-bottom:5px;">
+                                <input type="radio" id="form_news_agree1" name="mailling" class="news_letter" value="Y" />
+                                <!--<label for="news_letter"></label>-->
+                                <span class="text">뉴스레터 수신동의</span>
+                            </div>
+                            <div>
+                                <input type="radio" id="form_news_agree2" name="mailling" class="news_letter" value="N" />
+                                <!--<label for="news_letter"></label>-->
+                                <span class="text">뉴스레터 수신동의하지 않음</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
 
                 <ul class="caution">
                     <li>

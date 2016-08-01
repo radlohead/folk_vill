@@ -149,7 +149,7 @@ End If
                                 <h4>농악놀이</h4>
                                 <span class="text"><b>1회공연</b> <%=ntime1%></span>
                                 <span class="text"><b>2회공연</b> <%=ntime2%></span>
-                                <span class="text"><b>장소</b> 공연장</span>
+                                <span class="text"><b>장소</b> 농악공연장</span>
                             </section>
                             <!--<div class="btns">-->
                                 <!--<div class="plus_btn"><a href="http://localhost/folk_vill/m/event/event_now.html"><img src="/mobile/images/index/plus_btn_bg.png" alt="클릭시 링크 이동" /></a></div>-->
@@ -166,7 +166,7 @@ End If
                                 <h4>마상무예</h4>
                                 <span class="text"><b>1회공연</b> <%=ltime1%></span>
                                 <span class="text"><b>2회공연</b> <%=ltime2%></span>
-                                <span class="text"><b>장소</b> 공연장</span>
+                                <span class="text"><b>장소</b> 마상무예공연장</span>
                             </section>
                         </div>
 					    <a href="/mobile/event/performance_horse.asp"><img src="/mobile/images/index/today_img02.jpg" alt="한국민속촌 정기공연 마상무예" />
@@ -199,7 +199,7 @@ End If
                                 <h4>전통혼례</h4>
                                 <span class="text"><b>1회공연</b> <%=wtime1%></span>
                                 <span class="text"><b>2회공연</b> <%=wtime2%></span>
-                                <span class="text"><b>장소</b> 공연장</span>
+                                <span class="text"><b>장소</b> 22호 양반가</span>
                             </section>
                         </div>
 					    <a href="/mobile/event/performance_wedding.asp"><img src="/mobile/images/index/today_img04.jpg" alt="한국민속촌 정기공연 전통혼례" />

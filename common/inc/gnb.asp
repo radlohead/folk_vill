@@ -18,59 +18,140 @@
     <ul class="navi">
         <li><a href="#menu01">이용안내</a>
             <ul>
-                <li><a href="/mobile/information/guide.asp">이용시간/요금</a></li>
-                <li><a href="/mobile/information/membership.asp">연간회원안내</a></li>
-                <li><a href="/mobile/information/traffic.asp">교통정보</a></li>
-                <li><a href="/mobile/information/convenience.asp">편의시설</a></li>
-                <li><a href="/mobile/information/notice_list.asp">공지사항</a></li>
-                <li><a href="/mobile/information/map.asp">가이드맵</a></li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/information/guide.asp">이용시간/요금</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/information/membership.asp">연간회원안내</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/information/traffic.asp">교통정보</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/information/convenience.asp">편의시설</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/information/notice_list.asp">공지사항</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/information/map.asp">가이드맵</a>
+                </li>
             </ul>
         </li>
         <li><a href="#menu02">할인정보</a>
             <ul>
-                <li><a href="/mobile/information/promotion_list.asp">할인프로모션</a></li>
-                <li><a href="/mobile/information/credit_card.asp">제휴카드할인</a></li>
-                <li><a href="/mobile/information/coupon_list.asp">쿠폰할인</a></li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/information/promotion_list.asp">할인프로모션</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/information/credit_card.asp">제휴카드할인</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/information/coupon_list.asp">쿠폰할인</a>
+                </li>
             </ul>
         </li>
         <li><a href="#menu03">행사·공연</a>
             <ul>
-                <li><a href="/mobile/event/event_now.asp">민속촌NOW</a></li>
-                <li><a href="/mobile/event/performance_nongak.asp">농악놀이</a></li>
-                <li><a href="/mobile/event/performance_bboy.asp">국악비보이</a></li>
-                <li><a href="/mobile/event/performance_horse.asp">마상무예</a></li>
-                <li><a href="/mobile/event/performance_wedding.asp">전통혼례</a></li>
-                <li><a href="/mobile/event/performance_chosun.asp">조선캐릭터</a></li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/event/event_now.asp">민속촌NOW</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/event/performance_nongak.asp">농악놀이</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/event/performance_horse.asp">마상무예</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/event/performance_bboy.asp">국악비보이</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/event/performance_wedding.asp">전통혼례</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/event/performance_chosun.asp">조선캐릭터</a>
+                </li>
             </ul>
         </li>
         <li><a href="#menu04">민속마을</a>
             <ul>
-                <li><a href="/mobile/folkvillage/folk_chosun.asp">조선시대마을</a></li>
-                <li><a href="/mobile/folkvillage/display_traditional.asp">전시마당</a></li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/folkvillage/folk_chosun.asp">조선시대마을</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/folkvillage/display_traditional.asp">전시마당</a>
+                </li>
             </ul>
         </li>
         <li><a href="#menu05">놀이마을</a>
             <ul>
-                <li><a href="/mobile/playvillage/attraction.asp">어트랙션</a></li>
-                <li><a href="/mobile/playvillage/junseol_gohyang.asp">전설의고향</a></li>
-                <li><a href="/mobile/playvillage/ghost.asp">귀신전</a></li>
-                <li><a href="/mobile/playvillage/sculpture.asp">조각공원</a></li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/playvillage/attraction.asp">어트랙션</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/playvillage/junseol_gohyang.asp">전설의고향</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/playvillage/ghost.asp">귀신전</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/playvillage/sculpture.asp">조각공원</a>
+                </li>
             </ul>
         </li>
         <li><a href="#menu06">먹거리·살거리</a>
             <ul>
-                <li><a href="/mobile/playvillage/eat.asp">먹거리</a></li>
-                <li><a href="/mobile/playvillage/buy.asp">살거리</a></li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/playvillage/eat.asp">먹거리</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/playvillage/buy.asp">살거리</a>
+                </li>
             </ul>
         </li>
         <li><a href="#menu07">고객의 말씀</a>
             <ul>
-                <li><a href="/mobile/customer/faq.asp">자주묻는질문</a></li>
-                <li><a href="/mobile/customer/qna_form.asp">1:1상담문의</a></li>
-                <li><a href="/mobile/customer/voice_form.asp">칭찬/신고/제안</a></li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/customer/faq.asp">자주묻는질문</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/customer/qna_form.asp">1:1상담문의</a>
+                </li>
+                <li>
+                    <span class="icon"></span>
+                    <a href="/mobile/customer/voice_form.asp">칭찬/신고/제안</a>
+                </li>
             </ul>
         </li>
-        <li class="menu08"><a href="/mobile/groupprogram/daily.asp">단체프로그램</a></li>
+        <li class="menu08">
+            <span class="icon"></span>
+            <a href="/mobile/groupprogram/daily.asp">단체프로그램</a>
+        </li>
     </ul>
     <footer>
         <ul class="footer_link2">

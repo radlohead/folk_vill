@@ -57,7 +57,7 @@
                     <p class="text">마을 최고의 재력가만 살 수 있던 99칸 양반가에서 치러지는 전통혼례식은 내외국인 모두에게 사랑받는 인기 공연입니다.</p>
                     <div class="img_box">
                         <img src="/mobile/images/event/wedding_img_01.jpg" alt="" />
-                        <em>두 사람이 함께 부부의 예를 올리는 ‘혼례’(婚禮)</em>
+                        <em>두 사람이 부부의 예를 올리는 '혼례'(婚禮)</em>
                         <p class="text">혼례는 두 사람이 결합하여 부부가 되었음을 사회적으로 인정하는 의례로, 인간이 태어나서 일생을 통해 거쳐야만 하는 통과 의례 중의 하나입니다.</p>
                     </div>
                     <div class="img_box">
