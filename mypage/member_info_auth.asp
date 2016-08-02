@@ -19,9 +19,9 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
 	<!--#include virtual="/mobile/common/inc/css.asp" -->
-	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="/common/js/common.js"></script>
+    <!--#include virtual="/mobile/common/inc/script.asp" -->
 	<script type="text/javascript" src="/common/js/Validate.js"></script>
+
 <script type="text/javascript">		
 function FormPwdCheck() {
 	var form = document.frm;
@@ -43,7 +43,7 @@ function FormPwdCheck() {
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
-<div class="wrap">
+<div class="wrap member_info_auth">
 	<!-- 상단헤더 -->
 	<!--#include virtual="/mobile/common/inc/header.asp" -->
     <div class="header_title_slide">
@@ -86,29 +86,6 @@ function FormPwdCheck() {
 <!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                initialSlide: 3
-            });
-			
-			/*
-            $(".member_info_btn").on("click", function(){
-                var mi_form = document.member_info_form;
-
-                if(mi_form.pw.value == false){
-                    alert("비밀번호를 선택해 주세요");
-                }else if(mi_form.pw.value.length < 6 || mi_form.pw.value.length > 14){
-                    alert("비밀번호는 6~14자 이하로 입력해 주세요");
-                }
-            });
-			*/
-        });
-    </script>
 
 </body>
 </html>

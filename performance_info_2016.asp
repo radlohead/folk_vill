@@ -172,18 +172,14 @@ End If
 					    <a href="/mobile/event/performance_horse.asp"><img src="/mobile/images/index/today_img02.jpg" alt="한국민속촌 정기공연 마상무예" />
                         </a>
                     </div>
-				<%
-					End If
 
-					If Bboy_show = "Y" Then
-				%>
 					<div class="swiper-slide img03">
 					    <div class="text-btn_box">
                             <section class="text_box">
                                 <h4>국악비보이</h4>
                                 <span class="text"><b>1회공연</b> <%=htime1%></span>
                                 <span class="text"><b>2회공연</b> <%=htime2%></span>
-                                <span class="text"><b>장소</b> 공연장</span>
+                                <span class="text"><b>장소</b> 농악공연장</span>
                             </section>
                         </div>
 					    <a href="/mobile/event/performance_bboy.asp"><img src="/mobile/images/index/today_img03.jpg" alt="한국민속촌 정기공연 국악비보이" />

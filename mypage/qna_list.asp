@@ -73,9 +73,9 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
 	<!--#include virtual="/mobile/common/inc/css.asp" -->
-	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="/common/js/common.js"></script>
-	<script type="text/javascript" src="/common/js/Validate.js"></script>
+    <!--#include virtual="/mobile/common/inc/script.asp" -->
+    <script type="text/javascript" src="/common/js/Validate.js"></script>
+
 	<script language="javascript">
 	<!--
 	function Del(seq,pg,uid) {
@@ -201,7 +201,7 @@
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
-<div class="wrap">
+<div class="wrap qna_list">
 <!-- 상단헤더 -->
 <!--#include virtual="/mobile/common/inc/header.asp" -->
 
@@ -332,17 +332,6 @@
 <!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                initialSlide: 0
-            });
-        });
-    </script>
 
 </body>
 </html>

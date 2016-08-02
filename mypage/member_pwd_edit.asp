@@ -19,8 +19,7 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
 	<!--#include virtual="/mobile/common/inc/css.asp" -->
-	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="/common/js/common.js"></script>
+    <!--#include virtual="/mobile/common/inc/script.asp" -->
 	<script type="text/javascript" src="/common/js/Validate.js"></script>
 	<script type="text/javascript">		
 	function FormPwdCheck() {
@@ -66,7 +65,7 @@
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
-<div class="wrap">
+<div class="wrap member_pwd_edit">
 	<!-- 상단헤더 -->
 	<!--#include virtual="/mobile/common/inc/header.asp" -->
 
@@ -116,7 +115,6 @@
                     <ul class="caution">
                         <li>
                             <p>
-                                <span class="icon"></span>
                                 <span>생년월일, 전화번호 등 개인정보와 관련된 숫자, 연속된
                                           숫자와 같이 쉬운 비밀번호는 다른 사람이 쉽게 알아낼 수
                                           있으니 사용을 자제해 주세요.
@@ -139,33 +137,6 @@
 
 </div>
 <!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                initialSlide: 4
-            });
-			
-			/*
-            $(".member_pwd_btn").on("click", function(){
-                var mi_form = document.member_info_form;
-
-                if(mi_form.now_pw.value == false){
-                    alert("현재 사용중인 비밀번호를 입력해 주세요");
-                }else if(mi_form.new_pw.value.length < 6 || mi_form.new_pw.value.length > 14){
-                    alert("비밀번호는 6~14자 이하로 입력해 주세요");
-                }else if(mi_form.pw_chk.value == false){
-                    alert("비밀번호를 한번 더 입력해 주세요");
-                }
-                else if(mi_form.new_pw.value != mi_form.pw_chk.value){
-                    alert("비밀번호가 일치하지 않습니다.");
-                }
-            });
-			*/
-        });
-    </script>
 
 </body>
 </html>

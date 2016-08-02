@@ -288,7 +288,7 @@ If NOT(IsNull(rValue) Or IsEmpty(rValue)) Then
                     <tbody>
                         <tr>
                             <th>할인혜택</th>
-                            <td><%=contents1%></td>
+                            <td style="letter-spacing: -0.02em;"><%=contents1%></td>
                         </tr>
                         <tr>
                             <th>할인대상실적</th>

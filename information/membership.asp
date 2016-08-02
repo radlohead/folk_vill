@@ -7,7 +7,6 @@
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
     <!--#include virtual="/mobile/common/inc/script.asp" -->
-
 </head>
 <body>
 <!-- 메뉴 -->

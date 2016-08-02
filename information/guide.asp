@@ -7,7 +7,17 @@
     <title>한국 민속촌 모바일 사이트</title>
 <!--#include virtual="/mobile/common/inc/css.asp" -->
 <!--#include virtual="/mobile/common/inc/script.asp" -->
-
+<script>
+//    $(document).ready(function(){
+//        $(".slide-list").touchFlow({
+//            axis : "x",
+//            snap : true
+//        });
+////            var moveData = 0;
+////			var css = $("#touchFlow ul").css("transform","translate3d(" + moveData + "px,0,0)");
+////			console.log(css);
+//    });
+</script>
 </head>
 <body>
 <!-- 메뉴 -->
@@ -206,16 +216,4 @@
                             <span>전상군경, 공상군경, 상이군경, 4.19혁명 부상자, 6.18 자유상이자 6.25 참전재일학도의용군인</span>
                         </p>
                     </section>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-<!-- 하단푸터 -->
-<!--#include virtual="/mobile/common/inc/footer.asp" -->
-
-</div>
-
-</body>
-</html>
+                </d

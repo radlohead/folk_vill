@@ -355,7 +355,7 @@ function project(latLng) {
                             </tr>
                             <tr>
                                 <td>
-                                    <strong class="text02">상길역</strong>
+                                    <strong class="text02">상갈역</strong>
                                     <span class="icon bus_icon03"></span>
                                 </td>
                                 <td>
@@ -380,7 +380,7 @@ function project(latLng) {
                             </tr>
                             <tr>
                                 <td>
-                                    <strong class="text02">상길역</strong>
+                                    <strong class="text02">상갈역</strong>
                                     <span class="icon bus_icon03"></span>
                                 </td>
                                 <td>

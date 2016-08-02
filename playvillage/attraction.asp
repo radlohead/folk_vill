@@ -182,7 +182,7 @@
                 </div>
                 <section class="detail">
                     <a href="/mobile/playvillage/attraction/fourD.asp" class="img"><img src="/mobile/images/play_village/attraction_13.png" alt="4D 입체영상관 사진" /></a>
-                    <h4>4D 입체영상관</h4>
+                    <h4 style="height:24px;">4D 입체영상관</h4>
                     <div class="text-box02">
                         <span class="text">100cm 이상</span>
                     </div>

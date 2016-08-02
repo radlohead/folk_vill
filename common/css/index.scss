@@ -9,7 +9,7 @@ $mainColor:#bdb5a0;
 	position:relative; top:-3px; width:3px; height:3px; padding-right:7px; color:#766341; background:url("/mobile/images/common/circleIcon.png") no-repeat left center; background-size:3px 3px;
 }
 @mixin circleIcon2(){
-	position:relative; top:5px; width:3px; height:3px; padding-right:7px; color:#766341; background:url("/mobile/images/common/circleIcon.png") no-repeat left top; background-size:3px 3px;
+	position:relative; top:9px; width:3px; height:3px; padding-right:7px; color:#766341; background:url("/mobile/images/common/circleIcon.png") no-repeat left top; background-size:3px 3px;
 }
 
 //@mixin circleIcon(){
@@ -32,6 +32,14 @@ $mainColor:#bdb5a0;
 	p{display:table; padding:2px 0;
 		span{display:table-cell; line-height:1.5em;}
 		.icon02{@include circleIcon2;
+			img{width:3px;}
+		}
+	}
+}
+@mixin list03(){
+	p{display:table; font-size:1.4em;
+		span{display:table-cell; line-height:1.5em;}
+		.icon{@include circleIcon2;
 			img{width:3px;}
 		}
 	}
@@ -103,11 +111,11 @@ aside.gnb{display:none; position:absolute; top:15px; right:0; width:93%; height:
 			}
 			>ul{
 				>li{display:table; width:100%; padding:15px 0 15px 20px; border-top:1px solid #2a2a2a;
-					a{display:table-cell; padding-left:5px; font-size:1.4em;}
+					a{display:table-cell; position:relative; top:2px; height:18px; padding-left:5px; font-size:1.4em;}
 					.icon{display:table-cell; width:5px; height:6px; margin:7px 5px 0 0; content:""; background:url("/mobile/images/common/gnb-icon.png") no-repeat left center; background-size:10px 6px;}
 				}
 				>li.active{display:table; width:100%; padding:15px 0 15px 20px; border-top:1px solid #2a2a2a;
-					a{display:table-cell; padding-left:5px; font-size:1.4em;}
+					a{display:table-cell; height:18px; padding-left:5px; font-size:1.4em;}
 					.icon{display:table-cell; width:5px; height:6px; margin:7px 5px 0 0; content:""; background:url("/mobile/images/common/gnb-icon.png") no-repeat -5px center; background-size:10px 6px;}
 				}
 			}
@@ -189,7 +197,7 @@ aside.gnb{display:none; position:absolute; top:15px; right:0; width:93%; height:
 				h4{width:100%; margin-bottom:10px; font-size:1.8em;
 					&:before{content:""; display:block; width:13%; height:1.5px; margin-bottom:8px; background:#f08200;}
 				}
-				.text{display:block; margin-bottom:4px; font-size:1em;}
+				.text{display:block; margin-bottom:4px; font-size:1em; line-height:1.2em;}
 			}
 			.btns{overflow:hidden; position:absolute; bottom:0; width:100%;
 				.swiper-button-prev{float:left; position:static; top:52.3%; width:50%; height:33%; margin-top:0; background:none;}
@@ -267,7 +275,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 
 .header_title_slide{position:relative; margin-bottom:23px; border-bottom:1px solid #312d22;
 	>h2{padding:10px 0; background:#312d22; font-size:1.5em; text-indent:3.5%; color:#fff;}
-	.title{height:24px; padding:9px 3.5% 3px 3.5%; background:#312d22; color:#fff;
+	.title{height:24px; padding:10px 3.5% 2px 3.5%; background:#312d22; color:#fff;
 		>h2{float:left; margin-top:-1px; font-size:1.5em; letter-spacing:-1px;}
 		aside{float:right;
 			h2{float:left; margin-top:1px; font-size:1.4em;
@@ -349,7 +357,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	 .detail-head{overflow: hidden; margin-bottom:20px;
 		 h3{float:left; width:50%; font-size:2.4em; color:#333; font-weight:bold;}
 		 .text-box{float:right; width:50%; color:#000; letter-spacing:-0.05em;
-			 .text{display:block; line-height:20px; font-size:1.4em;}
+			 .text{display:block; line-height:1.5em; font-size:1.4em;}
 			 .guide-time{display:block; margin-top:11px; margin-left:23px; font-size:65%; color:#f08200;
 				 .text{display:block;}
 				 .time{color:#666;}
@@ -996,10 +1004,10 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 			.text{display:table-cell; padding-left:8px; font-size:1.2em; line-height:1.2;}
 		}
 		dl{overflow:hidden; margin-top:10px; padding-bottom:10px; border-bottom:1px solid #bdb5a0;
-			dt{display:block; float:left; margin-right:7px; font-size:1.2em;
+			dt{display:block; float:left; margin-right:7px; font-size:1.2em; line-height:1.3em;
 
 			}
-			dd{display:block; float:left; font-size:1.2em;
+			dd{display:block; float:left; font-size:1.2em; line-height:1.3em;
 
 			}
 			.sub-title_01{
@@ -1165,7 +1173,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 				.text{display:table-cell; font-size:1.2em;}
 			}
 		}
-		.text03{display:inline-block; margin-bottom:16px; font-size:1.2em;
+		.text03{display:inline-block; margin-bottom:16px; font-size:1.4em;
 			&:before{display:inline-block; content:"*"; position:relative; top:2px; float:left; margin-left:1px; margin-right:2px; color:#f08200;}
 		}
 		.text04{display:block; margin:5px 0 15px; font-size:1.2em;
@@ -1284,8 +1292,8 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.tab{margin-top:28px;
 		.title{overflow:hidden; padding:10px 15px; border-top:1px solid #d5d5d5; border-bottom:1px solid #eaeaea;
 			h4{float:left; font-size:1.5em; line-height: 110%;}
-			.icon{display:block; float:right; width:10px; height:6px; margin-top:8px; background:url("/mobile/images/common/sprite.png") no-repeat -203px -315px; background-size:300px 500px;}
-			.icon.on{display:block; float:right; width:10px; height:6px; margin-top:8px; background:url("/mobile/images/common/sprite.png") no-repeat -218px -315px; background-size:300px 500px;}
+			.icon{display:block; float:right; width:10px; height:6px; margin-top:11px; background:url("/mobile/images/common/sprite.png") no-repeat -203px -315px; background-size:300px 500px;}
+			.icon.on{display:block; float:right; width:10px; height:6px; margin-top:11px; background:url("/mobile/images/common/sprite.png") no-repeat -218px -315px; background-size:300px 500px;}
 		}
 		.content{display:none; overflow-y:scroll; height:137px; padding:15px 0; border-bottom:1px solid #eaeaea; font-size:1.2em;
 			h5{padding-top:10px; font-size:1em;}
@@ -1298,7 +1306,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.agree_btn{background:$orangeColor;}
 		.no-agree_btn{margin-top:10px; background:#fff; border:1px solid #bdb5a0; color:#000;}
 	}
-	h4{margin-bottom:15px; font-size:1.75em;}
+	h4{margin:5px 0; font-size:1.75em;}
 	p{font-size:1.4em;}
 
 	.cert_box{margin-top:30px;
@@ -1718,7 +1726,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.main-tab.faq-tab{font-size:1.2em;
 		img{height:auto;}
 		.tabMenu{
-			li{width:24%; padding-bottom:13%;}
+			li{width:24%; padding-bottom:12.4%;}
 			.menu1{background-image:url("/mobile/images/customer/faq-tab-01.png");}
 			.menu1.on{background-image:url("/mobile/images/customer/faq-tab-01_on.png");}
 			.menu2{background-image:url("/mobile/images/customer/faq-tab-02.png");}
@@ -1760,7 +1768,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 				li{
 					p{display:table; margin:1px 0; font-size:1.4em;
 						span{display:table-cell;}
-						.icon{width:auto; @include circleIcon;
+						.icon{width:auto; @include circleIcon2;
 							img{width:3px;}
 						}
 					}
@@ -1770,7 +1778,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	}
 }
 .detail-content.chosun{
-	.character_date_box{padding:15px 0 15px; border-top:1px solid #bdb5a0; border-bottom:1px solid #bdb5a0;
+	.character_date_box{padding:15px 0 15px; border-top:1px solid #bdb5a0; border-bottom:1px solid #bdb5a0; font-size:1.1em;
 		.date_text{display:table; width:100%; padding-bottom:5px; font-size:1.4em;
 			.text{display:table-cell; width:90%;}
 		}
@@ -1786,7 +1794,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.pre-infor-tab2{
 		.content{padding:15px 0;
 			ul{
-				li{display:table; width:100%; margin-top:8px; @include list;
+				li{display:table; width:100%; margin-top:8px; @include list03;
 				}
 			}
 		}
@@ -1818,14 +1826,14 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 
 .detail-content.attraction{
 	.model_guide{
-		.service_model{padding:15px 0; border-top:1px solid $mainColor; border-bottom:1px solid $mainColor;
+		.service_model{padding:15px 0; border-top:1px solid $mainColor; border-bottom:1px solid $mainColor; font-size:1.1em;
 			h4{margin-bottom:5px; font-size:1.6em;}
 			.text{font-size:1.2em; color:$orangeColor;}
 		}
 		.guide{
 			h4{margin:15px 0 10px; font-size:1.6em;}
 			ul{
-				li{margin-top:5px; @include list;}
+				li{margin-top:5px; @include list03;}
 			}
 		}
 	}
@@ -1859,10 +1867,10 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	border-left:1px solid #bdb5a0 !important; margin: -2px!important;
 }
 
-.topNav-slide{width:87%; margin:0 auto; height:26px; padding:11px 0 0; font-size:1.2em;
+.topNav-slide{position:relative; width:87%; margin:0 auto; padding:9px 0 12px; font-size:1.2em;
 	.slide-list{overflow:hidden; position:relative; height:16px;
 		ul{display:table; position:relative; left:0px; width:150%;
-			li{display:table-cell; text-align:center; width:16.7%; border-left:1px solid #bdb5a0;
+			li{display:table-cell; text-align:center; width:16.7%; height:16px; border-left:1px solid #bdb5a0;
 				&:first-child{border:0;}
 				a{display:block;}
 				a.on{color:$orangeColor;}
@@ -1871,8 +1879,8 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		}
 	}
 	.slide-arrow{border:0; position:absolute; top:47px; width:5px; height:8px; padding:7px; background:url("/mobile/images/common/sprite.png") no-repeat; background-size:300px 500px; text-indent:-9999px; z-index:10;}
-	.slide-arrow.prev-btn{left:10px; background-position: -225px -158px;}
-	.slide-arrow.next-btn{right:10px; background-position: -250px -158px;}
+	.slide-arrow.prev-btn{top:10px; left:-10px; background-position: -225px -158px;}
+	.slide-arrow.next-btn{top:10px; right:-20px; background-position: -250px -158px;}
 }
 
 .wrap.guide .topNav-slide .slide-list li:first-child a{color:$orangeColor;}
@@ -1888,6 +1896,13 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 .wrap.perfo-bboy .topNav-slide .slide-list li:nth-child(4) a{color:$orangeColor;}
 .wrap.perfo-wedding .topNav-slide .slide-list li:nth-child(5) a{color:$orangeColor;}
 .wrap.perfo-chosun .topNav-slide .slide-list li:nth-child(6) a{color:$orangeColor;}
+
+.wrap.qna_list .topNav-slide .slide-list li:first-child a{color:$orangeColor;}
+.wrap.voice_list .topNav-slide .slide-list li:nth-child(2) a{color:$orangeColor;}
+.wrap.coupon_list .topNav-slide .slide-list li:nth-child(3) a{color:$orangeColor;}
+.wrap.member_info_auth .topNav-slide .slide-list li:nth-child(4) a{color:$orangeColor;}
+.wrap.member_pwd_edit .topNav-slide .slide-list li:nth-child(5) a{color:$orangeColor;}
+.wrap.member_leave .topNav-slide .slide-list li:nth-child(6) a{color:$orangeColor;}
 
 #map {width:100%; height:220px;}
 

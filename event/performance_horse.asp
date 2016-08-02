@@ -37,7 +37,7 @@
             <div class="detail-head">
                 <h3>마상무예</h3>
                 <div class="text-box">
-                    <span class="text">말 위에서 되살아나는 선조들의 무예 </span>
+                    <span class="text">말 위에서 되살아나는<br/> 선조들의 무예 </span>
                 </div>
             </div>
             <div class="detail-content">

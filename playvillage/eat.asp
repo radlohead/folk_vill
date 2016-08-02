@@ -99,7 +99,7 @@
                 <section class="detail end">
                     <a href="eat/snack.asp" class="img eat_img6"><img src="/mobile/images/play_village/eat/eat_6.jpg" alt="민속주전부리 사진" /></a>
                     <h4>민속주전부리</h4>
-                    <dl>
+                    <dl style="padding-bottom:12px;">
                         <dt class="sub-title_01">위치</dt>
                         <dd class="text_01">상가마을</dd>
                         <dt class="sub-title_02">분류</dt>

@@ -138,7 +138,7 @@ sLastDay	= DateAdd("d", 6, sFirstDay)
                         <img src="/mobile/images/event/chosun_img_04.jpg" alt="" />
                     </div>
 
-                    <div class="preview-slide-wrap">
+                    <div class="preview-slide-wrap" style="margin-top:35px;">
                         <h4>조선캐릭터 미리보기</h4>
                         <div class="preview-slide slider single-item">
                             <div><img src="/mobile/images/event/chosun_slide01.jpg" alt="" /></div>
