@@ -228,7 +228,7 @@
                         </ul>
                     </div>
                     <!-- #tab2 이용안내-->
-                    <div class="tab-content tabMenu2">
+                    <div class="tab-content tabMenu2" style="margin-bottom:15px;">
                         <ul>
 					<%
 					'==========================================================================

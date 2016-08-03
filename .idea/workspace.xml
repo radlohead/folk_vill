@@ -3,26 +3,38 @@
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/fourD/fourD_slide01.jpg" afterPath="$PROJECT_DIR$/images/play_village/fourD/fourD_slide01.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/reset.css" afterPath="$PROJECT_DIR$/common/css/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/inc/script.asp" afterPath="$PROJECT_DIR$/common/inc/script.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/common.js" afterPath="$PROJECT_DIR$/common/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_bboy.asp" afterPath="$PROJECT_DIR$/event/performance_bboy.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/inc/gnb.asp" afterPath="$PROJECT_DIR$/common/inc/gnb.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/jquery.event.drag-1.5.1.min.js" afterPath="$PROJECT_DIR$/common/js/jquery.event.drag-1.5.1.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/jquery.touchFlow.js" afterPath="$PROJECT_DIR$/common/js/jquery.touchFlow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer/faq.asp" afterPath="$PROJECT_DIR$/customer/faq.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_chosun.asp" afterPath="$PROJECT_DIR$/event/performance_chosun.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_horse.asp" afterPath="$PROJECT_DIR$/event/performance_horse.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_wedding.asp" afterPath="$PROJECT_DIR$/event/performance_wedding.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/credit_card.asp" afterPath="$PROJECT_DIR$/information/credit_card.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/convenience.asp" afterPath="$PROJECT_DIR$/information/convenience.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/coupon_list.asp" afterPath="$PROJECT_DIR$/information/coupon_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/coupon_view.asp" afterPath="$PROJECT_DIR$/information/coupon_view.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/guide.asp" afterPath="$PROJECT_DIR$/information/guide.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/membership.asp" afterPath="$PROJECT_DIR$/information/membership.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/traffic.asp" afterPath="$PROJECT_DIR$/information/traffic.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/inc/agreement.html" afterPath="$PROJECT_DIR$/member/inc/agreement.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/inc/ind_infor.html" afterPath="$PROJECT_DIR$/member/inc/ind_infor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_pwd_edit.asp" afterPath="$PROJECT_DIR$/mypage/member_pwd_edit.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/performance_info_2016.asp" afterPath="$PROJECT_DIR$/performance_info_2016.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/online_coupon.asp" afterPath="$PROJECT_DIR$/online_coupon.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction.asp" afterPath="$PROJECT_DIR$/playvillage/attraction.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/bounce_spin.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/bounce_spin.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/bumper_car.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/bumper_car.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/family_costa.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/family_costa.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/fourD.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/fourD.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/mini_viking.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/mini_viking.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/music_express.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/music_express.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/train.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/train.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/twist.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/twist.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/twist_mini.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/twist_mini.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/viking.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/viking.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/wooden_horse.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/wooden_horse.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy.asp" afterPath="$PROJECT_DIR$/playvillage/buy.asp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat.asp" afterPath="$PROJECT_DIR$/playvillage/eat.asp" />
     </list>
     <ignored path="m.iws" />
@@ -47,29 +59,41 @@
       <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7857144">
-              <caret line="669" column="58" selection-start-line="669" selection-start-column="58" selection-end-line="669" selection-end-column="58" />
+            <state vertical-scroll-proportion="-3.797619">
+              <caret line="1790" column="62" selection-start-line="1790" selection-start-column="62" selection-end-line="1790" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="guide.asp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/information/guide.asp">
+      <file leaf-file-name="performance_wedding.asp" pinned="true" current-in-tab="true">
+        <entry file="REMOTE_DEPLOYMENT_FS://&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_wedding.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.821428">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="20" />
-              <folding />
+            <state vertical-scroll-proportion="0.52">
+              <caret line="109" column="60" selection-start-line="109" selection-start-column="60" selection-end-line="109" selection-end-column="60" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#section#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#section#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#2;n#section#0;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#section#1;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#section#1;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#2;n#section#1;n#div#1;n#div#2;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="membership.asp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/information/membership.asp">
+      <file leaf-file-name="guide.asp" pinned="true" current-in-tab="false">
+        <entry file="REMOTE_DEPLOYMENT_FS://&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/guide.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9047619">
-              <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-              <folding />
+            <state vertical-scroll-proportion="-24.646154">
+              <caret line="166" column="64" selection-start-line="166" selection-start-column="64" selection-end-line="166" selection-end-column="64" />
+              <folding>
+                <element signature="n#style#0;n#span#1;n#p#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#p#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#p#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#p#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,21 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../benz_cclass/mobile/common/css/m_design.css" />
-        <option value="$PROJECT_DIR$/../../benz_cclass/mobile/estate.html" />
-        <option value="$PROJECT_DIR$/../../benz_cclass/mobile/amg.html" />
-        <option value="$PROJECT_DIR$/../../benz_cclass/mobile/showroom.html" />
-        <option value="$PROJECT_DIR$/member/join_general_form.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/join_general_form.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/information/guide_test.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/information/guide.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/join_email_general_step1.asp" />
-        <option value="$PROJECT_DIR$/common/css/form.css" />
-        <option value="$PROJECT_DIR$/common/inc/css.asp" />
-        <option value="$PROJECT_DIR$/../../benz_cclass/index-test2.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/find_idpw.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/login.asp" />
-        <option value="$PROJECT_DIR$/common/js/form.js" />
         <option value="$PROJECT_DIR$/common/js/FormValidateCheck.js" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/join_email_general_form.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/mypage/member_info.asp" />
@@ -117,21 +126,15 @@
         <option value="$USER_HOME$/Downloads/jquery.touchFlow-master/index.html" />
         <option value="$USER_HOME$/Downloads/jquery.touchFlow-master/jquery.touchFlow.js" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/performance_info_2016.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/traffic.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/credit_card.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_horse.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_bboy.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_wedding.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_chosun.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/eat.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/inc/agreement.html" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/inc/ind_infor.html" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/js/jquery.touchFlow.js" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/inc/infor_topmenu.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/js/common.js" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/membership.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/guide.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/mypage/inc/mypage_topmenu.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/mypage/member_leave.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/mypage/member_pwd_edit.asp" />
@@ -139,9 +142,30 @@
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/mypage/qna_list.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/mypage/voice_list.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/mypage/coupon_list.asp" />
-        <option value="$PROJECT_DIR$/common/css/index.scss" />
         <option value="$PROJECT_DIR$/common/css/reset.css" />
         <option value="$PROJECT_DIR$/information/membership.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_chosun.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_nongak.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/fourD.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/bounce_spin.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/wooden_horse.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/viking.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/twist_mini.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/twist.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/train.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/music_express.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/mini_viking.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/family_costa.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/bumper_car.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/membership.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/guide.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/traffic.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/convenience.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/inc/gnb.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/customer/faq.asp" />
+        <option value="$PROJECT_DIR$/common/css/index.scss" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_wedding.asp" />
       </list>
     </option>
   </component>
@@ -256,10 +280,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,11 +393,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16257995" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18550107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18763326" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -392,13 +434,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/event/page/chosunPage.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9614995">
-          <caret line="96" column="14" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/information/page/notice_listHead.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19250253">
@@ -690,7 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8394089">
           <caret line="73" column="23" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,23 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4609929">
           <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/css/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7857144">
-          <caret line="669" column="58" selection-start-line="669" selection-start-column="58" selection-end-line="669" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/information/guide.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,6 +770,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9047619">
           <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/information/guide.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="107.92857">
+          <caret line="25" column="20" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/css/media.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/css/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.797619">
+          <caret line="1790" column="62" selection-start-line="1790" selection-start-column="62" selection-end-line="1790" selection-end-column="62" />
           <folding />
         </state>
       </provider>

@@ -165,34 +165,34 @@ function project(latLng) {
                             </tbody>
                         </table>
                         <ul class="bus-time-list">
-                            <li>
+                            <li class="join-method-p">
                                 <p>
                                     <span class="icon02"></span>
-                                    <span>이용요금 무료</span>
+                                    <span style="line-height:1.3em;">이용요금 무료</span>
                                 </p>
                             </li>
-                            <li>
+                            <li class="join-method-p">
                                 <p>
                                     <span class="icon02"></span>
-                                    <span>수원역 4번 출구 민속촌 셔틀버스 승강장, 상갈역 2번 출구에서 승하차</span>
+                                    <span style="line-height:1.3em;">수원역 4번 출구 민속촌 셔틀버스 승강장, 상갈역 2번 출구에서 승하차</span>
                                 </p>
                             </li>
-                            <li>
+                            <li class="join-method-p">
                                  <p>
                                      <span class="icon02"></span>
-                                     <span>선착순 탑승, 단체관람객 제한 가능</span>
+                                     <span style="line-height:1.3em;">선착순 탑승, 단체관람객 제한 가능</span>
                                  </p>
                             </li>
-                            <li>
+                            <li class="join-method-p">
                                  <p>
                                      <span class="icon02"></span>
-                                     <span>문의 : 031-288-0000</span>
+                                     <span style="line-height:1.3em;">문의 : 031-288-0000</span>
                                  </p>
                             </li>
-                            <li>
+                            <li class="join-method-p">
                                  <p>
                                      <span class="icon02"></span>
-                                     <span>동절기 셔틀버스2 노선 마지막 회차 운휴</span>
+                                     <span style="line-height:1.3em;">동절기 셔틀버스2 노선 마지막 회차 운휴</span>
                                  </p>
                             </li>
                         </ul>
@@ -200,8 +200,8 @@ function project(latLng) {
                         <table class="bus-use">
                             <caption>한국 민속촌 버스 이용에 대한 안내</caption>
                             <colgroup>
-                                <col width="31.8%">
-                                <col width="68.2%">
+                                <col width="24.2%">
+                                <col width="75.8%">
                             </colgroup>
                             <tr>
                                 <td>
@@ -214,13 +214,13 @@ function project(latLng) {
                                         <ul>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>위치 : 인천공항</span>
                                                 </p>
                                             </li>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>노선 : 인천공항<span class="tri_icon"></span>광교중앙역<span class="tri_icon"></span>한국민속촌 앞</span>
                                                 </p>
                                             </li>
@@ -239,13 +239,13 @@ function project(latLng) {
                                         <ul>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>위치 : 신논현역 6번 출구</span>
                                                 </p>
                                             </li>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>노선 : 신논현역<span class="tri_icon"></span>강남역<span class="tri_icon"></span>신갈<span class="tri_icon"></span>민속촌</span>
                                                 </p>
                                             </li>
@@ -264,13 +264,13 @@ function project(latLng) {
                                         <ul>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>위치 : 강남역 7번 출구</span>
                                                 </p>
                                             </li>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>노선 : 강남역<span class="tri_icon"></span>신갈<span class="tri_icon"></span>민속촌 삼거리(삼성아파트)</span>
                                                 </p>
                                             </li>
@@ -289,13 +289,13 @@ function project(latLng) {
                                         <ul>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>위치 : 종각역 3번 출구</span>
                                                 </p>
                                             </li>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>노선 : 종각역<span class="tri_icon"></span>미금역<span class="tri_icon"></span>민속촌 삼거리(삼성아파트)</span>
                                                 </p>
                                             </li>
@@ -314,13 +314,13 @@ function project(latLng) {
                                         <ul>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>위치 : 수원역 5번출구 50m 전방</span>
                                                 </p>
                                             </li>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>노선 : 수원역앞<span class="tri_icon"></span>신갈오거리<span class="tri_icon"></span>한국민속촌</span>
                                                 </p>
                                             </li>
@@ -339,13 +339,13 @@ function project(latLng) {
                                         <ul>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>위치 : 수원역 5번출구 50m 전방</span>
                                                 </p>
                                             </li>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>노선 : 수원역앞<span class="tri_icon"></span>아주대삼거리<span class="tri_icon"></span>나곡마을</span>
                                                 </p>
                                             </li>
@@ -364,13 +364,13 @@ function project(latLng) {
                                         <ul>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>위치 : 상갈역 3번출구</span>
                                                 </p>
                                             </li>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>노선 : 상갈역<span class="tri_icon"></span>삼정선비마을<span class="tri_icon"></span>민속촌</span>
                                                 </p>
                                             </li>
@@ -389,13 +389,13 @@ function project(latLng) {
                                         <ul>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>위치 : 수원역 5번출구 50m 전방</span>
                                                 </p>
                                             </li>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>노선 : 상갈역<span class="tri_icon"></span>한보라마을입구<span class="tri_icon"></span>나곡마을</span>
                                                 </p>
                                             </li>
@@ -414,13 +414,13 @@ function project(latLng) {
                                         <ul>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>위치 : 죽전역 신세계백화점 앞</span>
                                                 </p>
                                             </li>
                                             <li>
                                                 <p>
-                                                    <span class="icon02"></span>
+                                                    <!--<span class="icon02"></span>-->
                                                     <span>노선 : 죽전역<span class="tri_icon"></span>신갈오거리<span class="tri_icon"></span>나곡마을</span>
                                                 </p>
                                             </li>

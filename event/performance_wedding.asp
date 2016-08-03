@@ -53,9 +53,11 @@
                     <a href="#none" class="map-btn wedding">지도보기</a>
                 </div>
                 <div class="cont_body">
-                    <span class="text03">동절기(12월~2월) 휴연</span>
+                    <span class="text05">
+                        <span class="text2">동절기(12월~2월) 휴연</span>
+                    </span>
                     <p class="text">마을 최고의 재력가만 살 수 있던 99칸 양반가에서 치러지는 전통혼례식은 내외국인 모두에게 사랑받는 인기 공연입니다.</p>
-                    <div class="img_box" style="margin-top:35px;">
+                    <div class="img_box">
                         <img src="/mobile/images/event/wedding_img_01.jpg" alt="" />
                         <em>두 사람이 부부의 예를 올리는 '혼례'(婚禮)</em>
                         <p class="text">혼례는 두 사람이 결합하여 부부가 되었음을 사회적으로 인정하는 의례로, 인간이 태어나서 일생을 통해 거쳐야만 하는 통과 의례 중의 하나입니다.</p>
@@ -75,30 +77,30 @@
                             <p>한국민속촌에서는 최근 우리 전통문화 속 혼례예식을 선호하는 경향이 늘어남에 따라 공연 뿐만 아니라 실제 혼례식을 대행하고 있습니다.</p>
                             <section class="text_wrap">
                                 <h4>일시</h4>
-                                <p>
+                                <p style="line-height:15px;">
                                     <span class="icon"></span>
                                     <span>3월 ~ 11월</span>
                                 </p>
-                                <p>
+                                <p style="line-height:15px;">
                                     <span class="icon"></span>
                                     <span>양반가(기본형) : 12시, 16시</span>
                                 </p>
-                                <p>
+                                <p style="line-height:15px;">
                                     <span class="icon"></span>
                                     <span>서원(고급형) : 11시, 15시</span>
                                 </p>
                             </section>
                             <section class="text_wrap">
                                 <h4>문의</h4>
-                                <p>
+                                <p style="line-height:15px;">
                                     <span class="icon"></span>
                                     <span>판촉팀 양은정 주임</span>
                                 </p>
-                                <p>
+                                <p style="line-height:15px;">
                                     <span class="icon"></span>
                                     <span>전화 : 031-288-1705</span>
                                 </p>
-                                <p>
+                                <p style="line-height:15px;">
                                     <span class="icon"></span>
                                     <span>이메일 : chachaej@ikfv.co.kr</span>
                                 </p>
@@ -118,7 +120,7 @@
 
                 </div>
                 <div class="preview-slide-wrap">
-                    <h4>공연 미리보기</h4>
+                    <h4 style="margin-top:25px;">공연 미리보기</h4>
                     <div class="preview-slide slider single-item">
                         <div><img src="/mobile/images/event/wedding_slide01.jpg" alt="" /></div>
                         <div><img src="/mobile/images/event/wedding_slide02.jpg" alt="" /></div>

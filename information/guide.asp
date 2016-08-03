@@ -82,28 +82,28 @@
                     </tbody>
                 </table>
                 <ul class="attention">
-                    <li>
+                    <li class="join-method-p">
                         <p>
                             <span class="icon"></span>
-                            <span>1년 연중무휴 운영</span>
+                            <span style="line-height:1.3em;">1년 연중무휴 운영</span>
                         </p>
                     </li>
-                    <li>
+                    <li class="join-method-p">
                         <p>
                             <span class="icon"></span>
-                            <span>개장시간 30분 후부터 놀이시설 이용 가능</span>
+                            <span style="line-height:1.3em;">개장시간 30분 후부터 놀이시설 이용 가능</span>
                         </p>
                     </li>
-                    <li>
+                    <li class="join-method-p">
                         <p>
                             <span class="icon"></span>
-                            <span>자전거, 퀵보드, 인라인스케이트, 공 등 놀이용품 입장제한</span>
+                            <span style="line-height:1.3em;">자전거, 퀵보드, 인라인스케이트, 공 등 놀이용품 입장제한</span>
                         </p>
                     </li>
-                    <li>
+                    <li class="join-method-p">
                         <p>
                             <span class="icon"></span>
-                            <span>폐장시간은 계절과 날씨에 따라 유동적으로 운영</span>
+                            <span style="line-height:1.3em;">폐장시간은 계절과 날씨에 따라 유동적으로 운영</span>
                         </p>
                     </li>
                 </ul>
@@ -215,5 +215,17 @@
                      
                             <span>전상군경, 공상군경, 상이군경, 4.19혁명 부상자, 6.18 자유상이자 6.25 참전재일학도의용군인</span>
                         </p>
-                    </section>
-                </d
+                      </section>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+  <!-- 하단푸터 -->
+  <!--#include virtual="/mobile/common/inc/footer.asp" -->
+
+  </div>
+
+  </body>
+  </html>

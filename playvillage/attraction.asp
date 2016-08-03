@@ -51,22 +51,22 @@
                     <div class="guide">
                         <h4>어트랙션 이용안내</h4>
                         <ul>
-                            <li>
+                            <li class="join-method-p">
                                 <p>
                                     <span class="icon"></span>
-                                    <span class="text">기상악화(폭우, 강풍, 기온저하 등), 안전점검, 고장 등에 따라 예고없이 어트랙션 운행이 추가 중단될 수 있습니다.</span>
+                                    <span class="text" style="line-height:1.3em;">기상악화(폭우, 강풍, 기온저하 등), 안전점검, 고장 등에 따라 예고없이 어트랙션 운행이 추가 중단될 수 있습니다.</span>
                                 </p>
                             </li>
-                            <li>
+                            <li class="join-method-p">
                                 <p>
                                     <span class="icon"></span>
-                                    <span class="text">탑승 대기 고객이 많을 경우 조기에 입장이 마감될 수 있습니다.</span>
+                                    <span class="text" style="line-height:1.3em;">탑승 대기 고객이 많을 경우 조기에 입장이 마감될 수 있습니다.</span>
                                 </p>
                             </li>
-                            <li>
+                            <li class="join-method-p">
                                 <p>
                                     <span class="icon"></span>
-                                    <span class="text">어트랙션에 따라 연령 제한이 있을 수 있습니다.</span>
+                                    <span class="text" style="line-height:1.3em;">어트랙션에 따라 연령 제한이 있을 수 있습니다.</span>
                                 </p>
                             </li>
                         </ul>

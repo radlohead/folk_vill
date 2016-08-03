@@ -97,7 +97,7 @@
                     <span class="text">한국민속촌 온라인 회원에게<br> 드리는 특별한 혜택!</span>
                 </div>
             </div>
-            <div class="detail-content promotion-list">
+            <div class="detail-content promotion-list coupon-list">
                 <table>
                     <caption>할인프로모션 리스트</caption>
                     <colgroup>

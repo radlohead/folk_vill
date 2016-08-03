@@ -155,7 +155,8 @@
     </ul>
     <footer>
         <ul class="footer_link2">
-            <li class="infor"><a href="#none">개인정보 취급방침</a> |</li>
+            <li class="infor"><a href="#none">개인정보 취급방침</a>
+            <span class="vbar">|</span>
             <li class="terms"><a href="#none">이용약관</a></li>
         </ul>
         <div class="address-wrap">

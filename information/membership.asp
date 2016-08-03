@@ -70,31 +70,31 @@
                     <h4>가입방법</h4>
                     <h5>현장 방문 가입</h5>
                     <ul>
-                        <li>
+                        <li class="join-method-p">
                             <p>
                                 <span class="icon"></span>
-                                <span>정문 단체상담실에서 가입신청서 작성 후 즉시 가입</span>
+                                <span style="line-height:1.3em;">정문 단체상담실에서 가입신청서 작성 후 즉시 가입</span>
                             </p>
                         </li>
-                        <li>
+                        <li class="join-method-p">
                             <p>
                                 <span class="icon"></span>
-                                <span>가입신청서 사전 작성 방문 시 빠른 처리</span>
+                                <span style="line-height:1.3em;">가입신청서 사전 작성 방문 시 빠른 처리</span>
                             </p>
                         </li>
                     </ul>
                     <h5>이메일 접수</h5>
                     <ul>
-                        <li>
+                        <li class="join-method-p">
                             <p>
                                 <span class="icon"></span>
-                                <span>본인 사진, 가입신청서, 이용약관(자필서명) 제출</span>
+                                <span style="line-height:1.3em;">본인 사진, 가입신청서, 이용약관(자필서명) 제출</span>
                             </p>
                         </li>
-                        <li>
+                        <li class="join-method-p">
                             <p>
                                 <span class="icon"></span>
-                                <span>이메일주소 : kfv4000@ikfv.co.kr</span>
+                                <span style="line-height:1.3em;">이메일주소 : kfv4000@ikfv.co.kr</span>
                             </p>
                         </li>
                     </ul>
@@ -108,55 +108,55 @@
                     <h4>유의사항</h4>
                     <h5>가입 시</h5>
                     <ul>
-                        <li>
+                        <li class="join-method-p">
                             <p>
                                 <span class="icon"></span>
-                                <span>정면을 보고 있는 최근 사진(모자, 선그라스 미착용) 지참</span>
+                                <span style="line-height:1.3em;">정면을 보고 있는 최근 사진(모자, 선그라스 미착용) 지참</span>
                             </p>
                         </li>
-                        <li>
+                        <li class="join-method-p">
                             <p>
                                 <span class="icon"></span>
-                                <span>별도의 사진촬영 없음</span>
+                                <span style="line-height:1.3em;">별도의 사진촬영 없음</span>
                             </p>
                         </li>
-                        <li>
+                        <li class="join-method-p">
                             <p>
                                 <span class="icon"></span>
-                                <span>본인 미방문 시 신분증 사본, 사진 필요</span>
+                                <span style="line-height:1.3em;">본인 미방문 시 신분증 사본, 사진 필요</span>
                             </p>
                         </li>
-                        <li>
+                        <li class="join-method-p">
                             <p>
                                 <span class="icon"></span>
-                                <span>복지카드 소지 대인은 아동 요금 적용</span>
+                                <span style="line-height:1.3em;">복지카드 소지 대인은 아동 요금 적용</span>
                             </p>
                         </li>
                     </ul>
                     <h5>이용 시</h5>
                     <ul>
-                        <li>
+                        <li class="join-method-p">
                             <p>
                                 <span class="icon"></span>
-                                <span>한국민속촌 관람 시 회원권 항시 패용</span>
+                                <span style="line-height:1.3em;">한국민속촌 관람 시 회원권 항시 패용</span>
                             </p>
                         </li>
-                        <li style="padding-top:1px;">
+                        <li class="join-method-p" style="padding-top:1px;">
                             <p>
                                 <span class="icon"></span>
-                                <span>부득이한 휴장 시 이용 제한</span>
+                                <span style="line-height:1.3em;">부득이한 휴장 시 이용 제한</span>
                             </p>
                         </li>
-                        <li>
+                        <li class="join-method-p">
                             <p>
                                 <span class="icon"></span>
-                                <span>미술관, 전시관은 운영 사정상 휴관 가능</span>
+                                <span style="line-height:1.3em;">미술관, 전시관은 운영 사정상 휴관 가능</span>
                             </p>
                         </li>
-                        <li>
+                        <li class="join-method-p">
                             <p>
                                 <span class="icon"></span>
-                                <span>회원권 분실 및 미지참시 재발급 수수료 3,000원 부담</span>
+                                <span style="line-height:1.3em;">회원권 분실 및 미지참시 재발급 수수료 3,000원 부담</span>
                             </p>
                         </li>
                     </ul>
