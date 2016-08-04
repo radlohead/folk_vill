@@ -570,6 +570,104 @@ $(document).ready(function(){
 		document.cookie = $(".topNav-slide .slide-list ul").css("left");
 	});
 
+	//topNavi 터치이벤트
+	$(document).ready(function(){
+		var topMenuTouch = new TopMenuTouch(".topNav-slide .slide-list");
+
+//            var delta = 300;
+//            var timer = null;
+//
+//            $( window ).on( 'resize', function( ) {
+//                clearTimeout( timer );
+//                timer = setTimeout( resizeDone, delta );
+//            } );
+//
+//            function resizeDone( ) {
+//                topMenuTouch.init(".topNav-slide .slide-list");
+//                topMenuTouch.initEvent();
+//            }
+//
+//            window.addEventListener( 'resize', function( ) {
+//                clearTimeout( timer );
+//                timer = setTimeout( resizeDone, delta );
+//            }, false );
+	});
+
+	function TopMenuTouch(selector){
+		this.$item = null;
+		this.$itemW = null;
+		this.$item_liW = null;
+		this.$item_left = null;
+		this.startX = null;
+		this.moveX = null;
+
+		this.init(selector);
+		this.touchEvent();
+	}
+	TopMenuTouch.prototype.init = function(selector){
+		this.$item = $(selector).find("ul");
+		this.$itemW = this.$item.outerWidth();
+		this.$item_liW = parseInt($(selector).find("li").outerWidth());
+		this.$item_left = this.$item.css("left");
+//            this.$item_toW = this.$itemW - (this.$itemW / 6) * 4;
+//            console.log(this.$itemW, this.$item_liW)
+	};
+//	TopMenuTouch.prototype.initEvent = function(){
+//		this.$item.css("left", -this.$item_liW )
+//		console.log(this.$item_left);
+//	};
+	TopMenuTouch.prototype.touchEvent = function(){
+		var objThis = this;
+
+		this.$item.on("touchstart", function(e){
+			objThis.startX = e.originalEvent.touches[0].pageX;
+		});
+		this.$item.on("touchmove", function(e){
+			objThis.moveX = e.originalEvent.touches[0].pageX;
+
+//                if(objThis.startX > objThis.moveX){
+//                    objThis.$item.animate({
+////                        left : (100 >= Math.abs(parseInt(objThis.$item.css("left")))) ?  "-=" + 10 : -objThis.$item_liW * 2
+//                    }, 10);
+//                    console.log("111")
+//                }
+//                else{
+//                    objThis.$item.animate({
+//                        left : 0
+//                    }, 10);
+//                    console.log("22")
+//                }
+//                console.log(objThis.startX, objThis.moveX)
+		});
+		this.$item.on("touchend", function(e){
+			if(Math.abs(objThis.startX) - Math.abs(objThis.moveX) > 50){
+				console.log(objThis.startX, objThis.moveX)
+			}
+
+			if(objThis.moveX !== null){
+				if(objThis.startX > objThis.moveX){
+					if(objThis.$item.css("left") === 0 + "px"){
+						objThis.$item.animate({
+							left : "-=" + objThis.$item_liW * 2
+						}, 300);
+						console.log(objThis.startX, objThis.moveX)
+					}else if(objThis.$item.css("left") >= -objThis.$item_liW + "px"){
+						objThis.$item.animate({
+							left : "-=" + objThis.$item_liW
+						}, 300);
+					}
+					//                    console.log(objThis.$item.css("left"), objThis.$item_liW)
+				}else{
+					if(parseInt(objThis.$item.css("left")) < 0){
+						objThis.$item.animate({
+							left : 0
+						}, 300);
+					}
+				}
+			}
+		});
+	};
+
 
 	//pc,모바일 구분
 	//(function(){

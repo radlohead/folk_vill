@@ -331,18 +331,18 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 
 .detail-show{
 	.detail-head{overflow: hidden; margin-bottom:30px;
-		h3{float:left; width:50%; font-size:2.4em; color:#333; font-weight:bold; line-height: 27px;}
+		h3{float:left; width:50%; font-size:2.4em; color:#333; font-weight:bold; line-height:29px;}
 		.text{display:block; font-size:1.2em;}
 		.text2{display:block; font-size:1.4em;}
-		.text-box{float:right; width:50%; color:#000; letter-spacing:-0.05em;
-			.text{display:block; font-size:1.4em;}
+		.text-box{float:right; width:50%; color:#000;
+			.text{display:block; font-size:1.4em; line-height:19px;}
 		}
 	}
 }
 .detail-guide{
 	.detail-head{overflow: hidden; margin-bottom:15px;
-		h3{float:left; width:42%; font-size:2.4em; color:#333; font-weight:bold;}
-		.text-box{float:right; width:56.2%; color:#000; letter-spacing:-0.05em;
+		h3{float:left; width:42%; font-size:2.4em; color:#333; font-weight:bold; line-height:29px;}
+		.text-box{float:right; width:56.2%; color:#000;
 			.text{display:block; font-size:1.4em;
 				&::before{content:""; display:block; float:left; width:15px; height:15px; margin-top:1px; margin-right:8px; background:url("/mobile/images/common/sprite.png") no-repeat -158px -208px; background-size:300px 500px;}
 			}
@@ -357,10 +357,10 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.mb-10{margin-bottom:10px;}
 }
 .detail-member{
-	 .detail-head{overflow: hidden; margin-bottom:20px;
-		 h3{float:left; width:50%; font-size:2.4em; color:#333; font-weight:bold;}
+	 .detail-head{overflow: hidden; margin-bottom:30px;
+		 h3{float:left; width:50%; font-size:2.4em; color:#333; font-weight:bold; line-height:29px;}
 		 .text-box{float:right; width:50%; color:#000;
-			 .text{display:block; line-height:1.5em; font-size:1.4em;}
+			 .text{display:block; line-height:19px; font-size:1.4em;}
 			 .guide-time{display:block; margin-top:11px; margin-left:23px; font-size:65%; color:#f08200;
 				 .text{display:block;}
 				 .time{color:#666;}
@@ -1045,7 +1045,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.explain_text{display:block; margin:26px 0 30px; font-size:1.4em; line-height: 20px;}
 	.attr-slide{width:100%; padding-bottom:20px;
 		.swiper-slide{
-			img{width:100%;}
+			img{width:100%; height:auto;}
 		}
 		.swiper-pagination{
 			&:after{background:none;}

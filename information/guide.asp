@@ -8,15 +8,16 @@
 <!--#include virtual="/mobile/common/inc/css.asp" -->
 <!--#include virtual="/mobile/common/inc/script.asp" -->
 <script>
-//    $(document).ready(function(){
-//        $(".slide-list").touchFlow({
-//            axis : "x",
-//            snap : true
+
+
+//        $(".slide-list ul").on("touchstart", function(e){
+//             	e.preventDefault();
+//             	console.log(e.originalEvent.touches[0].screenX);
 //        });
-////            var moveData = 0;
-////			var css = $("#touchFlow ul").css("transform","translate3d(" + moveData + "px,0,0)");
-////			console.log(css);
-//    });
+//       $(".slide-list ul").on("touchmove", function(e){
+//             	e.preventDefault();
+//             	console.log(e.originalEvent.touches[0].screenX);
+//        });
 </script>
 </head>
 <body>
@@ -41,7 +42,7 @@
             <div class="detail-head">
                 <h3>운영시간</h3>
                 <div class="text-box">
-                    <span class="text">5월~9월 한국민속촌 이용시간</span>
+                    <span class="text" style="font-size:1.3em; line-height:18px;">5월~9월 한국민속촌 이용시간</span>
                     <span class="guide-time">
                         평일 <span class="time">09:30~18:30</span><br />
                         주말 <span class="time">09:30~19:00</span>
