@@ -103,7 +103,7 @@
                             </section>
                             <section>
                                 <img src="/mobile/images/information/map/folk_vill_img03.jpg" alt="정기공연장" />
-                                <h4>정기공연장</h4>
+                                <h4>공연장</h4>
                                 <p>한국민속촌에서는 시원한 야외공연장에서 매일 농악놀이, 마상무예, 국악비보이 공연이 펼쳐집니다.</p>
                             </section>
                             <section>

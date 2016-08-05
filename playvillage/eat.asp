@@ -40,7 +40,7 @@
             <div class="detail-head">
                 <h3>먹거리</h3>
                 <div class="text-box">
-                    <span class="text">
+                    <span class="text" style="letter-spacing:-0.05em;">
                         정성이 가득 담긴 토속음식과 <br>테라스에서 즐기는 글로벌푸드
                     </span>
                 </div>

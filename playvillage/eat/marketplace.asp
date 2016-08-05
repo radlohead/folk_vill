@@ -52,12 +52,12 @@
                 <h4>메뉴소개</h4>
                 <section class="section">
                     <div class="img_wrap left">
-                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_01.jpg" alt="불고기비빔밥" />
-                        <h5>불고기 비빔밥</h5>
+                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_01.jpg" alt="잔치국수" />
+                        <h5>잔치국수</h5>
                     </div>
                     <div class="img_wrap right">
-                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_02.jpg" alt="해물파전" />
-                        <h5>해물파전</h5>
+                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_02.jpg" alt="손만두국" />
+                        <h5>손만두국</h5>
                     </div>
                 </section>
                 <section class="section">
@@ -66,18 +66,28 @@
                         <h5>꼬치구이</h5>
                     </div>
                     <div class="img_wrap right">
-                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_04.jpg" alt="생막걸리/동동주" />
-                        <h5>생막걸리/동동주</h5>
+                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_04.jpg" alt="잡채밥" />
+                        <h5>잡채밥</h5>
                     </div>
                 </section>
                 <section class="section">
                     <div class="img_wrap left">
-                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_05.jpg" alt="전통순대" />
+                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_05.jpg" alt="손수제비" />
+                        <h5>손수제비</h5>
+                    </div>
+                    <div class="img_wrap right">
+                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_06.jpg" alt="순두부찌개" />
+                        <h5>순두부찌개</h5>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="img_wrap left">
+                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_07.jpg" alt="전통순대" />
                         <h5>전통순대</h5>
                     </div>
                     <div class="img_wrap right">
-                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_06.jpg" alt="옛날 인절미" />
-                        <h5>옛날 인절미</h5>
+                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_08.jpg" alt="생막걸리" />
+                        <h5>생막걸리</h5>
                     </div>
                 </section>
             </div>

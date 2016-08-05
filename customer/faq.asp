@@ -544,7 +544,7 @@
                     찾으시는 질문이 없으신 경우 1:1 상담문의로<br/>
                     궁금하신 점을 올려 주세요.<br/>
                     고객여러분의 질문과 의견에 항상 귀를 기울이겠습니다.
-                    <a href="/mobile/customer/qna_form.asp">1:1 상담문의</a>
+                    <a href="/mobile/customer/qna_form.asp"><img src="/mobile/images/customer/request_btn.png" alt="1:1 상담문의" /></a>
                 </div>
                 <section class="tel_inquiry">
                     <span class="icon"></span>

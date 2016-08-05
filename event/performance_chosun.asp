@@ -74,7 +74,7 @@ sLastDay	= DateAdd("d", 6, sFirstDay)
                 </div>
                 <div class="cont_body">
                     <span class="text03">
-                        <span class="text2">운영계획은 주간 단위로 업데이트 되며, 캐릭터 개인사정 및 현장상황에 따라 예고없이 변경될 수 있습니다.</span>
+                        <span class="text2">운영계획은 주간 단위로 업데이트 되며, 행사 상황 및 캐릭터 개인사정에 의하여 예고없이 변경될 수 있습니다.</span>
                     </span>
 
                     <div class="pre-infor-tab pre-infor-tab2">

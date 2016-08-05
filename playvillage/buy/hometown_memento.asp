@@ -45,7 +45,7 @@
                     <a href="#none" class="map-btn map-btn_3">지도보기</a>
                     <img src="/mobile/images/play_village/buy/hometown_memento_titleImg.jpg" alt="고향기념품매장 사진" />
                 </span>
-                <span class="text01">교향기념품매장은 기념 엽서 및 각종 상품을 전시 판매하고 있습니다.</span>
+                <span class="text01">공원교 입구에 위치한 고향기념품매장은 다양한 전통상품 외에도 아이들이 좋아하는 장난감과 액세서리를 판매하고 있습니다.</span>
             </div>
         </div>
     </div>

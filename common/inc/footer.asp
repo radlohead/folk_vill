@@ -3,7 +3,7 @@
         <li class="facebook"><a href="https://www.facebook.com/koreanfolkvillage">페이스북 링크</a></li>
         <li class="twitter"><a href="https://twitter.com/koreanfolk">트위터 링크</a></li>
         <li class="blog"><a href="http://blog.naver.com/kfv1974">한국민속촌 블로그 링크</a></li>
-        <li class="kakaostory"><a href="#none">카카오스토리 링크</a></li>
+        <li class="kakaostory"><a href="https://story.kakao.com/ch/koreanfolk">카카오스토리 링크</a></li>
     </ul>
     <ul class="footer_link">
         <li class="pc"><a href="http://www.koreanfolk.co.kr/">PC버전</a></li>

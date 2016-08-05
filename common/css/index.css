@@ -1185,7 +1185,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .content.customer .main-tab.faq-tab .tab-content .hidden_box .text { display: table-cell; vertical-align: top; text-align: left; width: 72%; }
 .content.customer .main-tab.faq-tab .tab-content .hidden_box .blank { display: table-cell; width: 14%; }
 .content.customer .oto_consult { text-align: center; font-size: 1.2em; }
-.content.customer .oto_consult a { display: inline-block; margin-top: 15px; padding-bottom: 3px; border-bottom: 1px solid #bdb5a0; font-size: 1.5em; }
+.content.customer .oto_consult a { display: inline-block; width: 143px; margin-top: 15px; padding-bottom: 3px; border-bottom: 1px solid #bdb5a0; font-size: 1.5em; }
 .content.customer .tel_inquiry { display: table; width: 100%; margin-top: 35px; padding: 15px 0; border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
 .content.customer .tel_inquiry .icon { display: table-cell; width: 25%; background: url("/mobile/images/customer/tel_inquiry_icon.png") center no-repeat; background-size: 56px 56px; }
 .content.customer .tel_inquiry .text_box { display: table-cell; width: 75%; }
@@ -1212,8 +1212,8 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-content.chosun .pre-infor-tab2 .content ul li p .icon img { width: 3px; }
 .detail-content.chosun .img_box { margin-top: 20px; }
 
-.detail-content.privacy { padding: 20px 12px; border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
-.detail-content.privacy p { font-size: 1.2em; }
+.detail-content.privacy { padding: 20px 0; border-top: 1px solid #f08200; border-bottom: 1px solid #bdb5a0; }
+.detail-content.privacy p { line-height: 18px; font-size: 1.2em; }
 .detail-content.privacy .section h4 { margin: 30px 0 15px; font-size: 1.6em; font-weight: bold; }
 .detail-content.privacy .section .article_text_box { margin-top: 15px; }
 .detail-content.privacy .section .article_text_box:first-child { margin-top: 0; }

@@ -1778,7 +1778,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		}
 	}
 	.oto_consult{text-align:center; font-size:1.2em;
-		a{display:inline-block; margin-top:15px; padding-bottom:3px; border-bottom:1px solid #bdb5a0; font-size:1.5em;}
+		a{display:inline-block; width:143px; margin-top:15px; padding-bottom:3px; border-bottom:1px solid #bdb5a0; font-size:1.5em;}
 	}
 	.tel_inquiry{display:table; width:100%; margin-top:35px; padding:15px 0; border-top:1px solid #f08200; border-bottom:1px solid #bdb5a0;
 		.icon{display:table-cell; width:25%; background:url("/mobile/images/customer/tel_inquiry_icon.png") center no-repeat; background-size:56px 56px;}
@@ -1822,8 +1822,8 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 	.img_box{margin-top:20px;}
 }
 
-.detail-content.privacy{padding:20px 12px; border-top:1px solid #f08200; border-bottom:1px solid #bdb5a0;
-	p{font-size:1.2em;}
+.detail-content.privacy{padding:20px 0; border-top:1px solid #f08200; border-bottom:1px solid #bdb5a0;
+	p{line-height:18px; font-size:1.2em;}
 	.section{
 		h4{margin:30px 0 15px; font-size:1.6em; font-weight:bold;}
 		.article_text_box{margin-top:15px;

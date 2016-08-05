@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/js/jquery.touchSlider.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/map/folk_vill_map.png" afterPath="$PROJECT_DIR$/images/information/map/folk_vill_map.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/map/shop_vill_img02.jpg" afterPath="$PROJECT_DIR$/images/information/map/shop_vill_img02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/eat_4.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/eat_4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_01.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_02.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_03.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_04.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_05.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_05.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_06.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_06.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/reset.css" afterPath="$PROJECT_DIR$/common/css/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/common.js" afterPath="$PROJECT_DIR$/common/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/guide.asp" afterPath="$PROJECT_DIR$/information/guide.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/inc/footer.asp" afterPath="$PROJECT_DIR$/common/inc/footer.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer/faq.asp" afterPath="$PROJECT_DIR$/customer/faq.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_chosun.asp" afterPath="$PROJECT_DIR$/event/performance_chosun.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/map.asp" afterPath="$PROJECT_DIR$/information/map.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy/ghost.asp" afterPath="$PROJECT_DIR$/playvillage/buy/ghost.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy/hometown_memento.asp" afterPath="$PROJECT_DIR$/playvillage/buy/hometown_memento.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy/memento.asp" afterPath="$PROJECT_DIR$/playvillage/buy/memento.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat.asp" afterPath="$PROJECT_DIR$/playvillage/eat.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/marketplace.asp" afterPath="$PROJECT_DIR$/playvillage/eat/marketplace.asp" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +48,8 @@
       <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09906152">
-              <caret line="375" column="54" selection-start-line="375" selection-start-column="54" selection-end-line="375" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.015641293">
+              <caret line="1764" column="36" selection-start-line="1764" selection-start-column="36" selection-end-line="1764" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -58,15 +72,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/mypage/member_info.asp" />
-        <option value="$PROJECT_DIR$/common/js/jquery.touchFlow.js" />
-        <option value="$USER_HOME$/Downloads/jquery.touchFlow-master/index.html" />
-        <option value="$USER_HOME$/Downloads/jquery.touchFlow-master/jquery.touchFlow.js" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/performance_info_2016.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/credit_card.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_horse.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_bboy.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/eat.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/inc/agreement.html" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/inc/ind_infor.html" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/js/jquery.touchFlow.js" />
@@ -80,7 +87,6 @@
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/mypage/coupon_list.asp" />
         <option value="$PROJECT_DIR$/common/css/reset.css" />
         <option value="$PROJECT_DIR$/information/membership.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_chosun.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_nongak.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/fourD.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/bounce_spin.asp" />
@@ -98,17 +104,25 @@
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/convenience.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/inc/gnb.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/customer/faq.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_wedding.asp" />
         <option value="$USER_HOME$/Downloads/jquery.touchSlider-master/index.html" />
         <option value="$USER_HOME$/Downloads/jquery.touchSlider-master/jquery.touchSlider.js" />
         <option value="$PROJECT_DIR$/common/inc/script.asp" />
         <option value="$PROJECT_DIR$/information/inc/infor_topmenu.asp" />
         <option value="$PROJECT_DIR$/information/guide.asp" />
-        <option value="$PROJECT_DIR$/common/css/index.scss" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/guide.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/js/common.js" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/css/reset.css" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/eat.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/inc/footer.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_chosun.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/buy/memento.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/buy/hometown_memento.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/buy/ghost.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/map.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/eat/marketplace.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/customer/faq.asp" />
+        <option value="$PROJECT_DIR$/common/css/index.scss" />
       </list>
     </option>
   </component>
@@ -173,7 +187,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -277,6 +290,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,7 +387,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16791044" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19402985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19829424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -708,9 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="410" column="17" selection-start-line="410" selection-start-column="17" selection-end-line="410" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -718,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,7 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,7 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07700101">
           <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,9 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2320162">
           <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-          <folding>
-            <marker date="1470282860463" expanded="true" signature="453:555" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,7 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6817734">
           <caret line="515" column="10" selection-start-line="515" selection-start-column="10" selection-end-line="515" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,14 +771,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4413793">
           <caret line="506" column="9" selection-start-line="506" selection-start-column="9" selection-end-line="506" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09906152">
-          <caret line="375" column="54" selection-start-line="375" selection-start-column="54" selection-end-line="375" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.015641293">
+          <caret line="1764" column="36" selection-start-line="1764" selection-start-column="36" selection-end-line="1764" selection-end-column="36" />
           <folding />
         </state>
       </provider>
