@@ -33,12 +33,12 @@ $(document).ready(function(){
             $(this).siblings(".email_02").val(select_name);
         });
 
-        var select_email2 = $("select#email3");
-        select_email2.change(function(){
-            var select_name2 = $(this).find("option:selected").text();
-            $(this).is("option:first-child").text(select_name2);
-            console.log(select_name2)
-        });
+        //var select_email2 = $("select#email3");
+        //select_email2.change(function(){
+        //    var select_name2 = $(this).find("option:selected").text();
+        //    $(this).is("option:first-child").text(select_name2);
+        //    console.log(select_name2)
+        //});
     }
     select_box();
 

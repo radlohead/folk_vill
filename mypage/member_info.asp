@@ -237,7 +237,7 @@
 	//-->
 	</script>
 </head>
-<body>
+<body class="member_info">
 <!-- 메뉴 -->
 <!--#include virtual="/mobile/common/inc/gnb.asp" -->
 
@@ -503,12 +503,12 @@
                     <th rowspan="2"><label for="email_01">이메일</label></th>
                     <td class="bd0">
                         <div class="pdt5 bd0">
-                            <input type="text" id="email1" name="email1" class="email_01" placeholder="이메일 아이디" />
+                            <input type="text" id="email1" name="email1" class="email_01" />
                             <span class="text_at">@</span>
-                            <input type="text" id="email2" name="email2" class="email_02 hidden" placeholder="이메일 주소" />
+                            <input type="text" id="email2" name="email2" class="email_02" />
                             <div class="email-select">
                                 <select id="email3" name="email3" class="email_03" onchange="changeEmailDomain(this);">
-                                    <option value="직접입력">직접입력</option>
+                                    <option value="">직접입력</option>
                                     <option value="dreanwiz.com">dreanwiz.com</option>
                                     <option value="empal.com">empal.com</option>
                                     <option value="freechal.com">freechal.com</option>

@@ -160,10 +160,10 @@ function goEmailCheck() {
 function changeEmailDomain(obj) {
 	var frm = document.frm;
 	if (obj.value == "") {
-		frm.email2.readOnly = false;
-		frm.email2.value = "직접입력";
+		//frm.email2.readOnly = false;
+		frm.email2.value = "";
 	} else {
-		frm.email2.readOnly = true;
+		//frm.email2.readOnly = true;
 		frm.email2.value = obj.value;
 	}
 	/*

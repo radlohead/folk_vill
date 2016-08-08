@@ -2,12 +2,19 @@
 //  body{font-size:12px;}
 //}
 
+//568px
+@media all and (min-width:568px){
+    .detail-login{
+        input.email_02{width:27%;}
+    }
+}
+
 //640px
-//@media all and (min-width:640px){
-//  .header_wrap{
-//    header{padding:30px 3.5% 20px;}
-//  }
-//}
+@media all and (min-width:640px){
+    .detail-login{
+        input.email_02{width:28%;}
+    }
+}
 
 //768px tablet
 //@media all and (min-width:768px){

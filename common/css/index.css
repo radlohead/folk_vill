@@ -838,10 +838,11 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-content.daily .group_program_img .imgLeft { float: left; }
 .detail-content.daily .group_program_img .imgRight { float: right; }
 
-.detail-login input[type="text"] { width: 100%; padding: 6px 2.8%; border: 1px solid #bdb5a0; box-sizing: border-box; font-size: 1.4em; }
+.detail-login input[type="text"] { width: 100%; padding: 6px 1%; border: 1px solid #bdb5a0; box-sizing: border-box; font-size: 1.4em; }
 .detail-login input[type="password"] { width: 100%; padding: 6px 0; border: 1px solid #bdb5a0; font-size: 1.4em; }
 .detail-login input.login_id { background: url("/mobile/images/member/id_bg.png") no-repeat center right; background-size: 26px 16px; }
 .detail-login input.login_pw { margin-top: 35px; background: url("/mobile/images/member/pw_bg.png") no-repeat center right; background-size: 25px 19px; }
+.detail-login input.email_02 { position: absolute; width: 25%; }
 .detail-login .check_box_wrap { margin-top: 20px; }
 .detail-login .check_box_wrap:after { display: block; content: ""; clear: both; }
 .detail-login .check_box_wrap input[type="checkbox"] { display: none; }
@@ -1345,6 +1346,10 @@ input[type="radio"] { float: left; }
 .find_idpw_form .phone-select, .find_idpw_form .select_box, .find_idpw_form .email-select { height: 30px; box-sizing: border-box; }
 
 .login .password { margin-top: 5px; }
+
+.member_info input.name { border: 0; }
+.member_info input.id { border: 0; }
+.member_info label[for="tel"]:after { content: ""; }
 
 input[type="radio"] { height: auto; }
 
