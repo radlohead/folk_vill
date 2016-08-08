@@ -39,6 +39,17 @@ $(document).ready(function(){
         //    $(this).is("option:first-child").text(select_name2);
         //    console.log(select_name2)
         //});
+
+        var select_email = $("select#email3");
+        select_email.change(function(){
+            var select_name = $(this).children("option:selected").val();
+
+            if(select_name === ""){
+                $(".email_02").val("")
+            }
+
+
+        });
     }
     select_box();
 

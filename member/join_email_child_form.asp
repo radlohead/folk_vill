@@ -398,12 +398,12 @@ End If
                     <td class="pdt5 bd0">
                         <input type="text" id="email1" name="email1" class="email_01" />
                         <span class="whelk">@</span>
-                        <input type="text" id="email2" name="email2" class="email_02 hidden" />
+                        <input type="text" id="email2" name="email2" class="email_02" />
                         <!--이메일 인증시 이메일은 미리입력됨 아래 input참조-->
                         <!--<input type="text" id="email_02" class="email_02" name="email_02" value="naver.com" />-->
                         <div class="email-select">
                             <select id="email3" name="email3" onchange="changeEmailDomain(this);">
-                                <option value="직접입력">직접입력</option>
+                                <option value="">직접입력</option>
                                 <option value="dreanwiz.com">dreanwiz.com</option>
                                 <option value="empal.com">empal.com</option>
                                 <option value="freechal.com">freechal.com</option>
