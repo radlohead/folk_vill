@@ -3,28 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/map/folk_vill_map.png" afterPath="$PROJECT_DIR$/images/information/map/folk_vill_map.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/map/shop_vill_img02.jpg" afterPath="$PROJECT_DIR$/images/information/map/shop_vill_img02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/eat_4.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/eat_4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_01.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_02.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_03.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_04.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_04.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_05.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_05.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_06.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_06.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/inc/footer.asp" afterPath="$PROJECT_DIR$/common/inc/footer.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer/faq.asp" afterPath="$PROJECT_DIR$/customer/faq.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_chosun.asp" afterPath="$PROJECT_DIR$/event/performance_chosun.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/map.asp" afterPath="$PROJECT_DIR$/information/map.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy/ghost.asp" afterPath="$PROJECT_DIR$/playvillage/buy/ghost.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy/hometown_memento.asp" afterPath="$PROJECT_DIR$/playvillage/buy/hometown_memento.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy/memento.asp" afterPath="$PROJECT_DIR$/playvillage/buy/memento.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat.asp" afterPath="$PROJECT_DIR$/playvillage/eat.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/marketplace.asp" afterPath="$PROJECT_DIR$/playvillage/eat/marketplace.asp" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +30,8 @@
       <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.015641293">
-              <caret line="1764" column="36" selection-start-line="1764" selection-start-column="36" selection-end-line="1764" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.41188738">
+              <caret line="1782" column="56" selection-start-line="1782" selection-start-column="56" selection-end-line="1782" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -383,27 +365,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16791044" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19829424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1673774" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20255864" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33657587" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="976" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854405" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -776,8 +758,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.015641293">
-          <caret line="1764" column="36" selection-start-line="1764" selection-start-column="36" selection-end-line="1764" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.41188738">
+          <caret line="1782" column="56" selection-start-line="1782" selection-start-column="56" selection-end-line="1782" selection-end-column="56" />
           <folding />
         </state>
       </provider>
