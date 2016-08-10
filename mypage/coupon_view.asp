@@ -65,6 +65,7 @@
 		edate			= Rs("EDATE")		
 		files1			= Rs("FILES1")
 		files2			= Rs("FILES2")
+		files3			= Rs("FILES3")
 		alt1			= Rs("ALT1")
 		alt2			= Rs("ALT2")
 		contents1		= Rs("CONTENTS1")
@@ -185,7 +186,7 @@
                     <span class="text"><%=title%></span>
                 </p>
                 <article>
-                    <span class="coupon"><img src="<%=FileURL%><%=files1%>" alt="<%=alt1%>" /></span>
+                    <span class="coupon"><img src="<%=FileURL%><%=files3%>" alt="<%=alt3%>" /></span>
                     <span class="coupon_bottom_bg"></span>
                     <dl>
                         <dt>이름</dt>

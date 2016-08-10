@@ -912,12 +912,16 @@ function FormEditCheck() {
 		}
 		*/
 	}
-
-	if(!$(':input:radio[name=sms]:checked').val()) {
+	var vsms = $("#btn_sms_agree").css("background-position");
+	//alert("vsms : " + vsms);
+	//-58px 0px
+	if(vsms == "-58px 0px") {
 	//if($(':checkbox[name=sms]:checked').length == 0) {
-		alert("SMS 수신여부를 선택해 주세요.");
+		//alert("SMS 수신여부를 선택해 주세요.");
 		//$(':input:radio[name=mailling]:first-child').focus();
-		return;
+		//return;
+		//수신여부 선택
+		$('input:checkbox[name="sms"]').attr("checked", true);
 	}
 
 	if(!HasContent(form.email1.value)) {
@@ -932,11 +936,15 @@ function FormEditCheck() {
 		return;
 	}
 
-	if(!$(':input:radio[name=mailling]:checked').val()) {
+	var vnews = $("#btn_news_agree").css("background-position");
+	//alert("vnews : " + vnews);
+	if(vnews == "-58px 0px") {
+	//if(!$(':input:radio[name=mailling]:checked').val()) {
 	//if($(':checkbox[name=mailling]:checked').length == 0) {
-		alert("뉴스레터 수신여부를 선택해 주세요.");
+		//alert("뉴스레터 수신여부를 선택해 주세요.");
 		//$(':input:radio[name=mailling]:first-child').focus();
-		return;
+		//return;
+		$('input:checkbox[name="mailling"]').attr("checked", true);
 	}
 
 	//form.jumin2.value = getRandom_num();

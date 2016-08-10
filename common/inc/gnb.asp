@@ -18,27 +18,27 @@
     <ul class="navi">
         <li><a href="#menu01">이용안내</a>
             <ul>
-                <li>
+                <li class="menu01-1">
                     <span class="icon"></span>
                     <a href="/mobile/information/guide.asp">이용시간/요금</a>
                 </li>
-                <li>
+                <li class="menu01-2">
                     <span class="icon"></span>
                     <a href="/mobile/information/membership.asp">연간회원안내</a>
                 </li>
-                <li>
+                <li class="menu01-3">
                     <span class="icon"></span>
                     <a href="/mobile/information/traffic.asp">교통정보</a>
                 </li>
-                <li>
+                <li class="menu01-4">
                     <span class="icon"></span>
                     <a href="/mobile/information/convenience.asp">편의시설</a>
                 </li>
-                <li>
+                <li class="menu01-5">
                     <span class="icon"></span>
                     <a href="/mobile/information/notice_list.asp">공지사항</a>
                 </li>
-                <li>
+                <li class="menu01-6">
                     <span class="icon"></span>
                     <a href="/mobile/information/map.asp">가이드맵</a>
                 </li>
@@ -62,27 +62,27 @@
         </li>
         <li><a href="#menu03">행사·공연</a>
             <ul>
-                <li>
+                <li class="menu03-1">
                     <span class="icon"></span>
                     <a href="/mobile/event/event_now.asp">민속촌NOW</a>
                 </li>
-                <li>
+                <li class="menu03-2">
                     <span class="icon"></span>
                     <a href="/mobile/event/performance_nongak.asp">농악놀이</a>
                 </li>
-                <li>
+                <li class="menu03-3">
                     <span class="icon"></span>
                     <a href="/mobile/event/performance_horse.asp">마상무예</a>
                 </li>
-                <li>
+                <li class="menu03-4">
                     <span class="icon"></span>
                     <a href="/mobile/event/performance_bboy.asp">국악비보이</a>
                 </li>
-                <li>
+                <li class="menu03-5">
                     <span class="icon"></span>
                     <a href="/mobile/event/performance_wedding.asp">전통혼례</a>
                 </li>
-                <li>
+                <li class="menu03-6">
                     <span class="icon"></span>
                     <a href="/mobile/event/performance_chosun.asp">조선캐릭터</a>
                 </li>

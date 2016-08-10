@@ -563,12 +563,28 @@ $(document).ready(function(){
 		})
 	})
 
+
 	//topNavi 메뉴를 클릭시 메뉴left값을 쿠키로 저장하여 다음에 나올 페이지 topNavi값에 left값을 적용
 	$(".topNav-slide .slide-list li").click(function(){
 		var cookie = document.cookie.split(";");
 
 		document.cookie = $(".topNav-slide .slide-list ul").css("left");
+
 	});
+
+	//상단메뉴말고 햄버거메뉴 눌러서 나오는 메뉴 클릭시 위치값 버그 해결을 위한 코드
+	function menuPos(){
+		var liW = $(".slide-list li").outerWidth();
+		var cookie = document.cookie.split(";");
+
+		$(".menu01-1, .menu01-2, .menu01-3, .menu01-4, .menu03-1, .menu03-2, .menu03-3, .menu03-4").on("click", function(){
+			document.cookie = 0 + "px";
+		});
+		$(".menu01-5, .menu01-6, .menu03-5, .menu03-6").on("click", function(){
+			document.cookie = -liW * 2 + "px";
+		});
+	}
+	menuPos();
 
 	//topNavi 터치이벤트
 	$(document).ready(function(){

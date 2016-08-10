@@ -15,8 +15,13 @@
 	'#######################################################
 
 	'Request
-	Dim id : id							= RP(Request("id"))
-	Dim dbemail : dbemail				= RP(Request("dbemail"))
+	Dim gubun		: gubun				= RP(Request("gubun"))		// 14세미만 >> C
+	Dim id			: id				= session("id")
+	Dim dbemail		: dbemail			= RP(Request("dbemail"))
+	Dim name		: name				= RP(Request("name"))
+	Dim gender		: gender			= RP(Request("gender"))
+	Dim cname		: cname				= RP(Request("cname"))
+	Dim csex		: csex				= RP(Request("csex"))
 
 	Dim birthyear : birthyear			= RP(Request("birthyear"))
 	Dim birthmonth : birthmonth			= RP(Request("birthmonth"))
@@ -115,32 +120,32 @@
 	'# 회원정보 수정 HTML FORM값 가져오기 END
 	'#######################################################
 
-	Response.write id & "<br>"
-	Response.write dbemail & "<br>"
-	Response.write birthyear & "<br>"
-	Response.write birthmonth & "<br>"
-	Response.write birthday & "<br>"
-	Response.write birth_umyang & "<br>"
-	Response.write zipcode & "<br>"
-	Response.write address & "<br>"
-	Response.write address_detail & "<br>"
-	Response.write phone1 & "<br>"
-	Response.write phone2 & "<br>"
-	Response.write phone3 & "<br>"
-	Response.write mobile1 & "<br>"
-	Response.write mobile2 & "<br>"
-	Response.write mobile3 & "<br>"
-	Response.write pmobile1 & "<br>"
-	Response.write pmobile2 & "<br>"
-	Response.write pmobile3 & "<br>"
-	Response.write email1 & "<br>"
-	Response.write email2 & "<br>"
-	Response.write email3 & "<br>"
-	Response.write email_sel1 & "<br>"
-	Response.write email & "<br>"
-	Response.write mailling & "<br>"
-	Response.write sms & "<br>"
-	Response.End
+'	Response.write id & "<br>"
+'	Response.write dbemail & "<br>"
+'	Response.write birthyear & "<br>"
+'	Response.write birthmonth & "<br>"
+'	Response.write birthday & "<br>"
+'	Response.write birth_umyang & "<br>"
+'	Response.write zipcode & "<br>"
+'	Response.write address & "<br>"
+'	Response.write address_detail & "<br>"
+'	Response.write phone1 & "<br>"
+'	Response.write phone2 & "<br>"
+'	Response.write phone3 & "<br>"
+'	Response.write mobile1 & "<br>"
+'	Response.write mobile2 & "<br>"
+'	Response.write mobile3 & "<br>"
+'	Response.write pmobile1 & "<br>"
+'	Response.write pmobile2 & "<br>"
+'	Response.write pmobile3 & "<br>"
+'	Response.write email1 & "<br>"
+'	Response.write email2 & "<br>"
+'	Response.write email3 & "<br>"
+'	Response.write email_sel1 & "<br>"
+'	Response.write email & "<br>"
+'	Response.write mailling & "<br>"
+'	Response.write sms & "<br>"
+'	Response.End
 
 	If dbemail <> email Then '이메일을 수정한 경우 중복 체크
 

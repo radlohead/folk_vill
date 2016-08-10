@@ -151,6 +151,45 @@
 		$("#btnPopDaumPostcode").click(function() {
 			jsPopDaumPostcode();
 		});
+
+		$("#btn_solar").click(function() {
+			//alert(11);
+			//alert($("#btn_solar").css("background-position"));
+			$('#btn_solar').css('background-position', '-59px 0px');
+			$('#btn_lunar').css('background-position', '-36px 0px');
+			$('input:radio[name="birth_umyang"][value="1"]').prop('checked', true);
+			//$('input:radio[name=birth_umyang]:input[value="1"]').attr("checked", true);
+			//$('input:radio[name=birth_umyang]:input[value=2]').attr("checked", false);
+			//alert($('input:radio[name=birth_umyang]:checked').val());
+			//form_type_01
+		});
+
+		$("#btn_lunar").click(function() {
+			//alert(22);
+			//$("#btn_lunar").css("background-position");
+			$('#btn_solar').css('background-position', '-36px 0px');
+			$('#btn_lunar').css('background-position', '-59px 0px');
+			$('input:radio[id=form_type_02]').attr("checked", true);
+			$('input:radio[name="birth_umyang"][value="2"]').prop('checked', true);
+			//$('input:radio[name=birth_umyang]:input[value="2"]').attr("checked", true);
+			//$('input:radio[name=birth_umyang]:input[value=1]').attr("checked", false);
+			//alert($('input:radio[name=birth_umyang]:checked').val());
+			//alert($("#btn_lunar").css("background-position"));
+		});
+
+		//$("#btn_sms_agree").click(function() {
+			//var vsms = $("#btn_sms_agree").css("background-position");
+			//alert(vsms);
+			//$('#btn_solar').css('background-position', '-36px 0px');
+			//$('#btn_lunar').css('background-position', '-59px 0px');
+		//});
+
+		//$("#btn_news_agree").click(function() {
+			//var vnews = $("#btn_news_agree").css("background-position");
+			//alert(vnews);
+			//$('#btn_solar').css('background-position', '-36px 0px');
+			//$('#btn_lunar').css('background-position', '-59px 0px');
+		//});
 	});
 	</script>
 	<!-- 다음 주소 검색 삽입부분 신규 버전-->
@@ -230,10 +269,6 @@
 		$("#birthday").val('<%=birthday%>');
 	}
 
-	//javascript:alert($(':input:checkbox[name=birth_umyang]:checked').val());
-	function changeUM(){
-		//alert($(':input:checkbox[name=birth_umyang]:checked').val());
-	}
 	//-->
 	</script>
 </head>
@@ -275,23 +310,21 @@
                 <colgroup>
                     <col width="30%" />
                     <col width="70%" />
-
-
 			    <tr>
                     <th><label for="name" class="nameLa">이름</label></th>
-                    <td><input type="text" id="name" class="name" readonly value="<%=name%>" /></td>
+                    <td><input type="text" id="name" name="name" class="name" readonly value="<%=name%>" /></td>
 				</tr>
 				<tr>
                     <th><label for="name" class="nameLa">보호자 이름</label></th>
-                    <td><input type="text" id="name" class="name" readonly value="<%=strgender%>" /></td>
+                    <td><input type="text" id="cname" name="cname" class="name" readonly value="<%=pname%>" /></td>
 				</tr>
 				<tr>
                     <th><label for="name" class="nameLa">성별</label></th>
-                    <td><input type="text" id="name" class="name" readonly value="<%=name%>" /></td>
+                    <td><input type="text" id="gender" name="gender" class="name" readonly value="<%=strgender%>" /></td>
                 </tr>
                 <tr>
                     <th><label for="name" class="nameLa">보호자 성별</label></th>
-                    <td><input type="text" id="name" class="name" readonly value="<%=strgender%>" /></td>
+                    <td><input type="text" id="cgender" name="cgender" class="name" readonly value="<%=strpgender%>" /></td>
                 </tr>
 
 			<%
@@ -308,7 +341,7 @@
 				</tr>
 				<tr>
                     <th><label for="name" class="nameLa">성별</label></th>
-                    <td><input type="text" id="name" class="name" name="name" readonly value="<%=strgender%>" /></td>
+                    <td><input type="text" id="gender" class="name" name="gender" readonly value="<%=strgender%>" /></td>
 				</tr>
 			<%
 				End If
@@ -374,16 +407,16 @@
                             <input type="checkbox" id="solar" class="solar" name="solar" value="solar">
                             -->
                             <span class="radioWrap">
-                                <input type="radio" name="birth_umyang" id="form_type_01" title="양력" value="1" <%=GetChecked(birthsel, "1")%> onclick="changeUM();" />
-                                <label for="solar"></label>
+                                <input type="radio" name="birth_umyang" id="form_type_01" title="양력" value="1" <%=GetChecked(birthsel, "1")%> />
+                                <label for="solar" id="btn_solar" style="cursor:pointer;"></label>
                                 <span class="text mr25">양력</span>
                             </span>
                             <!--
                             <input type="checkbox" id="lunar" class="lunar" name="lunar" value="lunar">
                             -->
                             <span class="radioWrap">
-                                <input type="radio" name="birth_umyang" id="form_type_02" title="음력" value="2" <%=GetChecked(birthsel, "2")%> onclick="changeUM();" />
-                                <label for="lunar"></label>
+                                <input type="radio" name="birth_umyang" id="form_type_02" title="음력" value="2" <%=GetChecked(birthsel, "2")%> />
+                                <label for="lunar" id="btn_lunar" style="cursor:pointer;"></label>
                                 <span class="text">음력</span>
                             </span>
                         </div>
@@ -492,8 +525,8 @@
                     <td>
                         <div class="check_box_wrap">
                             <span class="radioWrap block">
-                                <input type="checkbox" id="form_sms_agree1" name="sms" class="sms" value="Y" <%=GetChecked(sms, "Y")%> onclick="#" />
-                                <label for="form_sms_agree1"></label>
+                                <input type="checkbox" id="form_sms_agree1" name="sms" class="sms" value="Y" <%=GetChecked(sms, "Y")%> />
+                                <label for="form_sms_agree1" id="btn_sms_agree" style="cursor:pointer;"></label>
                                 <span class="text">SMS 수신동의</span>
                             </span>
                         </div>
@@ -530,8 +563,8 @@
                     <td>
                         <div class="check_box_wrap">
                             <span class="radioWrap block">
-                                <input type="checkbox" id="form_news_agree1" name="mailling" class="news_letter" value="Y" <%=GetChecked(mailing, "Y")%> onclick="#" />
-                                <label for="form_news_agree1"></label>
+                                <input type="checkbox" id="form_news_agree1" name="mailling" class="news_letter" value="Y" <%=GetChecked(mailing, "Y")%> />
+                                <label for="form_news_agree1" id="btn_news_agree" style="cursor:pointer;"></label>
                                 <span class="text">뉴스레터 수신동의</span>
                             </span>
                         </div>
