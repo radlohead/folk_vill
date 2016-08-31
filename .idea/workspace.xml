@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" afterPath="$PROJECT_DIR$/common/css/.sass-cache/6d12769aade308e8308adb66613ad5a7c3be2f68/index.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/information/map/shop_vill_img04.jpg" afterPath="$PROJECT_DIR$/images/information/map/shop_vill_img04.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/eat_11.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/eat_11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/eat_5.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/eat_5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_08.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/marketplace/marketplace_img_08.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/snack/snack_titleImg.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/snack/snack_titleImg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/play_village/eat/teahouse/teahouse_titleImg.jpg" afterPath="$PROJECT_DIR$/images/play_village/eat/teahouse/teahouse_titleImg.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css" afterPath="$PROJECT_DIR$/common/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.css.map" afterPath="$PROJECT_DIR$/common/css/index.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/index.scss" afterPath="$PROJECT_DIR$/common/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/discount_promotion.asp" afterPath="$PROJECT_DIR$/discount_promotion.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/tradition_course.asp" afterPath="$PROJECT_DIR$/groupprogram/tradition_course.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/convenience.asp" afterPath="$PROJECT_DIR$/information/convenience.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/traffic.asp" afterPath="$PROJECT_DIR$/information/traffic.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/online_coupon.asp" afterPath="$PROJECT_DIR$/online_coupon.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat.asp" afterPath="$PROJECT_DIR$/playvillage/eat.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/marketplace.asp" afterPath="$PROJECT_DIR$/playvillage/eat/marketplace.asp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/snack.asp" afterPath="$PROJECT_DIR$/playvillage/eat/snack.asp" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +26,8 @@
       <file leaf-file-name="index.asp" pinned="true" current-in-tab="true">
         <entry file="REMOTE_DEPLOYMENT_FS://&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/index.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
-              <caret line="43" column="52" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.56">
+              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -68,7 +50,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/event/performance_chosun.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/buy/memento.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/buy/hometown_memento.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/buy/ghost.asp" />
@@ -118,6 +99,7 @@
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/wooden_horse.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/fourD.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/twist_mini.asp" />
+        <option value="$PROJECT_DIR$/index.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/index.asp" />
       </list>
     </option>
@@ -362,9 +344,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15511727" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15511727" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12526652" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -420,13 +402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4224924">
           <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5379939">
-          <caret line="190" column="54" selection-start-line="190" selection-start-column="54" selection-end-line="190" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -756,6 +731,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.3392857">
           <caret line="780" column="55" selection-start-line="780" selection-start-column="55" selection-end-line="780" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12360689">
+          <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
