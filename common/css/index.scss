@@ -717,7 +717,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		&:before{content:"*"; display:table-cell; position:relative; top:2px; padding-right:3px; color:#f29322;}
 	}
 	.parking{padding:15px 0; border-top:2px solid #f08200; border-bottom:1px solid $mainColor;
-		.icon_p{float:left; display:block; width:56px; height:56px; background:url("/mobile/images/information/sprite-info.png") no-repeat 0 0; background-size:250px 250px;}
+		.icon_p{float:left; display:block; width:56px; height:56px; margin-top:13px; background:url("/mobile/images/information/sprite-info.png") no-repeat 0 0; background-size:250px 250px;}
 		section{float:left; margin-left:15px;
 			h4{display:block; margin:3px 0; font-size:1.75em; font-weight:normal;}
 			li{display:table; font-size:1.2em; padding:2px 0;
@@ -1251,7 +1251,7 @@ footer{overflow:hidden; margin-top:25px; padding:15px 3.5% 30px; background:#312
 		.left{text-align:left;
 			p{display:table; margin-left:10px;
 				span{display:table-cell; font-size:inherit;}
-				.icon{@include circleIcon;
+				.icon{@include circleIcon2; top:8px;
 					img{width:3px;}
 				}
 			}

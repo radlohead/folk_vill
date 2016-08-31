@@ -46,7 +46,7 @@
                     <img src="/mobile/images/play_village/eat/marketplace/marketplace_titleImg.jpg" alt="장터사진" />
                 </span>
                 <span class="text01">
-                    장터에서는 각 지방에서 전해 내려오는 토속음식 20여가지와, 냉면, 묵, 비빔밥, 손만둣국 등 입맛을 돋우는 계절음식을 맛볼 수 있습니다.
+                    장터에서는 각 지방에서 전해 내려오는 토속음식 20여가지와, 냉면, 묵비빔밥, 냉열무국수 등 입맛을 돋우는 계절음식을 맛볼 수 있습니다.
                     모든 음식은 일체 화학 조미료나 가공식품을 배제하며, 천연 조미료만 사용해 친환경 전통방식 그대로 옛날 전통의 맛을 그대로 담습니다.
                 </span>
                 <h4>메뉴소개</h4>
@@ -86,8 +86,14 @@
                         <h5>전통순대</h5>
                     </div>
                     <div class="img_wrap right">
-                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_08.jpg" alt="생막걸리" />
-                        <h5>생막걸리</h5>
+                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_08.jpg" alt="동동주" />
+                        <h5>동동주</h5>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="img_wrap left">
+                        <img src="/mobile/images/play_village/eat/marketplace/marketplace_img_09.jpg" alt="장국밥" />
+                        <h5>장국밥</h5>
                     </div>
                 </section>
             </div>

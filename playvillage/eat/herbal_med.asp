@@ -38,17 +38,34 @@
     <div class="contents">
         <div class="detail-member">
             <div class="detail-head2">
-                <h3>민속주전부리</h3>
+                <h3>한약방</h3>
             </div>
             <div class="detail-content buy_eat">
                 <span class="photo-img map">
-                    <a href="#none" class="map-btn map-btn_6">지도보기</a>
-                    <img src="/mobile/images/play_village/eat/snack/snack_titleImg.jpg" alt="민속주전부리 사진" />
+                    <a href="#none" class="map-btn map-btn_5">지도보기</a>
+                    <img src="/mobile/images/play_village/eat/herbal_med/herbal_med_titleImg.jpg" alt="전통찻집 사진" />
                 </span>
                 <span class="text01">
-                    한국민속촌 상가마을 중앙에 위치한 민속주전부리 매장에서는 아이스크림, 팝콘,
-                    오징어 등 다양한 간식을 판매하고 있습니다. 맛있는 주전부리와 함께 즐거운 관람을 해보세요.
+                    한국민속촌 한약방은 운치와 함께 따뜻한 정감을 느낄 수 있습니다.
+                    한약방에서 판매하는 모든 한방차들은 밭에서 직접 재배한 한약재를 오랜 시간 달여 만들어서, 정성은 물론 맛 또한 일품입니다.
                 </span>
+                <h4>메뉴소개</h4>
+                <section class="section">
+                    <div class="img_wrap left">
+                        <img src="/mobile/images/play_village/eat/herbal_med/herbal_med_img_01.jpg" alt="십전대보탕" />
+                        <h5>십전대보탕</h5>
+                    </div>
+                    <div class="img_wrap right">
+                        <img src="/mobile/images/play_village/eat/herbal_med/herbal_med_img_02.jpg" alt="오미자차" />
+                        <h5>오미자차</h5>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="img_wrap left">
+                        <img src="/mobile/images/play_village/eat/herbal_med/herbal_med_img_03.jpg" alt="식혜" />
+                        <h5>식혜</h5>
+                    </div>
+                </section>
             </div>
         </div>
     </div>

@@ -465,7 +465,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .traffic .road-sign { display: table; margin: 14px 0 38px; font-size: 1.2em; }
 .traffic .road-sign:before { content: "*"; display: table-cell; position: relative; top: 2px; padding-right: 3px; color: #f29322; }
 .traffic .parking { padding: 15px 0; border-top: 2px solid #f08200; border-bottom: 1px solid #bdb5a0; }
-.traffic .parking .icon_p { float: left; display: block; width: 56px; height: 56px; background: url("/mobile/images/information/sprite-info.png") no-repeat 0 0; background-size: 250px 250px; }
+.traffic .parking .icon_p { float: left; display: block; width: 56px; height: 56px; margin-top: 13px; background: url("/mobile/images/information/sprite-info.png") no-repeat 0 0; background-size: 250px 250px; }
 .traffic .parking section { float: left; margin-left: 15px; }
 .traffic .parking section h4 { display: block; margin: 3px 0; font-size: 1.75em; font-weight: normal; }
 .traffic .parking section li { display: table; font-size: 1.2em; padding: 2px 0; }
@@ -830,7 +830,7 @@ footer .foot-logo { display: block; float: right; width: 54px; height: 33px; mar
 .detail-content.daily table.course .left { text-align: left; }
 .detail-content.daily table.course .left p { display: table; margin-left: 10px; }
 .detail-content.daily table.course .left p span { display: table-cell; font-size: inherit; }
-.detail-content.daily table.course .left p .icon { position: relative; top: -3px; width: 3px; height: 3px; padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left center; background-size: 3px 3px; }
+.detail-content.daily table.course .left p .icon { position: relative; top: 7px; width: 3px; height: 3px; padding-right: 7px; color: #766341; background: url("/mobile/images/common/circleIcon.png") no-repeat left top; background-size: 3px 3px; top: 8px; }
 .detail-content.daily table.course .left p .icon img { width: 3px; }
 .detail-content.daily table.course .font12 { font-size: 0.875em; }
 .detail-content.daily .group_program_img { overflow: hidden; margin-top: 30px; }

@@ -1,3 +1,43 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/common.inc"-->
+<%
+
+	Dim NRunText : NRunText = ""
+
+	Call OpenDbConnection() '데이터베이스 열기
+
+	strSQL = "SELECT SEQ, ID, TITLE, RunYN, Regdate FROM TBL_ATTRACTION Where RunYN = 'N'"
+	Set Rs = Conn.Execute(strSQL)
+
+	If Rs.eof Or Rs.Bof Then
+
+		NRunText = "전 기종 정상운영"
+
+	Else
+
+		Dim i
+
+		i = 0
+
+		Do Until Rs.EOF
+
+			If i = 0 Then
+				NRunText = NRunText & "" & Rs(2)
+			Else
+				NRunText = NRunText & "," & Rs(2)
+			End If
+
+			i = i + 1
+			Rs.MoveNext
+		Loop
+	
+	End If
+
+	Call RsClose()
+	Call CloseDbConnection()
+
+	'Response.Write NRunText
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -45,8 +85,8 @@
             <div class="detail-content attraction">
                 <div class="model_guide">
                     <div class="service_model">
-                        <h4>2016년 7월 11일 운휴 놀이기종</h4>
-                        <span class="text">크레이지 래프트, 바운스 스핀</span>
+                        <h4><%=Year(now)%>년 <%=Month(now)%>월 <%=Day(now)%>일 &nbsp;운휴 놀이기종</h4>
+                        <span class="text"><%=NRunText%></span>
                     </div>
                     <div class="guide">
                         <h4>어트랙션 이용안내</h4>

@@ -45,12 +45,12 @@
                             <td><span class="icon icon-01"></span></td>
                             <td>
                                 <div>
-                                    <h4>유아휴게실</h4>
+                                    <h4>수유실</h4>
                                     <ul>
                                         <li class="join-method-p">
                                             <p>
                                                 <span class="icon02"></span>
-                                                <span style="line-height:1.3em;">정문(대관문) 입장 후 좌측</span>
+                                                <span style="line-height:1.3em;">유아휴게실(정문), 장터온돌방, 놀이마을 수유실</span>
                                             </p>
                                         </li>
                                         <li class="join-method-p">
@@ -112,7 +112,13 @@
                                         <li class="join-method-p">
                                             <p>
                                                 <span class="icon02"></span>
-                                                <span style="line-height:1.3em;">휠체어(무료), 유모차(2,000원, 보증금 1,000원)</span>
+                                                <span style="line-height:1.3em;">휠체어(신분증 보관)</span>
+                                            </p>
+                                        </li>
+                                        <li class="join-method-p">
+                                            <p>
+                                                <span class="icon02"></span>
+                                                <span style="line-height:1.3em;">유모차(2,000원, 보증금 1,000원 별도)</span>
                                             </p>
                                         </li>
                                     </ul>
@@ -134,7 +140,7 @@
                                         <li class="join-method-p">
                                             <p>
                                                 <span class="icon02"></span>
-                                                <span style="line-height:1.3em;">분실 물품 접수, 미아 사고 안내방송</span>
+                                                <span style="line-height:1.3em;">분실물 접수, 미아발생 접수 및 안내</span>
                                             </p>
                                         </li>
                                     </ul>

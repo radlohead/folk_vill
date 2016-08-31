@@ -85,6 +85,7 @@
 
 				%>
 					<div class="swiper-slide"><a href='/mobile/information/coupon_list.asp'><img src="<%=FileURL%><%=files1%>" alt="<%=alt1%>" style="width:95%;" /></a><img src="/mobile/images/index/main-tab2_img01.jpg" alt="" /></div>
+					<!--<div class="swiper-slide"><a href="/mobile/information/coupon_gate.asp?couponSEQ=<%=seq%>"><img src="<%=FileURL%><%=files1%>" alt="<%=alt1%>" style="width:95%;" /></a><img src="/mobile/images/index/main-tab2_img01.jpg" alt="" /></div>-->
 				<%
 						Next
 					Else

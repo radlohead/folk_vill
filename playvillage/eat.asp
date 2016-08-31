@@ -112,7 +112,17 @@
                         </dl>
                     </section>
                 </div>
-                <div class="detailWrap">
+
+                    <section class="detail">
+                        <a href="eat/herbal_med.asp" class="img eat_img11"><img src="/mobile/images/play_village/eat/eat_11.jpg" alt="한약방 사진" /></a>
+                        <h4>한약방</h4>
+                        <dl>
+                            <dt class="sub-title_01">위치</dt>
+                            <dd class="text_01">민속마을 11호</dd>
+                            <dt class="sub-title_02">분류</dt>
+                            <dd class="text_02">전통차, 커피</dd>
+                        </dl>
+                    </section>
                     <section class="detail">
                         <a href="eat/hotdog.asp" class="img eat_img7"><img src="/mobile/images/play_village/eat/eat_7.jpg" alt="레일로드핫도그 사진" /></a>
                         <h4>레일로드핫도그</h4>
@@ -133,8 +143,8 @@
                             <dd class="text_02">아이스크림, 커피</dd>
                         </dl>
                     </section>
-                </div>
-                <div class="detailWrap">
+
+
                     <section class="detail">
                         <a href="eat/winnie.asp" class="img eat_img9"><img src="/mobile/images/play_village/eat/eat_9.jpg" alt="위니비니 사진" /></a>
                         <h4>위니비니</h4>
@@ -155,7 +165,7 @@
                             <dd class="text_02">중식</dd>
                         </dl>
                     </section>
-                </div>
+
               <!--  <section class="detail">
                     <a href="eat/pizza.asp" class="img eat_img11"><img src="/mobile/images/play_village/eat/eat_11.jpg" alt="임실치즈피자 사진" /></a>
                     <h4>임실치즈피자</h4>

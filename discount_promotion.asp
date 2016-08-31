@@ -88,6 +88,7 @@
 
 %>
 					<div class="swiper-slide"><a href='/mobile/information/promotion_list.asp'><img src="<%=PromIMG%>" alt="<%=PromALT%>" /></a></div>
+					<!--<div class="swiper-slide"><a href="/mobile/information/promotion_view.asp?seq=<%=seq%>"><img src="<%=PromIMG%>" alt="<%=PromALT%>" /></a></div>-->
 <%
 					Next
 

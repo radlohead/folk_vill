@@ -388,7 +388,7 @@
 	Set objCmd = Server.CreateObject("ADODB.Command")
 	With objCmd
 		.ActiveConnection = Conn
-		.CommandText = "SP_HUGO7_TBL_MEMBER_INSERT"
+		.CommandText = "SP_HUGO7_TBL_MEMBER_INSERT2"
 		.CommandType = adCmdStoredProc
 		'기본정보
 		.Parameters.Append .CreateParameter("@GUBUN",adVarChar,adParamInput,5, gubun)

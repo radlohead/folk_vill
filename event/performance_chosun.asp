@@ -1,21 +1,47 @@
+<!--#include virtual="/common/lib/encoding.asp"-->
+<!--#include virtual="/common/inc/common.inc"-->
 <%
+	Dim SQL, UniqueField, TableName, SelectField, WhereClause, OrderBy
+	Dim TotalRecordCount, TotalPageCount, RecordNumber
+	Dim Debug, DebugMode
+	Dim pgSize, param, pg, keyfield, keyword, code
+	Dim C_WEEKDAY_Charactor, C_WEEKEND_Charactor
 
-Function FirstDayOfWeekN( weekN )
-    FirstDayOfYear		= DateSerial( Year(Date()), 1, 1 )
-    FirstDayOfFirstWeek	= FirstDayOfYear - Weekday( FirstDayOfYear ) + 2
-    FirstDayOfWeekN		= DateAdd( "ww", weekN-1, FirstDayOfFirstWeek )
-End Function
+	Debug = false		' SQL 디버그 설정(true : 사용, false : 사용안함)
+	DebugMode = 2		' SQL 디버그 모드(1 : COUNT 쿼리문 출력, 2 : LIST 쿼리문 출력)
 
-'Response.Write FirstDayOfWeekN(DatePart("ww", Date())) & "<br>"
+	Call OpenDbConnection() '데이터베이스 열기
 
-Dim sFirstDay, sLastDay
+	strSQL = " Select SEQ, C_WEEKDAY, C_WEEKEND, REGDATE From TBL_JOSEON_CHARACTOR"
+	Set Rs = Conn.Execute(strSQL)
 
-sFirstDay	= FirstDayOfWeekN(DatePart("ww", Date()))
-'sLastDay	= FirstDayOfWeekN(DatePart("ww", Date() + 6))
-sLastDay	= DateAdd("d", 6, sFirstDay)
+	Do Until Rs.EOF
 
-'Response.Write "sFirstDay : " & sFirstDay & "<br>"
-'Response.Write "sLastDay : " & DateAdd("d", 6, sFirstDay) & "<br>"
+		C_WEEKDAY_Charactor = Rs(1)
+		C_WEEKEND_Charactor = Rs(2)
+
+		Rs.MoveNext
+	Loop
+
+	Call RsClose()
+	Call CloseDbConnection()
+
+	Function FirstDayOfWeekN( weekN )
+		FirstDayOfYear		= DateSerial( Year(Date()), 1, 1 )
+		FirstDayOfFirstWeek	= FirstDayOfYear - Weekday( FirstDayOfYear ) + 2
+		FirstDayOfWeekN		= DateAdd( "ww", weekN-1, FirstDayOfFirstWeek )
+	End Function
+
+	'Response.Write FirstDayOfWeekN(DatePart("ww", Date())) & "<br>"
+
+	Dim sFirstDay, sLastDay
+
+	sFirstDay	= FirstDayOfWeekN(DatePart("ww", Date()))
+	'sLastDay	= FirstDayOfWeekN(DatePart("ww", Date() + 6))
+	sLastDay	= DateAdd("d", 6, sFirstDay)
+
+	'Response.Write "sFirstDay : " & sFirstDay & "<br>"
+	'Response.Write "sLastDay : " & DateAdd("d", 6, sFirstDay) & "<br>"
 %>
 
 <!DOCTYPE html>
@@ -65,11 +91,11 @@ sLastDay	= DateAdd("d", 6, sFirstDay)
                     </span>
                     <p class="text_box">
                         <span class="sub-title">평일</span>
-                        <span class="text">나쁜사또, 이방, 거지, 장사꾼, 포졸, 화공</span>
+                        <span class="text"><%=C_WEEKDAY_Charactor%></span>
                     </p>
                     <p class="text_box">
                         <span class="sub-title">주말</span>
-                        <span class="text">나쁜사또, 이방, 거지, 장사꾼, 포졸, 화공, 광년이, 중매쟁이 손재주꾼, 주모, 등등등등</span>
+                        <span class="text"><%=C_WEEKEND_Charactor%></span>
                     </p>
                 </div>
                 <div class="cont_body">

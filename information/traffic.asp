@@ -485,6 +485,7 @@ function project(latLng) {
                                 <ul>
                                     <li>주차요금 : 대형 3,000원  |  소형 2,000원</li>
                                     <li>주차장 입장 시 1회 청구, 추가요금 없음</li>
+                                    <li>장애인 등록차량 주차요금 1,000원</li>
                                 </ul>
                             </section>
                         </div>
