@@ -173,6 +173,12 @@ End If
                         </a>
                     </div>
 
+					<%
+					End If
+
+					If Bboy_show = "Y" Then
+				%>
+
 					<div class="swiper-slide img03">
 					    <div class="text-btn_box">
                             <section class="text_box">

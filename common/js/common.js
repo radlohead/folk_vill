@@ -684,20 +684,31 @@ $(document).ready(function(){
 		});
 	};
 
-
 	//pc,모바일 구분
-	//(function(){
-	//	var filter = "win16|win32|win64|mac";
-	//	if( navigator.platform  ){
-	//		if( filter.indexOf(navigator.platform.toLowerCase())<0 ){
-	//			//모바일 기기에서 접속
-	//		}else{
-	//			//PC에서 접속
-	//			var reff = document.location.href;
-	//			location.href = "http://www.koreanfolk.co.kr/";
-	//		}
-	//	}
-	//})();
+	(function(){
+		var filter = "win16|win32|win64|mac";
+		if( navigator.platform  ){
+			if( filter.indexOf(navigator.platform.toLowerCase())>0 ){
+				location.href = "http://www.koreanfolk.co.kr/";
+			}
+		}
+	})();
+
+	//pc버전 보기 버튼 클릭시 pc버전 출력
+	(function(){
+		$(".footer_link .pc").click(function(){
+			function setCookie( name, value, expiredays )
+			{
+				var todayDate = new Date();
+				todayDate.setDate( todayDate.getDate() + expiredays );
+				document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" ;
+			}
+			setCookie( "force_pc", "OK" , 1);
+			window.location.href = "http://www.koreanfolk.co.kr/";
+		})
+	})()
+
+
 });
 
 

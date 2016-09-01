@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
-    <title>한국 민속촌 모바일 사이트</title>
+    <title>한국민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
     <!--#include virtual="/mobile/common/inc/script.asp" -->
 </head>
@@ -402,8 +402,7 @@
                         <option value="직접입력">직접입력</option>
                         <option value="dreanwiz.com">dreanwiz.com</option>
                         <option value="empal.com">empal.com</option>
-                        <option value="freechal.com">freechal.com</option>
-                        <option value="gmail.com">gmail.com</option>
+                        <option value="freechal.com">freechal.com</option>                    
                         <option value="korea.com">korea.com</option>
                         <option value="hanmail.net">hanmail.net</option>
                         <option value="hotmail.com">hotmail.com</option>

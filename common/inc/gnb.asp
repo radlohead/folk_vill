@@ -1,6 +1,10 @@
 <aside class="gnb">
     <div class="gnb-header">
-        <h1><span class="hidden">한국민속촌</span></h1>
+        <h1>
+            <a href="/mobile/index.asp" style="display: block; width:128px; height: 20px;">
+                <span class="hidden">한국민속촌</span>
+            </a>
+        </h1>
         <a href="#none" class="close-btn"><span class="hidden">메뉴닫기</span></a>
     </div>
     <div class="userinfo">
@@ -155,9 +159,9 @@
     </ul>
     <footer>
         <ul class="footer_link2">
-            <li class="infor"><a href="#none">개인정보 취급방침</a>
+            <li class="infor"><a href="/mobile/privacy/privacy_policy.asp">개인정보 취급방침</a>
             <span class="vbar">|</span>
-            <li class="terms"><a href="#none">이용약관</a></li>
+            <li class="terms"><a href="/mobile/privacy/term_agree.asp">이용약관</a></li>
         </ul>
         <div class="address-wrap">
             <address>

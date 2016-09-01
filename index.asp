@@ -4,7 +4,7 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8" />
-	<title>한국 민속촌 모바일 사이트</title>
+	<title>한국민속촌 모바일 사이트</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
 	<meta name="format-detection" content="telephone=no, address=no, email=no" />
 	<link rel="stylesheet" type="text/css" href="common/css/reset.css" />
@@ -79,7 +79,7 @@
 				<h3><img src="/mobile/images/index/vivi-site_title.png" alt="한국민속촌 생생현장 머리말" /></h3>
 			</div>
 			<div class="video">
-				<iframe src="https://player.vimeo.com/video/175656625?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<iframe src="https://player.vimeo.com/video/180995077?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 			</div>
 		</div>

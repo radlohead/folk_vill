@@ -107,11 +107,18 @@
     <meta name="format-detection" content="telephone=no, address=no, email=no" />
     <title>한국 민속촌 모바일 사이트</title>
     <!--#include virtual="/mobile/common/inc/css.asp" -->
-	<script type="text/javascript" src="/common/js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="/common/js/common.js"></script>
+    <!--#include virtual="/mobile/common/inc/script.asp" -->
 	<script type="text/javascript" src="/common/js/Validate.js"></script>
-	<script type="text/javascript">
+    <script>
+        $(document).ready(function(){
+            $('.single-items').slick({
+                slidesToShow: 3,
+                initialSlide: 2
+            });
 
+        });
+    </script>
+	<script type="text/javascript">
 	function CouponClickCount(uid,seq){
 		var  params = "uid=" + uid + "&seq= " + seq;
 
@@ -137,10 +144,10 @@
             <h2>할인정보</h2>
         </div>
 
-        <div class="slider multiple-items">
-            <a href="/mobile/information/coupon_list.asp">쿠폰할인</a>
+        <div class="slider single-items">
             <a href="/mobile/information/promotion_list.asp">할인프로모션</a>
             <a href="/mobile/information/credit_card.asp">제휴카드할인</a>
+            <a href="/mobile/information/coupon_list.asp">쿠폰할인</a>
         </div>
     </div>
 
@@ -215,19 +222,7 @@
 <!--#include virtual="/mobile/common/inc/footer.asp" -->
 
 </div>
-<!--#include virtual="/mobile/common/inc/script.asp" -->
-    <script>
-        $(document).ready(function(){
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1
-            });
-            $('.single-item').slick({
-                dots: true
-            });
-        });
-    </script>
+
 
 </body>
 </html>

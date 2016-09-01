@@ -2,7 +2,106 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28b2060e-1308-439c-abd6-187e324c1732" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/down/koreanfolk_map.pdf" afterPath="$PROJECT_DIR$/down/koreanfolk_map.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/inc/gnb.asp" afterPath="$PROJECT_DIR$/common/inc/gnb.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/js/common.js" afterPath="$PROJECT_DIR$/common/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer/faq.asp" afterPath="$PROJECT_DIR$/customer/faq.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer/faq_bak.asp" afterPath="$PROJECT_DIR$/customer/faq_bak.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer/voice_form.asp" afterPath="$PROJECT_DIR$/customer/voice_form.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/event_now.asp" afterPath="$PROJECT_DIR$/event/event_now.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/event_now_view.asp" afterPath="$PROJECT_DIR$/event/event_now_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_bboy.asp" afterPath="$PROJECT_DIR$/event/performance_bboy.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_chosun.asp" afterPath="$PROJECT_DIR$/event/performance_chosun.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_horse.asp" afterPath="$PROJECT_DIR$/event/performance_horse.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_nongak.asp" afterPath="$PROJECT_DIR$/event/performance_nongak.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/performance_wedding.asp" afterPath="$PROJECT_DIR$/event/performance_wedding.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/folkvillage/display_traditional.asp" afterPath="$PROJECT_DIR$/folkvillage/display_traditional.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/folkvillage/folk_chosun.asp" afterPath="$PROJECT_DIR$/folkvillage/folk_chosun.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/cert_program.asp" afterPath="$PROJECT_DIR$/groupprogram/cert_program.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/daily.asp" afterPath="$PROJECT_DIR$/groupprogram/daily.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/general_course.asp" afterPath="$PROJECT_DIR$/groupprogram/general_course.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/kids_day.asp" afterPath="$PROJECT_DIR$/groupprogram/kids_day.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/seonbi_course.asp" afterPath="$PROJECT_DIR$/groupprogram/seonbi_course.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/groupprogram/tradition_course.asp" afterPath="$PROJECT_DIR$/groupprogram/tradition_course.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.asp" afterPath="$PROJECT_DIR$/index.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/coupon_list.asp" afterPath="$PROJECT_DIR$/information/coupon_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/coupon_view.asp" afterPath="$PROJECT_DIR$/information/coupon_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/credit_card.asp" afterPath="$PROJECT_DIR$/information/credit_card.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/guide.asp" afterPath="$PROJECT_DIR$/information/guide.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/map.asp" afterPath="$PROJECT_DIR$/information/map.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/membership.asp" afterPath="$PROJECT_DIR$/information/membership.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/notice_list.asp" afterPath="$PROJECT_DIR$/information/notice_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/promotion_list.asp" afterPath="$PROJECT_DIR$/information/promotion_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/promotion_view.asp" afterPath="$PROJECT_DIR$/information/promotion_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/information/traffic.asp" afterPath="$PROJECT_DIR$/information/traffic.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/find_id_true.asp" afterPath="$PROJECT_DIR$/member/find_id_true.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join.asp" afterPath="$PROJECT_DIR$/member/join.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_child_form.asp" afterPath="$PROJECT_DIR$/member/join_child_form.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_child_form_bak.asp" afterPath="$PROJECT_DIR$/member/join_child_form_bak.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_child_form.asp" afterPath="$PROJECT_DIR$/member/join_email_child_form.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_child_step1.asp" afterPath="$PROJECT_DIR$/member/join_email_child_step1.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_foreigner_form.asp" afterPath="$PROJECT_DIR$/member/join_email_foreigner_form.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_foreigner_step1.asp" afterPath="$PROJECT_DIR$/member/join_email_foreigner_step1.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_general_form.asp" afterPath="$PROJECT_DIR$/member/join_email_general_form.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_email_general_step1.asp" afterPath="$PROJECT_DIR$/member/join_email_general_step1.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_finish.asp" afterPath="$PROJECT_DIR$/member/join_finish.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_foreigner_step1.asp" afterPath="$PROJECT_DIR$/member/join_foreigner_step1.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_foreigner_step2.asp" afterPath="$PROJECT_DIR$/member/join_foreigner_step2.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_general_form.asp" afterPath="$PROJECT_DIR$/member/join_general_form.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_general_step1.asp" afterPath="$PROJECT_DIR$/member/join_general_step1.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/join_general_step2.asp" afterPath="$PROJECT_DIR$/member/join_general_step2.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member/login.asp" afterPath="$PROJECT_DIR$/member/login.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/coupon_list.asp" afterPath="$PROJECT_DIR$/mypage/coupon_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/coupon_view.asp" afterPath="$PROJECT_DIR$/mypage/coupon_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_info.asp" afterPath="$PROJECT_DIR$/mypage/member_info.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_info_auth.asp" afterPath="$PROJECT_DIR$/mypage/member_info_auth.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_leave.asp" afterPath="$PROJECT_DIR$/mypage/member_leave.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_leave_finish.asp" afterPath="$PROJECT_DIR$/mypage/member_leave_finish.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_modify.asp" afterPath="$PROJECT_DIR$/mypage/member_modify.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_pwd_edit.asp" afterPath="$PROJECT_DIR$/mypage/member_pwd_edit.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/member_pwd_finish.asp" afterPath="$PROJECT_DIR$/mypage/member_pwd_finish.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/qna_list.asp" afterPath="$PROJECT_DIR$/mypage/qna_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/qna_view.asp" afterPath="$PROJECT_DIR$/mypage/qna_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/voice_list.asp" afterPath="$PROJECT_DIR$/mypage/voice_list.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mypage/voice_view.asp" afterPath="$PROJECT_DIR$/mypage/voice_view.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/performance_info_2016.asp" afterPath="$PROJECT_DIR$/performance_info_2016.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction.asp" afterPath="$PROJECT_DIR$/playvillage/attraction.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/bounce_spin.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/bounce_spin.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/bumper_car.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/bumper_car.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/family_costa.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/family_costa.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/fourD.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/fourD.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/mini_viking.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/mini_viking.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/music_express.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/music_express.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/train.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/train.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/twist.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/twist.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/twist_mini.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/twist_mini.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/viking.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/viking.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/attraction/wooden_horse.asp" afterPath="$PROJECT_DIR$/playvillage/attraction/wooden_horse.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy.asp" afterPath="$PROJECT_DIR$/playvillage/buy.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy/ghost.asp" afterPath="$PROJECT_DIR$/playvillage/buy/ghost.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy/hometown_memento.asp" afterPath="$PROJECT_DIR$/playvillage/buy/hometown_memento.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy/memento.asp" afterPath="$PROJECT_DIR$/playvillage/buy/memento.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy/specialty.asp" afterPath="$PROJECT_DIR$/playvillage/buy/specialty.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/buy/toyvillage.asp" afterPath="$PROJECT_DIR$/playvillage/buy/toyvillage.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat.asp" afterPath="$PROJECT_DIR$/playvillage/eat.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/chinesePlace.asp" afterPath="$PROJECT_DIR$/playvillage/eat/chinesePlace.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/herbal_med.asp" afterPath="$PROJECT_DIR$/playvillage/eat/herbal_med.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/hotdog.asp" afterPath="$PROJECT_DIR$/playvillage/eat/hotdog.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/icecream.asp" afterPath="$PROJECT_DIR$/playvillage/eat/icecream.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/koreanPavilion.asp" afterPath="$PROJECT_DIR$/playvillage/eat/koreanPavilion.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/marketplace.asp" afterPath="$PROJECT_DIR$/playvillage/eat/marketplace.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/pizza.asp" afterPath="$PROJECT_DIR$/playvillage/eat/pizza.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/snack.asp" afterPath="$PROJECT_DIR$/playvillage/eat/snack.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/streetCornerHouse.asp" afterPath="$PROJECT_DIR$/playvillage/eat/streetCornerHouse.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/teahouse.asp" afterPath="$PROJECT_DIR$/playvillage/eat/teahouse.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/terrace.asp" afterPath="$PROJECT_DIR$/playvillage/eat/terrace.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/eat/winnie.asp" afterPath="$PROJECT_DIR$/playvillage/eat/winnie.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/ghost.asp" afterPath="$PROJECT_DIR$/playvillage/ghost.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/junseol_gohyang.asp" afterPath="$PROJECT_DIR$/playvillage/junseol_gohyang.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playvillage/sculpture.asp" afterPath="$PROJECT_DIR$/playvillage/sculpture.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/privacy/privacy_policy.asp" afterPath="$PROJECT_DIR$/privacy/privacy_policy.asp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/privacy/term_agree.asp" afterPath="$PROJECT_DIR$/privacy/term_agree.asp" />
     </list>
     <ignored path="m.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +122,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.asp" pinned="true" current-in-tab="true">
+      <file leaf-file-name="index.asp" pinned="true" current-in-tab="false">
         <entry file="REMOTE_DEPLOYMENT_FS://&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/index.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56">
-              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+            <state vertical-scroll-proportion="-10.230769">
+              <caret line="81" column="69" selection-start-line="81" selection-start-column="69" selection-end-line="81" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.asp" pinned="true" current-in-tab="false">
+        <entry file="REMOTE_DEPLOYMENT_FS://&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/inc/footer.asp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.0461538">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="true" current-in-tab="true">
+        <entry file="REMOTE_DEPLOYMENT_FS://&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8">
+              <caret line="712" column="0" selection-start-line="712" selection-start-column="0" selection-end-line="712" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="true" current-in-tab="false">
+        <entry file="REMOTE_DEPLOYMENT_FS://&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/common/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.5538464">
+              <caret line="2377" column="43" selection-start-line="2377" selection-start-column="43" selection-end-line="2377" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -50,9 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/buy/memento.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/buy/hometown_memento.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/buy/ghost.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/customer/faq.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mypage/member_info.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/mypage/member_info.asp" />
@@ -64,8 +190,6 @@
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/member/join_email_general_form.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/js/form.js" />
         <option value="$PROJECT_DIR$/common/css/media.scss" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/inc/gnb.asp" />
-        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/js/common.js" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/groupprogram/cert_program.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/eat.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/eat/herbal_med.asp" />
@@ -100,7 +224,12 @@
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/fourD.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/playvillage/attraction/twist_mini.asp" />
         <option value="$PROJECT_DIR$/index.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/information/coupon_view.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/inc/gnb.asp" />
         <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/index.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/inc/footer.asp" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/mobile/common/js/common.js" />
+        <option value="&lt;9bf67865-7139-47a4-806d-e8aae825a12b&gt;/common/js/common.js" />
       </list>
     </option>
   </component>
@@ -344,10 +473,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15511727" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12526652" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15724947" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12846482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -384,20 +513,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/event/index.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83282673">
-          <caret line="113" column="26" selection-start-line="113" selection-start-column="26" selection-end-line="113" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/event/inc/event_topmenu.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019250253">
-          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/inc/gnb.asp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4224924">
@@ -738,6 +853,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12360689">
           <caret line="88" column="11" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/b.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
